@@ -1,0 +1,661 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	功能id-不能改
+			name	-	功能名称
+				-	名字备注
+			platform	-	渠道限制：不填表示不限制，填yoka;1112pc 表示只有这两个渠道可以用
+			type	-	页签位置类别
+			page	-	所处页面：0=主页；1=活动；2=任务；3=福利  4=新兵特训 6=占星/神箭 7=导航 8=301面板 9=302面板 10=303面板 11=304面板 12=305面板
+			type	-	页签位置类别(活动用）
+			page	-	(活动用）所处页面：0=主页；1=活动；2=任务；3=福利  4=新兵特训 6=占星/神箭 7=导航 8=301面板 9=302面板 10=303面板 11=304面板 12=305面板
+			sort	-	页签排序
+			minlevel	-	开启等级
+			maxlevel	-	关闭等级
+			openGen	-	开启将灯
+
+			openOff	-	开启官阶
+			duration	-	开关 时间
+			u3dduration	-	u3d开关 时间
+			source	-	资源
+			icon	-	icon资源-资源在程序内
+			icon_r	-	icon特效资源
+			source_m	-	移动-资源
+			icon_m	-	移动-icon资源
+			icon_r_m	-	移动-icon特效资源
+			url	-	pc链接,1=游戏内置浏览器打开，2=外部浏览器或新开网页打开
+			url_m	-	移动链接,1=游戏内置浏览器打开，2=外部浏览器或新开网页打开
+			url_n	-	内置url尺寸大小，PC;移动。如果不填则用默认尺寸
+				-	说明
+			timeshow	-	控制U3D任务类型活动不显示顶部时间，不配=显示，1=不显示
+			location	-	U3D页面所处位置（1=界面左侧，2=界面右侧。3=右下角+号中 4=右上角功能入口中）
+			VersionFiltrate	-	版本号筛选（1=安卓2=IOS）
+			toZhuTi	-	 前往界面（ID见pay_gift表中说明）
+			PClocation	-	PC页面所处位置
+3=右下角+号中 
+			type1	-	功能类型
+			showLevel	-	预告等级
+			icon1	-	功能图标 1=玩法  2=婚姻  3=公会  4=任务  5=武将  6=皮肤  7=活动 8=福利  9=官阶  10=七日盛典
+			icon1	-	功能图标 1=玩法  2=婚姻  3=公会  4=任务  5=武将  6=皮肤  7=活动 8=福利  9=官阶  10=七日盛典
+			quest	-	开启任务id
+			dec	-	任务描述
+			dec1	-	功能描述
+			showDec	-	功能预告描述
+			notshow	-	不显示弹出
+默认0显示，1不显示
+			notshow	-	不显示弹出
+默认0显示，1不显示
+			PlusLocation	-	所处加号位置
+1=我的
+2=功能
+3=系统
+			PlusLocation	-	所处加号位置
+1=我的
+2=功能
+3=系统
+			openTimes	-	弹框弹出多少次
+0=只有1次；非0=多次
+			showTips	-	气泡提示内容
+			tipsDuration	-	气泡提示时间
+				-
+		-->
+	<bar id="1" name="首充" sort="2" minlevel="9" maxlevel="200" />
+	<bar id="2" name="任务" sort="20" minlevel="28" maxlevel="200" />
+	<bar id="3" name="活动" sort="30" minlevel="24" maxlevel="200" />
+	<bar id="4" name="福利" sort="40" minlevel="14" maxlevel="200" />
+	<bar id="5" name="scl竞猜" sort="550" minlevel="60" maxlevel="200" duration="20230728T150000,20230731T220000" u3dduration="20220909T150000,20220913T220000" />
+	<bar id="6" name="录像" sort="60" minlevel="0" maxlevel="200" />
+	<bar id="7" name="新手礼包" sort="70" minlevel="0" maxlevel="200" />
+	<bar id="8" name="充值礼包" sort="80" minlevel="201" maxlevel="200" />
+	<bar id="9" name="每日签到" sort="90" minlevel="12" maxlevel="200" duration="20221111T150000,20230430T235959" u3dduration="20221111T150000,20230430T235959" />
+	<bar id="10" name="七日礼包" sort="2" minlevel="6" maxlevel="200" />
+	<bar id="11" name="主题活动" sort="110" minlevel="0" maxlevel="200" duration="20221111T150000,20230430T235959" u3dduration="20221111T150000,20230430T235959" />
+	<bar id="12" name="累计登录" sort="120" minlevel="0" maxlevel="200" duration="20220124T000001,20230212T235959" u3dduration="20220124T000001,20230212T235959" />
+	<bar id="13" name="王者之战" sort="20" minlevel="60" maxlevel="200" duration="20231019T100000,20231020T185959" u3dduration="20231019T100000,20231020T185959" />
+	<bar id="14" name="羽化飞升" sort="400" minlevel="0" maxlevel="200" duration="20201204T000000,20301230T235959" u3dduration="20201204T000000,20301230T235959" />
+	<bar id="15" name="消耗有礼" sort="150" minlevel="0" maxlevel="200" duration="20230701T000000,20230804T235959" u3dduration="20230701T000000,20230804T235959" />
+	<bar id="16" name="充值福利" sort="160" minlevel="0" maxlevel="200" duration="20230729T000001,20230731T235959" u3dduration="20230729T000001,20230731T235959" />
+	<bar id="17" name="限时返利" sort="170" minlevel="0" maxlevel="200" duration="20230617T000000,20230619T235959" u3dduration="20230617T000000,20230619T235959" />
+	<bar id="18" name="限时活动" sort="380" minlevel="0" maxlevel="200" duration="20191121T000000,20301231T235959" u3dduration="20191121T000000,20301231T235959" />
+	<bar id="19" name="长期活动" sort="190" minlevel="0" maxlevel="200" duration="20191121T000000,20230430T235959" u3dduration="20191121T000000,20230430T235959" />
+	<bar id="24" name="祈福" sort="3" minlevel="24" maxlevel="200" duration="20240810T000100,20240819T235959" u3dduration="20240810T000100,20240819T235959" />
+	<bar id="26" name="热力" sort="15" minlevel="24" maxlevel="200" duration="20220124T100000,20220229T235959" u3dduration="20220124T100000,20220229T235959" />
+	<bar id="27" name="夺宝行动" sort="280" minlevel="24" maxlevel="200" />
+	<bar id="28" name="月卡" sort="290" minlevel="16" maxlevel="200" />
+	<bar id="30" name="限时返利" sort="310" duration="20220124T100000,20220229T235959" u3dduration="20220124T100000,20220229T235959" />
+	<bar id="31" name="累计登录" sort="320" duration="20220124T000001,20220211T235959" u3dduration="20220124T000001,20220211T235959" />
+	<bar id="32" name="回归奖励" sort="320" minlevel="20" maxlevel="1000" />
+	<bar id="33" name="每日特惠" sort="270" minlevel="18" maxlevel="1000" duration="20220124T000001,20240618T235959" u3dduration="20220124T000001,20240618T235959" />
+	<bar id="34" name="成长礼包" sort="275" minlevel="201" maxlevel="1000" />
+	<bar id="36" name="新兵特训" sort="2" minlevel="10" maxlevel="200" />
+	<bar id="37" name="乐游商城" platform="410054;310052;410054;310052;310211;310211" sort="9" minlevel="60" maxlevel="200" duration="20210910T100000,20230113T235959" u3dduration="20210910T100000,20230113T235959" />
+	<bar id="38" name="神箭秘宝" sort="4" minlevel="24" maxlevel="200" duration="20240908T000102,20240914T235959" u3dduration="20240908T000102,20240914T235959" />
+	<bar id="39" name="充消返利" sort="150" minlevel="0" maxlevel="200" duration="20220124T000000,20230811T235959" u3dduration="20220124T000000,20230811T235959" />
+	<bar id="40" name="神箭秘宝" sort="4" minlevel="24" maxlevel="200" duration="20240908T000102,20240914T235959" u3dduration="20240908T000102,20240914T235959" />
+	<bar id="41" name="秘宝商店" sort="4" minlevel="0" maxlevel="200" duration="20240908T000102,20240914T235959" u3dduration="20240908T000102,20240914T235959" />
+	<bar id="42" name="限购礼包" sort="251" minlevel="0" maxlevel="200" duration="20210910T100000,20210916T235959" u3dduration="20210910T100000,20210916T235959" />
+	<bar id="43" name="周年庆" sort="7" minlevel="0" maxlevel="200" duration="20211203T000000,20211231T235959" u3dduration="20211203T000000,20211231T235959" />
+	<bar id="44" name="热力积分" sort="401" minlevel="0" maxlevel="200" duration="20220124T000000,20230811T235959" u3dduration="20220124T000000,20230811T235959" />
+	<bar id="46" name="奇珍翻翻乐" sort="4" minlevel="24" maxlevel="200" duration="20240831T000100,20240907T235959" u3dduration="20240831T000100,20240907T235959" />
+	<bar id="47" name="仲夏奇珍" sort="4" minlevel="24" maxlevel="200" duration="20230819T000000,20230826T235959" u3dduration="20230819T000000,20230826T235959" />
+	<bar id="48" name="奇珍翻翻乐" sort="4" minlevel="24" maxlevel="200" duration="20240517T000100,20240524T235959" u3dduration="20240517T000100,20240524T235959" />
+	<bar id="49" name="充消返利2" sort="150" minlevel="0" maxlevel="200" duration="20220124T000000,20220630T235959" u3dduration="20220124T000000,20220630T235959" />
+	<bar id="50" name="充消返利3" sort="150" minlevel="0" maxlevel="200" duration="20220124T000000,20220630T235959" u3dduration="20220124T000000,20220630T235959" />
+	<bar id="51" name="琳琅绘卷" sort="4" minlevel="24" maxlevel="200" duration="20240120T000100,20241231T235959" u3dduration="20240120T000100,20241231T235959" />
+	<bar id="52" name="限时秒杀" sort="3" minlevel="24" maxlevel="200" duration="20240810T000000,20240818T235959" u3dduration="20240810T000000,20240818T235959" />
+	<bar id="55" name="回归奖励" sort="320" minlevel="60" maxlevel="1000" />
+	<bar id="56" name="首充" sort="2" minlevel="9" maxlevel="200" />
+	<bar id="57" sort="42" minlevel="10" maxlevel="200" />
+	<bar id="58" sort="41" minlevel="9" maxlevel="200" duration="20230701T001000,20300627T220000" u3dduration="20230701T001000,20300627T220000" />
+	<bar id="59" name="祈愿台" sort="3" minlevel="24" maxlevel="200" duration="20231215T200000,20241231T235959" u3dduration="20231215T200000,20241231T235959" />
+	<bar id="61" name="节日签到" sort="3" minlevel="24" maxlevel="200" duration="20230708T000100,20230721T235959" u3dduration="20230708T000100,20230721T235959" />
+	<bar id="62" name="一元狂欢" sort="3" minlevel="24" maxlevel="200" duration="20240712T190000,20250727T235959" u3dduration="20240712T190000,20250727T235959" />
+	<bar id="71" name="签到活动" sort="3" minlevel="24" maxlevel="200" duration="20230708T000100,20240721T235959" u3dduration="20230708T000100,20240721T235959" />
+	<bar id="72" name="签到活动" sort="3" minlevel="24" maxlevel="200" duration="20230708T000100,20240721T235959" u3dduration="20230708T000100,20240721T235959" />
+	<bar id="100" name="祈福武将" sort="360" duration="20220304T000000,20220311T235959" u3dduration="20220304T000000,20220311T235959" />
+	<bar id="101" name="新品武将" sort="340" duration="20230311T000001,20230317T235959" u3dduration="20230311T000001,20230317T235959" />
+	<bar id="102" name="新品武将" sort="350" duration="20210514T000000,20210520T235959" u3dduration="20210514T000000,20210520T235959" />
+	<bar id="103" name="新品皮肤" sort="360" duration="20210618T000000,20210624T235959" u3dduration="20210618T000000,20210624T235959" />
+	<bar id="104" name="首充双倍" platform="220010;220003;220036;220037;220042;220043;220028;220107;220112;220016;220040;220109;220113;220120;320103;320104;320105;320106;320108;220112;320100;320102;320010;320003;320115;320114;120116;120117;110119;120121" sort="370" minlevel="0" maxlevel="200" duration="20201204T000000,20240220T235959" u3dduration="20201204T000000,20240220T235959" />
+	<bar id="105" name="赛事红包" platform="7;210000;110074" sort="1" minlevel="20" maxlevel="200" duration="20211016T140000,20220622T235959" u3dduration="20211016T140000,20220622T235959" />
+	<bar id="106" name="绑定迁移" platform="220107;320127" sort="5" minlevel="8" maxlevel="200" duration="20240430T100000,20240720T175959" u3dduration="20240430T100000,20240720T175959" />
+	<bar id="107" name="金兰节" sort="7" minlevel="0" maxlevel="200" duration="20240429T170000,20240509T235959" u3dduration="20240429T170000,20240509T235959" />
+	<bar id="109" name="周年庆" sort="90" minlevel="20" maxlevel="200" duration="20231207T160000,20231217T235959" u3dduration="20231207T160000,20231217T235959" />
+	<bar id="110" name="双排季预约" sort="2" minlevel="25" maxlevel="200" duration="20240425T153000,20240509T235959" u3dduration="20240425T153000,20240509T235959" />
+	<bar id="111" name="台词投票" sort="90" minlevel="60" maxlevel="200" duration="20230914T170000,20230920T235959" u3dduration="20230914T170000,20230920T235959" />
+	<bar id="161" minlevel="20" maxlevel="200" duration="20240605T100000,20250606T235959" u3dduration="20240605T100000,20250606T235959" />
+	<bar id="201" name="新人福利" sort="5" minlevel="5" maxlevel="200" />
+	<bar id="202" name="七日盛典" sort="6" minlevel="5" maxlevel="200" />
+	<bar id="203" name="七日目标" sort="399" minlevel="10" maxlevel="200" />
+	<bar id="204" name="银两武将" sort="400" minlevel="201" maxlevel="200" />
+	<bar id="204" name="银两武将" sort="400" minlevel="201" maxlevel="200" />
+	<bar id="205" name="新兵返利" sort="500" minlevel="14" maxlevel="200" />
+	<bar id="206" name="限时兑换" sort="200" minlevel="0" maxlevel="200" duration="20220520T000000,20301231T235959" u3dduration="20220520T000000,20301231T235959" />
+	<bar id="207" name="活动兑换" sort="200" minlevel="0" maxlevel="200" duration="20220828T000000,20301231T235959" u3dduration="20220828T000000,20301231T235959" />
+	<bar id="208" name="热力兑换" sort="200" minlevel="0" maxlevel="200" duration="20230708T000000,20230805T235959" u3dduration="20230708T000000,20230805T235959" />
+	<bar id="210" name="礼盒活动" sort="30" minlevel="0" maxlevel="200" duration="20220909T000000,20301231T235959" u3dduration="20220909T000000,20301231T235959" />
+	<bar id="211" name="金兰宝箱" sort="30" minlevel="0" maxlevel="200" duration="20230520T000000,20230526T235959" u3dduration="20230520T000000,20230526T235959" />
+	<bar id="212" name="宝箱活动3" sort="30" minlevel="0" maxlevel="200" duration="20210910T100000,20210916T235959" u3dduration="20210910T100000,20210916T235959" />
+	<bar id="213" name="七日盛典" sort="2" minlevel="5" maxlevel="200" />
+	<bar id="228" name="月度豪礼" sort="3" minlevel="16" maxlevel="200" duration="20220909T000000,20991231T235959" u3dduration="20220909T000000,20991231T235959" />
+	<bar id="230" name="我要强将" sort="4" minlevel="14" maxlevel="200" duration="20220909T000000,20991231T235959" u3dduration="20220909T000000,20991231T235959" />
+	<bar id="231" name="新兵招募" platform="310052;210000;410054;110074;110075" sort="5" minlevel="201" maxlevel="200" duration="20220909T000000,20231231T235959" u3dduration="20220909T000000,20231231T235959" />
+	<bar id="232" name="蜀中相邀" sort="1" minlevel="70" maxlevel="200" duration="20240705T100000,20240716T235959" u3dduration="20240705T100000,20240716T235959" />
+	<bar id="233" name="排位蜀中预告" minlevel="0" maxlevel="200" duration="20230703T170000,20230714T235959" u3dduration="20230703T170000,20230714T235959" />
+	<bar id="234" name="山河图蜀中预告" minlevel="0" maxlevel="200" duration="20230703T170000,20230714T235959" u3dduration="20230703T170000,20230714T235959" />
+	<bar id="235" name="经典场预告" minlevel="0" maxlevel="200" duration="20230703T170000,20230714T235959" u3dduration="20230703T170000,20230714T235959" />
+	<bar id="236" name="斗地主蜀中预告" minlevel="0" maxlevel="200" duration="20230703T170000,20230714T235959" u3dduration="20230703T170000,20230714T235959" />
+	<bar id="237" name="邀请界面蜀中预告1" minlevel="201" maxlevel="200" duration="20230703T170000,20230709T235959" u3dduration="20230703T170000,20230709T235959" />
+	<bar id="238" name="邀请界面蜀中预告2" minlevel="70" maxlevel="200" duration="20240704T100000,20240714T235959" u3dduration="20240704T100000,20240714T235959" />
+	<bar id="239" name="邀请界面蜀中预告3" minlevel="201" maxlevel="200" duration="20240429T170000,20240509T235959" u3dduration="20240429T170000,20240509T235959" />
+	<bar id="301" name="独立ICON1" sort="8" minlevel="0" maxlevel="200" duration="20191121T000000,20191231T235959" u3dduration="20191121T000000,20191231T235959" />
+	<bar id="302" name="独立ICON2" sort="8" minlevel="0" maxlevel="200" duration="20210910T100000,20210916T235959" u3dduration="20210910T100000,20210916T235959" />
+	<bar id="303" name="独立ICON3" sort="8" minlevel="0" maxlevel="200" duration="20210910T100000,20210916T235959" u3dduration="20210910T100000,20210916T235959" />
+	<bar id="304" name="独立ICON4" sort="8" minlevel="0" maxlevel="200" duration="20210910T100000,20210916T235959" u3dduration="20210910T100000,20210916T235959" />
+	<bar id="305" name="独立ICON5" sort="8" minlevel="0" maxlevel="200" duration="20210910T100000,20210916T235959" u3dduration="20210910T100000,20210916T235959" />
+	<bar id="1001" name="充值福利" sort="8" minlevel="0" maxlevel="200" duration="20240831T000000,20240907T235959" u3dduration="20240831T000000,20240907T235959" />
+	<bar id="1002" name="庆典积分" sort="20" minlevel="0" duration="20240713T000000,20240809T235959" u3dduration="20240713T000000,20240809T235959" />
+	<bar id="1003" name="活跃福利" sort="40" minlevel="0" maxlevel="200" duration="20240824T000000,20240830T235959" u3dduration="20240824T000000,20240830T235959" />
+	<bar id="1004" name="七夕祈福" sort="20" minlevel="0" maxlevel="200" duration="20240810T000000,20240818T235959" u3dduration="20240810T000000,20240818T235959" />
+	<bar id="1005" name="武将福利" sort="20" minlevel="0" maxlevel="200" duration="20240831T000000,20240907T235959" u3dduration="20240831T000000,20240907T235959" />
+	<bar id="1006" name="庆典积分" sort="170" minlevel="0" maxlevel="200" duration="20240810T000000,20240818T235959" u3dduration="20240810T000000,20240818T235959" />
+	<bar id="1011" name="祈福武将" sort="270" duration="20230303T000001,20230310T235959" u3dduration="20230303T000001,20230310T235959" />
+	<bar id="1012" name="新品武将" sort="270" duration="20230303T000001,20230310T235959" u3dduration="20230303T000001,20230310T235959" />
+	<bar id="1021" name="新品皮肤" sort="360" duration="20220319T000000,20220324T235959" u3dduration="20220319T000000,20220324T235959" />
+	<bar id="1022" name="新品皮肤" sort="360" duration="20220625T000000,20220630T235959" u3dduration="20220625T000000,20220630T235959" />
+	<bar id="2001" name="充值返利" sort="120" minlevel="201" maxlevel="200" duration="20210507T000010,20210513T235959" u3dduration="20210507T000010,20210513T235959" />
+	<bar id="2002" name="王者之战" sort="20" minlevel="30" maxlevel="200" duration="20240531T100000,20240601T185959" u3dduration="20240531T100000,20240601T185959" />
+	<bar id="2003" name="羽化飞升" sort="400" minlevel="201" maxlevel="200" duration="20201204T000000,20301230T235959" u3dduration="20201204T000000,20301230T235959" />
+	<bar id="2004" name="11兑换" sort="150" minlevel="201" maxlevel="200" duration="20211101T000000,20211111T235959" u3dduration="20211101T000000,20211111T235959" />
+	<bar id="2005" name="累计登录" sort="160" minlevel="201" maxlevel="200" duration="20220124T000001,20220211T235959" u3dduration="20220124T000001,20220211T235959" />
+	<bar id="2006" name="剑阁决战" sort="170" minlevel="201" maxlevel="200" duration="20210813T000010,20210928T235959" u3dduration="20210813T000010,20210928T235959" />
+	<bar id="2007" name="限时活动" sort="380" minlevel="201" maxlevel="200" duration="20191121T000000,20301231T235959" u3dduration="20191121T000000,20301231T235959" />
+	<bar id="2008" name="充值返利" sort="150" minlevel="201" maxlevel="200" duration="20220130T000000,20220207T235959" u3dduration="20220130T000000,20220207T235959" />
+	<bar id="2009" name="新春福利" sort="160" minlevel="201" maxlevel="200" duration="20220130T000000,20220207T235959" u3dduration="20220130T000000,20220207T235959" />
+	<bar id="2010" name="新春盲盒" sort="160" minlevel="201" maxlevel="200" duration="20220130T000000,20220207T235959" u3dduration="20220130T000000,20220207T235959" />
+	<bar id="2011" name="充值返利" sort="150" minlevel="201" maxlevel="200" duration="20220124T000000,20220129T235959" u3dduration="20220124T000000,20220129T235959" />
+	<bar id="2012" name="年年有余" sort="160" minlevel="201" maxlevel="200" duration="20220124T000000,20220129T235959" u3dduration="20220124T000000,20220129T235959" />
+	<bar id="2013" name="小年盲盒" sort="170" minlevel="201" maxlevel="200" duration="20220124T000000,20220129T235959" u3dduration="20220124T000000,20220129T235959" />
+	<bar id="3001" name="充值返利" sort="120" minlevel="201" maxlevel="200" duration="20210507T000010,20210513T235959" u3dduration="20210507T000010,20210513T235959" />
+	<bar id="3002" name="千里单骑" sort="130" minlevel="201" maxlevel="200" duration="20211129T100000,20211223T235959" u3dduration="20211129T100000,20211223T235959" />
+	<bar id="3003" name="羽化飞升" sort="370" minlevel="201" maxlevel="200" duration="20201204T000000,20301230T235959" u3dduration="20201204T000000,20301230T235959" />
+	<bar id="3004" name="11兑换" sort="150" minlevel="201" maxlevel="200" duration="20211101T000000,20211111T235959" u3dduration="20211101T000000,20211111T235959" />
+	<bar id="3005" name="累计登录" sort="160" minlevel="201" maxlevel="200" duration="20220124T000001,20220211T235959" u3dduration="20220124T000001,20220211T235959" />
+	<bar id="3006" name="剑阁决战" sort="170" minlevel="201" maxlevel="200" duration="20210813T000010,20210928T235959" u3dduration="20210813T000010,20210928T235959" />
+	<bar id="3007" name="限时活动" sort="380" minlevel="201" maxlevel="200" duration="20191121T000000,20301231T235959" u3dduration="20191121T000000,20301231T235959" />
+	<bar id="3008" name="充值返利" sort="150" minlevel="201" maxlevel="200" duration="20220130T000000,20220207T235959" u3dduration="20220130T000000,20220207T235959" />
+	<bar id="3009" name="新春福利" sort="160" minlevel="201" maxlevel="200" duration="20220130T000000,20220207T235959" u3dduration="20220130T000000,20220207T235959" />
+	<bar id="3010" name="新春盲盒" sort="160" minlevel="201" maxlevel="200" duration="20220130T000000,20220207T235959" u3dduration="20220130T000000,20220207T235959" />
+	<bar id="3011" name="充值返利" sort="150" minlevel="201" maxlevel="200" duration="20220124T000000,20220129T235959" u3dduration="20220124T000000,20220129T235959" />
+	<bar id="3012" name="年年有余" sort="160" minlevel="201" maxlevel="200" duration="20220124T000000,20220129T235959" u3dduration="20220124T000000,20220129T235959" />
+	<bar id="3013" name="小年盲盒" sort="170" minlevel="201" maxlevel="200" duration="20220124T000000,20220129T235959" u3dduration="20220124T000000,20220129T235959" />
+	<bar id="4002" name="主线" sort="100" minlevel="30" maxlevel="200" />
+	<bar id="4001" name="成长" sort="110" minlevel="28" maxlevel="200" />
+	<bar id="4003" name="收集" sort="120" minlevel="40" maxlevel="200" />
+	<bar id="5001" platform="310052;410054" minlevel="60" maxlevel="200" duration="20210124T000000,20220129T235959" u3dduration="20210124T000000,20250129T235959" />
+	<bar id="5002" platform="310052;410054" duration="20210124T000000,20220129T235959" u3dduration="20210124T000000,20250129T235959" />
+	<bar id="5003" name="每日签到" minlevel="12" maxlevel="200" u3dduration="20230501T000000,20991231T235959" />
+	<bar id="5004" name="每日签到" sort="90" minlevel="12" maxlevel="200" duration="20230501T000000,20991231T235958" />
+	<bar id="5005" name="备用" sort="550" minlevel="30" maxlevel="200" duration="20240219T000000,20240501T235959" u3dduration="20240219T000000,20240501T235959" />
+	<bar id="5006" name="蜀中预约" platform="110074;110075;110119;120117;120121;120128;210000;211401;211403;211405;211490;220003;220016;220028;220036;220037;220043;220112;220120;310052;310206;310211;310220;311214;311215;311216;311218;312210;312212;312222;320003;320102;320103;320106;320107;320109;320115;320123;320125;320127;320129;410054;610219;720001;999803;999999" sort="1" minlevel="9" maxlevel="200" duration="20240621T100000,20240714T235959" u3dduration="20240621T100000,20240714T235959" />
+	<bar id="5007" name="蜀中预约" platform="220010;320010;120116;320105" sort="1" minlevel="9" maxlevel="200" duration="20240621T100000,20240714T235959" u3dduration="20240621T100000,20240714T235959" />
+	<bar id="5008" minlevel="60" maxlevel="200" duration="20240829T000000,20251224T235959" u3dduration="20240829T000000,20251224T235959" />
+	<bar id="5009" duration="20240829T000000,20251224T235959" u3dduration="20240829T000000,20251224T235959" />
+	<bar id="6001" name="年中钜惠" sort="26" minlevel="30" maxlevel="200" duration="20240616T000000,20240621T235959" u3dduration="20240616T000000,20240621T235959" />
+	<bar id="6002" name="界简雍兑换" sort="260" minlevel="30" maxlevel="200" duration="20231216T000000,20231223T235959" u3dduration="20231216T000000,20231223T235959" />
+	<bar id="6003" name="盲盒福利" sort="170" minlevel="30" maxlevel="200" duration="20240824T000000,20240907T235959" u3dduration="20240824T000000,20240907T235959" />
+	<bar id="6004" name="充消返利" sort="15" minlevel="30" maxlevel="200" duration="20230812T000000,20241231T235959" u3dduration="20230812T000000,20241231T235959" />
+	<bar id="6005" name="活跃福利" sort="120" minlevel="30" maxlevel="200" duration="20240831T000000,20240914T235959" u3dduration="20240831T000000,20240914T235959" />
+	<bar id="6006" name="义除三害" sort="8" minlevel="30" maxlevel="200" duration="20240403T180000,20240509T235959" u3dduration="20240403T180000,20240509T235959" />
+	<bar id="6007" name="盲盒福利" sort="18" minlevel="30" maxlevel="200" duration="20240403T180000,20240509T235959" u3dduration="20240403T180000,20240509T235959" />
+	<bar id="6008" name="充值福利" sort="120" minlevel="30" maxlevel="200" duration="20240219T000000,20240501T235959" u3dduration="20240219T000000,20240501T235959" />
+	<bar id="7001" name="蜀中预约" platform="110074;110075;110119;120117;120121;120128;210000;211401;211403;211405;211490;220003;220016;220028;220036;220037;220043;220112;220120;310052;310206;310211;310220;311214;311215;311216;311218;312210;312212;312222;320003;320102;320103;320106;320107;320109;320115;320123;320125;320127;320129;410054;610219;720001;999803;999999" sort="1" minlevel="9" maxlevel="200" duration="20240621T100000,20240714T235959" u3dduration="20240621T100000,20240714T235959" />
+	<bar id="7002" name="蜀中预约" platform="220010;320010;120116;320105" sort="1" minlevel="9" maxlevel="200" duration="20240621T100000,20240714T235959" u3dduration="20240621T100000,20240714T235959" />
+	<bar id="7003" name="备用" sort="400" minlevel="30" maxlevel="200" duration="20230708T000100,20230721T235959" u3dduration="20230708T000100,20230721T235959" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			reLiBaseInfoUrl	-	链接？
+			reLiGameInfoUrl	-	链接？
+			reLiUserInfoUrl	-	链接？
+			reLiGetAwardUrl	-	链接？
+			reLiRankInfoUrl	-	链接？
+			reLiAwardInfo	-	链接？
+			reLiDescInfo	-	链接？
+				-	
+				-
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ID	-	对应页面开关的功能id
+			GeneralID	-	新品武将ID
+			RecommendFigure	-	推荐身份
+			GetMode	-	获取方式：获取方式就定义1=元宝开通；2=祈福；3=宝箱；4=秒杀
+			GoodsId	-	获取道具id
+			FuliQuest	-	武将福利任务
+			BaoxiangQuest	-	武将宝箱活动
+			DuihuanQuest	-	武将兑换活动
+			OtherQuest	-	其他活动
+			Dec	-	武将描述
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ID	-	对应页面开关的功能id
+			NewSkinId	-	新品上架皮肤ID
+			CheapSkinId	-	限时特惠皮肤ID
+			OpenQuestId	-	开包任务ID
+			XiuQuestId	-	皮肤秀任务ID
+			CrystalQuestId	-	动态水晶任务ID
+			OtherQuest	-	其他活动
+				-	
+				-	
+				-	
+				-	
+				-	
+				-	
+				-
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	功能id
+			name	-	功能名称
+			platform	-	渠道限制：不填表示不限制，填yoka;1112pc 表示只有这两个渠道可以用
+			minlevel	-	开启等级
+			minlevel	-	U3D开启等级
+			openGen	-	开启将灯
+
+			openOff	-	开启官阶
+			type1	-	功能类型
+			showLevel	-	预告等级
+			isShow	-	是否功能预告
+1=预告
+0或不填=不预告
+			icon1	-	功能图标 1=玩法  2=婚姻  3=公会  4=任务  5=武将  6=皮肤  7=活动 8=福利  9=官阶  10=七日盛典
+			icon1	-	功能图标 1=玩法  2=婚姻  3=公会  4=任务  5=武将  6=皮肤  7=活动 8=福利  9=官阶  10=七日盛典
+			toZhuTi	-	 前往界面（ID见pay_gift表中说明）
+			quest	-	开启任务id
+			dec	-	任务描述
+			dec1	-	功能描述
+			showDec	-	功能预告描述
+			notshow	-	不显示弹出
+默认0显示，1不显示
+			notshow	-	不显示弹出
+默认0显示，1不显示
+			location	-	U3D页面所处位置（1=界面左侧，2=界面右侧。3=右下角+号中 4=右上角功能入口中（社区区域） 5=右上角的功能入口（信件区域））
+			PClocation	-	PC页面所处位置
+3=右下角+号中 
+			VersionFiltrate	-	版本号筛选（1=安卓2=IOS）
+			url	-	pc链接,1=游戏内置浏览器打开，2=外部浏览器或新开网页打开
+			url_m	-	移动链接,1=游戏内置浏览器打开，2=外部浏览器或新开网页打开
+			PlusLocation	-	所处加号位置
+1=我的
+2=功能
+3=系统
+			PlusLocation	-	所处加号位置
+1=我的
+2=功能
+3=系统
+			icon_m	-	移动-icon资源
+			icon_r_m	-	移动-icon特效资源
+			openTimes	-	弹框弹出多少次
+0=只有1次；非0=多次
+			showTips	-	气泡提示内容
+			tipsDuration	-	气泡提示时间
+			type	-	页签位置类别(活动用）
+			page	-	(活动用）所处页面：0=主页；1=活动；2=任务；3=福利  4=新兵特训 6=占星/神箭 7=导航 8=301面板 9=302面板 10=303面板 11=304面板 12=305面板
+			type	-	页签位置类别(活动用）
+			page	-	(活动用）所处页面：0=主页；1=活动；2=任务；3=福利  4=新兵特训 6=占星/神箭 7=导航 8=301面板 9=302面板 10=303面板 11=304面板 12=305面板
+			sort	-	页签排序
+			maxlevel	-	关闭等级
+			duration	-	开关 时间
+			u3dduration	-	u3d开关 时间
+			source	-	资源
+			icon	-	icon资源-资源在程序内
+			icon_r	-	icon特效资源
+			source_m	-	移动-资源
+			url_n	-	内置url尺寸大小，PC;移动。如果不填则用默认尺寸
+				-	说明
+			timeshow	-	控制U3D任务类型活动不显示顶部时间，不配=显示，1=不显示
+		-->
+	<open id="10001" />
+	<open id="10002" />
+	<open id="10003" />
+	<open id="10004" />
+	<open id="10005" />
+	<open id="10006" />
+	<open id="10007" />
+	<open id="10008" />
+	<open id="10009" />
+	<open id="10010" />
+	<open id="10011" />
+	<open id="10012" />
+	<open id="10013" />
+	<open id="10014" />
+	<open id="10015" />
+	<open id="10016" />
+	<open id="10017" />
+	<open id="10018" />
+	<open id="10019" />
+	<open id="10020" />
+	<open id="10021" />
+	<open id="10022" />
+	<open id="10023" />
+	<open id="10024" />
+	<open id="10025" />
+	<open id="10026" />
+	<open id="10027" />
+	<open id="10028" />
+	<open id="10029" />
+	<open id="10030" />
+	<open id="10031" />
+	<open id="10032" />
+	<open id="10033" />
+	<open id="10034" />
+	<open id="10035" />
+	<open id="10036" platform="310052;410054;7" />
+	<open id="10037" />
+	<open id="10038" />
+	<open id="10039" />
+	<open id="10040" />
+	<open id="10041" />
+	<open id="10042" />
+	<open id="10043" />
+	<open id="10044" />
+	<open id="10045" />
+	<open id="10046" />
+	<open id="10047" />
+	<open id="10048" />
+	<open id="10049" />
+	<open id="10050" />
+	<open id="10051" />
+	<open id="10052" />
+	<open id="10053" />
+	<open id="10054" />
+	<open id="10055" />
+	<open id="10056" />
+	<open id="10057" openGen="2:1" />
+	<open id="10058" />
+	<open id="10059" />
+	<open id="10060" />
+	<open id="10061" />
+	<open id="10062" />
+	<open id="10063" />
+	<open id="10064" />
+	<open id="10065" />
+	<open id="10067" duration="20240605T095959,20990531T235959" u3dduration="20240605T095959,20990531T235959" />
+	<open id="10160" />
+	<open id="10168" />
+	<open id="10068" duration="20240124T000000,20250129T235959" u3dduration="20240124T000000,20250129T235959" />
+	<open id="10170" duration="20240910T000000,20980129T235959" u3dduration="20240910T000000,20990129T235959" />
+	<open id="10171" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			showLv	-	开启等级
+			showN	-	展示功能
+			tp	-	跳转地址
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	界面id
+			name	-	功能名称
+			type	-	类型
+1=弹窗
+2=模式
+3=场景
+4=天梯
+5=新排位
+			winName	-	界面名称（IndpdtPanelWindow1-5=独立icon弹窗）
+			winValue	-	参数
+多个参数分号隔开
+			jumpid	-	对应功能id
+			m_type	-	yd类型
+1=弹窗
+			m_winName	-	yd界面名称
+			m_winValue	-	yd参数
+			openTimes	-	该功能弹出弹框次数
+			m_type	-	yd类型
+1=弹窗
+			m_winName	-	yd界面名称
+			m_winValue	-	yd参数
+			m_minLv	-	移动端开放等级
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			number	-	序号
+			ResType	-	资源类型
+			newType	-	更改方式
+			upDate	-	资源位置
+			path	-	新资源路径
+			ResRoot	-	新增资源坐标
+				-	锚点主体说明
+			windowNameU3d	-	预制体名称(U3D)
+			windowNamePc	-	界面名称(PC)
+			moveRoot	-	替换资源偏移值
+			time	-	展示时间
+				-	备注
+			bar	-	关联跳转参数
+				-
+		-->
+	<zhuti number="101003" />
+	<zhuti number="101004" />
+	<zhuti number="101005" />
+	<zhuti number="101006" />
+	<zhuti number="102001" />
+	<zhuti number="102002" />
+	<zhuti number="102003" />
+	<zhuti number="102004" />
+	<zhuti number="102006" />
+	<zhuti number="102007" />
+	<zhuti number="102008" />
+	<zhuti number="102009" />
+	<zhuti number="102010" />
+	<zhuti number="102011" />
+	<zhuti number="102012" />
+	<zhuti number="102013" />
+	<zhuti number="102014" />
+	<zhuti number="102005" />
+	<zhuti number="103001" />
+	<zhuti number="103002" />
+	<zhuti number="103003" />
+	<zhuti number="103004" />
+	<zhuti number="103005" />
+	<zhuti number="103006" />
+	<zhuti number="103007" />
+	<zhuti number="103008" />
+	<zhuti number="103009" />
+	<zhuti number="103010" />
+	<zhuti number="103011" />
+	<zhuti number="103012" />
+	<zhuti number="104001" />
+	<zhuti number="104002" />
+	<zhuti number="104003" />
+	<zhuti number="104004" />
+	<zhuti number="111004" />
+	<zhuti number="112001" />
+	<zhuti number="112002" />
+	<zhuti number="112003" />
+	<zhuti number="112004" />
+	<zhuti number="112005" />
+	<zhuti number="112006" />
+	<zhuti number="112007" />
+	<zhuti number="112008" />
+	<zhuti number="112009" />
+	<zhuti number="112010" />
+	<zhuti number="112015" />
+	<zhuti number="112016" time="20240429T170000,20240509T235959" />
+	<zhuti number="113001" />
+	<zhuti number="112011" />
+	<zhuti number="112012" />
+	<zhuti number="112013" />
+	<zhuti number="112014" />
+	<zhuti number="120001" />
+	<zhuti number="120002" />
+	<zhuti number="103013" />
+	<zhuti number="103014" />
+	<zhuti number="103015" />
+	<zhuti number="103016" />
+	<zhuti number="103017" />
+	<zhuti number="103018" />
+	<zhuti number="105001" />
+	<zhuti number="105002" />
+	<zhuti number="105003" />
+	<zhuti number="105004" />
+	<zhuti number="106001" />
+	<zhuti number="106002" />
+	<zhuti number="107001" />
+	<zhuti number="107002" />
+	<zhuti number="107003" />
+	<zhuti number="107004" />
+	<zhuti number="107005" />
+	<zhuti number="107006" />
+	<zhuti number="107007" />
+	<zhuti number="107008" />
+	<zhuti number="107009" />
+	<zhuti number="107010" />
+	<zhuti number="107011" />
+	<zhuti number="107012" />
+	<zhuti number="107013" />
+	<zhuti number="107014" />
+	<zhuti number="107015" />
+	<zhuti number="107016" />
+	<zhuti number="107017" />
+	<zhuti number="107018" />
+	<zhuti number="107024" time="20240301T155959,20240430T235959" />
+	<zhuti number="107025" />
+	<zhuti number="107019" />
+	<zhuti number="107020" />
+	<zhuti number="107021" />
+	<zhuti number="107022" />
+	<zhuti number="107023" />
+	<zhuti number="107026" />
+	<zhuti number="114001" />
+	<zhuti number="108001" />
+	<zhuti number="108002" />
+	<zhuti number="108003" />
+	<zhuti number="108004" />
+	<zhuti number="108005" />
+	<zhuti number="108006" />
+	<zhuti number="108007" />
+	<zhuti number="108008" />
+	<zhuti number="108009" />
+	<zhuti number="108010" />
+	<zhuti number="108011" />
+	<zhuti number="108012" />
+	<zhuti number="108013" />
+	<zhuti number="108014" />
+	<zhuti number="108015" />
+	<zhuti number="108016" />
+	<zhuti number="108017" time="20240301T155959,20240309T235959" />
+	<zhuti number="108018" time="20240301T155959,20240309T235959" />
+	<zhuti number="108019" time="20240301T155959,20240309T235959" />
+	<zhuti number="201001" time="20240711T160000,20990823T235959" />
+	<zhuti number="201002" time="20240711T160000,20990823T235959" />
+	<zhuti number="201003" />
+	<zhuti number="201004" />
+	<zhuti number="201005" time="20240830T160000,20240906T235959" />
+	<zhuti number="201005" time="20240711T160000,20990823T235959" />
+	<zhuti number="201006" />
+	<zhuti number="201007" />
+	<zhuti number="202001" />
+	<zhuti number="202002" />
+	<zhuti number="202003" />
+	<zhuti number="202004" />
+	<zhuti number="202022" />
+	<zhuti number="202023" />
+	<zhuti number="202028" />
+	<zhuti number="202029" />
+	<zhuti number="202030" />
+	<zhuti number="202031" />
+	<zhuti number="202041" />
+	<zhuti number="202042" />
+	<zhuti number="202024" />
+	<zhuti number="202025" />
+	<zhuti number="202026" />
+	<zhuti number="202027" />
+	<zhuti number="202032" />
+	<zhuti number="202033" />
+	<zhuti number="202034" />
+	<zhuti number="202035" />
+	<zhuti number="202036" />
+	<zhuti number="202037" />
+	<zhuti number="202038" />
+	<zhuti number="202039" />
+	<zhuti number="202040" />
+	<zhuti number="201014" time="20240830T160000,20240906T235959" />
+	<zhuti number="201014" time="20240711T160000,20990823T235959" />
+	<zhuti number="201015" />
+	<zhuti number="201016" />
+	<zhuti number="201017" time="20240830T160000,20240906T235959" />
+	<zhuti number="201017" time="20240711T160000,20990823T235959" />
+	<zhuti number="201018" />
+	<zhuti number="202005" />
+	<zhuti number="202006" />
+	<zhuti number="203001" />
+	<zhuti number="203002" />
+	<zhuti number="213001" />
+	<zhuti number="213002" />
+	<zhuti number="213003" />
+	<zhuti number="213004" />
+	<zhuti number="213008" />
+	<zhuti number="213009" />
+	<zhuti number="213010" />
+	<zhuti number="213011" />
+	<zhuti number="213012" />
+	<zhuti number="213013" />
+	<zhuti number="213014" />
+	<zhuti number="213015" />
+	<zhuti number="213016" />
+	<zhuti number="213017" />
+	<zhuti number="213018" />
+	<zhuti number="213019" />
+	<zhuti number="213020" />
+	<zhuti number="213021" />
+	<zhuti number="213022" />
+	<zhuti number="213023" />
+	<zhuti number="213024" />
+	<zhuti number="213025" />
+	<zhuti number="213026" />
+	<zhuti number="213027" />
+	<zhuti number="213028" />
+	<zhuti number="213029" />
+	<zhuti number="213030" />
+	<zhuti number="213031" />
+	<zhuti number="213032" />
+	<zhuti number="213033" />
+	<zhuti number="213034" />
+	<zhuti number="202020" />
+	<zhuti number="202021" />
+	<zhuti number="202007" />
+	<zhuti number="202008" />
+	<zhuti number="202009" />
+	<zhuti number="202010" />
+	<zhuti number="202011" />
+	<zhuti number="202012" />
+	<zhuti number="202013" />
+	<zhuti number="202014" />
+	<zhuti number="202015" />
+	<zhuti number="202016" />
+	<zhuti number="202017" />
+	<zhuti number="202019" />
+	<zhuti number="205005" />
+	<zhuti number="205006" />
+	<zhuti number="205010" />
+	<zhuti number="205011" />
+	<zhuti number="205012" />
+	<zhuti number="206003" />
+	<zhuti number="207002" />
+	<zhuti number="207003" />
+	<zhuti number="207004" />
+	<zhuti number="207005" />
+	<zhuti number="207006" />
+	<zhuti number="207007" />
+	<zhuti number="207008" />
+	<zhuti number="103019" />
+	<zhuti number="103020" />
+	<zhuti number="103021" time="20240711T160000,20240721T235959" />
+	<zhuti number="103022" time="20240711T160000,20240721T235959" />
+	<zhuti number="203021" time="20240711T160000,20240721T235959" />
+	<zhuti number="203022" time="20240711T160000,20240721T235959" />
+	<zhuti number="103024" time="20240830T160000,20240906T235959" />
+	<zhuti number="203024" time="20240830T160000,20240906T235959" />
+</root>

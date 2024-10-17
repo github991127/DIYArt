@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			open	-	是否开启
+1=开启  0=不开启
+			startTime	-	开始时间
+			endTime	-	结束时间
+			duration	-	持续时间
+			pointReward	-	积分奖励任务
+			point	-	积分道具
+			general	-	第七日武将id
+			skin	-	第七日皮肤id
+			oldpointReward	-	老版-积分奖励任务
+			oldpoint	-	老积分道具
+			oldgeneral	-	原第七日武将id
+			newOldPointTime	-	新老积分奖励区分时间
+			noLimitTime	-	不限制时间开始时间-七日盛典整个时间
+			noLimitTabTime	-	不限制时间开始时间-七日盛典整个时间
+			noShowItemId	-	不显示道具id
+		-->
+	<common open="1" startTime="20221102T060000" endTime="20301011T101111" duration="1296000" pointReward="69811,69812,69813,69814,69815,69816,69817" general="440" oldpointReward="69901,69902,69903,69904,69905,69906,69907" newOldPointTime="20230906T060000" noLimitTime="20231120T060000" noLimitTabTime="20240220T060000" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			day	-	天数
+			type	-	类型
+1=牌局
+2=收集强化
+3=活动
+4=社交
+			typeName	-	类型名字
+			taskid	-	任务id
+				-	任务描述
+			jump	-	任务跳转
+			sort	-	任务排序
+			showTime	-	显示时间
+			questText	-	任务条件简称
+			newQuestText	-	新版成长之路任务描述
+			newQuestTips	-	成长之路进度提示
+			rewardText	-	奖励说明
+不可领取说明|可领取说明
+		-->
+	<quest taskid="69001" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69002" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69003" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69004" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69005" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69006" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69011" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69012" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69013" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69014" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69015" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69016" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69017" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69018" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69019" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69020" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69021" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69022" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69023" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69024" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69025" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69026" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69027" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69141" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69142" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69143" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69144" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69145" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69146" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69147" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69148" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69149" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69150" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69151" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69152" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69153" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69154" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69155" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69156" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69157" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69158" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69159" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69101" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69102" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69103" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69104" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69105" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69106" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69107" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69111" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69112" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69113" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69114" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69121" showTime="20230919T060001,20231008T123000" />
+	<quest taskid="69122" showTime="20230919T060001,20231008T123000" />
+	<quest taskid="69115" showTime="20230906T060001,20230919T060000" />
+	<quest taskid="69116" showTime="20230906T060001,20230919T060000" />
+	<quest taskid="69117" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69118" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69119" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69120" showTime="20230906T060001,20231008T101500" />
+	<quest taskid="69123" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69124" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69125" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69126" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69127" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69128" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69129" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69130" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69131" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69132" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69133" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69134" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69135" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69136" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69137" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69138" showTime="20231008T101501,20240131T122000" />
+	<quest taskid="69212" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69213" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69214" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69215" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69216" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69217" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69209" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69210" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69211" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69231" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69232" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69233" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69234" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69235" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69236" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69218" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69219" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69220" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69221" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69222" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69223" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69237" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69238" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69239" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69240" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69241" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69242" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69243" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69244" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69245" showTime="20231017T060001,20240131T122000" />
+	<quest taskid="69271" showTime="20240429T060001,20300129T050000" />
+	<quest taskid="69270" showTime="20240515T000001,20300129T050000" />
+	<quest taskid="69251" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69252" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69253" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69254" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69255" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69256" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69257" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69258" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69259" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69260" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69261" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69262" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69263" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69264" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69265" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69266" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69267" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69268" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69269" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69301" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69302" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69303" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69304" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69305" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69306" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69311" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69312" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69313" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69314" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69315" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69316" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69401" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69402" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69403" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69404" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69405" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69406" showTime="20221102T060000,20230906T060000" />
+	<quest taskid="69411" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69412" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69413" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69414" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69415" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69416" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69417" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69418" showTime="20230906T060001,20240131T122000" />
+	<quest taskid="69419" showTime="20231017T060000,20240131T122000" />
+	<quest taskid="69439" showTime="20240429T060001,20300129T050000" />
+	<quest taskid="69421" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69422" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69423" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69424" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69425" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69426" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69427" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69428" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69429" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69430" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69431" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69432" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69433" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69434" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69435" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69436" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69437" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69438" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69501" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69502" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69503" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69504" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69505" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69506" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69507" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69508" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69509" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69510" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69511" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69512" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69540" showTime="20240515T000001,20300129T050000" />
+	<quest taskid="69521" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69522" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69523" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69524" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69525" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69526" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69527" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69528" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69529" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69530" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69531" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69532" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69533" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69534" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69535" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69536" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69537" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69538" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69539" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69601" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69602" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69603" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69604" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69605" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69606" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69611" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69612" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69613" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69614" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69615" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69616" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69617" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69618" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69619" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69620" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69621" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69622" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69623" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69624" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69625" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69626" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69627" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69628" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69629" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69701" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69702" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69703" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69704" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69705" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69706" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69707" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69708" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69709" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69728" showTime="20240515T000001,20300129T050000" />
+	<quest taskid="69711" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69712" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69713" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69714" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69715" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69716" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69717" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69718" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69719" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69720" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69721" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69722" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69723" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69724" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69725" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69726" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69727" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69801" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69802" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69803" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69804" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69805" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69806" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69807" showTime="20221102T060000,20240131T122000" />
+	<quest taskid="69837" showTime="20240515T000001,20300129T050000" />
+	<quest taskid="69821" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69822" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69823" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69824" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69825" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69826" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69827" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69828" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69829" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69830" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69831" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69832" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69833" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69834" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69835" showTime="20240131T122001,20300129T050000" />
+	<quest taskid="69836" showTime="20240131T122001,20300129T050000" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			day	-	天数
+			id	-	礼包id
+			goods	-	礼包id
+			name	-	礼包名字
+			content	-	礼包中道具
+			price	-	原价
+			discount	-	折扣
+			desc	-	礼包一句话描述
+			special	-	特殊标记奖励
+				-
+		-->
+	<goods day="1" content="910301,1;8100201,1" />
+	<goods day="1" content="8100201,2" />
+	<goods day="2" content="944501,1;8100201,1" />
+	<goods day="2" content="8100201,6" />
+	<goods day="3" content="931101,1;941501,15" />
+	<goods day="3" content="941501,18" />
+	<goods day="4" content="929901,1;1213401,1" />
+	<goods day="4" content="1213301,5" />
+	<goods day="5" content="931301,1;435401,8" />
+	<goods day="5" content="435401,15" />
+	<goods day="6" content="931701,1;435401,8" />
+	<goods day="6" content="8100201,10" />
+	<goods day="7" content="930701,1;8100201,5" />
+	<goods day="7" content="8100201,10" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			day	-	天数
+			taskid	-	任务id
+				-	任务描述
+			jump	-	任务跳转
+			sort	-	任务排序
+				-
+		-->
+</root>

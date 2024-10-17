@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<JunZhuLevel>
+		<!-- <level level="1" totalexp="200"/>
+		<level level="2" totalexp="600"/>
+		<level level="3" totalexp="1200"/>
+		<level level="4" totalexp="2400"/>
+		<level level="5" totalexp="3600"/>
+		<level level="6" totalexp="8400"/>
+		<level level="7" totalexp="13200"/>
+		<level level="8" totalexp="18000"/>
+		<level level="9" totalexp="28000"/>
+		<level level="10" totalexp="39600"/>
+		<level level="11" totalexp="50400"/>
+		<level level="12" totalexp="69600"/> -->
+		
+		<!--君主等级不开放-->
+		
+		<level level="1" totalexp="99999999"/>
+
+	</JunZhuLevel>
+</root>

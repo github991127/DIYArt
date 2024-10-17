@@ -1,0 +1,864 @@
+<?xml version='1.0' encoding='utf-8'?>
+<client>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			limitlevel	-	天牢开启等级
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	ID
+			loginday	-	天数
+			goods	-	奖励道具
+			createTime	-	创角时间区间
+			boygoods	-	男生特殊奖励
+			girlgoods	-	女生特殊奖励
+			vipgoods	-	vip特殊奖励
+			outstand	-	未知
+			type	-	奖励类型
+1=武将
+2=皮肤
+			general	-	对应武将id
+			name	-	奖励名字
+			name	-	奖励名字
+			generalX	-	PC坐标
+配置左侧大图的坐标位置;左侧大图的标签位置
+			m_generalX	-	移动坐标
+配置左侧大图的坐标位置;展示大图的坐标
+		-->
+	<prize7day id="1" loginday="1" goods="100011,200" createTime="20081102T060000,20231129T060000" />
+	<prize7day id="2" loginday="2" goods="892401,1;6093209,1" createTime="20081102T060000,20231129T060000" />
+	<prize7day id="3" loginday="3" goods="903801,1" createTime="20081102T060000,20231129T060000" />
+	<prize7day id="4" loginday="4" goods="8100201,1" createTime="20081102T060000,20231129T060000" />
+	<prize7day id="5" loginday="5" goods="6106309,1" createTime="20081102T060000,20231129T060000" />
+	<prize7day id="6" loginday="6" goods="8100201,1" createTime="20081102T060000,20231129T060000" />
+	<prize7day id="7" loginday="7" goods="6078109,1" createTime="20081102T060000,20231129T060000" />
+	<prize7day id="8" loginday="1" goods="100011,200" createTime="20231129T060001,20301115T060000" />
+	<prize7day id="9" loginday="2" goods="892401,1" createTime="20231129T060001,20301115T060000" />
+	<prize7day id="10" loginday="3" goods="6093209,1" createTime="20231129T060001,20301115T060000" />
+	<prize7day id="11" loginday="4" goods="8100201,2" createTime="20231129T060001,20301115T060000" />
+	<prize7day id="12" loginday="5" goods="944401,1" createTime="20231129T060001,20301115T060000" />
+	<prize7day id="13" loginday="6" goods="8100201,2" createTime="20231129T060001,20301115T060000" />
+	<prize7day id="14" loginday="7" goods="6088709,1" createTime="20231129T060001,20311115T060000" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			modes	-	模式id
+			sections	-	？
+			minlevel	-	等级要求
+			minvip	-	vip等级要求
+		-->
+	<banitem modes="22" sections="3" minlevel="120" minvip="2" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			chapterId	-	篇章id
+			canClick	-	？
+			lockLevel	-	篇章等级
+			toEnterMode	-	？
+			swfSource	-	未知
+			quest_id	-	H5-关联的任务id，用;隔开
+			chapterDesc	-	描述
+		-->
+	<chapter chapterId="1" canClick="1" />
+	<chapter chapterId="2" canClick="1" lockLevel="20" />
+	<chapter chapterId="3" canClick="1" lockLevel="40" />
+	<chapter chapterId="4" canClick="1" lockLevel="50" />
+	<chapter chapterId="5" canClick="1" lockLevel="80" />
+	<chapter chapterId="6" canClick="0" lockLevel="201" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			QiYun	-	总气运值
+			QiYunOnce	-	一次夺宝获得的气运值
+			Cost	-	单抽道具
+			Cost10Times	-	10连抽道具
+			RefreshCost	-	刷新道具
+		-->
+	<DuoBao QiYun="100" QiYunOnce="1" Cost="1142901" Cost10Times="1143001" RefreshCost="1143101">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			BeginTime	-	开始时间
+			EndTime	-	结束时间
+			DropId	-	掉落id
+			ExchangeId	-	兑换库id
+				-	DropId和ExchangeId都是server_item_drops_template_config里的掉落组id
+			-->
+		<item BeginTime="20191025T100000" EndTime="20191108T095959" DropId="40005" ExchangeId="41005" />
+		<item BeginTime="20191108T100000" EndTime="20221122T095959" DropId="40006" ExchangeId="41006" />
+		<item BeginTime="20191122T100000" EndTime="20191206T095959" DropId="40007" ExchangeId="41007" />
+		<item BeginTime="20191206T100000" EndTime="20191220T095959" DropId="40008" ExchangeId="41008" />
+		<item BeginTime="20200624T000000" EndTime="20201004T095959" DropId="40030" ExchangeId="41031" />
+		<item BeginTime="20210101T100001" EndTime="20210107T235958" DropId="40052" ExchangeId="41052" />
+		<item BeginTime="20210108T000001" EndTime="20210115T095958" DropId="40052" ExchangeId="41053" />
+		<item BeginTime="20210115T100001" EndTime="20210119T235958" DropId="40054" ExchangeId="41054" />
+		<item BeginTime="20210120T000001" EndTime="20210120T115958" DropId="40054" ExchangeId="41055" />
+		<item BeginTime="20210120T120001" EndTime="20210128T235958" DropId="40056" ExchangeId="41056" />
+		<item BeginTime="20210129T000001" EndTime="20210205T115958" DropId="40056" ExchangeId="41057" />
+		<item BeginTime="20210205T100001" EndTime="20210210T235958" DropId="40058" ExchangeId="41058" />
+		<item BeginTime="20210211T000001" EndTime="20210219T095958" DropId="40058" ExchangeId="41059" />
+		<item BeginTime="20210219T100001" EndTime="20210225T235958" DropId="40060" ExchangeId="41060" />
+		<item BeginTime="20210226T000001" EndTime="20210305T095958" DropId="40060" ExchangeId="41059" />
+		<item BeginTime="20210305T100001" EndTime="20210311T235958" DropId="40061" ExchangeId="41061" />
+		<item BeginTime="20210312T000001" EndTime="20210319T095958" DropId="40061" ExchangeId="41059" />
+		<item BeginTime="20210309T100001" EndTime="20210325T235958" DropId="40062" ExchangeId="41062" />
+		<item BeginTime="20210326T000001" EndTime="20210326T095958" DropId="40062" ExchangeId="41059" />
+		<item BeginTime="20210326T100001" EndTime="20210402T095958" DropId="40063" ExchangeId="41063" />
+		<item BeginTime="20210402T100001" EndTime="20210408T235958" DropId="40064" ExchangeId="41064" />
+		<item BeginTime="20210409T000001" EndTime="20210409T095958" DropId="40064" ExchangeId="41059" />
+		<item BeginTime="20210409T100001" EndTime="20210415T235959" DropId="40065" ExchangeId="41065" />
+		<item BeginTime="20210416T000001" EndTime="20210416T095958" DropId="40065" ExchangeId="41059" />
+		<item BeginTime="20210416T100001" EndTime="20210422T235958" DropId="40066" ExchangeId="41066" />
+		<item BeginTime="20210423T000001" EndTime="20210430T095958" DropId="40066" ExchangeId="41059" />
+		<item BeginTime="20210430T100001" EndTime="20210506T235958" DropId="40067" ExchangeId="41067" />
+		<item BeginTime="20210507T000001" EndTime="20210505T095958" DropId="40067" ExchangeId="41059" />
+		<item BeginTime="20210507T100001" EndTime="20210514T095958" DropId="40068" ExchangeId="41068" />
+		<item BeginTime="20210514T100001" EndTime="20210521T095958" DropId="40068" ExchangeId="41059" />
+		<item BeginTime="20210521T100001" EndTime="20210527T235958" DropId="40069" ExchangeId="41069" />
+		<item BeginTime="20210528T000001" EndTime="20210528T095958" DropId="40069" ExchangeId="41059" />
+		<item BeginTime="20210528T100001" EndTime="20210604T095958" DropId="40070" ExchangeId="41070" />
+		<item BeginTime="20210604T100001" EndTime="20210611T095958" DropId="40070" ExchangeId="41059" />
+		<item BeginTime="20210611T100001" EndTime="20210617T095958" DropId="40071" ExchangeId="41071" />
+		<item BeginTime="20210618T000001" EndTime="20210625T095958" DropId="40071" ExchangeId="41072" />
+		<item BeginTime="20210625T100001" EndTime="20210701T235958" DropId="40073" ExchangeId="41073" />
+		<item BeginTime="20210702T000001" EndTime="20210702T095958" DropId="40073" ExchangeId="41173" />
+		<item BeginTime="20210702T100001" EndTime="20210708T235958" DropId="40074" ExchangeId="41074" />
+		<item BeginTime="20210709T000001" EndTime="20210716T095958" DropId="40074" ExchangeId="41174" />
+		<item BeginTime="20210716T100001" EndTime="20210722T235958" DropId="40075" ExchangeId="41075" />
+		<item BeginTime="20210723T000001" EndTime="20210730T095958" DropId="40075" ExchangeId="41175" />
+		<item BeginTime="20210730T100001" EndTime="20210805T235958" DropId="40076" ExchangeId="41076" />
+		<item BeginTime="20210806T000001" EndTime="20210813T095958" DropId="40076" ExchangeId="42076" />
+		<item BeginTime="20210813T100001" EndTime="20210819T235958" DropId="40077" ExchangeId="41077" />
+		<item BeginTime="20210820T000001" EndTime="20210827T095958" DropId="40077" ExchangeId="42077" />
+		<item BeginTime="20210827T100001" EndTime="20210903T095958" DropId="40078" ExchangeId="41078" />
+		<item BeginTime="20210903T100001" EndTime="20210909T235958" DropId="40079" ExchangeId="41079" />
+		<item BeginTime="20210910T000001" EndTime="20210910T095958" DropId="40079" ExchangeId="42079" />
+		<item BeginTime="20210910T100001" EndTime="20210916T235958" DropId="40080" ExchangeId="41080" />
+		<item BeginTime="20210917T000001" EndTime="20210917T095958" DropId="40080" ExchangeId="42080" />
+		<item BeginTime="20210917T100001" EndTime="20210925T235959" DropId="40081" ExchangeId="41081" />
+		<item BeginTime="20210926T000001" EndTime="20211001T095959" DropId="40081" ExchangeId="42081" />
+		<item BeginTime="20211001T100000" EndTime="20211008T235959" DropId="40082" ExchangeId="41082" />
+		<item BeginTime="20211009T000000" EndTime="20211015T095959" DropId="40082" ExchangeId="42082" />
+		<item BeginTime="20211015T100000" EndTime="20211021T235959" DropId="40083" ExchangeId="41083" />
+		<item BeginTime="20211022T000000" EndTime="20211022T095959" DropId="40083" ExchangeId="42083" />
+		<item BeginTime="20211022T100000" EndTime="20211028T235959" DropId="40084" ExchangeId="41084" />
+		<item BeginTime="20211029T000000" EndTime="20211105T095959" DropId="40084" ExchangeId="42084" />
+		<item BeginTime="20211105T100000" EndTime="20211112T095959" DropId="40085" ExchangeId="41085" />
+		<item BeginTime="20211112T100000" EndTime="20211118T235959" DropId="40086" ExchangeId="41086" />
+		<item BeginTime="20211119T000000" EndTime="20211119T095959" DropId="40086" ExchangeId="42086" />
+		<item BeginTime="20211119T100000" EndTime="20211125T235959" DropId="40087" ExchangeId="41087" />
+		<item BeginTime="20211126T000000" EndTime="20211126T095959" DropId="40087" ExchangeId="42087" />
+		<item BeginTime="20211126T100000" EndTime="20211202T235959" DropId="40088" ExchangeId="41088" />
+		<item BeginTime="20211123T000000" EndTime="20211210T095959" DropId="40088" ExchangeId="42088" />
+		<item BeginTime="20211210T100000" EndTime="20211218T235959" DropId="40089" ExchangeId="41089" />
+		<item BeginTime="20211219T000000" EndTime="20211224T095959" DropId="40089" ExchangeId="42089" />
+		<item BeginTime="20211224T100000" EndTime="20211231T235959" DropId="40090" ExchangeId="41090" />
+		<item BeginTime="20220101T000000" EndTime="20220110T095959" DropId="40090" ExchangeId="42090" />
+		<item BeginTime="20220110T100000" EndTime="20220115T235959" DropId="40091" ExchangeId="41091" />
+		<item BeginTime="20220116T000000" EndTime="20220124T095959" DropId="40091" ExchangeId="42091" />
+		<item BeginTime="20220124T100000" EndTime="20220129T235959" DropId="40092" ExchangeId="41092" />
+		<item BeginTime="20220130T000000" EndTime="20220130T095959" DropId="40092" ExchangeId="42092" />
+		<item BeginTime="20220130T100000" EndTime="20220206T235959" DropId="40093" ExchangeId="41093" />
+		<item BeginTime="20220207T000000" EndTime="20220207T095959" DropId="40093" ExchangeId="42093" />
+		<item BeginTime="20220207T100000" EndTime="20220211T235959" DropId="40094" ExchangeId="41094" />
+		<item BeginTime="20220212T000000" EndTime="20220212T095959" DropId="40094" ExchangeId="42094" />
+		<item BeginTime="20220212T100000" EndTime="20220220T095959" DropId="40095" ExchangeId="41095" />
+		<item BeginTime="20220220T100000" EndTime="20220224T235959" DropId="40096" ExchangeId="41096" />
+		<item BeginTime="20220225T000000" EndTime="20220225T095959" DropId="40096" ExchangeId="42096" />
+		<item BeginTime="20220225T100000" EndTime="20220303T235959" DropId="40097" ExchangeId="41097" />
+		<item BeginTime="20220304T000000" EndTime="20220304T095959" DropId="40097" ExchangeId="42097" />
+		<item BeginTime="20220304T100000" EndTime="20220311T235959" DropId="40098" ExchangeId="41098" />
+		<item BeginTime="20220312T000000" EndTime="20220312T095959" DropId="40098" ExchangeId="42098" />
+		<item BeginTime="20220312T100000" EndTime="20220318T235959" DropId="40099" ExchangeId="41099" />
+		<item BeginTime="20220319T000000" EndTime="20220319T095959" DropId="40099" ExchangeId="42099" />
+		<item BeginTime="20220319T100000" EndTime="20220324T235959" DropId="40100" ExchangeId="41100" />
+		<item BeginTime="20220325T000000" EndTime="20220325T095959" DropId="40100" ExchangeId="42100" />
+		<item BeginTime="20220325T100000" EndTime="20220331T235959" DropId="40101" ExchangeId="41101" />
+		<item BeginTime="20220401T000000" EndTime="20220401T095959" DropId="40101" ExchangeId="42101" />
+		<item BeginTime="20220401T100000" EndTime="20220409T235959" DropId="40201" ExchangeId="41201" />
+		<item BeginTime="20220410T000000" EndTime="20220410T095959" DropId="40201" ExchangeId="42201" />
+		<item BeginTime="20220410T100000" EndTime="20220414T235959" DropId="40301" ExchangeId="41301" />
+		<item BeginTime="20220415T000000" EndTime="20220415T095959" DropId="40301" ExchangeId="42301" />
+		<item BeginTime="20220415T100000" EndTime="20220422T235959" DropId="40401" ExchangeId="41401" />
+		<item BeginTime="20220423T000000" EndTime="20220423T095959" DropId="40401" ExchangeId="42401" />
+		<item BeginTime="20220423T100000" EndTime="20220428T235959" DropId="40501" ExchangeId="41501" />
+		<item BeginTime="20220429T000000" EndTime="20220429T095959" DropId="40501" ExchangeId="42501" />
+		<item BeginTime="20220429T100000" EndTime="20220507T235959" DropId="40601" ExchangeId="41601" />
+		<item BeginTime="20220508T000000" EndTime="20220508T095959" DropId="40601" ExchangeId="42601" />
+		<item BeginTime="20220508T100000" EndTime="20220514T235959" DropId="40701" ExchangeId="41701" />
+		<item BeginTime="20220515T000000" EndTime="20220515T095959" DropId="40701" ExchangeId="42701" />
+		<item BeginTime="20220515T100000" EndTime="20220519T235959" DropId="40702" ExchangeId="41702" />
+		<item BeginTime="20220520T000000" EndTime="20220520T095959" DropId="40702" ExchangeId="42702" />
+		<item BeginTime="20220520T100000" EndTime="20220526T235959" DropId="40703" ExchangeId="41703" />
+		<item BeginTime="20220527T000000" EndTime="20220527T095959" DropId="40703" ExchangeId="42703" />
+		<item BeginTime="20220527T100000" EndTime="20220602T235959" DropId="40704" ExchangeId="41704" />
+		<item BeginTime="20220603T000000" EndTime="20220603T095959" DropId="40704" ExchangeId="42704" />
+		<item BeginTime="20220603T100000" EndTime="20220611T235959" DropId="40705" ExchangeId="41705" />
+		<item BeginTime="20220612T000000" EndTime="20220612T095959" DropId="40705" ExchangeId="42705" />
+		<item BeginTime="20220612T100000" EndTime="20220617T235959" DropId="40706" ExchangeId="41706" />
+		<item BeginTime="20220618T000000" EndTime="20220618T095959" DropId="40706" ExchangeId="42706" />
+		<item BeginTime="20220618T100000" EndTime="20220624T235959" DropId="40707" ExchangeId="41707" />
+		<item BeginTime="20220625T000000" EndTime="20220625T095959" DropId="40707" ExchangeId="42707" />
+		<item BeginTime="20220625T100000" EndTime="20220630T235959" DropId="40708" ExchangeId="41708" />
+		<item BeginTime="20220701T000000" EndTime="20220701T095959" DropId="40708" ExchangeId="42708" />
+		<item BeginTime="20220701T100000" EndTime="20220708T235959" DropId="40709" ExchangeId="41709" />
+		<item BeginTime="20220709T000000" EndTime="20220709T095959" DropId="40709" ExchangeId="42709" />
+		<item BeginTime="20220709T100000" EndTime="20220715T235959" DropId="40710" ExchangeId="41710" />
+		<item BeginTime="20220716T000000" EndTime="20220716T095959" DropId="40710" ExchangeId="42710" />
+		<item BeginTime="20220716T100000" EndTime="20220723T235959" DropId="40711" ExchangeId="41711" />
+		<item BeginTime="20220724T000000" EndTime="20220724T095959" DropId="40711" ExchangeId="42711" />
+		<item BeginTime="20220724T100000" EndTime="20220729T235959" DropId="40712" ExchangeId="41712" />
+		<item BeginTime="20220730T000000" EndTime="20220807T235959" DropId="40713" ExchangeId="41713" />
+		<item BeginTime="20220808T000000" EndTime="20220812T235959" DropId="40714" ExchangeId="41714" />
+		<item BeginTime="20220813T000001" EndTime="20220819T235959" DropId="40715" ExchangeId="41715" />
+		<item BeginTime="20220820T000000" EndTime="20220827T235959" DropId="40716" ExchangeId="41716" />
+		<item BeginTime="20220828T000000" EndTime="20220901T235959" DropId="40717" ExchangeId="41717" />
+		<item BeginTime="20220902T000000" EndTime="20220908T235959" DropId="40718" ExchangeId="41718" />
+		<item BeginTime="20220909T000000" EndTime="20220918T235959" DropId="40719" ExchangeId="41719" />
+		<item BeginTime="20220919T000000" EndTime="20220923T235959" DropId="40720" ExchangeId="41720" />
+		<item BeginTime="20220924T000000" EndTime="20220930T235959" DropId="40721" ExchangeId="41721" />
+		<item BeginTime="20221001T000000" EndTime="20221009T235959" DropId="40722" ExchangeId="41722" />
+		<item BeginTime="20221010T000000" EndTime="20221014T235959" DropId="40723" ExchangeId="41723" />
+		<item BeginTime="20221015T000000" EndTime="20221021T235959" DropId="40724" ExchangeId="41724" />
+		<item BeginTime="20221022T000000" EndTime="20221028T235959" DropId="40725" ExchangeId="41725" />
+		<item BeginTime="20221029T000000" EndTime="20221104T235959" DropId="40726" ExchangeId="41726" />
+		<item BeginTime="20221105T000000" EndTime="20221110T235959" DropId="40727" ExchangeId="41727" />
+		<item BeginTime="20221111T000000" EndTime="20221118T235959" DropId="40728" ExchangeId="41728" />
+		<item BeginTime="20221119T000000" EndTime="20221125T235959" DropId="40729" ExchangeId="41729" />
+		<item BeginTime="20221126T000000" EndTime="20221202T235959" DropId="40730" ExchangeId="41730" />
+		<item BeginTime="20221203T000000" EndTime="20221209T235959" DropId="40731" ExchangeId="41731" />
+		<item BeginTime="20221210T000000" EndTime="20221218T235959" DropId="40732" ExchangeId="41732" />
+		<item BeginTime="20221219T000000" EndTime="20221223T235959" DropId="40733" ExchangeId="41733" />
+		<item BeginTime="20221224T000000" EndTime="20221230T235959" DropId="40734" ExchangeId="41734" />
+		<item BeginTime="20221231T000000" EndTime="20230106T235959" DropId="40735" ExchangeId="41735" />
+		<item BeginTime="20230107T000000" EndTime="20230113T235959" DropId="40736" ExchangeId="41736" />
+		<item BeginTime="20230114T000000" EndTime="20230120T235959" DropId="40737" ExchangeId="41737" />
+		<item BeginTime="20230121T000000" EndTime="20230128T235959" DropId="40738" ExchangeId="41738" />
+		<item BeginTime="20230129T000000" EndTime="20230203T235959" DropId="40739" ExchangeId="41739" />
+		<item BeginTime="20230204T000000" EndTime="20230210T235959" DropId="40740" ExchangeId="41740" />
+		<item BeginTime="20230211T000000" EndTime="20230217T235959" DropId="40741" ExchangeId="41741" />
+		<item BeginTime="20230218T000000" EndTime="20230224T235959" DropId="40742" ExchangeId="41742" />
+		<item BeginTime="20230225T000000" EndTime="20230302T235959" DropId="40743" ExchangeId="41743" />
+		<item BeginTime="20230303T000000" EndTime="20230310T235959" DropId="40744" ExchangeId="41744" />
+		<item BeginTime="20230311T000000" EndTime="20230317T235959" DropId="40745" ExchangeId="41745" />
+		<item BeginTime="20230318T000000" EndTime="20230324T235959" DropId="40746" ExchangeId="41746" />
+		<item BeginTime="20230325T000000" EndTime="20230331T235959" DropId="40747" ExchangeId="41747" />
+		<item BeginTime="20230401T000000" EndTime="20230408T235959" DropId="40748" ExchangeId="41748" />
+		<item BeginTime="20230409T000000" EndTime="20230414T235959" DropId="40749" ExchangeId="41749" />
+		<item BeginTime="20230415T000000" EndTime="20230421T235959" DropId="40750" ExchangeId="41750" />
+		<item BeginTime="20230422T000000" EndTime="20230428T235959" DropId="40751" ExchangeId="41751" />
+		<item BeginTime="20230429T000000" EndTime="20230506T235959" DropId="40752" ExchangeId="41752" />
+		<item BeginTime="20230507T000001" EndTime="20230512T235959" DropId="40753" ExchangeId="41753" />
+		<item BeginTime="20230513T000000" EndTime="20230519T235959" DropId="40754" ExchangeId="41754" />
+		<item BeginTime="20230520T000000" EndTime="20230526T235959" DropId="40755" ExchangeId="41755" />
+		<item BeginTime="20230527T000000" EndTime="20230602T235959" DropId="40756" ExchangeId="41756" />
+		<item BeginTime="20230603T000000" EndTime="20230609T235959" DropId="40757" ExchangeId="41757" />
+		<item BeginTime="20230610T000000" EndTime="20230616T235959" DropId="40758" ExchangeId="41758" />
+		<item BeginTime="20230617T000000" EndTime="20230625T235959" DropId="40759" ExchangeId="41759" />
+		<item BeginTime="20230626T000000" EndTime="20230630T235959" DropId="40760" ExchangeId="41760" />
+		<item BeginTime="20230701T000000" EndTime="20230707T235959" DropId="40761" ExchangeId="41761" />
+		<item BeginTime="20230708T000000" EndTime="20230715T235959" DropId="40762" ExchangeId="41762" />
+		<item BeginTime="20230716T000000" EndTime="20230721T235959" DropId="40763" ExchangeId="41763" />
+		<item BeginTime="20230722T000000" EndTime="20230728T235959" DropId="40764" ExchangeId="41764" />
+		<item BeginTime="20230729T000000" EndTime="20230804T235959" DropId="40765" ExchangeId="41765" />
+		<item BeginTime="20230805T000000" EndTime="20230811T235959" DropId="40766" ExchangeId="41766" />
+		<item BeginTime="20230812T000000" EndTime="20230818T235959" DropId="40767" ExchangeId="41767" />
+		<item BeginTime="20230819T000000" EndTime="20230826T235959" DropId="40768" ExchangeId="41768" />
+		<item BeginTime="20230827T000000" EndTime="20230901T235959" DropId="40769" ExchangeId="41769" />
+		<item BeginTime="20230902T000000" EndTime="20230908T235959" DropId="40770" ExchangeId="41770" />
+		<item BeginTime="20230909T000000" EndTime="20230916T235959" DropId="40771" ExchangeId="41771" />
+		<item BeginTime="20230917T000000" EndTime="20230922T235959" DropId="40772" ExchangeId="41772" />
+		<item BeginTime="20230923T000000" EndTime="20230927T235959" DropId="40773" ExchangeId="41773" />
+		<item BeginTime="20230928T000000" EndTime="20231007T235959" DropId="40774" ExchangeId="41774" />
+		<item BeginTime="20231008T000000" EndTime="20231013T235959" DropId="40775" ExchangeId="41775" />
+		<item BeginTime="20231014T000000" EndTime="20231020T235959" DropId="40776" ExchangeId="41776" />
+		<item BeginTime="20231021T000000" EndTime="20231027T235959" DropId="40777" ExchangeId="41777" />
+		<item BeginTime="20231028T000000" EndTime="20231103T235959" DropId="40778" ExchangeId="41778" />
+		<item BeginTime="20231104T000000" EndTime="20231110T235959" DropId="40779" ExchangeId="41779" />
+		<item BeginTime="20231111T000000" EndTime="20231118T235959" DropId="40780" ExchangeId="41780" />
+		<item BeginTime="20231119T000000" EndTime="20231124T235959" DropId="40781" ExchangeId="41781" />
+		<item BeginTime="20231125T000000" EndTime="20231201T235959" DropId="40782" ExchangeId="41782" />
+		<item BeginTime="20231202T000000" EndTime="20231208T235959" DropId="40783" ExchangeId="41783" />
+		<item BeginTime="20231209T000000" EndTime="20231215T235959" DropId="40784" ExchangeId="41784" />
+		<item BeginTime="20231216T000000" EndTime="20231223T235959" DropId="40785" ExchangeId="41785" />
+		<item BeginTime="20231224T000000" EndTime="20231229T235959" DropId="40786" ExchangeId="41786" />
+		<item BeginTime="20231230T000000" EndTime="20240106T235959" DropId="40787" ExchangeId="41787" />
+		<item BeginTime="20240107T000000" EndTime="20240114T235959" DropId="40788" ExchangeId="41788" />
+		<item BeginTime="20240115T000000" EndTime="20240119T235959" DropId="40789" ExchangeId="41789" />
+		<item BeginTime="20240120T000000" EndTime="20240126T235959" DropId="40790" ExchangeId="41790" />
+		<item BeginTime="20240127T000000" EndTime="20240202T235959" DropId="40791" ExchangeId="41791" />
+		<item BeginTime="20240203T000000" EndTime="20240208T235959" DropId="40792" ExchangeId="41792" />
+		<item BeginTime="20240209T000000" EndTime="20240218T235959" DropId="40793" ExchangeId="41793" />
+		<item BeginTime="20240219T000000" EndTime="20240223T235959" DropId="40794" ExchangeId="41794" />
+		<item BeginTime="20240224T000000" EndTime="20240301T235959" DropId="40795" ExchangeId="41795" />
+		<item BeginTime="20240302T000000" EndTime="20240309T235959" DropId="40796" ExchangeId="41796" />
+		<item BeginTime="20240310T000000" EndTime="20240315T235959" DropId="40797" ExchangeId="41797" />
+		<item BeginTime="20240316T000000" EndTime="20240322T235959" DropId="40798" ExchangeId="41798" />
+		<item BeginTime="20240323T000000" EndTime="20240329T235959" DropId="40799" ExchangeId="41799" />
+		<item BeginTime="20240330T000000" EndTime="20240403T235959" DropId="40800" ExchangeId="41800" />
+		<item BeginTime="20240404T000000" EndTime="20240412T235959" DropId="40801" ExchangeId="41801" />
+		<item BeginTime="20240413T000000" EndTime="20240418T235959" DropId="40802" ExchangeId="41802" />
+		<item BeginTime="20240419T000000" EndTime="20240425T235959" DropId="40803" ExchangeId="41803" />
+		<item BeginTime="20240426T000000" EndTime="20240429T235959" DropId="40804" ExchangeId="41804" />
+		<item BeginTime="20240430T000000" EndTime="20240509T235959" DropId="40805" ExchangeId="41805" />
+		<item BeginTime="20240510T000000" EndTime="20240516T235959" DropId="40806" ExchangeId="41806" />
+		<item BeginTime="20240517T000000" EndTime="20240524T235959" DropId="40807" ExchangeId="41807" />
+		<item BeginTime="20240525T000000" EndTime="20240531T235959" DropId="40808" ExchangeId="41808" />
+		<item BeginTime="20240601T000000" EndTime="20240607T235959" DropId="40809" ExchangeId="41809" />
+		<item BeginTime="20240608T000000" EndTime="20240615T235959" DropId="40810" ExchangeId="41810" />
+		<item BeginTime="20240616T000000" EndTime="20240621T235959" DropId="40811" ExchangeId="41811" />
+		<item BeginTime="20240622T000000" EndTime="20240628T235959" DropId="40812" ExchangeId="41812" />
+		<item BeginTime="20240629T000000" EndTime="20240705T235959" DropId="40813" ExchangeId="41813" />
+		<item BeginTime="20240706T000000" EndTime="20240712T235959" DropId="40814" ExchangeId="41814" />
+		<item BeginTime="20240713T000000" EndTime="20240721T235959" DropId="40815" ExchangeId="41815" />
+		<item BeginTime="20240722T000000" EndTime="20240726T235959" DropId="40816" ExchangeId="41816" />
+		<item BeginTime="20240727T000000" EndTime="20240802T235959" DropId="40817" ExchangeId="41817" />
+		<item BeginTime="20240803T000000" EndTime="20240809T235959" DropId="40818" ExchangeId="41818" />
+		<item BeginTime="20240810T000000" EndTime="20240818T235959" DropId="40819" ExchangeId="41819" />
+		<item BeginTime="20240819T000000" EndTime="20240823T235959" DropId="40820" ExchangeId="41820" />
+		<item BeginTime="20240824T000000" EndTime="20240830T235959" DropId="40821" ExchangeId="41821" />
+		<item BeginTime="20240831T000000" EndTime="20240907T235959" DropId="40822" ExchangeId="41822" />
+		<item BeginTime="20240908T000000" EndTime="20240914T235959" DropId="40823" ExchangeId="41823" />
+	</DuoBao>
+	<loginprize>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			month	-	月份
+			loginday	-	天数
+			goods	-	奖励
+			vipgoods	-	vip奖励
+			viplevel	-	vip等级要求
+			-->
+		<bigprize month="1" loginday="1" goods="1232101,1" />
+		<bigprize month="1" loginday="2" goods="1210501,1" />
+		<bigprize month="1" loginday="3" goods="1210501,1" />
+		<bigprize month="1" loginday="4" goods="100201,5" />
+		<bigprize month="1" loginday="5" goods="112101,5" />
+		<bigprize month="1" loginday="6" goods="1213201,1" />
+		<bigprize month="1" loginday="7" goods="1218501,1" vipgoods="435401,1" viplevel="3" />
+		<bigprize month="1" loginday="8" goods="1232101,1" />
+		<bigprize month="1" loginday="9" goods="1210501,1" />
+		<bigprize month="1" loginday="10" goods="1210501,1" />
+		<bigprize month="1" loginday="11" goods="100301,5" />
+		<bigprize month="1" loginday="12" goods="112101,8" />
+		<bigprize month="1" loginday="13" goods="111801,50" />
+		<bigprize month="1" loginday="14" goods="1218501,1" vipgoods="435401,2" viplevel="3" />
+		<bigprize month="1" loginday="15" goods="1232101,1" />
+		<bigprize month="1" loginday="16" goods="1210501,2" />
+		<bigprize month="1" loginday="17" goods="1210501,1" />
+		<bigprize month="1" loginday="18" goods="100401,5" />
+		<bigprize month="1" loginday="19" goods="112101,10" />
+		<bigprize month="1" loginday="20" goods="1213201,2" />
+		<bigprize month="1" loginday="21" goods="1218501,2" vipgoods="1213301,1" viplevel="3" />
+		<bigprize month="1" loginday="22" goods="1245701,1" />
+		<bigprize month="1" loginday="23" goods="1210501,2" />
+		<bigprize month="1" loginday="24" goods="1210501,1" />
+		<bigprize month="1" loginday="25" goods="100301,5" />
+		<bigprize month="1" loginday="26" goods="435401,1" />
+		<bigprize month="1" loginday="27" goods="111801,100" />
+		<bigprize month="1" loginday="28" goods="1218501,2" />
+		<bigprize month="1" loginday="29" goods="11361301,1" />
+		<bigprize month="1" loginday="30" goods="11313301,1" />
+		<bigprize month="1" loginday="31" goods="435601,1" />
+		<bigprize month="2" loginday="1" goods="1232101,1" />
+		<bigprize month="2" loginday="2" goods="1210501,1" />
+		<bigprize month="2" loginday="3" goods="1210501,1" />
+		<bigprize month="2" loginday="4" goods="100201,5" />
+		<bigprize month="2" loginday="5" goods="112101,5" />
+		<bigprize month="2" loginday="6" goods="1213201,1" />
+		<bigprize month="2" loginday="7" goods="1218501,1" vipgoods="435401,1" viplevel="3" />
+		<bigprize month="2" loginday="8" goods="1232101,1" />
+		<bigprize month="2" loginday="9" goods="1210501,1" />
+		<bigprize month="2" loginday="10" goods="1210501,1" />
+		<bigprize month="2" loginday="11" goods="100301,5" />
+		<bigprize month="2" loginday="12" goods="112101,8" />
+		<bigprize month="2" loginday="13" goods="111801,50" />
+		<bigprize month="2" loginday="14" goods="1218501,1" vipgoods="435401,2" viplevel="3" />
+		<bigprize month="2" loginday="15" goods="1232101,1" />
+		<bigprize month="2" loginday="16" goods="1210501,2" />
+		<bigprize month="2" loginday="17" goods="1210501,1" />
+		<bigprize month="2" loginday="18" goods="100401,5" />
+		<bigprize month="2" loginday="19" goods="112101,10" />
+		<bigprize month="2" loginday="20" goods="1213201,2" />
+		<bigprize month="2" loginday="21" goods="1218501,2" vipgoods="1213301,1" viplevel="3" />
+		<bigprize month="2" loginday="22" goods="1248801,1" />
+		<bigprize month="2" loginday="23" goods="1210501,2" />
+		<bigprize month="2" loginday="24" goods="1210501,1" />
+		<bigprize month="2" loginday="25" goods="100301,5" />
+		<bigprize month="2" loginday="26" goods="8100201,1" />
+		<bigprize month="2" loginday="27" goods="111801,100" />
+		<bigprize month="2" loginday="28" goods="1248901,1" />
+		<bigprize month="3" loginday="1" goods="1232101,1" />
+		<bigprize month="3" loginday="2" goods="1210501,1" />
+		<bigprize month="3" loginday="3" goods="1210501,1" />
+		<bigprize month="3" loginday="4" goods="100201,5" />
+		<bigprize month="3" loginday="5" goods="112101,5" />
+		<bigprize month="3" loginday="6" goods="1213201,1" />
+		<bigprize month="3" loginday="7" goods="1218501,1" vipgoods="435401,1" viplevel="3" />
+		<bigprize month="3" loginday="8" goods="1232101,1" />
+		<bigprize month="3" loginday="9" goods="1210501,1" />
+		<bigprize month="3" loginday="10" goods="1210501,1" />
+		<bigprize month="3" loginday="11" goods="100301,5" />
+		<bigprize month="3" loginday="12" goods="112101,8" />
+		<bigprize month="3" loginday="13" goods="111801,50" />
+		<bigprize month="3" loginday="14" goods="4024709,1" vipgoods="435401,2" viplevel="3" />
+		<bigprize month="3" loginday="15" goods="1232101,1" />
+		<bigprize month="3" loginday="16" goods="1210501,2" />
+		<bigprize month="3" loginday="17" goods="1210501,1" />
+		<bigprize month="3" loginday="18" goods="100401,5" />
+		<bigprize month="3" loginday="19" goods="112101,10" />
+		<bigprize month="3" loginday="20" goods="1213201,2" />
+		<bigprize month="3" loginday="21" goods="859009,1" vipgoods="1213301,1" viplevel="3" />
+		<bigprize month="3" loginday="22" goods="1249701,1" />
+		<bigprize month="3" loginday="23" goods="1210501,2" />
+		<bigprize month="3" loginday="24" goods="1210501,1" />
+		<bigprize month="3" loginday="25" goods="100301,5" />
+		<bigprize month="3" loginday="26" goods="11337901,1" />
+		<bigprize month="3" loginday="27" goods="111801,100" />
+		<bigprize month="3" loginday="28" goods="5035709,1" />
+		<bigprize month="3" loginday="29" goods="11367901,1" />
+		<bigprize month="3" loginday="30" goods="11313301,1" />
+		<bigprize month="3" loginday="31" goods="11378101,1" />
+		<bigprize month="4" loginday="1" goods="1232101,1" />
+		<bigprize month="4" loginday="2" goods="1210501,1" />
+		<bigprize month="4" loginday="3" goods="1210501,1" />
+		<bigprize month="4" loginday="4" goods="100201,5" />
+		<bigprize month="4" loginday="5" goods="9020101,150" />
+		<bigprize month="4" loginday="6" goods="1213201,1" />
+		<bigprize month="4" loginday="7" goods="1218501,1" vipgoods="435401,1" viplevel="3" />
+		<bigprize month="4" loginday="8" goods="1232101,1" />
+		<bigprize month="4" loginday="9" goods="1210501,1" />
+		<bigprize month="4" loginday="10" goods="1210501,1" />
+		<bigprize month="4" loginday="11" goods="100301,5" />
+		<bigprize month="4" loginday="12" goods="9020101,150" />
+		<bigprize month="4" loginday="13" goods="111801,50" />
+		<bigprize month="4" loginday="14" goods="4080609,1" vipgoods="435401,2" viplevel="3" />
+		<bigprize month="4" loginday="15" goods="1232101,1" />
+		<bigprize month="4" loginday="16" goods="1210501,2" />
+		<bigprize month="4" loginday="17" goods="1210501,1" />
+		<bigprize month="4" loginday="18" goods="100401,5" />
+		<bigprize month="4" loginday="19" goods="9020101,150" />
+		<bigprize month="4" loginday="20" goods="1213201,2" />
+		<bigprize month="4" loginday="21" goods="3270909,1" vipgoods="1213301,1" viplevel="3" />
+		<bigprize month="4" loginday="22" goods="1251701,1" />
+		<bigprize month="4" loginday="23" goods="1210501,2" />
+		<bigprize month="4" loginday="24" goods="1210501,1" />
+		<bigprize month="4" loginday="25" goods="100301,5" />
+		<bigprize month="4" loginday="26" goods="9020101,150" />
+		<bigprize month="4" loginday="27" goods="111801,100" />
+		<bigprize month="4" loginday="28" goods="5103009,1" />
+		<bigprize month="4" loginday="29" goods="1210501,2" />
+		<bigprize month="4" loginday="30" goods="11378101,1" />
+		<bigprize month="5" loginday="1" goods="1232101,1" />
+		<bigprize month="5" loginday="2" goods="1210501,1" />
+		<bigprize month="5" loginday="3" goods="1210501,1" />
+		<bigprize month="5" loginday="4" goods="100201,5" />
+		<bigprize month="5" loginday="5" goods="112101,5" />
+		<bigprize month="5" loginday="6" goods="1213201,1" />
+		<bigprize month="5" loginday="7" goods="1218501,1" vipgoods="435401,1" viplevel="3" />
+		<bigprize month="5" loginday="8" goods="1232101,1" />
+		<bigprize month="5" loginday="9" goods="1210501,1" />
+		<bigprize month="5" loginday="10" goods="1210501,1" />
+		<bigprize month="5" loginday="11" goods="100301,5" />
+		<bigprize month="5" loginday="12" goods="112101,8" />
+		<bigprize month="5" loginday="13" goods="111801,50" />
+		<bigprize month="5" loginday="14" goods="4082409,1" vipgoods="435401,2" viplevel="3" />
+		<bigprize month="5" loginday="15" goods="1232101,1" />
+		<bigprize month="5" loginday="16" goods="1210501,2" />
+		<bigprize month="5" loginday="17" goods="1210501,1" />
+		<bigprize month="5" loginday="18" goods="100401,5" />
+		<bigprize month="5" loginday="19" goods="112101,10" />
+		<bigprize month="5" loginday="20" goods="1213201,2" />
+		<bigprize month="5" loginday="21" goods="3279409,1" vipgoods="1213301,1" viplevel="3" />
+		<bigprize month="5" loginday="22" goods="1253001,1" />
+		<bigprize month="5" loginday="23" goods="1210501,2" />
+		<bigprize month="5" loginday="24" goods="1210501,1" />
+		<bigprize month="5" loginday="25" goods="100301,5" />
+		<bigprize month="5" loginday="26" goods="11337901,1" />
+		<bigprize month="5" loginday="27" goods="111801,100" />
+		<bigprize month="5" loginday="28" goods="5104609,1" />
+		<bigprize month="5" loginday="29" goods="11367901,1" />
+		<bigprize month="5" loginday="30" goods="11313301,1" />
+		<bigprize month="5" loginday="31" goods="11378101,1" />
+		<bigprize month="6" loginday="1" goods="1232101,1" />
+		<bigprize month="6" loginday="2" goods="1210501,1" />
+		<bigprize month="6" loginday="3" goods="1210501,1" />
+		<bigprize month="6" loginday="4" goods="100201,5" />
+		<bigprize month="6" loginday="5" goods="112101,5" />
+		<bigprize month="6" loginday="6" goods="1213201,1" />
+		<bigprize month="6" loginday="7" goods="1218501,1" vipgoods="435401,1" viplevel="3" />
+		<bigprize month="6" loginday="8" goods="1232101,1" />
+		<bigprize month="6" loginday="9" goods="1210501,1" />
+		<bigprize month="6" loginday="10" goods="1210501,1" />
+		<bigprize month="6" loginday="11" goods="100301,5" />
+		<bigprize month="6" loginday="12" goods="112101,8" />
+		<bigprize month="6" loginday="13" goods="111801,50" />
+		<bigprize month="6" loginday="14" goods="4081309,1" vipgoods="435401,2" viplevel="3" />
+		<bigprize month="6" loginday="15" goods="1232101,1" />
+		<bigprize month="6" loginday="16" goods="1210501,2" />
+		<bigprize month="6" loginday="17" goods="1210501,1" />
+		<bigprize month="6" loginday="18" goods="100401,5" />
+		<bigprize month="6" loginday="19" goods="112101,10" />
+		<bigprize month="6" loginday="20" goods="1213201,2" />
+		<bigprize month="6" loginday="21" goods="3273109,1" vipgoods="1213301,1" viplevel="3" />
+		<bigprize month="6" loginday="22" goods="1257101,1" />
+		<bigprize month="6" loginday="23" goods="1210501,2" />
+		<bigprize month="6" loginday="24" goods="1210501,1" />
+		<bigprize month="6" loginday="25" goods="100301,5" />
+		<bigprize month="6" loginday="26" goods="11337901,1" />
+		<bigprize month="6" loginday="27" goods="111801,100" />
+		<bigprize month="6" loginday="28" goods="5103709,1" />
+		<bigprize month="6" loginday="29" goods="11367901,1" />
+		<bigprize month="6" loginday="30" goods="1210401,1" />
+		<bigprize month="7" loginday="1" goods="1232101,1" />
+		<bigprize month="7" loginday="2" goods="1210501,1" />
+		<bigprize month="7" loginday="3" goods="1210501,1" />
+		<bigprize month="7" loginday="4" goods="100201,5" />
+		<bigprize month="7" loginday="5" goods="112101,5" />
+		<bigprize month="7" loginday="6" goods="1213201,1" />
+		<bigprize month="7" loginday="7" goods="1218501,1" vipgoods="435401,1" viplevel="3" />
+		<bigprize month="7" loginday="8" goods="1232101,1" />
+		<bigprize month="7" loginday="9" goods="1210501,1" />
+		<bigprize month="7" loginday="10" goods="1210501,1" />
+		<bigprize month="7" loginday="11" goods="100301,5" />
+		<bigprize month="7" loginday="12" goods="112101,8" />
+		<bigprize month="7" loginday="13" goods="111801,50" />
+		<bigprize month="7" loginday="14" goods="1218501,1" vipgoods="435401,2" viplevel="3" />
+		<bigprize month="7" loginday="15" goods="1232101,1" />
+		<bigprize month="7" loginday="16" goods="1210501,2" />
+		<bigprize month="7" loginday="17" goods="1210501,1" />
+		<bigprize month="7" loginday="18" goods="100401,5" />
+		<bigprize month="7" loginday="19" goods="112101,10" />
+		<bigprize month="7" loginday="20" goods="1213201,2" />
+		<bigprize month="7" loginday="21" goods="1218501,1" vipgoods="1213301,1" viplevel="3" />
+		<bigprize month="7" loginday="22" goods="1264101,1" />
+		<bigprize month="7" loginday="23" goods="1210501,2" />
+		<bigprize month="7" loginday="24" goods="1210501,1" />
+		<bigprize month="7" loginday="25" goods="100301,5" />
+		<bigprize month="7" loginday="26" goods="11337901,1" />
+		<bigprize month="7" loginday="27" goods="111801,100" />
+		<bigprize month="7" loginday="28" goods="1218501,2" />
+		<bigprize month="7" loginday="29" goods="11367901,1" />
+		<bigprize month="7" loginday="30" goods="1210401,1" />
+		<bigprize month="7" loginday="31" goods="11378101,1" />
+		<bigprize month="8" loginday="1" goods="1232101,1" />
+		<bigprize month="8" loginday="2" goods="1210501,1" />
+		<bigprize month="8" loginday="3" goods="100603,1" />
+		<bigprize month="8" loginday="4" goods="112101,5" />
+		<bigprize month="8" loginday="5" goods="1210501,1" />
+		<bigprize month="8" loginday="6" goods="1213201,1" />
+		<bigprize month="8" loginday="7" goods="1218501,1" vipgoods="435401,1" viplevel="3" />
+		<bigprize month="8" loginday="8" goods="1232101,1" />
+		<bigprize month="8" loginday="9" goods="1210501,1" />
+		<bigprize month="8" loginday="10" goods="100603,1" />
+		<bigprize month="8" loginday="11" goods="112101,8" />
+		<bigprize month="8" loginday="12" goods="1210501,1" />
+		<bigprize month="8" loginday="13" goods="111801,50" />
+		<bigprize month="8" loginday="14" goods="1218501,1" vipgoods="435401,2" viplevel="3" />
+		<bigprize month="8" loginday="15" goods="1232101,1" />
+		<bigprize month="8" loginday="16" goods="1210501,1" />
+		<bigprize month="8" loginday="17" goods="100201,3" />
+		<bigprize month="8" loginday="18" goods="112101,10" />
+		<bigprize month="8" loginday="19" goods="1210501,2" />
+		<bigprize month="8" loginday="20" goods="1213201,2" />
+		<bigprize month="8" loginday="21" goods="1218501,1" vipgoods="1213301,1" viplevel="3" />
+		<bigprize month="8" loginday="22" goods="1269201,1" />
+		<bigprize month="8" loginday="23" goods="1210501,1" />
+		<bigprize month="8" loginday="24" goods="100401,5" />
+		<bigprize month="8" loginday="25" goods="435401,1" />
+		<bigprize month="8" loginday="26" goods="1210501,2" />
+		<bigprize month="8" loginday="27" goods="111801,100" />
+		<bigprize month="8" loginday="28" goods="1218501,2" />
+		<bigprize month="8" loginday="29" goods="1220301,1" />
+		<bigprize month="8" loginday="30" goods="1210401,1" />
+		<bigprize month="8" loginday="31" goods="645407,2" />
+		<bigprize month="9" loginday="1" goods="1232101,1" />
+		<bigprize month="9" loginday="2" goods="1210501,1" />
+		<bigprize month="9" loginday="3" goods="100603,1" />
+		<bigprize month="9" loginday="4" goods="112101,5" />
+		<bigprize month="9" loginday="5" goods="1210501,1" />
+		<bigprize month="9" loginday="6" goods="1213201,1" />
+		<bigprize month="9" loginday="7" goods="1218501,1" vipgoods="435401,1" viplevel="3" />
+		<bigprize month="9" loginday="8" goods="1232101,1" />
+		<bigprize month="9" loginday="9" goods="1210501,1" />
+		<bigprize month="9" loginday="10" goods="100603,1" />
+		<bigprize month="9" loginday="11" goods="112101,8" />
+		<bigprize month="9" loginday="12" goods="1210501,1" />
+		<bigprize month="9" loginday="13" goods="111801,50" />
+		<bigprize month="9" loginday="14" goods="1218501,1" vipgoods="435401,2" viplevel="3" />
+		<bigprize month="9" loginday="15" goods="1232101,1" />
+		<bigprize month="9" loginday="16" goods="1210501,1" />
+		<bigprize month="9" loginday="17" goods="100201,3" />
+		<bigprize month="9" loginday="18" goods="112101,10" />
+		<bigprize month="9" loginday="19" goods="1210501,2" />
+		<bigprize month="9" loginday="20" goods="1213201,2" />
+		<bigprize month="9" loginday="21" goods="1218501,2" vipgoods="1213301,1" viplevel="3" />
+		<bigprize month="9" loginday="22" goods="1272701,1" />
+		<bigprize month="9" loginday="23" goods="1210501,1" />
+		<bigprize month="9" loginday="24" goods="100401,5" />
+		<bigprize month="9" loginday="25" goods="435401,1" />
+		<bigprize month="9" loginday="26" goods="1210501,2" />
+		<bigprize month="9" loginday="27" goods="111801,100" />
+		<bigprize month="9" loginday="28" goods="1218501,2" />
+		<bigprize month="9" loginday="29" goods="1220301,1" />
+		<bigprize month="9" loginday="30" goods="1210401,1" />
+		<bigprize month="10" loginday="1" goods="1232101,1" />
+		<bigprize month="10" loginday="2" goods="1210501,1" />
+		<bigprize month="10" loginday="3" goods="100603,1" />
+		<bigprize month="10" loginday="4" goods="112101,5" />
+		<bigprize month="10" loginday="5" goods="1210501,1" />
+		<bigprize month="10" loginday="6" goods="1213201,1" />
+		<bigprize month="10" loginday="7" goods="1218501,1" vipgoods="435401,1" viplevel="3" />
+		<bigprize month="10" loginday="8" goods="1232101,1" />
+		<bigprize month="10" loginday="9" goods="1210501,1" />
+		<bigprize month="10" loginday="10" goods="100603,1" />
+		<bigprize month="10" loginday="11" goods="112101,8" />
+		<bigprize month="10" loginday="12" goods="1210501,1" />
+		<bigprize month="10" loginday="13" goods="111801,50" />
+		<bigprize month="10" loginday="14" goods="1218501,1" vipgoods="435401,2" viplevel="3" />
+		<bigprize month="10" loginday="15" goods="1232101,1" />
+		<bigprize month="10" loginday="16" goods="1210501,1" />
+		<bigprize month="10" loginday="17" goods="100201,3" />
+		<bigprize month="10" loginday="18" goods="112101,10" />
+		<bigprize month="10" loginday="19" goods="1210501,2" />
+		<bigprize month="10" loginday="20" goods="1213201,2" />
+		<bigprize month="10" loginday="21" goods="1218501,2" vipgoods="1213301,1" viplevel="3" />
+		<bigprize month="10" loginday="22" goods="1277301,1" />
+		<bigprize month="10" loginday="23" goods="1210501,1" />
+		<bigprize month="10" loginday="24" goods="100401,5" />
+		<bigprize month="10" loginday="25" goods="435401,1" />
+		<bigprize month="10" loginday="26" goods="1210501,2" />
+		<bigprize month="10" loginday="27" goods="111801,100" />
+		<bigprize month="10" loginday="28" goods="1218501,2" />
+		<bigprize month="10" loginday="29" goods="1220301,1" />
+		<bigprize month="10" loginday="30" goods="1210401,1" />
+		<bigprize month="10" loginday="31" goods="6015707,2" />
+		<bigprize month="11" loginday="1" goods="1232101,1" />
+		<bigprize month="11" loginday="2" goods="1210501,1" />
+		<bigprize month="11" loginday="3" goods="100603,1" />
+		<bigprize month="11" loginday="4" goods="112101,5" />
+		<bigprize month="11" loginday="5" goods="1210501,1" />
+		<bigprize month="11" loginday="6" goods="1213201,1" />
+		<bigprize month="11" loginday="7" goods="1218501,1" vipgoods="435401,1" viplevel="3" />
+		<bigprize month="11" loginday="8" goods="1232101,1" />
+		<bigprize month="11" loginday="9" goods="1210501,1" />
+		<bigprize month="11" loginday="10" goods="100603,1" />
+		<bigprize month="11" loginday="11" goods="112101,8" />
+		<bigprize month="11" loginday="12" goods="1210501,1" />
+		<bigprize month="11" loginday="13" goods="111801,50" />
+		<bigprize month="11" loginday="14" goods="1218501,1" vipgoods="435401,2" viplevel="3" />
+		<bigprize month="11" loginday="15" goods="1232101,1" />
+		<bigprize month="11" loginday="16" goods="1210501,1" />
+		<bigprize month="11" loginday="17" goods="100201,3" />
+		<bigprize month="11" loginday="18" goods="112101,10" />
+		<bigprize month="11" loginday="19" goods="1210501,2" />
+		<bigprize month="11" loginday="20" goods="1213201,2" />
+		<bigprize month="11" loginday="21" goods="1218501,2" vipgoods="1213301,1" viplevel="3" />
+		<bigprize month="11" loginday="22" goods="1239601,1" />
+		<bigprize month="11" loginday="23" goods="1210501,1" />
+		<bigprize month="11" loginday="24" goods="100401,5" />
+		<bigprize month="11" loginday="25" goods="435401,1" />
+		<bigprize month="11" loginday="26" goods="1210501,2" />
+		<bigprize month="11" loginday="27" goods="111801,100" />
+		<bigprize month="11" loginday="28" goods="1218501,2" />
+		<bigprize month="11" loginday="29" goods="1220301,1" />
+		<bigprize month="11" loginday="30" goods="1210401,1" />
+		<bigprize month="12" loginday="1" goods="1232101,1" />
+		<bigprize month="12" loginday="2" goods="1210501,1" />
+		<bigprize month="12" loginday="3" goods="1210501,1" />
+		<bigprize month="12" loginday="4" goods="100201,5" />
+		<bigprize month="12" loginday="5" goods="112101,5" />
+		<bigprize month="12" loginday="6" goods="1213201,1" />
+		<bigprize month="12" loginday="7" goods="1218501,1" vipgoods="435401,1" viplevel="3" />
+		<bigprize month="12" loginday="8" goods="1232101,1" />
+		<bigprize month="12" loginday="9" goods="1210501,1" />
+		<bigprize month="12" loginday="10" goods="1210501,1" />
+		<bigprize month="12" loginday="11" goods="100301,5" />
+		<bigprize month="12" loginday="12" goods="112101,10" />
+		<bigprize month="12" loginday="13" goods="111801,50" />
+		<bigprize month="12" loginday="14" goods="1218501,1" vipgoods="435401,2" viplevel="3" />
+		<bigprize month="12" loginday="15" goods="1232101,1" />
+		<bigprize month="12" loginday="16" goods="1210501,2" />
+		<bigprize month="12" loginday="17" goods="1210501,1" />
+		<bigprize month="12" loginday="18" goods="100401,5" />
+		<bigprize month="12" loginday="19" goods="112101,10" />
+		<bigprize month="12" loginday="20" goods="1213201,2" />
+		<bigprize month="12" loginday="21" goods="1218501,2" vipgoods="1213301,1" viplevel="3" />
+		<bigprize month="12" loginday="22" goods="1242601,1" />
+		<bigprize month="12" loginday="23" goods="1210501,2" />
+		<bigprize month="12" loginday="24" goods="1210501,1" />
+		<bigprize month="12" loginday="25" goods="100301,5" />
+		<bigprize month="12" loginday="26" goods="435401,1" />
+		<bigprize month="12" loginday="27" goods="111801,100" />
+		<bigprize month="12" loginday="28" goods="1218501,2" />
+		<bigprize month="12" loginday="29" goods="11328001,1" />
+		<bigprize month="12" loginday="30" goods="112401,1" />
+		<bigprize month="12" loginday="31" goods="1210401,1" />
+	</loginprize>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			reCheckNum	-	固定消耗补签卡的天数
+			reCheckBaseCost	-	固定消耗补签卡的天数补签时消耗的补签卡数量
+			reCheckStep	-	超过reCheckNum后，每次补签增加的补签卡数量
+			reCheckMaxCost	-	上面的经过reCheckStep增加后的最大值，即补签卡数量最多不能超过reCheckMaxCost
+			WecomeSpecialPrizeDay	-	特殊奖励对应天数
+			VipSpecialPrizeDay	-	vip奖励对应天数
+		-->
+	<loginpatchcost reCheckNum="5" reCheckBaseCost="1" reCheckStep="1" reCheckMaxCost="11" WecomeSpecialPrizeDay="-5-12-19-26-" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			levelMin	-	？
+			leaveDays	-	？
+			levelMinNew	-	？
+			levelMaxNew	-	？
+			levelMinOld	-	？
+			levelMaxOld	-	？
+			bindDays	-	？
+			leaveSeconds	-	？
+			clearAfterLoginDays	-	？
+				-	回归参数
+		-->
+	<OldUserGift levelMin="20" leaveDays="31" levelMinNew="0" levelMaxNew="20" levelMinOld="80" levelMaxOld="200" bindDays="30" leaveSeconds="2592000" clearAfterLoginDays="31">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			model	-	
+			charids	-	
+			forceSelect	-	
+			figures	-	
+			modeltips	-	模式介绍
+			btnTips1	-	PC用：快速加入按钮上的tips——第一天
+			btnTips2	-	PC用：快速加入按钮上的tips——第2天
+			-->
+		<OldUserGameRule model="81" charids="220,221" forceSelect="0" figures="3" />
+		<OldUserGameRule model="82" charids="2075,2072,2018,2046,2047,2015" forceSelect="0" figures="1" />
+		<OldUserGameRule model="83" charids="362,122,382,307,164,334" forceSelect="0" figures="1" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			levelRange	-	等极段
+			-->
+		<GiftCfg levelRange="20,100">
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			needDay	-	天数
+			items	-	奖励
+				-->
+			<Day needDay="1" items="1212701,1" />
+			<Day needDay="2" items="1212801,1" />
+			<Day needDay="3" items="1210501,1" />
+			<Day needDay="4" items="435401,1" />
+			<Day needDay="5" items="1212901,1" />
+		</GiftCfg>
+		<GiftCfg levelRange="101,1000">
+			<Day needDay="1" items="1212701,1" />
+			<Day needDay="2" items="1212801,1" />
+			<Day needDay="3" items="1210501,1" />
+			<Day needDay="4" items="435401,1" />
+			<Day needDay="5" items="1212901,1" />
+		</GiftCfg>
+	</OldUserGift>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	
+			desc	-	描述
+			ach_cri_id	-	
+			score	-	倍数 
+			sub_ach_cri_id	-	
+				-	回归配置？录像圈当时推巅峰竞技的算分规则？
+		-->
+	<OldReturnerReward>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			leaveDaysRange	-	天数范围
+			levelRange	-	等级限制
+			showType	-	showType 1:登录 2首胜 4局数 8武将 16公会 
+			needDay	-	天数限制
+			loginTaskId	-	登录奖励的对应id
+			firstWinTaskId	-	首胜对应的id
+			gameCountTaskIds	-	越战越勇的对应id
+			guildTaskIds	-	公会对应的id 用逗号隔开
+			generalTaskId	-	熟悉武将的对应id
+			import	-	重点任务
+				-	回归配置，客户端生效
+			-->
+	</OldReturnerReward>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			typeName	-	名字
+			typeID	-	模式id
+			duration	-	时间
+			jumpId	-	跳转场景
+			btnTips1	-	PC用：快速加入按钮上的tips——第一天
+			btnTips2	-	PC用：快速加入按钮上的tips——第2天
+				-	回归活动场配置
+		-->
+	<returnerActivitiesData typeName="十殿阎罗" typeID="38" duration="20210826T050000,20210927T235959" />
+	<AutoFillGeneral>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	道具id
+			generalList	-	武将列表
+			-->
+		<Goods id="100027" generalList="2890101;2890201;2890301;2890401;2890501;2890601;2890701;2890801;2890901;2891001;2891101;2891201;2891301;2891401;2891501;2891601;2891701;2891801;2891901;2892001;2892101;2892201;2892301;2892401;2892501;2892601;2892701;2892801;2892901;2893001;2893101;2893201" />
+		<Goods id="100028" generalList="890101;890201;890301;890401;890501;890601;890701;890801;890901;891001;891101;891201;891301;891401;891501;891601;891701;891801;891901;892001;892101;892201;892301;892401;892501;892601;892701;892801;892901;893001;893101;893201" />
+		<Goods id="1234569" generalList="123;123;123" />
+		<Goods id="1234570" generalList="123;123;123" />
+	</AutoFillGeneral>
+	<guildMatch>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			useTypeID	-	模式
+			begintime	-	开始时间
+			endtime	-	结束时间
+			-->
+		<matchTime useTypeID="77" begintime="20220129T230010" endtime="20220226T225959" />
+		<matchTime useTypeID="87" begintime="20220226T230000" endtime="20220326T225959" />
+		<matchTime useTypeID="77" begintime="20220326T230000" endtime="20220430T225959" />
+		<matchTime useTypeID="87" begintime="20220430T230000" endtime="20220528T225959" />
+		<matchTime useTypeID="77" begintime="20220528T230000" endtime="20220625T225959" />
+		<matchTime useTypeID="87" begintime="20220625T230000" endtime="20220730T225959" />
+		<matchTime useTypeID="77" begintime="20220730T230000" endtime="20220827T225959" />
+		<matchTime useTypeID="87" begintime="20220827T230000" endtime="20220924T225959" />
+		<matchTime useTypeID="77" begintime="20220924T230000" endtime="20221029T225959" />
+		<matchTime useTypeID="87" begintime="20221029T230000" endtime="20221126T225959" />
+		<matchTime useTypeID="77" begintime="20221126T230000" endtime="20221231T225959" />
+		<matchTime useTypeID="87" begintime="20221231T230000" endtime="20230128T225959" />
+		<matchTime useTypeID="77" begintime="20230128T230000" endtime="20230225T225959" />
+		<matchTime useTypeID="87" begintime="20230225T230000" endtime="20230331T225959" />
+		<matchTime useTypeID="77" begintime="20230331T230000" endtime="20230428T225959" />
+		<matchTime useTypeID="87" begintime="20230428T230000" endtime="20230602T225959" />
+		<matchTime useTypeID="77" begintime="20230602T230000" endtime="20230630T225959" />
+		<matchTime useTypeID="87" begintime="20230630T230000" endtime="20230804T225959" />
+		<matchTime useTypeID="77" begintime="20230804T230000" endtime="20230901T225959" />
+		<matchTime useTypeID="87" begintime="20230901T230000" endtime="20231006T225959" />
+		<matchTime useTypeID="77" begintime="20231006T230000" endtime="20231103T225959" />
+		<matchTime useTypeID="87" begintime="20231103T230000" endtime="20231201T225959" />
+		<matchTime useTypeID="77" begintime="20231201T230000" endtime="20240105T225959" />
+		<matchTime useTypeID="87" begintime="20240105T230000" endtime="20240202T225959" />
+		<matchTime useTypeID="77" begintime="20240202T230000" endtime="20240301T225959" />
+		<matchTime useTypeID="87" begintime="20240301T230000" endtime="20240405T225959" />
+		<matchTime useTypeID="77" begintime="20240405T230000" endtime="20240503T225959" />
+		<matchTime useTypeID="87" begintime="20240503T230000" endtime="20240607T225959" />
+		<matchTime useTypeID="77" begintime="20240607T230000" endtime="20240705T225959" />
+		<matchTime useTypeID="87" begintime="20240705T230000" endtime="20240802T225959" />
+		<matchTime useTypeID="77" begintime="20240802T230000" endtime="20240906T225959" />
+		<matchTime useTypeID="87" begintime="20240906T230000" endtime="20241004T225959" />
+		<matchTime useTypeID="77" begintime="20241004T230000" endtime="20241101T225959" />
+		<matchTime useTypeID="87" begintime="20241101T230000" endtime="20241206T225959" />
+		<matchTime useTypeID="77" begintime="20241206T230000" endtime="20250103T225959" />
+		<matchTime useTypeID="87" begintime="20250103T230000" endtime="20250207T225959" />
+		<matchTime useTypeID="77" begintime="20250207T230000" endtime="20250307T225959" />
+	</guildMatch>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			open	-	是否开启
+1=开启  0=不开启
+			startTime	-	开始时间
+			endTime	-	结束时间
+			duration	-	持续时间
+			taskEnd1Id	-	引导任务1
+			taskEndId	-	引导任务2（领取奖励后开启倒计时）
+			buyGeneralId1	-	新手购买武将id
+			giveGeneralId	-	送的购买武将id
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	奖励条件id
+			intro	-	描述
+		-->
+</client>

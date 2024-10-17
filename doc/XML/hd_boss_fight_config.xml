@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Root>
+	<!--活动数据删除规则：字段endTime一年后删除本活动的数据，如果不配置endtime则不会删除-->
+	<!--年兽和捉鬼共用-->
+	<!-- <BossFight id="1" max_time="9999999" win_drop="314" lost_drop="315" draw_drop="315" revive_count="3" new_ai="1"> -->
+		<!-- <Round level="1" rest_time="0" boss="79,30" reward="" reward_time="0" dropid="0" spell_add="668;674"> -->
+			<!-- <Stage id="1" desc="睿智" spell_add="669;119"/> -->
+			<!-- <Stage id="2" desc="警觉" spell_add="670"/> -->
+			<!-- <Stage id="3" desc="任性" spell_add="671"/> -->
+			<!-- <Stage id="4" desc="暴怒" spell_add="672;673"/> --> 
+		<!-- </Round> -->
+	<!-- </BossFight> -->
+	<!--十殿阎罗-->
+	<BossFight id="1" max_time="999999" win_drop="0" lost_drop="0" draw_drop="0" revive_count="9999" new_ai="1">
+		<Round level="1" rest_time="0" boss="4500,100" reward="1136601,1" reward_time="1" dropid="0" />
+		<Round level="2" rest_time="0" boss="4501,25;4502,25;4503,25;4504,25" reward="1136601,1;100011,50" reward_time="1" dropid="0" />
+		<Round level="3" rest_time="0" boss="4505,25;4506,25;4507,25;4508,25" reward="1136701,1" reward_time="1" dropid="0" />
+		<Round level="4" rest_time="0" boss="4509,100" reward="1136701,1;100011,100" reward_time="1" dropid="0" />
+		<GeneralStarPriv star="0" firstCardCount="4" freeRevive="0" addHp="0"/>
+		<GeneralStarPriv star="1" firstCardCount="5" freeRevive="0" addHp="0"/>
+		<GeneralStarPriv star="2" firstCardCount="5" freeRevive="0" addHp="1"/>
+		<GeneralStarPriv star="3" firstCardCount="6" freeRevive="0" addHp="1"/>
+		<GeneralStarPriv star="4" firstCardCount="6" freeRevive="1" addHp="2"/>
+	</BossFight>
+	
+	
+	<!--神武再世的配置-->
+	<!-- 6月26日2.112版本开始，胜利奖励优先以下面 BossReward 字段的内容为准。当下面没有配置时则掉落win_reward对应奖励。  -->
+	<GameShenWuConfig desc="神武再世" game_time = "3600" revive_count="3" win_reward="100011,30;" lost_reward="1141901,1;100011,10;" draw_reward="100011,10;">
+		
+		<!--座位配置 游戏内先写死，0,1,2做玩家 3,4,5做AI(4是BOSS)-->
+		
+		<boss desc="BOSS出现配置(ID,出现概率;ID,出现概率)" list="4137,10;4138,10;4039,10;4040,10;4108,10;4109,10;4310,10;4111,10"/>
+		<minion desc="小怪出现配置(ID,出现概率;ID,出现概率)" list="4041,10;4042,10"/>
+		
+		<PublicGeneral desc="公共武将配置(ID,出现概率;ID,出现概率)" list="201,10;202,10;203,10;204,10;205,10;206,10;207,10;208,10;220,10;221,10" deal_count="3"/>
+		
+		<HalfHpGetSkill desc="第一次半血时，获得的技能">
+			<General id="4137" desc="混沌" 	get_spell="1139" />
+			<General id="4138" desc="穷奇" 	get_spell="1141" />
+			<General id="4039" desc="梼杌" 	get_spell="1144" />
+			<General id="4040" desc="饕餮" 	get_spell="1147" />
+			<General id="4108" desc="相柳" 	get_spell="1324" />
+			<General id="4109" desc="朱厌" 	get_spell="1312" />
+			<General id="4310" desc="毕方" 	get_spell="1315" />
+			<General id="4111" desc="英招" 	get_spell="1318" />
+		</HalfHpGetSkill>
+		
+		<ShenJiang desc="每个神将登场时，卡牌移除与添加 获得装备">
+			<General id="201" desc="神关羽" 	remove_card="96" add_card="312" equip_card="312"/>
+			
+			<General id="202" desc="神吕蒙" 	remove_card="" add_card="313" equip_card="313"/>
+			
+			<General id="203" desc="神周瑜" 	remove_card="122" add_card="314" equip_card="314"/>
+
+			<General id="204" desc="神诸葛亮" 	remove_card="67;93" add_card="315;316" equip_card="315"/>
+
+			<General id="205" desc="神曹操" 	remove_card="83" add_card="317" equip_card="317"/>
+
+			<General id="206" desc="神吕布" 	remove_card="12" add_card="318" equip_card="318"/>
+
+			<General id="207" desc="神赵云" 	remove_card="84" add_card="320" equip_card="320"/>
+
+			<General id="208" desc="神司马懿" 	remove_card="" add_card="319" equip_card="319"/>
+			<General id="220" desc="神刘备" 	remove_card="80" add_card="4339" equip_card="4339"/>		
+			<General id="221" desc="神陆逊" 	remove_card="" add_card="4340" equip_card="4340"/>
+		</ShenJiang>
+		<RankPriv>
+			<GeneralRankPriv rank="0" addHp="0" addFirstCard="0" freeRevive="0"/>
+			<GeneralRankPriv rank="1" addHp="0" addFirstCard="1" freeRevive="0"/>
+			<GeneralRankPriv rank="2" addHp="1" addFirstCard="1" freeRevive="0"/>
+			<GeneralRankPriv rank="3" addHp="1" addFirstCard="2" freeRevive="0"/>
+			<GeneralRankPriv rank="4" addHp="2" addFirstCard="2" freeRevive="0"/>
+		</RankPriv>
+		
+		<BossReward>
+			<Boss id="4037" winRewards="1141701,1;1309801,1;"/>
+			<Boss id="4038" winRewards="1141701,1;1309801,1;"/>
+			<Boss id="4039" winRewards="1141701,1;1309801,1;"/>
+			<Boss id="4040" winRewards="1141701,1;1309801,1;"/>
+			<Boss id="4108" winRewards="1141801,1;1309801,1;"/>
+			<Boss id="4109" winRewards="1141801,1;1309801,1;"/>
+			<Boss id="4110" winRewards="1141801,1;1309801,1;"/>
+			<Boss id="4111" winRewards="1141801,1;1309801,1;"/>
+		</BossReward>
+	</GameShenWuConfig>	
+	<!--战役只支持一个-->
+	<CurBattle id="1"/>
+	<!--战役 已消灭对方势力为获胜条件-->
+	<!--
+	1.player_count 玩家人数
+	2.game_time 游戏总时间
+	3.time_no_player 玩家全部阵亡，即全剩下电脑时，多少秒游戏结束
+	4.win_group 当游戏总时间到了，谁胜利 0平局 1对应下面seatconfig中的group
+	5.win_group_no_player 3的时间到了，谁胜利，同上
+	6.win_reward 胜利方所有玩家在游戏结束后获得的道具
+	7.lost_reward draw_reward 同6
+	-->
+	<GameBattleConfig desc="守卫剑阁" id = "1" ver="2" player_count="4" game_time = "3600" time_no_player = "3600" win_group = "0" win_group_no_player="3" win_reward="1274101,1;" lost_reward="1274201,1;" draw_reward="100011,50;">
+		<ActList list="7,0,6,1,5,2,4,3"/>行动顺序列表(座位号)
+		<SeatConfig>
+			<Seat seat = "0" desc="蜀国守城" group = "1" is_robot="1" bautoselchr="1" figure = "2" country="2" generals="4004,20;4005,20;4006,20;4007,20" />
+			<Seat seat = "1" desc="蜀国玩家" group = "1" is_robot="0" bautoselchr="0" figure = "0" country="2" generals="" />
+			<Seat seat = "2" desc="蜀国英魂" group = "1" is_robot="1" bautoselchr="1" figure = "3" country="2" generals="4000,20;4001,20;4002,20;4003,20" />
+			<Seat seat = "3" desc="蜀国玩家" group = "1" is_robot="0" bautoselchr="0" figure = "0" country="2" generals="" />
+			<Seat seat = "4" desc="魏国玩家" group = "2" is_robot="0" bautoselchr="0" figure = "0" country="1" generals="" />
+			<Seat seat = "5" desc="魏国英魂" group = "2" is_robot="1" bautoselchr="1" figure = "3" country="1" generals="4008,20;4009,20;4010,20;4011,20" />
+			<Seat seat = "6" desc="魏国玩家" group = "2" is_robot="0" bautoselchr="0" figure = "0" country="1" generals="" />
+			<Seat seat = "7" desc="魏国攻城" group = "2" is_robot="1" bautoselchr="1" figure = "2" country="1" generals="4012,20;4013,20;4014,20;4015,20" />
+		</SeatConfig>
+	</GameBattleConfig>
+
+	
+	<!--PVP数据-->
+	<CurBattlePVP id="100"/>
+	<!--夺粮
+		signupLiangCao:   报名时给多少粮草
+		signupTimesLimit: 一天报名次数限制 0表示无限制 策划暂时没加配置无效
+		gameTimesLimit:   报名后可游戏次数
+		preTakeLiangCao:  游戏前预扣粮草数量
+	-->
+	<DuoLiangConfig desc="三国夺粮" id="100" ver="1" signupLiangCao="1000" signupTimesLimit="0" gameTimesLimit="10" preTakeLiangCao="200">
+	</DuoLiangConfig>
+	
+	
+	<Rank4v4TblSeat>
+      <!--id为座位方案id，team1为队伍leng座位 blue-->
+      <Item id="1" team1="1,4,5,8" team2="2,3,6,7" />
+      <Item id="2" team1="1,3,6,8" team2="2,4,5,7" />
+      <Item id="3" team1="1,4,6,7" team2="2,3,5,8" />
+      <Item id="4" team1="1,3,5,7" team2="2,4,6,8" />
+	  <Item id="5" team1="1,4,6,8" team2="2,3,5,7" />
+	</Rank4v4TblSeat>
+	
+	
+	<!--
+		顺手牵羊 3 4 81 82 89
+		无中生有 33 34 35 37
+		五谷丰登 29 30
+		兵粮寸断 144 151
+	-->
+	<!-- 
+		忠胆英杰模式配置
+		win_reward 获胜方奖励道具
+		lost_reward 失败方奖励道具
+		draw_reward 平局时奖励道具
+		
+		ConfigItem 
+			BeginTime 这一条开始生效的时间 某一条生效，则其上面所有的都失效
+			DefaultGeneral 1号位忠臣常备忠臣（需要开通才出现在选将框，如需免费使用，需要在character设定免费）
+			GeneralAdd 可将本模式设定的扩展包以外的武将加进本模式
+			GeneralBan 本模式禁用武将，无需在character中设置
+			CardAdd 可将本模式设定的扩展包以外的卡牌加进本模式
+			CardBan 本模式禁用的卡牌
+	-->
+	<ZhongDanConfig win_reward="100011,100;" lost_reward="100011,50;" draw_reward="100011,50">
+	  <ConfigItem BeginTime="20170330T000000" DefaultGeneral="95;96" GeneralAdd="" GeneralBan="" CardAdd="162;163;164;165;166;185;186" CardBan="3;4;81;82;89;77;78" />
+	  <ConfigItem BeginTime="20170406T000000" DefaultGeneral="95;96" GeneralAdd="" GeneralBan="" CardAdd="162;163;164;165;166;185;186;173;174;187;188;189;190;191;192;193;196" CardBan="3;4;81;82;89;77;78;64;65;102;106;109;121;147;144;151;84" />
+	  <ConfigItem BeginTime="20170413T000000" DefaultGeneral="95;96" GeneralAdd="" GeneralBan="" CardAdd="162;163;164;165;166;185;186;173;174;187;188;189;190;191;192;193;196;167;168;169;170;171;172;194;195;197" CardBan="3;4;81;82;89;77;78;64;65;102;106;109;121;147;144;151;84;33;34;35;37;29;30;92;105;96" />
+	  <ConfigItem BeginTime="20170420T000000" DefaultGeneral="95;96" GeneralAdd="" GeneralBan="" CardAdd="162;163;164;165;166;185;186;173;174;187;188;189;190;191;192;193;196;167;168;169;170;171;172;194;195;197;198;199" CardBan="3;4;81;82;89;77;78;64;65;102;106;109;121;147;144;151;84;33;34;35;37;29;30;92;105;96;67;93" />	  	  	  	  
+      <!--选将格子配置-->	  
+	  <GeneralSlot FigureType="0" Desc="明忠" MinOpenGeneralCount="0" MaxOpenGeneralCount="89" TotalSlot="6" FreeSlot="3"/>
+	  <GeneralSlot FigureType="0" Desc="明忠" MinOpenGeneralCount="90" MaxOpenGeneralCount="119" TotalSlot="6" FreeSlot="4"/>
+	  <GeneralSlot FigureType="0" Desc="明忠" MinOpenGeneralCount="120" MaxOpenGeneralCount="149" TotalSlot="6" FreeSlot="5"/>
+	  <GeneralSlot FigureType="0" Desc="明忠" MinOpenGeneralCount="150" MaxOpenGeneralCount="999" TotalSlot="6" FreeSlot="6"/>
+	  <GeneralSlot FigureType="1" Desc="忠臣" MinOpenGeneralCount="0" MaxOpenGeneralCount="89" TotalSlot="6" FreeSlot="3"/>
+	  <GeneralSlot FigureType="1" Desc="忠臣" MinOpenGeneralCount="90" MaxOpenGeneralCount="119" TotalSlot="6" FreeSlot="4"/>
+	  <GeneralSlot FigureType="1" Desc="忠臣" MinOpenGeneralCount="120" MaxOpenGeneralCount="149" TotalSlot="6" FreeSlot="5"/>
+	  <GeneralSlot FigureType="1" Desc="忠臣" MinOpenGeneralCount="150" MaxOpenGeneralCount="999" TotalSlot="6" FreeSlot="6"/>
+	  <GeneralSlot FigureType="2" Desc="主公" MinOpenGeneralCount="0" MaxOpenGeneralCount="89" TotalSlot="8" FreeSlot="5"/>
+	  <GeneralSlot FigureType="2" Desc="主公" MinOpenGeneralCount="90" MaxOpenGeneralCount="119" TotalSlot="8" FreeSlot="6"/>
+	  <GeneralSlot FigureType="2" Desc="主公" MinOpenGeneralCount="120" MaxOpenGeneralCount="149" TotalSlot="8" FreeSlot="7"/>
+	  <GeneralSlot FigureType="2" Desc="主公" MinOpenGeneralCount="150" MaxOpenGeneralCount="999" TotalSlot="8" FreeSlot="8"/>
+	  <GeneralSlot FigureType="3" Desc="反贼" MinOpenGeneralCount="0" MaxOpenGeneralCount="89" TotalSlot="6" FreeSlot="3"/>
+	  <GeneralSlot FigureType="3" Desc="反贼" MinOpenGeneralCount="90" MaxOpenGeneralCount="119" TotalSlot="6" FreeSlot="4"/>
+	  <GeneralSlot FigureType="3" Desc="反贼" MinOpenGeneralCount="120" MaxOpenGeneralCount="149" TotalSlot="6" FreeSlot="5"/>
+	  <GeneralSlot FigureType="3" Desc="反贼" MinOpenGeneralCount="150" MaxOpenGeneralCount="999" TotalSlot="6" FreeSlot="6"/>
+	  <GeneralSlot FigureType="4" Desc="内奸" MinOpenGeneralCount="0" MaxOpenGeneralCount="89" TotalSlot="8" FreeSlot="5"/>
+	  <GeneralSlot FigureType="4" Desc="内奸" MinOpenGeneralCount="90" MaxOpenGeneralCount="119" TotalSlot="8" FreeSlot="6"/>
+	  <GeneralSlot FigureType="4" Desc="内奸" MinOpenGeneralCount="120" MaxOpenGeneralCount="149" TotalSlot="8" FreeSlot="7"/>
+	  <GeneralSlot FigureType="4" Desc="内奸" MinOpenGeneralCount="150" MaxOpenGeneralCount="999" TotalSlot="8" FreeSlot="8"/>
+	</ZhongDanConfig>
+
+
+
+  <!--ActivitySet 活动场集合. start20151220
+      <Activity> type:1为无尽之战 isOpen:是否开启活动 round:第几轮 isDelete:是否清理玩家活动数据
+      <WuJinZZ> sysValue:系统默认体力值每天清理 buyValueMax:每天可买体力上限 generalUseMax:每天一个武将可用次数
+      <PrizeGameCnt> 游戏局数奖励 cnt:游戏需要达到的局数 items:奖励道具,格式"id,cnt;id,cnt"
+      <Prize> 连胜奖励 wins:连胜局数 items:奖励道具
+  -->
+  <ActivitySet>
+    <Activity type="1"  name="无尽之战" isOpen="1" roundId="1" isDelete="0" />
+	
+    <Activity type="2"  name="乱斗场" isOpen="1" roundId="7" isDelete="0" startTime="20170621T100000" endTime="20170621T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="7">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="100011,50;1213201,1" />
+	  <Prize wincnt="6" items="1114401,1" />
+    </AcHappyChaos>		
+	
+    <Activity type="2"  name="乱斗场" isOpen="1" roundId="8" isDelete="0" startTime="20170622T000000" endTime="20170622T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="8">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="100011,50;1213201,1" />
+	  <Prize wincnt="6" items="1114401,1" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="9" isDelete="0" startTime="20170629T000000" endTime="20170703T020000"/>
+	<AcHappyChaos name="三国乱斗" cycid="9">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="100011,50;1213201,1" />
+	  <Prize wincnt="6" items="1114401,1" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="10" isDelete="0" startTime="20170706T000000" endTime="20170710T020000"/>
+	<AcHappyChaos name="三国乱斗" cycid="10">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="100011,50;1213201,1" />
+	  <Prize wincnt="6" items="1114401,1" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="11" isDelete="0" startTime="20170713T000000" endTime="20170717T020000"/>
+	<AcHappyChaos name="三国乱斗" cycid="11">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="100011,50;1213201,1" />
+	  <Prize wincnt="6" items="1114401,1" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="12" isDelete="0" startTime="20170720T000000" endTime="20170724T020000"/>
+	<AcHappyChaos name="三国乱斗" cycid="12">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="100011,50;1213201,1" />
+	  <Prize wincnt="6" items="1114401,1" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="13" isDelete="0" startTime="20170727T000000" endTime="20170731T020000"/>
+	<AcHappyChaos name="三国乱斗" cycid="13">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="100011,50;1213201,1" />
+	  <Prize wincnt="6" items="1114401,1" />
+    </AcHappyChaos>
+		<Activity type="2"  name="乱斗场" isOpen="1" roundId="14" isDelete="0" startTime="20170803T000000" endTime="20170807T020000"/>
+	<AcHappyChaos name="三国乱斗" cycid="14">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="100011,50;1213201,1" />
+	  <Prize wincnt="6" items="1114401,1" />
+    </AcHappyChaos>
+		<Activity type="2"  name="乱斗场" isOpen="1" roundId="15" isDelete="0" startTime="20170810T000000" endTime="20170814T020000"/>
+	<AcHappyChaos name="三国乱斗" cycid="15">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="100011,50;1213201,1" />
+	  <Prize wincnt="6" items="1114401,1" />
+    </AcHappyChaos>
+		<Activity type="2"  name="乱斗场" isOpen="1" roundId="16" isDelete="0" startTime="20170817T000000" endTime="20170821T020000"/>
+	<AcHappyChaos name="三国乱斗" cycid="16">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="100011,50;1213201,1" />
+	  <Prize wincnt="6" items="1114401,1" />
+    </AcHappyChaos>
+		<Activity type="2"  name="乱斗场" isOpen="1" roundId="17" isDelete="0" startTime="20170824T000000" endTime="20170828T020000"/>
+	<AcHappyChaos name="三国乱斗" cycid="17">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="100011,50;1213201,1" />
+	  <Prize wincnt="6" items="1114401,1" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="18" isDelete="0" startTime="20170623T093000" endTime="20170625T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="18">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="100011,50;1213201,1" />
+	  <Prize wincnt="6" items="1114401,1" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="19" isDelete="0" startTime="20180109T000000" endTime="20180114T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="19">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="1213201,1" />
+	  <Prize wincnt="6" items="1117001,1" />
+	  <Prize wincnt="10" items="1117001,1;1246901,1;" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="20" isDelete="0" startTime="20180115T000000" endTime="20180121T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="20">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="1213201,1" />
+	  <Prize wincnt="6" items="1117001,1" />
+	  <Prize wincnt="10" items="1117001,1;1246901,1;" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="21" isDelete="0" startTime="20180122T000000" endTime="20180128T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="21">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="1213201,1" />
+	  <Prize wincnt="6" items="1117001,1" />
+	  <Prize wincnt="10" items="1117001,1;1246901,1;" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="22" isDelete="0" startTime="20180629T080000" endTime="20180629T115959"/>
+	<AcHappyChaos name="三国乱斗" cycid="22">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="1213201,1" />
+	  <Prize wincnt="6" items="1123001,1" />
+	  <Prize wincnt="10" items="1123001,1;" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="23" isDelete="0" startTime="20180629T140000" endTime="20180629T145959"/>
+	<AcHappyChaos name="三国乱斗" cycid="23">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="1213201,1" />
+	  <Prize wincnt="6" items="1123001,1" />
+	  <Prize wincnt="10" items="1123001,1;" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="24" isDelete="0" startTime="20180629T153000" endTime="20180629T163000"/>
+	<AcHappyChaos name="三国乱斗" cycid="24">
+      <Prize wincnt="1" items="100011,100" />
+      <Prize wincnt="3" items="1213201,1" />
+	  <Prize wincnt="6" items="1123001,1" />
+	  <Prize wincnt="10" items="1123001,1;" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="25" isDelete="0" startTime="20180720T100000" endTime="20180723T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="25">
+      <Prize wincnt="1" items="100011,100;1123401,1;" />
+      <Prize wincnt="3" items="1213201,1;1123401,1;" />
+	  <Prize wincnt="6" items="1123401,2" />
+	  <Prize wincnt="10" items="435401,1" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="26" isDelete="0" startTime="20200214T100000" endTime="20200214T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="26">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="27" isDelete="0" startTime="20200215T000000" endTime="20200215T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="27">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="28" isDelete="0" startTime="20200216T000000" endTime="20200216T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="28">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="29" isDelete="0" startTime="20200217T000000" endTime="20200217T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="29">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="30" isDelete="0" startTime="20200218T000000" endTime="20200218T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="30">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="31" isDelete="0" startTime="20200219T000000" endTime="20200219T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="31">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="32" isDelete="0" startTime="20200220T000000" endTime="20200220T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="32">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="33" isDelete="0" startTime="20200221T000000" endTime="20200221T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="33">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="34" isDelete="0" startTime="20200222T000000" endTime="20200222T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="34">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="35" isDelete="0" startTime="20200223T000000" endTime="20200223T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="35">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="36" isDelete="0" startTime="20200224T000000" endTime="20200224T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="36">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="37" isDelete="0" startTime="20200225T000000" endTime="20200225T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="37">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="38" isDelete="0" startTime="20200226T000000" endTime="20200226T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="38">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="39" isDelete="0" startTime="20200227T000000" endTime="20200227T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="39">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="40" isDelete="0" startTime="20200228T000000" endTime="20200228T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="40">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="41" isDelete="0" startTime="20200229T000000" endTime="20200229T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="41">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="42" isDelete="0" startTime="20200301T000000" endTime="20200301T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="42">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="43" isDelete="0" startTime="20200302T000000" endTime="20200302T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="43">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="44" isDelete="0" startTime="20200303T000000" endTime="20200303T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="44">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="45" isDelete="0" startTime="20200304T000000" endTime="20200304T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="45">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="46" isDelete="0" startTime="20200305T000000" endTime="20200305T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="46">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="47" isDelete="0" startTime="20200306T000000" endTime="20200306T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="47">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="48" isDelete="0" startTime="20200307T000000" endTime="20200307T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="48">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="49" isDelete="0" startTime="20200308T000000" endTime="20200308T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="49">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="50" isDelete="0" startTime="20200309T000000" endTime="20200309T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="50">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="51" isDelete="0" startTime="20200310T000000" endTime="20200310T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="51">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="52" isDelete="0" startTime="20200311T000000" endTime="20200311T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="52">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="53" isDelete="0" startTime="20200312T000000" endTime="20200312T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="53">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="54" isDelete="0" startTime="20200313T000000" endTime="20200313T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="54">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	<Activity type="2"  name="乱斗场" isOpen="1" roundId="55" isDelete="0" startTime="20200314T000000" endTime="20200314T235959"/>
+	<AcHappyChaos name="三国乱斗" cycid="55">
+      <Prize wincnt="1" items="1150301,1" />
+      <Prize wincnt="3" items="1150301,2" />
+	  <Prize wincnt="5" items="1150301,3" />
+    </AcHappyChaos>
+	
+   
+    <WuJinZZ name="无尽之战" sysValue="3" buyValueMax="10" generalUseMax="1">
+      <PrizeGameCnt cnt ="5" items="100011,100" />
+      <Prize wins="1" items="100301,1" />
+      <Prize wins="2" items="100301,1" />
+      <Prize wins="3" items="100401,1" />
+      <Prize wins="4" items="100401,1" />
+      <Prize wins="5" items="100601,1" />
+      <Prize wins="6" items="100011,200" />
+      <Prize wins="7" items="111401,1" />
+      <Prize wins="8" items="104001,1" />
+      <Prize wins="9" items="112301,1" />
+      <Prize wins="10" items="112401,1" />
+    </WuJinZZ>
+	
+	
+    <!--
+    <AcXXXXXX name="xxx活动" isOpen="1" roundId="1">
+    </AcXXXXXX>
+    -->
+	
+  </ActivitySet>
+  
+      <!--工会争霸战
+		starttime endtime 轮次开始和结束时间， 开始时间为数据更新时间，为星期6的零点.  nextRoundId 下一轮的id 为报名需要.！
+	--> 
+	<!--
+		cycid 轮id
+		mkstarttime 匹配开始时间
+		mkendtime 	匹配结束时间
+		prizebegintime	领奖开始的时间
+		recordlasttime	游戏结束算分最后时间，超过这个时间的就不计分
+		sysvalue		这一轮的活动体力最大数
+		guild_join_time_limit 加入公会时间限制(秒)
+	-->
+	<ActivitySet>			
+		<!--2020年11月公会争霸赛：欢乐成双-->
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="201107" isDelete="0" startTime="20201107T000000" endTime="20201113T235959" nextRoundId="201114"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="201114" isDelete="0" startTime="20201114T000000" endTime="20201120T235959" nextRoundId="201121"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="201121" isDelete="0" startTime="20201121T000000" endTime="20201127T235959" nextRoundId="201128"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="201128" isDelete="0" startTime="20201128T000000" endTime="20201204T235959" nextRoundId="201205"/>
+		<!--2020年12月公会争霸赛：神之试炼-->		
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="201205" isDelete="0" startTime="20201205T000000" endTime="20201211T235959" nextRoundId="201212"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="201212" isDelete="0" startTime="20201212T000000" endTime="20201218T235959" nextRoundId="201219"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="201219" isDelete="0" startTime="20201219T000000" endTime="20201225T235959" nextRoundId="201226"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="201226" isDelete="0" startTime="20201226T000000" endTime="20210101T235959" nextRoundId="210102"/>
+		<!--2021年1月公会争霸赛：欢乐成双-->			
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210102" isDelete="0" startTime="20210102T000000" endTime="20210108T235959" nextRoundId="210109"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210109" isDelete="0" startTime="20210109T000000" endTime="20210115T235959" nextRoundId="210116"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210116" isDelete="0" startTime="20210116T000000" endTime="20210122T235959" nextRoundId="210123"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210123" isDelete="0" startTime="20210123T000000" endTime="20210129T235959" nextRoundId="210130"/>
+		<!--2021年2月公会争霸赛：欢乐成双-->			
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210130" isDelete="0" startTime="20210130T000000" endTime="20210205T235959" nextRoundId="210206"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210206" isDelete="0" startTime="20210206T000000" endTime="20210212T235959" nextRoundId="210213"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210213" isDelete="0" startTime="20210213T000000" endTime="20210219T235959" nextRoundId="210220"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210220" isDelete="0" startTime="20210220T000000" endTime="20210226T235959" nextRoundId="210227"/>
+		<!--2021年3月公会争霸赛：模式待定-->
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210227" isDelete="0" startTime="20210227T000000" endTime="20210304T235959" nextRoundId="210305"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210306" isDelete="0" startTime="20210306T000000" endTime="20210312T235959" nextRoundId="210313"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210313" isDelete="0" startTime="20210313T000000" endTime="20210319T235959" nextRoundId="210320"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210320" isDelete="0" startTime="20210320T000000" endTime="20210326T235959" nextRoundId="210327"/>
+		<!--2021年4月公会争霸赛：模式待定-->
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210327" isDelete="0" startTime="20210327T000000" endTime="20210402T235959" nextRoundId="210403"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210403" isDelete="0" startTime="20210403T000000" endTime="20210409T235959" nextRoundId="210410"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210410" isDelete="0" startTime="20210410T000000" endTime="20210416T235959" nextRoundId="210417"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210417" isDelete="0" startTime="20210417T000000" endTime="20210423T235959" nextRoundId="210424"/>
+		<!--2021年5月公会争霸赛：模式待定-->
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210424" isDelete="0" startTime="20210424T000000" endTime="20210430T235959" nextRoundId="210501"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210501" isDelete="0" startTime="20210501T000000" endTime="20210507T235959" nextRoundId="210508"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210508" isDelete="0" startTime="20210508T000000" endTime="20210514T235959" nextRoundId="210515"/>		
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210515" isDelete="0" startTime="20210515T000000" endTime="20210521T235959" nextRoundId="210522"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210522" isDelete="0" startTime="20210522T000000" endTime="20210528T235959" nextRoundId="210529"/>
+		<!--2021年6月公会争霸赛：模式待定-->
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210529" isDelete="0" startTime="20210529T000000" endTime="20210604T235959" nextRoundId="210605"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210605" isDelete="0" startTime="20210605T000000" endTime="20210611T235959" nextRoundId="210612"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210612" isDelete="0" startTime="20210612T000000" endTime="20210618T235959" nextRoundId="210619"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210619" isDelete="0" startTime="20210619T000000" endTime="20210625T235959" nextRoundId="210626"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210626" isDelete="0" startTime="20210626T000000" endTime="20210702T235959" nextRoundId="210703"/>
+		<!--2021年7月公会争霸赛：神之试炼-->
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210703" isDelete="0" startTime="20210703T000000" endTime="20210709T235959" nextRoundId="210710"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210710" isDelete="0" startTime="20210710T000000" endTime="20210716T235959" nextRoundId="210717"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210717" isDelete="0" startTime="20210717T000000" endTime="20210723T235959" nextRoundId="210724"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210724" isDelete="0" startTime="20210724T000000" endTime="20210730T235959" nextRoundId="210731"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210731" isDelete="0" startTime="20210731T000000" endTime="20210806T235959" nextRoundId="210807"/>
+		<!--2021年8月公会争霸赛：欢乐成双-->
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210807" isDelete="0" startTime="20210807T000000" endTime="20210813T235959" nextRoundId="210814"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210814" isDelete="0" startTime="20210814T000000" endTime="20210820T235959" nextRoundId="210821"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210821" isDelete="0" startTime="20210821T000000" endTime="20210827T235959" nextRoundId="210828"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210828" isDelete="0" startTime="20210828T000000" endTime="20210903T235959" nextRoundId="210904"/>
+		<!--2021年9月公会争霸赛：神之试炼-->
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210904" isDelete="0" startTime="20210904T000000" endTime="20210910T235959" nextRoundId="210911"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="210911" isDelete="0" startTime="20210911T000000" endTime="20210917T235959" nextRoundId="210918"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="210918" isDelete="0" startTime="20210918T000000" endTime="20210924T235959" nextRoundId="210925"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="210925" isDelete="0" startTime="20210925T000000" endTime="20211001T235959" nextRoundId="211002"/>
+		<!--2021年10月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="211002" isDelete="0" startTime="20211002T000000" endTime="20211008T235959" nextRoundId="211009"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="211009" isDelete="0" startTime="20211009T000000" endTime="20211015T235959" nextRoundId="211016"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="211016" isDelete="0" startTime="20211016T000000" endTime="20211022T235959" nextRoundId="211023"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="211023" isDelete="0" startTime="20211023T000000" endTime="20211029T235959" nextRoundId="211030"/>
+		<!--2021年11月公会争霸赛：神之试炼-->
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="211030" isDelete="0" startTime="20211030T000000" endTime="20211105T235959" nextRoundId="211106"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="211106" isDelete="0" startTime="20211106T000000" endTime="20211112T235959" nextRoundId="211113"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="211113" isDelete="0" startTime="20211113T000000" endTime="20211119T235959" nextRoundId="211120"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="211120" isDelete="0" startTime="20211120T000000" endTime="20211126T235959" nextRoundId="211127"/>
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="211127" isDelete="0" startTime="20211127T000000" endTime="20211203T235959" nextRoundId="211204"/>
+		<!--2021年12月公会争霸赛：欢乐成双-->
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="211204" isDelete="0" startTime="20211204T000000" endTime="20211210T235959" nextRoundId="211211"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="211211" isDelete="0" startTime="20211211T000000" endTime="20211217T235959" nextRoundId="211218"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="211218" isDelete="0" startTime="20211218T000000" endTime="20211224T235959" nextRoundId="211225"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="211225" isDelete="0" startTime="20211225T000000" endTime="20211231T235959" nextRoundId="220101"/>
+		<!--2022年1月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220101" isDelete="0" startTime="20220101T000000" endTime="20220107T235959" nextRoundId="220108"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220108" isDelete="0" startTime="20220108T000000" endTime="20220114T235959" nextRoundId="220115"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220115" isDelete="0" startTime="20220115T000000" endTime="20220121T235959" nextRoundId="220122"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220122" isDelete="0" startTime="20220122T000000" endTime="20220128T235959" nextRoundId="220129"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220129" isDelete="0" startTime="20220129T000000" endTime="20220204T235959" nextRoundId="220205"/>
+		<!--2022年2月公会争霸赛：欢乐成双-->
+		<Activity type="3"  name="公会争霸战" isOpen="1" roundId="220205" isDelete="0" startTime="20220205T000000" endTime="20220211T235959" nextRoundId="220212"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220212" isDelete="0" startTime="20220212T000000" endTime="20220218T235959" nextRoundId="220219"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220219" isDelete="0" startTime="20220219T000000" endTime="20220225T235959" nextRoundId="220226"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220226" isDelete="0" startTime="20220226T000000" endTime="20220304T235959" nextRoundId="220305"/>
+		<!--2022年3月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220305" isDelete="0" startTime="20220305T000000" endTime="20220311T235959" nextRoundId="220312"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220312" isDelete="0" startTime="20220312T000000" endTime="20220318T235959" nextRoundId="220319"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220319" isDelete="0" startTime="20220319T000000" endTime="20220325T235959" nextRoundId="220326"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220326" isDelete="0" startTime="20220326T000000" endTime="20220401T235959" nextRoundId="220402"/>
+		<!--2022年4月公会争霸赛：欢乐成双-->		
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220402" isDelete="0" startTime="20220402T000000" endTime="20220408T235959" nextRoundId="220409"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220409" isDelete="0" startTime="20220409T000000" endTime="20220415T235959" nextRoundId="220416"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220416" isDelete="0" startTime="20220416T000000" endTime="20220422T235959" nextRoundId="220507"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220423" isDelete="0" startTime="20220423T000000" endTime="20220429T235959" nextRoundId="220507"/>
+		<!--2022年5月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220430" isDelete="0" startTime="20220430T000000" endTime="20220506T235959" nextRoundId="220507"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220507" isDelete="0" startTime="20220507T000000" endTime="20220513T235959" nextRoundId="220514"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220514" isDelete="0" startTime="20220514T000000" endTime="20220520T235959" nextRoundId="220521"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220521" isDelete="0" startTime="20220521T000000" endTime="20220527T235959" nextRoundId="220528"/>
+		<!--2022年6月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220528" isDelete="0" startTime="20220528T000000" endTime="20220603T235959" nextRoundId="220604"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220604" isDelete="0" startTime="20220604T000000" endTime="20220610T235959" nextRoundId="220611"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220611" isDelete="0" startTime="20220611T000000" endTime="20220617T235959" nextRoundId="220618"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220618" isDelete="0" startTime="20220618T000000" endTime="20220624T235959" nextRoundId="220625"/>
+		<!--2022年7月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220625" isDelete="0" startTime="20220625T000000" endTime="20220701T235959" nextRoundId="220702"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220702" isDelete="0" startTime="20220702T000000" endTime="20220708T235959" nextRoundId="220716"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220709" isDelete="0" startTime="20220709T000000" endTime="20220715T235959" nextRoundId="220716"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220716" isDelete="0" startTime="20220716T000000" endTime="20220722T235959" nextRoundId="220723"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220723" isDelete="0" startTime="20220723T000000" endTime="20220729T235959" nextRoundId="220730"/>
+		<!--2022年8月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220730" isDelete="0" startTime="20220730T000000" endTime="20220805T235959" nextRoundId="220806"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220806" isDelete="0" startTime="20220806T000000" endTime="20220812T235959" nextRoundId="220813"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220813" isDelete="0" startTime="20220813T000000" endTime="20220819T235959" nextRoundId="220820"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220820" isDelete="0" startTime="20220820T000000" endTime="20220826T235959" nextRoundId="220827"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220827" isDelete="0" startTime="20220827T000000" endTime="20220902T235959" nextRoundId="220903"/>
+		<!--2022年9月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220903" isDelete="0" startTime="20220903T000000" endTime="20220909T235959" nextRoundId="220910"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220910" isDelete="0" startTime="20220910T000000" endTime="20220916T235959" nextRoundId="220917"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220917" isDelete="0" startTime="20220917T000000" endTime="20220923T235959" nextRoundId="220924"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="220924" isDelete="0" startTime="20220924T000000" endTime="20220930T235959" nextRoundId="221001"/>
+		<!--2022年10月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="221001" isDelete="0" startTime="20221001T000000" endTime="20221007T235959" nextRoundId="221008"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="221008" isDelete="0" startTime="20221008T000000" endTime="20221014T235959" nextRoundId="221015"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="221015" isDelete="0" startTime="20221015T000000" endTime="20221021T235959" nextRoundId="221022"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="221022" isDelete="0" startTime="20221022T000000" endTime="20221028T235959" nextRoundId="221029"/>
+		<!--2022年11月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="221029" isDelete="0" startTime="20221029T000000" endTime="20221104T235959" nextRoundId="221105"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="221105" isDelete="0" startTime="20221105T000000" endTime="20221111T235959" nextRoundId="221112"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="221112" isDelete="0" startTime="20221112T000000" endTime="20221118T235959" nextRoundId="221119"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="221119" isDelete="0" startTime="20221119T000000" endTime="20221125T235959" nextRoundId="221126"/>
+		<!--2022年12月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="221126" isDelete="0" startTime="20221126T000000" endTime="20221202T235959" nextRoundId="221203"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="221203" isDelete="0" startTime="20221203T000000" endTime="20221209T235959" nextRoundId="221210"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="221210" isDelete="0" startTime="20221210T000000" endTime="20221216T235959" nextRoundId="221217"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="221217" isDelete="0" startTime="20221217T000000" endTime="20221223T235959" nextRoundId="221224"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="221224" isDelete="0" startTime="20221224T000000" endTime="20221230T235959" nextRoundId="221231"/>
+		<!--2023年1月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="221231" isDelete="0" startTime="20221231T000000" endTime="20230106T235959" nextRoundId="230107"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230107" isDelete="0" startTime="20230107T000000" endTime="20230113T235959" nextRoundId="230114"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230114" isDelete="0" startTime="20230114T000000" endTime="20230120T235959" nextRoundId="230121"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230121" isDelete="0" startTime="20230121T000000" endTime="20230127T235959" nextRoundId="230128"/>
+		<!--2023年2月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230128" isDelete="0" startTime="20230128T000000" endTime="20230203T235959" nextRoundId="230204"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230204" isDelete="0" startTime="20230204T000000" endTime="20230210T235959" nextRoundId="230211"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230211" isDelete="0" startTime="20230211T000000" endTime="20230217T235959" nextRoundId="230218"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230218" isDelete="0" startTime="20230218T000000" endTime="20230224T235959" nextRoundId="230225"/>
+        <!--2023年3月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230225" isDelete="0" startTime="20230225T000000" endTime="20230303T235959" nextRoundId="230304"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230304" isDelete="0" startTime="20230304T000000" endTime="20230310T235959" nextRoundId="230311"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230311" isDelete="0" startTime="20230311T000000" endTime="20230317T235959" nextRoundId="230318"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230318" isDelete="0" startTime="20230318T000000" endTime="20230324T235959" nextRoundId="230325"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230325" isDelete="0" startTime="20230325T000000" endTime="20230331T235959" nextRoundId="230401"/>
+		<!--2023年4月公会争霸赛：欢乐成双-->	
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230401" isDelete="0" startTime="20230401T000000" endTime="20230407T235959" nextRoundId="230408"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230408" isDelete="0" startTime="20230408T000000" endTime="20230414T235959" nextRoundId="230415"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230415" isDelete="0" startTime="20230415T000000" endTime="20230421T235959" nextRoundId="230422"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230422" isDelete="0" startTime="20230422T000000" endTime="20230428T235959" nextRoundId="230429"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230429" isDelete="0" startTime="20230429T000000" endTime="20230505T235959" nextRoundId="230506"/>
+		<!--2023年5月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230506" isDelete="0" startTime="20230506T000000" endTime="20230512T235959" nextRoundId="230513"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230513" isDelete="0" startTime="20230513T000000" endTime="20230519T235959" nextRoundId="230520"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230520" isDelete="0" startTime="20230520T000000" endTime="20230526T235959" nextRoundId="230527"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230527" isDelete="0" startTime="20230527T000000" endTime="20230602T235959" nextRoundId="230603"/>
+		<!--2023年6月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230603" isDelete="0" startTime="20230603T000000" endTime="20230609T235959" nextRoundId="230610"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230610" isDelete="0" startTime="20230610T000000" endTime="20230616T235959" nextRoundId="230617"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230617" isDelete="0" startTime="20230617T000000" endTime="20230623T235959" nextRoundId="230624"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230624" isDelete="0" startTime="20230624T000000" endTime="20230630T235959" nextRoundId="230701"/>
+		<!--2023年7月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230701" isDelete="0" startTime="20230701T000000" endTime="20230707T235959" nextRoundId="230708"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230708" isDelete="0" startTime="20230708T000000" endTime="20230714T235959" nextRoundId="230715"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230715" isDelete="0" startTime="20230715T000000" endTime="20230721T235959" nextRoundId="230722"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230722" isDelete="0" startTime="20230722T000000" endTime="20230728T235959" nextRoundId="230729"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230729" isDelete="0" startTime="20230729T000000" endTime="20230804T235959" nextRoundId="230805"/>
+		<!--2023年8月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230805" isDelete="0" startTime="20230805T000000" endTime="20230811T235959" nextRoundId="230812"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230812" isDelete="0" startTime="20230812T000000" endTime="20230818T235959" nextRoundId="230819"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230819" isDelete="0" startTime="20230819T000000" endTime="20230825T235959" nextRoundId="230826"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230826" isDelete="0" startTime="20230826T000000" endTime="20230901T235959" nextRoundId="230902"/>
+		<!--2023年9月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230902" isDelete="0" startTime="20230902T000000" endTime="20230908T235959" nextRoundId="230909"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230909" isDelete="0" startTime="20230909T000000" endTime="20230915T235959" nextRoundId="230916"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230916" isDelete="0" startTime="20230916T000000" endTime="20230922T235959" nextRoundId="230923"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230923" isDelete="0" startTime="20230923T000000" endTime="20230929T235959" nextRoundId="230930"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="230930" isDelete="0" startTime="20230930T000000" endTime="20231006T235959" nextRoundId="231007"/>
+		<!--2023年10月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="231007" isDelete="0" startTime="20231007T000000" endTime="20231013T235959" nextRoundId="231014"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="231014" isDelete="0" startTime="20231014T000000" endTime="20231020T235959" nextRoundId="231021"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="231021" isDelete="0" startTime="20231021T000000" endTime="20231027T235959" nextRoundId="231028"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="231028" isDelete="0" startTime="20231028T000000" endTime="20231103T235959" nextRoundId="231104"/>
+		<!--2023年11月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="231104" isDelete="0" startTime="20231104T000000" endTime="20231110T235959" nextRoundId="231111"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="231111" isDelete="0" startTime="20231111T000000" endTime="20231117T235959" nextRoundId="231118"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="231118" isDelete="0" startTime="20231118T000000" endTime="20231124T235959" nextRoundId="231125"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="231125" isDelete="0" startTime="20231125T000000" endTime="20231201T235959" nextRoundId="231202"/>
+		<!--2023年12月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="231202" isDelete="0" startTime="20231202T000000" endTime="20231208T235959" nextRoundId="231209"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="231209" isDelete="0" startTime="20231209T000000" endTime="20231215T235959" nextRoundId="231216"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="231216" isDelete="0" startTime="20231216T000000" endTime="20231222T235959" nextRoundId="231223"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="231223" isDelete="0" startTime="20231223T000000" endTime="20231229T235959" nextRoundId="231230"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="231230" isDelete="0" startTime="20231230T000000" endTime="20240105T235959" nextRoundId="240106"/>
+		<!--2024年1月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240106" isDelete="0" startTime="20240106T000000" endTime="20240112T235959" nextRoundId="240113"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240113" isDelete="0" startTime="20240113T000000" endTime="20240119T235959" nextRoundId="240120"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240120" isDelete="0" startTime="20240120T000000" endTime="20240126T235959" nextRoundId="240127"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240127" isDelete="0" startTime="20240127T000000" endTime="20240202T235959" nextRoundId="240203"/>
+		<!--2024年2月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240203" isDelete="0" startTime="20240203T000000" endTime="20240209T235959" nextRoundId="240210"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240210" isDelete="0" startTime="20240210T000000" endTime="20240216T235959" nextRoundId="240217"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240217" isDelete="0" startTime="20240217T000000" endTime="20240223T235959" nextRoundId="240224"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240224" isDelete="0" startTime="20240224T000000" endTime="20240301T235959" nextRoundId="240302"/>
+		<!--2024年3月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240302" isDelete="0" startTime="20240302T000000" endTime="20240308T235959" nextRoundId="240309"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240309" isDelete="0" startTime="20240309T000000" endTime="20240315T235959" nextRoundId="240316"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240316" isDelete="0" startTime="20240316T000000" endTime="20240322T235959" nextRoundId="240323"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240323" isDelete="0" startTime="20240323T000000" endTime="20240329T235959" nextRoundId="240330"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240330" isDelete="0" startTime="20240330T000000" endTime="20240405T235959" nextRoundId="240406"/>
+		<!--2024年4月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240406" isDelete="0" startTime="20240406T000000" endTime="20240412T235959" nextRoundId="240413"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240413" isDelete="0" startTime="20240413T000000" endTime="20240419T235959" nextRoundId="240420"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240420" isDelete="0" startTime="20240420T000000" endTime="20240426T235959" nextRoundId="240427"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240427" isDelete="0" startTime="20240427T000000" endTime="20240503T235959" nextRoundId="240504"/>
+	    <!--2024年5月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240504" isDelete="0" startTime="20240504T000000" endTime="20240510T235959" nextRoundId="240511"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240511" isDelete="0" startTime="20240511T000000" endTime="20240517T235959" nextRoundId="240518"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240518" isDelete="0" startTime="20240518T000000" endTime="20240524T235959" nextRoundId="240525"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240525" isDelete="0" startTime="20240525T000000" endTime="20240531T235959" nextRoundId="240601"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240601" isDelete="0" startTime="20240601T000000" endTime="20240607T235959" nextRoundId="240608"/>
+		<!--2024年6月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240608" isDelete="0" startTime="20240608T000000" endTime="20240614T235959" nextRoundId="240615"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240615" isDelete="0" startTime="20240615T000000" endTime="20240621T235959" nextRoundId="240622"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240622" isDelete="0" startTime="20240622T000000" endTime="20240628T235959" nextRoundId="240629"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240629" isDelete="0" startTime="20240629T000000" endTime="20240705T235959" nextRoundId="240706"/>
+		<!--2024年7月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240706" isDelete="0" startTime="20240706T000000" endTime="20240712T235959" nextRoundId="240713"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240713" isDelete="0" startTime="20240713T000000" endTime="20240719T235959" nextRoundId="240720"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240720" isDelete="0" startTime="20240720T000000" endTime="20240726T235959" nextRoundId="240727"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240727" isDelete="0" startTime="20240727T000000" endTime="20240802T235959" nextRoundId="240803"/>
+		<!--2024年8月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240803" isDelete="0" startTime="20240803T000000" endTime="20240809T235959" nextRoundId="240810"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240810" isDelete="0" startTime="20240810T000000" endTime="20240816T235959" nextRoundId="240817"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240817" isDelete="0" startTime="20240817T000000" endTime="20240823T235959" nextRoundId="240824"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240824" isDelete="0" startTime="20240824T000000" endTime="20240830T235959" nextRoundId="240831"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240831" isDelete="0" startTime="20240831T000000" endTime="20240906T235959" nextRoundId="240907"/>
+		<!--2024年9月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240907" isDelete="0" startTime="20240907T000000" endTime="20240913T235959" nextRoundId="240914"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240914" isDelete="0" startTime="20240914T000000" endTime="20240920T235959" nextRoundId="240921"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240921" isDelete="0" startTime="20240921T000000" endTime="20240927T235959" nextRoundId="240928"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="240928" isDelete="0" startTime="20240928T000000" endTime="20241004T235959" nextRoundId="241005"/>
+		<!--2024年10月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="241005" isDelete="0" startTime="20241005T000000" endTime="20241011T235959" nextRoundId="241012"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="241012" isDelete="0" startTime="20241012T000000" endTime="20241018T235959" nextRoundId="241019"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="241019" isDelete="0" startTime="20241019T000000" endTime="20241025T235959" nextRoundId="241026"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="241026" isDelete="0" startTime="20241026T000000" endTime="20241101T235959" nextRoundId="241102"/>
+		<!--2024年11月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="241102" isDelete="0" startTime="20241102T000000" endTime="20241108T235959" nextRoundId="241109"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="241109" isDelete="0" startTime="20241109T000000" endTime="20241115T235959" nextRoundId="241116"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="241116" isDelete="0" startTime="20241116T000000" endTime="20241122T235959" nextRoundId="241123"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="241123" isDelete="0" startTime="20241123T000000" endTime="20241129T235959" nextRoundId="241130"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="241130" isDelete="0" startTime="20241130T000000" endTime="20241206T235959" nextRoundId="241207"/>
+		<!--2024年12月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="241207" isDelete="0" startTime="20241207T000000" endTime="20241213T235959" nextRoundId="241214"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="241214" isDelete="0" startTime="20241214T000000" endTime="20241220T235959" nextRoundId="241221"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="241221" isDelete="0" startTime="20241221T000000" endTime="20241227T235959" nextRoundId="241228"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="241228" isDelete="0" startTime="20241228T000000" endTime="20250103T235959" nextRoundId="250104"/>
+		<!--2025年1月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="250104" isDelete="0" startTime="20250104T000000" endTime="20250110T235959" nextRoundId="250111"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="250111" isDelete="0" startTime="20250111T000000" endTime="20250117T235959" nextRoundId="250118"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="250118" isDelete="0" startTime="20250118T000000" endTime="20250124T235959" nextRoundId="250125"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="250125" isDelete="0" startTime="20250125T000000" endTime="20250131T235959" nextRoundId="250201"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="250201" isDelete="0" startTime="20250201T000000" endTime="20250207T235959" nextRoundId="250208"/>
+		<!--2025年2月公会争霸赛：欢乐成双-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="250208" isDelete="0" startTime="20250208T000000" endTime="20250214T235959" nextRoundId="250215"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="250215" isDelete="0" startTime="20250215T000000" endTime="20250221T235959" nextRoundId="250222"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="250222" isDelete="0" startTime="20250222T000000" endTime="20250228T235959" nextRoundId="250300"/>
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="250301" isDelete="0" startTime="20250301T000000" endTime="20250307T235959" nextRoundId="250308"/>
+		<!--2025年3月公会争霸赛：神之试炼-->
+        <Activity type="3"  name="公会争霸战" isOpen="1" roundId="250308" isDelete="0" startTime="20250308T000000" endTime="20250314T235959" nextRoundId="250315"/>
+		
+
+
+		<AcGuildWar	name="公会争霸战" cycid="170422" mkstarttime="20170422T190000" mkendtime="20170422T220000" prizebegintime="20170422T230000" recordlasttime="20170422T225959" sysvalue ="3" guild_join_time_limit="86400" ruleid="1"/>
+		<!-- 疑问；这一条上面的时间是不是就没用了？ 1111-->
+		
+		<AcGuildWarRule ruleid="1">
+		  <PrizePersonal>
+			<item wincntmin="5" wincntmax="9999" name="5胜" items="100013,300;111801,150"/>
+			<item wincntmin="3" wincntmax="4" name="3胜" items="100013,200;111801,100"/>
+			<item wincntmin="1" wincntmax="2" name="1胜" items="100013,100;111801,50"/>
+		  </PrizePersonal>
+		  <PrizePersonalRank>
+			<item ranklvmin="1" ranklvmax="4"  name="1~4名" items="100013,800;111801,800;435401,3"/>
+			<item ranklvmin="5" ranklvmax="10"  name="5~10名" items="100013,600;111801,600;435401,3"/>
+			<item ranklvmin="11" ranklvmax="50"  name="11~50名" items="100013,400;111801,400;435401,3"/>
+			<item ranklvmin="51" ranklvmax="100"  name="51~100名" items="100013,200;111801,200;435401,3"/>
+			<item ranklvmin="101" ranklvmax="1000"  name="101~1000名" items="100013,100;111801,100;435401,1"/>
+		  </PrizePersonalRank>
+		  <PrizeGuildPartake>
+			<item name="高于20000积分" scoremin="20001" scoremax="999999" items="100023,400;111801,200;1213301,1"/>
+			<item name="10001~20000分" scoremin="10001" scoremax="20000" items="100023,300;111801,150;1213201,2"/>
+			<item name="8000~10000分" scoremin="8000" scoremax="10000" items="100023,200;111801,100;1213201,1"/>
+		  </PrizeGuildPartake>
+		  <PrizeGuildRank>
+			<item ranklvmin="1" ranklvmax="1"  name="榜 首" items="100017,20000;100018,2000;100019,1500"/>
+			<item ranklvmin="2" ranklvmax="3"  name="2~3名" items="100017,15000;100018,1500;100019,1000"/>
+			<item ranklvmin="4" ranklvmax="10"  name="4~10名" items="100017,10000;100018,1000;100019,600"/>
+			<item ranklvmin="11" ranklvmax="50"  name="11~50名" items="100017,7000;100018,700;100019,450"/>
+			<item ranklvmin="51" ranklvmax="100"  name="51~100名" items="100017,5000;100018,500;100019,300"/>
+		  </PrizeGuildRank>
+		  <PrizeGuildScoreBylv>
+			<GuildLevel guildlvmin="1" guildlvmax="1">
+				<item name="高于5000积分" scoremin="5001" scoremax="999999" items="100017,1000;100018,100;100019,600"/>
+				<item name="3001~5000分" scoremin="3001" scoremax="5000" items="100017,750;100018,75;100019,450"/>
+				<item name="1000~3000分" scoremin="1000" scoremax="3000" items="100017,500;100018,50;100019,300"/>
+			</GuildLevel>
+			<GuildLevel guildlvmin="2" guildlvmax="2">
+				<item name="高于5000积分" scoremin="5001" scoremax="999999" items="100017,2000;100018,200;100019,600"/>
+				<item name="3001~5000分" scoremin="3001" scoremax="5000" items="100017,1500;100018,150;100019,450"/>
+				<item name="1000~3000分" scoremin="1000" scoremax="3000" items="100017,1000;100018,100;100019,300"/>
+			</GuildLevel>
+			<GuildLevel guildlvmin="3" guildlvmax="3">
+				<item name="高于5000积分" scoremin="5001" scoremax="999999" items="100017,3000;100018,300;100019,600"/>
+				<item name="3001~5000分" scoremin="3001" scoremax="5000" items="100017,2250;100018,225;100019,450"/>
+				<item name="1000~3000分" scoremin="1000" scoremax="3000" items="100017,1500;100018,150;100019,300"/>
+			</GuildLevel>
+			<GuildLevel guildlvmin="4" guildlvmax="4">
+				<item name="高于5000积分" scoremin="5001" scoremax="999999" items="100017,4000;100018,400;100019,600"/>
+				<item name="3001~5000分" scoremin="3001" scoremax="5000" items="100017,3000;100018,300;100019,450"/>
+				<item name="1000~3000分" scoremin="1000" scoremax="3000" items="100017,2000;100018,200;100019,300"/>
+			</GuildLevel>
+			<GuildLevel guildlvmin="5" guildlvmax="5">
+				<item name="高于5000积分" scoremin="5001" scoremax="999999" items="100017,5000;100018,500;100019,600"/>
+				<item name="3001~5000分" scoremin="3001" scoremax="5000" items="100017,3750;100018,375;100019,450"/>
+				<item name="1000~3000分" scoremin="1000" scoremax="3000" items="100017,2500;100018,250;100019,300"/>
+			</GuildLevel>
+			<GuildLevel guildlvmin="6" guildlvmax="6">
+				<item name="高于5000积分" scoremin="5001" scoremax="999999" items="100017,6000;100018,600;100019,600"/>
+				<item name="3001~5000分" scoremin="3001" scoremax="5000" items="100017,4500;100018,450;100019,450"/>
+				<item name="1000~3000分" scoremin="1000" scoremax="3000" items="100017,3000;100018,300;100019,300"/>
+			</GuildLevel>
+			<GuildLevel guildlvmin="7" guildlvmax="7">
+				<item name="高于5000积分" scoremin="5001" scoremax="999999" items="100017,7000;100018,700;100019,600"/>
+				<item name="3001~5000分" scoremin="3001" scoremax="5000" items="100017,5250;100018,525;100019,450"/>
+				<item name="1000~3000分" scoremin="1000" scoremax="3000" items="100017,3500;100018,350;100019,300"/>
+			</GuildLevel>
+			<GuildLevel guildlvmin="8" guildlvmax="8">
+				<item name="高于5000积分" scoremin="5001" scoremax="999999" items="100017,8000;100018,800;100019,600"/>
+				<item name="3001~5000分" scoremin="3001" scoremax="5000" items="100017,6000;100018,600;100019,450"/>
+				<item name="1000~3000分" scoremin="1000" scoremax="3000" items="100017,4000;100018,400;100019,300"/>
+			</GuildLevel>
+			<GuildLevel guildlvmin="9" guildlvmax="9">
+				<item name="高于5000积分" scoremin="5001" scoremax="999999" items="100017,9000;100018,900;100019,600"/>
+				<item name="3001~5000分" scoremin="3001" scoremax="5000" items="100017,6750;100018,675;100019,450"/>
+				<item name="1000~3000分" scoremin="1000" scoremax="3000" items="100017,4500;100018,450;100019,300"/>
+			</GuildLevel>
+			<GuildLevel guildlvmin="10" guildlvmax="10">
+				<item name="高于5000积分" scoremin="5001" scoremax="999999" items="100017,10000;100018,1000;100019,600"/>
+				<item name="3001~5000分" scoremin="3001" scoremax="5000" items="100017,7500;100018,750;100019,450"/>
+				<item name="1000~3000分" scoremin="1000" scoremax="3000" items="100017,5000;100018,500;100019,300"/>
+			</GuildLevel>
+			<GuildLevel guildlvmin="11" guildlvmax="11">
+				<item name="高于5000积分" scoremin="5001" scoremax="999999" items="100017,11000;100018,1100;100019,600"/>
+				<item name="3001~5000分" scoremin="3001" scoremax="5000" items="100017,8250;100018,825;100019,450"/>
+				<item name="1000~3000分" scoremin="1000" scoremax="3000" items="100017,5500;100018,550;100019,300"/>
+			</GuildLevel>
+			<GuildLevel guildlvmin="12" guildlvmax="12">
+				<item name="高于5000积分" scoremin="5001" scoremax="999999" items="100017,12000;100018,1200;100019,600"/>
+				<item name="3001~5000分" scoremin="3001" scoremax="5000" items="100017,9000;100018,900;100019,450"/>
+				<item name="1000~3000分" scoremin="1000" scoremax="3000" items="100017,6000;100018,600;100019,300"/>
+			</GuildLevel>
+		  </PrizeGuildScoreBylv>
+		  <GuildScoreAdd>
+		  <item min_rank="1" max_rank="6" score="250"/>
+		  <item min_rank="7" max_rank="18" score="50"/>
+		  <item min_rank="19" max_rank="36" score="10"/>
+		  <item min_rank="37" max_rank="999" score="1"/>
+		  </GuildScoreAdd>
+		  
+		  <Mail type="0" title="公会争霸战个人胜场奖励" content="亲爱的玩家,恭喜你在公会争霸战中获得了$VALUE$场胜利，附件为胜场奖励，请尽快查收～" fromacc="" keeptime="604800"/>
+		  <Mail type="1" title="公会争霸战个人排名奖励" content="亲爱的玩家,恭喜你在公会争霸战中获得了第$VALUE$名的成绩，附件为排名奖励，请尽快查收～" fromacc="" keeptime="604800"/>
+		  <Mail type="2" title="公会争霸战公会积分个人奖励" content="亲爱的玩家,恭喜你的公会在公会争霸战中获得了$VALUE$积分，每个胜场大于等于1的成员都可以获得如下奖励，请尽快查收～" fromacc="" keeptime="604800"/>
+		
+		</AcGuildWarRule>
+		<AcGuildWar	name="公会争霸战" cycid="170429" mkstarttime="20170424T190000" mkendtime="20170429T220000" prizebegintime="20170429T230000" recordlasttime="20170429T225959" sysvalue ="300" guild_join_time_limit="86400" ruleid="1"/>
+
+
+		<!--2021年2月公会争霸赛：欢乐成双-->
+		<AcGuildWar name="公会争霸战" cycid="210206" autoreward="1" mkstarttime="20210206T120000" mkendtime="20210206T220000" prizebegintime="20210207T030000" recordlasttime="20210206T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210213" autoreward="1" mkstarttime="20210213T120000" mkendtime="20210213T220000" prizebegintime="20210214T030000" recordlasttime="20210213T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210220" autoreward="1" mkstarttime="20210220T120000" mkendtime="20210220T220000" prizebegintime="20210221T030000" recordlasttime="20210220T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210227" autoreward="1" mkstarttime="20210227T120000" mkendtime="20210227T220000" prizebegintime="20210228T030000" recordlasttime="20210227T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2021年3月公会争霸赛：模式待定-->
+		<AcGuildWar name="公会争霸战" cycid="210306" autoreward="1" mkstarttime="20210306T120000" mkendtime="20210306T220000" prizebegintime="20210307T030000" recordlasttime="20210306T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210313" autoreward="1" mkstarttime="20210313T120000" mkendtime="20210313T220000" prizebegintime="20210314T030000" recordlasttime="20210313T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210320" autoreward="1" mkstarttime="20210320T120000" mkendtime="20210320T220000" prizebegintime="20210321T030000" recordlasttime="20210320T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210327" autoreward="1" mkstarttime="20210327T120000" mkendtime="20210327T220000" prizebegintime="20210328T030000" recordlasttime="20210327T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2021年4月公会争霸赛：模式待定-->
+		<AcGuildWar name="公会争霸战" cycid="210403" autoreward="1" mkstarttime="20210403T120000" mkendtime="20210403T220000" prizebegintime="20210404T030000" recordlasttime="20210403T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210410" autoreward="1" mkstarttime="20210410T120000" mkendtime="20210410T220000" prizebegintime="20210411T030000" recordlasttime="20210410T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210417" autoreward="1" mkstarttime="20210417T120000" mkendtime="20210417T220000" prizebegintime="20210418T030000" recordlasttime="20210417T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210424" autoreward="1" mkstarttime="20210424T120000" mkendtime="20210424T220000" prizebegintime="20210425T030000" recordlasttime="20210424T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2021年5月公会争霸赛：模式待定-->
+		<AcGuildWar name="公会争霸战" cycid="210501" autoreward="1" mkstarttime="20210501T120000" mkendtime="20210501T220000" prizebegintime="20210502T030000" recordlasttime="20210501T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210508" autoreward="1" mkstarttime="20210508T120000" mkendtime="20210508T220000" prizebegintime="20210509T030000" recordlasttime="20210508T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210515" autoreward="1" mkstarttime="20210515T120000" mkendtime="20210515T220000" prizebegintime="20210516T030000" recordlasttime="20210515T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210522" autoreward="1" mkstarttime="20210522T120000" mkendtime="20210522T220000" prizebegintime="20210523T030000" recordlasttime="20210522T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210529" autoreward="1" mkstarttime="20210529T120000" mkendtime="20210529T220000" prizebegintime="20210530T030000" recordlasttime="20210529T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2021年6月公会争霸赛：神之试炼-->
+		<AcGuildWar name="公会争霸战" cycid="210605" autoreward="1" mkstarttime="20210605T120000" mkendtime="20210605T220000" prizebegintime="20210606T030000" recordlasttime="20210605T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210612" autoreward="1" mkstarttime="20210612T120000" mkendtime="20210612T220000" prizebegintime="20210613T030000" recordlasttime="20210612T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210619" autoreward="1" mkstarttime="20210619T120000" mkendtime="20210619T220000" prizebegintime="20210620T030000" recordlasttime="20210619T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210626" autoreward="1" mkstarttime="20210626T120000" mkendtime="20210626T220000" prizebegintime="20210627T030000" recordlasttime="20210626T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2021年7月公会争霸赛：神之试炼-->
+		<AcGuildWar name="公会争霸战" cycid="210703" autoreward="1" mkstarttime="20210703T120000" mkendtime="20210703T220000" prizebegintime="20210704T030000" recordlasttime="20210703T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210710" autoreward="1" mkstarttime="20210710T120000" mkendtime="20210710T220000" prizebegintime="20210711T030000" recordlasttime="20210710T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210717" autoreward="1" mkstarttime="20210717T120000" mkendtime="20210717T220000" prizebegintime="20210718T030000" recordlasttime="20210717T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210724" autoreward="1" mkstarttime="20210724T120000" mkendtime="20210724T220000" prizebegintime="20210725T030000" recordlasttime="20210724T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210731" autoreward="1" mkstarttime="20210731T120000" mkendtime="20210731T220000" prizebegintime="20210801T030000" recordlasttime="20210731T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2021年8月公会争霸赛：欢乐成双-->
+		<AcGuildWar name="公会争霸战" cycid="210807" autoreward="1" mkstarttime="20210807T120000" mkendtime="20210807T220000" prizebegintime="20210808T030000" recordlasttime="20210807T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210814" autoreward="1" mkstarttime="20210814T120000" mkendtime="20210814T220000" prizebegintime="20210815T030000" recordlasttime="20210814T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210821" autoreward="1" mkstarttime="20210821T120000" mkendtime="20210821T220000" prizebegintime="20210822T030000" recordlasttime="20210821T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210828" autoreward="1" mkstarttime="20210828T120000" mkendtime="20210828T220000" prizebegintime="20210829T030000" recordlasttime="20210828T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2021年9月公会争霸赛：神之试炼-->
+		<AcGuildWar name="公会争霸战" cycid="210904" autoreward="1" mkstarttime="20210904T120000" mkendtime="20210904T220000" prizebegintime="20210905T030000" recordlasttime="20210904T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210911" autoreward="1" mkstarttime="20210911T120000" mkendtime="20210911T220000" prizebegintime="20210912T030000" recordlasttime="20210911T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210918" autoreward="1" mkstarttime="20210918T120000" mkendtime="20210918T220000" prizebegintime="20210919T030000" recordlasttime="20210918T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="210925" autoreward="1" mkstarttime="20210925T120000" mkendtime="20210925T220000" prizebegintime="20210926T030000" recordlasttime="20210925T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2021年10月公会争霸赛：欢乐成双-->
+		<AcGuildWar name="公会争霸战" cycid="211002" autoreward="1" mkstarttime="20211002T120000" mkendtime="20211002T220000" prizebegintime="20211003T030000" recordlasttime="20211002T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="211009" autoreward="1" mkstarttime="20211009T120000" mkendtime="20211009T220000" prizebegintime="20211010T030000" recordlasttime="20211009T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="211016" autoreward="1" mkstarttime="20211016T120000" mkendtime="20211016T220000" prizebegintime="20211017T030000" recordlasttime="20211016T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="211023" autoreward="1" mkstarttime="20211023T120000" mkendtime="20211023T220000" prizebegintime="20211024T030000" recordlasttime="20211023T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="211030" autoreward="1" mkstarttime="20211030T120000" mkendtime="20211030T220000" prizebegintime="20211031T030000" recordlasttime="20211030T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2021年11月公会争霸赛：神之试炼-->
+		<AcGuildWar name="公会争霸战" cycid="211106" autoreward="1" mkstarttime="20211106T120000" mkendtime="20211106T220000" prizebegintime="20211107T030000" recordlasttime="20211106T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="211113" autoreward="1" mkstarttime="20211113T120000" mkendtime="20211113T220000" prizebegintime="20211114T030000" recordlasttime="20211113T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="211120" autoreward="1" mkstarttime="20211120T120000" mkendtime="20211120T220000" prizebegintime="20211121T030000" recordlasttime="20211120T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="211127" autoreward="1" mkstarttime="20211127T120000" mkendtime="20211127T220000" prizebegintime="20211128T030000" recordlasttime="20211127T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2021年12月公会争霸赛：欢乐成双-->
+		<AcGuildWar name="公会争霸战" cycid="211204" autoreward="1" mkstarttime="20211204T120000" mkendtime="20211204T220000" prizebegintime="20211205T030000" recordlasttime="20211204T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="211211" autoreward="1" mkstarttime="20211211T120000" mkendtime="20211211T220000" prizebegintime="20211212T030000" recordlasttime="20211211T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="211218" autoreward="1" mkstarttime="20211218T120000" mkendtime="20211218T220000" prizebegintime="20211219T030000" recordlasttime="20211218T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="211225" autoreward="1" mkstarttime="20211225T120000" mkendtime="20211225T220000" prizebegintime="20211226T030000" recordlasttime="20211225T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2022年1月公会争霸赛：神之试炼-->
+        <AcGuildWar name="公会争霸战" cycid="220101" autoreward="1" mkstarttime="20220101T120000" mkendtime="20220101T220000" prizebegintime="20220102T030000" recordlasttime="20220101T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="220108" autoreward="1" mkstarttime="20220108T120000" mkendtime="20220108T220000" prizebegintime="20220109T030000" recordlasttime="20220108T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="220115" autoreward="1" mkstarttime="20220115T120000" mkendtime="20220115T220000" prizebegintime="20220116T030000" recordlasttime="20220115T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="220122" autoreward="1" mkstarttime="20220122T120000" mkendtime="20220122T220000" prizebegintime="20220123T030000" recordlasttime="20220122T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="220129" autoreward="1" mkstarttime="20220129T120000" mkendtime="20220129T220000" prizebegintime="20220130T030000" recordlasttime="20220129T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <!--2022年2月公会争霸赛：欢乐成双-->
+        <AcGuildWar name="公会争霸战" cycid="220205" autoreward="1" mkstarttime="20220205T120000" mkendtime="20220205T220000" prizebegintime="20220206T030000" recordlasttime="20220205T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="220212" autoreward="1" mkstarttime="20220212T120000" mkendtime="20220212T220000" prizebegintime="20220213T030000" recordlasttime="20220212T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="220219" autoreward="1" mkstarttime="20220219T120000" mkendtime="20220219T220000" prizebegintime="20220220T030000" recordlasttime="20220219T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="220226" autoreward="1" mkstarttime="20220226T120000" mkendtime="20220226T220000" prizebegintime="20220227T030000" recordlasttime="20220226T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2022年3月公会争霸赛：神之试炼-->
+        <AcGuildWar name="公会争霸战" cycid="220305" autoreward="1" mkstarttime="20220305T120000" mkendtime="20220305T220000" prizebegintime="20220306T030000" recordlasttime="20220305T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="220312" autoreward="1" mkstarttime="20220312T120000" mkendtime="20220312T220000" prizebegintime="20220313T030000" recordlasttime="20220312T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="220319" autoreward="1" mkstarttime="20220319T120000" mkendtime="20220319T220000" prizebegintime="20220320T030000" recordlasttime="20220319T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="220326" autoreward="1" mkstarttime="20220326T120000" mkendtime="20220326T220000" prizebegintime="20220327T030000" recordlasttime="20220326T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2022年4月公会争霸赛：欢乐成双-->
+        <AcGuildWar name="公会争霸战" cycid="220402" autoreward="1" mkstarttime="20220402T120000" mkendtime="20220402T220000" prizebegintime="20220403T030000" recordlasttime="20220402T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="220409" autoreward="1" mkstarttime="20220409T120000" mkendtime="20220409T220000" prizebegintime="20220410T030000" recordlasttime="20220409T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="220416" autoreward="1" mkstarttime="20220416T120000" mkendtime="20220416T220000" prizebegintime="20220417T030000" recordlasttime="20220416T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="220423" autoreward="1" mkstarttime="20220423T120000" mkendtime="20220423T220000" prizebegintime="20220424T030000" recordlasttime="20220423T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="220430" autoreward="1" mkstarttime="20220430T120000" mkendtime="20220430T220000" prizebegintime="20220501T030000" recordlasttime="20220430T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2022年5月公会争霸赛：神之试炼-->
+        <AcGuildWar name="公会争霸战" cycid="220507" autoreward="1" mkstarttime="20220507T120000" mkendtime="20220507T220000" prizebegintime="20220508T030000" recordlasttime="20220507T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="220514" autoreward="1" mkstarttime="20220514T120000" mkendtime="20220514T220000" prizebegintime="20220515T030000" recordlasttime="20220514T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="220521" autoreward="1" mkstarttime="20220521T120000" mkendtime="20220521T220000" prizebegintime="20220522T030000" recordlasttime="20220521T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="220528" autoreward="1" mkstarttime="20220528T120000" mkendtime="20220528T220000" prizebegintime="20220529T030000" recordlasttime="20220528T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2022年6月公会争霸赛：欢乐成双-->
+		<AcGuildWar name="公会争霸战" cycid="220604" autoreward="1" mkstarttime="20220604T120000" mkendtime="20220604T220000" prizebegintime="20220605T030000" recordlasttime="20220604T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="220611" autoreward="1" mkstarttime="20220611T120000" mkendtime="20220611T220000" prizebegintime="20220612T030000" recordlasttime="20220611T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="220618" autoreward="1" mkstarttime="20220618T120000" mkendtime="20220618T220000" prizebegintime="20220619T030000" recordlasttime="20220618T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="220625" autoreward="1" mkstarttime="20220625T120000" mkendtime="20220625T220000" prizebegintime="20220626T030000" recordlasttime="20220625T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2022年7月公会争霸赛：神之试炼-->
+		<AcGuildWar name="公会争霸战" cycid="220702" autoreward="1" mkstarttime="20220702T120000" mkendtime="20220702T220000" prizebegintime="20220703T030000" recordlasttime="20220702T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="220709" autoreward="1" mkstarttime="20220709T120000" mkendtime="20220709T220000" prizebegintime="20220710T030000" recordlasttime="20220709T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="220716" autoreward="1" mkstarttime="20220716T120000" mkendtime="20220716T220000" prizebegintime="20220717T030000" recordlasttime="20220716T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="220723" autoreward="1" mkstarttime="20220723T120000" mkendtime="20220723T220000" prizebegintime="20220724T030000" recordlasttime="20220723T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="220730" autoreward="1" mkstarttime="20220730T120000" mkendtime="20220730T220000" prizebegintime="20220731T030000" recordlasttime="20220730T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2022年8月公会争霸赛：欢乐成双-->
+		<AcGuildWar name="公会争霸战" cycid="220806" autoreward="1" mkstarttime="20220806T120000" mkendtime="20220806T220000" prizebegintime="20220807T030000" recordlasttime="20220806T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="220813" autoreward="1" mkstarttime="20220813T120000" mkendtime="20220813T220000" prizebegintime="20220814T030000" recordlasttime="20220813T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="220820" autoreward="1" mkstarttime="20220820T120000" mkendtime="20220820T220000" prizebegintime="20220821T030000" recordlasttime="20220820T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="220827" autoreward="1" mkstarttime="20220827T120000" mkendtime="20220827T220000" prizebegintime="20220828T030000" recordlasttime="20220827T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2022年9月公会争霸赛：神之试炼-->
+		<AcGuildWar name="公会争霸战" cycid="220903" autoreward="1" mkstarttime="20220903T120000" mkendtime="20220903T220000" prizebegintime="20220904T030000" recordlasttime="20220903T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="220910" autoreward="1" mkstarttime="20220910T120000" mkendtime="20220910T220000" prizebegintime="20220911T030000" recordlasttime="20220910T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="220917" autoreward="1" mkstarttime="20220917T120000" mkendtime="20220917T220000" prizebegintime="20220918T030000" recordlasttime="20220917T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="220924" autoreward="1" mkstarttime="20220924T120000" mkendtime="20220924T220000" prizebegintime="20220925T030000" recordlasttime="20220924T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2022年10月公会争霸赛：欢乐成双-->
+		<AcGuildWar name="公会争霸战" cycid="221001" autoreward="1" mkstarttime="20221001T120000" mkendtime="20221001T220000" prizebegintime="20221002T030000" recordlasttime="20221001T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="221008" autoreward="1" mkstarttime="20221008T120000" mkendtime="20221008T220000" prizebegintime="20221009T030000" recordlasttime="20221008T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="221015" autoreward="1" mkstarttime="20221015T120000" mkendtime="20221015T220000" prizebegintime="20221016T030000" recordlasttime="20221015T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="221022" autoreward="1" mkstarttime="20221022T120000" mkendtime="20221022T220000" prizebegintime="20221023T030000" recordlasttime="20221022T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2022年11月公会争霸赛：神之试炼-->
+		<AcGuildWar name="公会争霸战" cycid="221029" autoreward="1" mkstarttime="20221029T120000" mkendtime="20221029T220000" prizebegintime="20221030T030000" recordlasttime="20221029T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="221105" autoreward="1" mkstarttime="20221105T120000" mkendtime="20221105T220000" prizebegintime="20221106T030000" recordlasttime="20221105T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="221112" autoreward="1" mkstarttime="20221112T120000" mkendtime="20221112T220000" prizebegintime="20221113T030000" recordlasttime="20221112T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="221119" autoreward="1" mkstarttime="20221119T120000" mkendtime="20221119T220000" prizebegintime="20221120T030000" recordlasttime="20221119T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="221126" autoreward="1" mkstarttime="20221126T120000" mkendtime="20221126T220000" prizebegintime="20221127T030000" recordlasttime="20221126T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2022年12月公会争霸赛：欢乐成双-->
+		<AcGuildWar name="公会争霸战" cycid="221203" autoreward="1" mkstarttime="20221203T120000" mkendtime="20221203T220000" prizebegintime="20221204T030000" recordlasttime="20221203T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="221210" autoreward="1" mkstarttime="20221210T120000" mkendtime="20221210T220000" prizebegintime="20221211T030000" recordlasttime="20221210T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="221217" autoreward="1" mkstarttime="20221217T120000" mkendtime="20221217T220000" prizebegintime="20221218T030000" recordlasttime="20221217T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="221224" autoreward="1" mkstarttime="20221224T120000" mkendtime="20221224T220000" prizebegintime="20221225T030000" recordlasttime="20221224T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="221231" autoreward="1" mkstarttime="20221231T120000" mkendtime="20221231T220000" prizebegintime="20230101T030000" recordlasttime="20221231T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2023年1月公会争霸赛：神之试炼-->
+		<AcGuildWar name="公会争霸战" cycid="230107" autoreward="1" mkstarttime="20230107T120000" mkendtime="20230107T220000" prizebegintime="20230108T030000" recordlasttime="20230107T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="230114" autoreward="1" mkstarttime="20230114T120000" mkendtime="20230114T220000" prizebegintime="20230115T030000" recordlasttime="20230114T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="230121" autoreward="1" mkstarttime="20230121T120000" mkendtime="20230121T220000" prizebegintime="20230122T030000" recordlasttime="20230121T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="230128" autoreward="1" mkstarttime="20230128T120000" mkendtime="20230128T220000" prizebegintime="20230129T030000" recordlasttime="20230128T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2023年2月公会争霸赛：欢乐成双-->
+		<AcGuildWar name="公会争霸战" cycid="230204" autoreward="1" mkstarttime="20230204T120000" mkendtime="20230204T220000" prizebegintime="20230205T030000" recordlasttime="20230204T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230211" autoreward="1" mkstarttime="20230211T120000" mkendtime="20230211T220000" prizebegintime="20230212T030000" recordlasttime="20230211T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="230218" autoreward="1" mkstarttime="20230218T120000" mkendtime="20230218T220000" prizebegintime="20230219T030000" recordlasttime="20230218T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230225" autoreward="1" mkstarttime="20230225T120000" mkendtime="20230225T220000" prizebegintime="20230226T030000" recordlasttime="20230225T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2023年3月公会争霸赛：神之试炼-->
+        <AcGuildWar name="公会争霸战" cycid="230304" autoreward="1" mkstarttime="20230304T120000" mkendtime="20230304T220000" prizebegintime="20230305T030000" recordlasttime="20230304T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230311" autoreward="1" mkstarttime="20230311T120000" mkendtime="20230311T220000" prizebegintime="20230312T030000" recordlasttime="20230311T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230318" autoreward="1" mkstarttime="20230318T120000" mkendtime="20230318T220000" prizebegintime="20230319T030000" recordlasttime="20230318T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230325" autoreward="1" mkstarttime="20230325T120000" mkendtime="20230325T220000" prizebegintime="20230326T030000" recordlasttime="20230325T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <!--2023年4月公会争霸赛：欢乐成双-->
+        <AcGuildWar name="公会争霸战" cycid="230401" autoreward="1" mkstarttime="20230401T120000" mkendtime="20230401T220000" prizebegintime="20230402T030000" recordlasttime="20230401T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230408" autoreward="1" mkstarttime="20230408T120000" mkendtime="20230408T220000" prizebegintime="20230409T030000" recordlasttime="20230408T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230415" autoreward="1" mkstarttime="20230415T120000" mkendtime="20230415T220000" prizebegintime="20230416T030000" recordlasttime="20230415T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230422" autoreward="1" mkstarttime="20230422T120000" mkendtime="20230422T220000" prizebegintime="20230423T030000" recordlasttime="20230422T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230429" autoreward="1" mkstarttime="20230429T120000" mkendtime="20230429T220000" prizebegintime="20230430T030000" recordlasttime="20230429T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2023年5月公会争霸赛：神之试炼-->
+        <AcGuildWar name="公会争霸战" cycid="230506" autoreward="1" mkstarttime="20230506T120000" mkendtime="20230506T220000" prizebegintime="20230507T030000" recordlasttime="20230506T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230513" autoreward="1" mkstarttime="20230513T120000" mkendtime="20230513T220000" prizebegintime="20230514T030000" recordlasttime="20230513T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230520" autoreward="1" mkstarttime="20230520T120000" mkendtime="20230520T220000" prizebegintime="20230521T030000" recordlasttime="20230520T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230527" autoreward="1" mkstarttime="20230527T120000" mkendtime="20230527T220000" prizebegintime="20230528T030000" recordlasttime="20230527T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <!--2023年6月公会争霸赛：欢乐成双-->
+        <AcGuildWar name="公会争霸战" cycid="230603" autoreward="1" mkstarttime="20230603T120000" mkendtime="20230603T220000" prizebegintime="20230604T030000" recordlasttime="20230603T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230610" autoreward="1" mkstarttime="20230610T120000" mkendtime="20230610T220000" prizebegintime="20230611T030000" recordlasttime="20230610T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230617" autoreward="1" mkstarttime="20230617T120000" mkendtime="20230617T220000" prizebegintime="20230618T030000" recordlasttime="20230617T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230624" autoreward="1" mkstarttime="20230624T120000" mkendtime="20230624T220000" prizebegintime="20230625T030000" recordlasttime="20230624T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2023年7月公会争霸赛：神之试炼-->
+        <AcGuildWar name="公会争霸战" cycid="230701" autoreward="1" mkstarttime="20230701T120000" mkendtime="20230701T220000" prizebegintime="20230702T030000" recordlasttime="20230701T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230708" autoreward="1" mkstarttime="20230708T120000" mkendtime="20230708T220000" prizebegintime="20230709T030000" recordlasttime="20230708T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230715" autoreward="1" mkstarttime="20230715T120000" mkendtime="20230715T220000" prizebegintime="20230716T030000" recordlasttime="20230715T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230722" autoreward="1" mkstarttime="20230722T120000" mkendtime="20230722T220000" prizebegintime="20230723T030000" recordlasttime="20230722T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230729" autoreward="1" mkstarttime="20230729T120000" mkendtime="20230729T220000" prizebegintime="20230730T030000" recordlasttime="20230729T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <!--2023年8月公会争霸赛：欢乐成双-->
+        <AcGuildWar name="公会争霸战" cycid="230805" autoreward="1" mkstarttime="20230805T120000" mkendtime="20230805T220000" prizebegintime="20230806T030000" recordlasttime="20230805T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230812" autoreward="1" mkstarttime="20230812T120000" mkendtime="20230812T220000" prizebegintime="20230813T030000" recordlasttime="20230812T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230819" autoreward="1" mkstarttime="20230819T120000" mkendtime="20230819T220000" prizebegintime="20230820T030000" recordlasttime="20230819T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230826" autoreward="1" mkstarttime="20230826T120000" mkendtime="20230826T220000" prizebegintime="20230827T030000" recordlasttime="20230826T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2023年9月公会争霸赛：神之试炼-->
+        <AcGuildWar name="公会争霸战" cycid="230902" autoreward="1" mkstarttime="20230902T120000" mkendtime="20230902T220000" prizebegintime="20230903T030000" recordlasttime="20230902T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230909" autoreward="1" mkstarttime="20230909T120000" mkendtime="20230909T220000" prizebegintime="20230910T030000" recordlasttime="20230909T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230916" autoreward="1" mkstarttime="20230916T120000" mkendtime="20230916T220000" prizebegintime="20230917T030000" recordlasttime="20230916T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230923" autoreward="1" mkstarttime="20230923T120000" mkendtime="20230923T220000" prizebegintime="20230924T030000" recordlasttime="20230923T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="230930" autoreward="1" mkstarttime="20230930T120000" mkendtime="20230930T220000" prizebegintime="20231001T030000" recordlasttime="20230930T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <!--2023年10月公会争霸赛：欢乐成双-->
+        <AcGuildWar name="公会争霸战" cycid="231007" autoreward="1" mkstarttime="20231007T120000" mkendtime="20231007T220000" prizebegintime="20231008T030000" recordlasttime="20231007T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="231014" autoreward="1" mkstarttime="20231014T120000" mkendtime="20231014T220000" prizebegintime="20231015T030000" recordlasttime="20231014T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="231021" autoreward="1" mkstarttime="20231021T120000" mkendtime="20231021T220000" prizebegintime="20231022T030000" recordlasttime="20231021T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="231028" autoreward="1" mkstarttime="20231028T120000" mkendtime="20231028T220000" prizebegintime="20231029T030000" recordlasttime="20231028T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2023年11月公会争霸赛：神之试炼-->
+        <AcGuildWar name="公会争霸战" cycid="231104" autoreward="1" mkstarttime="20231104T120000" mkendtime="20231104T220000" prizebegintime="20231105T030000" recordlasttime="20231104T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="231111" autoreward="1" mkstarttime="20231111T120000" mkendtime="20231111T220000" prizebegintime="20231112T030000" recordlasttime="20231111T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="231118" autoreward="1" mkstarttime="20231118T120000" mkendtime="20231118T220000" prizebegintime="20231119T030000" recordlasttime="20231118T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="231125" autoreward="1" mkstarttime="20231125T120000" mkendtime="20231125T220000" prizebegintime="20231126T030000" recordlasttime="20231125T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <!--2023年12月公会争霸赛：欢乐成双-->
+		<AcGuildWar name="公会争霸战" cycid="231202" autoreward="1" mkstarttime="20231202T120000" mkendtime="20231202T220000" prizebegintime="20231203T030000" recordlasttime="20231202T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="231209" autoreward="1" mkstarttime="20231209T120000" mkendtime="20231209T220000" prizebegintime="20231210T030000" recordlasttime="20231209T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="231216" autoreward="1" mkstarttime="20231216T120000" mkendtime="20231216T220000" prizebegintime="20231217T030000" recordlasttime="20231216T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="231223" autoreward="1" mkstarttime="20231223T120000" mkendtime="20231223T220000" prizebegintime="20231224T030000" recordlasttime="20231223T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="231230" autoreward="1" mkstarttime="20231230T120000" mkendtime="20231230T220000" prizebegintime="20231231T030000" recordlasttime="20231230T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2024年1月公会争霸赛：神之试炼-->
+        <AcGuildWar name="公会争霸战" cycid="240106" autoreward="1" mkstarttime="20240106T120000" mkendtime="20240106T220000" prizebegintime="20240107T030000" recordlasttime="20240106T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240113" autoreward="1" mkstarttime="20240113T120000" mkendtime="20240113T220000" prizebegintime="20240114T030000" recordlasttime="20240113T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240120" autoreward="1" mkstarttime="20240120T120000" mkendtime="20240120T220000" prizebegintime="20240121T030000" recordlasttime="20240120T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240127" autoreward="1" mkstarttime="20240127T120000" mkendtime="20240127T220000" prizebegintime="20240128T030000" recordlasttime="20240127T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <!--2024年2月公会争霸赛：欢乐成双-->
+        <AcGuildWar name="公会争霸战" cycid="240203" autoreward="1" mkstarttime="20240203T120000" mkendtime="20240203T220000" prizebegintime="20240204T030000" recordlasttime="20240203T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240210" autoreward="1" mkstarttime="20240210T120000" mkendtime="20240210T220000" prizebegintime="20240211T030000" recordlasttime="20240210T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240217" autoreward="1" mkstarttime="20240217T120000" mkendtime="20240217T220000" prizebegintime="20240218T030000" recordlasttime="20240217T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240224" autoreward="1" mkstarttime="20240224T120000" mkendtime="20240224T220000" prizebegintime="20240225T030000" recordlasttime="20240224T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2024年3月公会争霸赛：神之试炼-->
+        <AcGuildWar name="公会争霸战" cycid="240302" autoreward="1" mkstarttime="20240302T120000" mkendtime="20240302T220000" prizebegintime="20240303T030000" recordlasttime="20240302T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240309" autoreward="1" mkstarttime="20240309T120000" mkendtime="20240309T220000" prizebegintime="20240310T030000" recordlasttime="20240309T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240316" autoreward="1" mkstarttime="20240316T120000" mkendtime="20240316T220000" prizebegintime="20240317T030000" recordlasttime="20240316T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240323" autoreward="1" mkstarttime="20240323T120000" mkendtime="20240323T220000" prizebegintime="20240324T030000" recordlasttime="20240323T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240330" autoreward="1" mkstarttime="20240330T120000" mkendtime="20240330T220000" prizebegintime="20240331T030000" recordlasttime="20240330T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2024年4月公会争霸赛：欢乐成双-->
+        <AcGuildWar name="公会争霸战" cycid="240406" autoreward="1" mkstarttime="20240406T120000" mkendtime="20240406T220000" prizebegintime="20240407T030000" recordlasttime="20240406T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240413" autoreward="1" mkstarttime="20240413T120000" mkendtime="20240413T220000" prizebegintime="20240414T030000" recordlasttime="20240413T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240420" autoreward="1" mkstarttime="20240420T120000" mkendtime="20240420T220000" prizebegintime="20240421T030000" recordlasttime="20240420T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240427" autoreward="1" mkstarttime="20240427T120000" mkendtime="20240427T220000" prizebegintime="20240428T030000" recordlasttime="20240427T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2024年5月公会争霸赛：神之试炼-->
+        <AcGuildWar name="公会争霸战" cycid="240504" autoreward="1" mkstarttime="20240504T120000" mkendtime="20240504T220000" prizebegintime="20240505T030000" recordlasttime="20240504T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240511" autoreward="1" mkstarttime="20240511T120000" mkendtime="20240511T220000" prizebegintime="20240512T030000" recordlasttime="20240511T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240518" autoreward="1" mkstarttime="20240518T120000" mkendtime="20240518T220000" prizebegintime="20240519T030000" recordlasttime="20240518T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240525" autoreward="1" mkstarttime="20240525T120000" mkendtime="20240525T220000" prizebegintime="20240526T030000" recordlasttime="20240525T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240601" autoreward="1" mkstarttime="20240601T120000" mkendtime="20240601T220000" prizebegintime="20240602T030000" recordlasttime="20240601T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2024年6月公会争霸赛：欢乐成双-->
+        <AcGuildWar name="公会争霸战" cycid="240608" autoreward="1" mkstarttime="20240608T120000" mkendtime="20240608T220000" prizebegintime="20240609T030000" recordlasttime="20240608T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240615" autoreward="1" mkstarttime="20240615T120000" mkendtime="20240615T220000" prizebegintime="20240616T030000" recordlasttime="20240615T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240622" autoreward="1" mkstarttime="20240622T120000" mkendtime="20240622T220000" prizebegintime="20240623T030000" recordlasttime="20240622T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240629" autoreward="1" mkstarttime="20240629T120000" mkendtime="20240629T220000" prizebegintime="20240630T030000" recordlasttime="20240629T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2024年7月公会争霸赛：神之试炼-->
+        <AcGuildWar name="公会争霸战" cycid="240706" autoreward="1" mkstarttime="20240706T120000" mkendtime="20240706T220000" prizebegintime="20240707T030000" recordlasttime="20240706T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240713" autoreward="1" mkstarttime="20240713T120000" mkendtime="20240713T220000" prizebegintime="20240714T030000" recordlasttime="20240713T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240720" autoreward="1" mkstarttime="20240720T120000" mkendtime="20240720T220000" prizebegintime="20240721T030000" recordlasttime="20240720T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+        <AcGuildWar name="公会争霸战" cycid="240727" autoreward="1" mkstarttime="20240727T120000" mkendtime="20240727T220000" prizebegintime="20240728T030000" recordlasttime="20240727T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2024年8月公会争霸赛：欢乐成双-->
+		<AcGuildWar name="公会争霸战" cycid="240803" autoreward="1" mkstarttime="20240803T120000" mkendtime="20240803T220000" prizebegintime="20240804T030000" recordlasttime="20240803T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="240810" autoreward="1" mkstarttime="20240810T120000" mkendtime="20240810T220000" prizebegintime="20240811T030000" recordlasttime="20240810T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="240817" autoreward="1" mkstarttime="20240817T120000" mkendtime="20240817T220000" prizebegintime="20240818T030000" recordlasttime="20240817T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="240824" autoreward="1" mkstarttime="20240824T120000" mkendtime="20240824T220000" prizebegintime="20240825T030000" recordlasttime="20240824T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="240831" autoreward="1" mkstarttime="20240831T120000" mkendtime="20240831T220000" prizebegintime="20240901T030000" recordlasttime="20240831T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2024年9月公会争霸赛：神之试炼-->
+		<AcGuildWar name="公会争霸战" cycid="240907" autoreward="1" mkstarttime="20240907T120000" mkendtime="20240907T220000" prizebegintime="20240908T030000" recordlasttime="20240907T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="240914" autoreward="1" mkstarttime="20240914T120000" mkendtime="20240914T220000" prizebegintime="20240915T030000" recordlasttime="20240914T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="240921" autoreward="1" mkstarttime="20240921T120000" mkendtime="20240921T220000" prizebegintime="20240922T030000" recordlasttime="20240921T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="240928" autoreward="1" mkstarttime="20240928T120000" mkendtime="20240928T220000" prizebegintime="20240929T030000" recordlasttime="20240928T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2024年10公会争霸赛：欢乐成双-->
+		<AcGuildWar name="公会争霸战" cycid="241005" autoreward="1" mkstarttime="20241005T120000" mkendtime="20241005T220000" prizebegintime="20241006T030000" recordlasttime="20241005T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="241012" autoreward="1" mkstarttime="20241012T120000" mkendtime="20241012T220000" prizebegintime="20241013T030000" recordlasttime="20241012T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="241019" autoreward="1" mkstarttime="20241019T120000" mkendtime="20241019T220000" prizebegintime="20241020T030000" recordlasttime="20241019T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="241026" autoreward="1" mkstarttime="20241026T120000" mkendtime="20241026T220000" prizebegintime="20241027T030000" recordlasttime="20241026T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2024年11月公会争霸赛：神之试炼-->
+		<AcGuildWar name="公会争霸战" cycid="241102" autoreward="1" mkstarttime="20241102T120000" mkendtime="20241102T220000" prizebegintime="20241103T030000" recordlasttime="20241102T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="241109" autoreward="1" mkstarttime="20241109T120000" mkendtime="20241109T220000" prizebegintime="20241110T030000" recordlasttime="20241109T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="241116" autoreward="1" mkstarttime="20241116T120000" mkendtime="20241116T220000" prizebegintime="20241117T030000" recordlasttime="20241116T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="241123" autoreward="1" mkstarttime="20241123T120000" mkendtime="20241123T220000" prizebegintime="20241124T030000" recordlasttime="20241123T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="241130" autoreward="1" mkstarttime="20241130T120000" mkendtime="20241130T220000" prizebegintime="20241201T030000" recordlasttime="20241130T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2024年12公会争霸赛：欢乐成双-->
+	    <AcGuildWar name="公会争霸战" cycid="241207" autoreward="1" mkstarttime="20241207T120000" mkendtime="20241207T220000" prizebegintime="20241208T030000" recordlasttime="20241207T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="241214" autoreward="1" mkstarttime="20241214T120000" mkendtime="20241214T220000" prizebegintime="20241215T030000" recordlasttime="20241214T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="241221" autoreward="1" mkstarttime="20241221T120000" mkendtime="20241221T220000" prizebegintime="20241222T030000" recordlasttime="20241221T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="241228" autoreward="1" mkstarttime="20241228T120000" mkendtime="20241228T220000" prizebegintime="20241229T030000" recordlasttime="20241228T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2025年1月公会争霸赛：神之试炼-->
+		<AcGuildWar name="公会争霸战" cycid="250104" autoreward="1" mkstarttime="20250104T120000" mkendtime="20250104T220000" prizebegintime="20250105T030000" recordlasttime="20250104T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="250111" autoreward="1" mkstarttime="20250111T120000" mkendtime="20250111T220000" prizebegintime="20250112T030000" recordlasttime="20250111T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="250118" autoreward="1" mkstarttime="20250118T120000" mkendtime="20250118T220000" prizebegintime="20250119T030000" recordlasttime="20250118T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="250125" autoreward="1" mkstarttime="20250125T120000" mkendtime="20250125T220000" prizebegintime="20250126T030000" recordlasttime="20250125T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="250201" autoreward="1" mkstarttime="20250201T120000" mkendtime="20250201T220000" prizebegintime="20250202T030000" recordlasttime="20250201T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2025年2公会争霸赛：欢乐成双-->
+		<AcGuildWar name="公会争霸战" cycid="250208" autoreward="1" mkstarttime="20250208T120000" mkendtime="20250208T220000" prizebegintime="20250209T030000" recordlasttime="20250208T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="250215" autoreward="1" mkstarttime="20250215T120000" mkendtime="20250215T220000" prizebegintime="20250216T030000" recordlasttime="20250215T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="250222" autoreward="1" mkstarttime="20250222T120000" mkendtime="20250222T220000" prizebegintime="20250223T030000" recordlasttime="20250222T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<AcGuildWar name="公会争霸战" cycid="250301" autoreward="1" mkstarttime="20250301T120000" mkendtime="20250301T220000" prizebegintime="20250302T030000" recordlasttime="20250301T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+		<!--2025年3月公会争霸赛：神之试炼-->
+		<AcGuildWar name="公会争霸战" cycid="250308" autoreward="1" mkstarttime="20250308T120000" mkendtime="20250308T220000" prizebegintime="20250309T030000" recordlasttime="20250308T225959" sysvalue ="5" guild_join_time_limit="86400" ruleid="1"/>
+
+
+
+		
+
+		<!--忠胆英杰2.0 这里的时间仅控制体力生效时间!!!-->
+		<Activity type="6"  name="忠胆英杰" isOpen="1" roundId="2" isDelete="0" startTime="20181123T000000" endTime="20181223T235959" isArea="0"/>
+		<Aczdyj sysValue="5">
+		</Aczdyj>			
+		
+		
+		<!--虎牢关2.0-->
+		<!--Prize type 虎牢关奖励 1=神吕布胜利 2=联合军胜利 3=失败 4=平局-->
+		<Activity type="4"  name="hulaoguan" isOpen="1" roundId="10" isDelete="0" startTime="20220703T040000" endTime="20220803T235959" isArea="0" sysValue="5" resetHour="4"/>
+		<Ac1v3ath sysValue="5"> <!--这个体力配置作废-->
+		  <Prize type="1" items="11408701,1" />
+		  <Prize type="2" items="11408701,1" />
+		  <Prize type="3" items="100011,20" />
+		</Ac1v3ath>
+		
+		<Activity type="7"  name="龙舟争渡" isOpen="1" roundId="3" isDelete="0" startTime="20180514T000000" endTime="20180528T235959" isArea="0"/>
+		<Actzgj sysValue="5">
+			<Prize type="1" items="100011,100;1122501,3;1122601,1;" />			//冠军
+			<Prize type="2" items="100011,75;1122501,2;" />			//亚军
+			<Prize type="3" items="100011,50;1122501,1;" />           //季军
+			<Prize type="4" items="100011,50;" />           //第四名
+			<Prize type="5" items="100011,25;" />		    //0龙船至宝
+		</Actzgj>
+		
+		<Activity type="8"  name="神武再世" isOpen="1" roundId="7" isDelete="0" startTime="20231214T000000" endTime="20231223T235959" isArea="0" sysValue="2" resetHour="4"/>
+		<Activity type="10"  name="诸侯伐董" isOpen="1" roundId="2" isDelete="0" startTime="20200429T100000" endTime="20200526T235959" isArea="0"/>
+		<Aczhfd sysValue="5">
+		</Aczhfd>		
+		<Activity type="11"  name="官渡之战" isOpen="1" roundId="10" isDelete="0" startTime="20240302T000000" endTime="20240312T235959"  isArea="0" sysValue="5" resetHour="4"/>
+		<Activity type="12"  name="守卫剑阁" isOpen="1" roundId="15" isDelete="0" startTime="20240711T000000" endTime="20240724T235959" isArea="0"  sysValue="5" resetHour="4"/>
+		<Acswjg sysValue="5">
+		</Acswjg>
+		
+		<Activity type="13"  name="千里单骑" isOpen="1" roundId="7" isDelete="0" startTime="20220914T000000" endTime="20221012T235959" isArea="0" sysValue="5"/>
+ 
+		<Activity type="14"  name="龙舟会战" isOpen="1" roundId="6" isDelete="0" startTime="20240605T000000" endTime="20240617T235959" isArea="0" sysValue="5"/>
+		<Activity type="15"  name="合纵抗秦" isOpen="1" roundId="2" isDelete="0" startTime="20200930T100000" endTime="20201027T235959" isArea="0" sysValue="5" resetHour="4"/>
+		<Activity type="16"  name="年兽2022" isOpen="1" roundId="4" isDelete="0" startTime="20240201T000000" endTime="20240224T235959" isArea="0" sysValue="5" resetHour="4"/>  
+		<Activity type="17"  name="十殿阎罗" isOpen="1" roundId="2" isDelete="0" startTime="20200902T000000" endTime="20200929T235959" isArea="0" sysValue="5" resetHour="4"/>	
+		<Activity type="18"  name="斗地主" isOpen="1" roundId="1" isDelete="0" startTime="20201001T070000" endTime="20210630T235959" isArea="0"  sysValue="0" resetHour="4"/>	
+		<Activity type="18"  name="斗地主" isOpen="1" roundId="2" isDelete="0" startTime="20210701T070000" endTime="20210701T235959" isArea="0"  sysValue="0" resetHour="4"/><!--这个作废-->
+		<Activity type="18"  name="斗地主" isOpen="1" roundId="3" isDelete="0" startTime="20210716T070000" endTime="20210930T235959" isArea="0"  sysValue="0" resetHour="4"/><!--s2赛季-->
+		<Activity type="18"  name="斗地主" isOpen="1" roundId="4" isDelete="0" startTime="20211001T070000" endTime="20211231T235959" isArea="0"  sysValue="0" resetHour="4"/>	
+		<Activity type="18"  name="斗地主" isOpen="1" roundId="5" isDelete="0" startTime="20220101T070000" endTime="20220420T235959" isArea="0"  sysValue="0" resetHour="4"/>	
+		<Activity type="18"  name="斗地主" isOpen="1" roundId="6" isDelete="0" startTime="20220502T070000" endTime="20220630T235959" isArea="0"  sysValue="0" resetHour="4"/>
+		<Activity type="18"  name="斗地主" isOpen="1" roundId="7" isDelete="0" startTime="20220704T070000" endTime="20221030T235959" isArea="0"  sysValue="0" resetHour="4"/>
+		<Activity type="18"  name="斗地主" isOpen="1" roundId="8" isDelete="0" startTime="20221031T070000" endTime="20230108T235959" isArea="0"  sysValue="0" resetHour="4"/>
+		<Activity type="18"  name="斗地主" isOpen="1" roundId="9" isDelete="0" startTime="20230109T070000" endTime="20230402T235959" isArea="0"  sysValue="0" resetHour="4"/>
+		<Activity type="18"  name="斗地主" isOpen="1" roundId="10" isDelete="0" startTime="20230403T070000" endTime="20230702T235959" isArea="0"  sysValue="0" resetHour="4"/>
+		<Activity type="18"  name="斗地主" isOpen="1" roundId="11" isDelete="0" startTime="20230703T070000" endTime="20231008T235959" isArea="0"  sysValue="0" resetHour="4"/>
+		<Activity type="18"  name="斗地主" isOpen="1" roundId="12" isDelete="0" startTime="20231009T070000" endTime="20231231T235959" isArea="0"  sysValue="0" resetHour="4"/>
+		<Activity type="18"  name="斗地主" isOpen="1" roundId="13" isDelete="0" startTime="20240101T070000" endTime="20240331T235959" isArea="0"  sysValue="0" resetHour="4"/>
+		<Activity type="18"  name="斗地主" isOpen="1" roundId="14" isDelete="0" startTime="20240401T000000" endTime="20240430T235959" isArea="0"  sysValue="0" resetHour="4"/>			
+		<Activity type="19"  name="斗地主练兵场" isOpen="1" roundId="1" isDelete="0" startTime="20201001T070000" endTime="20210714T235959" isArea="0"  sysValue="0" resetHour="4"/>			
+		<Activity type="20"  name="奇门八阵" isOpen="1" roundId="2" isDelete="0" startTime="20220804T000000" endTime="20220914T235959" isArea="0"  sysValue="5" resetHour="4"/>	
+		<Activity type="21"  name="十殿阎罗（2021）" isOpen="1" roundId="8" isDelete="0" startTime="20240403T000000" endTime="20240414T235959" isArea="0"  sysValue="5" resetHour="4"/>
+		<Activity type="23"  name="积分赛" isOpen="1" roundId="8" isDelete="0" startTime="20220817T070000" endTime="20281231T235959" isArea="0"  sysValue="0" resetHour="4"/>	
+		<Activity type="26"  name="九州演义" isOpen="1" roundId="1" isDelete="0" startTime="20220117T070000" endTime="20231231T235959" isArea="0"  sysValue="0" resetHour="4"/>			
+	</ActivitySet>	
+</Root>

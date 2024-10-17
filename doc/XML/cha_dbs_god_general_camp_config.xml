@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--神将大营-->
+<!--配置说明
+1.GodGeneralPage节点
+  GodGeneralPage->Id 单个神将页签ID 从1开始增加,不可重复
+  GodGeneralPage->RefreshTongQian 刷新当前页需要的铜钱
+  GodGeneralPage->DefaultOpenBoxCostItem 打开宝箱需要的请神卡的默认个数
+2.ShareItemList 节点,改节点里面表示的是该神将页签掉落的幸运物品(也就是相应的神点将卡)
+  ShareItemList->ShareItem 节点, 具体的道具
+	ShareItemList->ItemId 	道具ID
+	ShareItemList->MinCount 掉落的最小个数
+	ShareItemList->MaxCount 掉落的最大个数
+	ShareItemList->NoDropChance 不掉落的概率
+3.LuckyBox 幸运宝箱(阁子)
+	LuckyBox->ChoiceTimes		选择的次数
+	LuckyBox->OpenBoxCostItem	打开宝盒需要消耗的道具(如果不配置,或者配置成零 表示使用默认值,配置空,表示不消耗道具)
+	LuckyBox->NormalDrop		普通掉落对应server_item_drops_templete.xml DropTemplete->Id
+	
+	LuckyBox->LuckyItem			节点,掉落的物品
+	LuckyBox->LuckyItem->ItemId  掉落物品ID
+	LuckyBox->LuckyItem->MinCount 掉落最小个数
+	LuckyBox->LuckyItem->MaxCount 掉落最大个数
+	LuckyBox->LuckyItem->Chance 掉落概率
+
+注：
+1.物品掉落概率计算 
+	如果用Chance[X]表示第X次抽取时该物品的掉落Chance(LuckyItem->Chance属性),Chance[Max]表示最大次数时该物品的Chance
+
+	则:一个物品的在这次抽取中掉落概率(不考虑之前没有掉落的概率) A = Chance[X]/(Chance[X] + Chance[X+1]+...+Chance[Max] + ShareIte中该物品的配置:NoDropChance)
+		一个物品在第N次抽到的概率是: B = 前N-1次没有掉落的概率 * A;
+-->
+<GodGeneralCamp Version="20111025" NoticeLuckyItem="0">
+	<!--展台配置(多个,每个标签对应一个)-->
+	<GodGeneralPage Id="1" Order="1" Title="神关羽" Desc="可以抽取神关羽" TitleIco="" RefreshTongQian="0" DefaultOpenBoxCostItem="100001,1000;">
+		<!--当前神将大厅的物品信息 最多10个)-->
+		<ShareItemList>
+			<ShareItem ItemId="120101" MinCount="1" MaxCount="1" NoDropChance="0"/>
+		</ShareItemList>
+		
+		<!--宝箱列表(记录 显示使用) 位置信息从1开始-->
+		<LuckyBoxPosList>
+			<LuckyBoxPos Pos="1"/>
+			<LuckyBoxPos Pos="2"/>
+			<LuckyBoxPos Pos="3"/>
+			<LuckyBoxPos Pos="4"/>
+			<LuckyBoxPos Pos="5"/>
+			<LuckyBoxPos Pos="6"/>
+			<LuckyBoxPos Pos="7"/>
+			<LuckyBoxPos Pos="8"/>
+			<LuckyBoxPos Pos="9"/>
+		</LuckyBoxPosList>
+		
+		<!--真正的抽奖物品(根据玩家抽奖次数决定)-->
+		<LuckyBox ChoiceTimes="1"  NormalDrop="1" OpenBoxCostItem="100001,1000;">
+			<LuckyItem ItemId="120101" MinCount="1" MaxCount="1" Chance="1"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="2"  NormalDrop="1" OpenBoxCostItem="100001,2000;">
+			<LuckyItem ItemId="120101" MinCount="1" MaxCount="1" Chance="3"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="3"  NormalDrop="1" OpenBoxCostItem="100001,3000;">
+			<LuckyItem ItemId="120101" MinCount="1" MaxCount="1" Chance="5"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="4"  NormalDrop="2" OpenBoxCostItem="100001,4000;">
+			<LuckyItem ItemId="120101" MinCount="1" MaxCount="1" Chance="100"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="5"  NormalDrop="2" OpenBoxCostItem="100001,5000;">
+			<LuckyItem ItemId="120101" MinCount="1" MaxCount="1" Chance="150"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="6"  NormalDrop="2" OpenBoxCostItem="100001,6000;">
+			<LuckyItem ItemId="120101" MinCount="1" MaxCount="1" Chance="200"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="7"  NormalDrop="3" OpenBoxCostItem="100001,7000;">
+			<LuckyItem ItemId="120101" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="8"  NormalDrop="3" OpenBoxCostItem="100001,8000;">
+			<LuckyItem ItemId="120101" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="9"  NormalDrop="3" OpenBoxCostItem="100001,9000;">
+			<LuckyItem ItemId="120101" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+	</GodGeneralPage>
+	
+	<GodGeneralPage Id="2" Order="2" Title="神吕蒙" Desc="可以抽取神吕蒙" TitleIco="" efreshTongQian="0" DefaultOpenBoxCostItem="100001,1000;">
+				<!--当前神将大厅的物品信息 最多10个)-->
+		<ShareItemList>
+			<ShareItem ItemId="120201" MinCount="1" MaxCount="1" NoDropChance="0"/>
+		</ShareItemList>
+		
+		<!--宝箱列表(记录 显示使用) 位置信息从1开始-->
+		<LuckyBoxPosList>
+			<LuckyBoxPos Pos="1"/>
+			<LuckyBoxPos Pos="2"/>
+			<LuckyBoxPos Pos="3"/>
+			<LuckyBoxPos Pos="4"/>
+			<LuckyBoxPos Pos="5"/>
+			<LuckyBoxPos Pos="6"/>
+			<LuckyBoxPos Pos="7"/>
+			<LuckyBoxPos Pos="8"/>
+			<LuckyBoxPos Pos="9"/>
+		</LuckyBoxPosList>
+		
+		<!--真正的抽奖物品(根据玩家抽奖次数决定)-->
+		<LuckyBox ChoiceTimes="1"  NormalDrop="1" OpenBoxCostItem="100001,1000;">
+			<LuckyItem ItemId="120201" MinCount="1" MaxCount="1" Chance="1"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="2"  NormalDrop="1" OpenBoxCostItem="100001,2000;">
+			<LuckyItem ItemId="120201" MinCount="1" MaxCount="1" Chance="3"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="3"  NormalDrop="1" OpenBoxCostItem="100001,3000;">
+			<LuckyItem ItemId="120201" MinCount="1" MaxCount="1" Chance="5"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="4"  NormalDrop="2" OpenBoxCostItem="100001,4000;">
+			<LuckyItem ItemId="120201" MinCount="1" MaxCount="1" Chance="100"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="5"  NormalDrop="2" OpenBoxCostItem="100001,5000;">
+			<LuckyItem ItemId="120201" MinCount="1" MaxCount="1" Chance="150"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="6"  NormalDrop="2" OpenBoxCostItem="100001,6000;">
+			<LuckyItem ItemId="120201" MinCount="1" MaxCount="1" Chance="200"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="7"  NormalDrop="3" OpenBoxCostItem="100001,7000;">
+			<LuckyItem ItemId="120201" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="8"  NormalDrop="3" OpenBoxCostItem="100001,8000;">
+			<LuckyItem ItemId="120201" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="9"  NormalDrop="3" OpenBoxCostItem="100001,9000;">
+			<LuckyItem ItemId="120201" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+	</GodGeneralPage>
+	
+		<GodGeneralPage Id="3" Order="3" Title="神诸葛亮" Desc="可以抽取神诸葛亮" TitleIco="" efreshTongQian="0" DefaultOpenBoxCostItem="100001,1000;">
+				<!--当前神将大厅的物品信息 最多10个)-->
+		<ShareItemList>
+			<ShareItem ItemId="120401" MinCount="1" MaxCount="1" NoDropChance="0"/>
+		</ShareItemList>
+		
+		<!--宝箱列表(记录 显示使用) 位置信息从1开始-->
+		<LuckyBoxPosList>
+			<LuckyBoxPos Pos="1"/>
+			<LuckyBoxPos Pos="2"/>
+			<LuckyBoxPos Pos="3"/>
+			<LuckyBoxPos Pos="4"/>
+			<LuckyBoxPos Pos="5"/>
+			<LuckyBoxPos Pos="6"/>
+			<LuckyBoxPos Pos="7"/>
+			<LuckyBoxPos Pos="8"/>
+			<LuckyBoxPos Pos="9"/>
+		</LuckyBoxPosList>
+		
+		<!--真正的抽奖物品(根据玩家抽奖次数决定)-->
+		<LuckyBox ChoiceTimes="1"  NormalDrop="1" OpenBoxCostItem="100001,1000;">
+			<LuckyItem ItemId="120401" MinCount="1" MaxCount="1" Chance="1"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="2"  NormalDrop="1" OpenBoxCostItem="100001,2000;">
+			<LuckyItem ItemId="120401" MinCount="1" MaxCount="1" Chance="3"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="3"  NormalDrop="1" OpenBoxCostItem="100001,3000;">
+			<LuckyItem ItemId="120401" MinCount="1" MaxCount="1" Chance="5"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="4"  NormalDrop="2" OpenBoxCostItem="100001,4000;">
+			<LuckyItem ItemId="120401" MinCount="1" MaxCount="1" Chance="100"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="5"  NormalDrop="2" OpenBoxCostItem="100001,5000;">
+			<LuckyItem ItemId="120401" MinCount="1" MaxCount="1" Chance="150"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="6"  NormalDrop="2" OpenBoxCostItem="100001,6000;">
+			<LuckyItem ItemId="120401" MinCount="1" MaxCount="1" Chance="200"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="7"  NormalDrop="3" OpenBoxCostItem="100001,7000;">
+			<LuckyItem ItemId="120401" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="8"  NormalDrop="3" OpenBoxCostItem="100001,8000;">
+			<LuckyItem ItemId="120401" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="9"  NormalDrop="3" OpenBoxCostItem="100001,9000;">
+			<LuckyItem ItemId="120401" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+	</GodGeneralPage>
+	
+		<GodGeneralPage Id="4" Order="4" Title="神周瑜" Desc="可以抽取神周瑜" TitleIco="" efreshTongQian="0" DefaultOpenBoxCostItem="100001,1000;">
+				<!--当前神将大厅的物品信息 最多10个)-->
+		<ShareItemList>
+			<ShareItem ItemId="120301" MinCount="1" MaxCount="1" NoDropChance="0"/>
+		</ShareItemList>
+		
+		<!--宝箱列表(记录 显示使用) 位置信息从1开始-->
+		<LuckyBoxPosList>
+			<LuckyBoxPos Pos="1"/>
+			<LuckyBoxPos Pos="2"/>
+			<LuckyBoxPos Pos="3"/>
+			<LuckyBoxPos Pos="4"/>
+			<LuckyBoxPos Pos="5"/>
+			<LuckyBoxPos Pos="6"/>
+			<LuckyBoxPos Pos="7"/>
+			<LuckyBoxPos Pos="8"/>
+			<LuckyBoxPos Pos="9"/>
+		</LuckyBoxPosList>
+		
+		<!--真正的抽奖物品(根据玩家抽奖次数决定)-->
+		<LuckyBox ChoiceTimes="1"  NormalDrop="1" OpenBoxCostItem="100001,1000;">
+			<LuckyItem ItemId="120301" MinCount="1" MaxCount="1" Chance="1"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="2"  NormalDrop="1" OpenBoxCostItem="100001,2000;">
+			<LuckyItem ItemId="120301" MinCount="1" MaxCount="1" Chance="3"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="3"  NormalDrop="1" OpenBoxCostItem="100001,3000;">
+			<LuckyItem ItemId="120301" MinCount="1" MaxCount="1" Chance="5"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="4"  NormalDrop="2" OpenBoxCostItem="100001,4000;">
+			<LuckyItem ItemId="120301" MinCount="1" MaxCount="1" Chance="100"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="5"  NormalDrop="2" OpenBoxCostItem="100001,5000;">
+			<LuckyItem ItemId="120301" MinCount="1" MaxCount="1" Chance="150"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="6"  NormalDrop="2" OpenBoxCostItem="100001,6000;">
+			<LuckyItem ItemId="120301" MinCount="1" MaxCount="1" Chance="200"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="7"  NormalDrop="3" OpenBoxCostItem="100001,7000;">
+			<LuckyItem ItemId="120301" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="8"  NormalDrop="3" OpenBoxCostItem="100001,8000;">
+			<LuckyItem ItemId="120301" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="9"  NormalDrop="3" OpenBoxCostItem="100001,9000;">
+			<LuckyItem ItemId="120301" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+	</GodGeneralPage>
+		<GodGeneralPage Id="5" Order="5" Title="神曹操" Desc="可以抽取神曹操" TitleIco="" efreshTongQian="0" DefaultOpenBoxCostItem="100001,1000;">
+				<!--当前神将大厅的物品信息 最多10个)-->
+		<ShareItemList>
+			<ShareItem ItemId="120501" MinCount="1" MaxCount="1" NoDropChance="0"/>
+		</ShareItemList>
+		
+		<!--宝箱列表(记录 显示使用) 位置信息从1开始-->
+		<LuckyBoxPosList>
+			<LuckyBoxPos Pos="1"/>
+			<LuckyBoxPos Pos="2"/>
+			<LuckyBoxPos Pos="3"/>
+			<LuckyBoxPos Pos="4"/>
+			<LuckyBoxPos Pos="5"/>
+			<LuckyBoxPos Pos="6"/>
+			<LuckyBoxPos Pos="7"/>
+			<LuckyBoxPos Pos="8"/>
+			<LuckyBoxPos Pos="9"/>
+		</LuckyBoxPosList>
+		
+		<!--真正的抽奖物品(根据玩家抽奖次数决定)-->
+		<LuckyBox ChoiceTimes="1"  NormalDrop="1" OpenBoxCostItem="100001,1000;">
+			<LuckyItem ItemId="120501" MinCount="1" MaxCount="1" Chance="1"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="2"  NormalDrop="1" OpenBoxCostItem="100001,2000;">
+			<LuckyItem ItemId="120501" MinCount="1" MaxCount="1" Chance="3"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="3"  NormalDrop="1" OpenBoxCostItem="100001,3000;">
+			<LuckyItem ItemId="120501" MinCount="1" MaxCount="1" Chance="5"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="4"  NormalDrop="2" OpenBoxCostItem="100001,4000;">
+			<LuckyItem ItemId="120501" MinCount="1" MaxCount="1" Chance="100"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="5"  NormalDrop="2" OpenBoxCostItem="100001,5000;">
+			<LuckyItem ItemId="120501" MinCount="1" MaxCount="1" Chance="150"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="6"  NormalDrop="2" OpenBoxCostItem="100001,6000;">
+			<LuckyItem ItemId="120501" MinCount="1" MaxCount="1" Chance="200"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="7"  NormalDrop="3" OpenBoxCostItem="100001,7000;">
+			<LuckyItem ItemId="120501" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="8"  NormalDrop="3" OpenBoxCostItem="100001,8000;">
+			<LuckyItem ItemId="120501" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="9"  NormalDrop="3" OpenBoxCostItem="100001,9000;">
+			<LuckyItem ItemId="120501" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+	</GodGeneralPage>
+		<GodGeneralPage Id="6" Order="6" Title="神吕布" Desc="可以抽取神吕布" TitleIco="" efreshTongQian="0" DefaultOpenBoxCostItem="100001,1000;">
+				<!--当前神将大厅的物品信息 最多10个)-->
+		<ShareItemList>
+			<ShareItem ItemId="120601" MinCount="1" MaxCount="1" NoDropChance="0"/>
+		</ShareItemList>
+		
+		<!--宝箱列表(记录 显示使用) 位置信息从1开始-->
+		<LuckyBoxPosList>
+			<LuckyBoxPos Pos="1"/>
+			<LuckyBoxPos Pos="2"/>
+			<LuckyBoxPos Pos="3"/>
+			<LuckyBoxPos Pos="4"/>
+			<LuckyBoxPos Pos="5"/>
+			<LuckyBoxPos Pos="6"/>
+			<LuckyBoxPos Pos="7"/>
+			<LuckyBoxPos Pos="8"/>
+			<LuckyBoxPos Pos="9"/>
+		</LuckyBoxPosList>
+		
+		<!--真正的抽奖物品(根据玩家抽奖次数决定)-->
+		<LuckyBox ChoiceTimes="1"  NormalDrop="1" OpenBoxCostItem="100001,1000;">
+			<LuckyItem ItemId="120601" MinCount="1" MaxCount="1" Chance="1"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="2"  NormalDrop="1" OpenBoxCostItem="100001,2000;">
+			<LuckyItem ItemId="120601" MinCount="1" MaxCount="1" Chance="3"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="3"  NormalDrop="1" OpenBoxCostItem="100001,3000;">
+			<LuckyItem ItemId="120601" MinCount="1" MaxCount="1" Chance="5"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="4"  NormalDrop="2" OpenBoxCostItem="100001,4000;">
+			<LuckyItem ItemId="120601" MinCount="1" MaxCount="1" Chance="100"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="5"  NormalDrop="2" OpenBoxCostItem="100001,5000;">
+			<LuckyItem ItemId="120601" MinCount="1" MaxCount="1" Chance="150"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="6"  NormalDrop="2" OpenBoxCostItem="100001,6000;">
+			<LuckyItem ItemId="120601" MinCount="1" MaxCount="1" Chance="200"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="7"  NormalDrop="3" OpenBoxCostItem="100001,7000;">
+			<LuckyItem ItemId="120601" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="8"  NormalDrop="3" OpenBoxCostItem="100001,8000;">
+			<LuckyItem ItemId="120601" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+		<LuckyBox ChoiceTimes="9"  NormalDrop="3" OpenBoxCostItem="100001,9000;">
+			<LuckyItem ItemId="120601" MinCount="1" MaxCount="1" Chance="400"/>
+		</LuckyBox>
+	</GodGeneralPage>	
+	
+</GodGeneralCamp>

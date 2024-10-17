@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Root>
+	<GoodsComposeCfg>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			targetId	-	合成目标道具id
+			desc	-	合成描述
+			needItems	-	合成消耗的道具列表
+			-->
+		<Item targetId="112401" desc="合成三阶将印卡" needItems="112301,3;111801,100" />
+		<Item targetId="112501" desc="合成四阶将印卡" needItems="112401,3;111801,400" />
+		<Item targetId="112601" desc="合成五阶将印卡" needItems="112501,3;111801,1000" />
+	</GoodsComposeCfg>
+	<SanGuoXiuComposeCfg>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			key	-	合成类别id
+			goodType	-	合成类型：12是背景 13边框是 14是形象
+			quality	-	合成材料类型：1是静态，2是动态，3是动画，4是传说，5是线下
+			count	-	合成材料数量
+			-->
+		<item key="1" goodType="14" quality="1" count="3">
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			lingQiAdd	-	本次合成生成灵气数量
+			lingQiUsed	-	合成需要消耗的灵气
+			drop	-	掉落组id
+			state	-	合成是否不重复：1=不重复
+			listName	-	合成 名字
+			tips	-	tips
+				-	
+				-	h5废弃
+				-->
+			<dropItem lingQiAdd="2" lingQiUsed="0" drop="211">
+				<!--
+					exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ItemId	-	对应道具id
+				-	概率Chance
+			name	-	三国戏名称
+				-	掉落最小个数MinCount
+				-	掉落最大个数MaxCount
+			BeginTime	-	开始时间
+			EndTime	-	结束时间
+				-	这类仅客户端用
+					-->
+			</dropItem>
+			<dropItem lingQiAdd="2" lingQiUsed="20" drop="212" />
+			<dropItem lingQiAdd="2" lingQiUsed="25" drop="284" state="1" />
+		</item>
+		<item key="2" goodType="14" quality="2" count="3">
+			<dropItem lingQiAdd="20" lingQiUsed="0" drop="213" />
+			<dropItem lingQiAdd="20" lingQiUsed="500" drop="214" />
+			<dropItem lingQiAdd="20" lingQiUsed="50" drop="285" state="1" />
+		</item>
+		<item key="3" goodType="13" quality="1" count="3">
+			<dropItem lingQiAdd="1" lingQiUsed="0" drop="215" />
+			<dropItem lingQiAdd="1" lingQiUsed="10" drop="216" />
+			<dropItem lingQiAdd="1" lingQiUsed="15" drop="286" state="1" />
+		</item>
+		<item key="4" goodType="13" quality="2" count="3">
+			<dropItem lingQiAdd="15" lingQiUsed="0" drop="217" />
+			<dropItem lingQiAdd="15" lingQiUsed="30" drop="287" state="1" />
+		</item>
+		<item key="5" goodType="12" quality="1" count="3">
+			<dropItem lingQiAdd="1" lingQiUsed="0" drop="219" />
+			<dropItem lingQiAdd="1" lingQiUsed="15" drop="288" state="1" />
+		</item>
+	</SanGuoXiuComposeCfg>
+	<SanGuoXiuComposeCfg_new>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			key	-	合成类别id
+			goodType	-	合成类型：12是背景 13边框是 14是形象
+			quality	-	合成材料类型：1是静态，2是动态，3是动画，4是传说，5是线下
+			count	-	合成材料数量
+			-->
+		<item key="1" goodType="14" quality="1" count="3">
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	对应合成库id
+			num	-	每次随机库内秀数量
+			lingQiAdd	-	本次合成生成灵气数量
+			lingQiUsed	-	合成需要消耗的灵气
+			state	-	合成是否不重复：1=不重复
+			listsimply	-	合成简写
+			listName	-	合成 名字
+			tips	-	tips
+			replaceQuality 	-	需要重复替换的三国秀（品质）
+			replaceGoodsList	-	替换道具
+				-->
+			<dropItem id="11" num="200" lingQiAdd="2" lingQiUsed="0" />
+			<dropItem id="12" num="50" lingQiAdd="2" lingQiUsed="20" />
+			<dropItem id="13" num="150" lingQiAdd="2" lingQiUsed="25" state="1" />
+		</item>
+		<item key="2" goodType="14" quality="2" count="3">
+			<dropItem id="14" num="50" lingQiAdd="20" lingQiUsed="0" replaceQuality ="3" replaceGoodsList="3011009,1;113201,520" />
+			<dropItem id="15" num="10" lingQiAdd="20" lingQiUsed="500" state="1" />
+			<dropItem id="16" num="20" lingQiAdd="20" lingQiUsed="50" state="1" />
+		</item>
+		<item key="3" goodType="13" quality="1" count="3">
+			<dropItem id="21" num="150" lingQiAdd="1" lingQiUsed="0" />
+			<dropItem id="22" num="50" lingQiAdd="1" lingQiUsed="10" />
+			<dropItem id="23" num="100" lingQiAdd="1" lingQiUsed="15" state="1" />
+		</item>
+		<item key="4" goodType="13" quality="2" count="3">
+			<dropItem id="24" num="50" lingQiAdd="15" lingQiUsed="0" />
+			<dropItem id="25" num="20" lingQiAdd="15" lingQiUsed="30" state="1" />
+		</item>
+		<item key="5" goodType="12" quality="1" count="3">
+			<dropItem id="31" num="100" lingQiAdd="1" lingQiUsed="0" />
+			<dropItem id="32" num="50" lingQiAdd="1" lingQiUsed="15" state="1" />
+		</item>
+	</SanGuoXiuComposeCfg_new>
+</Root>

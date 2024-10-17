@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			addExpPerDay	-	每日增加经验上限
+			subExpPerDay	-	每日减少上限，负数
+			notNeedCalcTimes	-	当游戏时间少于游戏开始人数*这个值时，不计算熟练度
+			notNeedCalcSameIp	-	同IP数量大于此值，不计算熟练度
+			derateHigherLevel	-	当你的熟练度等级大于等于房间平均熟练度等级+level时，获得的熟练度为percent/100  （增减分都算）
+			des	-	问号规则说明
+			destips	-	段位名字tips后半段描述
+			diff	-	进房间确认弹窗等级差
+		-->
+	<Common addExpPerDay="150" subExpPerDay="-150" notNeedCalcTimes="60" notNeedCalcSameIp="2" derateHigherLevel="6,50;12,10" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			lowestLevel	-	低于等于此段位后不再衰减
+			daysOffline	-	离线多少天计算一次
+			daysOfflineRange	-	离线多长时间之内
+			daysOfflineRangeReduceTimes	-	在离线时间区间时间内最多计算多少次
+		-->
+	<Reduce lowestLevel="20" daysOffline="30" daysOfflineRange="180" daysOfflineRangeReduceTimes="3" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	id 从0开始连续
+			name	-	名字
+			exp	-	升级经验 当前等级升到下一级的经验
+			calcParams	-	计算参数ab，a可为负
+			iconbig	-	熟练度大icon，需是整数，客户端有用这个关联icon特效
+			icon	-	熟练度小icon
+			effect	-	对应特效（程序资源）
+				-	
+				-	
+				-	
+				-	
+				-	
+				-
+		-->
+	<LevelInfo id="0" name="初出茅庐Ⅰ" exp="30" calcParams="50,1" />
+	<LevelInfo id="1" name="初出茅庐Ⅱ" exp="30" calcParams="49,1" />
+	<LevelInfo id="2" name="初出茅庐Ⅲ" exp="30" calcParams="48,1" />
+	<LevelInfo id="3" name="初显身手Ⅰ" exp="50" calcParams="47,10" />
+	<LevelInfo id="4" name="初显身手Ⅱ" exp="50" calcParams="46,15" />
+	<LevelInfo id="5" name="初显身手Ⅲ" exp="50" calcParams="45,20" />
+	<LevelInfo id="6" name="熟能生巧Ⅰ" exp="100" calcParams="44,25" />
+	<LevelInfo id="7" name="熟能生巧Ⅱ" exp="120" calcParams="43,30" />
+	<LevelInfo id="8" name="熟能生巧Ⅲ" exp="140" calcParams="42,35" />
+	<LevelInfo id="9" name="游刃有余Ⅰ" exp="200" calcParams="41,40" />
+	<LevelInfo id="10" name="游刃有余Ⅱ" exp="220" calcParams="40,45" />
+	<LevelInfo id="11" name="游刃有余Ⅲ" exp="240" calcParams="39,50" />
+	<LevelInfo id="12" name="行云流水Ⅰ" exp="300" calcParams="38,52" />
+	<LevelInfo id="13" name="行云流水Ⅱ" exp="320" calcParams="37,54" />
+	<LevelInfo id="14" name="行云流水Ⅲ" exp="340" calcParams="36,56" />
+	<LevelInfo id="15" name="出类拔萃Ⅰ" exp="450" calcParams="35,58" />
+	<LevelInfo id="16" name="出类拔萃Ⅱ" exp="480" calcParams="34,60" />
+	<LevelInfo id="17" name="出类拔萃Ⅲ" exp="510" calcParams="33,62" />
+	<LevelInfo id="18" name="得心应手Ⅰ" exp="615" calcParams="32,64" />
+	<LevelInfo id="19" name="得心应手Ⅱ" exp="645" calcParams="31,66" />
+	<LevelInfo id="20" name="得心应手Ⅲ" exp="675" calcParams="30,68" />
+	<LevelInfo id="21" name="运用自如Ⅰ" exp="795" calcParams="29,70" />
+	<LevelInfo id="22" name="运用自如Ⅱ" exp="825" calcParams="28,72" />
+	<LevelInfo id="23" name="运用自如Ⅲ" exp="855" calcParams="27,74" />
+	<LevelInfo id="24" name="运筹帷幄Ⅰ" exp="975" calcParams="26,76" />
+	<LevelInfo id="25" name="运筹帷幄Ⅱ" exp="1005" calcParams="25,78" />
+	<LevelInfo id="26" name="运筹帷幄Ⅲ" exp="1035" calcParams="24,80" />
+	<LevelInfo id="27" name="才高八斗Ⅰ" exp="1170" calcParams="23,81" />
+	<LevelInfo id="28" name="才高八斗Ⅱ" exp="1200" calcParams="22,82" />
+	<LevelInfo id="29" name="才高八斗Ⅲ" exp="1230" calcParams="21,83" />
+	<LevelInfo id="30" name="足智多谋Ⅰ" exp="1365" calcParams="20,84" />
+	<LevelInfo id="31" name="足智多谋Ⅱ" exp="1410" calcParams="19,85" />
+	<LevelInfo id="32" name="足智多谋Ⅲ" exp="1440" calcParams="18,86" />
+	<LevelInfo id="33" name="横扫千军Ⅰ" exp="1575" calcParams="17,87" />
+	<LevelInfo id="34" name="横扫千军Ⅱ" exp="1620" calcParams="16,88" />
+	<LevelInfo id="35" name="横扫千军Ⅲ" exp="1650" calcParams="15,89" />
+	<LevelInfo id="36" name="一代宗师Ⅰ" exp="1800" calcParams="15,90" />
+	<LevelInfo id="37" name="一代宗师Ⅱ" exp="1845" calcParams="15,91" />
+	<LevelInfo id="38" name="一代宗师Ⅲ" exp="1875" calcParams="15,92" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			match1	-	寻找阶段1：<=xx秒，可加入<=xx段位差点房间
+			match2	-	寻找阶段2：<=xx秒，可加入<=xx段位差点房间
+			match3	-	寻找阶段3：<=xx秒，可加入<=xx段位差点房间，达到xx秒后没找到房间就创建房间
+			stoptime	-	总寻找xx秒则停止本次匹配
+			exittime	-	从加入该房间开始超过100秒未成功开始（配置），则退出该房间。
+		-->
+</root>

@@ -1,0 +1,2032 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			model	-	游戏模式
+			name	-	子页签名字
+			bomb	-	炸弹数量
+			bet	-	下注分数
+			enterBean	-	进入要求欢乐豆
+			enterScore	-	进入要求积分
+			fierceTurnCount	-	智斗三国鏖战开始的轮数，主公杀鏖战触发阵亡人数，斗地主秒数（0=不开启）
+			cost	-	胜利方门票费 地主;农民
+			overtime	-	强制结算时间
+			maxMultiple	-	最高翻倍数量
+			spGeneral	-	模式专属武将id，换出该武将权重，多个；分隔
+			usingTime	-	模式专属武将可使用时间
+			day	-	活动场赛季日期
+			daytime	-	每日开启结束时间
+			dec	-	描述
+			OpenTime	-	限时玩法开启时间
+			LuckyNumberOpen	-	幸运数字开启开关
+			LuckyNumber	-	幸运数字随机技能库（每日0点随机）
+			AdaptCardOpen	-	随机应变开关
+			AdaptCard	-	添加随机应变牌数量，卡牌id6004
+			LordCardTurnOff1	-	地主主动加倍开关（1=开，其他值=关）
+			LordCardTurnOff2	-	农民主动加倍开关（1=开，其他值=关）
+			LordCardTurnOff3	-	地主明牌开关（1=开，其他值=关）
+			SGeneral	-	S级武将最小数;分将数
+			AGeneral	-	A级武将最小数;分将数
+			BGeneral	-	B级武将分将数
+			newGeneralRatio	-	新获得武将增加次数权重
+			timeTrialGeneralRatio	-	时间试用武将增加次数权重
+			numTrialGeneralRatio	-	次数试用武将增加次数权重
+			DoubleBean	-	加倍所需最小欢乐豆
+			AILordParam1	-	AI叫分100参数
+			AILordParam2	-	AI叫分200参数
+			AILordParam3	-	AI叫分300参数
+			SGeneralNum	-	拥有S级别武将数
+			SGeneralRatio 	-	 S级别武将率(十万分制) 大于等于这个值
+			IgnoreOff 	-	视为官阶值
+		-->
+	<Label model="117" name="基础场" bomb="2" bet="50,100,150" enterBean="150" enterScore="0" fierceTurnCount="11" cost="10;5" overtime="1800" maxMultiple="2" dec="基础场：押注限额50至150欢乐豆，每场有2张炸弹，最多翻到两倍，入场最低需拥有150欢乐豆，任意角色阵亡则结束。">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			group	-	武将组
+			count	-	练习场数量
+				-	
+				-	
+				-	
+				-	总数量
+				-	
+				-	练习场数量
+			-->
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			group	-	武将组
+			count	-	基础场数量
+				-	
+				-	
+				-	
+				-	总数量
+				-	
+				-	基础场数量
+			-->
+		<GeneralList group="5" count="12">
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	武将id
+			weight	-	权重
+			group	-	将池互斥标记
+				-	是否有
+				-	
+				-	
+				-	
+				-	
+				-	
+				-	
+				-	
+				-	
+				-
+				-->
+			<General id="5" weight="180" />
+			<General id="3" weight="180" group="156" />
+			<General id="8" weight="175" />
+			<General id="9" weight="130" />
+			<General id="12" weight="110" />
+			<General id="28" weight="130" />
+			<General id="22" weight="150" />
+			<General id="23" weight="130" />
+			<General id="24" weight="125" />
+			<General id="26" weight="180" />
+			<General id="20" weight="155" />
+			<General id="15" weight="70" />
+		</GeneralList>
+		<GeneralList group="1" count="35">
+			<General id="16" weight="105" />
+			<General id="17" weight="105" />
+			<General id="34" weight="155" />
+			<General id="35" weight="85" />
+			<General id="50" weight="130" />
+			<General id="51" weight="155" group="201" />
+			<General id="105" weight="85" />
+			<General id="106" weight="155" />
+			<General id="110" weight="105" />
+			<General id="111" weight="145" />
+			<General id="114" weight="70" group="992" />
+			<General id="121" weight="155" />
+			<General id="122" weight="145" group="991" />
+			<General id="136" weight="130" />
+			<General id="139" weight="175" />
+			<General id="160" weight="130" />
+			<General id="161" weight="120" />
+			<General id="162" weight="155" />
+			<General id="164" weight="130" />
+			<General id="173" weight="105" />
+			<General id="175" weight="165" />
+			<General id="176" weight="225" />
+			<General id="187" weight="185" />
+			<General id="311" weight="105" />
+			<General id="312" weight="135" />
+			<General id="313" weight="170" />
+			<General id="314" weight="140" />
+			<General id="316" weight="160" group="994" />
+			<General id="321" weight="130" />
+			<General id="323" weight="180" group="993" />
+			<General id="332" weight="160" group="995" />
+			<General id="333" weight="135" />
+			<General id="360" weight="70" />
+			<General id="364" weight="180" />
+			<General id="375" weight="190" />
+			<General id="379" weight="170" />
+			<General id="380" weight="150" />
+			<General id="385" weight="70" />
+			<General id="388" weight="235" />
+			<General id="432" weight="125" />
+			<General id="453" weight="170" />
+			<General id="467" weight="205" />
+			<General id="471" weight="215" group="201" />
+			<General id="18" weight="85" />
+			<General id="489" weight="500" />
+			<General id="493" weight="500" />
+			<General id="496" weight="500" />
+			<General id="498" weight="500" />
+			<General id="486" weight="500" />
+		</GeneralList>
+		<GeneralList group="2" count="35">
+			<General id="1" weight="115" group="991" />
+			<General id="6" weight="85" />
+			<General id="36" weight="160" group="106" />
+			<General id="37" weight="145" group="203" />
+			<General id="46" weight="105" />
+			<General id="47" weight="70" />
+			<General id="53" weight="145" group="993" />
+			<General id="103" weight="175" />
+			<General id="115" weight="150" />
+			<General id="116" weight="150" />
+			<General id="124" weight="180" />
+			<General id="156" weight="270" group="455" />
+			<General id="166" weight="230" />
+			<General id="167" weight="150" group="992" />
+			<General id="177" weight="155" />
+			<General id="179" weight="125" />
+			<General id="185" weight="140" />
+			<General id="186" weight="125" />
+			<General id="299" weight="130" group="994" />
+			<General id="302" weight="180" />
+			<General id="303" weight="100" />
+			<General id="325" weight="70" />
+			<General id="326" weight="185" group="203" />
+			<General id="335" weight="135" />
+			<General id="336" weight="105" group="995" />
+			<General id="337" weight="85" />
+			<General id="346" weight="155" />
+			<General id="365" weight="175" />
+			<General id="369" weight="135" />
+			<General id="370" weight="70" />
+			<General id="376" weight="115" />
+			<General id="421" weight="175" />
+			<General id="427" weight="130" />
+			<General id="451" weight="150" />
+			<General id="454" weight="160" />
+			<General id="479" weight="155" />
+			<General id="492" weight="105" />
+			<General id="455" weight="210" />
+			<General id="301" weight="220" group="156" />
+			<General id="488" weight="500" />
+			<General id="499" weight="500" />
+			<General id="503" weight="500" />
+		</GeneralList>
+		<GeneralList group="3" count="35">
+			<General id="30" weight="140" />
+			<General id="38" weight="180" />
+			<General id="44" weight="70" />
+			<General id="49" weight="145" group="994" />
+			<General id="54" weight="155" />
+			<General id="55" weight="70" />
+			<General id="117" weight="135" />
+			<General id="123" weight="70" />
+			<General id="125" weight="125" />
+			<General id="126" weight="135" />
+			<General id="135" weight="165" />
+			<General id="155" weight="230" />
+			<General id="157" weight="70" />
+			<General id="169" weight="170" />
+			<General id="170" weight="155" />
+			<General id="180" weight="155" group="992" />
+			<General id="182" weight="175" />
+			<General id="305" weight="120" />
+			<General id="307" weight="215" />
+			<General id="308" weight="150" />
+			<General id="327" weight="90" />
+			<General id="328" weight="180" />
+			<General id="329" weight="130" />
+			<General id="339" weight="185" />
+			<General id="340" weight="90" />
+			<General id="368" weight="125" />
+			<General id="371" weight="90" />
+			<General id="382" weight="135" />
+			<General id="384" weight="210" />
+			<General id="394" weight="125" />
+			<General id="420" weight="170" />
+			<General id="429" weight="105" />
+			<General id="442" weight="200" />
+			<General id="443" weight="195" group="301" />
+			<General id="452" weight="155" />
+			<General id="457" weight="165" />
+			<General id="458" weight="170" />
+			<General id="463" weight="195" />
+			<General id="468" weight="215" />
+			<General id="473" weight="170" />
+			<General id="25" weight="160" group="301" />
+			<General id="494" weight="500" />
+		</GeneralList>
+		<GeneralList group="4" count="35">
+			<General id="39" weight="145" />
+			<General id="40" weight="180" />
+			<General id="48" weight="135" />
+			<General id="57" weight="125" />
+			<General id="72" weight="135" />
+			<General id="74" weight="130" />
+			<General id="100" weight="170" />
+			<General id="107" weight="105" />
+			<General id="108" weight="220" />
+			<General id="119" weight="150" />
+			<General id="127" weight="130" />
+			<General id="152" weight="155" />
+			<General id="153" weight="170" group="102" />
+			<General id="171" weight="90" />
+			<General id="183" weight="105" group="992" />
+			<General id="318" weight="195" group="105" />
+			<General id="319" weight="155" />
+			<General id="320" weight="105" />
+			<General id="330" weight="190" group="102" />
+			<General id="331" weight="105" group="991" />
+			<General id="341" weight="130" />
+			<General id="342" weight="105" />
+			<General id="343" weight="135" />
+			<General id="347" weight="135" />
+			<General id="348" weight="125" />
+			<General id="366" weight="100" />
+			<General id="378" weight="235" />
+			<General id="418" weight="210" />
+			<General id="424" weight="155" />
+			<General id="445" weight="140" />
+			<General id="446" weight="70" />
+			<General id="460" weight="130" />
+			<General id="461" weight="85" />
+			<General id="462" weight="155" />
+			<General id="476" weight="185" />
+			<General id="484" weight="130" />
+			<General id="73" weight="120" />
+			<General id="495" weight="500" />
+			<General id="504" weight="500" />
+			<General id="505" weight="500" />
+			<General id="506" weight="500" />
+		</GeneralList>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			group	-	武将组
+			count	-	基础场数量
+				-	
+				-	
+				-	
+				-	总数量
+				-	
+				-	基础场数量
+			-->
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			score	-	积分下限
+			basePower	-	战斗力分值
+			LossCount	-	失败N场匹配AI
+			timeout	-	超时是否匹配AI
+			AILevel	-	匹配AI等级
+			-->
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+				-	匹配队列，最多8个
+			seconds	-	队列时间
+每个时间独立都是从0开始计算
+			powerDiff	-	战力差值/万分比
+			levDiffFri	-	等级差
+			ip	-	是否限IP
+			emyRepeatLimit	-	是否限同局玩家
+			checkBlacklist	-	友方是否限制黑名单
+			-->
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+				-	结果
+			ResultId	-	结果ID
+			FigurePram1	-	主公奖励百分比
+			FigurePram2	-	忠臣奖励百分比
+			FigurePram3	-	反贼奖励百分比
+			FigurePram4	-	内奸奖励百分比
+			FigurePram5	-	内奸额外奖励
+			-->
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			GeneralScore	-	将面分
+			BasePower	-	战斗力基础
+			-->
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+				-	匹配队列，最多8个
+			seconds	-	队列时间
+每个时间独立都是从0开始计算
+			powerDiff	-	战力差值/万分比
+			levDiffFri	-	等级差
+			ScoreDiff	-	积分差（档位，配置在lua中）
+			LevelRankDiff	-	等级差（档位，配置在lua中）
+			 OfficerRankDiff	-	官阶差（档位，配置在lua中）
+			OfficerDiff	-	官阶差（绝对值）
+			ip	-	是否限IP
+			emyRepeatLimit	-	是否限同局玩家
+			checkBlacklist	-	友方是否限制黑名单
+			checkLimit	-	是否匹配限制玩家
+			reputation	-	当前信誉分需要大于等于X才可以匹配到
+			-->
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			score	-	积分下限
+			LossCount	-	失败分
+			timeout	-	超时是否匹配AI
+			AILevel	-	匹配AI等级
+			Sgeneral	-	S级武将/废弃
+			AGeneral	-	废弃A级武将最小数;分将数
+			BGeneral	-	废弃B级武将分将数
+			DGeneral	-	废弃地主武将分将数
+			ScoreDiffRaise	-	积分向上扩充档位
+			LevelRankDiffRaise	-	等级向上扩充档位
+			 OfficerRankDiffRaise	-	官阶向上扩充档位
+			MaxAi	-	每日最多匹配AI次数
+			-->
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Grade	-	档位（与SELECT保持一致）
+			weight	-	发将权重
+			num	-	需要满足武将数量
+			dacay	-	数量不足时权重衰减（每少一个衰减X）
+			minimum	-	该等级以及以上等级的将之和，满足该数量时触发保底 （高级一档的保底触发后不再触发低级的保底）
+				-	备注数量
+			-->
+		<!--
+			KeyName	-	字段名字
+			DescribeName	-	备注1
+			Key	-	主键值
+			Value	-	对应队列值
+				-
+			-->
+	</Label>
+	<Label model="118" name="高级场" bomb="3" bet="100,200,300" enterBean="2500" enterScore="2000" fierceTurnCount="11" cost="20;10" overtime="1800" maxMultiple="4" dec="高级场：押注限额100至300欢乐豆，每场有3张炸弹，最多翻到四倍，入场最低需拥有2500欢乐豆和2000积分，任意角色阵亡则结束。">
+		<GeneralList group="5" count="12">
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	武将id
+			weight	-	权重
+			group	-	将池互斥标记
+				-	
+				-	
+				-	
+				-	
+				-	
+				-	
+				-	
+				-	
+				-	
+				-
+				-->
+			<General id="5" weight="180" />
+			<General id="3" weight="180" group="156" />
+			<General id="8" weight="175" />
+			<General id="9" weight="130" />
+			<General id="12" weight="110" />
+			<General id="28" weight="130" />
+			<General id="22" weight="150" />
+			<General id="23" weight="130" />
+			<General id="24" weight="125" />
+			<General id="26" weight="180" />
+			<General id="20" weight="155" />
+			<General id="15" weight="70" />
+		</GeneralList>
+		<GeneralList group="1" count="35">
+			<General id="34" weight="155" />
+			<General id="51" weight="155" group="201" />
+			<General id="106" weight="155" />
+			<General id="110" weight="105" />
+			<General id="111" weight="145" />
+			<General id="114" weight="70" group="992" />
+			<General id="121" weight="155" />
+			<General id="122" weight="145" group="991" />
+			<General id="139" weight="175" />
+			<General id="160" weight="130" />
+			<General id="162" weight="155" />
+			<General id="164" weight="130" />
+			<General id="175" weight="165" />
+			<General id="176" weight="225" />
+			<General id="187" weight="185" />
+			<General id="311" weight="105" />
+			<General id="312" weight="135" />
+			<General id="313" weight="170" />
+			<General id="314" weight="140" />
+			<General id="316" weight="160" group="994" />
+			<General id="104" weight="90" />
+			<General id="323" weight="180" group="993" />
+			<General id="332" weight="160" group="995" />
+			<General id="333" weight="135" />
+			<General id="360" weight="70" />
+			<General id="364" weight="180" />
+			<General id="375" weight="190" />
+			<General id="113" weight="165" />
+			<General id="379" weight="170" />
+			<General id="380" weight="150" />
+			<General id="388" weight="235" />
+			<General id="432" weight="125" />
+			<General id="453" weight="170" />
+			<General id="467" weight="205" />
+			<General id="471" weight="215" group="201" />
+			<General id="130" weight="165" />
+			<General id="350" weight="170" />
+			<General id="353" weight="200" />
+			<General id="362" weight="85" />
+			<General id="404" weight="105" />
+			<General id="408" weight="140" />
+			<General id="413" weight="155" />
+			<General id="426" weight="225" />
+			<General id="321" weight="130" />
+			<General id="489" weight="500" />
+			<General id="493" weight="500" />
+			<General id="496" weight="500" />
+			<General id="498" weight="500" />
+			<General id="486" weight="500" />
+		</GeneralList>
+		<GeneralList group="2" count="35">
+			<General id="1" weight="115" group="991" />
+			<General id="36" weight="160" group="106" />
+			<General id="37" weight="145" group="203" />
+			<General id="115" weight="150" />
+			<General id="116" weight="150" />
+			<General id="124" weight="180" />
+			<General id="156" weight="270" group="455" />
+			<General id="166" weight="230" />
+			<General id="167" weight="150" group="992" />
+			<General id="177" weight="155" />
+			<General id="185" weight="140" />
+			<General id="186" weight="125" />
+			<General id="299" weight="130" group="994" />
+			<General id="302" weight="180" />
+			<General id="325" weight="70" />
+			<General id="326" weight="185" group="203" />
+			<General id="335" weight="135" />
+			<General id="336" weight="105" group="995" />
+			<General id="337" weight="85" />
+			<General id="346" weight="155" />
+			<General id="352" weight="145" />
+			<General id="365" weight="175" />
+			<General id="369" weight="135" />
+			<General id="370" weight="70" />
+			<General id="376" weight="115" />
+			<General id="421" weight="175" />
+			<General id="427" weight="130" />
+			<General id="451" weight="150" />
+			<General id="454" weight="160" />
+			<General id="479" weight="155" />
+			<General id="492" weight="105" />
+			<General id="400" weight="70" />
+			<General id="401" weight="130" />
+			<General id="409" weight="125" />
+			<General id="431" weight="195" />
+			<General id="475" weight="260" />
+			<General id="455" weight="210" />
+			<General id="301" weight="220" group="156" />
+			<General id="488" weight="500" />
+			<General id="499" weight="500" />
+			<General id="503" weight="500" />
+			<General id="510" weight="500" />
+		</GeneralList>
+		<GeneralList group="3" count="35">
+			<General id="38" weight="180" />
+			<General id="54" weight="155" />
+			<General id="117" weight="135" />
+			<General id="123" weight="70" />
+			<General id="125" weight="125" />
+			<General id="126" weight="135" />
+			<General id="135" weight="165" />
+			<General id="155" weight="230" />
+			<General id="157" weight="70" />
+			<General id="169" weight="170" />
+			<General id="170" weight="155" />
+			<General id="180" weight="155" group="992" />
+			<General id="305" weight="120" />
+			<General id="307" weight="215" />
+			<General id="308" weight="150" />
+			<General id="327" weight="90" />
+			<General id="328" weight="180" />
+			<General id="329" weight="130" />
+			<General id="339" weight="185" />
+			<General id="340" weight="90" />
+			<General id="368" weight="125" />
+			<General id="371" weight="90" />
+			<General id="382" weight="135" />
+			<General id="384" weight="210" />
+			<General id="394" weight="125" />
+			<General id="420" weight="170" />
+			<General id="429" weight="105" />
+			<General id="442" weight="200" />
+			<General id="443" weight="195" group="301" />
+			<General id="452" weight="155" />
+			<General id="457" weight="165" />
+			<General id="458" weight="170" />
+			<General id="463" weight="195" />
+			<General id="468" weight="215" />
+			<General id="473" weight="170" />
+			<General id="402" weight="200" />
+			<General id="403" weight="130" />
+			<General id="411" weight="130" />
+			<General id="478" weight="260" />
+			<General id="485" weight="205" />
+			<General id="25" weight="160" group="301" />
+			<General id="494" weight="500" />
+		</GeneralList>
+		<GeneralList group="4" count="35">
+			<General id="345" weight="185" />
+			<General id="40" weight="180" />
+			<General id="48" weight="135" />
+			<General id="72" weight="135" />
+			<General id="74" weight="130" />
+			<General id="100" weight="170" />
+			<General id="407" weight="195" />
+			<General id="415" weight="200" />
+			<General id="417" weight="180" group="202" />
+			<General id="108" weight="220" />
+			<General id="119" weight="150" />
+			<General id="152" weight="155" />
+			<General id="153" weight="170" group="102" />
+			<General id="430" weight="240" group="202" />
+			<General id="318" weight="195" group="105" />
+			<General id="319" weight="155" />
+			<General id="320" weight="105" />
+			<General id="330" weight="190" group="102" />
+			<General id="331" weight="105" group="991" />
+			<General id="341" weight="130" />
+			<General id="342" weight="105" />
+			<General id="343" weight="135" />
+			<General id="347" weight="135" />
+			<General id="348" weight="125" />
+			<General id="366" weight="100" />
+			<General id="378" weight="235" />
+			<General id="418" weight="210" />
+			<General id="464" weight="235" />
+			<General id="424" weight="155" />
+			<General id="445" weight="140" />
+			<General id="446" weight="70" />
+			<General id="460" weight="130" />
+			<General id="461" weight="85" />
+			<General id="462" weight="155" />
+			<General id="481" weight="260" group="378" />
+			<General id="476" weight="185" />
+			<General id="482" weight="155" />
+			<General id="487" weight="230" />
+			<General id="484" weight="130" />
+			<General id="73" weight="120" />
+			<General id="57" weight="125" />
+			<General id="491" weight="500" />
+			<General id="495" weight="500" />
+			<General id="504" weight="500" />
+			<General id="505" weight="500" />
+			<General id="506" weight="500" />
+		</GeneralList>
+	</Label>
+	<Label model="119" name="练兵场" bomb="2" bet="1,2,3" enterBean="0" enterScore="0" fierceTurnCount="11" cost="0;0" overtime="1800" maxMultiple="2" dec="练兵场：可邀请好友和添加小杀，不计欢乐豆、积分、本周胜场，押注模拟选项为1-2-3倍，每场有2张炸弹，任意角色阵亡则结束。">
+		<GeneralList group="5" count="12">
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	武将id
+			weight	-	权重
+			group	-	将池互斥标记
+				-	
+				-	
+				-	
+				-	
+				-
+				-->
+			<General id="5" weight="180" />
+			<General id="3" weight="180" group="156" />
+			<General id="8" weight="175" />
+			<General id="9" weight="130" />
+			<General id="12" weight="155" />
+			<General id="29" weight="175" />
+			<General id="28" weight="130" />
+			<General id="20" weight="125" />
+			<General id="22" weight="150" />
+			<General id="23" weight="130" />
+			<General id="24" weight="110" />
+			<General id="26" weight="180" />
+		</GeneralList>
+		<GeneralList group="1" count="45">
+			<General id="15" weight="70" />
+			<General id="16" weight="105" />
+			<General id="17" weight="105" />
+			<General id="19" weight="155" />
+			<General id="34" weight="155" />
+			<General id="35" weight="70" />
+			<General id="50" weight="130" />
+			<General id="51" weight="155" group="201" />
+			<General id="104" weight="90" />
+			<General id="105" weight="85" />
+			<General id="106" weight="50" />
+			<General id="110" weight="105" />
+			<General id="111" weight="130" />
+			<General id="113" weight="150" />
+			<General id="114" weight="70" group="992" />
+			<General id="121" weight="155" />
+			<General id="122" weight="115" group="991" />
+			<General id="130" weight="150" />
+			<General id="136" weight="130" />
+			<General id="139" weight="130" />
+			<General id="160" weight="115" />
+			<General id="161" weight="105" />
+			<General id="162" weight="155" />
+			<General id="164" weight="130" />
+			<General id="173" weight="105" />
+			<General id="175" weight="135" />
+			<General id="176" weight="150" />
+			<General id="187" weight="125" />
+			<General id="311" weight="105" />
+			<General id="312" weight="105" />
+			<General id="313" weight="125" />
+			<General id="314" weight="110" />
+			<General id="316" weight="115" group="994" />
+			<General id="321" weight="130" />
+			<General id="323" weight="150" group="993" />
+			<General id="332" weight="115" group="995" />
+			<General id="333" weight="135" />
+			<General id="350" weight="155" />
+			<General id="353" weight="155" />
+			<General id="360" weight="70" />
+			<General id="362" weight="85" />
+			<General id="364" weight="180" />
+			<General id="375" weight="115" />
+			<General id="379" weight="125" />
+			<General id="380" weight="150" />
+			<General id="385" weight="70" />
+			<General id="388" weight="130" />
+			<General id="404" weight="105" />
+			<General id="408" weight="125" />
+			<General id="413" weight="155" />
+			<General id="426" weight="180" />
+			<General id="432" weight="125" />
+			<General id="453" weight="155" />
+			<General id="467" weight="130" />
+			<General id="471" weight="125" group="201" />
+			<General id="21" weight="155" />
+			<General id="151" weight="155" />
+			<General id="18" weight="85" />
+			<General id="489" weight="130" />
+			<General id="493" weight="130" />
+			<General id="496" weight="130" />
+			<General id="498" weight="130" />
+			<General id="486" weight="130" />
+		</GeneralList>
+		<GeneralList group="2" count="45">
+			<General id="1" weight="115" group="991" />
+			<General id="6" weight="85" />
+			<General id="36" weight="130" group="106" />
+			<General id="37" weight="130" group="203" />
+			<General id="46" weight="105" />
+			<General id="47" weight="90" />
+			<General id="53" weight="115" group="993" />
+			<General id="103" weight="175" />
+			<General id="115" weight="135" />
+			<General id="116" weight="105" />
+			<General id="124" weight="180" />
+			<General id="156" weight="150" group="455" />
+			<General id="166" weight="200" />
+			<General id="167" weight="150" group="992" />
+			<General id="177" weight="155" />
+			<General id="179" weight="110" />
+			<General id="185" weight="125" />
+			<General id="186" weight="125" />
+			<General id="299" weight="115" group="994" />
+			<General id="302" weight="50" />
+			<General id="303" weight="85" />
+			<General id="325" weight="70" />
+			<General id="326" weight="155" group="203" />
+			<General id="335" weight="135" />
+			<General id="336" weight="105" group="995" />
+			<General id="337" weight="85" />
+			<General id="346" weight="155" />
+			<General id="352" weight="115" />
+			<General id="365" weight="130" />
+			<General id="369" weight="105" />
+			<General id="370" weight="70" />
+			<General id="376" weight="115" />
+			<General id="400" weight="70" />
+			<General id="401" weight="130" />
+			<General id="409" weight="50" />
+			<General id="421" weight="175" />
+			<General id="427" weight="130" />
+			<General id="431" weight="180" />
+			<General id="451" weight="150" />
+			<General id="454" weight="130" />
+			<General id="455" weight="150" group="106" />
+			<General id="475" weight="200" />
+			<General id="479" weight="155" />
+			<General id="492" weight="90" />
+			<General id="2" weight="85" />
+			<General id="7" weight="160" />
+			<General id="27" weight="175" />
+			<General id="300" weight="135" />
+			<General id="301" weight="175" group="156" />
+			<General id="488" weight="130" />
+			<General id="499" weight="130" />
+			<General id="503" weight="130" />
+			<General id="510" weight="130" />
+		</GeneralList>
+		<GeneralList group="3" count="45">
+			<General id="10" weight="155" />
+			<General id="30" weight="125" />
+			<General id="38" weight="180" />
+			<General id="44" weight="70" />
+			<General id="49" weight="115" group="994" />
+			<General id="54" weight="155" />
+			<General id="55" weight="70" />
+			<General id="117" weight="105" />
+			<General id="123" weight="70" />
+			<General id="125" weight="125" />
+			<General id="126" weight="135" />
+			<General id="135" weight="150" />
+			<General id="155" weight="200" />
+			<General id="157" weight="70" />
+			<General id="169" weight="125" />
+			<General id="170" weight="155" />
+			<General id="180" weight="155" group="992" />
+			<General id="182" weight="175" />
+			<General id="305" weight="105" />
+			<General id="307" weight="155" />
+			<General id="308" weight="150" />
+			<General id="327" weight="90" />
+			<General id="328" weight="180" />
+			<General id="329" weight="50" />
+			<General id="339" weight="125" />
+			<General id="340" weight="90" />
+			<General id="368" weight="125" />
+			<General id="371" weight="90" />
+			<General id="382" weight="135" />
+			<General id="384" weight="180" />
+			<General id="394" weight="125" />
+			<General id="402" weight="155" />
+			<General id="403" weight="50" />
+			<General id="411" weight="130" />
+			<General id="420" weight="155" />
+			<General id="429" weight="105" />
+			<General id="442" weight="155" />
+			<General id="443" weight="90" group="301" />
+			<General id="452" weight="155" />
+			<General id="457" weight="105" />
+			<General id="458" weight="125" />
+			<General id="463" weight="180" />
+			<General id="468" weight="155" />
+			<General id="473" weight="155" />
+			<General id="478" weight="200" />
+			<General id="485" weight="175" />
+			<General id="14" weight="135" />
+			<General id="25" weight="130" group="301" />
+			<General id="494" weight="130" />
+		</GeneralList>
+		<GeneralList group="4" count="45">
+			<General id="39" weight="130" />
+			<General id="40" weight="180" />
+			<General id="48" weight="135" />
+			<General id="57" weight="125" />
+			<General id="72" weight="135" />
+			<General id="73" weight="105" />
+			<General id="74" weight="130" />
+			<General id="100" weight="155" />
+			<General id="107" weight="50" />
+			<General id="108" weight="175" />
+			<General id="119" weight="105" />
+			<General id="127" weight="85" />
+			<General id="152" weight="155" />
+			<General id="153" weight="155" group="102" />
+			<General id="171" weight="90" />
+			<General id="183" weight="105" group="992" />
+			<General id="318" weight="150" group="105" />
+			<General id="319" weight="155" />
+			<General id="320" weight="105" />
+			<General id="330" weight="160" group="102" />
+			<General id="331" weight="105" group="991" />
+			<General id="341" weight="130" />
+			<General id="342" weight="105" />
+			<General id="343" weight="105" />
+			<General id="345" weight="155" />
+			<General id="347" weight="135" />
+			<General id="348" weight="125" />
+			<General id="366" weight="85" />
+			<General id="378" weight="130" />
+			<General id="407" weight="180" />
+			<General id="415" weight="155" />
+			<General id="417" weight="135" group="202" />
+			<General id="418" weight="135" />
+			<General id="424" weight="155" />
+			<General id="430" weight="180" group="202" />
+			<General id="445" weight="110" />
+			<General id="446" weight="70" />
+			<General id="460" weight="130" />
+			<General id="461" weight="85" />
+			<General id="462" weight="110" />
+			<General id="464" weight="175" />
+			<General id="476" weight="155" />
+			<General id="481" weight="200" />
+			<General id="482" weight="155" />
+			<General id="484" weight="130" />
+			<General id="487" weight="200" />
+			<General id="32" weight="90" />
+			<General id="45" weight="125" />
+			<General id="172" weight="180" />
+			<General id="374" weight="50" />
+			<General id="491" weight="130" />
+			<General id="495" weight="130" />
+			<General id="504" weight="130" />
+			<General id="505" weight="130" />
+			<General id="506" weight="130" />
+		</GeneralList>
+	</Label>
+	<Label model="136" name="主公杀基础场" bomb="0" bet="50,100,150,200,300" enterBean="300" enterScore="0" fierceTurnCount="2" cost="10;5;5;0" overtime="1800" maxMultiple="0" dec="五人抢主公玩法，任一阵营胜利则结束，押注限额50至300欢乐豆，入场最低需有300欢乐豆。" SGeneral="10;1" AGeneral="15;1" BGeneral="2" newGeneralRatio="0:1000,1:800,2:500,3:300" timeTrialGeneralRatio="0:600,1:500,2:200" numTrialGeneralRatio="0:80,1:60,2:40,3:20">
+		<LordMate score="-99999" basePower="1000" LossCount="2" timeout="1" AILevel="2" />
+		<LordMate score="0" basePower="1000" LossCount="3" timeout="1" AILevel="2" />
+		<LordMate score="2000" basePower="1020" LossCount="4" timeout="1" AILevel="1" />
+		<LordMate score="4000" basePower="1111" timeout="1" AILevel="1" />
+		<LordMate score="6000" basePower="1211" />
+		<LordMate score="8000" basePower="1320" />
+		<LordMate score="10000" basePower="3000" />
+		<LordMate score="12000" basePower="3150" />
+		<LordMate score="14000" basePower="3307" />
+		<LordMate score="16000" basePower="3472" />
+		<LordMate score="18000" basePower="3646" />
+		<LordMate score="20000" basePower="3828" />
+		<LordMate score="25000" basePower="4020" />
+		<LordMate score="30000" basePower="6000" />
+		<LordMate score="35000" basePower="6120" />
+		<LordMate score="40000" basePower="6242" />
+		<LordMate score="45000" basePower="6367" />
+		<LordMate score="50000" basePower="6494" />
+		<LordMate score="55000" basePower="6624" />
+		<LordMate score="60000" basePower="6756" />
+		<LordMate score="65000" basePower="6892" />
+		<LordMateParam seconds="3" powerDiff="1000" levDiffFri="40" ip="1" emyRepeatLimit="1" checkBlacklist="1" />
+		<LordMateParam seconds="6" powerDiff="2000" levDiffFri="40" ip="1" emyRepeatLimit="1" checkBlacklist="1" />
+		<LordMateParam seconds="10" powerDiff="3000" levDiffFri="40" ip="1" emyRepeatLimit="1" checkBlacklist="1" />
+		<LordMateParam seconds="15" powerDiff="4000" levDiffFri="40" ip="1" emyRepeatLimit="1" checkBlacklist="1" />
+		<LordMateParam seconds="30" powerDiff="5000" levDiffFri="60" ip="1" emyRepeatLimit="1" checkBlacklist="1" />
+		<LordMateParam seconds="60" powerDiff="6000" levDiffFri="80" ip="1" emyRepeatLimit="0" checkBlacklist="1" />
+		<LordMateParam seconds="180" powerDiff="6000" levDiffFri="80" ip="1" emyRepeatLimit="0" checkBlacklist="1" />
+		<Result ResultId="1" FigurePram1="190" FigurePram2="90" FigurePram3="-100" FigurePram4="-80" FigurePram5="0" />
+		<Result ResultId="2" FigurePram1="-200" FigurePram2="-100" FigurePram3="190" FigurePram4="-80" FigurePram5="0" />
+		<Result ResultId="3" FigurePram1="-200" FigurePram2="-100" FigurePram3="-100" FigurePram4="500" FigurePram5="0" />
+		<Result ResultId="4" FigurePram1="190" FigurePram2="90" FigurePram3="-100" FigurePram4="-80" FigurePram5="80" />
+		<Result ResultId="5" FigurePram1="-200" FigurePram2="-100" FigurePram3="-100" FigurePram4="500" FigurePram5="0" />
+		<Result ResultId="6" FigurePram1="190" FigurePram2="90" FigurePram3="-100" FigurePram4="-80" FigurePram5="80" />
+		<Result ResultId="7" FigurePram1="-200" FigurePram2="-100" FigurePram3="190" FigurePram4="-80" FigurePram5="30" />
+		<Result ResultId="8" FigurePram1="-200" FigurePram2="-100" FigurePram3="-100" FigurePram4="500" FigurePram5="0" />
+	</Label>
+	<Label model="148" name="斗地主基础场" bomb="0" bet="100,200,300" enterBean="600" enterScore="0" fierceTurnCount="0" cost="10;5" overtime="900" maxMultiple="0" spGeneral="5555,20" usingTime="20240708T000000;20240721T235959" dec="三人抢地主玩法,连胜奖励每周重置。" OpenTime="20240805T000000;20240818T235959" LuckyNumberOpen="1" LuckyNumber="13268" AdaptCardOpen="0" AdaptCard="6004;6304;7104" LordCardTurnOff1="0" LordCardTurnOff2="0" LordCardTurnOff3="0" SGeneral="10;1" AGeneral="15;1" BGeneral="2" newGeneralRatio="0:1000,1:800,2:500,3:300" timeTrialGeneralRatio="0:600,1:500,2:200" numTrialGeneralRatio="0:80,1:60,2:40,3:20" DoubleBean="3000" AILordParam1="45" AILordParam2="50" SGeneralNum="40" SGeneralRatio ="50000" IgnoreOff ="27">
+		<LordMate2 GeneralScore="0" BasePower="1000" />
+		<LordMate2 GeneralScore="1000" BasePower="1000" />
+		<LordMate2 GeneralScore="1200" BasePower="1100" />
+		<LordMate2 GeneralScore="1400" BasePower="1210" />
+		<LordMate2 GeneralScore="1600" BasePower="1331" />
+		<LordMate2 GeneralScore="1800" BasePower="1464" />
+		<LordMate2 GeneralScore="2000" BasePower="1610" />
+		<LordMate2 GeneralScore="2200" BasePower="1771" />
+		<LordMate2 GeneralScore="2400" BasePower="1948" />
+		<LordMate2 GeneralScore="2600" BasePower="2143" />
+		<LordMate2 GeneralScore="2800" BasePower="2465" />
+		<LordMate2 GeneralScore="3000" BasePower="2834" />
+		<LordMate2 GeneralScore="3200" BasePower="3260" />
+		<LordMate2 GeneralScore="3500" BasePower="3749" />
+		<LordMateParam2 seconds="3" powerDiff="2000" levDiffFri="100" ScoreDiff="5" LevelRankDiff="20"  OfficerRankDiff="5" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="100" />
+		<LordMateParam2 seconds="6" powerDiff="3000" levDiffFri="100" ScoreDiff="7" LevelRankDiff="20"  OfficerRankDiff="7" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="95" />
+		<LordMateParam2 seconds="10" powerDiff="5000" levDiffFri="120" ScoreDiff="9" LevelRankDiff="20"  OfficerRankDiff="9" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="95" />
+		<LordMateParam2 seconds="12" powerDiff="6000" levDiffFri="120" ScoreDiff="11" LevelRankDiff="20"  OfficerRankDiff="11" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="90" />
+		<LordMateParam2 seconds="15" powerDiff="6000" levDiffFri="120" ScoreDiff="13" LevelRankDiff="20"  OfficerRankDiff="13" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="80" />
+		<LordMateParam2 seconds="20" powerDiff="8000" levDiffFri="200" ScoreDiff="15" LevelRankDiff="20"  OfficerRankDiff="13" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="0" />
+		<LordMateParam2 seconds="30" powerDiff="10000" levDiffFri="200" ScoreDiff="20" LevelRankDiff="20"  OfficerRankDiff="20" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="0" />
+		<LordMateParam2 seconds="60" powerDiff="20000" levDiffFri="200" ScoreDiff="20" LevelRankDiff="20"  OfficerRankDiff="20" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="0" />
+		<LordMate2Ai score="-99999" LossCount="-99900000" timeout="10" AILevel="2" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="0" LevelRankDiffRaise="0"  OfficerRankDiffRaise="0" MaxAi="100" />
+		<LordMate2Ai score="0" LossCount="100000" timeout="10" AILevel="2" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="3" LevelRankDiffRaise="0"  OfficerRankDiffRaise="3" MaxAi="100" />
+		<LordMate2Ai score="2000" LossCount="200000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="3" LevelRankDiffRaise="0"  OfficerRankDiffRaise="3" MaxAi="100" />
+		<LordMate2Ai score="4000" LossCount="200000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="3" LevelRankDiffRaise="0"  OfficerRankDiffRaise="3" MaxAi="100" />
+		<LordMate2Ai score="6000" LossCount="250000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="3" LevelRankDiffRaise="1"  OfficerRankDiffRaise="3" MaxAi="100" />
+		<LordMate2Ai score="8000" LossCount="300000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="3" LevelRankDiffRaise="1"  OfficerRankDiffRaise="3" MaxAi="100" />
+		<LordMate2Ai score="10000" LossCount="300000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="3" LevelRankDiffRaise="2"  OfficerRankDiffRaise="3" MaxAi="100" />
+		<LordMate2Ai score="12000" LossCount="350000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="4" LevelRankDiffRaise="2"  OfficerRankDiffRaise="4" MaxAi="100" />
+		<LordMate2Ai score="14000" LossCount="350000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="4" LevelRankDiffRaise="2"  OfficerRankDiffRaise="4" MaxAi="100" />
+		<LordMate2Ai score="16000" LossCount="400000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="4" LevelRankDiffRaise="2"  OfficerRankDiffRaise="4" MaxAi="100" />
+		<LordMate2Ai score="18000" LossCount="400000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="4" LevelRankDiffRaise="2"  OfficerRankDiffRaise="4" MaxAi="100" />
+		<LordMate2Ai score="20000" LossCount="400000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="4" LevelRankDiffRaise="3"  OfficerRankDiffRaise="4" MaxAi="100" />
+		<LordMate2Ai score="25000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="4" LevelRankDiffRaise="3"  OfficerRankDiffRaise="4" MaxAi="100" />
+		<LordMate2Ai score="30000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="5" LevelRankDiffRaise="4"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="35000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="5" LevelRankDiffRaise="4"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="40000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="45000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="50000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="55000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="60000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="65000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate3 Grade="1" weight="80" num="8" dacay="10" />
+		<LordMate3 Grade="2" weight="140" num="14" dacay="10" minimum="10,1;20,2" />
+		<LordMate3 Grade="3" weight="280" num="28" dacay="10" minimum="10,1;20,2" />
+		<LordMate3 Grade="4" weight="270" num="27" dacay="10" minimum="5,1;10,2" />
+		<LordMate3 Grade="5" weight="690" num="69" dacay="10" />
+		<LordMate3 Grade="6" weight="3160" num="316" dacay="10" />
+		<MatchPowerKeyValue KeyName="WinStreak" DescribeName="连胜值,连胜加成（万分比）" Key="3" Value="10000" />
+		<MatchPowerKeyValue KeyName="WinStreak" Key="5" Value="11000" />
+		<MatchPowerKeyValue KeyName="WinStreak" Key="7" Value="11000" />
+		<MatchPowerKeyValue KeyName="WinStreak" Key="9" Value="13000" />
+		<MatchPowerKeyValue KeyName="WinStreak" Key="12" Value="14000" />
+		<MatchPowerKeyValue KeyName="LoseStreak" DescribeName="连败值,连败加成（万分比）" Key="1" Value="10000" />
+		<MatchPowerKeyValue KeyName="LoseStreak" Key="3" Value="8000" />
+		<MatchPowerKeyValue KeyName="LoseStreak" Key="5" Value="9000" />
+		<MatchPowerKeyValue KeyName="LoseStreak" Key="7" Value="6000" />
+		<MatchPowerKeyValue KeyName="LoseStreak" Key="9" Value="6000" />
+		<MatchPowerKeyValue KeyName="LevelRate" DescribeName="等级,加成（万分比）" Key="0" Value="10000" />
+		<MatchPowerKeyValue KeyName="LevelRate" Key="50" Value="10000" />
+		<MatchPowerKeyValue KeyName="LevelRate" Key="100" Value="10000" />
+		<MatchPowerKeyValue KeyName="LevelRate" Key="200" Value="10000" />
+		<MatchPowerKeyValue KeyName="WinRate" DescribeName="百场胜率,加成（万分比）" Key="4000" Value="8000" />
+		<MatchPowerKeyValue KeyName="WinRate" Key="4500" Value="9000" />
+		<MatchPowerKeyValue KeyName="WinRate" Key="5000" Value="10000" />
+		<MatchPowerKeyValue KeyName="WinRate" Key="5500" Value="10500" />
+		<MatchPowerKeyValue KeyName="WinRate" Key="6000" Value="11000" />
+		<MatchPowerKeyValue KeyName="ScoreRate" DescribeName="赛季积分修正率" Key="0" Value="10000" />
+		<MatchPowerKeyValue KeyName="ScoreRate" Key="30000" Value="10000" />
+		<MatchPowerKeyValue KeyName="ScoreRank" DescribeName="赛季积分Rank" Key="0" Value="1" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="2000" Value="2" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="5000" Value="3" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="8000" Value="5" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="10000" Value="7" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="15000" Value="9" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="20000" Value="11" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="25000" Value="13" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="30000" Value="15" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="50000" Value="17" />
+		<MatchPowerKeyValue KeyName="LevelRank" DescribeName="等级等阶Rank" Key="30" Value="1" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="50" Value="2" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="60" Value="3" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="80" Value="5" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="100" Value="7" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="120" Value="9" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="140" Value="11" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="160" Value="13" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="170" Value="15" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="180" Value="17" />
+		<MatchPowerKeyValue KeyName="Official" DescribeName="官阶,rank" Key="0" Value="1" />
+		<MatchPowerKeyValue KeyName="Official" Key="6" Value="2" />
+		<MatchPowerKeyValue KeyName="Official" Key="8" Value="3" />
+		<MatchPowerKeyValue KeyName="Official" Key="10" Value="5" />
+		<MatchPowerKeyValue KeyName="Official" Key="12" Value="7" />
+		<MatchPowerKeyValue KeyName="Official" Key="14" Value="10" />
+		<MatchPowerKeyValue KeyName="Official" Key="16" Value="12" />
+		<MatchPowerKeyValue KeyName="Official" Key="18" Value="15" />
+		<MatchPowerKeyValue KeyName="Official" Key="20" Value="17" />
+		<MatchPowerKeyValue KeyName="Official" Key="24" Value="20" />
+		<MatchPowerKeyValue KeyName="Official" Key="27" Value="22" />
+		<MatchPowerKeyValue KeyName="ScoreBasePower" DescribeName="积分最低基础战斗力，积分到达后不会比这个低" Key="0" Value="1000" />
+		<MatchPowerKeyValue KeyName="ScoreBasePower" Key="1000" Value="1000" />
+		<MatchPowerKeyValue KeyName="ScoreBasePower" Key="5000" Value="1200" />
+		<MatchPowerKeyValue KeyName="ScoreBasePower" Key="10000" Value="1500" />
+		<MatchPowerKeyValue KeyName="ScoreBasePower" Key="20000" Value="1800" />
+		<MatchPowerKeyValue KeyName="ScoreFixOfficial" DescribeName="积分篡改官阶，到达这个积分后视为官阶" Key="0" Value="1" />
+		<MatchPowerKeyValue KeyName="ScoreFixOfficial" Key="5000" Value="7" />
+		<MatchPowerKeyValue KeyName="ScoreFixOfficial" Key="10000" Value="12" />
+		<MatchPowerKeyValue KeyName="ScoreFixOfficial" Key="20000" Value="17" />
+		<MatchPowerKeyValue KeyName="ScoreFixOfficial" Key="30000" Value="22" />
+		<MatchPowerKeyValue KeyName="GeneralNumFixOfficial" DescribeName="Super 武将数 改官阶" Key="0" Value="1" />
+		<MatchPowerKeyValue KeyName="GeneralNumFixOfficial" Key="15" Value="1" />
+		<MatchPowerKeyValue KeyName="GeneralNumFixOfficial" Key="30" Value="1" />
+		<MatchPowerKeyValue KeyName="GeneralNumFixOfficial" Key="45" Value="1" />
+		<MatchPowerKeyValue KeyName="GeneralRatioFixOfficial" DescribeName="Super 武将率*100000 改官阶" Key="0" Value="1" />
+		<MatchPowerKeyValue KeyName="GeneralRatioFixOfficial" Key="10000" Value="1" />
+	</Label>
+	<Label model="149" name="斗地主高级场" bomb="0" bet="100,200,300" enterBean="3000" enterScore="0" fierceTurnCount="0" cost="30;15" overtime="900" maxMultiple="0" dec="斗地主加倍玩法限时开启,最高可增加至四倍收益。" LordCardTurnOff1="0" LordCardTurnOff2="0" LordCardTurnOff3="0" SGeneral="10;1" AGeneral="15;1" BGeneral="2" newGeneralRatio="0:1000,1:800,2:500,3:300" timeTrialGeneralRatio="0:600,1:500,2:200" numTrialGeneralRatio="0:80,1:60,2:40,3:20" DoubleBean="3000" SGeneralNum="40" SGeneralRatio ="50000" IgnoreOff ="27">
+		<LordMate2 GeneralScore="0" BasePower="1000" />
+		<LordMate2 GeneralScore="1300" BasePower="1000" />
+		<LordMate2 GeneralScore="1500" BasePower="1070" />
+		<LordMate2 GeneralScore="1700" BasePower="1144" />
+		<LordMate2 GeneralScore="1900" BasePower="1247" />
+		<LordMate2 GeneralScore="2100" BasePower="1335" />
+		<LordMate2 GeneralScore="2300" BasePower="1428" />
+		<LordMate2 GeneralScore="2500" BasePower="1500" />
+		<LordMate2 GeneralScore="2700" BasePower="1590" />
+		<LordMate2 GeneralScore="2900" BasePower="1685" />
+		<LordMate2 GeneralScore="3100" BasePower="1769" />
+		<LordMate2 GeneralScore="3300" BasePower="1858" />
+		<LordMate2 GeneralScore="3500" BasePower="1951" />
+		<LordMateParam2 seconds="3" powerDiff="2500" levDiffFri="100" ScoreDiff="5" LevelRankDiff="4"  OfficerRankDiff="5" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="100" />
+		<LordMateParam2 seconds="6" powerDiff="3500" levDiffFri="100" ScoreDiff="7" LevelRankDiff="6"  OfficerRankDiff="5" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="95" />
+		<LordMateParam2 seconds="10" powerDiff="5000" levDiffFri="100" ScoreDiff="9" LevelRankDiff="8"  OfficerRankDiff="7" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="95" />
+		<LordMateParam2 seconds="12" powerDiff="6000" levDiffFri="100" ScoreDiff="11" LevelRankDiff="10"  OfficerRankDiff="9" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="90" />
+		<LordMateParam2 seconds="15" powerDiff="6000" levDiffFri="100" ScoreDiff="13" LevelRankDiff="12"  OfficerRankDiff="11" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="80" />
+		<LordMateParam2 seconds="20" powerDiff="8000" levDiffFri="100" ScoreDiff="15" LevelRankDiff="14"  OfficerRankDiff="13" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="0" />
+		<LordMateParam2 seconds="30" powerDiff="20000" levDiffFri="120" ScoreDiff="20" LevelRankDiff="20"  OfficerRankDiff="20" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="0" />
+		<LordMateParam2 seconds="60" powerDiff="20000" levDiffFri="120" ScoreDiff="20" LevelRankDiff="20"  OfficerRankDiff="20" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="0" />
+		<LordMate2Ai score="-99999" LossCount="-99900000" timeout="10" AILevel="2" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="0" LevelRankDiffRaise="0"  OfficerRankDiffRaise="0" MaxAi="100" />
+		<LordMate2Ai score="0" LossCount="100000" timeout="10" AILevel="2" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="0" LevelRankDiffRaise="0"  OfficerRankDiffRaise="0" MaxAi="100" />
+		<LordMate2Ai score="2000" LossCount="200000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="0" LevelRankDiffRaise="0"  OfficerRankDiffRaise="0" MaxAi="100" />
+		<LordMate2Ai score="4000" LossCount="200000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="0" LevelRankDiffRaise="0"  OfficerRankDiffRaise="0" MaxAi="100" />
+		<LordMate2Ai score="6000" LossCount="250000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="1" LevelRankDiffRaise="1"  OfficerRankDiffRaise="1" MaxAi="100" />
+		<LordMate2Ai score="8000" LossCount="300000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="1" LevelRankDiffRaise="1"  OfficerRankDiffRaise="1" MaxAi="100" />
+		<LordMate2Ai score="10000" LossCount="300000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="2" LevelRankDiffRaise="2"  OfficerRankDiffRaise="2" MaxAi="100" />
+		<LordMate2Ai score="12000" LossCount="350000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="2" LevelRankDiffRaise="2"  OfficerRankDiffRaise="2" MaxAi="100" />
+		<LordMate2Ai score="14000" LossCount="350000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="2" LevelRankDiffRaise="2"  OfficerRankDiffRaise="2" MaxAi="100" />
+		<LordMate2Ai score="16000" LossCount="400000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="2" LevelRankDiffRaise="2"  OfficerRankDiffRaise="2" MaxAi="100" />
+		<LordMate2Ai score="18000" LossCount="400000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="2" LevelRankDiffRaise="2"  OfficerRankDiffRaise="2" MaxAi="100" />
+		<LordMate2Ai score="20000" LossCount="400000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="3" LevelRankDiffRaise="3"  OfficerRankDiffRaise="3" MaxAi="100" />
+		<LordMate2Ai score="25000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="3" LevelRankDiffRaise="3"  OfficerRankDiffRaise="3" MaxAi="100" />
+		<LordMate2Ai score="30000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="4" LevelRankDiffRaise="4"  OfficerRankDiffRaise="4" MaxAi="100" />
+		<LordMate2Ai score="35000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="4" LevelRankDiffRaise="4"  OfficerRankDiffRaise="4" MaxAi="100" />
+		<LordMate2Ai score="40000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="45000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="50000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="55000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="60000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="65000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<MatchPowerKeyValue KeyName="WinStreak" DescribeName="连胜值,连胜加成（万分比）" Key="3" Value="10000" />
+		<MatchPowerKeyValue KeyName="WinStreak" Key="5" Value="11000" />
+		<MatchPowerKeyValue KeyName="WinStreak" Key="7" Value="11000" />
+		<MatchPowerKeyValue KeyName="WinStreak" Key="9" Value="13000" />
+		<MatchPowerKeyValue KeyName="WinStreak" Key="12" Value="14000" />
+		<MatchPowerKeyValue KeyName="LoseStreak" DescribeName="连败值,连败加成（万分比）" Key="1" Value="10000" />
+		<MatchPowerKeyValue KeyName="LoseStreak" Key="3" Value="8000" />
+		<MatchPowerKeyValue KeyName="LoseStreak" Key="5" Value="9000" />
+		<MatchPowerKeyValue KeyName="LoseStreak" Key="7" Value="6000" />
+		<MatchPowerKeyValue KeyName="LoseStreak" Key="9" Value="6000" />
+		<MatchPowerKeyValue KeyName="LevelRate" DescribeName="等级,加成（万分比）" Key="0" Value="10000" />
+		<MatchPowerKeyValue KeyName="LevelRate" Key="50" Value="10000" />
+		<MatchPowerKeyValue KeyName="LevelRate" Key="100" Value="10000" />
+		<MatchPowerKeyValue KeyName="LevelRate" Key="200" Value="10000" />
+		<MatchPowerKeyValue KeyName="WinRate" DescribeName="百场胜率,加成（万分比）" Key="4000" Value="8000" />
+		<MatchPowerKeyValue KeyName="WinRate" Key="4500" Value="9000" />
+		<MatchPowerKeyValue KeyName="WinRate" Key="5000" Value="10000" />
+		<MatchPowerKeyValue KeyName="WinRate" Key="5500" Value="10500" />
+		<MatchPowerKeyValue KeyName="WinRate" Key="6000" Value="11000" />
+		<MatchPowerKeyValue KeyName="ScoreRate" DescribeName="赛季积分修正率" Key="0" Value="10000" />
+		<MatchPowerKeyValue KeyName="ScoreRate" Key="30000" Value="10000" />
+		<MatchPowerKeyValue KeyName="ScoreRank" DescribeName="赛季积分Rank" Key="0" Value="1" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="2000" Value="2" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="5000" Value="3" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="8000" Value="5" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="10000" Value="7" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="15000" Value="9" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="20000" Value="11" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="25000" Value="13" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="30000" Value="15" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="50000" Value="17" />
+		<MatchPowerKeyValue KeyName="LevelRank" DescribeName="等级等阶Rank" Key="30" Value="1" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="50" Value="2" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="60" Value="3" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="80" Value="5" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="100" Value="7" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="120" Value="9" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="140" Value="11" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="160" Value="13" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="170" Value="15" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="180" Value="17" />
+		<MatchPowerKeyValue KeyName="Official" DescribeName="官阶,rank" Key="0" Value="1" />
+		<MatchPowerKeyValue KeyName="Official" Key="6" Value="2" />
+		<MatchPowerKeyValue KeyName="Official" Key="8" Value="3" />
+		<MatchPowerKeyValue KeyName="Official" Key="10" Value="5" />
+		<MatchPowerKeyValue KeyName="Official" Key="12" Value="7" />
+		<MatchPowerKeyValue KeyName="Official" Key="14" Value="10" />
+		<MatchPowerKeyValue KeyName="Official" Key="16" Value="12" />
+		<MatchPowerKeyValue KeyName="Official" Key="18" Value="15" />
+		<MatchPowerKeyValue KeyName="Official" Key="20" Value="17" />
+		<MatchPowerKeyValue KeyName="Official" Key="24" Value="20" />
+		<MatchPowerKeyValue KeyName="Official" Key="27" Value="22" />
+		<MatchPowerKeyValue KeyName="ScoreBasePower" DescribeName="积分最低基础战斗力，积分到达后不会比这个低" Key="0" Value="2000" />
+		<MatchPowerKeyValue KeyName="ScoreBasePower" Key="1000" Value="2000" />
+		<MatchPowerKeyValue KeyName="ScoreBasePower" Key="5000" Value="2200" />
+		<MatchPowerKeyValue KeyName="ScoreBasePower" Key="10000" Value="2500" />
+		<MatchPowerKeyValue KeyName="ScoreBasePower" Key="20000" Value="2800" />
+		<MatchPowerKeyValue KeyName="ScoreFixOfficial" DescribeName="积分篡改官阶，到达这个积分后视为官阶" Key="0" Value="1" />
+		<MatchPowerKeyValue KeyName="ScoreFixOfficial" Key="5000" Value="7" />
+		<MatchPowerKeyValue KeyName="ScoreFixOfficial" Key="10000" Value="12" />
+		<MatchPowerKeyValue KeyName="ScoreFixOfficial" Key="20000" Value="17" />
+		<MatchPowerKeyValue KeyName="ScoreFixOfficial" Key="30000" Value="22" />
+		<MatchPowerKeyValue KeyName="GeneralNumFixOfficial" DescribeName="Super 武将数 改官阶" Key="0" Value="1" />
+		<MatchPowerKeyValue KeyName="GeneralNumFixOfficial" Key="15" Value="12" />
+		<MatchPowerKeyValue KeyName="GeneralNumFixOfficial" Key="30" Value="17" />
+		<MatchPowerKeyValue KeyName="GeneralNumFixOfficial" Key="45" Value="22" />
+		<MatchPowerKeyValue KeyName="GeneralRatioFixOfficial" DescribeName="Super 武将率*100000 改官阶" Key="0" Value="1" />
+		<MatchPowerKeyValue KeyName="GeneralRatioFixOfficial" Key="10000" Value="12" />
+		<MatchPowerKeyValue KeyName="GeneralRatioFixOfficial" Key="15000" Value="17" />
+		<MatchPowerKeyValue KeyName="GeneralRatioFixOfficial" Key="20000" Value="22" />
+	</Label>
+	<Label model="154" name="斗地主练习场" bomb="0" bet="100,200,300" enterBean="0" enterScore="0" fierceTurnCount="0" cost="0;0" overtime="1800" maxMultiple="0" dec="三人抢地主练习场" SGeneral="10;1" AGeneral="15;1" BGeneral="2" AILordParam1="45" AILordParam2="50" AILordParam3="60" SGeneralNum="40" SGeneralRatio ="50000" IgnoreOff ="27">
+		<LordMate2 GeneralScore="0" BasePower="1000" />
+		<LordMate2 GeneralScore="1300" BasePower="1000" />
+		<LordMate2 GeneralScore="1500" BasePower="1070" />
+		<LordMate2 GeneralScore="1700" BasePower="1144" />
+		<LordMate2 GeneralScore="1900" BasePower="1247" />
+		<LordMate2 GeneralScore="2100" BasePower="1335" />
+		<LordMate2 GeneralScore="2300" BasePower="1428" />
+		<LordMate2 GeneralScore="2500" BasePower="1500" />
+		<LordMate2 GeneralScore="2700" BasePower="1590" />
+		<LordMate2 GeneralScore="2900" BasePower="1685" />
+		<LordMate2 GeneralScore="3100" BasePower="1769" />
+		<LordMate2 GeneralScore="3300" BasePower="1858" />
+		<LordMate2 GeneralScore="3500" BasePower="1951" />
+		<LordMateParam2 seconds="6" powerDiff="3500" levDiffFri="100" ScoreDiff="5" LevelRankDiff="4"  OfficerRankDiff="5" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="100" />
+		<LordMateParam2 seconds="10" powerDiff="5000" levDiffFri="100" ScoreDiff="7" LevelRankDiff="6"  OfficerRankDiff="5" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="95" />
+		<LordMateParam2 seconds="15" powerDiff="6000" levDiffFri="100" ScoreDiff="9" LevelRankDiff="8"  OfficerRankDiff="7" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="95" />
+		<LordMateParam2 seconds="30" powerDiff="6000" levDiffFri="100" ScoreDiff="11" LevelRankDiff="10"  OfficerRankDiff="9" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="90" />
+		<LordMateParam2 seconds="60" powerDiff="20000" levDiffFri="120" ScoreDiff="11" LevelRankDiff="10"  OfficerRankDiff="9" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="80" />
+		<LordMateParam2 seconds="180" powerDiff="20000" levDiffFri="120" ScoreDiff="11" LevelRankDiff="10"  OfficerRankDiff="9" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="0" />
+		<LordMate2Ai score="-99999" LossCount="-99900000" timeout="10" AILevel="2" Sgeneral="10;2" AGeneral="15;5" BGeneral="9" DGeneral="12;2" ScoreDiffRaise="0" LevelRankDiffRaise="0"  OfficerRankDiffRaise="0" MaxAi="100" />
+		<LordMate2Ai score="0" LossCount="100000" timeout="10" AILevel="2" Sgeneral="10;2" AGeneral="15;5" BGeneral="9" DGeneral="12;2" ScoreDiffRaise="0" LevelRankDiffRaise="0"  OfficerRankDiffRaise="0" MaxAi="100" />
+		<LordMate2Ai score="2000" LossCount="200000" timeout="10" AILevel="1" Sgeneral="10;2" AGeneral="15;5" BGeneral="9" DGeneral="12;2" ScoreDiffRaise="0" LevelRankDiffRaise="0"  OfficerRankDiffRaise="0" MaxAi="100" />
+		<LordMate2Ai score="4000" LossCount="200000" timeout="10" AILevel="1" Sgeneral="10;2" AGeneral="15;5" BGeneral="9" DGeneral="12;2" ScoreDiffRaise="0" LevelRankDiffRaise="0"  OfficerRankDiffRaise="0" MaxAi="100" />
+		<LordMate2Ai score="6000" LossCount="250000" timeout="10" AILevel="1" Sgeneral="10;2" AGeneral="15;5" BGeneral="9" DGeneral="12;2" ScoreDiffRaise="1" LevelRankDiffRaise="1"  OfficerRankDiffRaise="1" MaxAi="100" />
+		<LordMate2Ai score="8000" LossCount="300000" timeout="10" AILevel="1" Sgeneral="10;2" AGeneral="15;5" BGeneral="9" DGeneral="12;2" ScoreDiffRaise="1" LevelRankDiffRaise="1"  OfficerRankDiffRaise="1" MaxAi="100" />
+		<LordMate2Ai score="10000" LossCount="300000" timeout="10" AILevel="1" Sgeneral="10;2" AGeneral="15;5" BGeneral="9" DGeneral="12;2" ScoreDiffRaise="2" LevelRankDiffRaise="2"  OfficerRankDiffRaise="2" MaxAi="100" />
+		<LordMate2Ai score="12000" LossCount="350000" timeout="10" AILevel="1" Sgeneral="10;2" AGeneral="15;7" BGeneral="6" DGeneral="12;2" ScoreDiffRaise="2" LevelRankDiffRaise="2"  OfficerRankDiffRaise="2" MaxAi="100" />
+		<LordMate2Ai score="14000" LossCount="350000" timeout="10" AILevel="1" Sgeneral="10;2" AGeneral="15;7" BGeneral="6" DGeneral="12;2" ScoreDiffRaise="2" LevelRankDiffRaise="2"  OfficerRankDiffRaise="2" MaxAi="100" />
+		<LordMate2Ai score="16000" LossCount="400000" timeout="10" AILevel="1" Sgeneral="10;2" AGeneral="15;7" BGeneral="6" DGeneral="12;2" ScoreDiffRaise="2" LevelRankDiffRaise="2"  OfficerRankDiffRaise="2" MaxAi="100" />
+		<LordMate2Ai score="18000" LossCount="400000" timeout="10" AILevel="1" Sgeneral="10;2" AGeneral="15;7" BGeneral="6" DGeneral="12;2" ScoreDiffRaise="2" LevelRankDiffRaise="2"  OfficerRankDiffRaise="2" MaxAi="100" />
+		<LordMate2Ai score="20000" LossCount="400000" timeout="10" AILevel="1" Sgeneral="10;2" AGeneral="15;7" BGeneral="6" DGeneral="12;2" ScoreDiffRaise="3" LevelRankDiffRaise="3"  OfficerRankDiffRaise="3" MaxAi="100" />
+		<LordMate2Ai score="25000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;2" AGeneral="15;7" BGeneral="6" DGeneral="12;2" ScoreDiffRaise="3" LevelRankDiffRaise="3"  OfficerRankDiffRaise="3" MaxAi="100" />
+		<LordMate2Ai score="30000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="4" LevelRankDiffRaise="4"  OfficerRankDiffRaise="4" MaxAi="100" />
+		<LordMate2Ai score="35000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="4" LevelRankDiffRaise="4"  OfficerRankDiffRaise="4" MaxAi="100" />
+		<LordMate2Ai score="40000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="45000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="50000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="55000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="60000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="65000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="10;3" AGeneral="15;7" BGeneral="5" DGeneral="12;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+	</Label>
+	<Label model="161" name="斗地主练习" bomb="0" bet="1" enterBean="0" enterScore="0" fierceTurnCount="0" cost="0;0" overtime="1800" maxMultiple="0" dec="三人抢地主练习" OpenTime="20240805T000000;20240818T235959" LuckyNumberOpen="1" LuckyNumber="13268" AdaptCardOpen="0" AdaptCard="6004;6304;7104" SGeneral="10;1" AGeneral="15;1" BGeneral="2" AILordParam1="45" AILordParam2="50" AILordParam3="60" SGeneralNum="40" SGeneralRatio ="50000" IgnoreOff ="27">
+		<LordMate2 GeneralScore="0" BasePower="1000" />
+		<LordMate2 GeneralScore="1300" BasePower="1000" />
+		<LordMate2 GeneralScore="1500" BasePower="1070" />
+		<LordMate2 GeneralScore="1700" BasePower="1144" />
+		<LordMate2 GeneralScore="1900" BasePower="1247" />
+		<LordMate2 GeneralScore="2100" BasePower="1335" />
+		<LordMate2 GeneralScore="2300" BasePower="1428" />
+		<LordMate2 GeneralScore="2500" BasePower="1500" />
+		<LordMate2 GeneralScore="2700" BasePower="1590" />
+		<LordMate2 GeneralScore="2900" BasePower="1685" />
+		<LordMate2 GeneralScore="3100" BasePower="1769" />
+		<LordMate2 GeneralScore="3300" BasePower="1858" />
+		<LordMate2 GeneralScore="3500" BasePower="1951" />
+		<LordMateParam2 seconds="3" powerDiff="2500" levDiffFri="200" ScoreDiff="5" LevelRankDiff="20"  OfficerRankDiff="5" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="100" />
+		<LordMateParam2 seconds="6" powerDiff="3500" levDiffFri="200" ScoreDiff="7" LevelRankDiff="20"  OfficerRankDiff="7" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="95" />
+		<LordMateParam2 seconds="10" powerDiff="5000" levDiffFri="200" ScoreDiff="9" LevelRankDiff="20"  OfficerRankDiff="9" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="95" />
+		<LordMateParam2 seconds="12" powerDiff="6000" levDiffFri="200" ScoreDiff="11" LevelRankDiff="20"  OfficerRankDiff="11" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="90" />
+		<LordMateParam2 seconds="15" powerDiff="6000" levDiffFri="200" ScoreDiff="13" LevelRankDiff="20"  OfficerRankDiff="13" OfficerDiff="255" ip="1" emyRepeatLimit="1" checkBlacklist="1" checkLimit="0" reputation="80" />
+		<LordMateParam2 seconds="20" powerDiff="8000" levDiffFri="200" ScoreDiff="15" LevelRankDiff="20"  OfficerRankDiff="13" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="0" />
+		<LordMateParam2 seconds="30" powerDiff="20000" levDiffFri="200" ScoreDiff="20" LevelRankDiff="20"  OfficerRankDiff="20" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="0" />
+		<LordMateParam2 seconds="60" powerDiff="20000" levDiffFri="200" ScoreDiff="20" LevelRankDiff="20"  OfficerRankDiff="20" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="0" />
+		<LordMate2Ai score="-99999" LossCount="-99900000" timeout="10" AILevel="2" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="0" LevelRankDiffRaise="0"  OfficerRankDiffRaise="0" MaxAi="100" />
+		<LordMate2Ai score="0" LossCount="100000" timeout="10" AILevel="2" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="3" LevelRankDiffRaise="0"  OfficerRankDiffRaise="3" MaxAi="100" />
+		<LordMate2Ai score="2000" LossCount="200000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="3" LevelRankDiffRaise="0"  OfficerRankDiffRaise="3" MaxAi="100" />
+		<LordMate2Ai score="4000" LossCount="200000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="3" LevelRankDiffRaise="0"  OfficerRankDiffRaise="3" MaxAi="100" />
+		<LordMate2Ai score="6000" LossCount="250000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="3" LevelRankDiffRaise="1"  OfficerRankDiffRaise="3" MaxAi="100" />
+		<LordMate2Ai score="8000" LossCount="300000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="3" LevelRankDiffRaise="1"  OfficerRankDiffRaise="3" MaxAi="100" />
+		<LordMate2Ai score="10000" LossCount="300000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="3" LevelRankDiffRaise="2"  OfficerRankDiffRaise="3" MaxAi="100" />
+		<LordMate2Ai score="12000" LossCount="350000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="4" LevelRankDiffRaise="2"  OfficerRankDiffRaise="4" MaxAi="100" />
+		<LordMate2Ai score="14000" LossCount="350000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="4" LevelRankDiffRaise="2"  OfficerRankDiffRaise="4" MaxAi="100" />
+		<LordMate2Ai score="16000" LossCount="400000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="4" LevelRankDiffRaise="2"  OfficerRankDiffRaise="4" MaxAi="100" />
+		<LordMate2Ai score="18000" LossCount="400000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="4" LevelRankDiffRaise="2"  OfficerRankDiffRaise="4" MaxAi="100" />
+		<LordMate2Ai score="20000" LossCount="400000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="4" LevelRankDiffRaise="3"  OfficerRankDiffRaise="4" MaxAi="100" />
+		<LordMate2Ai score="25000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="4" LevelRankDiffRaise="3"  OfficerRankDiffRaise="4" MaxAi="100" />
+		<LordMate2Ai score="30000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="5" LevelRankDiffRaise="4"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="35000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="5" LevelRankDiffRaise="4"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="40000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="45000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="50000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="55000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="60000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate2Ai score="65000" LossCount="450000" timeout="10" AILevel="1" Sgeneral="20;1" AGeneral="30;4" BGeneral="5" DGeneral="25;2" ScoreDiffRaise="5" LevelRankDiffRaise="5"  OfficerRankDiffRaise="5" MaxAi="100" />
+		<LordMate3 Grade="1" weight="80" num="8" dacay="10" />
+		<LordMate3 Grade="2" weight="140" num="14" dacay="10" minimum="10,1;20,2" />
+		<LordMate3 Grade="3" weight="280" num="28" dacay="10" minimum="10,1;20,2" />
+		<LordMate3 Grade="4" weight="270" num="27" dacay="10" minimum="5,1;10,2" />
+		<LordMate3 Grade="5" weight="690" num="69" dacay="10" />
+		<LordMate3 Grade="6" weight="3160" num="316" dacay="10" />
+		<MatchPowerKeyValue KeyName="WinStreak" DescribeName="连胜值,连胜加成（万分比）" Key="3" Value="10000" />
+		<MatchPowerKeyValue KeyName="WinStreak" Key="5" Value="11000" />
+		<MatchPowerKeyValue KeyName="WinStreak" Key="7" Value="11000" />
+		<MatchPowerKeyValue KeyName="WinStreak" Key="9" Value="13000" />
+		<MatchPowerKeyValue KeyName="WinStreak" Key="12" Value="14000" />
+		<MatchPowerKeyValue KeyName="LoseStreak" DescribeName="连败值,连败加成（万分比）" Key="1" Value="10000" />
+		<MatchPowerKeyValue KeyName="LoseStreak" Key="3" Value="8000" />
+		<MatchPowerKeyValue KeyName="LoseStreak" Key="5" Value="9000" />
+		<MatchPowerKeyValue KeyName="LoseStreak" Key="7" Value="6000" />
+		<MatchPowerKeyValue KeyName="LoseStreak" Key="9" Value="6000" />
+		<MatchPowerKeyValue KeyName="LevelRate" DescribeName="等级,加成（万分比）" Key="0" Value="10000" />
+		<MatchPowerKeyValue KeyName="LevelRate" Key="50" Value="10000" />
+		<MatchPowerKeyValue KeyName="LevelRate" Key="100" Value="10000" />
+		<MatchPowerKeyValue KeyName="LevelRate" Key="200" Value="10000" />
+		<MatchPowerKeyValue KeyName="WinRate" DescribeName="百场胜率,加成（万分比）" Key="4000" Value="8000" />
+		<MatchPowerKeyValue KeyName="WinRate" Key="4500" Value="9000" />
+		<MatchPowerKeyValue KeyName="WinRate" Key="5000" Value="10000" />
+		<MatchPowerKeyValue KeyName="WinRate" Key="5500" Value="10500" />
+		<MatchPowerKeyValue KeyName="WinRate" Key="6000" Value="11000" />
+		<MatchPowerKeyValue KeyName="ScoreRate" DescribeName="赛季积分修正率" Key="0" Value="10000" />
+		<MatchPowerKeyValue KeyName="ScoreRate" Key="30000" Value="10000" />
+		<MatchPowerKeyValue KeyName="ScoreRank" DescribeName="赛季积分Rank" Key="0" Value="1" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="2000" Value="2" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="5000" Value="3" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="8000" Value="5" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="10000" Value="7" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="15000" Value="9" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="20000" Value="11" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="25000" Value="13" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="30000" Value="15" />
+		<MatchPowerKeyValue KeyName="ScoreRank" Key="50000" Value="17" />
+		<MatchPowerKeyValue KeyName="LevelRank" DescribeName="等级等阶Rank" Key="30" Value="1" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="50" Value="2" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="60" Value="3" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="80" Value="5" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="100" Value="7" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="120" Value="9" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="140" Value="11" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="160" Value="13" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="170" Value="15" />
+		<MatchPowerKeyValue KeyName="LevelRank" Key="180" Value="17" />
+		<MatchPowerKeyValue KeyName="Official" DescribeName="官阶,rank" Key="0" Value="1" />
+		<MatchPowerKeyValue KeyName="Official" Key="6" Value="2" />
+		<MatchPowerKeyValue KeyName="Official" Key="8" Value="3" />
+		<MatchPowerKeyValue KeyName="Official" Key="10" Value="5" />
+		<MatchPowerKeyValue KeyName="Official" Key="12" Value="7" />
+		<MatchPowerKeyValue KeyName="Official" Key="14" Value="10" />
+		<MatchPowerKeyValue KeyName="Official" Key="16" Value="12" />
+		<MatchPowerKeyValue KeyName="Official" Key="18" Value="15" />
+		<MatchPowerKeyValue KeyName="Official" Key="20" Value="17" />
+		<MatchPowerKeyValue KeyName="Official" Key="24" Value="20" />
+		<MatchPowerKeyValue KeyName="Official" Key="27" Value="22" />
+		<MatchPowerKeyValue KeyName="ScoreBasePower" DescribeName="积分最低基础战斗力，积分到达后不会比这个低" Key="0" Value="1000" />
+		<MatchPowerKeyValue KeyName="ScoreBasePower" Key="1000" Value="1000" />
+		<MatchPowerKeyValue KeyName="ScoreBasePower" Key="5000" Value="1200" />
+		<MatchPowerKeyValue KeyName="ScoreBasePower" Key="10000" Value="1500" />
+		<MatchPowerKeyValue KeyName="ScoreBasePower" Key="20000" Value="1800" />
+		<MatchPowerKeyValue KeyName="ScoreFixOfficial" DescribeName="积分篡改官阶，到达这个积分后视为官阶" Key="0" Value="1" />
+		<MatchPowerKeyValue KeyName="ScoreFixOfficial" Key="5000" Value="7" />
+		<MatchPowerKeyValue KeyName="ScoreFixOfficial" Key="10000" Value="12" />
+		<MatchPowerKeyValue KeyName="ScoreFixOfficial" Key="20000" Value="17" />
+		<MatchPowerKeyValue KeyName="ScoreFixOfficial" Key="30000" Value="22" />
+		<MatchPowerKeyValue KeyName="GeneralNumFixOfficial" DescribeName="Super 武将数 改官阶" Key="0" Value="1" />
+		<MatchPowerKeyValue KeyName="GeneralNumFixOfficial" Key="15" Value="12" />
+		<MatchPowerKeyValue KeyName="GeneralNumFixOfficial" Key="30" Value="17" />
+		<MatchPowerKeyValue KeyName="GeneralNumFixOfficial" Key="45" Value="22" />
+		<MatchPowerKeyValue KeyName="GeneralRatioFixOfficial" DescribeName="Super 武将率*100000 改官阶" Key="0" Value="1" />
+		<MatchPowerKeyValue KeyName="GeneralRatioFixOfficial" Key="10000" Value="12" />
+		<MatchPowerKeyValue KeyName="GeneralRatioFixOfficial" Key="15000" Value="17" />
+		<MatchPowerKeyValue KeyName="GeneralRatioFixOfficial" Key="20000" Value="22" />
+	</Label>
+	<Label model="162" name="斗地主新手场" bomb="0" bet="100,200,300" enterBean="0" enterScore="0" fierceTurnCount="0" cost="10;5" overtime="900" maxMultiple="0" dec="三人抢地主练习" SGeneral="10;1" AGeneral="15;1" BGeneral="2" newGeneralRatio="0:1000,1:800,2:500,3:300" timeTrialGeneralRatio="0:600,1:500,2:200" numTrialGeneralRatio="0:80,1:60,2:40,3:20" DoubleBean="3000" AILordParam1="45" AILordParam2="50" AILordParam3="60" SGeneralNum="40" SGeneralRatio ="50000" IgnoreOff ="27" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	商品类别，1=高级商品，2=低级商品
+			dropCount	-	随机数量
+		-->
+	<MarketDepository id="1" dropCount="8">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			baseid	-	道具id
+			price	-	价格
+			weight	-	随机权重
+			maxBuyCount	-	限购：限购类型0 不限购 1 本日限购 2 本周限购  （武将不用填限购） 不能空着
+			sort	-	排序:大的在前,不配默认=1
+			winCount	-	本周胜场要求
+				-	
+				-	备注
+			-->
+		<Goods baseid="9046601" price="110000" weight="1" maxBuyCount="0,0" />
+		<Goods baseid="9043401" price="62800" weight="10000" maxBuyCount="0,0" />
+		<Goods baseid="9052001" price="12800" weight="1" maxBuyCount="0,0" />
+		<Goods baseid="9050801" price="110000" weight="10000" maxBuyCount="0,0" />
+		<Goods baseid="9702001" price="12800" weight="10000" maxBuyCount="0,0" />
+		<Goods baseid="800301" price="2000" weight="10000" maxBuyCount="2,3" />
+		<Goods baseid="800501" price="1000" weight="10000" maxBuyCount="2,3" />
+		<Goods baseid="800701" price="2000" weight="10000" maxBuyCount="2,3" />
+		<Goods baseid="6093609" price="99900" weight="10000" maxBuyCount="2,1" />
+		<Goods baseid="9020301" price="1000" weight="10000" maxBuyCount="1,4" />
+	</MarketDepository>
+	<MarketDepository id="2" dropCount="1">
+		<Goods baseid="121101" price="350" weight="1" maxBuyCount="0,0" />
+		<Goods baseid="121201" price="350" weight="1" maxBuyCount="0,0" />
+		<Goods baseid="11906807" price="200" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="901503" price="200" weight="100" maxBuyCount="2,10" />
+		<Goods baseid="902903" price="200" weight="100" maxBuyCount="2,10" />
+		<Goods baseid="11904508" price="500" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="11904907" price="500" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="11905007" price="500" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="11905307" price="500" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="11905707" price="500" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="11905807" price="500" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="11905907" price="500" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="11906007" price="500" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="11906107" price="500" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="11906207" price="500" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="3266909" price="6000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="5099809" price="5000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="4077409" price="5000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="3265009" price="15000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="5099309" price="10000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="4076909" price="10000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="941611" price="2000" weight="1" maxBuyCount="2,1" />
+		<Goods baseid="934513" price="3000" weight="1" maxBuyCount="2,1" />
+		<Goods baseid="907413" price="3000" weight="1" maxBuyCount="2,1" />
+		<Goods baseid="913013" price="3000" weight="1" maxBuyCount="2,1" />
+		<Goods baseid="913713" price="3000" weight="1" maxBuyCount="2,1" />
+		<Goods baseid="910413" price="3000" weight="1" maxBuyCount="2,1" />
+		<Goods baseid="911313" price="3000" weight="1" maxBuyCount="2,1" />
+		<Goods baseid="935011" price="2000" weight="1" maxBuyCount="2,1" />
+		<Goods baseid="3217609" price="6000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="3217809" price="6000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="3236309" price="6000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="3236509" price="6000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="3237109" price="6000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="3237309" price="6000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="5072009" price="5000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="5081709" price="5000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="5082109" price="5000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="4050309" price="5000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="4059409" price="5000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="4059809" price="5000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="3293609" price="6000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="4087309" price="5000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="5109709" price="5000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="3293709" price="15000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="4087409" price="10000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="5109809" price="10000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="3293409" price="6000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="4087109" price="5000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="5109509" price="5000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="3293509" price="15000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="4087209" price="10000" weight="100" maxBuyCount="2,1" />
+		<Goods baseid="5109609" price="10000" weight="100" maxBuyCount="2,1" />
+	</MarketDepository>
+	<MarketDepository id="3" dropCount="4">
+		<Goods baseid="8100201" price="1000" weight="1000" maxBuyCount="2,3" />
+		<Goods baseid="13500101" price="2500" weight="1000" maxBuyCount="1,1" />
+		<Goods baseid="11380601" price="6000" weight="1" maxBuyCount="2,1" />
+		<Goods baseid="11463501" price="322" weight="1000" maxBuyCount="1,7" />
+		<Goods baseid="11463601" price="212" weight="1000" maxBuyCount="1,7" />
+		<Goods baseid="11463701" price="262" weight="1000" maxBuyCount="1,7" />
+	</MarketDepository>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			goods	-	欢乐豆兑换道具id
+			url1	-	废弃
+			des	-	玩法说明文字
+			des2	-	主公杀玩法说明文字
+			des3	-	斗地主玩法说明文字
+			num	-	商店兑换要求本周积分>=N
+			freegoods	-	免费 礼包id-废弃
+			freetime	-	免费礼包可领取日期-废弃
+			aozhanTip	-	鏖战描述
+			aozhanTip2	-	鏖战描述2
+			zgsaozhanTip	-	主公杀鏖战描述
+			zgsaozhanTip2	-	主公杀鏖战描述2
+			lowCount	-	每日免费欢乐豆低于多少可以领
+			rewards	-	每日免费欢乐豆的具体的物品
+			maxCount	-	每日免费欢乐豆每天最多可领多少次
+			Skill1	-	主公杀场景技能AI
+			Skill2	-	主公额外技能ID
+			SecretAdd	-	内奸额外加成（百分比）
+			Skill1Show	-	主公杀场景技能标记是否展示
+			MinGerenal	-	主公杀匹配最小可使用武将数，不配则不限制
+			VicBean	-	胜利欢乐豆功能开关（1=开，其他值=关）
+			loseRatio1	-	斗地主失败系数1
+万分制
+			loseRatio2	-	斗地主失败系数2
+整数
+			LordCardWinRate1	-	地主胜率显示最低值
+			LordCardWinRate2	-	农民胜率显示最低值
+			TipsOpen	-	高级场气泡提示开关（1=开，其他值=关）
+			tagX	-	当前分距离下一档赛季奖励所需分差值在X之内时显示标签
+			tagLv	-	显示标签等级
+			PramLoss	-	连败参数
+			gameindex	-	斗地主赛季奖池关将数据参数（使用赛季将池需配置8）
+			BeanChange	-	结算欢乐豆转换和兑换商店使用的道具id
+			newbieTime	-	新手超时时间/S
+			inherit	-	斗地主继承上赛季积分比率（百分比）
+			inheritmax	-	继承最大上限
+			switchTime	-	赛季奖励切换首胜奖励时间（此时间后赛季奖励失效，变为首胜奖励）
+			GeneralScoreNum	-	将面预发武将数量
+		-->
+	<par num="0" freegoods="9020501" freetime="20210318T000000;20290630T235959" lowCount="600" rewards="9020101,300" maxCount="2" Skill1="12007" Skill2="12006" SecretAdd="10" Skill1Show="0" VicBean="1" loseRatio1="2500" loseRatio2="3" tagLv="1;80" PramLoss="3,30;4,40;5,50" gameindex="0" BeanChange="9030201" newbieTime="15" inherit="30" inheritmax="30000" switchTime="20240701T000001" GeneralScoreNum="12" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			cycID	-	赛季id
+			rankgifttime	-	php排行榜发奖时间
+			beginTime	-	赛季开始
+			endTime	-	赛季结束
+			generalOpen	-	赛季将池
+			resetHour	-	每日免费豆刷新时间（4点）
+		-->
+	<CycID cycID="1" beginTime="20210630T235959" endTime="20210630T235959" resetHour="4">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank1	-	排名
+			rank2	-	排名下限
+			itmes	-	奖励-php邮件发送
+			name	-	奖励名字-php发邮件用
+			icon	-	显示宝箱icon123档次，1最好
+				-	奖励宝箱类型
+			-->
+		<Rank rank1="1" rank2="1" itmes="11382401,1;11338101,1;100006,51158;" name="智斗限定武将箱*1，传说皮肤礼袋*1，S1赛季战功-牌斗乐趣" icon="1" />
+		<Rank rank1="2" rank2="2" itmes="1219301,1;11338101,1;100006,51158;" name="五阶将印宝箱*1，传说皮肤礼袋*1,S1赛季战功-牌斗乐趣" icon="2" />
+		<Rank rank1="3" rank2="3" itmes="112601,1;11338101,1;100006,51158;" name="枭雄金印*1，传说皮肤礼袋x1，S1赛季战功-牌斗乐趣" icon="2" />
+		<Rank rank1="4" rank2="10" itmes="11338101,1;1213401,2;100006,51158;" name="传说皮肤礼袋*1，史诗将印宝箱*2，S1赛季战功-牌斗乐趣" icon="3" />
+		<Rank rank1="11" rank2="50" itmes="11338001,1;1213401,2;100006,51158;" name="史诗皮肤锦囊x1，史诗将印宝箱*2，S1赛季战功-牌斗乐趣" icon="3" />
+		<Rank rank1="51" rank2="100" itmes="11338001,1;1213401,1;100006,51158;" name="史诗皮肤锦囊*1，史诗将印宝箱*1，S1赛季战功-牌斗乐趣" icon="3" />
+		<Rank rank1="101" rank2="500" itmes="1213401,1;111801,400" name="史诗将印宝箱*1，功勋*400" icon="3" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	奖励id
+			requireScore	-	要求最高积分
+			goodslist	-	奖励
+				-	
+				-	备注
+			-->
+		<Reward Id="1" requireScore="1000" goodslist="100011,200;9020101,300;" />
+		<Reward Id="2" requireScore="2000" goodslist="100011,200;1213201,1;" />
+		<Reward Id="3" requireScore="3000" goodslist="100011,200;1142901,1;" />
+		<Reward Id="4" requireScore="4000" goodslist="100011,200;111801,100;" />
+		<Reward Id="5" requireScore="5000" goodslist="100011,200;435401,1;" />
+		<Reward Id="6" requireScore="6000" goodslist="100011,200;111801,100;" />
+		<Reward Id="7" requireScore="7000" goodslist="100011,200;1314601,1;" />
+		<Reward Id="8" requireScore="8000" goodslist="100011,200;1142901,2;" />
+		<Reward Id="9" requireScore="9000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="10" requireScore="10000" goodslist="100011,200;435601,1;" />
+		<Reward Id="11" requireScore="15000" goodslist="100011,200;1219901,1;" />
+		<Reward Id="12" requireScore="20000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="13" requireScore="25000" goodslist="100011,200;435501,1;" />
+		<Reward Id="14" requireScore="30000" goodslist="100011,200;8100301,1;" />
+		<Reward Id="15" requireScore="35000" goodslist="100011,200;1143001,1;" />
+		<Reward Id="16" requireScore="40000" goodslist="100011,200;1213401,1;" />
+	</CycID>
+	<CycID cycID="2" beginTime="20210701T235959" endTime="20210701T235959" resetHour="4">
+		<Rank rank1="1" rank2="1" itmes="111801,1" name="智斗限定武将箱*1，传说皮肤礼袋*1，S2赛季战功" icon="1" />
+		<Rank rank1="2" rank2="2" itmes="111801,1" name="五阶将印宝箱*1，传说皮肤礼袋*1，S2赛季战功" icon="2" />
+		<Rank rank1="3" rank2="3" itmes="111801,1" name="枭雄金印*1，传说皮肤礼袋x1，S2赛季战功" icon="2" />
+		<Rank rank1="4" rank2="10" itmes="111801,1" name="传说皮肤礼袋*1，史诗将印宝箱*2，S2赛季战功" icon="3" />
+		<Rank rank1="11" rank2="50" itmes="111801,1" name="史诗皮肤锦囊x1，史诗将印宝箱*2，S2赛季战功" icon="3" />
+		<Rank rank1="51" rank2="100" itmes="111801,1" name="史诗皮肤锦囊*1，史诗将印宝箱*1，S2赛季战功" icon="3" />
+		<Rank rank1="101" rank2="500" itmes="111801,1" name="史诗将印宝箱*1，功勋*400" icon="3" />
+		<Reward Id="1" requireScore="5000000" goodslist="100011,1;" />
+	</CycID>
+	<CycID cycID="3" beginTime="20210930T235959" endTime="20210930T235959" resetHour="4">
+		<Rank rank1="1" rank2="1" itmes="11382401,1;11338101,1;100006,51159;" name="智斗限定武将箱*1，传说皮肤礼袋*1，S2赛季战功" icon="1" />
+		<Rank rank1="2" rank2="2" itmes="1219301,1;11338101,1;100006,51159;" name="五阶将印宝箱*1，传说皮肤礼袋*1，S2赛季战功" icon="2" />
+		<Rank rank1="3" rank2="3" itmes="112601,1;11338101,1;100006,51159;" name="枭雄金印*1，传说皮肤礼袋x1，S2赛季战功" icon="2" />
+		<Rank rank1="4" rank2="10" itmes="11338101,1;1213401,2;100006,51159;" name="传说皮肤礼袋*1，史诗将印宝箱*2，S2赛季战功" icon="3" />
+		<Rank rank1="11" rank2="50" itmes="11338001,1;1213401,2;100006,51159;" name="史诗皮肤锦囊x1，史诗将印宝箱*2，S2赛季战功" icon="3" />
+		<Rank rank1="51" rank2="100" itmes="11338001,1;1213401,1;100006,51159;" name="史诗皮肤锦囊*1，史诗将印宝箱*1，S2赛季战功" icon="3" />
+		<Rank rank1="101" rank2="500" itmes="1213401,1;111801,400" name="史诗将印宝箱*1，功勋*400" icon="3" />
+		<Reward Id="1" requireScore="1000" goodslist="100011,200;9020101,300;" />
+		<Reward Id="2" requireScore="2000" goodslist="100011,200;1213201,1;" />
+		<Reward Id="3" requireScore="3000" goodslist="100011,200;1142901,1;" />
+		<Reward Id="4" requireScore="4000" goodslist="100011,200;111801,100;" />
+		<Reward Id="5" requireScore="5000" goodslist="100011,200;435401,1;" />
+		<Reward Id="6" requireScore="6000" goodslist="100011,200;111801,100;" />
+		<Reward Id="7" requireScore="7000" goodslist="100011,200;1314601,1;" />
+		<Reward Id="8" requireScore="8000" goodslist="100011,200;1142901,2;" />
+		<Reward Id="9" requireScore="9000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="10" requireScore="10000" goodslist="100011,200;435601,1;" />
+		<Reward Id="11" requireScore="15000" goodslist="100011,200;1219901,1;" />
+		<Reward Id="12" requireScore="20000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="13" requireScore="25000" goodslist="100011,200;435501,1;" />
+		<Reward Id="14" requireScore="30000" goodslist="100011,200;8100301,1;" />
+		<Reward Id="15" requireScore="35000" goodslist="100011,200;1143001,1;" />
+		<Reward Id="16" requireScore="40000" goodslist="100011,200;1213401,1;" />
+	</CycID>
+	<CycID cycID="4" beginTime="20211231T235959" endTime="20211231T235959" resetHour="4">
+		<Rank rank1="1" rank2="1" itmes="11382401,1;11338101,1;100006,51186;" name="智斗限定武将箱*1，传说皮肤礼袋*1，S3赛季战功" icon="1" />
+		<Rank rank1="2" rank2="2" itmes="1219301,1;11338101,1;100006,51186;" name="五阶将印宝箱*1，传说皮肤礼袋*1，S3赛季战功" icon="2" />
+		<Rank rank1="3" rank2="3" itmes="112601,1;11338101,1;100006,51186;" name="枭雄金印*1，传说皮肤礼袋x1，S3赛季战功" icon="2" />
+		<Rank rank1="4" rank2="10" itmes="11338101,1;1213401,2;100006,51186;" name="传说皮肤礼袋*1，史诗将印宝箱*2，S3赛季战功" icon="3" />
+		<Rank rank1="11" rank2="50" itmes="11338001,1;1213401,2;100006,51186;" name="史诗皮肤锦囊x1，史诗将印宝箱*2，S3赛季战功" icon="3" />
+		<Rank rank1="51" rank2="100" itmes="11338001,1;1213401,1;100006,51186;" name="史诗皮肤锦囊*1，史诗将印宝箱*1，S3赛季战功" icon="3" />
+		<Rank rank1="101" rank2="500" itmes="1213401,1;111801,400" name="史诗将印宝箱*1，功勋*400" icon="3" />
+		<Reward Id="1" requireScore="1000" goodslist="100011,200;9020101,300;" />
+		<Reward Id="2" requireScore="2000" goodslist="100011,200;1213201,1;" />
+		<Reward Id="3" requireScore="3000" goodslist="100011,200;1142901,1;" />
+		<Reward Id="4" requireScore="4000" goodslist="100011,200;111801,100;" />
+		<Reward Id="5" requireScore="5000" goodslist="100011,200;435401,1;" />
+		<Reward Id="6" requireScore="6000" goodslist="100011,200;111801,100;" />
+		<Reward Id="7" requireScore="7000" goodslist="100011,200;1314601,1;" />
+		<Reward Id="8" requireScore="8000" goodslist="100011,200;1142901,2;" />
+		<Reward Id="9" requireScore="9000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="10" requireScore="10000" goodslist="100011,200;435601,1;" />
+		<Reward Id="11" requireScore="15000" goodslist="100011,200;1219901,1;" />
+		<Reward Id="12" requireScore="20000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="13" requireScore="25000" goodslist="100011,200;435501,1;" />
+		<Reward Id="14" requireScore="30000" goodslist="100011,200;8100301,1;" />
+		<Reward Id="15" requireScore="35000" goodslist="100011,200;1143001,1;" />
+		<Reward Id="16" requireScore="40000" goodslist="100011,200;1213401,1;" />
+	</CycID>
+	<CycID cycID="5" beginTime="20220331T235959" endTime="20220331T235959" resetHour="4">
+		<Rank rank1="1" rank2="1" itmes="11382401,1;11338101,1;100006,52114;" name="智斗限定武将箱*1，传说皮肤礼袋*1，S4赛季战功" icon="1" />
+		<Rank rank1="2" rank2="2" itmes="1219301,1;11338101,1;100006,52114;" name="五阶将印宝箱*1，传说皮肤礼袋*1，S4赛季战功" icon="2" />
+		<Rank rank1="3" rank2="3" itmes="112601,1;11338101,1;100006,52114;" name="枭雄金印*1，传说皮肤礼袋x1，S4赛季战功" icon="2" />
+		<Rank rank1="4" rank2="10" itmes="11338101,1;1213401,2;100006,52114;" name="传说皮肤礼袋*1，史诗将印宝箱*2，S4赛季战功" icon="3" />
+		<Rank rank1="11" rank2="50" itmes="11338001,1;1213401,2;100006,52114;" name="史诗皮肤锦囊x1，史诗将印宝箱*2，S4赛季战功" icon="3" />
+		<Rank rank1="51" rank2="100" itmes="11338001,1;1213401,1;100006,52114;" name="史诗皮肤锦囊*1，史诗将印宝箱*1，S4赛季战功" icon="3" />
+		<Rank rank1="101" rank2="500" itmes="1213401,1;111801,400" name="史诗将印宝箱*1，功勋*400" icon="3" />
+		<Reward Id="1" requireScore="1000" goodslist="100011,200;9020101,300;" />
+		<Reward Id="2" requireScore="2000" goodslist="100011,200;1213201,1;" />
+		<Reward Id="3" requireScore="3000" goodslist="100011,200;1142901,1;" />
+		<Reward Id="4" requireScore="4000" goodslist="100011,200;111801,100;" />
+		<Reward Id="5" requireScore="5000" goodslist="100011,200;435401,1;" />
+		<Reward Id="6" requireScore="6000" goodslist="100011,200;111801,100;" />
+		<Reward Id="7" requireScore="7000" goodslist="100011,200;1314601,1;" />
+		<Reward Id="8" requireScore="8000" goodslist="100011,200;1142901,2;" />
+		<Reward Id="9" requireScore="9000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="10" requireScore="10000" goodslist="100011,200;435601,1;" />
+		<Reward Id="11" requireScore="15000" goodslist="100011,200;1219901,1;" />
+		<Reward Id="12" requireScore="20000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="13" requireScore="25000" goodslist="100011,200;435501,1;" />
+		<Reward Id="14" requireScore="30000" goodslist="100011,200;8100301,1;" />
+		<Reward Id="15" requireScore="35000" goodslist="100011,200;1143001,1;" />
+		<Reward Id="16" requireScore="40000" goodslist="100011,200;1213401,1;" />
+	</CycID>
+	<CycID cycID="6" beginTime="20220630T235959" endTime="20220630T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100;" />
+		<Reward Id="2" requireScore="1000" goodslist="100011,200;9020101,300;" />
+		<Reward Id="3" requireScore="1500" goodslist="100011,200;111801,50;" />
+		<Reward Id="4" requireScore="2000" goodslist="100011,200;1213201,1;" />
+		<Reward Id="5" requireScore="2500" goodslist="100011,200;9020101,300;" />
+		<Reward Id="6" requireScore="3000" goodslist="100011,200;1142901,1;" />
+		<Reward Id="7" requireScore="4000" goodslist="100011,200;111801,100;" />
+		<Reward Id="8" requireScore="5000" goodslist="100011,200;435401,1;" />
+		<Reward Id="9" requireScore="6000" goodslist="100011,200;111801,100;" />
+		<Reward Id="10" requireScore="7000" goodslist="100011,200;1314601,1;" />
+		<Reward Id="11" requireScore="8000" goodslist="100011,200;1142901,2;" />
+		<Reward Id="12" requireScore="9000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="13" requireScore="10000" goodslist="100011,200;435601,1;" />
+		<Reward Id="14" requireScore="15000" goodslist="100011,200;1219901,1;" />
+		<Reward Id="15" requireScore="20000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="16" requireScore="25000" goodslist="100011,200;435501,1;" />
+		<Reward Id="17" requireScore="30000" goodslist="100011,200;8100301,1;" />
+		<Reward Id="18" requireScore="35000" goodslist="100011,200;1143001,1;" />
+		<Reward Id="19" requireScore="40000" goodslist="100011,200;1213401,1;" />
+	</CycID>
+	<CycID cycID="7" beginTime="20220930T235959" endTime="20220930T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100;" />
+		<Reward Id="2" requireScore="1000" goodslist="100011,200;9020101,300;" />
+		<Reward Id="3" requireScore="1500" goodslist="100011,200;111801,50;" />
+		<Reward Id="4" requireScore="2000" goodslist="100011,200;1213201,1;" />
+		<Reward Id="5" requireScore="2500" goodslist="100011,200;9020101,300;" />
+		<Reward Id="6" requireScore="3000" goodslist="100011,200;1142901,1;" />
+		<Reward Id="7" requireScore="4000" goodslist="100011,200;111801,100;" />
+		<Reward Id="8" requireScore="5000" goodslist="100011,200;435401,1;" />
+		<Reward Id="9" requireScore="6000" goodslist="100011,200;111801,100;" />
+		<Reward Id="10" requireScore="7000" goodslist="100011,200;1314601,1;" />
+		<Reward Id="11" requireScore="8000" goodslist="100011,200;1142901,2;" />
+		<Reward Id="12" requireScore="9000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="13" requireScore="10000" goodslist="100011,200;435601,1;" />
+		<Reward Id="14" requireScore="15000" goodslist="100011,200;1219901,1;" />
+		<Reward Id="15" requireScore="20000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="16" requireScore="25000" goodslist="100011,200;435501,1;" />
+		<Reward Id="17" requireScore="30000" goodslist="100011,200;8100301,1;" />
+		<Reward Id="18" requireScore="35000" goodslist="100011,200;1143001,1;" />
+		<Reward Id="19" requireScore="40000" goodslist="100011,200;1213401,1;" />
+	</CycID>
+	<CycID cycID="8" beginTime="20230108T235959" endTime="20230108T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100;" />
+		<Reward Id="2" requireScore="1000" goodslist="100011,200;9020101,300;" />
+		<Reward Id="3" requireScore="1500" goodslist="100011,200;111801,50;" />
+		<Reward Id="4" requireScore="2000" goodslist="100011,200;1213201,1;" />
+		<Reward Id="5" requireScore="2500" goodslist="100011,200;9020101,300;" />
+		<Reward Id="6" requireScore="3000" goodslist="100011,200;1142901,1;" />
+		<Reward Id="7" requireScore="4000" goodslist="100011,200;111801,100;" />
+		<Reward Id="8" requireScore="5000" goodslist="100011,200;435401,1;" />
+		<Reward Id="9" requireScore="6000" goodslist="100011,200;111801,100;" />
+		<Reward Id="10" requireScore="7000" goodslist="100011,200;1314601,1;" />
+		<Reward Id="11" requireScore="8000" goodslist="100011,200;1142901,2;" />
+		<Reward Id="12" requireScore="9000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="13" requireScore="10000" goodslist="100011,200;435601,1;" />
+		<Reward Id="14" requireScore="15000" goodslist="100011,200;1219901,1;" />
+		<Reward Id="15" requireScore="20000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="16" requireScore="25000" goodslist="100011,200;435501,1;" />
+		<Reward Id="17" requireScore="30000" goodslist="100011,200;8100301,1;" />
+		<Reward Id="18" requireScore="35000" goodslist="100011,200;1143001,1;" />
+		<Reward Id="19" requireScore="40000" goodslist="100011,200;1213401,1;" />
+	</CycID>
+	<CycID cycID="9" beginTime="20230502T235959" endTime="20230502T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100;" />
+		<Reward Id="2" requireScore="1000" goodslist="100011,200;9020101,300;" />
+		<Reward Id="3" requireScore="1500" goodslist="100011,200;111801,50;" />
+		<Reward Id="4" requireScore="2000" goodslist="100011,200;1213201,1;" />
+		<Reward Id="5" requireScore="2500" goodslist="100011,200;9020101,300;" />
+		<Reward Id="6" requireScore="3000" goodslist="100011,200;1142901,1;" />
+		<Reward Id="7" requireScore="4000" goodslist="100011,200;111801,100;" />
+		<Reward Id="8" requireScore="5000" goodslist="100011,200;435401,1;" />
+		<Reward Id="9" requireScore="6000" goodslist="100011,200;111801,100;" />
+		<Reward Id="10" requireScore="7000" goodslist="100011,200;1314601,1;" />
+		<Reward Id="11" requireScore="8000" goodslist="100011,200;1142901,2;" />
+		<Reward Id="12" requireScore="9000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="13" requireScore="10000" goodslist="100011,200;435601,1;" />
+		<Reward Id="14" requireScore="15000" goodslist="100011,200;1219901,1;" />
+		<Reward Id="15" requireScore="20000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="16" requireScore="25000" goodslist="100011,200;435501,1;" />
+		<Reward Id="17" requireScore="30000" goodslist="100011,200;8100301,1;" />
+		<Reward Id="18" requireScore="35000" goodslist="100011,200;1143001,1;" />
+		<Reward Id="19" requireScore="40000" goodslist="100011,200;1213401,1;" />
+	</CycID>
+	<CycID cycID="10" beginTime="20230702T235959" endTime="20230702T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100;" />
+		<Reward Id="2" requireScore="1000" goodslist="100011,200;9020101,300;" />
+		<Reward Id="3" requireScore="1500" goodslist="100011,200;111801,50;" />
+		<Reward Id="4" requireScore="2000" goodslist="100011,200;1213201,1;" />
+		<Reward Id="5" requireScore="2500" goodslist="100011,200;9020101,300;" />
+		<Reward Id="6" requireScore="3000" goodslist="100011,200;1142901,1;" />
+		<Reward Id="7" requireScore="4000" goodslist="100011,200;111801,100;" />
+		<Reward Id="8" requireScore="5000" goodslist="100011,200;435401,1;" />
+		<Reward Id="9" requireScore="6000" goodslist="100011,200;111801,100;" />
+		<Reward Id="10" requireScore="7000" goodslist="100011,200;1314601,1;" />
+		<Reward Id="11" requireScore="8000" goodslist="100011,200;1142901,2;" />
+		<Reward Id="12" requireScore="9000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="13" requireScore="10000" goodslist="100011,200;435601,1;" />
+		<Reward Id="14" requireScore="15000" goodslist="100011,200;1219901,1;" />
+		<Reward Id="15" requireScore="20000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="16" requireScore="25000" goodslist="100011,200;435501,1;" />
+		<Reward Id="17" requireScore="30000" goodslist="100011,200;8100301,1;" />
+		<Reward Id="18" requireScore="35000" goodslist="100011,200;1143001,1;" />
+		<Reward Id="19" requireScore="40000" goodslist="100011,200;1213401,1;" />
+	</CycID>
+	<CycID cycID="11" beginTime="20231008T235959" endTime="20231008T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100;" />
+		<Reward Id="2" requireScore="1000" goodslist="100011,200;9020101,300;" />
+		<Reward Id="3" requireScore="1500" goodslist="100011,200;111801,50;" />
+		<Reward Id="4" requireScore="2000" goodslist="100011,200;1213201,1;" />
+		<Reward Id="5" requireScore="2500" goodslist="100011,200;9020101,300;" />
+		<Reward Id="6" requireScore="3000" goodslist="100011,200;1142901,1;" />
+		<Reward Id="7" requireScore="4000" goodslist="100011,200;111801,100;" />
+		<Reward Id="8" requireScore="5000" goodslist="100011,200;435401,1;" />
+		<Reward Id="9" requireScore="6000" goodslist="100011,200;111801,100;" />
+		<Reward Id="10" requireScore="7000" goodslist="100011,200;1314601,1;" />
+		<Reward Id="11" requireScore="8000" goodslist="100011,200;1142901,2;" />
+		<Reward Id="12" requireScore="9000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="13" requireScore="10000" goodslist="100011,200;435601,1;" />
+		<Reward Id="14" requireScore="15000" goodslist="100011,200;1219901,1;" />
+		<Reward Id="15" requireScore="20000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="16" requireScore="25000" goodslist="100011,200;435501,1;" />
+		<Reward Id="17" requireScore="30000" goodslist="100011,200;8100201,3;" />
+		<Reward Id="18" requireScore="35000" goodslist="100011,200;1143001,1;" />
+		<Reward Id="19" requireScore="40000" goodslist="100011,200;1213401,1;" />
+	</CycID>
+	<CycID cycID="12" beginTime="20231231T235959" endTime="20231231T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100;" />
+		<Reward Id="2" requireScore="1000" goodslist="100011,200;9020101,300;" />
+		<Reward Id="3" requireScore="1500" goodslist="100011,200;111801,50;" />
+		<Reward Id="4" requireScore="2000" goodslist="100011,200;1213201,1;" />
+		<Reward Id="5" requireScore="2500" goodslist="100011,200;9020101,300;" />
+		<Reward Id="6" requireScore="3000" goodslist="100011,200;1142901,1;" />
+		<Reward Id="7" requireScore="4000" goodslist="100011,200;111801,100;" />
+		<Reward Id="8" requireScore="5000" goodslist="100011,200;435401,1;" />
+		<Reward Id="9" requireScore="6000" goodslist="100011,200;111801,100;" />
+		<Reward Id="10" requireScore="7000" goodslist="100011,200;1314601,1;" />
+		<Reward Id="11" requireScore="8000" goodslist="100011,200;1142901,2;" />
+		<Reward Id="12" requireScore="9000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="13" requireScore="10000" goodslist="100011,200;435601,1;" />
+		<Reward Id="14" requireScore="15000" goodslist="100011,200;1219901,1;" />
+		<Reward Id="15" requireScore="20000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="16" requireScore="25000" goodslist="100011,200;435501,1;" />
+		<Reward Id="17" requireScore="30000" goodslist="100011,200;8100201,3;" />
+		<Reward Id="18" requireScore="35000" goodslist="100011,200;1143001,1;" />
+		<Reward Id="19" requireScore="40000" goodslist="100011,200;1213401,1;" />
+	</CycID>
+	<CycID cycID="13" beginTime="20240101T000000" endTime="20240331T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100;" />
+		<Reward Id="2" requireScore="1000" goodslist="100011,200;9020101,300;" />
+		<Reward Id="3" requireScore="1500" goodslist="100011,200;111801,50;" />
+		<Reward Id="4" requireScore="2000" goodslist="100011,200;1213201,1;" />
+		<Reward Id="5" requireScore="2500" goodslist="100011,200;9020101,300;" />
+		<Reward Id="6" requireScore="3000" goodslist="100011,200;1142901,1;" />
+		<Reward Id="7" requireScore="4000" goodslist="100011,200;111801,100;" />
+		<Reward Id="8" requireScore="5000" goodslist="100011,200;435401,1;" />
+		<Reward Id="9" requireScore="6000" goodslist="100011,200;111801,100;" />
+		<Reward Id="10" requireScore="7000" goodslist="100011,200;1314601,1;" />
+		<Reward Id="11" requireScore="8000" goodslist="100011,200;1142901,2;" />
+		<Reward Id="12" requireScore="9000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="13" requireScore="10000" goodslist="100011,200;435601,1;" />
+		<Reward Id="14" requireScore="15000" goodslist="100011,200;1219901,1;" />
+		<Reward Id="15" requireScore="20000" goodslist="100011,200;1213301,1;" />
+		<Reward Id="16" requireScore="25000" goodslist="100011,200;435501,1;" />
+		<Reward Id="17" requireScore="30000" goodslist="100011,200;8100201,3;" />
+		<Reward Id="18" requireScore="35000" goodslist="100011,200;1143001,1;" />
+		<Reward Id="19" requireScore="40000" goodslist="100011,200;1213401,1;" />
+	</CycID>
+	<CycID cycID="14" beginTime="20240401T000000" endTime="20240430T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100" />
+		<Reward Id="2" requireScore="1000" goodslist="100011,200;1213201,1" />
+		<Reward Id="3" requireScore="2000" goodslist="100011,200;9020101,300" />
+		<Reward Id="4" requireScore="3000" goodslist="100011,200;9020101,500" />
+		<Reward Id="5" requireScore="5000" goodslist="100011,200;435401,1" />
+		<Reward Id="6" requireScore="8000" goodslist="100011,200;1142901,1" />
+		<Reward Id="7" requireScore="10000" goodslist="100011,200;1213301,1" />
+		<Reward Id="8" requireScore="15000" goodslist="100011,200;1219901,1" />
+		<Reward Id="9" requireScore="20000" goodslist="100011,200;435401,3" />
+		<Reward Id="10" requireScore="25000" goodslist="100011,200;1142901,3" />
+		<Reward Id="11" requireScore="30000" goodslist="100011,200;8100201,3" />
+	</CycID>
+	<CycID cycID="15" beginTime="20240501T000000" endTime="20240531T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100" />
+		<Reward Id="2" requireScore="1000" goodslist="100011,200;1213201,1" />
+		<Reward Id="3" requireScore="2000" goodslist="100011,200;9020101,300" />
+		<Reward Id="4" requireScore="3000" goodslist="100011,200;9020101,500" />
+		<Reward Id="5" requireScore="5000" goodslist="100011,200;435401,1" />
+		<Reward Id="6" requireScore="8000" goodslist="100011,200;1142901,1" />
+		<Reward Id="7" requireScore="10000" goodslist="100011,200;1213301,1" />
+		<Reward Id="8" requireScore="15000" goodslist="100011,200;1219901,1" />
+		<Reward Id="9" requireScore="20000" goodslist="100011,200;435401,3" />
+		<Reward Id="10" requireScore="25000" goodslist="100011,200;1142901,3" />
+		<Reward Id="11" requireScore="30000" goodslist="100011,200;8100201,3" />
+	</CycID>
+	<CycID cycID="16" beginTime="20240601T000000" endTime="20240630T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100" />
+		<Reward Id="2" requireScore="1000" goodslist="100011,200;1213201,1" />
+		<Reward Id="3" requireScore="2000" goodslist="100011,200;9020101,300" />
+		<Reward Id="4" requireScore="3000" goodslist="100011,200;9020101,500" />
+		<Reward Id="5" requireScore="5000" goodslist="100011,200;435401,1" />
+		<Reward Id="6" requireScore="8000" goodslist="100011,200;1142901,1" />
+		<Reward Id="7" requireScore="10000" goodslist="100011,200;1213301,1" />
+		<Reward Id="8" requireScore="15000" goodslist="100011,200;1219901,1" />
+		<Reward Id="9" requireScore="20000" goodslist="100011,200;435401,3" />
+		<Reward Id="10" requireScore="25000" goodslist="100011,200;1142901,3" />
+		<Reward Id="11" requireScore="30000" goodslist="100011,200;8100201,3" />
+	</CycID>
+	<CycID cycID="17" beginTime="20240701T000000" endTime="20240731T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100" />
+	</CycID>
+	<CycID cycID="18" beginTime="20240801T000000" endTime="20240831T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100" />
+	</CycID>
+	<CycID cycID="19" beginTime="20240901T000000" endTime="20240930T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100" />
+	</CycID>
+	<CycID cycID="20" beginTime="20241001T000000" endTime="20241031T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100" />
+	</CycID>
+	<CycID cycID="21" beginTime="20241101T000000" endTime="20241130T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100" />
+	</CycID>
+	<CycID cycID="22" beginTime="20241201T000000" endTime="20241231T235959" resetHour="4">
+		<Reward Id="1" requireScore="500" goodslist="100011,100;9020101,100" />
+	</CycID>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			totalScore	-	添加AI触发条件-总积分<，连输x次后匹配到一局AI局
+			totalGameCnt	-	添加AI触发条件-总积分<，连输x次后匹配到一局AI局
+			weekScoreParam1	-	本周积分<，连输x次后匹配到一局AI局
+			weekScoreGameCnt1	-	本周积分<，连输x次后匹配到一局AI局
+			weekScoreParam2	-	=>本周积分>，连输次后将匹配到一局AI局
+			weekScoreGameCnt2	-	=>本周积分>，连输次后将匹配到一局AI局
+		-->
+	<MKInfo totalScore="2000" totalGameCnt="2" weekScoreParam1="3000" weekScoreGameCnt1="3" weekScoreParam2="10000" weekScoreGameCnt2="4" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			bet	-	游戏模式
+			betLordScore	-	评分要求
+			generalList	-	选将组合
+		-->
+	<BetConfig bet="1" betLordScore="30" generalList="23,40;23,100" />
+	<BetConfig bet="2" betLordScore="45" generalList="115,23;115,3;115,6" />
+	<BetConfig bet="3" betLordScore="60" generalList="128,176;128,326" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	武将id
+			ratio	-	发将概率 普通;黄金
+			farmerScore	-	农民评分
+			lordScore	-	地主评分
+				-	
+				-	
+				-	
+				-	
+				-	
+				-	
+				-
+		-->
+	<GeneralDealInfo id="1" ratio="80;35" farmerScore="4" lordScore="5" />
+	<GeneralDealInfo id="3" ratio="75;30" farmerScore="2" lordScore="25" />
+	<GeneralDealInfo id="5" ratio="100;55" farmerScore="2" lordScore="25" />
+	<GeneralDealInfo id="6" ratio="75;30" farmerScore="1" lordScore="10" />
+	<GeneralDealInfo id="8" ratio="65;20" farmerScore="3" lordScore="20" />
+	<GeneralDealInfo id="9" ratio="80;35" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="10" ratio="65;20" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="12" ratio="70;25" farmerScore="1" lordScore="15" />
+	<GeneralDealInfo id="15" ratio="70;25" farmerScore="2" lordScore="5" />
+	<GeneralDealInfo id="16" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="17" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="19" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="20" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="22" ratio="80;35" farmerScore="4" lordScore="10" />
+	<GeneralDealInfo id="23" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="24" ratio="55;10" farmerScore="1" lordScore="15" />
+	<GeneralDealInfo id="25" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="26" ratio="75;30" farmerScore="2" lordScore="25" />
+	<GeneralDealInfo id="28" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="30" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="34" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="35" ratio="60;15" farmerScore="2" lordScore="5" />
+	<GeneralDealInfo id="36" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="37" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="38" ratio="75;30" farmerScore="2" lordScore="25" />
+	<GeneralDealInfo id="39" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="40" ratio="75;30" farmerScore="2" lordScore="25" />
+	<GeneralDealInfo id="44" ratio="60;15" farmerScore="2" lordScore="1" />
+	<GeneralDealInfo id="46" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="47" ratio="70;25" farmerScore="3" lordScore="5" />
+	<GeneralDealInfo id="48" ratio="60;15" farmerScore="1" lordScore="20" />
+	<GeneralDealInfo id="49" ratio="80;35" farmerScore="4" lordScore="5" />
+	<GeneralDealInfo id="50" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="51" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="53" ratio="80;35" farmerScore="4" lordScore="5" />
+	<GeneralDealInfo id="54" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="55" ratio="60;15" farmerScore="2" lordScore="5" />
+	<GeneralDealInfo id="57" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="72" ratio="60;15" farmerScore="1" lordScore="20" />
+	<GeneralDealInfo id="73" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="74" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="100" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="103" ratio="80;35" farmerScore="3" lordScore="20" />
+	<GeneralDealInfo id="104" ratio="70;25" farmerScore="3" lordScore="5" />
+	<GeneralDealInfo id="105" ratio="50;5" farmerScore="1" lordScore="10" />
+	<GeneralDealInfo id="106" ratio="50;5" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="107" ratio="50;5" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="108" ratio="80;35" farmerScore="3" lordScore="20" />
+	<GeneralDealInfo id="110" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="111" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="113" ratio="80;35" farmerScore="4" lordScore="10" />
+	<GeneralDealInfo id="114" ratio="60;15" farmerScore="2" lordScore="5" />
+	<GeneralDealInfo id="115" ratio="70;25" farmerScore="1" lordScore="30" />
+	<GeneralDealInfo id="116" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="117" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="119" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="121" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="122" ratio="80;35" farmerScore="4" lordScore="5" />
+	<GeneralDealInfo id="123" ratio="60;15" farmerScore="2" lordScore="5" />
+	<GeneralDealInfo id="124" ratio="75;30" farmerScore="2" lordScore="25" />
+	<GeneralDealInfo id="125" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="126" ratio="60;15" farmerScore="1" lordScore="20" />
+	<GeneralDealInfo id="127" ratio="50;5" farmerScore="1" lordScore="10" />
+	<GeneralDealInfo id="130" ratio="80;35" farmerScore="4" lordScore="10" />
+	<GeneralDealInfo id="135" ratio="80;35" farmerScore="4" lordScore="10" />
+	<GeneralDealInfo id="136" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="139" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="152" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="153" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="155" ratio="85;40" farmerScore="3" lordScore="25" />
+	<GeneralDealInfo id="156" ratio="75;30" farmerScore="3" lordScore="15" />
+	<GeneralDealInfo id="157" ratio="60;15" farmerScore="2" lordScore="5" />
+	<GeneralDealInfo id="160" ratio="80;35" farmerScore="4" lordScore="5" />
+	<GeneralDealInfo id="161" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="162" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="164" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="166" ratio="85;40" farmerScore="3" lordScore="25" />
+	<GeneralDealInfo id="167" ratio="80;35" farmerScore="4" lordScore="10" />
+	<GeneralDealInfo id="169" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="170" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="171" ratio="70;25" farmerScore="3" lordScore="5" />
+	<GeneralDealInfo id="173" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="175" ratio="60;15" farmerScore="1" lordScore="20" />
+	<GeneralDealInfo id="176" ratio="75;30" farmerScore="3" lordScore="15" />
+	<GeneralDealInfo id="177" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="179" ratio="55;10" farmerScore="1" lordScore="15" />
+	<GeneralDealInfo id="180" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="182" ratio="85;40" farmerScore="4" lordScore="15" />
+	<GeneralDealInfo id="183" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="185" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="186" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="187" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="299" ratio="80;35" farmerScore="4" lordScore="5" />
+	<GeneralDealInfo id="302" ratio="50;5" farmerScore="3" lordScore="15" />
+	<GeneralDealInfo id="303" ratio="50;5" farmerScore="1" lordScore="10" />
+	<GeneralDealInfo id="305" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="307" ratio="80;35" farmerScore="2" lordScore="30" />
+	<GeneralDealInfo id="308" ratio="75;30" farmerScore="3" lordScore="15" />
+	<GeneralDealInfo id="311" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="312" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="313" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="314" ratio="55;10" farmerScore="1" lordScore="15" />
+	<GeneralDealInfo id="316" ratio="80;35" farmerScore="4" lordScore="5" />
+	<GeneralDealInfo id="318" ratio="80;35" farmerScore="4" lordScore="10" />
+	<GeneralDealInfo id="319" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="320" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="321" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="323" ratio="80;35" farmerScore="4" lordScore="10" />
+	<GeneralDealInfo id="325" ratio="60;15" farmerScore="2" lordScore="5" />
+	<GeneralDealInfo id="326" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="327" ratio="70;25" farmerScore="3" lordScore="5" />
+	<GeneralDealInfo id="328" ratio="75;30" farmerScore="2" lordScore="25" />
+	<GeneralDealInfo id="329" ratio="50;5" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="330" ratio="65;20" farmerScore="1" lordScore="25" />
+	<GeneralDealInfo id="331" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="332" ratio="80;35" farmerScore="4" lordScore="5" />
+	<GeneralDealInfo id="333" ratio="60;15" farmerScore="1" lordScore="20" />
+	<GeneralDealInfo id="335" ratio="60;15" farmerScore="1" lordScore="20" />
+	<GeneralDealInfo id="336" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="337" ratio="50;5" farmerScore="1" lordScore="10" />
+	<GeneralDealInfo id="339" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="340" ratio="70;25" farmerScore="3" lordScore="5" />
+	<GeneralDealInfo id="341" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="342" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="343" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="345" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="346" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="347" ratio="60;15" farmerScore="1" lordScore="20" />
+	<GeneralDealInfo id="348" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="350" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="352" ratio="80;35" farmerScore="4" lordScore="5" />
+	<GeneralDealInfo id="353" ratio="80;35" farmerScore="2" lordScore="30" />
+	<GeneralDealInfo id="360" ratio="60;15" farmerScore="2" lordScore="5" />
+	<GeneralDealInfo id="362" ratio="50;5" farmerScore="1" lordScore="10" />
+	<GeneralDealInfo id="364" ratio="75;30" farmerScore="2" lordScore="25" />
+	<GeneralDealInfo id="365" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="366" ratio="50;5" farmerScore="1" lordScore="10" />
+	<GeneralDealInfo id="368" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="369" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="370" ratio="60;15" farmerScore="2" lordScore="5" />
+	<GeneralDealInfo id="371" ratio="70;25" farmerScore="3" lordScore="5" />
+	<GeneralDealInfo id="375" ratio="80;35" farmerScore="4" lordScore="5" />
+	<GeneralDealInfo id="376" ratio="80;35" farmerScore="4" lordScore="5" />
+	<GeneralDealInfo id="378" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="379" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="380" ratio="75;30" farmerScore="3" lordScore="15" />
+	<GeneralDealInfo id="382" ratio="60;15" farmerScore="1" lordScore="20" />
+	<GeneralDealInfo id="384" ratio="75;30" farmerScore="2" lordScore="25" />
+	<GeneralDealInfo id="385" ratio="60;15" farmerScore="2" lordScore="5" />
+	<GeneralDealInfo id="388" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="394" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="400" ratio="60;15" farmerScore="2" lordScore="5" />
+	<GeneralDealInfo id="401" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="402" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="403" ratio="50;5" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="404" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="407" ratio="75;30" farmerScore="2" lordScore="25" />
+	<GeneralDealInfo id="408" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="409" ratio="50;5" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="411" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="413" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="415" ratio="80;35" farmerScore="2" lordScore="30" />
+	<GeneralDealInfo id="417" ratio="70;25" farmerScore="1" lordScore="30" />
+	<GeneralDealInfo id="418" ratio="70;25" farmerScore="1" lordScore="30" />
+	<GeneralDealInfo id="420" ratio="80;35" farmerScore="2" lordScore="30" />
+	<GeneralDealInfo id="421" ratio="90;45" farmerScore="3" lordScore="30" />
+	<GeneralDealInfo id="424" ratio="80;35" farmerScore="2" lordScore="30" />
+	<GeneralDealInfo id="426" ratio="75;30" farmerScore="2" lordScore="25" />
+	<GeneralDealInfo id="427" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="429" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="430" ratio="75;30" farmerScore="2" lordScore="25" />
+	<GeneralDealInfo id="431" ratio="75;30" farmerScore="2" lordScore="25" />
+	<GeneralDealInfo id="432" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="442" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="443" ratio="70;25" farmerScore="3" lordScore="5" />
+	<GeneralDealInfo id="445" ratio="55;10" farmerScore="1" lordScore="15" />
+	<GeneralDealInfo id="446" ratio="60;15" farmerScore="2" lordScore="5" />
+	<GeneralDealInfo id="451" ratio="80;35" farmerScore="4" lordScore="10" />
+	<GeneralDealInfo id="452" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="453" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="454" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="455" ratio="75;30" farmerScore="3" lordScore="15" />
+	<GeneralDealInfo id="457" ratio="60;15" farmerScore="2" lordScore="10" />
+	<GeneralDealInfo id="458" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="460" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="461" ratio="50;5" farmerScore="1" lordScore="10" />
+	<GeneralDealInfo id="462" ratio="55;10" farmerScore="1" lordScore="15" />
+	<GeneralDealInfo id="463" ratio="75;30" farmerScore="2" lordScore="25" />
+	<GeneralDealInfo id="464" ratio="80;35" farmerScore="3" lordScore="20" />
+	<GeneralDealInfo id="467" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="468" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="471" ratio="70;25" farmerScore="3" lordScore="10" />
+	<GeneralDealInfo id="473" ratio="80;35" farmerScore="2" lordScore="30" />
+	<GeneralDealInfo id="475" ratio="100;55" farmerScore="4" lordScore="30" />
+	<GeneralDealInfo id="476" ratio="80;35" farmerScore="2" lordScore="30" />
+	<GeneralDealInfo id="478" ratio="100;55" farmerScore="4" lordScore="30" />
+	<GeneralDealInfo id="479" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="481" ratio="100;55" farmerScore="4" lordScore="30" />
+	<GeneralDealInfo id="482" ratio="70;25" farmerScore="2" lordScore="20" />
+	<GeneralDealInfo id="484" ratio="65;20" farmerScore="2" lordScore="15" />
+	<GeneralDealInfo id="485" ratio="85;40" farmerScore="4" lordScore="15" />
+	<GeneralDealInfo id="487" ratio="90;45" farmerScore="4" lordScore="20" />
+	<GeneralDealInfo id="492" ratio="70;25" farmerScore="3" lordScore="5" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	奖励id
+			RequireSuccess	-	要求周连胜
+			goodslist	-	奖励
+				-	
+				-	备注
+		-->
+	<WinningStreak Id="1" RequireSuccess="3" goodslist="9020101,200;8100201,2;" />
+	<WinningStreak Id="2" RequireSuccess="5" goodslist="9020101,300;435401,2;" />
+	<WinningStreak Id="3" RequireSuccess="7" goodslist="9020101,600;1213201,2;" />
+	<WinningStreak Id="4" RequireSuccess="9" goodslist="9020101,1200;1142901,2;" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	奖励id
+			RequireSuccess	-	要求周胜场
+			goodslist	-	奖励
+				-	
+				-	备注
+		-->
+	<WinningStreak2 Id="1" RequireSuccess="1" goodslist="952501,6;" />
+	<WinningStreak2 Id="2" RequireSuccess="3" goodslist="952501,6;" />
+	<WinningStreak2 Id="3" RequireSuccess="5" goodslist="952501,6;" />
+</Root>

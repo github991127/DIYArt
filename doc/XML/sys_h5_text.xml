@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<text>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	文本id
+			text	-	文本内容0
+			text	-	文本内容0
+				-	备注-对应系统或界面（本表就放一些无法在其他配置内统一配置的内容，比如一些单独的冒字提示、弹窗文字、ui文字等等）
+				-	1
+			-->
+	</text>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			text1	-	机器人1
+			text2	-	机器人2
+			text3	-	机器人3
+			text4	-	机器人4
+			text5	-	机器人5
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	协议id
+				-	协议名字备注
+			id_error	-	错误id
+			text	-	正式文本
+			bak	-	备用文本：xx系统xx错误 (策划配置好以后，这里不填不出来)
+			bak2	-	不填备注项：前面两列都不填时填这里，不显示
+				-	调整后文本
+				-
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			cName	-	中文名
+			eName	-	英文名
+			type	-	类型（1.武将，2.卡牌）
+			id	-	武将ID或者卡牌ID, 
+			model	-	？
+				-	color:颜色类型（对应上面的Colors）
+   备注：名字按照eName第一个字母从A-Z排列
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	文本id
+			tableFilter	-	具体模式id，0=默认
+			kind	-	类别：1=房间中，2=牌局中,3=天梯房间中
+			text	-	文本内容0
+			Model	-	短语提示模式，多个，分隔
+			Condition	-	触发条件，多个，分隔
+			Time	-	显示持续时间
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			emojiID	-	表情ID
+			data	-	命名
+			FaceGroupId	-	表情组
+			name	-	显示名字
+			GetFromText	-	获取方式
+			needvip	-	所需会员等级
+			needitem	-	所需道具
+			tp	-	字表情名
+			icon	-	图标
+			Spine	-	Spine路径
+			repeat	-	动画播放次数
+			Interval	-	播放间隔
+			FaceWidth	-	表情宽度
+			Scale	-	表情缩放
+			Scale	-	表情缩放
+			duration	-	表情生效时间
+			sort	-	展示顺序
+		-->
+	<chatface emojiID="37050829" duration="20240711T160000,20991231T235959" />
+	<chatface emojiID="37050828" duration="20240711T160000,20991231T235959" />
+	<chatface emojiID="37050827" duration="20240711T160000,20991231T235959" />
+	<chatface emojiID="37050826" duration="20240711T160000,20991231T235959" />
+	<chatface emojiID="37050825" duration="20240711T160000,20991231T235959" />
+	<chatface emojiID="37050824" duration="20240711T160000,20991231T235959" />
+	<chatface emojiID="37050823" duration="20240711T160000,20991231T235959" />
+	<chatface emojiID="37050821" duration="20240429T170000,20991231T235959" />
+	<chatface emojiID="37050819" duration="20240429T170000,20991231T235959" />
+	<chatface emojiID="37050820" duration="20240429T170000,20991231T235959" />
+	<chatface emojiID="37050816" duration="20240429T170000,20991231T235959" />
+	<chatface emojiID="37050817" duration="20240429T170000,20991231T235959" />
+	<chatface emojiID="37050818" duration="20240429T170000,20991231T235959" />
+	<chatface emojiID="37050801" duration="20240202T155959,20991231T235959" />
+	<chatface emojiID="37050802" duration="20240202T155959,20991231T235959" />
+	<chatface emojiID="37050803" duration="20240202T155959,20991231T235959" />
+	<chatface emojiID="37050804" duration="20240202T155959,20991231T235959" />
+	<chatface emojiID="37050805" duration="20240202T155959,20241231T235959" />
+	<chatface emojiID="37050806" duration="20240202T155959,20241231T235959" />
+	<chatface emojiID="37050807" duration="20240202T155959,20241231T235959" />
+	<chatface emojiID="37050808" duration="20240202T155959,20241231T235959" />
+	<chatface emojiID="37050809" duration="20240101T155959,20241231T235959" />
+	<chatface emojiID="37050810" duration="20240101T155959,20241231T235959" />
+	<chatface emojiID="37050811" duration="20240101T155959,20241231T235959" />
+	<chatface emojiID="37050812" duration="20240101T155959,20241231T235959" />
+	<chatface emojiID="37050813" duration="20240101T155959,20241231T235959" />
+	<chatface emojiID="37050814" duration="20240101T155959,20241231T235959" />
+	<chatface emojiID="37050815" duration="20240101T155959,20241231T235959" />
+	<chatface emojiID="37050101" duration="20240202T155959,20991231T235959" />
+	<chatface emojiID="37050102" duration="20240202T155959,20991231T235959" />
+	<chatface emojiID="37050103" duration="20240202T155959,20991231T235959" />
+	<chatface emojiID="37050104" duration="20240202T155959,20991231T235959" />
+	<chatface emojiID="37050105" duration="20240202T155959,20991231T235959" />
+	<chatface emojiID="37050106" duration="20240202T155959,20991231T235959" />
+	<chatface emojiID="37050107" duration="20240202T155959,20991231T235959" />
+	<chatface emojiID="37050108" duration="20240202T155959,20991231T235959" />
+	<chatface emojiID="10010801" needitem="100108" />
+	<chatface emojiID="10010802" needitem="100108" />
+	<chatface emojiID="10010803" needitem="100108" />
+	<chatface emojiID="10010804" needitem="100108" />
+	<chatface emojiID="10010805" needitem="100108" />
+	<chatface emojiID="10010806" needitem="100108" />
+	<chatface emojiID="10010807" needitem="100108" />
+	<chatface emojiID="10010808" needitem="100108" />
+	<chatface emojiID="10010809" needitem="100108" />
+	<chatface emojiID="10010810" needitem="100108" />
+	<chatface emojiID="10010811" needitem="100108" />
+	<chatface emojiID="10010812" needitem="100108" />
+	<chatface emojiID="10010813" needitem="100108" />
+	<chatface emojiID="10010814" needitem="100108" />
+	<chatface emojiID="10010815" needitem="100108" />
+	<chatface emojiID="37010901" needitem="370109" />
+	<chatface emojiID="37010902" needitem="370109" />
+	<chatface emojiID="37010903" needitem="370109" />
+	<chatface emojiID="37010904" needitem="370109" />
+	<chatface emojiID="37010905" needitem="370109" />
+	<chatface emojiID="37010906" needitem="370109" />
+	<chatface emojiID="37010907" needitem="370109" />
+	<chatface emojiID="37010908" needitem="370109" />
+	<chatface emojiID="37010909" needitem="370109" />
+	<chatface emojiID="37010910" needitem="370109" />
+	<chatface emojiID="37010911" needitem="370109" />
+	<chatface emojiID="37010912" needitem="370109" />
+	<chatface emojiID="37010913" needitem="370109" />
+	<chatface emojiID="37010914" needitem="370109" />
+	<chatface emojiID="37010915" needitem="370109" />
+	<chatface emojiID="37010916" needitem="370109" />
+	<chatface emojiID="37010917" needitem="370109" />
+	<chatface emojiID="37010918" needitem="370109" />
+	<chatface emojiID="37010919" needitem="370109" />
+	<chatface emojiID="37010920" needitem="370109" />
+	<chatface emojiID="37020901" needitem="370209" />
+	<chatface emojiID="37020902" needitem="370209" />
+	<chatface emojiID="37020903" needitem="370209" />
+	<chatface emojiID="37020904" needitem="370209" />
+	<chatface emojiID="37020905" needitem="370209" />
+	<chatface emojiID="37020906" needitem="370209" />
+	<chatface emojiID="37020907" needitem="370209" />
+	<chatface emojiID="37020908" needitem="370209" />
+	<chatface emojiID="37020909" needitem="370209" />
+	<chatface emojiID="37020910" needitem="370209" />
+	<chatface emojiID="37020911" needitem="370209" />
+	<chatface emojiID="37020912" needitem="370209" />
+	<chatface emojiID="37020913" needitem="370209" />
+	<chatface emojiID="37020914" needitem="370209" />
+	<chatface emojiID="37020915" needitem="370209" />
+	<chatface emojiID="37020916" needitem="370209" />
+	<chatface emojiID="37020917" needitem="370209" />
+	<chatface emojiID="37020918" needitem="370209" />
+	<chatface emojiID="37020919" needitem="370209" />
+	<chatface emojiID="37020920" needitem="370209" />
+	<chatface emojiID="37030801" needitem="370308" />
+	<chatface emojiID="37030802" needitem="370308" />
+	<chatface emojiID="37030803" needitem="370308" />
+	<chatface emojiID="37030804" needitem="370308" />
+	<chatface emojiID="37030805" needitem="370308" />
+	<chatface emojiID="37030806" needitem="370308" />
+	<chatface emojiID="37030807" needitem="370308" />
+	<chatface emojiID="37030808" needitem="370308" />
+	<chatface emojiID="37030809" needitem="370308" />
+	<chatface emojiID="37030810" needitem="370308" />
+	<chatface emojiID="37030811" needitem="370308" />
+	<chatface emojiID="37030812" needitem="370308" />
+	<chatface emojiID="37030813" needitem="370308" />
+	<chatface emojiID="37030814" needitem="370308" />
+	<chatface emojiID="37030815" needitem="370308" />
+	<chatface emojiID="37030816" needitem="370308" />
+	<chatface emojiID="37030817" needitem="370308" />
+	<chatface emojiID="37030818" needitem="370308" />
+	<chatface emojiID="37030819" needitem="370308" />
+	<chatface emojiID="37030820" needitem="370308" />
+	<chatface emojiID="37040801" needitem="370408" />
+	<chatface emojiID="37040802" needitem="370408" />
+	<chatface emojiID="37040803" needitem="370408" />
+	<chatface emojiID="37040804" needitem="370408" />
+	<chatface emojiID="37040805" needitem="370408" />
+	<chatface emojiID="37040806" needitem="370408" />
+	<chatface emojiID="37040807" needitem="370408" />
+	<chatface emojiID="37040808" needitem="370408" />
+	<chatface emojiID="37040809" needitem="370408" />
+	<chatface emojiID="37040810" needitem="370408" />
+	<chatface emojiID="37040811" needitem="370408" />
+	<chatface emojiID="37040812" needitem="370408" />
+	<chatface emojiID="37040813" needitem="370408" />
+	<chatface emojiID="37040814" needitem="370408" />
+	<chatface emojiID="37040815" needitem="370408" />
+	<chatface emojiID="37040816" needitem="370408" />
+	<chatface emojiID="37040817" needitem="370408" />
+	<chatface emojiID="37040818" needitem="370408" />
+	<chatface emojiID="37040819" needitem="370408" />
+	<chatface emojiID="37040820" needitem="370408" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	id
+			txtcolor	-	文字颜色
+			bordercolor	-	文字描边颜色
+			sx	-	pc小尺寸X偏移
+			sy	-	小尺寸Y偏移
+			sw	-	小尺寸时的宽
+			sh	-	小尺寸时的高
+			bx	-	大尺寸时的X值
+			by	-	大尺寸时的Y值
+			bw	-	大尺寸时的宽
+			bh	-	大尺寸时的高
+			cw	-	？
+			acw	-	？
+			msx	-	移动小尺寸X偏移
+			msy	-	小尺寸Y偏移
+			mbx	-	大尺寸时的X值
+			mby	-	大尺寸时的Y值
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			dec	-	前缀
+			x	-	姓
+			n	-	男名
+			v	-	女名
+			p	-	前缀的概率/100
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ModelId	-	模式id
+				-	备注
+			Section	-	子模式
+			RoomChat	-	房间/队伍聊天室（1=房间聊天，3=队伍聊天）
+			Parm1	-	房间默认设置（默认进入聊天室;麦克风默认打开）
+			SelectChat	-	牌局聊天室（1=房间聊天，2=阵营聊天 3=队伍聊天）
+			Parm2	-	牌局默认设置（默认进入聊天室;麦克风默认打开）
+			TurnOff	-	模式语音开关（1=开，不配置或其他=关）
+			RoomChatTurnOff	-	模式外语音开关（1=开，不配置或其他=关）
+		-->
+	<VoiceChat ModelId="132" Section="3" RoomChat="3" Parm1="0;0" SelectChat="2" Parm2="0;0" TurnOff="0" />
+	<VoiceChat ModelId="4" Section="3" RoomChat="1" Parm1="0;0" SelectChat="1" Parm2="0;0" TurnOff="0" />
+	<VoiceChat ModelId="120" Section="3" RoomChat="1" Parm1="0;0" SelectChat="2" Parm2="0;0" TurnOff="0" />
+	<VoiceChat ModelId="1" Section="3" RoomChat="1" Parm1="0;0" SelectChat="1" Parm2="0;0" TurnOff="0" />
+	<VoiceChat ModelId="22" Section="6" RoomChat="1" Parm1="0;0" SelectChat="1" Parm2="0;0" TurnOff="0" />
+	<VoiceChat ModelId="33" Section="3" RoomChat="1" Parm1="0;0" SelectChat="2" Parm2="0;0" TurnOff="0" />
+	<VoiceChat ModelId="28" Section="4" RoomChat="1" Parm1="0;0" SelectChat="1" Parm2="0;0" TurnOff="0" />
+	<VoiceChat ModelId="33" Section="11" RoomChat="1" Parm1="0;0" SelectChat="2" Parm2="0;0" TurnOff="0" />
+	<VoiceChat ModelId="144" Section="2" RoomChat="1" Parm1="0;0" SelectChat="1" Parm2="0;0" TurnOff="0" />
+	<VoiceChat ModelId="145" Section="11" RoomChat="1" Parm1="0;0" SelectChat="1" Parm2="0;0" TurnOff="0" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			NewsId	-	消息id
+				-	消息备注
+			Type	-	消息类型
+			NewsDwtail	-	消息内容
+			NewsDwtail	-	消息内容
+			color1	-	跑马灯字色
+			color2	-	消息字色
+			color2	-	消息字色
+			NewsScene	-	播放场景
+				-	场景备注
+			Condition	-	触发条件
+			Parms	-	条件参数
+			CloseNews	-	关闭系统消息（1=关闭）
+			FirstNews	-	消息优先级（1=插入,2=普通消息）
+		-->
+	<SysNews NewsId="1" Type="1" NewsScene="4" Condition="5" Parms="11" FirstNews="2" />
+	<SysNews NewsId="2" Type="2" NewsScene="4" FirstNews="2" />
+	<SysNews NewsId="3" Type="3" NewsScene="4" FirstNews="2" />
+	<SysNews NewsId="4" Type="1" NewsScene="3" Condition="5" Parms="21" FirstNews="2" />
+	<SysNews NewsId="5" Type="14" NewsScene="11" Condition="5" Parms="10" FirstNews="2" />
+	<SysNews NewsId="6" Type="4" NewsScene="11" FirstNews="2" />
+	<SysNews NewsId="7" Type="5" NewsScene="11" FirstNews="2" />
+	<SysNews NewsId="8" Type="6" NewsScene="19" Condition="4" Parms="10" CloseNews="1" FirstNews="2" />
+	<SysNews NewsId="9" Type="7" NewsScene="3" FirstNews="2" />
+	<SysNews NewsId="10" Type="8" NewsScene="3" FirstNews="2" />
+	<SysNews NewsId="11" Type="9" NewsScene="1" FirstNews="2" />
+	<SysNews NewsId="12" Type="1" NewsScene="1" Condition="5" Parms="16" FirstNews="2" />
+	<SysNews NewsId="13" Type="10" NewsScene="19" Condition="4" Parms="10" FirstNews="2" />
+	<SysNews NewsId="14" Type="11" CloseNews="0" FirstNews="1" />
+	<SysNews NewsId="15" Type="12" FirstNews="2" />
+	<SysNews NewsId="16" Type="13" NewsScene="1" Condition="6" Parms="9,18" FirstNews="2" />
+	<SysNews NewsId="17" Type="13" NewsScene="3" Condition="6" Parms="19,34" FirstNews="2" />
+	<SysNews NewsId="18" Type="13" NewsScene="11" Condition="6" Parms="35,255" FirstNews="1" />
+	<SysNews NewsId="19" Type="13" NewsScene="4" Condition="3" Parms="9" FirstNews="2" />
+	<SysNews NewsId="20" Type="15" NewsScene="7" Condition="5" Parms="9" FirstNews="2" />
+	<SysNews NewsId="21" Type="16" NewsScene="4" Condition="3" Parms="99" FirstNews="2" />
+	<SysNews NewsId="22" Type="17" FirstNews="2" />
+	<SysNews NewsId="23" Type="18" NewsScene="4" FirstNews="2" />
+	<SysNews NewsId="24" Type="19" NewsScene="7" FirstNews="2" />
+	<SysNews NewsId="25" Type="20" NewsScene="7" FirstNews="2" />
+	<abbreviation>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Long	-	原始字段，对应at内容页签
+			Short	-	简写
+			-->
+	</abbreviation>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			EventID	-	事件ID
+			EventName	-	中文名称
+			Param	-	数值参数
+			DefaultEmojiID	-	默认表情
+			EmojiIDList	-	白名单
+		-->
+	<AutoEmoji EventID="1" EmojiIDList="37050101,37050107,37050108,37010918,37050803" />
+	<AutoEmoji EventID="2" EmojiIDList="37050103,37050105,37050107,10010801,37010914,37050805" />
+	<AutoEmoji EventID="3" EmojiIDList="37050102,37050105,37050106,10010813,37010909,37050813" />
+	<AutoEmoji EventID="4" EmojiIDList="37050102,37050806,37050106,10010813,37010904,37050808" />
+	<AutoEmoji EventID="5" Param="3" EmojiIDList="37050107,37050101,37050108,10010805,37010913" />
+	<AutoEmoji EventID="6" Param="2" EmojiIDList="37050107,37050104,37050108,10010810,37010918" />
+	<AutoEmoji EventID="7" EmojiIDList="37050801,37050107,37050108,10010815,37010903" />
+	<AutoEmoji EventID="8" Param="2" EmojiIDList="37050108,37050107,37050101,10010806,37050810" />
+	<AutoEmoji EventID="9" EmojiIDList="37050103,37050105,37050107,10010801,37010914,37050805" />
+	<AutoEmoji EventID="10" Param="2" EmojiIDList="37050107,37050101,37050108,10010805,37010913" />
+</root>

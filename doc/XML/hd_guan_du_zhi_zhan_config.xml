@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			max_game_time	-	一局游戏的最大时长
+			first_turn_seat	-	起始座位
+			startTime	-	活动开始 时间
+			endTime	-	活动结算 时间
+上线后不要改
+			startrank	-	排行榜开始时间
+			endrank	-	排行榜结算时间
+			daytime	-	每日开启结束时间
+			valueBuyCondition	-	每日购买体力规则-客户端
+			activityValueCondition	-	每日购买体力规则-服务端
+			eliteTokenId	-	精英令牌id
+			scoreItem	-	官渡兑换道具id
+			robotBlackList	-	AI禁用武将
+			des_m	-	移动端玩法说明文字（备注：官渡之战没有每局获胜的奖励的配置）
+			des	-	玩法说明文字
+		-->
+	<Common max_game_time="3600" first_turn_seat="0" startTime="20240302T000000" endTime="20240312T235959" activityValueCondition="9905,943401;9910,943501;9915,943601;9999,943701" robotBlackList="4600;4601;4602;430;364;176;4222" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			skillId	-	事件id
+			name	-	事件名称
+			desc	-	事件描述
+			dialogue	-	事件喊话
+			generalID	-	事件武将
+		-->
+	<SeatConfig>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	座位id
+			seat_count	-	座位数
+			team1	-	队伍1位置
+			team2	-	队伍2位置
+			-->
+		<SeatMode id="1" seat_count="8" team1="0;3;4;7" team2="1;2;5;6" />
+		<SeatMode id="2" seat_count="8" team1="0;2;5;7" team2="1;3;4;6" />
+		<SeatMode id="3" seat_count="8" team1="0;3;5;6" team2="1;2;4;7" />
+		<SeatMode id="4" seat_count="8" team1="0;2;4;6" team2="1;3;5;7" />
+		<SeatMode id="5" seat_count="8" team1="0;3;5;7" team2="1;2;4;6" />
+	</SeatConfig>
+	<SideCfg>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			side	-	阵营方
+			master_generalId	-	阵营主帅
+			deal_count	-	阵营数
+			generals	-	阵营武将
+			-->
+		<Side side="cold" master_generalId="311" deal_count="2" generals="35,1;164,1;316,1;42,1;160,1;314,1;106,1;322,1;29,1;114,1;130,1;4080,1;4602,1;364,1;176,1;110,1;4222,1;453,1" />
+		<Side side="warm" master_generalId="623" deal_count="2" generals="4073,1;461,1;4075,1;4076,1;459,1;4082,1;40,1;330,1;4081,1;342,1;460,1;4078,1;4600,1;4601,1;430,1;4220,1;4221,1;482,1" />
+	</SideCfg>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	奖励id
+			requireScore	-	需要积分
+			requireGoodsBaseId	-	需要道具
+			goodslist	-	奖励内容
+		-->
+	<Reward Id="1" requireScore="100" requireGoodsBaseId="0" goodslist="435401,1;" />
+	<Reward Id="2" requireScore="100" requireGoodsBaseId="7906401" goodslist="6128309,1;" />
+	<Reward Id="3" requireScore="200" requireGoodsBaseId="0" goodslist="1197201,10;" />
+	<Reward Id="4" requireScore="200" requireGoodsBaseId="7906401" goodslist="1197201,10;" />
+	<Reward Id="5" requireScore="300" requireGoodsBaseId="0" goodslist="8100201,1;" />
+	<Reward Id="6" requireScore="300" requireGoodsBaseId="7906401" goodslist="1197201,10;" />
+	<Reward Id="7" requireScore="400" requireGoodsBaseId="0" goodslist="1197201,10;" />
+	<Reward Id="8" requireScore="400" requireGoodsBaseId="7906401" goodslist="1197201,10;" />
+	<Reward Id="9" requireScore="500" requireGoodsBaseId="0" goodslist="1142901,1;" />
+	<Reward Id="10" requireScore="500" requireGoodsBaseId="7906401" goodslist="1197201,10;" />
+	<Reward Id="11" requireScore="600" requireGoodsBaseId="0" goodslist="435401,1;" />
+	<Reward Id="12" requireScore="600" requireGoodsBaseId="7906401" goodslist="1197201,10;" />
+	<Reward Id="13" requireScore="700" requireGoodsBaseId="0" goodslist="1197201,10;" />
+	<Reward Id="14" requireScore="700" requireGoodsBaseId="7906401" goodslist="1197201,10;" />
+	<Reward Id="15" requireScore="800" requireGoodsBaseId="0" goodslist="8100801,1;" />
+	<Reward Id="16" requireScore="800" requireGoodsBaseId="7906401" goodslist="1197201,15;" />
+	<Reward Id="17" requireScore="900" requireGoodsBaseId="0" goodslist="1197201,15;" />
+	<Reward Id="18" requireScore="900" requireGoodsBaseId="7906401" goodslist="1197201,15;" />
+	<Reward Id="19" requireScore="1000" requireGoodsBaseId="0" goodslist="435601,1;" />
+	<Reward Id="20" requireScore="1000" requireGoodsBaseId="7906401" goodslist="1197201,15;" />
+	<Reward Id="21" requireScore="1200" requireGoodsBaseId="0" goodslist="1142901,1;" />
+	<Reward Id="22" requireScore="1200" requireGoodsBaseId="7906401" goodslist="1197201,15;" />
+	<Reward Id="23" requireScore="1400" requireGoodsBaseId="0" goodslist="1197201,15;" />
+	<Reward Id="24" requireScore="1400" requireGoodsBaseId="7906401" goodslist="1197201,15;" />
+	<Reward Id="25" requireScore="1600" requireGoodsBaseId="0" goodslist="435601,1;" />
+	<Reward Id="26" requireScore="1600" requireGoodsBaseId="7906401" goodslist="1197201,20;" />
+	<Reward Id="27" requireScore="1800" requireGoodsBaseId="0" goodslist="1197201,20;" />
+	<Reward Id="28" requireScore="1800" requireGoodsBaseId="7906401" goodslist="1197201,20;" />
+	<Reward Id="29" requireScore="2000" requireGoodsBaseId="0" goodslist="435501,1;" />
+	<Reward Id="30" requireScore="2000" requireGoodsBaseId="7906401" goodslist="1197201,20;" />
+	<Reward Id="31" requireScore="2300" requireGoodsBaseId="0" goodslist="1197201,20;" />
+	<Reward Id="32" requireScore="2300" requireGoodsBaseId="7906401" goodslist="1197201,20;" />
+	<Reward Id="33" requireScore="2600" requireGoodsBaseId="0" goodslist="8101001,1;" />
+	<Reward Id="34" requireScore="2600" requireGoodsBaseId="7906401" goodslist="1197201,20;" />
+	<Reward Id="35" requireScore="2900" requireGoodsBaseId="0" goodslist="1143001,1;" />
+	<Reward Id="36" requireScore="2900" requireGoodsBaseId="7906401" goodslist="1197201,20;" />
+	<Reward Id="37" requireScore="3200" requireGoodsBaseId="0" goodslist="1197201,20;" />
+	<Reward Id="38" requireScore="3200" requireGoodsBaseId="7906401" goodslist="1197201,20;" />
+	<Reward Id="39" requireScore="3500" requireGoodsBaseId="0" goodslist="1197201,20;" />
+	<Reward Id="40" requireScore="3500" requireGoodsBaseId="7906401" goodslist="1197201,20;" />
+	<Reward Id="41" requireScore="3800" requireGoodsBaseId="0" goodslist="1197201,20;" />
+	<Reward Id="42" requireScore="3800" requireGoodsBaseId="7906401" goodslist="1197201,20;" />
+	<Reward Id="43" requireScore="4100" requireGoodsBaseId="0" goodslist="1197201,20;" />
+	<Reward Id="44" requireScore="4100" requireGoodsBaseId="7906401" goodslist="1197201,20;" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	兑换id
+			item_id	-	道具id
+按道具id限购，不是按market_id限购，道具id值唯一
+			name	-	道具名称
+			points	-	积分要求
+			sorting	-	排序
+			shoprecom	-	推荐标签
+			shophot	-	热销标签
+			shopnew	-	新品标签
+			timeRange	-	开放时间
+			buyType	-	限购类型
+0=不限购 1=通用限购
+2=本活动限购
+			maxBuyCount	-	限购类型
+0、1类型不限购
+		-->
+	<Market id="1" item_id="8192001" name="界武将箱" points="1000" timeRange="1;20211223T000000,20220119T235959" buyType="2" maxBuyCount="35;1;0" />
+	<Market id="2" item_id="8192101" name="豪华武将包" points="2000" timeRange="1;20211223T000000,20220119T235959" buyType="2" maxBuyCount="35;1;0" />
+	<Market id="3" item_id="8192201" name="将2宝箱" points="500" timeRange="1;20211223T000000,20220119T235959" buyType="2" maxBuyCount="35;1;0" />
+	<Market id="4" item_id="8192301" name="将4宝箱" points="500" timeRange="1;20211223T000000,20220119T235959" buyType="2" maxBuyCount="35;1;0" />
+	<Market id="5" item_id="8192401" name="豪华皮肤包" points="1000" timeRange="1;20211223T000000,20220119T235959" buyType="2" maxBuyCount="35;2;0" />
+	<Market id="6" item_id="8192501" name="精致皮肤包" points="500" timeRange="1;20211223T000000,20220119T235959" buyType="2" maxBuyCount="35;2;0" />
+	<Market id="7" item_id="8192601" name="皮肤包" points="200" timeRange="1;20211223T000000,20220119T235959" buyType="2" maxBuyCount="35;4;0" />
+	<Market id="8" item_id="8192701" name="夺宝券" points="200" timeRange="1;20211223T000000,20220119T235959" buyType="2" maxBuyCount="35;4;0" />
+	<Market id="9" item_id="8192801" name="普通武将包" points="200" timeRange="1;20211223T000000,20220119T235959" buyType="2" maxBuyCount="35;4;0" />
+	<Market id="10" item_id="8192901" name="精致武将包" points="500" timeRange="1;20211223T000000,20220119T235959" buyType="2" maxBuyCount="35;2;0" />
+	<Market id="11" item_id="8193001" name="豪华夺宝券" points="1000" timeRange="1;20211223T000000,20220119T235959" buyType="2" maxBuyCount="35;1;0" />
+	<Market id="12" item_id="8193101" name="大将军印" points="2000" timeRange="1;20211223T000000,20220119T235959" buyType="2" maxBuyCount="35;1;0" />
+	<Market id="13" item_id="8193201" name="三国秀锦囊" points="100" timeRange="1;20211223T000000,20220119T235959" buyType="2" maxBuyCount="35;10;0" />
+	<Market id="14" item_id="8193301" name="高级三国秀锦囊" points="200" timeRange="1;20211223T000000,20220119T235959" buyType="2" maxBuyCount="35;10;0" />
+	<Market id="15" item_id="8193401" name="功勋*5" points="100" timeRange="1;20211223T000000,20220119T235959" buyType="2" maxBuyCount="35;300;0" />
+	<Market id="16" item_id="8193501" name="银两*30" points="100" timeRange="1;20211223T000000,20220119T235959" buyType="2" maxBuyCount="35;600;0" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank1	-	排名
+			rank2	-	排名下限
+			itmes	-	奖励-实际上是手动发给php来发邮件的
+			name	-	奖励名字-php发邮件用
+			icon	-	显示宝箱icon123档次，1最好
+		-->
+</root>

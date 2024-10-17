@@ -1,0 +1,1163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			minLevel	-	最小回归等级
+			leaveSeconds	-	流失多久视为回归，秒为单位2592000
+			onceSeconds	-	一次回归需要间隔时间，秒为单位15552000
+			clearAfterLoginDays	-	回归标记清除31
+			newStartTime	-	开始新回归的时间 20230101T235959
+			newLoginRewardTime	-	开始新登录礼的时间
+			backProCnt	-	排位不掉星每天次数
+			backShiQiAdd	-	排位增加士气比例；百分比
+			backExeAdd	-	排位增加经验比例；百分比
+			rankCnt	-	回归排位局数
+			showGen	-	无擅长显示武将
+			rankConfig	-	排位匹配系数，百分比
+等级下限，等级上限：战斗力参数，等级上限比例，等级下限比例
+			backPoint	-	回归积分道具id
+			backUp	-	回归进阶道具id
+			buyPoint	-	回归购买积分道具
+			selectGen	-	自选武将
+			selectSkin	-	自选皮肤
+			minPoint	-	购买积分初始值
+			everyPoint	-	每次购买积分
+			defaultRecommend	-	回归默认推荐模式
+			shanheModelText	-	山河图模式显示文字
+			ttrankModelText	-	排位模式显示文字
+			shenfenModelText	-	身份模式显示文字
+			guozhanModelText	-	国战模式显示文字
+			doudizhuModelText	-	斗地主模式显示文字
+			backRank	-	排位回归推荐需要段位
+			backScore	-	斗地主回归推荐需要积分
+			backGeneralGift	-	回归武将限时礼包
+			backGift	-	回归欢迎奖励
+			backFirstGiftGeneral	-	回归首胜奖励
+			firstGiftRepItem	-	回归首胜奖励
+			addScoreModel	-	回归增加回归积分模式、section
+			worldText	-	发送世界文字
+			pastText	-	往昔文字
+			pastText	-	往昔文字
+			pastSeeText	-	查看往昔文字
+			pastSeeText	-	查看往昔文字
+			des	-	PC玩法说明文字
+			des	-	移动端玩法说明文字
+			generalDes	-	PC回归武将描述
+			generalDes	-	U3D回归武将描述
+		-->
+	<Common minLevel="60" leaveSeconds="172800" onceSeconds="172800" clearAfterLoginDays="31" newStartTime="20230508T235959" newLoginRewardTime="20240903T235959" backProCnt="1" backShiQiAdd="10" backExeAdd="10" rankCnt="3" rankConfig="60,120:90,100,90;121,180:85,100,85;181,200:80,100,80" backRank="16" backScore="20000" backGeneralGift="324,13101901;361,13102001" backGift="8100201,3;941501,2;100011,300" backFirstGiftGeneral="903601,1;903801,1;904101,1;904701,1;915901,1;903501,1;903701,1;904201,1;904301,1;904401,1;904601,1;915801,1;936401,1;937001,1;921401,1;921501,1;904801,1;904901,1;915701,1;970501,1;929901,1;936101,1;910901,1;930101,1;931901,1;910501,1;910701,1;970101,1;970201,1;970401,1;915201,1;904501,1;931401,1;936301,1;915501,1;931101,1;911601,1;912801,1;905101,1;970601,1;911101,1;910801,1;911001,1;913601,1;905301,1;905201,1;915101,1;916801,1;917301,1;917501,1;910001,1;933901,1;970801,1;971301,1;917201,1;932401,1;916201,1;916901,1;930501,1;916301,1;916501,1;931601,1;932001,1;934101,1;918201,1;944601,1;970301,1;910601,1;905001,1;911401,1;915301,1;916601,1;917001,1;916101,1;930001,1;930201,1;930601,1;911501,1;933701,1;930701,1;930901,1;931201,1;931301,1;931701,1;931801,1;932801,1;933001,1;933101,1;932901,1;932201,1;905401,1;905501,1;905701,1;907201,1" firstGiftRepItem="8100201,3" addScoreModel="19;38;48;51;53;55;56;57;58;59;70;78;86;88;91;92;98;99;100;116;106;111;47;39;117;118;119;124;131;1;4;22;73;74;103;109;114;125;126;129;135;28;101;104;107;82;112;130;108;33;27;77;121;122;120;113;127;132;134;61;84;85;133;136;139;141;143;144;145;147;148;149;151;155;156;160" worldText="主公{0}经过了{1}天再次登录了三国杀，大家又多了一个一同征战的伙伴！" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	id
+			time	-	需要时间
+			score	-	给积分数
+		-->
+	<Score id="1" time="10" score="100" />
+	<Score id="2" time="20" score="100" />
+	<Score id="3" time="30" score="100" />
+	<Score id="4" time="40" score="100" />
+	<Score id="5" time="50" score="100" />
+	<Score id="6" time="60" score="100" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	id
+			leaveDaysRange	-	天数范围
+			levelRange	-	等级限制
+			point	-	所需积分
+			level	-	回归等级
+			item	-	普通奖励道具
+			upItem	-	高级奖励道具
+			secType	-	自选类型
+1=自选武将 2=自选皮肤
+				-	备注-普通奖励
+				-	备注-高级奖励
+			import	-	是否重点奖励
+			repItem	-	自选武将替换道具
+			lockReward	-	是否固定奖励
+		-->
+	<BpReward id="1" leaveDaysRange="0,90" levelRange="60,120" point="0" level="0" item="11983401,1" upItem="939001,1;911201,1;912501,1;936501,1;937401,1;916401,1;918901,1;932101,1;932301,1;932501,1;932701,1;970701,1;971401,1;971501,1;971601,1;971701,1;971801,1;921101,1;921201,1;907301,1;912101,1;912201,1;912301,1;912901,1;913901,1;934801,1;912401,1;944101,1;9042801,1;913101,1;932601,1;933201,1;937901,1;937601,1;936801,1;936901,1;917401,1;917701,1;934301,1;936001,1;936201,1;939101,1;939201,1;944901,1;917901,1;918301,1;918001,1;917601,1;917801,1;918101,1;918401,1;930301,1;930401,1;931501,1;933801,1;9040301,1;9043201,1;972001,1;9045901,1;930801,1;931001,1;944401,1;944501,1;933301,1;933401,1;933501,1;934201,1;934001,1;937801,1;9040001,1;944001,1;9040101,1;938301,1;938101,1;938501,1;938601,1;938801,1;939301,1;933601,1;937101,1;937501,1;939401,1;939501,1;937701,1;938001,1;936601,1;938201,1;938401,1;938701,1;938901,1" secType="1" repItem="8100201,5" />
+	<BpReward id="2" leaveDaysRange="0,90" levelRange="60,120" point="50" level="1" item="8100201,1" />
+	<BpReward id="3" leaveDaysRange="0,90" levelRange="60,120" point="100" level="2" item="100002,50" />
+	<BpReward id="4" leaveDaysRange="0,90" levelRange="60,120" point="150" level="3" item="100011,300" />
+	<BpReward id="5" leaveDaysRange="0,90" levelRange="60,120" point="200" level="4" item="100601,1" />
+	<BpReward id="6" leaveDaysRange="0,90" levelRange="60,120" point="250" level="5" item="8100201,3" upItem="100016,1288" />
+	<BpReward id="7" leaveDaysRange="0,90" levelRange="60,120" point="300" level="6" item="11444201,1" />
+	<BpReward id="8" leaveDaysRange="0,90" levelRange="60,120" point="350" level="7" item="100002,100" />
+	<BpReward id="9" leaveDaysRange="0,90" levelRange="60,120" point="400" level="8" item="100011,300" />
+	<BpReward id="10" leaveDaysRange="0,90" levelRange="60,120" point="450" level="9" item="100601,1" />
+	<BpReward id="11" leaveDaysRange="0,90" levelRange="60,120" point="500" level="10" item="8100201,1" upItem="100016,500" />
+	<BpReward id="12" leaveDaysRange="0,90" levelRange="60,120" point="600" level="11" item="100301,3" />
+	<BpReward id="13" leaveDaysRange="0,90" levelRange="60,120" point="700" level="12" item="100002,100" />
+	<BpReward id="14" leaveDaysRange="0,90" levelRange="60,120" point="800" level="13" item="100011,300" />
+	<BpReward id="15" leaveDaysRange="0,90" levelRange="60,120" point="900" level="14" item="100601,1" />
+	<BpReward id="16" leaveDaysRange="0,90" levelRange="60,120" point="1000" level="15" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="17" leaveDaysRange="0,90" levelRange="60,120" point="1100" level="16" item="100401,3" />
+	<BpReward id="18" leaveDaysRange="0,90" levelRange="60,120" point="1200" level="17" item="100002,100" />
+	<BpReward id="19" leaveDaysRange="0,90" levelRange="60,120" point="1300" level="18" item="100011,300" />
+	<BpReward id="20" leaveDaysRange="0,90" levelRange="60,120" point="1400" level="19" item="100601,1" />
+	<BpReward id="21" leaveDaysRange="0,90" levelRange="60,120" point="1500" level="20" item="435401,1" upItem="100016,500" />
+	<BpReward id="22" leaveDaysRange="0,90" levelRange="60,120" point="1600" level="21" item="100201,3" />
+	<BpReward id="23" leaveDaysRange="0,90" levelRange="60,120" point="1700" level="22" item="100002,100" />
+	<BpReward id="24" leaveDaysRange="0,90" levelRange="60,120" point="1800" level="23" item="100011,300" />
+	<BpReward id="25" leaveDaysRange="0,90" levelRange="60,120" point="1900" level="24" item="100601,1" />
+	<BpReward id="26" leaveDaysRange="0,90" levelRange="60,120" point="2000" level="25" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="27" leaveDaysRange="0,90" levelRange="60,120" point="2100" level="26" item="100301,3" />
+	<BpReward id="28" leaveDaysRange="0,90" levelRange="60,120" point="2200" level="27" item="100002,100" />
+	<BpReward id="29" leaveDaysRange="0,90" levelRange="60,120" point="2300" level="28" item="100011,300" />
+	<BpReward id="30" leaveDaysRange="0,90" levelRange="60,120" point="2400" level="29" item="100601,1" />
+	<BpReward id="31" leaveDaysRange="0,90" levelRange="60,120" point="2500" level="30" item="435401,1" upItem="100016,500" />
+	<BpReward id="32" leaveDaysRange="0,90" levelRange="60,120" point="2600" level="31" item="100401,3" />
+	<BpReward id="33" leaveDaysRange="0,90" levelRange="60,120" point="2700" level="32" item="100002,100" />
+	<BpReward id="34" leaveDaysRange="0,90" levelRange="60,120" point="2800" level="33" item="100011,300" />
+	<BpReward id="35" leaveDaysRange="0,90" levelRange="60,120" point="2900" level="34" item="100601,1" />
+	<BpReward id="36" leaveDaysRange="0,90" levelRange="60,120" point="3000" level="35" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="37" leaveDaysRange="0,90" levelRange="60,120" point="3100" level="36" item="100201,3" />
+	<BpReward id="38" leaveDaysRange="0,90" levelRange="60,120" point="3200" level="37" item="100002,100" />
+	<BpReward id="39" leaveDaysRange="0,90" levelRange="60,120" point="3300" level="38" item="100011,300" />
+	<BpReward id="40" leaveDaysRange="0,90" levelRange="60,120" point="3400" level="39" item="100601,1" />
+	<BpReward id="41" leaveDaysRange="0,90" levelRange="60,120" point="3500" level="40" item="435401,1" upItem="100016,500" />
+	<BpReward id="42" leaveDaysRange="0,90" levelRange="60,120" point="3600" level="41" item="1210501,1" />
+	<BpReward id="43" leaveDaysRange="0,90" levelRange="60,120" point="3700" level="42" item="100002,100" />
+	<BpReward id="44" leaveDaysRange="0,90" levelRange="60,120" point="3800" level="43" item="100011,300" />
+	<BpReward id="45" leaveDaysRange="0,90" levelRange="60,120" point="3900" level="44" item="100601,1" />
+	<BpReward id="46" leaveDaysRange="0,90" levelRange="60,120" point="4000" level="45" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="47" leaveDaysRange="0,90" levelRange="60,120" point="4100" level="46" item="941501,1" />
+	<BpReward id="48" leaveDaysRange="0,90" levelRange="60,120" point="4200" level="47" item="100002,100" />
+	<BpReward id="49" leaveDaysRange="0,90" levelRange="60,120" point="4300" level="48" item="100011,300" />
+	<BpReward id="50" leaveDaysRange="0,90" levelRange="60,120" point="4400" level="49" item="100601,1" />
+	<BpReward id="51" leaveDaysRange="0,90" levelRange="60,120" point="4500" level="50" item="100016,800" upItem="100016,2000" />
+	<BpReward id="52" leaveDaysRange="0,90" levelRange="60,120" point="4600" level="51" item="100301,3" />
+	<BpReward id="53" leaveDaysRange="0,90" levelRange="60,120" point="4700" level="52" item="100002,100" />
+	<BpReward id="54" leaveDaysRange="0,90" levelRange="60,120" point="4800" level="53" item="100011,300" />
+	<BpReward id="55" leaveDaysRange="0,90" levelRange="60,120" point="4900" level="54" item="100601,1" />
+	<BpReward id="56" leaveDaysRange="0,90" levelRange="60,120" point="5000" level="55" item="8100201,1" upItem="100016,100" />
+	<BpReward id="57" leaveDaysRange="0,90" levelRange="60,120" point="5100" level="56" item="100401,3" />
+	<BpReward id="58" leaveDaysRange="0,90" levelRange="60,120" point="5200" level="57" item="100002,100" />
+	<BpReward id="59" leaveDaysRange="0,90" levelRange="60,120" point="5300" level="58" item="100011,300" />
+	<BpReward id="60" leaveDaysRange="0,90" levelRange="60,120" point="5400" level="59" item="100601,1" />
+	<BpReward id="61" leaveDaysRange="0,90" levelRange="60,120" point="5500" level="60" item="435401,1" upItem="100016,100" />
+	<BpReward id="62" leaveDaysRange="0,90" levelRange="60,120" point="5600" level="61" item="100201,3" />
+	<BpReward id="63" leaveDaysRange="0,90" levelRange="60,120" point="5700" level="62" item="100002,100" />
+	<BpReward id="64" leaveDaysRange="0,90" levelRange="60,120" point="5800" level="63" item="100011,300" />
+	<BpReward id="65" leaveDaysRange="0,90" levelRange="60,120" point="5900" level="64" item="100601,1" />
+	<BpReward id="66" leaveDaysRange="0,90" levelRange="60,120" point="6000" level="65" item="100016,800" upItem="100016,100" />
+	<BpReward id="67" leaveDaysRange="0,90" levelRange="60,120" point="6100" level="66" item="1210501,1" />
+	<BpReward id="68" leaveDaysRange="0,90" levelRange="60,120" point="6200" level="67" item="100002,100" />
+	<BpReward id="69" leaveDaysRange="0,90" levelRange="60,120" point="6300" level="68" item="100011,300" />
+	<BpReward id="70" leaveDaysRange="0,90" levelRange="60,120" point="6400" level="69" item="100601,1" />
+	<BpReward id="71" leaveDaysRange="0,90" levelRange="60,120" point="6500" level="70" item="435401,1" upItem="100016,100" />
+	<BpReward id="72" leaveDaysRange="0,90" levelRange="60,120" point="6600" level="71" item="941501,1" />
+	<BpReward id="73" leaveDaysRange="0,90" levelRange="60,120" point="6700" level="72" item="100002,100" />
+	<BpReward id="74" leaveDaysRange="0,90" levelRange="60,120" point="6800" level="73" item="100011,300" />
+	<BpReward id="75" leaveDaysRange="0,90" levelRange="60,120" point="6900" level="74" item="100601,1" />
+	<BpReward id="76" leaveDaysRange="0,90" levelRange="60,120" point="7000" level="75" item="8100201,1" upItem="100016,100" />
+	<BpReward id="77" leaveDaysRange="0,90" levelRange="60,120" point="7100" level="76" item="11983501,1" />
+	<BpReward id="78" leaveDaysRange="0,90" levelRange="60,120" point="7200" level="77" item="100002,100" />
+	<BpReward id="79" leaveDaysRange="0,90" levelRange="60,120" point="7300" level="78" item="100011,300" />
+	<BpReward id="80" leaveDaysRange="0,90" levelRange="60,120" point="7400" level="79" item="100601,1" />
+	<BpReward id="81" leaveDaysRange="0,90" levelRange="60,120" point="7500" level="80" item="100016,800" upItem="100016,100" />
+	<BpReward id="82" leaveDaysRange="0,90" levelRange="60,120" point="7600" level="81" item="100301,3" />
+	<BpReward id="83" leaveDaysRange="0,90" levelRange="60,120" point="7700" level="82" item="100002,100" />
+	<BpReward id="84" leaveDaysRange="0,90" levelRange="60,120" point="7800" level="83" item="100011,100" />
+	<BpReward id="85" leaveDaysRange="0,90" levelRange="60,120" point="7900" level="84" item="100601,1" />
+	<BpReward id="86" leaveDaysRange="0,90" levelRange="60,120" point="8000" level="85" item="11983501,1" upItem="100016,100" />
+	<BpReward id="87" leaveDaysRange="0,90" levelRange="60,120" point="8100" level="86" item="100401,3" />
+	<BpReward id="88" leaveDaysRange="0,90" levelRange="60,120" point="8200" level="87" item="100002,100" />
+	<BpReward id="89" leaveDaysRange="0,90" levelRange="60,120" point="8300" level="88" item="100011,100" />
+	<BpReward id="90" leaveDaysRange="0,90" levelRange="60,120" point="8400" level="89" item="100601,1" />
+	<BpReward id="91" leaveDaysRange="0,90" levelRange="60,120" point="8500" level="90" item="11983501,1" upItem="100016,100" />
+	<BpReward id="92" leaveDaysRange="0,90" levelRange="60,120" point="8600" level="91" item="100201,3" />
+	<BpReward id="93" leaveDaysRange="0,90" levelRange="60,120" point="8700" level="92" item="100002,100" />
+	<BpReward id="94" leaveDaysRange="0,90" levelRange="60,120" point="8800" level="93" item="100011,100" />
+	<BpReward id="95" leaveDaysRange="0,90" levelRange="60,120" point="8900" level="94" item="100601,1" />
+	<BpReward id="96" leaveDaysRange="0,90" levelRange="60,120" point="9000" level="95" item="11983501,1" upItem="100016,100" />
+	<BpReward id="97" leaveDaysRange="0,90" levelRange="60,120" point="9100" level="96" item="11444201,1" />
+	<BpReward id="98" leaveDaysRange="0,90" levelRange="60,120" point="9200" level="97" item="100002,100" />
+	<BpReward id="99" leaveDaysRange="0,90" levelRange="60,120" point="9300" level="98" item="100011,100" />
+	<BpReward id="100" leaveDaysRange="0,90" levelRange="60,120" point="9400" level="99" item="100601,1" />
+	<BpReward id="101" leaveDaysRange="0,90" levelRange="60,120" point="9500" level="100" item="11983501,1" upItem="100016,100" />
+	<BpReward id="102" leaveDaysRange="91,9999" levelRange="60,120" point="0" level="0" item="11983401,1" upItem="939001,1;911201,1;912501,1;936501,1;937401,1;916401,1;918901,1;932101,1;932301,1;932501,1;932701,1;970701,1;971401,1;971501,1;971601,1;971701,1;971801,1;921101,1;921201,1;907301,1;912101,1;912201,1;912301,1;912901,1;913901,1;934801,1;912401,1;944101,1;9042801,1;913101,1;932601,1;933201,1;937901,1;937601,1;936801,1;936901,1;917401,1;917701,1;934301,1;936001,1;936201,1;939101,1;939201,1;944901,1;917901,1;918301,1;918001,1;917601,1;917801,1;918101,1;918401,1;930301,1;930401,1;931501,1;933801,1;9040301,1;9043201,1;972001,1;9045901,1;930801,1;931001,1;944401,1;944501,1;933301,1;933401,1;933501,1;934201,1;934001,1;937801,1;9040001,1;944001,1;9040101,1;938301,1;938101,1;938501,1;938601,1;938801,1;939301,1;933601,1;937101,1;937501,1;939401,1;939501,1;937701,1;938001,1;936601,1;938201,1;938401,1;938701,1;938901,1" secType="1" repItem="8100201,5" />
+	<BpReward id="103" leaveDaysRange="91,9999" levelRange="60,120" point="50" level="1" item="8100201,1" />
+	<BpReward id="104" leaveDaysRange="91,9999" levelRange="60,120" point="100" level="2" item="100002,50" />
+	<BpReward id="105" leaveDaysRange="91,9999" levelRange="60,120" point="150" level="3" item="100011,300" />
+	<BpReward id="106" leaveDaysRange="91,9999" levelRange="60,120" point="200" level="4" item="100601,1" />
+	<BpReward id="107" leaveDaysRange="91,9999" levelRange="60,120" point="250" level="5" item="8100201,3" upItem="100016,1288" />
+	<BpReward id="108" leaveDaysRange="91,9999" levelRange="60,120" point="300" level="6" item="11444201,1" />
+	<BpReward id="109" leaveDaysRange="91,9999" levelRange="60,120" point="350" level="7" item="100002,100" />
+	<BpReward id="110" leaveDaysRange="91,9999" levelRange="60,120" point="400" level="8" item="100011,300" />
+	<BpReward id="111" leaveDaysRange="91,9999" levelRange="60,120" point="450" level="9" item="100601,1" />
+	<BpReward id="112" leaveDaysRange="91,9999" levelRange="60,120" point="500" level="10" item="8100201,1" upItem="100016,500" />
+	<BpReward id="113" leaveDaysRange="91,9999" levelRange="60,120" point="600" level="11" item="100301,3" />
+	<BpReward id="114" leaveDaysRange="91,9999" levelRange="60,120" point="700" level="12" item="100002,100" />
+	<BpReward id="115" leaveDaysRange="91,9999" levelRange="60,120" point="800" level="13" item="100011,300" />
+	<BpReward id="116" leaveDaysRange="91,9999" levelRange="60,120" point="900" level="14" item="100601,1" />
+	<BpReward id="117" leaveDaysRange="91,9999" levelRange="60,120" point="1000" level="15" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="118" leaveDaysRange="91,9999" levelRange="60,120" point="1100" level="16" item="100401,3" />
+	<BpReward id="119" leaveDaysRange="91,9999" levelRange="60,120" point="1200" level="17" item="100002,100" />
+	<BpReward id="120" leaveDaysRange="91,9999" levelRange="60,120" point="1300" level="18" item="100011,300" />
+	<BpReward id="121" leaveDaysRange="91,9999" levelRange="60,120" point="1400" level="19" item="100601,1" />
+	<BpReward id="122" leaveDaysRange="91,9999" levelRange="60,120" point="1500" level="20" item="435401,1" upItem="100016,500" />
+	<BpReward id="123" leaveDaysRange="91,9999" levelRange="60,120" point="1600" level="21" item="100201,3" />
+	<BpReward id="124" leaveDaysRange="91,9999" levelRange="60,120" point="1700" level="22" item="100002,100" />
+	<BpReward id="125" leaveDaysRange="91,9999" levelRange="60,120" point="1800" level="23" item="100011,300" />
+	<BpReward id="126" leaveDaysRange="91,9999" levelRange="60,120" point="1900" level="24" item="100601,1" />
+	<BpReward id="127" leaveDaysRange="91,9999" levelRange="60,120" point="2000" level="25" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="128" leaveDaysRange="91,9999" levelRange="60,120" point="2100" level="26" item="100301,3" />
+	<BpReward id="129" leaveDaysRange="91,9999" levelRange="60,120" point="2200" level="27" item="100002,100" />
+	<BpReward id="130" leaveDaysRange="91,9999" levelRange="60,120" point="2300" level="28" item="100011,300" />
+	<BpReward id="131" leaveDaysRange="91,9999" levelRange="60,120" point="2400" level="29" item="100601,1" />
+	<BpReward id="132" leaveDaysRange="91,9999" levelRange="60,120" point="2500" level="30" item="435401,1" upItem="100016,500" />
+	<BpReward id="133" leaveDaysRange="91,9999" levelRange="60,120" point="2600" level="31" item="100401,3" />
+	<BpReward id="134" leaveDaysRange="91,9999" levelRange="60,120" point="2700" level="32" item="100002,100" />
+	<BpReward id="135" leaveDaysRange="91,9999" levelRange="60,120" point="2800" level="33" item="100011,300" />
+	<BpReward id="136" leaveDaysRange="91,9999" levelRange="60,120" point="2900" level="34" item="100601,1" />
+	<BpReward id="137" leaveDaysRange="91,9999" levelRange="60,120" point="3000" level="35" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="138" leaveDaysRange="91,9999" levelRange="60,120" point="3100" level="36" item="100201,3" />
+	<BpReward id="139" leaveDaysRange="91,9999" levelRange="60,120" point="3200" level="37" item="100002,100" />
+	<BpReward id="140" leaveDaysRange="91,9999" levelRange="60,120" point="3300" level="38" item="100011,300" />
+	<BpReward id="141" leaveDaysRange="91,9999" levelRange="60,120" point="3400" level="39" item="100601,1" />
+	<BpReward id="142" leaveDaysRange="91,9999" levelRange="60,120" point="3500" level="40" item="435401,1" upItem="100016,500" />
+	<BpReward id="143" leaveDaysRange="91,9999" levelRange="60,120" point="3600" level="41" item="1210501,1" />
+	<BpReward id="144" leaveDaysRange="91,9999" levelRange="60,120" point="3700" level="42" item="100002,100" />
+	<BpReward id="145" leaveDaysRange="91,9999" levelRange="60,120" point="3800" level="43" item="100011,300" />
+	<BpReward id="146" leaveDaysRange="91,9999" levelRange="60,120" point="3900" level="44" item="100601,1" />
+	<BpReward id="147" leaveDaysRange="91,9999" levelRange="60,120" point="4000" level="45" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="148" leaveDaysRange="91,9999" levelRange="60,120" point="4100" level="46" item="941501,1" />
+	<BpReward id="149" leaveDaysRange="91,9999" levelRange="60,120" point="4200" level="47" item="100002,100" />
+	<BpReward id="150" leaveDaysRange="91,9999" levelRange="60,120" point="4300" level="48" item="100011,300" />
+	<BpReward id="151" leaveDaysRange="91,9999" levelRange="60,120" point="4400" level="49" item="100601,1" />
+	<BpReward id="152" leaveDaysRange="91,9999" levelRange="60,120" point="4500" level="50" item="100016,800" upItem="100016,2000" />
+	<BpReward id="153" leaveDaysRange="91,9999" levelRange="60,120" point="4600" level="51" item="100301,3" />
+	<BpReward id="154" leaveDaysRange="91,9999" levelRange="60,120" point="4700" level="52" item="100002,100" />
+	<BpReward id="155" leaveDaysRange="91,9999" levelRange="60,120" point="4800" level="53" item="100011,300" />
+	<BpReward id="156" leaveDaysRange="91,9999" levelRange="60,120" point="4900" level="54" item="100601,1" />
+	<BpReward id="157" leaveDaysRange="91,9999" levelRange="60,120" point="5000" level="55" item="8100201,1" upItem="100016,100" />
+	<BpReward id="158" leaveDaysRange="91,9999" levelRange="60,120" point="5100" level="56" item="100401,3" />
+	<BpReward id="159" leaveDaysRange="91,9999" levelRange="60,120" point="5200" level="57" item="100002,100" />
+	<BpReward id="160" leaveDaysRange="91,9999" levelRange="60,120" point="5300" level="58" item="100011,300" />
+	<BpReward id="161" leaveDaysRange="91,9999" levelRange="60,120" point="5400" level="59" item="100601,1" />
+	<BpReward id="162" leaveDaysRange="91,9999" levelRange="60,120" point="5500" level="60" item="435401,1" upItem="100016,100" />
+	<BpReward id="163" leaveDaysRange="91,9999" levelRange="60,120" point="5600" level="61" item="100201,3" />
+	<BpReward id="164" leaveDaysRange="91,9999" levelRange="60,120" point="5700" level="62" item="100002,100" />
+	<BpReward id="165" leaveDaysRange="91,9999" levelRange="60,120" point="5800" level="63" item="100011,300" />
+	<BpReward id="166" leaveDaysRange="91,9999" levelRange="60,120" point="5900" level="64" item="100601,1" />
+	<BpReward id="167" leaveDaysRange="91,9999" levelRange="60,120" point="6000" level="65" item="100016,800" upItem="100016,100" />
+	<BpReward id="168" leaveDaysRange="91,9999" levelRange="60,120" point="6100" level="66" item="1210501,1" />
+	<BpReward id="169" leaveDaysRange="91,9999" levelRange="60,120" point="6200" level="67" item="100002,100" />
+	<BpReward id="170" leaveDaysRange="91,9999" levelRange="60,120" point="6300" level="68" item="100011,300" />
+	<BpReward id="171" leaveDaysRange="91,9999" levelRange="60,120" point="6400" level="69" item="100601,1" />
+	<BpReward id="172" leaveDaysRange="91,9999" levelRange="60,120" point="6500" level="70" item="435401,1" upItem="100016,100" />
+	<BpReward id="173" leaveDaysRange="91,9999" levelRange="60,120" point="6600" level="71" item="941501,1" />
+	<BpReward id="174" leaveDaysRange="91,9999" levelRange="60,120" point="6700" level="72" item="100002,100" />
+	<BpReward id="175" leaveDaysRange="91,9999" levelRange="60,120" point="6800" level="73" item="100011,300" />
+	<BpReward id="176" leaveDaysRange="91,9999" levelRange="60,120" point="6900" level="74" item="100601,1" />
+	<BpReward id="177" leaveDaysRange="91,9999" levelRange="60,120" point="7000" level="75" item="8100201,1" upItem="100016,100" />
+	<BpReward id="178" leaveDaysRange="91,9999" levelRange="60,120" point="7100" level="76" item="11983501,1" />
+	<BpReward id="179" leaveDaysRange="91,9999" levelRange="60,120" point="7200" level="77" item="100002,100" />
+	<BpReward id="180" leaveDaysRange="91,9999" levelRange="60,120" point="7300" level="78" item="100011,300" />
+	<BpReward id="181" leaveDaysRange="91,9999" levelRange="60,120" point="7400" level="79" item="100601,1" />
+	<BpReward id="182" leaveDaysRange="91,9999" levelRange="60,120" point="7500" level="80" item="100016,800" upItem="100016,100" />
+	<BpReward id="183" leaveDaysRange="91,9999" levelRange="60,120" point="7600" level="81" item="100301,3" />
+	<BpReward id="184" leaveDaysRange="91,9999" levelRange="60,120" point="7700" level="82" item="100002,100" />
+	<BpReward id="185" leaveDaysRange="91,9999" levelRange="60,120" point="7800" level="83" item="100011,100" />
+	<BpReward id="186" leaveDaysRange="91,9999" levelRange="60,120" point="7900" level="84" item="100601,1" />
+	<BpReward id="187" leaveDaysRange="91,9999" levelRange="60,120" point="8000" level="85" item="11983501,1" upItem="100016,100" />
+	<BpReward id="188" leaveDaysRange="91,9999" levelRange="60,120" point="8100" level="86" item="100401,3" />
+	<BpReward id="189" leaveDaysRange="91,9999" levelRange="60,120" point="8200" level="87" item="100002,100" />
+	<BpReward id="190" leaveDaysRange="91,9999" levelRange="60,120" point="8300" level="88" item="100011,100" />
+	<BpReward id="191" leaveDaysRange="91,9999" levelRange="60,120" point="8400" level="89" item="100601,1" />
+	<BpReward id="192" leaveDaysRange="91,9999" levelRange="60,120" point="8500" level="90" item="11983501,1" upItem="100016,100" />
+	<BpReward id="193" leaveDaysRange="91,9999" levelRange="60,120" point="8600" level="91" item="100201,3" />
+	<BpReward id="194" leaveDaysRange="91,9999" levelRange="60,120" point="8700" level="92" item="100002,100" />
+	<BpReward id="195" leaveDaysRange="91,9999" levelRange="60,120" point="8800" level="93" item="100011,100" />
+	<BpReward id="196" leaveDaysRange="91,9999" levelRange="60,120" point="8900" level="94" item="100601,1" />
+	<BpReward id="197" leaveDaysRange="91,9999" levelRange="60,120" point="9000" level="95" item="11983501,1" upItem="100016,100" />
+	<BpReward id="198" leaveDaysRange="91,9999" levelRange="60,120" point="9100" level="96" item="11444201,1" />
+	<BpReward id="199" leaveDaysRange="91,9999" levelRange="60,120" point="9200" level="97" item="100002,100" />
+	<BpReward id="200" leaveDaysRange="91,9999" levelRange="60,120" point="9300" level="98" item="100011,100" />
+	<BpReward id="201" leaveDaysRange="91,9999" levelRange="60,120" point="9400" level="99" item="100601,1" />
+	<BpReward id="202" leaveDaysRange="91,9999" levelRange="60,120" point="9500" level="100" item="11983501,1" upItem="100016,100" />
+	<BpReward id="203" leaveDaysRange="0,90" levelRange="121,180" point="0" level="0" item="11983401,1" upItem="939001,1;911201,1;912501,1;936501,1;937401,1;916401,1;918901,1;932101,1;932301,1;932501,1;932701,1;970701,1;971401,1;971501,1;971601,1;971701,1;971801,1;921101,1;921201,1;907301,1;912101,1;912201,1;912301,1;912901,1;913901,1;934801,1;912401,1;944101,1;9042801,1;913101,1;932601,1;933201,1;937901,1;937601,1;936801,1;936901,1;917401,1;917701,1;934301,1;936001,1;936201,1;939101,1;939201,1;944901,1;917901,1;918301,1;918001,1;917601,1;917801,1;918101,1;918401,1;930301,1;930401,1;931501,1;933801,1;9040301,1;9043201,1;972001,1;9045901,1;930801,1;931001,1;944401,1;944501,1;933301,1;933401,1;933501,1;934201,1;934001,1;937801,1;9040001,1;944001,1;9040101,1;938301,1;938101,1;938501,1;938601,1;938801,1;939301,1;933601,1;937101,1;937501,1;939401,1;939501,1;937701,1;938001,1;936601,1;938201,1;938401,1;938701,1;938901,1" secType="1" repItem="8100201,5" />
+	<BpReward id="204" leaveDaysRange="0,90" levelRange="121,180" point="50" level="1" item="8100201,1" />
+	<BpReward id="205" leaveDaysRange="0,90" levelRange="121,180" point="100" level="2" item="1213201,1" />
+	<BpReward id="206" leaveDaysRange="0,90" levelRange="121,180" point="150" level="3" item="111801,50" />
+	<BpReward id="207" leaveDaysRange="0,90" levelRange="121,180" point="200" level="4" item="100011,300" />
+	<BpReward id="208" leaveDaysRange="0,90" levelRange="121,180" point="250" level="5" item="8100201,3" upItem="100016,1288" />
+	<BpReward id="209" leaveDaysRange="0,90" levelRange="121,180" point="300" level="6" item="11983601,1" />
+	<BpReward id="210" leaveDaysRange="0,90" levelRange="121,180" point="350" level="7" item="1213201,1" />
+	<BpReward id="211" leaveDaysRange="0,90" levelRange="121,180" point="400" level="8" item="111801,50" />
+	<BpReward id="212" leaveDaysRange="0,90" levelRange="121,180" point="450" level="9" item="100011,300" />
+	<BpReward id="213" leaveDaysRange="0,90" levelRange="121,180" point="500" level="10" item="8100201,1" upItem="100016,500" />
+	<BpReward id="214" leaveDaysRange="0,90" levelRange="121,180" point="600" level="11" item="100301,3" />
+	<BpReward id="215" leaveDaysRange="0,90" levelRange="121,180" point="700" level="12" item="1213201,1" />
+	<BpReward id="216" leaveDaysRange="0,90" levelRange="121,180" point="800" level="13" item="111801,50" />
+	<BpReward id="217" leaveDaysRange="0,90" levelRange="121,180" point="900" level="14" item="100011,300" />
+	<BpReward id="218" leaveDaysRange="0,90" levelRange="121,180" point="1000" level="15" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="219" leaveDaysRange="0,90" levelRange="121,180" point="1100" level="16" item="100401,3" />
+	<BpReward id="220" leaveDaysRange="0,90" levelRange="121,180" point="1200" level="17" item="1213201,1" />
+	<BpReward id="221" leaveDaysRange="0,90" levelRange="121,180" point="1300" level="18" item="111801,50" />
+	<BpReward id="222" leaveDaysRange="0,90" levelRange="121,180" point="1400" level="19" item="100011,300" />
+	<BpReward id="223" leaveDaysRange="0,90" levelRange="121,180" point="1500" level="20" item="435401,1" upItem="100016,500" />
+	<BpReward id="224" leaveDaysRange="0,90" levelRange="121,180" point="1600" level="21" item="100201,3" />
+	<BpReward id="225" leaveDaysRange="0,90" levelRange="121,180" point="1700" level="22" item="1213201,1" />
+	<BpReward id="226" leaveDaysRange="0,90" levelRange="121,180" point="1800" level="23" item="111801,50" />
+	<BpReward id="227" leaveDaysRange="0,90" levelRange="121,180" point="1900" level="24" item="100011,300" />
+	<BpReward id="228" leaveDaysRange="0,90" levelRange="121,180" point="2000" level="25" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="229" leaveDaysRange="0,90" levelRange="121,180" point="2100" level="26" item="100301,3" />
+	<BpReward id="230" leaveDaysRange="0,90" levelRange="121,180" point="2200" level="27" item="1213201,1" />
+	<BpReward id="231" leaveDaysRange="0,90" levelRange="121,180" point="2300" level="28" item="111801,50" />
+	<BpReward id="232" leaveDaysRange="0,90" levelRange="121,180" point="2400" level="29" item="100011,300" />
+	<BpReward id="233" leaveDaysRange="0,90" levelRange="121,180" point="2500" level="30" item="435401,1" upItem="100016,500" />
+	<BpReward id="234" leaveDaysRange="0,90" levelRange="121,180" point="2600" level="31" item="100401,3" />
+	<BpReward id="235" leaveDaysRange="0,90" levelRange="121,180" point="2700" level="32" item="1213201,1" />
+	<BpReward id="236" leaveDaysRange="0,90" levelRange="121,180" point="2800" level="33" item="111801,50" />
+	<BpReward id="237" leaveDaysRange="0,90" levelRange="121,180" point="2900" level="34" item="100011,500" />
+	<BpReward id="238" leaveDaysRange="0,90" levelRange="121,180" point="3000" level="35" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="239" leaveDaysRange="0,90" levelRange="121,180" point="3100" level="36" item="100201,3" />
+	<BpReward id="240" leaveDaysRange="0,90" levelRange="121,180" point="3200" level="37" item="1213201,1" />
+	<BpReward id="241" leaveDaysRange="0,90" levelRange="121,180" point="3300" level="38" item="111801,50" />
+	<BpReward id="242" leaveDaysRange="0,90" levelRange="121,180" point="3400" level="39" item="100011,500" />
+	<BpReward id="243" leaveDaysRange="0,90" levelRange="121,180" point="3500" level="40" item="435401,1" upItem="100016,500" />
+	<BpReward id="244" leaveDaysRange="0,90" levelRange="121,180" point="3600" level="41" item="1210501,1" />
+	<BpReward id="245" leaveDaysRange="0,90" levelRange="121,180" point="3700" level="42" item="1213201,1" />
+	<BpReward id="246" leaveDaysRange="0,90" levelRange="121,180" point="3800" level="43" item="111801,50" />
+	<BpReward id="247" leaveDaysRange="0,90" levelRange="121,180" point="3900" level="44" item="100011,500" />
+	<BpReward id="248" leaveDaysRange="0,90" levelRange="121,180" point="4000" level="45" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="249" leaveDaysRange="0,90" levelRange="121,180" point="4100" level="46" item="941501,1" />
+	<BpReward id="250" leaveDaysRange="0,90" levelRange="121,180" point="4200" level="47" item="1213201,1" />
+	<BpReward id="251" leaveDaysRange="0,90" levelRange="121,180" point="4300" level="48" item="111801,50" />
+	<BpReward id="252" leaveDaysRange="0,90" levelRange="121,180" point="4400" level="49" item="100011,500" />
+	<BpReward id="253" leaveDaysRange="0,90" levelRange="121,180" point="4500" level="50" item="100016,1500" upItem="100016,2000" />
+	<BpReward id="254" leaveDaysRange="0,90" levelRange="121,180" point="4600" level="51" item="100301,3" />
+	<BpReward id="255" leaveDaysRange="0,90" levelRange="121,180" point="4700" level="52" item="100601,1" />
+	<BpReward id="256" leaveDaysRange="0,90" levelRange="121,180" point="4800" level="53" item="111801,50" />
+	<BpReward id="257" leaveDaysRange="0,90" levelRange="121,180" point="4900" level="54" item="100011,500" />
+	<BpReward id="258" leaveDaysRange="0,90" levelRange="121,180" point="5000" level="55" item="8100201,1" upItem="100016,100" />
+	<BpReward id="259" leaveDaysRange="0,90" levelRange="121,180" point="5100" level="56" item="100401,3" />
+	<BpReward id="260" leaveDaysRange="0,90" levelRange="121,180" point="5200" level="57" item="1213201,1" />
+	<BpReward id="261" leaveDaysRange="0,90" levelRange="121,180" point="5300" level="58" item="111801,50" />
+	<BpReward id="262" leaveDaysRange="0,90" levelRange="121,180" point="5400" level="59" item="100011,500" />
+	<BpReward id="263" leaveDaysRange="0,90" levelRange="121,180" point="5500" level="60" item="435401,1" upItem="100016,100" />
+	<BpReward id="264" leaveDaysRange="0,90" levelRange="121,180" point="5600" level="61" item="100201,3" />
+	<BpReward id="265" leaveDaysRange="0,90" levelRange="121,180" point="5700" level="62" item="1213201,1" />
+	<BpReward id="266" leaveDaysRange="0,90" levelRange="121,180" point="5800" level="63" item="111801,50" />
+	<BpReward id="267" leaveDaysRange="0,90" levelRange="121,180" point="5900" level="64" item="100011,500" />
+	<BpReward id="268" leaveDaysRange="0,90" levelRange="121,180" point="6000" level="65" item="100016,1500" upItem="100016,100" />
+	<BpReward id="269" leaveDaysRange="0,90" levelRange="121,180" point="6100" level="66" item="1210501,1" />
+	<BpReward id="270" leaveDaysRange="0,90" levelRange="121,180" point="6200" level="67" item="1213201,1" />
+	<BpReward id="271" leaveDaysRange="0,90" levelRange="121,180" point="6300" level="68" item="111801,50" />
+	<BpReward id="272" leaveDaysRange="0,90" levelRange="121,180" point="6400" level="69" item="100011,500" />
+	<BpReward id="273" leaveDaysRange="0,90" levelRange="121,180" point="6500" level="70" item="435401,1" upItem="100016,100" />
+	<BpReward id="274" leaveDaysRange="0,90" levelRange="121,180" point="6600" level="71" item="941501,1" />
+	<BpReward id="275" leaveDaysRange="0,90" levelRange="121,180" point="6700" level="72" item="1213201,1" />
+	<BpReward id="276" leaveDaysRange="0,90" levelRange="121,180" point="6800" level="73" item="111801,50" />
+	<BpReward id="277" leaveDaysRange="0,90" levelRange="121,180" point="6900" level="74" item="100011,500" />
+	<BpReward id="278" leaveDaysRange="0,90" levelRange="121,180" point="7000" level="75" item="8100201,1" upItem="100016,100" />
+	<BpReward id="279" leaveDaysRange="0,90" levelRange="121,180" point="7100" level="76" item="11983501,1" />
+	<BpReward id="280" leaveDaysRange="0,90" levelRange="121,180" point="7200" level="77" item="1213201,1" />
+	<BpReward id="281" leaveDaysRange="0,90" levelRange="121,180" point="7300" level="78" item="111801,50" />
+	<BpReward id="282" leaveDaysRange="0,90" levelRange="121,180" point="7400" level="79" item="100011,500" />
+	<BpReward id="283" leaveDaysRange="0,90" levelRange="121,180" point="7500" level="80" item="100016,1500" upItem="100016,100" />
+	<BpReward id="284" leaveDaysRange="0,90" levelRange="121,180" point="7600" level="81" item="100301,3" />
+	<BpReward id="285" leaveDaysRange="0,90" levelRange="121,180" point="7700" level="82" item="100002,100" />
+	<BpReward id="286" leaveDaysRange="0,90" levelRange="121,180" point="7800" level="83" item="111801,10" />
+	<BpReward id="287" leaveDaysRange="0,90" levelRange="121,180" point="7900" level="84" item="100011,100" />
+	<BpReward id="288" leaveDaysRange="0,90" levelRange="121,180" point="8000" level="85" item="11983501,1" upItem="100016,100" />
+	<BpReward id="289" leaveDaysRange="0,90" levelRange="121,180" point="8100" level="86" item="100401,3" />
+	<BpReward id="290" leaveDaysRange="0,90" levelRange="121,180" point="8200" level="87" item="100002,100" />
+	<BpReward id="291" leaveDaysRange="0,90" levelRange="121,180" point="8300" level="88" item="111801,10" />
+	<BpReward id="292" leaveDaysRange="0,90" levelRange="121,180" point="8400" level="89" item="100011,100" />
+	<BpReward id="293" leaveDaysRange="0,90" levelRange="121,180" point="8500" level="90" item="11983501,1" upItem="100016,100" />
+	<BpReward id="294" leaveDaysRange="0,90" levelRange="121,180" point="8600" level="91" item="100201,3" />
+	<BpReward id="295" leaveDaysRange="0,90" levelRange="121,180" point="8700" level="92" item="100002,100" />
+	<BpReward id="296" leaveDaysRange="0,90" levelRange="121,180" point="8800" level="93" item="111801,10" />
+	<BpReward id="297" leaveDaysRange="0,90" levelRange="121,180" point="8900" level="94" item="100011,100" />
+	<BpReward id="298" leaveDaysRange="0,90" levelRange="121,180" point="9000" level="95" item="11983501,1" upItem="100016,100" />
+	<BpReward id="299" leaveDaysRange="0,90" levelRange="121,180" point="9100" level="96" item="11983601,1" />
+	<BpReward id="300" leaveDaysRange="0,90" levelRange="121,180" point="9200" level="97" item="100002,100" />
+	<BpReward id="301" leaveDaysRange="0,90" levelRange="121,180" point="9300" level="98" item="111801,10" />
+	<BpReward id="302" leaveDaysRange="0,90" levelRange="121,180" point="9400" level="99" item="100011,100" />
+	<BpReward id="303" leaveDaysRange="0,90" levelRange="121,180" point="9500" level="100" item="11983501,1" upItem="100016,100" />
+	<BpReward id="304" leaveDaysRange="91,9999" levelRange="121,180" point="0" level="0" item="11983401,1" upItem="939001,1;911201,1;912501,1;936501,1;937401,1;916401,1;918901,1;932101,1;932301,1;932501,1;932701,1;970701,1;971401,1;971501,1;971601,1;971701,1;971801,1;921101,1;921201,1;907301,1;912101,1;912201,1;912301,1;912901,1;913901,1;934801,1;912401,1;944101,1;9042801,1;913101,1;932601,1;933201,1;937901,1;937601,1;936801,1;936901,1;917401,1;917701,1;934301,1;936001,1;936201,1;939101,1;939201,1;944901,1;917901,1;918301,1;918001,1;917601,1;917801,1;918101,1;918401,1;930301,1;930401,1;931501,1;933801,1;9040301,1;9043201,1;972001,1;9045901,1;930801,1;931001,1;944401,1;944501,1;933301,1;933401,1;933501,1;934201,1;934001,1;937801,1;9040001,1;944001,1;9040101,1;938301,1;938101,1;938501,1;938601,1;938801,1;939301,1;933601,1;937101,1;937501,1;939401,1;939501,1;937701,1;938001,1;936601,1;938201,1;938401,1;938701,1;938901,1" secType="1" repItem="8100201,5" />
+	<BpReward id="305" leaveDaysRange="91,9999" levelRange="121,180" point="50" level="1" item="8100201,1" />
+	<BpReward id="306" leaveDaysRange="91,9999" levelRange="121,180" point="100" level="2" item="1213201,1" />
+	<BpReward id="307" leaveDaysRange="91,9999" levelRange="121,180" point="150" level="3" item="111801,50" />
+	<BpReward id="308" leaveDaysRange="91,9999" levelRange="121,180" point="200" level="4" item="100011,300" />
+	<BpReward id="309" leaveDaysRange="91,9999" levelRange="121,180" point="250" level="5" item="8100201,3" upItem="100016,1288" />
+	<BpReward id="310" leaveDaysRange="91,9999" levelRange="121,180" point="300" level="6" item="11983601,1" />
+	<BpReward id="311" leaveDaysRange="91,9999" levelRange="121,180" point="350" level="7" item="1213201,1" />
+	<BpReward id="312" leaveDaysRange="91,9999" levelRange="121,180" point="400" level="8" item="111801,50" />
+	<BpReward id="313" leaveDaysRange="91,9999" levelRange="121,180" point="450" level="9" item="100011,300" />
+	<BpReward id="314" leaveDaysRange="91,9999" levelRange="121,180" point="500" level="10" item="8100201,1" upItem="100016,500" />
+	<BpReward id="315" leaveDaysRange="91,9999" levelRange="121,180" point="600" level="11" item="100301,3" />
+	<BpReward id="316" leaveDaysRange="91,9999" levelRange="121,180" point="700" level="12" item="1213201,1" />
+	<BpReward id="317" leaveDaysRange="91,9999" levelRange="121,180" point="800" level="13" item="111801,50" />
+	<BpReward id="318" leaveDaysRange="91,9999" levelRange="121,180" point="900" level="14" item="100011,300" />
+	<BpReward id="319" leaveDaysRange="91,9999" levelRange="121,180" point="1000" level="15" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="320" leaveDaysRange="91,9999" levelRange="121,180" point="1100" level="16" item="100401,3" />
+	<BpReward id="321" leaveDaysRange="91,9999" levelRange="121,180" point="1200" level="17" item="1213201,1" />
+	<BpReward id="322" leaveDaysRange="91,9999" levelRange="121,180" point="1300" level="18" item="111801,50" />
+	<BpReward id="323" leaveDaysRange="91,9999" levelRange="121,180" point="1400" level="19" item="100011,300" />
+	<BpReward id="324" leaveDaysRange="91,9999" levelRange="121,180" point="1500" level="20" item="435401,1" upItem="100016,500" />
+	<BpReward id="325" leaveDaysRange="91,9999" levelRange="121,180" point="1600" level="21" item="100201,3" />
+	<BpReward id="326" leaveDaysRange="91,9999" levelRange="121,180" point="1700" level="22" item="1213201,1" />
+	<BpReward id="327" leaveDaysRange="91,9999" levelRange="121,180" point="1800" level="23" item="111801,50" />
+	<BpReward id="328" leaveDaysRange="91,9999" levelRange="121,180" point="1900" level="24" item="100011,300" />
+	<BpReward id="329" leaveDaysRange="91,9999" levelRange="121,180" point="2000" level="25" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="330" leaveDaysRange="91,9999" levelRange="121,180" point="2100" level="26" item="100301,3" />
+	<BpReward id="331" leaveDaysRange="91,9999" levelRange="121,180" point="2200" level="27" item="1213201,1" />
+	<BpReward id="332" leaveDaysRange="91,9999" levelRange="121,180" point="2300" level="28" item="111801,50" />
+	<BpReward id="333" leaveDaysRange="91,9999" levelRange="121,180" point="2400" level="29" item="100011,300" />
+	<BpReward id="334" leaveDaysRange="91,9999" levelRange="121,180" point="2500" level="30" item="435401,1" upItem="100016,500" />
+	<BpReward id="335" leaveDaysRange="91,9999" levelRange="121,180" point="2600" level="31" item="100401,3" />
+	<BpReward id="336" leaveDaysRange="91,9999" levelRange="121,180" point="2700" level="32" item="1213201,1" />
+	<BpReward id="337" leaveDaysRange="91,9999" levelRange="121,180" point="2800" level="33" item="111801,50" />
+	<BpReward id="338" leaveDaysRange="91,9999" levelRange="121,180" point="2900" level="34" item="100011,500" />
+	<BpReward id="339" leaveDaysRange="91,9999" levelRange="121,180" point="3000" level="35" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="340" leaveDaysRange="91,9999" levelRange="121,180" point="3100" level="36" item="100201,3" />
+	<BpReward id="341" leaveDaysRange="91,9999" levelRange="121,180" point="3200" level="37" item="1213201,1" />
+	<BpReward id="342" leaveDaysRange="91,9999" levelRange="121,180" point="3300" level="38" item="111801,50" />
+	<BpReward id="343" leaveDaysRange="91,9999" levelRange="121,180" point="3400" level="39" item="100011,500" />
+	<BpReward id="344" leaveDaysRange="91,9999" levelRange="121,180" point="3500" level="40" item="435401,1" upItem="100016,500" />
+	<BpReward id="345" leaveDaysRange="91,9999" levelRange="121,180" point="3600" level="41" item="1210501,1" />
+	<BpReward id="346" leaveDaysRange="91,9999" levelRange="121,180" point="3700" level="42" item="1213201,1" />
+	<BpReward id="347" leaveDaysRange="91,9999" levelRange="121,180" point="3800" level="43" item="111801,50" />
+	<BpReward id="348" leaveDaysRange="91,9999" levelRange="121,180" point="3900" level="44" item="100011,500" />
+	<BpReward id="349" leaveDaysRange="91,9999" levelRange="121,180" point="4000" level="45" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="350" leaveDaysRange="91,9999" levelRange="121,180" point="4100" level="46" item="941501,1" />
+	<BpReward id="351" leaveDaysRange="91,9999" levelRange="121,180" point="4200" level="47" item="1213201,1" />
+	<BpReward id="352" leaveDaysRange="91,9999" levelRange="121,180" point="4300" level="48" item="111801,50" />
+	<BpReward id="353" leaveDaysRange="91,9999" levelRange="121,180" point="4400" level="49" item="100011,500" />
+	<BpReward id="354" leaveDaysRange="91,9999" levelRange="121,180" point="4500" level="50" item="100016,1500" upItem="100016,2000" />
+	<BpReward id="355" leaveDaysRange="91,9999" levelRange="121,180" point="4600" level="51" item="100301,3" />
+	<BpReward id="356" leaveDaysRange="91,9999" levelRange="121,180" point="4700" level="52" item="100601,1" />
+	<BpReward id="357" leaveDaysRange="91,9999" levelRange="121,180" point="4800" level="53" item="111801,50" />
+	<BpReward id="358" leaveDaysRange="91,9999" levelRange="121,180" point="4900" level="54" item="100011,500" />
+	<BpReward id="359" leaveDaysRange="91,9999" levelRange="121,180" point="5000" level="55" item="8100201,1" upItem="100016,100" />
+	<BpReward id="360" leaveDaysRange="91,9999" levelRange="121,180" point="5100" level="56" item="100401,3" />
+	<BpReward id="361" leaveDaysRange="91,9999" levelRange="121,180" point="5200" level="57" item="1213201,1" />
+	<BpReward id="362" leaveDaysRange="91,9999" levelRange="121,180" point="5300" level="58" item="111801,50" />
+	<BpReward id="363" leaveDaysRange="91,9999" levelRange="121,180" point="5400" level="59" item="100011,500" />
+	<BpReward id="364" leaveDaysRange="91,9999" levelRange="121,180" point="5500" level="60" item="435401,1" upItem="100016,100" />
+	<BpReward id="365" leaveDaysRange="91,9999" levelRange="121,180" point="5600" level="61" item="100201,3" />
+	<BpReward id="366" leaveDaysRange="91,9999" levelRange="121,180" point="5700" level="62" item="1213201,1" />
+	<BpReward id="367" leaveDaysRange="91,9999" levelRange="121,180" point="5800" level="63" item="111801,50" />
+	<BpReward id="368" leaveDaysRange="91,9999" levelRange="121,180" point="5900" level="64" item="100011,500" />
+	<BpReward id="369" leaveDaysRange="91,9999" levelRange="121,180" point="6000" level="65" item="100016,1500" upItem="100016,100" />
+	<BpReward id="370" leaveDaysRange="91,9999" levelRange="121,180" point="6100" level="66" item="1210501,1" />
+	<BpReward id="371" leaveDaysRange="91,9999" levelRange="121,180" point="6200" level="67" item="1213201,1" />
+	<BpReward id="372" leaveDaysRange="91,9999" levelRange="121,180" point="6300" level="68" item="111801,50" />
+	<BpReward id="373" leaveDaysRange="91,9999" levelRange="121,180" point="6400" level="69" item="100011,500" />
+	<BpReward id="374" leaveDaysRange="91,9999" levelRange="121,180" point="6500" level="70" item="435401,1" upItem="100016,100" />
+	<BpReward id="375" leaveDaysRange="91,9999" levelRange="121,180" point="6600" level="71" item="941501,1" />
+	<BpReward id="376" leaveDaysRange="91,9999" levelRange="121,180" point="6700" level="72" item="1213201,1" />
+	<BpReward id="377" leaveDaysRange="91,9999" levelRange="121,180" point="6800" level="73" item="111801,50" />
+	<BpReward id="378" leaveDaysRange="91,9999" levelRange="121,180" point="6900" level="74" item="100011,500" />
+	<BpReward id="379" leaveDaysRange="91,9999" levelRange="121,180" point="7000" level="75" item="8100201,1" upItem="100016,100" />
+	<BpReward id="380" leaveDaysRange="91,9999" levelRange="121,180" point="7100" level="76" item="11983501,1" />
+	<BpReward id="381" leaveDaysRange="91,9999" levelRange="121,180" point="7200" level="77" item="1213201,1" />
+	<BpReward id="382" leaveDaysRange="91,9999" levelRange="121,180" point="7300" level="78" item="111801,50" />
+	<BpReward id="383" leaveDaysRange="91,9999" levelRange="121,180" point="7400" level="79" item="100011,500" />
+	<BpReward id="384" leaveDaysRange="91,9999" levelRange="121,180" point="7500" level="80" item="100016,1500" upItem="100016,100" />
+	<BpReward id="385" leaveDaysRange="91,9999" levelRange="121,180" point="7600" level="81" item="100301,3" />
+	<BpReward id="386" leaveDaysRange="91,9999" levelRange="121,180" point="7700" level="82" item="100002,100" />
+	<BpReward id="387" leaveDaysRange="91,9999" levelRange="121,180" point="7800" level="83" item="111801,10" />
+	<BpReward id="388" leaveDaysRange="91,9999" levelRange="121,180" point="7900" level="84" item="100011,100" />
+	<BpReward id="389" leaveDaysRange="91,9999" levelRange="121,180" point="8000" level="85" item="11983501,1" upItem="100016,100" />
+	<BpReward id="390" leaveDaysRange="91,9999" levelRange="121,180" point="8100" level="86" item="100401,3" />
+	<BpReward id="391" leaveDaysRange="91,9999" levelRange="121,180" point="8200" level="87" item="100002,100" />
+	<BpReward id="392" leaveDaysRange="91,9999" levelRange="121,180" point="8300" level="88" item="111801,10" />
+	<BpReward id="393" leaveDaysRange="91,9999" levelRange="121,180" point="8400" level="89" item="100011,100" />
+	<BpReward id="394" leaveDaysRange="91,9999" levelRange="121,180" point="8500" level="90" item="11983501,1" upItem="100016,100" />
+	<BpReward id="395" leaveDaysRange="91,9999" levelRange="121,180" point="8600" level="91" item="100201,3" />
+	<BpReward id="396" leaveDaysRange="91,9999" levelRange="121,180" point="8700" level="92" item="100002,100" />
+	<BpReward id="397" leaveDaysRange="91,9999" levelRange="121,180" point="8800" level="93" item="111801,10" />
+	<BpReward id="398" leaveDaysRange="91,9999" levelRange="121,180" point="8900" level="94" item="100011,100" />
+	<BpReward id="399" leaveDaysRange="91,9999" levelRange="121,180" point="9000" level="95" item="11983501,1" upItem="100016,100" />
+	<BpReward id="400" leaveDaysRange="91,9999" levelRange="121,180" point="9100" level="96" item="11983601,1" />
+	<BpReward id="401" leaveDaysRange="91,9999" levelRange="121,180" point="9200" level="97" item="100002,100" />
+	<BpReward id="402" leaveDaysRange="91,9999" levelRange="121,180" point="9300" level="98" item="111801,10" />
+	<BpReward id="403" leaveDaysRange="91,9999" levelRange="121,180" point="9400" level="99" item="100011,100" />
+	<BpReward id="404" leaveDaysRange="91,9999" levelRange="121,180" point="9500" level="100" item="11983501,1" upItem="100016,100" />
+	<BpReward id="405" leaveDaysRange="0,90" levelRange="181,200" point="0" level="0" item="11983401,1" upItem="939001,1;911201,1;912501,1;936501,1;937401,1;916401,1;918901,1;932101,1;932301,1;932501,1;932701,1;970701,1;971401,1;971501,1;971601,1;971701,1;971801,1;921101,1;921201,1;907301,1;912101,1;912201,1;912301,1;912901,1;913901,1;934801,1;912401,1;944101,1;9042801,1;913101,1;932601,1;933201,1;937901,1;937601,1;936801,1;936901,1;917401,1;917701,1;934301,1;936001,1;936201,1;939101,1;939201,1;944901,1;917901,1;918301,1;918001,1;917601,1;917801,1;918101,1;918401,1;930301,1;930401,1;931501,1;933801,1;9040301,1;9043201,1;972001,1;9045901,1;930801,1;931001,1;944401,1;944501,1;933301,1;933401,1;933501,1;934201,1;934001,1;937801,1;9040001,1;944001,1;9040101,1;938301,1;938101,1;938501,1;938601,1;938801,1;939301,1;933601,1;937101,1;937501,1;939401,1;939501,1;937701,1;938001,1;936601,1;938201,1;938401,1;938701,1;938901,1" secType="1" repItem="8100201,5" />
+	<BpReward id="406" leaveDaysRange="0,90" levelRange="181,200" point="50" level="1" item="8100201,1" />
+	<BpReward id="407" leaveDaysRange="0,90" levelRange="181,200" point="100" level="2" item="1213201,1" />
+	<BpReward id="408" leaveDaysRange="0,90" levelRange="181,200" point="150" level="3" item="111801,50" />
+	<BpReward id="409" leaveDaysRange="0,90" levelRange="181,200" point="200" level="4" item="435401,1" />
+	<BpReward id="410" leaveDaysRange="0,90" levelRange="181,200" point="250" level="5" item="8100201,3" upItem="100016,1288" />
+	<BpReward id="411" leaveDaysRange="0,90" levelRange="181,200" point="300" level="6" item="11983601,1" />
+	<BpReward id="412" leaveDaysRange="0,90" levelRange="181,200" point="350" level="7" item="1213201,1" />
+	<BpReward id="413" leaveDaysRange="0,90" levelRange="181,200" point="400" level="8" item="111801,50" />
+	<BpReward id="414" leaveDaysRange="0,90" levelRange="181,200" point="450" level="9" item="11983501,1" />
+	<BpReward id="415" leaveDaysRange="0,90" levelRange="181,200" point="500" level="10" item="8100201,1" upItem="100016,500" />
+	<BpReward id="416" leaveDaysRange="0,90" levelRange="181,200" point="600" level="11" item="100301,3" />
+	<BpReward id="417" leaveDaysRange="0,90" levelRange="181,200" point="700" level="12" item="1213201,1" />
+	<BpReward id="418" leaveDaysRange="0,90" levelRange="181,200" point="800" level="13" item="111801,50" />
+	<BpReward id="419" leaveDaysRange="0,90" levelRange="181,200" point="900" level="14" item="11983501,1" />
+	<BpReward id="420" leaveDaysRange="0,90" levelRange="181,200" point="1000" level="15" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="421" leaveDaysRange="0,90" levelRange="181,200" point="1100" level="16" item="100401,3" />
+	<BpReward id="422" leaveDaysRange="0,90" levelRange="181,200" point="1200" level="17" item="1213201,1" />
+	<BpReward id="423" leaveDaysRange="0,90" levelRange="181,200" point="1300" level="18" item="111801,50" />
+	<BpReward id="424" leaveDaysRange="0,90" levelRange="181,200" point="1400" level="19" item="11983501,1" />
+	<BpReward id="425" leaveDaysRange="0,90" levelRange="181,200" point="1500" level="20" item="435401,1" upItem="100016,500" />
+	<BpReward id="426" leaveDaysRange="0,90" levelRange="181,200" point="1600" level="21" item="100201,3" />
+	<BpReward id="427" leaveDaysRange="0,90" levelRange="181,200" point="1700" level="22" item="1213201,1" />
+	<BpReward id="428" leaveDaysRange="0,90" levelRange="181,200" point="1800" level="23" item="111801,50" />
+	<BpReward id="429" leaveDaysRange="0,90" levelRange="181,200" point="1900" level="24" item="11983501,1" />
+	<BpReward id="430" leaveDaysRange="0,90" levelRange="181,200" point="2000" level="25" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="431" leaveDaysRange="0,90" levelRange="181,200" point="2100" level="26" item="100301,3" />
+	<BpReward id="432" leaveDaysRange="0,90" levelRange="181,200" point="2200" level="27" item="1213201,1" />
+	<BpReward id="433" leaveDaysRange="0,90" levelRange="181,200" point="2300" level="28" item="111801,50" />
+	<BpReward id="434" leaveDaysRange="0,90" levelRange="181,200" point="2400" level="29" item="11983501,1" />
+	<BpReward id="435" leaveDaysRange="0,90" levelRange="181,200" point="2500" level="30" item="435401,1" upItem="100016,500" />
+	<BpReward id="436" leaveDaysRange="0,90" levelRange="181,200" point="2600" level="31" item="100401,3" />
+	<BpReward id="437" leaveDaysRange="0,90" levelRange="181,200" point="2700" level="32" item="1213201,1" />
+	<BpReward id="438" leaveDaysRange="0,90" levelRange="181,200" point="2800" level="33" item="111801,50" />
+	<BpReward id="439" leaveDaysRange="0,90" levelRange="181,200" point="2900" level="34" item="11983501,1" />
+	<BpReward id="440" leaveDaysRange="0,90" levelRange="181,200" point="3000" level="35" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="441" leaveDaysRange="0,90" levelRange="181,200" point="3100" level="36" item="100201,3" />
+	<BpReward id="442" leaveDaysRange="0,90" levelRange="181,200" point="3200" level="37" item="1213201,1" />
+	<BpReward id="443" leaveDaysRange="0,90" levelRange="181,200" point="3300" level="38" item="111801,50" />
+	<BpReward id="444" leaveDaysRange="0,90" levelRange="181,200" point="3400" level="39" item="11983501,1" />
+	<BpReward id="445" leaveDaysRange="0,90" levelRange="181,200" point="3500" level="40" item="435401,1" upItem="100016,500" />
+	<BpReward id="446" leaveDaysRange="0,90" levelRange="181,200" point="3600" level="41" item="1210501,1" />
+	<BpReward id="447" leaveDaysRange="0,90" levelRange="181,200" point="3700" level="42" item="1213201,1" />
+	<BpReward id="448" leaveDaysRange="0,90" levelRange="181,200" point="3800" level="43" item="111801,50" />
+	<BpReward id="449" leaveDaysRange="0,90" levelRange="181,200" point="3900" level="44" item="11983501,1" />
+	<BpReward id="450" leaveDaysRange="0,90" levelRange="181,200" point="4000" level="45" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="451" leaveDaysRange="0,90" levelRange="181,200" point="4100" level="46" item="941501,1" />
+	<BpReward id="452" leaveDaysRange="0,90" levelRange="181,200" point="4200" level="47" item="1213201,1" />
+	<BpReward id="453" leaveDaysRange="0,90" levelRange="181,200" point="4300" level="48" item="111801,50" />
+	<BpReward id="454" leaveDaysRange="0,90" levelRange="181,200" point="4400" level="49" item="11983501,1" />
+	<BpReward id="455" leaveDaysRange="0,90" levelRange="181,200" point="4500" level="50" item="100016,1500" upItem="100016,2000" />
+	<BpReward id="456" leaveDaysRange="0,90" levelRange="181,200" point="4600" level="51" item="100301,3" />
+	<BpReward id="457" leaveDaysRange="0,90" levelRange="181,200" point="4700" level="52" item="1213201,1" />
+	<BpReward id="458" leaveDaysRange="0,90" levelRange="181,200" point="4800" level="53" item="111801,50" />
+	<BpReward id="459" leaveDaysRange="0,90" levelRange="181,200" point="4900" level="54" item="11983501,1" />
+	<BpReward id="460" leaveDaysRange="0,90" levelRange="181,200" point="5000" level="55" item="8100201,1" upItem="100016,100" />
+	<BpReward id="461" leaveDaysRange="0,90" levelRange="181,200" point="5100" level="56" item="100401,3" />
+	<BpReward id="462" leaveDaysRange="0,90" levelRange="181,200" point="5200" level="57" item="1213201,1" />
+	<BpReward id="463" leaveDaysRange="0,90" levelRange="181,200" point="5300" level="58" item="111801,50" />
+	<BpReward id="464" leaveDaysRange="0,90" levelRange="181,200" point="5400" level="59" item="11983501,1" />
+	<BpReward id="465" leaveDaysRange="0,90" levelRange="181,200" point="5500" level="60" item="435401,3" upItem="100016,100" />
+	<BpReward id="466" leaveDaysRange="0,90" levelRange="181,200" point="5600" level="61" item="100201,3" />
+	<BpReward id="467" leaveDaysRange="0,90" levelRange="181,200" point="5700" level="62" item="1213301,1" />
+	<BpReward id="468" leaveDaysRange="0,90" levelRange="181,200" point="5800" level="63" item="111801,50" />
+	<BpReward id="469" leaveDaysRange="0,90" levelRange="181,200" point="5900" level="64" item="11983501,1" />
+	<BpReward id="470" leaveDaysRange="0,90" levelRange="181,200" point="6000" level="65" item="100016,2000" upItem="100016,100" />
+	<BpReward id="471" leaveDaysRange="0,90" levelRange="181,200" point="6100" level="66" item="1142901,1" />
+	<BpReward id="472" leaveDaysRange="0,90" levelRange="181,200" point="6200" level="67" item="1213201,1" />
+	<BpReward id="473" leaveDaysRange="0,90" levelRange="181,200" point="6300" level="68" item="111801,50" />
+	<BpReward id="474" leaveDaysRange="0,90" levelRange="181,200" point="6400" level="69" item="11983501,1" />
+	<BpReward id="475" leaveDaysRange="0,90" levelRange="181,200" point="6500" level="70" item="1213301,1" upItem="100016,100" />
+	<BpReward id="476" leaveDaysRange="0,90" levelRange="181,200" point="6600" level="71" item="941501,1" />
+	<BpReward id="477" leaveDaysRange="0,90" levelRange="181,200" point="6700" level="72" item="1213201,1" />
+	<BpReward id="478" leaveDaysRange="0,90" levelRange="181,200" point="6800" level="73" item="111801,50" />
+	<BpReward id="479" leaveDaysRange="0,90" levelRange="181,200" point="6900" level="74" item="11983501,1" />
+	<BpReward id="480" leaveDaysRange="0,90" levelRange="181,200" point="7000" level="75" item="8100201,3" upItem="100016,100" />
+	<BpReward id="481" leaveDaysRange="0,90" levelRange="181,200" point="7100" level="76" item="1142901,1" />
+	<BpReward id="482" leaveDaysRange="0,90" levelRange="181,200" point="7200" level="77" item="1213201,1" />
+	<BpReward id="483" leaveDaysRange="0,90" levelRange="181,200" point="7300" level="78" item="111801,50" />
+	<BpReward id="484" leaveDaysRange="0,90" levelRange="181,200" point="7400" level="79" item="11983501,1" />
+	<BpReward id="485" leaveDaysRange="0,90" levelRange="181,200" point="7500" level="80" item="100016,2500" upItem="100016,100" />
+	<BpReward id="486" leaveDaysRange="0,90" levelRange="181,200" point="7600" level="81" item="100301,3" />
+	<BpReward id="487" leaveDaysRange="0,90" levelRange="181,200" point="7700" level="82" item="1218501,1" />
+	<BpReward id="488" leaveDaysRange="0,90" levelRange="181,200" point="7800" level="83" item="111801,10" />
+	<BpReward id="489" leaveDaysRange="0,90" levelRange="181,200" point="7900" level="84" item="100011,100" />
+	<BpReward id="490" leaveDaysRange="0,90" levelRange="181,200" point="8000" level="85" item="11983501,1" upItem="100016,100" />
+	<BpReward id="491" leaveDaysRange="0,90" levelRange="181,200" point="8100" level="86" item="100401,3" />
+	<BpReward id="492" leaveDaysRange="0,90" levelRange="181,200" point="8200" level="87" item="1218501,1" />
+	<BpReward id="493" leaveDaysRange="0,90" levelRange="181,200" point="8300" level="88" item="111801,10" />
+	<BpReward id="494" leaveDaysRange="0,90" levelRange="181,200" point="8400" level="89" item="100011,100" />
+	<BpReward id="495" leaveDaysRange="0,90" levelRange="181,200" point="8500" level="90" item="11983501,1" upItem="100016,100" />
+	<BpReward id="496" leaveDaysRange="0,90" levelRange="181,200" point="8600" level="91" item="100201,3" />
+	<BpReward id="497" leaveDaysRange="0,90" levelRange="181,200" point="8700" level="92" item="1218501,1" />
+	<BpReward id="498" leaveDaysRange="0,90" levelRange="181,200" point="8800" level="93" item="111801,10" />
+	<BpReward id="499" leaveDaysRange="0,90" levelRange="181,200" point="8900" level="94" item="100011,100" />
+	<BpReward id="500" leaveDaysRange="0,90" levelRange="181,200" point="9000" level="95" item="11983501,1" upItem="100016,100" />
+	<BpReward id="501" leaveDaysRange="0,90" levelRange="181,200" point="9100" level="96" item="11983601,1" />
+	<BpReward id="502" leaveDaysRange="0,90" levelRange="181,200" point="9200" level="97" item="1218501,1" />
+	<BpReward id="503" leaveDaysRange="0,90" levelRange="181,200" point="9300" level="98" item="111801,10" />
+	<BpReward id="504" leaveDaysRange="0,90" levelRange="181,200" point="9400" level="99" item="100011,100" />
+	<BpReward id="505" leaveDaysRange="0,90" levelRange="181,200" point="9500" level="100" item="11983501,1" upItem="100016,100" />
+	<BpReward id="506" leaveDaysRange="91,9999" levelRange="181,200" point="0" level="0" item="11983401,1" upItem="939001,1;911201,1;912501,1;936501,1;937401,1;916401,1;918901,1;932101,1;932301,1;932501,1;932701,1;970701,1;971401,1;971501,1;971601,1;971701,1;971801,1;921101,1;921201,1;907301,1;912101,1;912201,1;912301,1;912901,1;913901,1;934801,1;912401,1;944101,1;9042801,1;913101,1;932601,1;933201,1;937901,1;937601,1;936801,1;936901,1;917401,1;917701,1;934301,1;936001,1;936201,1;939101,1;939201,1;944901,1;917901,1;918301,1;918001,1;917601,1;917801,1;918101,1;918401,1;930301,1;930401,1;931501,1;933801,1;9040301,1;9043201,1;972001,1;9045901,1;930801,1;931001,1;944401,1;944501,1;933301,1;933401,1;933501,1;934201,1;934001,1;937801,1;9040001,1;944001,1;9040101,1;938301,1;938101,1;938501,1;938601,1;938801,1;939301,1;933601,1;937101,1;937501,1;939401,1;939501,1;937701,1;938001,1;936601,1;938201,1;938401,1;938701,1;938901,1" secType="1" repItem="8100201,5" />
+	<BpReward id="507" leaveDaysRange="91,9999" levelRange="181,200" point="50" level="1" item="8100201,1" />
+	<BpReward id="508" leaveDaysRange="91,9999" levelRange="181,200" point="100" level="2" item="1213201,1" />
+	<BpReward id="509" leaveDaysRange="91,9999" levelRange="181,200" point="150" level="3" item="111801,50" />
+	<BpReward id="510" leaveDaysRange="91,9999" levelRange="181,200" point="200" level="4" item="435401,1" />
+	<BpReward id="511" leaveDaysRange="91,9999" levelRange="181,200" point="250" level="5" item="8100201,3" upItem="100016,1288" />
+	<BpReward id="512" leaveDaysRange="91,9999" levelRange="181,200" point="300" level="6" item="11983601,1" />
+	<BpReward id="513" leaveDaysRange="91,9999" levelRange="181,200" point="350" level="7" item="1213201,1" />
+	<BpReward id="514" leaveDaysRange="91,9999" levelRange="181,200" point="400" level="8" item="111801,50" />
+	<BpReward id="515" leaveDaysRange="91,9999" levelRange="181,200" point="450" level="9" item="11983501,1" />
+	<BpReward id="516" leaveDaysRange="91,9999" levelRange="181,200" point="500" level="10" item="8100201,1" upItem="100016,500" />
+	<BpReward id="517" leaveDaysRange="91,9999" levelRange="181,200" point="600" level="11" item="100301,3" />
+	<BpReward id="518" leaveDaysRange="91,9999" levelRange="181,200" point="700" level="12" item="1213201,1" />
+	<BpReward id="519" leaveDaysRange="91,9999" levelRange="181,200" point="800" level="13" item="111801,50" />
+	<BpReward id="520" leaveDaysRange="91,9999" levelRange="181,200" point="900" level="14" item="11983501,1" />
+	<BpReward id="521" leaveDaysRange="91,9999" levelRange="181,200" point="1000" level="15" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="522" leaveDaysRange="91,9999" levelRange="181,200" point="1100" level="16" item="100401,3" />
+	<BpReward id="523" leaveDaysRange="91,9999" levelRange="181,200" point="1200" level="17" item="1213201,1" />
+	<BpReward id="524" leaveDaysRange="91,9999" levelRange="181,200" point="1300" level="18" item="111801,50" />
+	<BpReward id="525" leaveDaysRange="91,9999" levelRange="181,200" point="1400" level="19" item="11983501,1" />
+	<BpReward id="526" leaveDaysRange="91,9999" levelRange="181,200" point="1500" level="20" item="435401,1" upItem="100016,500" />
+	<BpReward id="527" leaveDaysRange="91,9999" levelRange="181,200" point="1600" level="21" item="100201,3" />
+	<BpReward id="528" leaveDaysRange="91,9999" levelRange="181,200" point="1700" level="22" item="1213201,1" />
+	<BpReward id="529" leaveDaysRange="91,9999" levelRange="181,200" point="1800" level="23" item="111801,50" />
+	<BpReward id="530" leaveDaysRange="91,9999" levelRange="181,200" point="1900" level="24" item="11983501,1" />
+	<BpReward id="531" leaveDaysRange="91,9999" levelRange="181,200" point="2000" level="25" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="532" leaveDaysRange="91,9999" levelRange="181,200" point="2100" level="26" item="100301,3" />
+	<BpReward id="533" leaveDaysRange="91,9999" levelRange="181,200" point="2200" level="27" item="1213201,1" />
+	<BpReward id="534" leaveDaysRange="91,9999" levelRange="181,200" point="2300" level="28" item="111801,50" />
+	<BpReward id="535" leaveDaysRange="91,9999" levelRange="181,200" point="2400" level="29" item="11983501,1" />
+	<BpReward id="536" leaveDaysRange="91,9999" levelRange="181,200" point="2500" level="30" item="435401,1" upItem="100016,500" />
+	<BpReward id="537" leaveDaysRange="91,9999" levelRange="181,200" point="2600" level="31" item="100401,3" />
+	<BpReward id="538" leaveDaysRange="91,9999" levelRange="181,200" point="2700" level="32" item="1213201,1" />
+	<BpReward id="539" leaveDaysRange="91,9999" levelRange="181,200" point="2800" level="33" item="111801,50" />
+	<BpReward id="540" leaveDaysRange="91,9999" levelRange="181,200" point="2900" level="34" item="11983501,1" />
+	<BpReward id="541" leaveDaysRange="91,9999" levelRange="181,200" point="3000" level="35" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="542" leaveDaysRange="91,9999" levelRange="181,200" point="3100" level="36" item="100201,3" />
+	<BpReward id="543" leaveDaysRange="91,9999" levelRange="181,200" point="3200" level="37" item="1213201,1" />
+	<BpReward id="544" leaveDaysRange="91,9999" levelRange="181,200" point="3300" level="38" item="111801,50" />
+	<BpReward id="545" leaveDaysRange="91,9999" levelRange="181,200" point="3400" level="39" item="11983501,1" />
+	<BpReward id="546" leaveDaysRange="91,9999" levelRange="181,200" point="3500" level="40" item="435401,1" upItem="100016,500" />
+	<BpReward id="547" leaveDaysRange="91,9999" levelRange="181,200" point="3600" level="41" item="1210501,1" />
+	<BpReward id="548" leaveDaysRange="91,9999" levelRange="181,200" point="3700" level="42" item="1213201,1" />
+	<BpReward id="549" leaveDaysRange="91,9999" levelRange="181,200" point="3800" level="43" item="111801,50" />
+	<BpReward id="550" leaveDaysRange="91,9999" levelRange="181,200" point="3900" level="44" item="11983501,1" />
+	<BpReward id="551" leaveDaysRange="91,9999" levelRange="181,200" point="4000" level="45" item="8100201,1" upItem="8100201,1" />
+	<BpReward id="552" leaveDaysRange="91,9999" levelRange="181,200" point="4100" level="46" item="941501,1" />
+	<BpReward id="553" leaveDaysRange="91,9999" levelRange="181,200" point="4200" level="47" item="1213201,1" />
+	<BpReward id="554" leaveDaysRange="91,9999" levelRange="181,200" point="4300" level="48" item="111801,50" />
+	<BpReward id="555" leaveDaysRange="91,9999" levelRange="181,200" point="4400" level="49" item="11983501,1" />
+	<BpReward id="556" leaveDaysRange="91,9999" levelRange="181,200" point="4500" level="50" item="100016,1500" upItem="100016,2000" />
+	<BpReward id="557" leaveDaysRange="91,9999" levelRange="181,200" point="4600" level="51" item="100301,3" />
+	<BpReward id="558" leaveDaysRange="91,9999" levelRange="181,200" point="4700" level="52" item="1213201,1" />
+	<BpReward id="559" leaveDaysRange="91,9999" levelRange="181,200" point="4800" level="53" item="111801,50" />
+	<BpReward id="560" leaveDaysRange="91,9999" levelRange="181,200" point="4900" level="54" item="11983501,1" />
+	<BpReward id="561" leaveDaysRange="91,9999" levelRange="181,200" point="5000" level="55" item="8100201,1" upItem="100016,100" />
+	<BpReward id="562" leaveDaysRange="91,9999" levelRange="181,200" point="5100" level="56" item="100401,3" />
+	<BpReward id="563" leaveDaysRange="91,9999" levelRange="181,200" point="5200" level="57" item="1213201,1" />
+	<BpReward id="564" leaveDaysRange="91,9999" levelRange="181,200" point="5300" level="58" item="111801,50" />
+	<BpReward id="565" leaveDaysRange="91,9999" levelRange="181,200" point="5400" level="59" item="11983501,1" />
+	<BpReward id="566" leaveDaysRange="91,9999" levelRange="181,200" point="5500" level="60" item="435401,3" upItem="100016,100" />
+	<BpReward id="567" leaveDaysRange="91,9999" levelRange="181,200" point="5600" level="61" item="100201,3" />
+	<BpReward id="568" leaveDaysRange="91,9999" levelRange="181,200" point="5700" level="62" item="1213301,1" />
+	<BpReward id="569" leaveDaysRange="91,9999" levelRange="181,200" point="5800" level="63" item="111801,50" />
+	<BpReward id="570" leaveDaysRange="91,9999" levelRange="181,200" point="5900" level="64" item="11983501,1" />
+	<BpReward id="571" leaveDaysRange="91,9999" levelRange="181,200" point="6000" level="65" item="100016,2000" upItem="100016,100" />
+	<BpReward id="572" leaveDaysRange="91,9999" levelRange="181,200" point="6100" level="66" item="1142901,1" />
+	<BpReward id="573" leaveDaysRange="91,9999" levelRange="181,200" point="6200" level="67" item="1213201,1" />
+	<BpReward id="574" leaveDaysRange="91,9999" levelRange="181,200" point="6300" level="68" item="111801,50" />
+	<BpReward id="575" leaveDaysRange="91,9999" levelRange="181,200" point="6400" level="69" item="11983501,1" />
+	<BpReward id="576" leaveDaysRange="91,9999" levelRange="181,200" point="6500" level="70" item="1213301,1" upItem="100016,100" />
+	<BpReward id="577" leaveDaysRange="91,9999" levelRange="181,200" point="6600" level="71" item="941501,1" />
+	<BpReward id="578" leaveDaysRange="91,9999" levelRange="181,200" point="6700" level="72" item="1213201,1" />
+	<BpReward id="579" leaveDaysRange="91,9999" levelRange="181,200" point="6800" level="73" item="111801,50" />
+	<BpReward id="580" leaveDaysRange="91,9999" levelRange="181,200" point="6900" level="74" item="11983501,1" />
+	<BpReward id="581" leaveDaysRange="91,9999" levelRange="181,200" point="7000" level="75" item="8100201,3" upItem="100016,100" />
+	<BpReward id="582" leaveDaysRange="91,9999" levelRange="181,200" point="7100" level="76" item="1142901,1" />
+	<BpReward id="583" leaveDaysRange="91,9999" levelRange="181,200" point="7200" level="77" item="1213201,1" />
+	<BpReward id="584" leaveDaysRange="91,9999" levelRange="181,200" point="7300" level="78" item="111801,50" />
+	<BpReward id="585" leaveDaysRange="91,9999" levelRange="181,200" point="7400" level="79" item="11983501,1" />
+	<BpReward id="586" leaveDaysRange="91,9999" levelRange="181,200" point="7500" level="80" item="100016,2500" upItem="100016,100" />
+	<BpReward id="587" leaveDaysRange="91,9999" levelRange="181,200" point="7600" level="81" item="100301,3" />
+	<BpReward id="588" leaveDaysRange="91,9999" levelRange="181,200" point="7700" level="82" item="1218501,1" />
+	<BpReward id="589" leaveDaysRange="91,9999" levelRange="181,200" point="7800" level="83" item="111801,10" />
+	<BpReward id="590" leaveDaysRange="91,9999" levelRange="181,200" point="7900" level="84" item="100011,100" />
+	<BpReward id="591" leaveDaysRange="91,9999" levelRange="181,200" point="8000" level="85" item="11983501,1" upItem="100016,100" />
+	<BpReward id="592" leaveDaysRange="91,9999" levelRange="181,200" point="8100" level="86" item="100401,3" />
+	<BpReward id="593" leaveDaysRange="91,9999" levelRange="181,200" point="8200" level="87" item="1218501,1" />
+	<BpReward id="594" leaveDaysRange="91,9999" levelRange="181,200" point="8300" level="88" item="111801,10" />
+	<BpReward id="595" leaveDaysRange="91,9999" levelRange="181,200" point="8400" level="89" item="100011,100" />
+	<BpReward id="596" leaveDaysRange="91,9999" levelRange="181,200" point="8500" level="90" item="11983501,1" upItem="100016,100" />
+	<BpReward id="597" leaveDaysRange="91,9999" levelRange="181,200" point="8600" level="91" item="100201,3" />
+	<BpReward id="598" leaveDaysRange="91,9999" levelRange="181,200" point="8700" level="92" item="1218501,1" />
+	<BpReward id="599" leaveDaysRange="91,9999" levelRange="181,200" point="8800" level="93" item="111801,10" />
+	<BpReward id="600" leaveDaysRange="91,9999" levelRange="181,200" point="8900" level="94" item="100011,100" />
+	<BpReward id="601" leaveDaysRange="91,9999" levelRange="181,200" point="9000" level="95" item="11983501,1" upItem="100016,100" />
+	<BpReward id="602" leaveDaysRange="91,9999" levelRange="181,200" point="9100" level="96" item="11983601,1" />
+	<BpReward id="603" leaveDaysRange="91,9999" levelRange="181,200" point="9200" level="97" item="1218501,1" />
+	<BpReward id="604" leaveDaysRange="91,9999" levelRange="181,200" point="9300" level="98" item="111801,10" />
+	<BpReward id="605" leaveDaysRange="91,9999" levelRange="181,200" point="9400" level="99" item="100011,100" />
+	<BpReward id="606" leaveDaysRange="91,9999" levelRange="181,200" point="9500" level="100" item="11983501,1" upItem="100016,100" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			leaveDaysRange	-	天数范围
+			levelRange	-	等级限制
+			type	-	任务类型
+			tag	-	角标
+1=每日
+2=推荐
+			taskid	-	任务ID
+		-->
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="1" tag="1" taskid="70801" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="2" tag="1" taskid="70802" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="3" tag="1" taskid="70803" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="4" tag="1" taskid="70804" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="5" tag="1" taskid="70805" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="5" tag="1" taskid="70806" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="5" tag="1" taskid="70807" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="5" tag="1" taskid="70808" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="5" tag="1" taskid="70809" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="5" tag="1" taskid="70810" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="5" tag="1" taskid="70811" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="5" tag="1" taskid="70812" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="5" tag="1" taskid="70813" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="6" tag="1" taskid="70814" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="6" tag="1" taskid="70815" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="6" tag="1" taskid="70816" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="6" tag="1" taskid="70817" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="6" tag="1" taskid="70818" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="7" tag="1" taskid="70819" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="7" tag="1" taskid="70820" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="7" tag="1" taskid="70821" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="7" tag="1" taskid="70822" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="7" tag="1" taskid="70823" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="8" tag="1" taskid="70824" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="9" tag="1" taskid="70825" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="10" tag="2" taskid="70826" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="11" tag="2" taskid="70827" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="12" tag="2" taskid="70828" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="13" tag="2" taskid="70829" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="14" tag="2" taskid="70830" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="15" tag="2" taskid="70831" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="16" tag="2" taskid="70832" />
+	<BpTask leaveDaysRange="0,90" levelRange="60,120" type="17" tag="2" taskid="70833" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="1" tag="1" taskid="70801" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="2" tag="1" taskid="70802" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="3" tag="1" taskid="70803" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="4" tag="1" taskid="70804" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="5" tag="1" taskid="70805" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="5" tag="1" taskid="70806" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="5" tag="1" taskid="70807" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="5" tag="1" taskid="70808" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="5" tag="1" taskid="70809" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="5" tag="1" taskid="70810" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="5" tag="1" taskid="70811" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="5" tag="1" taskid="70812" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="5" tag="1" taskid="70813" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="6" tag="1" taskid="70814" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="6" tag="1" taskid="70815" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="6" tag="1" taskid="70816" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="6" tag="1" taskid="70817" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="6" tag="1" taskid="70818" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="7" tag="1" taskid="70819" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="7" tag="1" taskid="70820" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="7" tag="1" taskid="70821" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="7" tag="1" taskid="70822" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="7" tag="1" taskid="70823" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="8" tag="1" taskid="70824" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="9" tag="1" taskid="70825" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="10" tag="2" taskid="70826" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="11" tag="2" taskid="70827" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="12" tag="2" taskid="70828" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="13" tag="2" taskid="70829" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="14" tag="2" taskid="70830" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="15" tag="2" taskid="70831" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="16" tag="2" taskid="70832" />
+	<BpTask leaveDaysRange="91,9999" levelRange="60,120" type="17" tag="2" taskid="70833" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="1" tag="1" taskid="70801" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="2" tag="1" taskid="70802" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="3" tag="1" taskid="70803" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="4" tag="1" taskid="70804" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="5" tag="1" taskid="70805" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="5" tag="1" taskid="70806" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="5" tag="1" taskid="70807" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="5" tag="1" taskid="70808" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="5" tag="1" taskid="70809" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="5" tag="1" taskid="70810" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="5" tag="1" taskid="70811" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="5" tag="1" taskid="70812" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="5" tag="1" taskid="70813" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="6" tag="1" taskid="70814" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="6" tag="1" taskid="70815" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="6" tag="1" taskid="70816" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="6" tag="1" taskid="70817" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="6" tag="1" taskid="70818" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="7" tag="1" taskid="70819" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="7" tag="1" taskid="70820" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="7" tag="1" taskid="70821" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="7" tag="1" taskid="70822" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="7" tag="1" taskid="70823" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="8" tag="1" taskid="70824" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="9" tag="1" taskid="70825" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="10" tag="2" taskid="70826" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="11" tag="2" taskid="70834" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="12" tag="2" taskid="70835" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="13" tag="2" taskid="70836" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="14" tag="2" taskid="70837" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="15" tag="2" taskid="70838" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="16" tag="2" taskid="70839" />
+	<BpTask leaveDaysRange="0,90" levelRange="121,180" type="17" tag="2" taskid="70840" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="1" tag="1" taskid="70801" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="2" tag="1" taskid="70802" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="3" tag="1" taskid="70803" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="4" tag="1" taskid="70804" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="5" tag="1" taskid="70805" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="5" tag="1" taskid="70806" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="5" tag="1" taskid="70807" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="5" tag="1" taskid="70808" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="5" tag="1" taskid="70809" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="5" tag="1" taskid="70810" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="5" tag="1" taskid="70811" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="5" tag="1" taskid="70812" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="5" tag="1" taskid="70813" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="6" tag="1" taskid="70814" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="6" tag="1" taskid="70815" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="6" tag="1" taskid="70816" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="6" tag="1" taskid="70817" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="6" tag="1" taskid="70818" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="7" tag="1" taskid="70819" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="7" tag="1" taskid="70820" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="7" tag="1" taskid="70821" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="7" tag="1" taskid="70822" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="7" tag="1" taskid="70823" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="8" tag="1" taskid="70824" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="9" tag="1" taskid="70825" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="10" tag="2" taskid="70826" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="11" tag="2" taskid="70834" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="12" tag="2" taskid="70835" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="13" tag="2" taskid="70836" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="14" tag="2" taskid="70837" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="15" tag="2" taskid="70838" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="16" tag="2" taskid="70839" />
+	<BpTask leaveDaysRange="91,9999" levelRange="121,180" type="17" tag="2" taskid="70840" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="1" tag="1" taskid="70801" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="2" tag="1" taskid="70802" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="3" tag="1" taskid="70803" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="4" tag="1" taskid="70804" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="5" tag="1" taskid="70805" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="5" tag="1" taskid="70806" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="5" tag="1" taskid="70807" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="5" tag="1" taskid="70808" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="5" tag="1" taskid="70809" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="5" tag="1" taskid="70810" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="5" tag="1" taskid="70811" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="5" tag="1" taskid="70812" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="5" tag="1" taskid="70813" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="6" tag="1" taskid="70814" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="6" tag="1" taskid="70815" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="6" tag="1" taskid="70816" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="6" tag="1" taskid="70817" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="6" tag="1" taskid="70818" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="7" tag="1" taskid="70819" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="7" tag="1" taskid="70820" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="7" tag="1" taskid="70821" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="7" tag="1" taskid="70822" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="7" tag="1" taskid="70823" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="8" tag="1" taskid="70824" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="9" tag="1" taskid="70825" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="10" tag="2" taskid="70826" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="11" tag="2" taskid="70841" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="12" tag="2" taskid="70842" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="13" tag="2" taskid="70843" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="14" tag="2" taskid="70844" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="15" tag="2" taskid="70845" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="16" tag="2" taskid="70846" />
+	<BpTask leaveDaysRange="0,90" levelRange="181,200" type="17" tag="2" taskid="70847" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="1" tag="1" taskid="70801" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="2" tag="1" taskid="70802" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="3" tag="1" taskid="70803" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="4" tag="1" taskid="70804" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="5" tag="1" taskid="70805" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="5" tag="1" taskid="70806" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="5" tag="1" taskid="70807" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="5" tag="1" taskid="70808" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="5" tag="1" taskid="70809" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="5" tag="1" taskid="70810" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="5" tag="1" taskid="70811" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="5" tag="1" taskid="70812" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="5" tag="1" taskid="70813" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="6" tag="1" taskid="70814" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="6" tag="1" taskid="70815" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="6" tag="1" taskid="70816" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="6" tag="1" taskid="70817" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="6" tag="1" taskid="70818" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="7" tag="1" taskid="70819" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="7" tag="1" taskid="70820" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="7" tag="1" taskid="70821" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="7" tag="1" taskid="70822" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="7" tag="1" taskid="70823" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="8" tag="1" taskid="70824" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="9" tag="1" taskid="70825" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="10" tag="2" taskid="70826" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="11" tag="2" taskid="70841" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="12" tag="2" taskid="70842" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="13" tag="2" taskid="70843" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="14" tag="2" taskid="70844" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="15" tag="2" taskid="70845" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="16" tag="2" taskid="70846" />
+	<BpTask leaveDaysRange="91,9999" levelRange="181,200" type="17" tag="2" taskid="70847" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	id
+			leaveDaysRange	-	天数范围
+			levelRange	-	等级限制
+			days	-	登录天数
+			item	-	奖励道具
+			import	-	是否重点奖励
+			secType	-	自选类型
+1=自选武将 2=自选皮肤
+			repItem	-	自选武将替换道具
+				-
+		-->
+	<LoginReward id="1" leaveDaysRange="0,90" levelRange="60,120" days="1" item="100011,300" />
+	<LoginReward id="2" leaveDaysRange="0,90" levelRange="60,120" days="2" item="100002,100" />
+	<LoginReward id="3" leaveDaysRange="0,90" levelRange="60,120" days="3" item="11444201,1" />
+	<LoginReward id="4" leaveDaysRange="0,90" levelRange="60,120" days="4" item="8100201,5" />
+	<LoginReward id="5" leaveDaysRange="0,90" levelRange="60,120" days="5" item="100301,5" />
+	<LoginReward id="6" leaveDaysRange="0,90" levelRange="60,120" days="6" item="941501,1" />
+	<LoginReward id="7" leaveDaysRange="0,90" levelRange="60,120" days="7" item="8100201,1" />
+	<LoginReward id="8" leaveDaysRange="0,90" levelRange="60,120" days="8" item="903601,1;903801,1;904101,1;904701,1;915901,1;903501,1;903701,1;904201,1;904301,1;904401,1;904601,1;915801,1;936401,1;937001,1;921401,1;921501,1;904801,1;904901,1;915701,1;970501,1;929901,1;936101,1;910901,1;930101,1;931901,1;910501,1;910701,1;970101,1;970201,1;970401,1;915201,1;904501,1;931401,1;936301,1;915501,1;931101,1;911601,1;912801,1;905101,1;970601,1;911101,1;910801,1;911001,1;913601,1;905301,1;905201,1;915101,1;916801,1;917301,1;917501,1;910001,1;933901,1;970801,1;971301,1;917201,1;932401,1;916201,1;916901,1;930501,1;916301,1;916501,1;931601,1;932001,1;934101,1;918201,1;944601,1;970301,1;910601,1;905001,1;911401,1;915301,1;916601,1;917001,1;916101,1;930001,1;930201,1;930601,1;911501,1;933701,1;930701,1;930901,1;931201,1;931301,1;931701,1;931801,1;932801,1;933001,1;933101,1;932901,1;932201,1;905401,1;905501,1;905701,1;907201,1" secType="1" repItem="8100201,3" />
+	<LoginReward id="9" leaveDaysRange="91,9999" levelRange="60,120" days="1" item="100011,300" />
+	<LoginReward id="10" leaveDaysRange="91,9999" levelRange="60,120" days="2" item="100002,100" />
+	<LoginReward id="11" leaveDaysRange="91,9999" levelRange="60,120" days="3" item="11444201,1" />
+	<LoginReward id="12" leaveDaysRange="91,9999" levelRange="60,120" days="4" item="8100201,5" />
+	<LoginReward id="13" leaveDaysRange="91,9999" levelRange="60,120" days="5" item="100301,5" />
+	<LoginReward id="14" leaveDaysRange="91,9999" levelRange="60,120" days="6" item="941501,1" />
+	<LoginReward id="15" leaveDaysRange="91,9999" levelRange="60,120" days="7" item="8100201,1" />
+	<LoginReward id="16" leaveDaysRange="91,9999" levelRange="60,120" days="8" item="903601,1;903801,1;904101,1;904701,1;915901,1;903501,1;903701,1;904201,1;904301,1;904401,1;904601,1;915801,1;936401,1;937001,1;921401,1;921501,1;904801,1;904901,1;915701,1;970501,1;929901,1;936101,1;910901,1;930101,1;931901,1;910501,1;910701,1;970101,1;970201,1;970401,1;915201,1;904501,1;931401,1;936301,1;915501,1;931101,1;911601,1;912801,1;905101,1;970601,1;911101,1;910801,1;911001,1;913601,1;905301,1;905201,1;915101,1;916801,1;917301,1;917501,1;910001,1;933901,1;970801,1;971301,1;917201,1;932401,1;916201,1;916901,1;930501,1;916301,1;916501,1;931601,1;932001,1;934101,1;918201,1;944601,1;970301,1;910601,1;905001,1;911401,1;915301,1;916601,1;917001,1;916101,1;930001,1;930201,1;930601,1;911501,1;933701,1;930701,1;930901,1;931201,1;931301,1;931701,1;931801,1;932801,1;933001,1;933101,1;932901,1;932201,1;905401,1;905501,1;905701,1;907201,1" secType="1" repItem="8100201,3" />
+	<LoginReward id="17" leaveDaysRange="0,90" levelRange="121,180" days="1" item="111801,50" />
+	<LoginReward id="18" leaveDaysRange="0,90" levelRange="121,180" days="2" item="11983601,1" />
+	<LoginReward id="19" leaveDaysRange="0,90" levelRange="121,180" days="3" item="435401,1" />
+	<LoginReward id="20" leaveDaysRange="0,90" levelRange="121,180" days="4" item="8100201,5" />
+	<LoginReward id="21" leaveDaysRange="0,90" levelRange="121,180" days="5" item="1213201,1" />
+	<LoginReward id="22" leaveDaysRange="0,90" levelRange="121,180" days="6" item="941501,1" />
+	<LoginReward id="23" leaveDaysRange="0,90" levelRange="121,180" days="7" item="8100201,1" />
+	<LoginReward id="24" leaveDaysRange="0,90" levelRange="121,180" days="8" item="903601,1;903801,1;904101,1;904701,1;915901,1;903501,1;903701,1;904201,1;904301,1;904401,1;904601,1;915801,1;936401,1;937001,1;921401,1;921501,1;904801,1;904901,1;915701,1;970501,1;929901,1;936101,1;910901,1;930101,1;931901,1;910501,1;910701,1;970101,1;970201,1;970401,1;915201,1;904501,1;931401,1;936301,1;915501,1;931101,1;911601,1;912801,1;905101,1;970601,1;911101,1;910801,1;911001,1;913601,1;905301,1;905201,1;915101,1;916801,1;917301,1;917501,1;910001,1;933901,1;970801,1;971301,1;917201,1;932401,1;916201,1;916901,1;930501,1;916301,1;916501,1;931601,1;932001,1;934101,1;918201,1;944601,1;970301,1;910601,1;905001,1;911401,1;915301,1;916601,1;917001,1;916101,1;930001,1;930201,1;930601,1;911501,1;933701,1;930701,1;930901,1;931201,1;931301,1;931701,1;931801,1;932801,1;933001,1;933101,1;932901,1;932201,1;905401,1;905501,1;905701,1;907201,1" secType="1" repItem="8100201,3" />
+	<LoginReward id="25" leaveDaysRange="91,9999" levelRange="121,180" days="1" item="111801,50" />
+	<LoginReward id="26" leaveDaysRange="91,9999" levelRange="121,180" days="2" item="11983601,1" />
+	<LoginReward id="27" leaveDaysRange="91,9999" levelRange="121,180" days="3" item="435401,1" />
+	<LoginReward id="28" leaveDaysRange="91,9999" levelRange="121,180" days="4" item="8100201,5" />
+	<LoginReward id="29" leaveDaysRange="91,9999" levelRange="121,180" days="5" item="1213201,1" />
+	<LoginReward id="30" leaveDaysRange="91,9999" levelRange="121,180" days="6" item="941501,1" />
+	<LoginReward id="31" leaveDaysRange="91,9999" levelRange="121,180" days="7" item="8100201,1" />
+	<LoginReward id="32" leaveDaysRange="91,9999" levelRange="121,180" days="8" item="903601,1;903801,1;904101,1;904701,1;915901,1;903501,1;903701,1;904201,1;904301,1;904401,1;904601,1;915801,1;936401,1;937001,1;921401,1;921501,1;904801,1;904901,1;915701,1;970501,1;929901,1;936101,1;910901,1;930101,1;931901,1;910501,1;910701,1;970101,1;970201,1;970401,1;915201,1;904501,1;931401,1;936301,1;915501,1;931101,1;911601,1;912801,1;905101,1;970601,1;911101,1;910801,1;911001,1;913601,1;905301,1;905201,1;915101,1;916801,1;917301,1;917501,1;910001,1;933901,1;970801,1;971301,1;917201,1;932401,1;916201,1;916901,1;930501,1;916301,1;916501,1;931601,1;932001,1;934101,1;918201,1;944601,1;970301,1;910601,1;905001,1;911401,1;915301,1;916601,1;917001,1;916101,1;930001,1;930201,1;930601,1;911501,1;933701,1;930701,1;930901,1;931201,1;931301,1;931701,1;931801,1;932801,1;933001,1;933101,1;932901,1;932201,1;905401,1;905501,1;905701,1;907201,1" secType="1" repItem="8100201,3" />
+	<LoginReward id="33" leaveDaysRange="0,90" levelRange="181,200" days="1" item="1142901,1" />
+	<LoginReward id="34" leaveDaysRange="0,90" levelRange="181,200" days="2" item="11983601,1" />
+	<LoginReward id="35" leaveDaysRange="0,90" levelRange="181,200" days="3" item="435401,1" />
+	<LoginReward id="36" leaveDaysRange="0,90" levelRange="181,200" days="4" item="8100201,5" />
+	<LoginReward id="37" leaveDaysRange="0,90" levelRange="181,200" days="5" item="1213201,1" />
+	<LoginReward id="38" leaveDaysRange="0,90" levelRange="181,200" days="6" item="941501,1" />
+	<LoginReward id="39" leaveDaysRange="0,90" levelRange="181,200" days="7" item="8100201,1" />
+	<LoginReward id="40" leaveDaysRange="0,90" levelRange="181,200" days="8" item="903601,1;903801,1;904101,1;904701,1;915901,1;903501,1;903701,1;904201,1;904301,1;904401,1;904601,1;915801,1;936401,1;937001,1;921401,1;921501,1;904801,1;904901,1;915701,1;970501,1;929901,1;936101,1;910901,1;930101,1;931901,1;910501,1;910701,1;970101,1;970201,1;970401,1;915201,1;904501,1;931401,1;936301,1;915501,1;931101,1;911601,1;912801,1;905101,1;970601,1;911101,1;910801,1;911001,1;913601,1;905301,1;905201,1;915101,1;916801,1;917301,1;917501,1;910001,1;933901,1;970801,1;971301,1;917201,1;932401,1;916201,1;916901,1;930501,1;916301,1;916501,1;931601,1;932001,1;934101,1;918201,1;944601,1;970301,1;910601,1;905001,1;911401,1;915301,1;916601,1;917001,1;916101,1;930001,1;930201,1;930601,1;911501,1;933701,1;930701,1;930901,1;931201,1;931301,1;931701,1;931801,1;932801,1;933001,1;933101,1;932901,1;932201,1;905401,1;905501,1;905701,1;907201,1" secType="1" repItem="8100201,3" />
+	<LoginReward id="41" leaveDaysRange="91,9999" levelRange="181,200" days="1" item="1142901,1" />
+	<LoginReward id="42" leaveDaysRange="91,9999" levelRange="181,200" days="2" item="11983601,1" />
+	<LoginReward id="43" leaveDaysRange="91,9999" levelRange="181,200" days="3" item="435401,1" />
+	<LoginReward id="44" leaveDaysRange="91,9999" levelRange="181,200" days="4" item="8100201,5" />
+	<LoginReward id="45" leaveDaysRange="91,9999" levelRange="181,200" days="5" item="1213201,1" />
+	<LoginReward id="46" leaveDaysRange="91,9999" levelRange="181,200" days="6" item="941501,1" />
+	<LoginReward id="47" leaveDaysRange="91,9999" levelRange="181,200" days="7" item="8100201,1" />
+	<LoginReward id="48" leaveDaysRange="91,9999" levelRange="181,200" days="8" item="903601,1;903801,1;904101,1;904701,1;915901,1;903501,1;903701,1;904201,1;904301,1;904401,1;904601,1;915801,1;936401,1;937001,1;921401,1;921501,1;904801,1;904901,1;915701,1;970501,1;929901,1;936101,1;910901,1;930101,1;931901,1;910501,1;910701,1;970101,1;970201,1;970401,1;915201,1;904501,1;931401,1;936301,1;915501,1;931101,1;911601,1;912801,1;905101,1;970601,1;911101,1;910801,1;911001,1;913601,1;905301,1;905201,1;915101,1;916801,1;917301,1;917501,1;910001,1;933901,1;970801,1;971301,1;917201,1;932401,1;916201,1;916901,1;930501,1;916301,1;916501,1;931601,1;932001,1;934101,1;918201,1;944601,1;970301,1;910601,1;905001,1;911401,1;915301,1;916601,1;917001,1;916101,1;930001,1;930201,1;930601,1;911501,1;933701,1;930701,1;930901,1;931201,1;931301,1;931701,1;931801,1;932801,1;933001,1;933101,1;932901,1;932201,1;905401,1;905501,1;905701,1;907201,1" secType="1" repItem="8100201,3" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	id
+			leaveDaysRange	-	天数范围
+			levelRange	-	等级限制
+			days	-	登录天数
+			item	-	奖励道具
+			import	-	是否重点奖励
+			secType	-	自选类型
+1=自选武将 2=自选皮肤
+			repItem	-	自选武将替换道具
+				-
+		-->
+	<NEWLoginReward id="1" leaveDaysRange="0,90" levelRange="60,120" days="1" item="100011,300" />
+	<NEWLoginReward id="2" leaveDaysRange="0,90" levelRange="60,120" days="2" item="8100201,5" />
+	<NEWLoginReward id="3" leaveDaysRange="0,90" levelRange="60,120" days="3" item="11444201,1" />
+	<NEWLoginReward id="4" leaveDaysRange="0,90" levelRange="60,120" days="4" item="100002,100" />
+	<NEWLoginReward id="5" leaveDaysRange="0,90" levelRange="60,120" days="5" item="100301,5" />
+	<NEWLoginReward id="6" leaveDaysRange="0,90" levelRange="60,120" days="6" item="941501,1" />
+	<NEWLoginReward id="7" leaveDaysRange="0,90" levelRange="60,120" days="7" item="8100201,1" />
+	<NEWLoginReward id="8" leaveDaysRange="0,90" levelRange="60,120" days="8" item="903601,1;903801,1;904101,1;904701,1;915901,1;903501,1;903701,1;904201,1;904301,1;904401,1;904601,1;915801,1;936401,1;937001,1;921401,1;921501,1;904801,1;904901,1;915701,1;970501,1;929901,1;936101,1;910901,1;930101,1;931901,1;910501,1;910701,1;970101,1;970201,1;970401,1;915201,1;904501,1;931401,1;936301,1;915501,1;931101,1;911601,1;912801,1;905101,1;970601,1;911101,1;910801,1;911001,1;913601,1;905301,1;905201,1;915101,1;916801,1;917301,1;917501,1;910001,1;933901,1;970801,1;971301,1;917201,1;932401,1;916201,1;916901,1;930501,1;916301,1;916501,1;931601,1;932001,1;934101,1;918201,1;944601,1;970301,1;910601,1;905001,1;911401,1;915301,1;916601,1;917001,1;916101,1;930001,1;930201,1;930601,1;911501,1;933701,1;930701,1;930901,1;931201,1;931301,1;931701,1;931801,1;932801,1;933001,1;933101,1;932901,1;932201,1;905401,1;905501,1;905701,1;907201,1" secType="1" repItem="8100201,3" />
+	<NEWLoginReward id="9" leaveDaysRange="91,9999" levelRange="60,120" days="1" item="100011,300" />
+	<NEWLoginReward id="10" leaveDaysRange="91,9999" levelRange="60,120" days="2" item="8100201,5" />
+	<NEWLoginReward id="11" leaveDaysRange="91,9999" levelRange="60,120" days="3" item="11444201,1" />
+	<NEWLoginReward id="12" leaveDaysRange="91,9999" levelRange="60,120" days="4" item="100002,100" />
+	<NEWLoginReward id="13" leaveDaysRange="91,9999" levelRange="60,120" days="5" item="100301,5" />
+	<NEWLoginReward id="14" leaveDaysRange="91,9999" levelRange="60,120" days="6" item="941501,1" />
+	<NEWLoginReward id="15" leaveDaysRange="91,9999" levelRange="60,120" days="7" item="8100201,1" />
+	<NEWLoginReward id="16" leaveDaysRange="91,9999" levelRange="60,120" days="8" item="903601,1;903801,1;904101,1;904701,1;915901,1;903501,1;903701,1;904201,1;904301,1;904401,1;904601,1;915801,1;936401,1;937001,1;921401,1;921501,1;904801,1;904901,1;915701,1;970501,1;929901,1;936101,1;910901,1;930101,1;931901,1;910501,1;910701,1;970101,1;970201,1;970401,1;915201,1;904501,1;931401,1;936301,1;915501,1;931101,1;911601,1;912801,1;905101,1;970601,1;911101,1;910801,1;911001,1;913601,1;905301,1;905201,1;915101,1;916801,1;917301,1;917501,1;910001,1;933901,1;970801,1;971301,1;917201,1;932401,1;916201,1;916901,1;930501,1;916301,1;916501,1;931601,1;932001,1;934101,1;918201,1;944601,1;970301,1;910601,1;905001,1;911401,1;915301,1;916601,1;917001,1;916101,1;930001,1;930201,1;930601,1;911501,1;933701,1;930701,1;930901,1;931201,1;931301,1;931701,1;931801,1;932801,1;933001,1;933101,1;932901,1;932201,1;905401,1;905501,1;905701,1;907201,1" secType="1" repItem="8100201,3" />
+	<NEWLoginReward id="17" leaveDaysRange="0,90" levelRange="121,180" days="1" item="111801,50" />
+	<NEWLoginReward id="18" leaveDaysRange="0,90" levelRange="121,180" days="2" item="8100201,5" />
+	<NEWLoginReward id="19" leaveDaysRange="0,90" levelRange="121,180" days="3" item="435401,1" />
+	<NEWLoginReward id="20" leaveDaysRange="0,90" levelRange="121,180" days="4" item="11983601,1" />
+	<NEWLoginReward id="21" leaveDaysRange="0,90" levelRange="121,180" days="5" item="1213201,1" />
+	<NEWLoginReward id="22" leaveDaysRange="0,90" levelRange="121,180" days="6" item="941501,1" />
+	<NEWLoginReward id="23" leaveDaysRange="0,90" levelRange="121,180" days="7" item="8100201,1" />
+	<NEWLoginReward id="24" leaveDaysRange="0,90" levelRange="121,180" days="8" item="903601,1;903801,1;904101,1;904701,1;915901,1;903501,1;903701,1;904201,1;904301,1;904401,1;904601,1;915801,1;936401,1;937001,1;921401,1;921501,1;904801,1;904901,1;915701,1;970501,1;929901,1;936101,1;910901,1;930101,1;931901,1;910501,1;910701,1;970101,1;970201,1;970401,1;915201,1;904501,1;931401,1;936301,1;915501,1;931101,1;911601,1;912801,1;905101,1;970601,1;911101,1;910801,1;911001,1;913601,1;905301,1;905201,1;915101,1;916801,1;917301,1;917501,1;910001,1;933901,1;970801,1;971301,1;917201,1;932401,1;916201,1;916901,1;930501,1;916301,1;916501,1;931601,1;932001,1;934101,1;918201,1;944601,1;970301,1;910601,1;905001,1;911401,1;915301,1;916601,1;917001,1;916101,1;930001,1;930201,1;930601,1;911501,1;933701,1;930701,1;930901,1;931201,1;931301,1;931701,1;931801,1;932801,1;933001,1;933101,1;932901,1;932201,1;905401,1;905501,1;905701,1;907201,1" secType="1" repItem="8100201,3" />
+	<NEWLoginReward id="25" leaveDaysRange="91,9999" levelRange="121,180" days="1" item="111801,50" />
+	<NEWLoginReward id="26" leaveDaysRange="91,9999" levelRange="121,180" days="2" item="8100201,5" />
+	<NEWLoginReward id="27" leaveDaysRange="91,9999" levelRange="121,180" days="3" item="435401,1" />
+	<NEWLoginReward id="28" leaveDaysRange="91,9999" levelRange="121,180" days="4" item="11983601,1" />
+	<NEWLoginReward id="29" leaveDaysRange="91,9999" levelRange="121,180" days="5" item="1213201,1" />
+	<NEWLoginReward id="30" leaveDaysRange="91,9999" levelRange="121,180" days="6" item="941501,1" />
+	<NEWLoginReward id="31" leaveDaysRange="91,9999" levelRange="121,180" days="7" item="8100201,1" />
+	<NEWLoginReward id="32" leaveDaysRange="91,9999" levelRange="121,180" days="8" item="903601,1;903801,1;904101,1;904701,1;915901,1;903501,1;903701,1;904201,1;904301,1;904401,1;904601,1;915801,1;936401,1;937001,1;921401,1;921501,1;904801,1;904901,1;915701,1;970501,1;929901,1;936101,1;910901,1;930101,1;931901,1;910501,1;910701,1;970101,1;970201,1;970401,1;915201,1;904501,1;931401,1;936301,1;915501,1;931101,1;911601,1;912801,1;905101,1;970601,1;911101,1;910801,1;911001,1;913601,1;905301,1;905201,1;915101,1;916801,1;917301,1;917501,1;910001,1;933901,1;970801,1;971301,1;917201,1;932401,1;916201,1;916901,1;930501,1;916301,1;916501,1;931601,1;932001,1;934101,1;918201,1;944601,1;970301,1;910601,1;905001,1;911401,1;915301,1;916601,1;917001,1;916101,1;930001,1;930201,1;930601,1;911501,1;933701,1;930701,1;930901,1;931201,1;931301,1;931701,1;931801,1;932801,1;933001,1;933101,1;932901,1;932201,1;905401,1;905501,1;905701,1;907201,1" secType="1" repItem="8100201,3" />
+	<NEWLoginReward id="33" leaveDaysRange="0,90" levelRange="181,200" days="1" item="1142901,1" />
+	<NEWLoginReward id="34" leaveDaysRange="0,90" levelRange="181,200" days="2" item="8100201,5" />
+	<NEWLoginReward id="35" leaveDaysRange="0,90" levelRange="181,200" days="3" item="435401,1" />
+	<NEWLoginReward id="36" leaveDaysRange="0,90" levelRange="181,200" days="4" item="11983601,1" />
+	<NEWLoginReward id="37" leaveDaysRange="0,90" levelRange="181,200" days="5" item="1213201,1" />
+	<NEWLoginReward id="38" leaveDaysRange="0,90" levelRange="181,200" days="6" item="941501,1" />
+	<NEWLoginReward id="39" leaveDaysRange="0,90" levelRange="181,200" days="7" item="8100201,1" />
+	<NEWLoginReward id="40" leaveDaysRange="0,90" levelRange="181,200" days="8" item="903601,1;903801,1;904101,1;904701,1;915901,1;903501,1;903701,1;904201,1;904301,1;904401,1;904601,1;915801,1;936401,1;937001,1;921401,1;921501,1;904801,1;904901,1;915701,1;970501,1;929901,1;936101,1;910901,1;930101,1;931901,1;910501,1;910701,1;970101,1;970201,1;970401,1;915201,1;904501,1;931401,1;936301,1;915501,1;931101,1;911601,1;912801,1;905101,1;970601,1;911101,1;910801,1;911001,1;913601,1;905301,1;905201,1;915101,1;916801,1;917301,1;917501,1;910001,1;933901,1;970801,1;971301,1;917201,1;932401,1;916201,1;916901,1;930501,1;916301,1;916501,1;931601,1;932001,1;934101,1;918201,1;944601,1;970301,1;910601,1;905001,1;911401,1;915301,1;916601,1;917001,1;916101,1;930001,1;930201,1;930601,1;911501,1;933701,1;930701,1;930901,1;931201,1;931301,1;931701,1;931801,1;932801,1;933001,1;933101,1;932901,1;932201,1;905401,1;905501,1;905701,1;907201,1" secType="1" repItem="8100201,3" />
+	<NEWLoginReward id="41" leaveDaysRange="91,9999" levelRange="181,200" days="1" item="1142901,1" />
+	<NEWLoginReward id="42" leaveDaysRange="91,9999" levelRange="181,200" days="2" item="8100201,5" />
+	<NEWLoginReward id="43" leaveDaysRange="91,9999" levelRange="181,200" days="3" item="435401,1" />
+	<NEWLoginReward id="44" leaveDaysRange="91,9999" levelRange="181,200" days="4" item="11983601,1" />
+	<NEWLoginReward id="45" leaveDaysRange="91,9999" levelRange="181,200" days="5" item="1213201,1" />
+	<NEWLoginReward id="46" leaveDaysRange="91,9999" levelRange="181,200" days="6" item="941501,1" />
+	<NEWLoginReward id="47" leaveDaysRange="91,9999" levelRange="181,200" days="7" item="8100201,1" />
+	<NEWLoginReward id="48" leaveDaysRange="91,9999" levelRange="181,200" days="8" item="903601,1;903801,1;904101,1;904701,1;915901,1;903501,1;903701,1;904201,1;904301,1;904401,1;904601,1;915801,1;936401,1;937001,1;921401,1;921501,1;904801,1;904901,1;915701,1;970501,1;929901,1;936101,1;910901,1;930101,1;931901,1;910501,1;910701,1;970101,1;970201,1;970401,1;915201,1;904501,1;931401,1;936301,1;915501,1;931101,1;911601,1;912801,1;905101,1;970601,1;911101,1;910801,1;911001,1;913601,1;905301,1;905201,1;915101,1;916801,1;917301,1;917501,1;910001,1;933901,1;970801,1;971301,1;917201,1;932401,1;916201,1;916901,1;930501,1;916301,1;916501,1;931601,1;932001,1;934101,1;918201,1;944601,1;970301,1;910601,1;905001,1;911401,1;915301,1;916601,1;917001,1;916101,1;930001,1;930201,1;930601,1;911501,1;933701,1;930701,1;930901,1;931201,1;931301,1;931701,1;931801,1;932801,1;933001,1;933101,1;932901,1;932201,1;905401,1;905501,1;905701,1;907201,1" secType="1" repItem="8100201,3" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	id
+			leaveDaysRange	-	天数范围
+			levelRange	-	等级限制
+			item_id	-	道具id
+			type	-	商品类型
+			typename	-	类型名称
+			level	-	道具等级
+			rebate	-	折扣
+			orignprice	-	显示原价
+			limit	-	限购次数
+				-	名字备注
+		-->
+	<PreGift id="1" leaveDaysRange="0,90" levelRange="60,120" item_id="11983701" type="1" typename="武将优惠" level="1" limit="1" />
+	<PreGift id="2" leaveDaysRange="0,90" levelRange="60,120" item_id="11983801" type="1" typename="武将优惠" level="1" limit="1" />
+	<PreGift id="3" leaveDaysRange="0,90" levelRange="60,120" item_id="11983901" type="1" typename="武将优惠" level="2" limit="1" />
+	<PreGift id="4" leaveDaysRange="0,90" levelRange="60,120" item_id="11984001" type="1" typename="武将优惠" level="2" limit="1" />
+	<PreGift id="5" leaveDaysRange="0,90" levelRange="60,120" item_id="11984101" type="1" typename="武将优惠" level="3" limit="1" />
+	<PreGift id="6" leaveDaysRange="0,90" levelRange="60,120" item_id="11984201" type="1" typename="武将优惠" level="3" limit="1" />
+	<PreGift id="1" leaveDaysRange="0,90" levelRange="60,120" item_id="11984301" type="2" typename="皮肤优惠" level="1" limit="1" />
+	<PreGift id="2" leaveDaysRange="0,90" levelRange="60,120" item_id="11984401" type="2" typename="皮肤优惠" level="1" limit="1" />
+	<PreGift id="3" leaveDaysRange="0,90" levelRange="60,120" item_id="11984501" type="2" typename="皮肤优惠" level="2" limit="1" />
+	<PreGift id="4" leaveDaysRange="0,90" levelRange="60,120" item_id="11984601" type="2" typename="皮肤优惠" level="2" limit="1" />
+	<PreGift id="5" leaveDaysRange="0,90" levelRange="60,120" item_id="11984701" type="2" typename="皮肤优惠" level="3" limit="1" />
+	<PreGift id="6" leaveDaysRange="0,90" levelRange="60,120" item_id="11984801" type="2" typename="皮肤优惠" level="3" limit="1" />
+	<PreGift id="7" leaveDaysRange="91,9999" levelRange="60,120" item_id="11983701" type="1" typename="武将优惠" level="1" limit="1" />
+	<PreGift id="8" leaveDaysRange="91,9999" levelRange="60,120" item_id="11983801" type="1" typename="武将优惠" level="1" limit="1" />
+	<PreGift id="9" leaveDaysRange="91,9999" levelRange="60,120" item_id="11983901" type="1" typename="武将优惠" level="2" limit="1" />
+	<PreGift id="10" leaveDaysRange="91,9999" levelRange="60,120" item_id="11984001" type="1" typename="武将优惠" level="2" limit="1" />
+	<PreGift id="11" leaveDaysRange="91,9999" levelRange="60,120" item_id="11984101" type="1" typename="武将优惠" level="3" limit="1" />
+	<PreGift id="12" leaveDaysRange="91,9999" levelRange="60,120" item_id="11984201" type="1" typename="武将优惠" level="3" limit="1" />
+	<PreGift id="7" leaveDaysRange="91,9999" levelRange="60,120" item_id="11984301" type="2" typename="皮肤优惠" level="1" limit="1" />
+	<PreGift id="8" leaveDaysRange="91,9999" levelRange="60,120" item_id="11984401" type="2" typename="皮肤优惠" level="1" limit="1" />
+	<PreGift id="9" leaveDaysRange="91,9999" levelRange="60,120" item_id="11984501" type="2" typename="皮肤优惠" level="2" limit="1" />
+	<PreGift id="10" leaveDaysRange="91,9999" levelRange="60,120" item_id="11984601" type="2" typename="皮肤优惠" level="2" limit="1" />
+	<PreGift id="11" leaveDaysRange="91,9999" levelRange="60,120" item_id="11984701" type="2" typename="皮肤优惠" level="3" limit="1" />
+	<PreGift id="12" leaveDaysRange="91,9999" levelRange="60,120" item_id="11984801" type="2" typename="皮肤优惠" level="3" limit="1" />
+	<PreGift id="13" leaveDaysRange="0,90" levelRange="121,180" item_id="11983701" type="1" typename="武将优惠" level="1" limit="1" />
+	<PreGift id="14" leaveDaysRange="0,90" levelRange="121,180" item_id="11983801" type="1" typename="武将优惠" level="1" limit="1" />
+	<PreGift id="15" leaveDaysRange="0,90" levelRange="121,180" item_id="11983901" type="1" typename="武将优惠" level="2" limit="1" />
+	<PreGift id="16" leaveDaysRange="0,90" levelRange="121,180" item_id="11984001" type="1" typename="武将优惠" level="2" limit="1" />
+	<PreGift id="17" leaveDaysRange="0,90" levelRange="121,180" item_id="11984101" type="1" typename="武将优惠" level="3" limit="1" />
+	<PreGift id="18" leaveDaysRange="0,90" levelRange="121,180" item_id="11984201" type="1" typename="武将优惠" level="3" limit="1" />
+	<PreGift id="13" leaveDaysRange="0,90" levelRange="121,180" item_id="11984301" type="2" typename="皮肤优惠" level="1" limit="1" />
+	<PreGift id="14" leaveDaysRange="0,90" levelRange="121,180" item_id="11984401" type="2" typename="皮肤优惠" level="1" limit="1" />
+	<PreGift id="15" leaveDaysRange="0,90" levelRange="121,180" item_id="11984501" type="2" typename="皮肤优惠" level="2" limit="1" />
+	<PreGift id="16" leaveDaysRange="0,90" levelRange="121,180" item_id="11984601" type="2" typename="皮肤优惠" level="2" limit="1" />
+	<PreGift id="17" leaveDaysRange="0,90" levelRange="121,180" item_id="11984701" type="2" typename="皮肤优惠" level="3" limit="1" />
+	<PreGift id="18" leaveDaysRange="0,90" levelRange="121,180" item_id="11984801" type="2" typename="皮肤优惠" level="3" limit="1" />
+	<PreGift id="19" leaveDaysRange="91,9999" levelRange="121,180" item_id="11983701" type="1" typename="武将优惠" level="1" limit="1" />
+	<PreGift id="20" leaveDaysRange="91,9999" levelRange="121,180" item_id="11983801" type="1" typename="武将优惠" level="1" limit="1" />
+	<PreGift id="21" leaveDaysRange="91,9999" levelRange="121,180" item_id="11983901" type="1" typename="武将优惠" level="2" limit="1" />
+	<PreGift id="22" leaveDaysRange="91,9999" levelRange="121,180" item_id="11984001" type="1" typename="武将优惠" level="2" limit="1" />
+	<PreGift id="23" leaveDaysRange="91,9999" levelRange="121,180" item_id="11984101" type="1" typename="武将优惠" level="3" limit="1" />
+	<PreGift id="24" leaveDaysRange="91,9999" levelRange="121,180" item_id="11984201" type="1" typename="武将优惠" level="3" limit="1" />
+	<PreGift id="19" leaveDaysRange="91,9999" levelRange="121,180" item_id="11984301" type="2" typename="皮肤优惠" level="1" limit="1" />
+	<PreGift id="20" leaveDaysRange="91,9999" levelRange="121,180" item_id="11984401" type="2" typename="皮肤优惠" level="1" limit="1" />
+	<PreGift id="21" leaveDaysRange="91,9999" levelRange="121,180" item_id="11984501" type="2" typename="皮肤优惠" level="2" limit="1" />
+	<PreGift id="22" leaveDaysRange="91,9999" levelRange="121,180" item_id="11984601" type="2" typename="皮肤优惠" level="2" limit="1" />
+	<PreGift id="23" leaveDaysRange="91,9999" levelRange="121,180" item_id="11984701" type="2" typename="皮肤优惠" level="3" limit="1" />
+	<PreGift id="24" leaveDaysRange="91,9999" levelRange="121,180" item_id="11984801" type="2" typename="皮肤优惠" level="3" limit="1" />
+	<PreGift id="25" leaveDaysRange="0,90" levelRange="181,200" item_id="11983701" type="1" typename="武将优惠" level="1" limit="1" />
+	<PreGift id="26" leaveDaysRange="0,90" levelRange="181,200" item_id="11983801" type="1" typename="武将优惠" level="1" limit="1" />
+	<PreGift id="27" leaveDaysRange="0,90" levelRange="181,200" item_id="11983901" type="1" typename="武将优惠" level="2" limit="1" />
+	<PreGift id="28" leaveDaysRange="0,90" levelRange="181,200" item_id="11984001" type="1" typename="武将优惠" level="2" limit="1" />
+	<PreGift id="29" leaveDaysRange="0,90" levelRange="181,200" item_id="11984101" type="1" typename="武将优惠" level="3" limit="1" />
+	<PreGift id="30" leaveDaysRange="0,90" levelRange="181,200" item_id="11984201" type="1" typename="武将优惠" level="3" limit="1" />
+	<PreGift id="25" leaveDaysRange="0,90" levelRange="181,200" item_id="11984301" type="2" typename="皮肤优惠" level="1" limit="1" />
+	<PreGift id="26" leaveDaysRange="0,90" levelRange="181,200" item_id="11984401" type="2" typename="皮肤优惠" level="1" limit="1" />
+	<PreGift id="27" leaveDaysRange="0,90" levelRange="181,200" item_id="11984501" type="2" typename="皮肤优惠" level="2" limit="1" />
+	<PreGift id="28" leaveDaysRange="0,90" levelRange="181,200" item_id="11984601" type="2" typename="皮肤优惠" level="2" limit="1" />
+	<PreGift id="29" leaveDaysRange="0,90" levelRange="181,200" item_id="11984701" type="2" typename="皮肤优惠" level="3" limit="1" />
+	<PreGift id="30" leaveDaysRange="0,90" levelRange="181,200" item_id="11984801" type="2" typename="皮肤优惠" level="3" limit="1" />
+	<PreGift id="31" leaveDaysRange="91,9999" levelRange="181,200" item_id="11983701" type="1" typename="武将优惠" level="1" limit="1" />
+	<PreGift id="32" leaveDaysRange="91,9999" levelRange="181,200" item_id="11983801" type="1" typename="武将优惠" level="1" limit="1" />
+	<PreGift id="33" leaveDaysRange="91,9999" levelRange="181,200" item_id="11983901" type="1" typename="武将优惠" level="2" limit="1" />
+	<PreGift id="34" leaveDaysRange="91,9999" levelRange="181,200" item_id="11984001" type="1" typename="武将优惠" level="2" limit="1" />
+	<PreGift id="35" leaveDaysRange="91,9999" levelRange="181,200" item_id="11984101" type="1" typename="武将优惠" level="3" limit="1" />
+	<PreGift id="36" leaveDaysRange="91,9999" levelRange="181,200" item_id="11984201" type="1" typename="武将优惠" level="3" limit="1" />
+	<PreGift id="31" leaveDaysRange="91,9999" levelRange="181,200" item_id="11984301" type="2" typename="皮肤优惠" level="1" limit="1" />
+	<PreGift id="32" leaveDaysRange="91,9999" levelRange="181,200" item_id="11984401" type="2" typename="皮肤优惠" level="1" limit="1" />
+	<PreGift id="33" leaveDaysRange="91,9999" levelRange="181,200" item_id="11984501" type="2" typename="皮肤优惠" level="2" limit="1" />
+	<PreGift id="34" leaveDaysRange="91,9999" levelRange="181,200" item_id="11984601" type="2" typename="皮肤优惠" level="2" limit="1" />
+	<PreGift id="35" leaveDaysRange="91,9999" levelRange="181,200" item_id="11984701" type="2" typename="皮肤优惠" level="3" limit="1" />
+	<PreGift id="36" leaveDaysRange="91,9999" levelRange="181,200" item_id="11984801" type="2" typename="皮肤优惠" level="3" limit="1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	武将id
+			exchange	-	兑换灵宝数量
+				-	备注名称
+		-->
+	<GeneralChange id="929901" exchange="1150001,1" />
+	<GeneralChange id="930101" exchange="1150001,1" />
+	<GeneralChange id="931901" exchange="1150001,1" />
+	<GeneralChange id="931401" exchange="1150001,1" />
+	<GeneralChange id="931101" exchange="1150001,1" />
+	<GeneralChange id="930001" exchange="1150001,1" />
+	<GeneralChange id="944401" exchange="1150001,1" />
+	<GeneralChange id="930501" exchange="1150001,1" />
+	<GeneralChange id="930201" exchange="1150001,1" />
+	<GeneralChange id="930701" exchange="1150001,1" />
+	<GeneralChange id="931201" exchange="1150001,1" />
+	<GeneralChange id="930301" exchange="1150001,1" />
+	<GeneralChange id="930801" exchange="1150001,1" />
+	<GeneralChange id="944501" exchange="1150001,1" />
+	<GeneralChange id="944101" exchange="1150001,1" />
+	<GeneralChange id="931601" exchange="1150001,1" />
+	<GeneralChange id="932001" exchange="1150001,1" />
+	<GeneralChange id="944601" exchange="1150001,1" />
+	<GeneralChange id="944901" exchange="1150001,1" />
+	<GeneralChange id="930601" exchange="1150001,1" />
+	<GeneralChange id="931701" exchange="1150001,1" />
+	<GeneralChange id="930901" exchange="1150001,1" />
+	<GeneralChange id="931301" exchange="1150001,1" />
+	<GeneralChange id="931801" exchange="1150001,1" />
+	<GeneralChange id="930401" exchange="1150001,1" />
+	<GeneralChange id="931501" exchange="1150001,1" />
+	<GeneralChange id="931001" exchange="1150001,1" />
+	<GeneralChange id="945501" exchange="1150001,1" />
+	<GeneralChange id="945701" exchange="1150001,1" />
+	<GeneralChange id="944001" exchange="1150001,1" />
+	<GeneralChange id="944801" exchange="1150001,1" />
+	<GeneralChange id="945101" exchange="1150001,1" />
+	<GeneralChange id="945301" exchange="1150001,1" />
+	<GeneralChange id="947001" exchange="1150001,1" />
+	<GeneralChange id="946301" exchange="1150001,1" />
+	<GeneralChange id="945601" exchange="1150001,1" />
+	<GeneralChange id="946201" exchange="1150001,1" />
+	<GeneralChange id="945201" exchange="1150001,1" />
+	<GeneralChange id="945401" exchange="1150001,1" />
+	<GeneralChange id="945001" exchange="1150001,1" />
+	<GeneralChange id="944201" exchange="1150001,1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	奖励id
+			modelId	-	模式id
+			rewards	-	奖励
+			general	-	武将，没有则表示没有武将体验卡奖励
+			exRewards	-	武将，没有则表示没有武将体验卡奖励
+			text	-	文字描述
+			failRewards	-	失败后领取奖励
+				-	备注名称
+				-
+		-->
+	<ModelReward id="1" rewards="100401,2;100301,5;9054509,2" general="361" exRewards="100401,2;100301,5" text="欢迎回归，赠您&lt;font color='#49E621'&gt;专属奖励&lt;/font&gt;通关山河图" />
+	<ModelReward id="2" rewards="941501,1" text="欢迎回归，&lt;font color='#49E621'&gt;保护卡&lt;/font&gt;可以保护您排位不掉星" />
+	<ModelReward id="3" rewards="9020101,300;932409,1" general="324" exRewards="9020101,300" text="欢迎回归，请收下这些&lt;font color='#49E621'&gt;专属奖励&lt;/font&gt;" />
+	<ModelReward id="4" rewards="941501,1" text="&lt;font color='#49E621'&gt;保护卡&lt;/font&gt;保护了您不掉星，新保护卡请收下" failRewards="1" />
+</root>

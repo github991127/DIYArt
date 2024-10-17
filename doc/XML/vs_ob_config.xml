@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+match 		比赛中的ob
+ttrank		天梯中的ob
+common	普通下的ob
+
+user 表示用户有哪些，account 为账号
+-->
+
+<Root>
+	<wca>
+		<user account="zhuluguangying"/>
+		<user account="15010236991"/>
+		<user account="wca2015sgs"/>
+		<user account="wca2015sgs01"/>
+		<user account="aoi890716"/>
+		<user account="yakeeyakee"/>
+		<user account="pppp"/>
+		<user account="aaxy001" />
+		<user account="13069809536" />
+		<user account="405305542@qq.com" />
+	</wca>
+</Root>

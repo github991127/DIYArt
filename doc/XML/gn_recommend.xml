@@ -1,0 +1,775 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			statisticsField	-	对局武将7天内x场内的武将进行统计
+			minField	-	模式7天内对局场数小于N场时该模式不推荐武将
+			newgeneral	-	武将推荐列表中近期新获得的武将
+N=天数
+			minWinNum	-	武将推荐列表中好用的武将最低需要的胜利场次
+			recommendratio	-	武将推荐列表中从三条线中取将的倍数
+列表取将数A=最终所需数B*3
+			recommendField	-	推荐武将界面计算最近x场的胜利武将
+			topnum	-	签到：从推荐线中取前N个武将，再进行选择
+			yuanbaolimit	-	签到中玩家身上元宝数低于X时推荐价格略高的武将
+			yuanbaorange	-	签到中推荐价格略高的武将时的价格上下值
+			replacetime	-	银两武将换一批记录保留时间（单位秒）
+			tagscore	-	限时礼包界面中
+标签分大于X分才显示上局模式的，否则显示最高分的标签
+			zonghexianN	-	新获得武将 只过滤综合线列表前N个
+			duijuxianN	-	新获得武将 只过滤对局线列表前N个
+			zonghexiangetX	-	推荐线取将：综合线从X*N个种随机取N个
+			delay	-	礼包延后展示时间（升级升官阶后再显示对应的礼包，单位毫秒）
+		-->
+	<common statisticsField="200" minField="10" newgeneral="7" minWinNum="5" recommendratio="3" recommendField="50" topnum="5" yuanbaolimit="5000" yuanbaorange="0;3000" replacetime="43200" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	武将id
+			name	-	名字CardName-使用服务端字段-name
+			recommend	-	新手推荐度
+		-->
+	<xinshouwujiang id="319" name="吕布.界限" recommend="10000" />
+	<xinshouwujiang id="108" name="SP赵云2012" recommend="9990" />
+	<xinshouwujiang id="374" name="麹义" recommend="9980" />
+	<xinshouwujiang id="301" name="张飞.界限" recommend="9970" />
+	<xinshouwujiang id="107" name="SP马超" recommend="9960" />
+	<xinshouwujiang id="445" name="界貂蝉" recommend="9950" />
+	<xinshouwujiang id="303" name="马超.界限" recommend="9940" />
+	<xinshouwujiang id="324" name="吴懿" recommend="9930" />
+	<xinshouwujiang id="307" name="黄盖.界限" recommend="9920" />
+	<xinshouwujiang id="314" name="张辽.界限" recommend="9910" />
+	<xinshouwujiang id="26" name="界黄忠" recommend="9900" />
+	<xinshouwujiang id="175" name="郭淮" recommend="9890" />
+	<xinshouwujiang id="54" name="孙策" recommend="9880" />
+	<xinshouwujiang id="361" name="SP黄月英" recommend="9870" />
+	<xinshouwujiang id="308" name="周瑜.界限" recommend="9860" />
+	<xinshouwujiang id="311" name="曹操.界限" recommend="9850" />
+	<xinshouwujiang id="7002" name="司马师" recommend="9840" />
+	<xinshouwujiang id="7004" name="司马昭" recommend="9830" />
+	<xinshouwujiang id="448" name="界张角" recommend="9820" />
+	<xinshouwujiang id="462" name="界庞德" recommend="9810" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	id
+				-	说明
+			lv	-	触发等级
+			officer	-	触发官阶等级
+			rank	-	触发段位
+			ChapterId	-	触发指定局id
+			goods_id	-	推荐某个指定道具礼包
+			recommend_new	-	推荐武将-新手线 权重
+			recommend_zong	-	推荐武将-综合线 权重
+			recommend_fight	-	推荐武将-对局线 权重
+			screening	-	使用筛选器
+		-->
+	<conditiongiftvalue id="101" lv="20" goods_id="13300701" />
+	<conditiongiftvalue id="102" lv="30" goods_id="13300801" />
+	<conditiongiftvalue id="103" lv="40" goods_id="13300901" />
+	<conditiongiftvalue id="104" lv="50" goods_id="13301001" />
+	<conditiongiftvalue id="105" lv="60" goods_id="13301101" />
+	<conditiongiftvalue id="106" lv="70" goods_id="13301201" />
+	<conditiongiftvalue id="107" lv="80" goods_id="13301301" />
+	<conditiongiftvalue id="108" lv="25" goods_id="13301401;13301501" />
+	<conditiongiftvalue id="109" lv="35" goods_id="13301601;13301701" />
+	<conditiongiftvalue id="110" lv="45" goods_id="13301801;13301901" />
+	<conditiongiftvalue id="111" lv="55" goods_id="13302001;13302101" />
+	<conditiongiftvalue id="112" lv="65" goods_id="13302201;13302301" />
+	<conditiongiftvalue id="113" lv="75" goods_id="13302401;13302501" />
+	<conditiongiftvalue id="114" lv="85" goods_id="13302601;13302701" />
+	<conditiongiftvalue id="210" officer="2" goods_id="13312301" />
+	<conditiongiftvalue id="211" officer="4" goods_id="13312401" />
+	<conditiongiftvalue id="201" officer="6" goods_id="13312501" />
+	<conditiongiftvalue id="202" officer="7" goods_id="13312601" />
+	<conditiongiftvalue id="203" officer="8" goods_id="13312701" />
+	<conditiongiftvalue id="204" officer="9" goods_id="13312801" />
+	<conditiongiftvalue id="205" officer="10" goods_id="13312901" />
+	<conditiongiftvalue id="206" officer="11" goods_id="13313001" />
+	<conditiongiftvalue id="207" officer="12" goods_id="13313101" />
+	<conditiongiftvalue id="208" officer="13" goods_id="13313201" />
+	<conditiongiftvalue id="209" officer="14" goods_id="13313301" />
+	<conditiongiftvalue id="401" lv="16" recommend_new="100" recommend_zong="0" recommend_fight="0" screening="1" />
+	<conditiongiftvalue id="402" lv="26" recommend_new="100" recommend_zong="0" recommend_fight="0" screening="1" />
+	<conditiongiftvalue id="501" goods_id="13101901" />
+	<conditiongiftvalue id="502" goods_id="13102001" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			goods_id	-	礼包内容
+			goodstype	-	礼包类型
+1=元宝礼包
+2=银两礼包
+			type	-	界面样式id
+1=武将礼包
+2=道具礼包
+			interface	-	界面样式id的子类
+			discount	-	折扣
+			Originalprice	-	原价
+			time_limit	-	时限(秒）
+			resource	-	配图资源
+			charactar	-	武将插画背景资源
+			name	-	礼包名字-最多 5个字
+			dic	-	礼包描述 pc
+			dic	-	礼包描述 u3d
+			lable	-	武将礼包使用的标签
+1=武将胜率，对应lable2
+2=武将拥有率
+3=新手武将胜率
+4=斗地主武将胜率
+5=斗地主农民胜率
+			notshow	-	礼包不主动弹出
+1=不主动弹出
+0或不配置则主动弹出
+				-	说明
+				-	拥有率
+				-	
+				-	
+				-	
+				-
+		-->
+	<conditiongift goods_id="13000001" goodstype="1" type="1" time_limit="43200" charactar="34" />
+	<conditiongift goods_id="13000101" goodstype="1" type="1" time_limit="43200" charactar="156" />
+	<conditiongift goods_id="13000301" goodstype="1" type="1" time_limit="43200" charactar="185" />
+	<conditiongift goods_id="13000501" goodstype="1" type="1" time_limit="43200" charactar="47" />
+	<conditiongift goods_id="13000701" goodstype="1" type="1" time_limit="43200" charactar="111" />
+	<conditiongift goods_id="13000801" goodstype="1" type="1" time_limit="43200" charactar="316" />
+	<conditiongift goods_id="13000901" goodstype="1" type="1" time_limit="43200" charactar="299" />
+	<conditiongift goods_id="13001001" goodstype="1" type="1" time_limit="43200" charactar="361" />
+	<conditiongift goods_id="13001301" goodstype="1" type="1" time_limit="43200" charactar="153" />
+	<conditiongift goods_id="13001501" goodstype="1" type="1" time_limit="43200" charactar="52" />
+	<conditiongift goods_id="13001601" goodstype="1" type="1" time_limit="43200" charactar="328" />
+	<conditiongift goods_id="13001701" goodstype="1" type="1" time_limit="43200" charactar="307" />
+	<conditiongift goods_id="13001801" goodstype="1" type="1" time_limit="43200" charactar="312" />
+	<conditiongift goods_id="13002001" goodstype="1" type="1" time_limit="43200" charactar="306" />
+	<conditiongift goods_id="13002101" goodstype="1" type="1" time_limit="43200" charactar="187" />
+	<conditiongift goods_id="13002401" goodstype="1" type="1" time_limit="43200" charactar="175" />
+	<conditiongift goods_id="13002501" goodstype="1" type="1" time_limit="43200" charactar="168" />
+	<conditiongift goods_id="13002701" goodstype="1" type="1" time_limit="43200" charactar="365" />
+	<conditiongift goods_id="13002801" goodstype="1" type="1" time_limit="86400" charactar="374" />
+	<conditiongift goods_id="13002901" goodstype="1" type="1" time_limit="43200" charactar="73" />
+	<conditiongift goods_id="13003001" goodstype="1" type="1" time_limit="43200" charactar="315" />
+	<conditiongift goods_id="13003101" goodstype="1" type="1" time_limit="43200" charactar="310" />
+	<conditiongift goods_id="13003201" goodstype="1" type="1" time_limit="43200" charactar="179" />
+	<conditiongift goods_id="13003301" goodstype="1" type="1" time_limit="43200" charactar="369" />
+	<conditiongift goods_id="13003401" goodstype="1" type="1" time_limit="43200" charactar="401" />
+	<conditiongift goods_id="13003501" goodstype="1" type="1" time_limit="43200" charactar="444" />
+	<conditiongift goods_id="13003601" goodstype="1" type="1" time_limit="43200" charactar="184" />
+	<conditiongift goods_id="13003701" goodstype="1" type="1" time_limit="43200" charactar="445" />
+	<conditiongift goods_id="13003801" goodstype="1" type="1" time_limit="43200" charactar="7007" />
+	<conditiongift goods_id="13003901" goodstype="1" type="1" time_limit="43200" charactar="378" />
+	<conditiongift goods_id="13004001" goodstype="1" type="1" time_limit="43200" charactar="7000" />
+	<conditiongift goods_id="13004101" goodstype="1" type="1" time_limit="43200" charactar="393" />
+	<conditiongift goods_id="13004201" goodstype="1" type="1" time_limit="43200" charactar="441" />
+	<conditiongift goods_id="13004301" goodstype="1" type="1" time_limit="43200" charactar="7004" />
+	<conditiongift goods_id="13004401" goodstype="1" type="1" time_limit="43200" charactar="392" />
+	<conditiongift goods_id="13004501" goodstype="1" type="1" time_limit="43200" charactar="7002" />
+	<conditiongift goods_id="13004601" goodstype="1" type="1" time_limit="43200" charactar="362" />
+	<conditiongift goods_id="13004701" goodstype="1" type="1" time_limit="43200" charactar="326" />
+	<conditiongift goods_id="13021501" goodstype="1" type="1" time_limit="86400" charactar="108" />
+	<conditiongift goods_id="13006501" goodstype="1" type="1" time_limit="86400" charactar="36" />
+	<conditiongift goods_id="13006601" goodstype="1" type="1" time_limit="86400" charactar="37" />
+	<conditiongift goods_id="13007001" goodstype="1" type="1" time_limit="86400" charactar="41" />
+	<conditiongift goods_id="13007201" goodstype="1" type="1" time_limit="86400" charactar="43" />
+	<conditiongift goods_id="13007601" goodstype="1" type="1" time_limit="86400" charactar="48" />
+	<conditiongift goods_id="13007701" goodstype="1" type="1" time_limit="86400" charactar="49" />
+	<conditiongift goods_id="13007801" goodstype="1" type="1" time_limit="86400" charactar="50" />
+	<conditiongift goods_id="13008101" goodstype="1" type="1" time_limit="86400" charactar="57" />
+	<conditiongift goods_id="13008301" goodstype="1" type="1" time_limit="86400" charactar="100" />
+	<conditiongift goods_id="13009201" goodstype="1" type="1" time_limit="86400" charactar="115" />
+	<conditiongift goods_id="13009701" goodstype="1" type="1" time_limit="86400" charactar="123" />
+	<conditiongift goods_id="13010201" goodstype="1" type="1" time_limit="86400" charactar="128" />
+	<conditiongift goods_id="13011601" goodstype="1" type="1" time_limit="86400" charactar="164" />
+	<conditiongift goods_id="13013401" goodstype="1" type="1" time_limit="86400" charactar="305" />
+	<conditiongift goods_id="13013501" goodstype="1" type="1" time_limit="86400" charactar="308" />
+	<conditiongift goods_id="13013801" goodstype="1" type="1" time_limit="86400" charactar="317" />
+	<conditiongift goods_id="13014401" goodstype="1" type="1" time_limit="86400" charactar="324" />
+	<conditiongift goods_id="13014901" goodstype="1" type="1" time_limit="86400" charactar="332" />
+	<conditiongift goods_id="13015601" goodstype="1" type="1" time_limit="86400" charactar="339" />
+	<conditiongift goods_id="13016301" goodstype="1" type="1" time_limit="86400" charactar="358" />
+	<conditiongift goods_id="13017101" goodstype="1" type="1" time_limit="86400" charactar="375" />
+	<conditiongift goods_id="13017301" goodstype="1" type="1" time_limit="86400" charactar="377" />
+	<conditiongift goods_id="13018201" goodstype="1" type="1" time_limit="86400" charactar="387" />
+	<conditiongift goods_id="13018401" goodstype="1" type="1" time_limit="86400" charactar="389" />
+	<conditiongift goods_id="13018501" goodstype="1" type="1" time_limit="86400" charactar="390" />
+	<conditiongift goods_id="13019901" goodstype="1" type="1" time_limit="86400" charactar="459" />
+	<conditiongift goods_id="13020301" goodstype="1" type="1" time_limit="86400" charactar="7001" />
+	<conditiongift goods_id="13020401" goodstype="1" type="1" time_limit="86400" charactar="7003" />
+	<conditiongift goods_id="13020501" goodstype="1" type="1" time_limit="86400" charactar="7005" />
+	<conditiongift goods_id="13020601" goodstype="1" type="1" time_limit="86400" charactar="7006" />
+	<conditiongift goods_id="13020701" goodstype="1" type="1" time_limit="86400" charactar="7008" />
+	<conditiongift goods_id="13020801" goodstype="1" type="1" time_limit="86400" charactar="7009" />
+	<conditiongift goods_id="13004901" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13005001" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13005101" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13005201" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13005301" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13005401" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13005501" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13005601" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13005701" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13005801" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13005901" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13006001" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13006101" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13006201" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13006301" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13300001" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13300101" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13300201" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13300301" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13300401" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13300501" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13300601" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13310001" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13310101" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13310201" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13310301" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13310401" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13310501" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13310601" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13310701" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13310801" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13310901" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13311001" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13311201" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13311301" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13311401" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13311501" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13311601" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13311701" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13311801" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13311901" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13312001" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13312101" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13312201" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13100501" goodstype="2" type="1" time_limit="43200" charactar="156" />
+	<conditiongift goods_id="13100601" goodstype="2" type="1" time_limit="43200" charactar="185" />
+	<conditiongift goods_id="13100701" goodstype="2" type="1" time_limit="43200" charactar="41" />
+	<conditiongift goods_id="13100801" goodstype="2" type="1" time_limit="43200" charactar="47" />
+	<conditiongift goods_id="13100901" goodstype="2" type="1" time_limit="43200" charactar="37" />
+	<conditiongift goods_id="13101001" goodstype="2" type="1" time_limit="43200" charactar="100" />
+	<conditiongift goods_id="13101101" goodstype="2" type="1" time_limit="43200" charactar="111" />
+	<conditiongift goods_id="13101201" goodstype="2" type="1" time_limit="43200" charactar="48" />
+	<conditiongift goods_id="13101301" goodstype="2" type="1" time_limit="43200" charactar="175" />
+	<conditiongift goods_id="13101401" goodstype="2" type="1" time_limit="43200" charactar="57" />
+	<conditiongift goods_id="13101501" goodstype="2" type="1" time_limit="43200" charactar="339" />
+	<conditiongift goods_id="13101601" goodstype="2" type="1" time_limit="43200" charactar="305" />
+	<conditiongift goods_id="13101701" goodstype="2" type="1" time_limit="43200" charactar="316" />
+	<conditiongift goods_id="13101801" goodstype="2" type="1" time_limit="43200" charactar="299" />
+	<conditiongift goods_id="13101901" goodstype="2" type="1" time_limit="43200" charactar="324" />
+	<conditiongift goods_id="13102001" goodstype="2" type="1" time_limit="43200" charactar="361" />
+	<conditiongift goods_id="13102101" goodstype="2" type="1" time_limit="43200" charactar="312" />
+	<conditiongift goods_id="13102201" goodstype="2" type="1" time_limit="43200" charactar="315" />
+	<conditiongift goods_id="13102301" goodstype="2" type="1" time_limit="43200" charactar="52" />
+	<conditiongift goods_id="13102401" goodstype="2" type="1" time_limit="43200" charactar="308" />
+	<conditiongift goods_id="13102501" goodstype="2" type="1" time_limit="43200" charactar="317" />
+	<conditiongift goods_id="13102601" goodstype="2" type="1" time_limit="43200" charactar="306" />
+	<conditiongift goods_id="13102701" goodstype="2" type="1" time_limit="43200" charactar="307" />
+	<conditiongift goods_id="13102801" goodstype="2" type="1" time_limit="43200" charactar="310" />
+	<conditiongift goods_id="13102901" goodstype="2" type="1" time_limit="43200" charactar="128" />
+	<conditiongift goods_id="13103001" goodstype="2" type="1" time_limit="43200" charactar="328" />
+	<conditiongift goods_id="13103101" goodstype="2" type="1" time_limit="43200" charactar="164" />
+	<conditiongift goods_id="13103201" goodstype="2" type="1" time_limit="43200" charactar="179" />
+	<conditiongift goods_id="13103301" goodstype="2" type="1" time_limit="43200" charactar="184" />
+	<conditiongift goods_id="13103401" goodstype="2" type="1" time_limit="43200" charactar="441" />
+	<conditiongift goods_id="13103501" goodstype="2" type="1" time_limit="43200" charactar="444" />
+	<conditiongift goods_id="13103601" goodstype="2" type="1" time_limit="43200" charactar="445" />
+	<conditiongift goods_id="13320001" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13320101" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13320201" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13320301" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13320401" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13320501" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13320601" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13330001" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13330101" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13330201" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13330301" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13330401" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13330501" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13330601" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13330701" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13330801" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13330901" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13331001" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13340001" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13340101" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13340201" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13340301" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13340401" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13340501" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13340601" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13340701" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13340801" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13340901" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13350001" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13350101" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13350201" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13350301" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13350401" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13350501" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13350601" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13350701" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13300701" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13300801" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13300901" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13301001" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13301101" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13301201" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13301301" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13312301" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13312401" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13312501" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13312601" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13312701" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13312801" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13312901" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13313001" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13313101" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13313201" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13313301" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13320701" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13320801" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13320901" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13321001" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13321101" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13321201" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13321301" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13331101" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13331201" goodstype="1" type="2" time_limit="43200" />
+	<conditiongift goods_id="13301401" goodstype="1" type="2" time_limit="172800" />
+	<conditiongift goods_id="13301501" goodstype="1" type="2" time_limit="86400" />
+	<conditiongift goods_id="13301601" goodstype="1" type="2" time_limit="172800" />
+	<conditiongift goods_id="13301701" goodstype="1" type="2" time_limit="86400" />
+	<conditiongift goods_id="13301801" goodstype="1" type="2" time_limit="172800" />
+	<conditiongift goods_id="13301901" goodstype="1" type="2" time_limit="86400" />
+	<conditiongift goods_id="13302001" goodstype="1" type="2" time_limit="172800" />
+	<conditiongift goods_id="13302101" goodstype="1" type="2" time_limit="86400" />
+	<conditiongift goods_id="13302201" goodstype="1" type="2" time_limit="172800" />
+	<conditiongift goods_id="13302301" goodstype="1" type="2" time_limit="86400" />
+	<conditiongift goods_id="13302401" goodstype="1" type="2" time_limit="172800" />
+	<conditiongift goods_id="13302501" goodstype="1" type="2" time_limit="86400" />
+	<conditiongift goods_id="13302601" goodstype="1" type="2" time_limit="172800" />
+	<conditiongift goods_id="13302701" goodstype="1" type="2" time_limit="86400" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			lv	-	等级(小于等于）
+			number1	-	击杀我的武将 
+推荐每日最大次数
+
+			number2	-	MVP武将
+推荐每日最大次数
+
+			number3	-	高评分的武将
+推荐每日最大次数
+
+			number	-	每日最大次数
+（不区分类型，和前三种独立计算次数）
+
+			score	-	本次对局要求达到的评分
+			time	-	牌局时间低于X秒的牌局不推武将礼包
+			gamemode	-	部分模式不推武将礼包
+			lose	-	是否要求失败局
+1=是，0或不填为不要求
+			timelimit	-	单次触发间隔时间（秒）
+			screening	-	使用筛选器
+		-->
+	<fightgift lv="30" number1="0" number2="0" number3="0" number="0" score="130" time="60" gamemode="74,3;74,4" lose="1" timelimit="1800" screening="1" />
+	<fightgift lv="40" number1="1" number2="1" number3="0" number="0" score="130" time="60" gamemode="74,3;74,4" lose="1" timelimit="1800" screening="1" />
+	<fightgift lv="60" number1="1" number2="1" number3="0" number="0" score="130" time="60" gamemode="74,3;74,4" lose="1" timelimit="1800" screening="1" />
+	<fightgift lv="80" number1="1" number2="1" number3="0" number="0" score="130" time="60" gamemode="74,3;74,4" lose="1" timelimit="1800" screening="1" />
+	<fightgift lv="100" number1="1" number2="1" number3="0" number="0" score="130" time="60" gamemode="74,3;74,4" lose="1" timelimit="1800" screening="1" />
+	<fightgift lv="200" number1="1" number2="1" number3="0" number="0" score="130" time="60" gamemode="74,3;74,4" lose="1" timelimit="1800" screening="1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	获取方式id
+			sort	-	优先级，小的在前
+			noShow	-	不展示
+1=不展示
+			onlyShow	-	唯一途径
+			showChannel	-	显示渠道
+不填=所有显示；1：x,y=x,y渠道显示；2：x,y=x,y渠道不显示
+			skip	-	跳转方式
+			name	-	U3D显示名字
+			name	-	显示名字（用于签到界面）
+			h5bar	-	等级h5bar页签
+1=open，2=bar
+			barId	-	bar的id
+				-
+		-->
+	<generalgetway id="1" sort="70" skip="75" />
+	<generalgetway id="2" sort="90" />
+	<generalgetway id="3" sort="20" onlyShow="1" skip="17" />
+	<generalgetway id="4" sort="60" onlyShow="1" showChannel="2:520001,999853,999852" skip="90" />
+	<generalgetway id="5" sort="50" skip="72" />
+	<generalgetway id="6" sort="40" />
+	<generalgetway id="7" sort="80" />
+	<generalgetway id="8" sort="100" skip="77" />
+	<generalgetway id="9" sort="110" skip="91" />
+	<generalgetway id="10" sort="120" showChannel="2:520001,999853,999852" />
+	<generalgetway id="11" sort="130" />
+	<generalgetway id="12" sort="140" showChannel="2:520001,999853,999852" skip="31" />
+	<generalgetway id="13" sort="150" showChannel="2:520001,999853,999852" skip="84" />
+	<generalgetway id="14" sort="160" skip="93" />
+	<generalgetway id="15" sort="170" skip="29" />
+	<generalgetway id="16" sort="180" showChannel="2:520001,999853,999852" skip="89" />
+	<generalgetway id="17" sort="190" noShow="1" showChannel="2:520001,999853,999852" skip="18" />
+	<generalgetway id="18" sort="200" skip="80" />
+	<generalgetway id="19" sort="210" />
+	<generalgetway id="20" sort="220" skip="14" />
+	<generalgetway id="21" sort="10" skip="73" />
+	<generalgetway id="22" sort="30" skip="96" />
+	<generalgetway id="23" sort="75" showChannel="2:520001,999853,999852" />
+	<generalgetway id="24" sort="650" showChannel="2:520001,999853,999852" skip="123" />
+	<generalgetway id="25" sort="850" />
+	<generalgetway id="26" sort="1350" showChannel="2:520001,999853,999852" skip="103" />
+	<generalgetway id="27" sort="65" skip="112" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	获取方式id
+			sort	-	优先级，小的在前
+			noShow	-	不展示
+1=不展示
+			onlyShow	-	唯一途径
+			showChannel	-	显示渠道
+不填=所有显示；1：x,y=x,y渠道显示；2：x,y=x,y渠道不显示
+			skip	-	跳转方式
+			name	-	U3D显示名字
+			name	-	pc显示名字（用于签到界面）
+			h5bar	-	等级h5bar页签
+1=open，2=bar
+			barId	-	bar的id
+				-
+		-->
+	<skingetway id="1" sort="70" />
+	<skingetway id="2" sort="90" skip="11" />
+	<skingetway id="3" sort="120" showChannel="2:520001,999853,999852" />
+	<skingetway id="4" sort="130" showChannel="2:520001,999853,999852" />
+	<skingetway id="5" sort="140" showChannel="2:520001,999853,999852" skip="31" />
+	<skingetway id="6" sort="150" showChannel="2:520001,999853,999852" skip="84" />
+	<skingetway id="7" sort="160" skip="93" />
+	<skingetway id="8" sort="170" skip="29" />
+	<skingetway id="9" sort="180" showChannel="2:520001,999853,999852" skip="89" />
+	<skingetway id="10" sort="190" noShow="1" showChannel="2:520001,999853,999852" skip="18" />
+	<skingetway id="11" sort="200" skip="80" />
+	<skingetway id="12" sort="210" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			screening	-	筛选器组
+				-	说明
+			add	-	服务端筛选器
+使用的筛选器组，可配置多组，用分号隔开
+前1组取不到推荐，则用后1组
+1=去掉已拥有
+2=去掉不满足武将推荐等级
+3=去掉近N日已推荐的破冰礼包，参数
+4=去掉当前不可获得
+5=充值金额限制，参数
+6=只取指定将池
+7=去掉近N日推荐线已推荐，参数
+8=武将品质
+9=武将是否可以直购
+10=去掉商城已推荐武将
+11=去掉近N日银两商城
+12=仅取银两武将
+13=去掉签到中仅N日推荐武将
+14=未开启七日盛典的玩家不推荐七日盛典武将
+15=取已拥有
+			add1	-	 客户端筛选器
+使用的筛选器组，可配置多组，用分号隔开
+前1组取不到推荐，则用后1组
+1=去掉已拥有
+2=去掉不满足武将推荐等级
+4=去掉当前不可获得
+8=武将品质
+9=武将是否可以直购
+12=仅取银两武将
+			Screening3	-	筛选器3参数：去掉近N日本处已推荐的武将
+			Screening5	-	筛选器5：充值金额限制的跨档数
+0或不填，不跨档
+			Screening6	-	筛选器6：只取指定将池中的武将
+配置模式将池表中的将池id，多个用分号隔开
+配置模式的rule id
+			Screening7	-	筛选器7参数：去掉近N日本处已推荐的武将
+			Screening8	-	筛选器8参数:0=普通，1=稀有
+			Screening10	-	筛选器10参数：去掉近N日商城已推荐武将
+			Screening11	-	筛选器11参数：去掉近N日银两商城已推荐武将
+			Screening13	-	筛选器13参数：去掉近N日签到已推荐武将
+		-->
+	<Screening screening="1" add="1,2,3,5;1,2,3;1,2;1" Screening3="3" Screening5="1" Screening7="3" />
+	<Screening screening="2" add="1,2,3,5,6;1,2,3,6;1,2,6;1,6" Screening3="3" Screening5="1" Screening6="90" Screening7="3" />
+	<Screening screening="3" add="2,3,8,4" Screening3="7" Screening8="1,2" />
+	<Screening screening="4" add="2,3,8,4" Screening3="7" Screening8="1,2,3" />
+	<Screening screening="5" add="2,3,8,4" Screening3="7" Screening8="1,2,3" />
+	<Screening screening="6" Screening5="1" Screening7="3" />
+	<Screening screening="7" Screening3="3" Screening5="1" Screening10="7" />
+	<Screening screening="8" Screening3="3" Screening5="2" Screening13="3" />
+	<Screening screening="9" Screening11="3" />
+	<Screening screening="10" />
+	<Screening screening="11" add="14" />
+	<Screening screening="12" add="2,4,5,9,14;2,4,9,14" Screening5="3" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			group	-	组
+			pay	-	累计充值金额下限-元
+			price	-	推荐武将价格上限-元宝
+			tuijianprice	-	适合的武将价格
+				-
+		-->
+	<Screening5 group="1" pay="0" price="5000" />
+	<Screening5 group="1" pay="100" price="10000" />
+	<Screening5 group="1" pay="1000" price="20000" />
+	<Screening5 group="1" pay="5000" price="1000000" />
+	<Screening5 group="1" pay="20000" price="4000000" />
+	<Screening5 group="1" pay="100000" price="10000000" />
+	<Screening5 group="1" pay="300000" price="99999999" />
+	<Screening5 group="2" pay="0" price="5000" tuijianprice="3000" />
+	<Screening5 group="2" pay="100" price="10000" tuijianprice="6000" />
+	<Screening5 group="2" pay="1000" price="20000" tuijianprice="10000" />
+	<Screening5 group="2" pay="5000" price="1000000" tuijianprice="40000" />
+	<Screening5 group="2" pay="20000" price="4000000" tuijianprice="80000" />
+	<Screening5 group="2" pay="100000" price="10000000" tuijianprice="80000" />
+	<Screening5 group="2" pay="300000" price="99999999" tuijianprice="80000" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	武将id
+			name	-	名字CardName-使用服务端字段-name
+			lv	-	武将推荐等级
+		-->
+	<Screening2 id="22" name="华佗" lv="60" />
+	<Screening2 id="50" name="张郃" lv="80" />
+	<Screening2 id="55" name="张昭&amp;张纮" lv="100" />
+	<Screening2 id="311" name="界曹操" lv="80" />
+	<Screening2 id="175" name="郭淮" lv="45" />
+	<Screening2 id="156" name="马谡" lv="20" />
+	<Screening2 id="538" name="马休&amp;马铁" lv="201" />
+	<Screening2 id="562" name="陆郁生" lv="201" />
+	<Screening2 id="569" name="丁尚涴" lv="201" />
+	<Screening2 id="575" name="族王沦" lv="201" />
+	<Screening2 id="577" name="李婉" lv="201" />
+	<Screening2 id="580" name="牵招" lv="201" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	武将id
+			name	-	名字CardName-使用服务端字段-name
+			day	-	武将推荐天数（按照玩家创角时间来计算）
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			type	-	取武将的类型
+				-	说明
+			num	-	取前N个武将
+			genGrade	-	评分高于x
+十分比
+			score	-	类型系数（实际要除100）
+		-->
+	<fightgeneralpoint type="1" score="150" />
+	<fightgeneralpoint type="2" score="100" />
+	<fightgeneralpoint type="3" num="3" genGrade="120" score="50" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	评分排名
+				-	8人局
+				-	6人局
+				-	5人局
+				-	4人局
+				-	3人局
+				-	2人局
+			score	-	分数
+		-->
+	<fightgeneralrankpoint rank="1" score="8,800;6,600;5,500;4,400;3,300;2,200" />
+	<fightgeneralrankpoint rank="2" score="8,280;6,210;5,180;4,140;3,110" />
+	<fightgeneralrankpoint rank="3" score="8,150;6,120;5,100" />
+	<fightgeneralrankpoint rank="4" score="8,100" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			day	-	天数
+			score	-	天数系数
+百分比
+		-->
+	<fightgeneraldaypoint day="1" score="100" />
+	<fightgeneraldaypoint day="2" score="50" />
+	<fightgeneraldaypoint day="3" score="10" />
+	<fightgeneraldaypoint day="4" score="10" />
+	<fightgeneraldaypoint day="5" score="10" />
+	<fightgeneraldaypoint day="6" score="10" />
+	<fightgeneraldaypoint day="7" score="10" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			type	-	场景
+1=武将列表
+2=银两武将
+3=签到
+4=武将推荐广告图
+5=商城
+			lv	-	等级(小于等于）
+			xinshouwujiang	-	新手武将线
+			duijuwujiang	-	对局武将线
+			zonghewujiang	-	综合武将线
+			haoyongwujiang	-	已有且好用的武将
+			newgeneral	-	新获得武将
+			recommend_new	-	推荐武将-新手线 权重
+			recommend_fight	-	推荐武将-对局线 权重
+			recommend_zong	-	推荐武将-综合线 权重
+			screening	-	使用筛选器
+				-	
+				-
+		-->
+	<generalrecommend type="1" lv="30" xinshouwujiang="10" duijuwujiang="0" zonghewujiang="0" haoyongwujiang="0" newgeneral="1" screening="6" />
+	<generalrecommend type="1" lv="40" xinshouwujiang="5" duijuwujiang="3" zonghewujiang="2" haoyongwujiang="0" newgeneral="1" screening="6" />
+	<generalrecommend type="1" lv="50" xinshouwujiang="5" duijuwujiang="3" zonghewujiang="2" haoyongwujiang="0" newgeneral="2" screening="6" />
+	<generalrecommend type="1" lv="60" xinshouwujiang="5" duijuwujiang="3" zonghewujiang="2" haoyongwujiang="0" newgeneral="2" screening="6" />
+	<generalrecommend type="1" lv="80" xinshouwujiang="5" duijuwujiang="3" zonghewujiang="2" haoyongwujiang="0" newgeneral="2" screening="6" />
+	<generalrecommend type="1" lv="100" xinshouwujiang="5" duijuwujiang="3" zonghewujiang="2" haoyongwujiang="0" newgeneral="2" screening="6" />
+	<generalrecommend type="1" lv="130" xinshouwujiang="5" duijuwujiang="4" zonghewujiang="1" haoyongwujiang="0" newgeneral="2" screening="6" />
+	<generalrecommend type="1" lv="170" xinshouwujiang="5" duijuwujiang="4" zonghewujiang="1" haoyongwujiang="0" newgeneral="2" screening="6" />
+	<generalrecommend type="1" lv="190" xinshouwujiang="5" duijuwujiang="4" zonghewujiang="1" haoyongwujiang="0" newgeneral="2" screening="6" />
+	<generalrecommend type="1" lv="200" xinshouwujiang="5" duijuwujiang="4" zonghewujiang="1" haoyongwujiang="0" newgeneral="2" screening="6" />
+	<generalrecommend type="2" lv="30" xinshouwujiang="2" duijuwujiang="1" zonghewujiang="0" haoyongwujiang="0" newgeneral="0" screening="9" />
+	<generalrecommend type="2" lv="40" xinshouwujiang="2" duijuwujiang="1" zonghewujiang="0" haoyongwujiang="0" newgeneral="0" screening="9" />
+	<generalrecommend type="2" lv="50" xinshouwujiang="2" duijuwujiang="1" zonghewujiang="0" haoyongwujiang="0" newgeneral="0" screening="9" />
+	<generalrecommend type="2" lv="60" xinshouwujiang="2" duijuwujiang="1" zonghewujiang="0" haoyongwujiang="0" newgeneral="0" screening="9" />
+	<generalrecommend type="2" lv="80" xinshouwujiang="2" duijuwujiang="1" zonghewujiang="0" haoyongwujiang="0" newgeneral="0" screening="9" />
+	<generalrecommend type="2" lv="100" xinshouwujiang="2" duijuwujiang="1" zonghewujiang="0" haoyongwujiang="0" newgeneral="0" screening="9" />
+	<generalrecommend type="2" lv="130" xinshouwujiang="2" duijuwujiang="1" zonghewujiang="0" haoyongwujiang="0" newgeneral="0" screening="9" />
+	<generalrecommend type="2" lv="170" xinshouwujiang="2" duijuwujiang="1" zonghewujiang="0" haoyongwujiang="0" newgeneral="0" screening="9" />
+	<generalrecommend type="2" lv="190" xinshouwujiang="2" duijuwujiang="1" zonghewujiang="0" haoyongwujiang="0" newgeneral="0" screening="9" />
+	<generalrecommend type="2" lv="200" xinshouwujiang="2" duijuwujiang="1" zonghewujiang="0" haoyongwujiang="0" newgeneral="0" screening="9" />
+	<generalrecommend type="3" lv="30" recommend_new="99" recommend_fight="1" recommend_zong="0" screening="8" />
+	<generalrecommend type="3" lv="40" recommend_new="98" recommend_fight="1" recommend_zong="1" screening="8" />
+	<generalrecommend type="3" lv="50" recommend_new="98" recommend_fight="1" recommend_zong="1" screening="8" />
+	<generalrecommend type="3" lv="60" recommend_new="98" recommend_fight="1" recommend_zong="1" screening="8" />
+	<generalrecommend type="3" lv="80" recommend_new="98" recommend_fight="1" recommend_zong="1" screening="8" />
+	<generalrecommend type="3" lv="100" recommend_new="80" recommend_fight="19" recommend_zong="1" screening="8" />
+	<generalrecommend type="3" lv="130" recommend_new="60" recommend_fight="30" recommend_zong="10" screening="8" />
+	<generalrecommend type="3" lv="170" recommend_new="40" recommend_fight="50" recommend_zong="10" screening="8" />
+	<generalrecommend type="3" lv="190" recommend_new="20" recommend_fight="70" recommend_zong="10" screening="8" />
+	<generalrecommend type="3" lv="200" recommend_new="10" recommend_fight="80" recommend_zong="10" screening="8" />
+	<generalrecommend type="4" lv="50" xinshouwujiang="3" duijuwujiang="0" zonghewujiang="0" newgeneral="0" screening="10" />
+	<generalrecommend type="4" lv="80" xinshouwujiang="2" duijuwujiang="1" zonghewujiang="0" newgeneral="0" screening="10" />
+	<generalrecommend type="4" lv="150" xinshouwujiang="1" duijuwujiang="2" zonghewujiang="0" newgeneral="0" screening="10" />
+	<generalrecommend type="4" lv="200" xinshouwujiang="0" duijuwujiang="3" zonghewujiang="0" newgeneral="0" screening="10" />
+	<generalrecommend type="5" lv="30" recommend_new="90" recommend_fight="10" recommend_zong="0" screening="7" />
+	<generalrecommend type="5" lv="40" recommend_new="80" recommend_fight="10" recommend_zong="10" screening="7" />
+	<generalrecommend type="5" lv="50" recommend_new="50" recommend_fight="20" recommend_zong="30" screening="7" />
+	<generalrecommend type="5" lv="60" recommend_new="50" recommend_fight="20" recommend_zong="30" screening="7" />
+	<generalrecommend type="5" lv="80" recommend_new="30" recommend_fight="40" recommend_zong="30" screening="7" />
+	<generalrecommend type="5" lv="100" recommend_new="20" recommend_fight="40" recommend_zong="40" screening="7" />
+	<generalrecommend type="5" lv="150" recommend_new="0" recommend_fight="50" recommend_zong="50" screening="7" />
+	<generalrecommend type="5" lv="200" recommend_new="0" recommend_fight="50" recommend_zong="50" screening="7" />
+	<!--
+		ID	-	id
+			lv	-	等级(小于等于）
+			Recommend_new	-	推荐武将-新手线 权重
+			Recommend_zong	-	推荐武将-综合线 权重
+			Recommend_fight	-	推荐武将-对局线 权重
+			Screening	-	使用筛选器
+		-->
+	<ShopRecommend ID="1" lv="30" Recommend_new="80" Recommend_zong="10" Recommend_fight="10" Screening="7" />
+	<ShopRecommend ID="2" lv="40" Recommend_new="80" Recommend_zong="10" Recommend_fight="10" Screening="7" />
+	<ShopRecommend ID="3" lv="50" Recommend_new="50" Recommend_zong="20" Recommend_fight="30" Screening="7" />
+	<ShopRecommend ID="4" lv="60" Recommend_new="50" Recommend_zong="20" Recommend_fight="30" Screening="7" />
+	<ShopRecommend ID="5" lv="80" Recommend_new="30" Recommend_zong="40" Recommend_fight="30" Screening="7" />
+	<ShopRecommend ID="6" lv="100" Recommend_new="20" Recommend_zong="40" Recommend_fight="40" Screening="7" />
+	<ShopRecommend ID="7" lv="150" Recommend_new="0" Recommend_zong="50" Recommend_fight="50" Screening="7" />
+	<ShopRecommend ID="8" lv="200" Recommend_new="0" Recommend_zong="50" Recommend_fight="50" Screening="7" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	id
+不可重复，重复则跳过
+				-	说明
+			conditions	-	触发类型
+1=使用道具后数量小于等于N（免费抽不算）
+2=武将升阶后累计将印数量小于等于N
+3=合成将印后累计功勋数量小于等于N
+4=VIP卡过期时
+5=斗地主连败N场且欢乐豆少于等于M时
+6=购买礼包触发
+
+必须配置，0 时 不触发
+类型对应的参数配置异常则不触发（如配置的道具id不存在等）
+
+			parameter	-	触发类型对应的参数1
+类型1：使用某些道具后检查（配置道具id，多个道具id用逗号隔开）
+类型2：武将升阶后检查道具数量（配置道具id，多个道具id用逗号隔开）
+类型3：合成将印后检查某道具数量（配置道具id，多个道具id用逗号隔开）
+类型4：不配置，空
+类型5：斗地主连败时检查某道具
+类型6：购买指定礼包id；多个用逗号隔开
+			parameter2	-	触发类型对应的参数2
+类型1：检查指定道具数量（配置道具id，多个道具id用逗号隔开）
+类型2：指定道具数量
+类型3：指定道具数量
+类型4：不配置，空
+类型5：指定道具数量小于等于N
+类型6：不配置，空
+			parameter3	-	触发类型对应的参数3
+
+类型1：指定道具的数量
+类型2-4：不配置，空
+类型5：连败N场
+类型6：不配置，空
+			conditionslv	-	触发类型对应的等级要求(最小值，最大值，包含）
+
+
+空表示不判断此条件，可触发
+只配一个值，则配置错误，不触发
+			conditionsrecharge	-	触发类型对应的累计充值金额(最小值，最大值，包含）
+单位元；
+
+空表示不判断此条件，可触发
+
+只配一个值，则配置错误，不触发
+			conditionsofficer	-	触发类型对应的官阶要求(最小值，最大值，包含）
+
+空表示不判断此条件，可触发
+
+只配一个值，则配置错误，不触发
+			Currentgiftmaxnum	-	现存礼包数量限制（小于此值可触发，等于大于不触发）
+
+0 不触发
+			maxtime	-	循环礼包最大触发间隔(小时）
+
+0 不触发
+			goods_id	-	推荐某个指定道具礼包
+
+配置为空不触发
+只能配置1个礼包
+		-->
+	<Loopgift id="501" conditions="1" parameter="8100201,8100301,8100401" parameter2="8100201,8100301,8100401" parameter3="0" conditionslv="80;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="5" maxtime="168" goods_id="13340601" />
+	<Loopgift id="502" conditions="6" parameter="13340601" conditionslv="80;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="5" maxtime="144" goods_id="13350501" />
+	<Loopgift id="601" conditions="1" parameter="435401,435501,435601" parameter2="435401,435501,435601" parameter3="0" conditionslv="80;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="5" maxtime="168" goods_id="13340701" />
+	<Loopgift id="602" conditions="6" parameter="13340701" conditionslv="80;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="5" maxtime="144" goods_id="13350601" />
+	<Loopgift id="701" conditions="2" parameter="112401,112501,112601" parameter2="0" conditionslv="80;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="5" maxtime="168" goods_id="13340801" />
+	<Loopgift id="702" conditions="6" parameter="13340801" conditionslv="80;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="5" maxtime="144" goods_id="13350701" />
+	<Loopgift id="801" conditions="4" conditionslv="80;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="5" maxtime="168" goods_id="13340901" />
+	<Loopgift id="901" conditions="5" parameter="9020101" parameter2="299" parameter3="999" conditionslv="80;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="5" maxtime="168" goods_id="13340401" />
+	<Loopgift id="902" conditions="6" parameter="13340401" conditionslv="80;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="5" maxtime="144" goods_id="13350301" />
+	<Loopgift id="1001" conditions="6" parameter="13300701" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13320701" />
+	<Loopgift id="1002" conditions="6" parameter="13300801" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13320801" />
+	<Loopgift id="1003" conditions="6" parameter="13300901" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13320901" />
+	<Loopgift id="1004" conditions="6" parameter="13301001" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13321001" />
+	<Loopgift id="1005" conditions="6" parameter="13301101" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13321101" />
+	<Loopgift id="1006" conditions="6" parameter="13301201" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13321201" />
+	<Loopgift id="1007" conditions="6" parameter="13301301" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13321301" />
+	<Loopgift id="1008" conditions="6" parameter="13312301" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13331101" />
+	<Loopgift id="1009" conditions="6" parameter="13312401" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13331201" />
+	<Loopgift id="1010" conditions="6" parameter="13312501" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13330201" />
+	<Loopgift id="1011" conditions="6" parameter="13312601" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13330301" />
+	<Loopgift id="1012" conditions="6" parameter="13312701" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13330401" />
+	<Loopgift id="1013" conditions="6" parameter="13312801" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13330501" />
+	<Loopgift id="1014" conditions="6" parameter="13312901" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13330601" />
+	<Loopgift id="1015" conditions="6" parameter="13313001" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13330701" />
+	<Loopgift id="1016" conditions="6" parameter="13313101" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13330801" />
+	<Loopgift id="1017" conditions="6" parameter="13313201" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13330901" />
+	<Loopgift id="1018" conditions="6" parameter="13313301" conditionslv="1;200" conditionsrecharge="0;999999" conditionsofficer="1;31" Currentgiftmaxnum="99" maxtime="999999" goods_id="13331001" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			lv	-	等级(小于等于此等级才推荐首充）
+			chrid	-	首充武将id
+			time	-	牌局时间低于X秒的牌局不推武将礼包
+			gamemode	-	部分模式不推武将礼包
+			lose	-	是否要求失败局
+1=是，0或不填为不要求
+			timelimit	-	单次触发间隔时间（秒）
+		-->
+	<firstrecharge lv="80" chrid="319" time="60" gamemode="74,3;74,4" lose="1" timelimit="259200" />
+</root>

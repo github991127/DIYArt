@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			baseInterval	-	单位时间
+			rand	-	随机数， 百分比
+		-->
+	<Common baseInterval="1000" rand="70,130" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			timeRange	-	排队日期和时间：1 从开始时间到结束时间 每天的这个小时时间段
+      2 从开始时间到结束时间
+			queueLengthPopCnt	-	排队人数控制（期望人数,1秒进入人限制;xxx）
+				-	备注
+				-	预计1分钟高峰时间2000-5000
+		-->
+	<TimeControl timeRange="1;20201020T000000;20201231T235959" queueLengthPopCnt="1,1;3,3;5,20" />
+	<TimeControl timeRange="2;20210101T000000;20210119T235959" queueLengthPopCnt="1,100;20,100;50,100;100,9999" />
+	<TimeControl timeRange="1;20200120T090000;20200131T130000" queueLengthPopCnt="50,4;200,12;1000,30;2000,50;10000,200" />
+	<TimeControl timeRange="1;20200120T130000;20200131T131000" queueLengthPopCnt="1,30;200,50;500,80;2000,200" />
+	<TimeControl timeRange="1;20200120T170000;20200131T200000" queueLengthPopCnt="20,3;200,12;1000,30;2000,50;10000,300" />
+	<TimeControl timeRange="1;20200120T200000;20200131T201000" queueLengthPopCnt="1,30;200,50;500,80;2000,200" />
+	<TimeControl timeRange="1;20200120T201100;20200120T230000" queueLengthPopCnt="20,2;50,4;200,10;1000,30;2000,50;10000,300" />
+	<TimeControl timeRange="1;20200120T230000;20200120T231000" queueLengthPopCnt="1,30;200,50;500,80;2000,200" />
+</root>

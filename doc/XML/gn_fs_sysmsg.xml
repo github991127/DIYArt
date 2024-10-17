@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!--
+         sys:      系统广播
+         freshman: 面对新手的广播，现在还没有使用！
+ -->
+<meg_system>
+	<sys>
+		<field_desc>
+			<说明>系统广播,文件格式必须是 utf8</说明>
+			<日期时间格式>时间格式是:年[4位]月[2位]日[2位]T时[2位]分[2位]秒[2位] 一共15位; 如果只有日期:年[4位]月[2位]日[2位]; 如果只有时间: [2位]分[2位]秒[2位]</日期时间格式>
+			<clientpos>	MSG_SYSTEM_All = 0, // 0 表示全部界面都显示   （客户端更新提示弹窗需要此处填0，跑马灯信息约定为 “客户端热更提示” ）
+	MSG_SYSTEM_LOBBY =1,// 1 表示大厅中显示
+	MSG_SYSTEM_READY =2,// 2 表示准备界面中显示
+	MSG_SYSTEM_GAME  =3,// 3 表示游戏中显示
+	MSG_SYSTEM_GAME  =4,// 4 表示系统消息
+	MSG_SYSTEM_GAME  =6,// 6 表示跑马灯消息
+	</clientpos>
+			<sendwho>发送给谁的模式定义,如果没有定义，则是全部；
+			    <item cmd="SectionModle" parame0="0-0" desc="发送给那些频道: section_kind_freshman-label_model_3v3, 新手区的3v3,等等,0-0全部"/>
+				<item cmd="Ip" parame0="192.168.137.58" desc="网吧ip"/>
+				<item cmd="city" parame0="100230" desc="城市"/>
+				<item cmd="level" parame0="1-20" desc="等级"/>				
+			</sendwho>
+			<interval>发送时间间隔，单位分钟 [0---0xffffffff]</interval>
+			<sendcount>发送的次数，0，表示一直发送，不停止 [0---0xffffffff]</sendcount>
+			<begintime>开始的时间，绝对时间，要求输入的是有效时间!         时间格式是:年[4位]月[2位]日[2位]T时[2位]分[2位]秒[2位] 一共15位</begintime>
+			<endtime>结束的时间，绝对时间，要求输入的是有效时间!           时间格式是:年[4位]月[2位]日[2位]T时[2位]分[2位]秒[2位] 一共15位</endtime>
+			<repeat>第一个数字代表循环方式1-122520.每天12点25分钟20秒; 2-1-090001;每周一的12点25分钟20秒,[1周一,2周二,5周五，6周六，7周日];3-23-122520每月的23号12点25分钟20秒;4-20101209-122520,特定日子,2010年的12月9号的12点25分钟20秒;</repeat>
+			跑马灯  msgitem节点增加 channelGroup=""  表示针对特定的渠道组发送消息。
+		</field_desc>
+		<!-- 停服维护前，repeat代表几点开始 -->
+		<msgitem sendwho="" clientpos="6" repeat="1-010000" interval="5" sendcount="5000" begintime="20230718T170000" endtime="20230719T053000" msg="《三国杀OL》将于2023年7月19日 5:00-9:00进行停服维护。届时游戏将无法登录，请您提前下线避免不必要的损失。"/>
+		<!-- 日常轮播，勿动 -->
+		<msgitem sendwho="" clientpos="6" repeat="1-010020" interval="30" sendcount="5000" begintime="20150605T130000" endtime="20201231T230000" msg="请勿相信在游戏内贩售元宝信息，为了您的账号安全，谨防上当！"/>
+		<msgitem sendwho="" clientpos="6" repeat="1-010020" interval="30" sendcount="5000" begintime="20150605T133000" endtime="20201231T230000" msg="为了您的账号安全，请及时绑定安全产品，填写注册资料，如遇账号问题请拨打客服电话咨询！"/>
+		<msgitem sendwho="" clientpos="6" repeat="1-010020" interval="30" sendcount="5000" begintime="20150605T135000" endtime="20201231T230000" msg="请大家遵守游戏秩序，维护良好的游戏环境，GM随时在线监察，对游戏中恶意骂人、推送广告等扰乱游戏秩序的玩家进行处罚。"/>
+		<!-- <msgitem sendwho="" clientpos="6" repeat="1-193000" interval="5" sendcount="5" begintime="20210929T190000" endtime="20211231T230000" msg="20点欢乐大奖赛正在报名中，您可前往赛事大厅页面参与报名，赢史诗皮肤锦囊、豪华夺宝券等好礼。"/> -->
+	</sys>
+	<freshman>
+		<field_desc>
+			<说明>上线广播手</说明>
+			<clientpos>消息要显示的位置
+</clientpos>
+			<begintime>开始的时间，绝对时间，</begintime>
+			<endtime>结束的时间，绝对时间，</endtime>
+			<level>广播的等级 1-10</level>
+		</field_desc>
+		<msgitem level="1-10" clientpos="1" endtime="20101208-122030" begintime="20101208-122030" msg="贵州遵义山体滑坡致11层居民楼垮塌 近千人疏散"/>
+		<msgitem level="1-10" clientpos="1" endtime="20101208-122030" begintime="20101208-122030" msg="贵州遵义山体滑坡致11层居民楼垮塌 近千人疏散"/>
+	</freshman>
+</meg_system>

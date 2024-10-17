@@ -1,0 +1,864 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			bet	-	下注分数
+			enterBean	-	进入要求欢乐豆
+			cost	-	胜利方门票费 
+			overtime	-	强制结算时间
+			daytime	-	每日开启结束时间
+			resttime	-	每日休闲时间
+			xinshouAI	-	新手AI场参数：打X场AI场
+			xinshouAItime	-	新手AI场参数：此日期后注册的玩家才会进新手AI
+			generalNum	-	先手;后手额外发将数量
+			looktime	-	抢先手预览武将时间
+			getTime	-	三选一时间
+			getNum	-	三选一数量
+			buyTime	-	商店购买时间
+			maxSpellNum	-	最大额外技能数量
+			amazing	-	连败2次后，则开局保底1个强力组9。
+连败N次后，开局保底X个，Y组成长
+配置方式N;X;Y
+			GeneralScoreNum	-	将面预发武将数量
+			roomName	-	房间名称
+			loseRatio1	-	失败系数1
+万分制
+			loseRatio2	-	失败系数2
+整数
+			generalsecreen	-	不发前N局使用过的武将
+			aitime	-	AI模拟抢先手时间
+			AILordParam1	-	将面胜率达到此值AI叫分100
+			AILordParam2	-	将面胜率达到此值AI叫分200
+			AILordParam3	-	将面胜率达到此值AI叫分300
+			AIxianshouChance	-	人机场的AI抢先手概率/100
+			xianshoufen1	-	先手分参数1：前X局
+			xianshoufen2	-	先手分参数2：前几局未成为1号位次数*系数
+			xianshoufen3	-	先手分参数3：连败系数
+			xianshoutime	-	抢先手阶段时间：单位秒
+			shoptime	-	双方都关闭商店后，进度条时间缩短到X秒（单位秒）
+			shopword1	-	敌人购买文案：购买中
+			shopword2	-	敌人购买文案：已购买
+			hufuuptips	-	虎符数量上涨的提示文案
+			SELECT_GENERAL_TIP2	-	抢先手文案：界面文案1
+			SELECT_GENERAL_TIP3	-	抢先手文案：界面文案2
+			SELECT_GENERAL_TIP11	-	抢先手文案：界面文案
+			SELECT_GENERAL_TIP7	-	抢先手文案7
+			SELECT_GENERAL_TIP8	-	抢先手文案：预览阶段
+			SELECT_GENERAL_TIP10	-	抢先手文案：抢先手阶段
+			SELECT_GENERAL_TIP12	-	抢先手文案：AI场
+			SELECT_GENERAL_TIP9	-	抢先手文案：抢先手阶段
+			SELECT_GENERAL_TIP13	-	抢先手文案：抢先手阶段
+			SELECT_GENERAL_TIP4	-	抢先手文案：展示结果
+			SELECT_GENERAL_TIP5	-	抢先手文案：展示结果
+			SELECT_GENERAL_TIP6	-	抢先手文案：展示结果
+			SELECT_GENERAL_TIP1	-	抢先手文案：选将阶段
+			xiuxiantips	-	进入休闲模式的提示
+			dailyXbaodi1	-	每日首胜保底：前N场未首胜则触发
+			dailyXbaodi2	-	每日首胜保底：未首胜则战斗力下降X%
+			dailyXbaodi3	-	每日首胜保底：未首胜则三选一保底a个强力组b的道具
+			modeldesc	-	主界面玩法描述
+			spellemptytips	-	空槽tips
+			xianshouwinrate	-	选将时先手胜率达到此值，显示胜率
+			xianshouwinratetips	-	先手胜率的文案
+			xianshouwinratetips	-	先手胜率的文案
+			houshouwinrate	-	选将时后手胜率达到此值，显示胜率
+			houshouwinratetips	-	后手胜率的文案
+			houshouwinratetips	-	后手胜率的文案
+			shareWord	-	结算分享语，文案后固定带【查看战绩】
+		-->
+	<Label bet="100,200,300" enterBean="600" cost="5" overtime="900" xinshouAI="3" xinshouAItime="20240730T000000" generalNum="1;2" looktime="6" getTime="15" getNum="3" buyTime="20" maxSpellNum="2" amazing="2;1;9" GeneralScoreNum="14" roomName="单骑无双" loseRatio1="2500" loseRatio2="3" generalsecreen="10" aitime="3;6" AILordParam1="50" AILordParam2="65" AILordParam3="100" AIxianshouChance="30" xianshoufen1="10" xianshoufen2="10" xianshoufen3="10" xianshoutime="10" shoptime="1" dailyXbaodi1="3" dailyXbaodi2="20" dailyXbaodi3="1;9" xianshouwinrate="50" houshouwinrate="50" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			GeneralScore	-	将面分
+			BasePower	-	战斗力基础
+		-->
+	<LordMate2 GeneralScore="0" BasePower="1000" />
+	<LordMate2 GeneralScore="1000" BasePower="1000" />
+	<LordMate2 GeneralScore="1500" BasePower="1100" />
+	<LordMate2 GeneralScore="2000" BasePower="1210" />
+	<LordMate2 GeneralScore="2500" BasePower="1331" />
+	<LordMate2 GeneralScore="3000" BasePower="1464" />
+	<LordMate2 GeneralScore="3500" BasePower="1610" />
+	<LordMate2 GeneralScore="4000" BasePower="1771" />
+	<LordMate2 GeneralScore="4500" BasePower="1948" />
+	<LordMate2 GeneralScore="5000" BasePower="2143" />
+	<LordMate2 GeneralScore="5500" BasePower="2465" />
+	<LordMate2 GeneralScore="6000" BasePower="2834" />
+	<LordMate2 GeneralScore="6500" BasePower="3260" />
+	<LordMate2 GeneralScore="7000" BasePower="3749" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+				-	匹配队列，最多8个
+			seconds	-	时间区间，从上个时间到本时间到阶段内（超过最大读最大）
+			powerDiff	-	战力差值/万分比
+			levDiffFri	-	等级差
+			ScoreDiff	-	积分差（档位，配置在lua中）
+			LevelRankDiff	-	等级差（档位，配置在lua中）
+			 OfficerRankDiff	-	官阶差（档位，配置在lua中）
+			OfficerDiff	-	官阶差（绝对值）废弃
+			ip	-	是否限IP
+			emyRepeatLimit	-	是否限同局玩家
+			checkBlacklist	-	友方是否限制黑名单
+			checkLimit	-	是否匹配限制玩家
+			reputation	-	当前信誉分需要大于等于X才可以匹配到
+		-->
+	<LordMateParam2 seconds="3" powerDiff="6000" levDiffFri="100" ScoreDiff="5" LevelRankDiff="20"  OfficerRankDiff="5" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="100" />
+	<LordMateParam2 seconds="6" powerDiff="8000" levDiffFri="100" ScoreDiff="7" LevelRankDiff="20"  OfficerRankDiff="7" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="95" />
+	<LordMateParam2 seconds="10" powerDiff="10000" levDiffFri="120" ScoreDiff="9" LevelRankDiff="20"  OfficerRankDiff="9" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="95" />
+	<LordMateParam2 seconds="15" powerDiff="15000" levDiffFri="120" ScoreDiff="13" LevelRankDiff="20"  OfficerRankDiff="11" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="80" />
+	<LordMateParam2 seconds="20" powerDiff="20000" levDiffFri="120" ScoreDiff="15" LevelRankDiff="20"  OfficerRankDiff="20" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="0" />
+	<LordMateParam2 seconds="30" powerDiff="30000" levDiffFri="200" ScoreDiff="20" LevelRankDiff="20"  OfficerRankDiff="20" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="0" />
+	<LordMateParam2 seconds="40" powerDiff="40000" levDiffFri="200" ScoreDiff="25" LevelRankDiff="25"  OfficerRankDiff="25" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="0" />
+	<LordMateParam2 seconds="60" powerDiff="999999" levDiffFri="200" ScoreDiff="30" LevelRankDiff="30"  OfficerRankDiff="30" OfficerDiff="255" ip="1" emyRepeatLimit="0" checkBlacklist="1" checkLimit="0" reputation="0" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rate	-	百场胜率，万分比
+			LossCount	-	失败分
+			Aitime	-	超时匹配AI
+			AILevel	-	匹配AI等级
+			LevelRankDiffRaise	-	等级向上扩充档位
+			 OfficerRankDiffRaise	-	官阶向上扩充档位
+			MaxAi	-	每日最多匹配AI次数
+				-	
+				-	
+				-	
+				-	
+				-	
+				-
+		-->
+	<LordMate2Ai rate="-99999" LossCount="-99900000" Aitime="45" AILevel="2" LevelRankDiffRaise="0"  OfficerRankDiffRaise="0" MaxAi="5" />
+	<LordMate2Ai rate="0" LossCount="100000" Aitime="45" AILevel="2" LevelRankDiffRaise="0"  OfficerRankDiffRaise="3" MaxAi="4" />
+	<LordMate2Ai rate="3000" LossCount="200000" Aitime="45" AILevel="2" LevelRankDiffRaise="0"  OfficerRankDiffRaise="3" MaxAi="3" />
+	<LordMate2Ai rate="4000" LossCount="250000" Aitime="45" AILevel="2" LevelRankDiffRaise="0"  OfficerRankDiffRaise="3" MaxAi="3" />
+	<LordMate2Ai rate="4500" LossCount="300000" Aitime="45" AILevel="1" LevelRankDiffRaise="0"  OfficerRankDiffRaise="3" MaxAi="3" />
+	<LordMate2Ai rate="5000" LossCount="300000" Aitime="45" AILevel="1" LevelRankDiffRaise="1"  OfficerRankDiffRaise="3" MaxAi="3" />
+	<LordMate2Ai rate="5500" LossCount="330000" Aitime="45" AILevel="1" LevelRankDiffRaise="1"  OfficerRankDiffRaise="3" MaxAi="3" />
+	<LordMate2Ai rate="6000" LossCount="360000" Aitime="45" AILevel="1" LevelRankDiffRaise="1"  OfficerRankDiffRaise="3" MaxAi="3" />
+	<LordMate2Ai rate="6500" LossCount="400000" Aitime="45" AILevel="1" LevelRankDiffRaise="1"  OfficerRankDiffRaise="3" MaxAi="3" />
+	<LordMate2Ai rate="7000" LossCount="400000" Aitime="45" AILevel="1" LevelRankDiffRaise="1"  OfficerRankDiffRaise="3" MaxAi="2" />
+	<LordMate2Ai rate="10000" LossCount="400000" Aitime="45" AILevel="1" LevelRankDiffRaise="2"  OfficerRankDiffRaise="3" MaxAi="2" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	奖励id
+			RequireSuccess	-	要求周连胜
+			goodslist	-	奖励
+				-	
+				-	备注
+		-->
+	<WinningStreak Id="1" RequireSuccess="3" goodslist="9020101,200;" />
+	<WinningStreak Id="2" RequireSuccess="5" goodslist="9020101,300;" />
+	<WinningStreak Id="3" RequireSuccess="7" goodslist="9020101,600;" />
+	<WinningStreak Id="4" RequireSuccess="9" goodslist="9020101,900;" />
+	<!--
+		CitationID	-	战法ID
+			money	-	物品价格
+			group	-	分组 1~9，一个战法可以属于多个组，例如配置1;2
+				-	物品名称
+				-	物品描述
+			weight	-	非开局随机权重
+			startWeight	-	开局权重
+			showItem	-	最小出现回合
+			AInum	-	推荐等级（给AI用的）
+优先买等级高的
+大于等于4时需要攒钱买
+			level	-	品质
+			refreshlv	-	刷新最低等级
+大于等于配置值才可被刷出，不配置为不限制
+		-->
+	<Tactics CitationID="2001" money="3" group="2" weight="20" startWeight="0" showItem="4" AInum="2" level="3" />
+	<Tactics CitationID="2002" money="3" group="1" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2003" money="1" group="1" weight="10" startWeight="0" showItem="0" AInum="3" level="1" />
+	<Tactics CitationID="2004" money="1" group="2" weight="5" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2005" money="1" group="3" weight="10" startWeight="10" showItem="0" AInum="2" level="1" />
+	<Tactics CitationID="2006" money="2" group="3" weight="10" startWeight="10" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2007" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2008" money="2" group="1" weight="5" startWeight="5" showItem="0" AInum="2" level="2" />
+	<Tactics CitationID="2009" money="3" group="2" weight="5" startWeight="0" showItem="4" AInum="1" level="3" />
+	<Tactics CitationID="2010" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2011" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Tactics CitationID="2132" money="1" group="3" weight="30" startWeight="0" showItem="0" AInum="2" level="1" />
+	<Tactics CitationID="2133" money="2" group="3" weight="50" startWeight="10" showItem="0" AInum="2" level="2" />
+	<Tactics CitationID="2135" money="3" group="3" weight="20" startWeight="0" showItem="4" AInum="1" level="3" />
+	<Tactics CitationID="2019" money="1" group="0" weight="10" startWeight="0" showItem="7" AInum="1" level="1" />
+	<Tactics CitationID="2020" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2021" money="1" group="3" weight="5" startWeight="0" showItem="0" AInum="3" level="1" />
+	<Tactics CitationID="2028" money="1" group="1" weight="5" startWeight="5" showItem="0" AInum="2" level="1" />
+	<Tactics CitationID="2030" money="1" group="3" weight="10" startWeight="0" showItem="0" AInum="2" level="1" />
+	<Tactics CitationID="2033" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="2" />
+	<Tactics CitationID="2034" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2036" money="3" group="2" weight="20" startWeight="5" showItem="4" AInum="3" level="3" />
+	<Tactics CitationID="2037" money="4" group="2" weight="10" startWeight="0" showItem="7" AInum="2" level="4" />
+	<Tactics CitationID="2039" money="2" group="3" weight="8" startWeight="0" showItem="7" AInum="2" level="2" />
+	<Tactics CitationID="2040" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Tactics CitationID="2042" money="3" group="2" weight="20" startWeight="0" showItem="0" AInum="3" level="3" />
+	<Tactics CitationID="2043" money="4" group="2" weight="5" startWeight="0" showItem="7" AInum="2" level="4" />
+	<Tactics CitationID="2045" money="3" group="2" weight="10" startWeight="0" showItem="4" AInum="2" level="3" />
+	<Tactics CitationID="2048" money="2" group="2" weight="20" startWeight="20" showItem="0" AInum="2" level="2" />
+	<Tactics CitationID="2049" money="3" group="2" weight="5" startWeight="0" showItem="4" AInum="2" level="3" />
+	<Tactics CitationID="2051" money="2" group="2;9" weight="30" startWeight="25" showItem="0" AInum="4" level="2" />
+	<Tactics CitationID="2052" money="4" group="2" weight="10" startWeight="0" showItem="4" AInum="3" level="4" />
+	<Tactics CitationID="2054" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="2" />
+	<Tactics CitationID="2055" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Tactics CitationID="2056" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Tactics CitationID="2059" money="2" group="3" weight="30" startWeight="25" showItem="0" AInum="4" level="2" />
+	<Tactics CitationID="2060" money="4" group="3" weight="10" startWeight="0" showItem="4" AInum="2" level="4" />
+	<Tactics CitationID="2064" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="4" level="1" />
+	<Tactics CitationID="2065" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="4" level="2" />
+	<Tactics CitationID="2066" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Tactics CitationID="2069" money="3" group="1" weight="0" startWeight="0" showItem="4" AInum="2" level="3" />
+	<Tactics CitationID="2070" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Tactics CitationID="2071" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="4" level="1" />
+	<Tactics CitationID="2072" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="2" />
+	<Tactics CitationID="2073" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="3" />
+	<Tactics CitationID="2074" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="2" level="4" />
+	<Tactics CitationID="2076" money="2" group="1" weight="30" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Tactics CitationID="2077" money="3" group="1" weight="10" startWeight="0" showItem="4" AInum="1" level="3" />
+	<Tactics CitationID="2078" money="4" group="1" weight="5" startWeight="0" showItem="4" AInum="1" level="4" />
+	<Tactics CitationID="2079" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="1" />
+	<Tactics CitationID="2080" money="1" group="3" weight="10" startWeight="0" showItem="4" AInum="3" level="1" />
+	<Tactics CitationID="2081" money="1" group="3" weight="5" startWeight="0" showItem="4" AInum="2" level="1" />
+	<Tactics CitationID="2082" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="1" />
+	<Tactics CitationID="2083" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="2" />
+	<Tactics CitationID="2084" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="2" level="4" />
+	<Tactics CitationID="2085" money="2" group="2" weight="10" startWeight="10" showItem="0" AInum="2" level="2" />
+	<Tactics CitationID="2086" money="2" group="2" weight="5" startWeight="0" showItem="4" AInum="1" level="2" />
+	<Tactics CitationID="2088" money="3" group="2" weight="10" startWeight="10" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2093" money="2" group="2" weight="10" startWeight="10" showItem="0" AInum="2" level="2" />
+	<Tactics CitationID="2094" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2095" money="3" group="2" weight="5" startWeight="5" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2096" money="4" group="3" weight="5" startWeight="5" showItem="0" AInum="1" level="4" />
+	<Tactics CitationID="2097" money="3" group="3" weight="10" startWeight="10" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2098" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Tactics CitationID="2099" money="2" group="2" weight="5" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Tactics CitationID="2144" money="2" group="1" weight="5" startWeight="15" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2100" money="2" group="2" weight="10" startWeight="0" showItem="4" AInum="4" level="2" />
+	<Tactics CitationID="2101" money="4" group="2" weight="5" startWeight="0" showItem="7" AInum="3" level="4" />
+	<Tactics CitationID="2103" money="2" group="3" weight="10" startWeight="3" showItem="2" AInum="1" level="2" />
+	<Tactics CitationID="2104" money="2" group="3" weight="10" startWeight="3" showItem="0" AInum="4" level="2" />
+	<Tactics CitationID="2143" money="3" group="3" weight="10" startWeight="0" showItem="4" AInum="3" level="3" />
+	<Tactics CitationID="2105" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="2" />
+	<Tactics CitationID="2106" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Tactics CitationID="2108" money="1" group="2" weight="10" startWeight="0" showItem="4" AInum="3" level="1" />
+	<Tactics CitationID="2109" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Tactics CitationID="2111" money="1" group="2" weight="10" startWeight="10" showItem="0" AInum="2" level="1" />
+	<Tactics CitationID="2115" money="3" group="3" weight="10" startWeight="0" showItem="4" AInum="1" level="3" />
+	<Tactics CitationID="2127" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2116" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Tactics CitationID="2117" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="2" level="4" />
+	<Tactics CitationID="2120" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Tactics CitationID="2121" money="3" group="1;9" weight="7" startWeight="2" showItem="3" AInum="3" level="3" />
+	<Tactics CitationID="2122" money="3" group="1;9" weight="7" startWeight="2" showItem="3" AInum="3" level="3" />
+	<Tactics CitationID="2128" money="1" group="1" weight="5" startWeight="0" showItem="2" AInum="1" level="1" />
+	<Tactics CitationID="2129" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2130" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="1" />
+	<Tactics CitationID="2131" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2147" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2148" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2150" money="3" group="3;9" weight="5" startWeight="30" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2151" money="2" group="3" weight="10" startWeight="0" showItem="1" AInum="1" level="2" />
+	<Tactics CitationID="2152" money="1" group="3" weight="10" startWeight="0" showItem="1" AInum="1" level="1" />
+	<Tactics CitationID="2153" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2154" money="1" group="3" weight="10" startWeight="0" showItem="3" AInum="1" level="1" />
+	<Tactics CitationID="2155" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2156" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2157" money="1" group="3" weight="10" startWeight="0" showItem="3" AInum="1" level="1" />
+	<Tactics CitationID="2158" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2162" money="1" group="3" weight="5" startWeight="20" showItem="0" AInum="2" level="1" />
+	<Tactics CitationID="2163" money="3" group="3" weight="10" startWeight="0" showItem="4" AInum="3" level="3" />
+	<Tactics CitationID="2164" money="1" group="3" weight="10" startWeight="0" showItem="0" AInum="3" level="1" />
+	<Tactics CitationID="2165" money="2" group="3" weight="10" startWeight="0" showItem="0" AInum="3" level="2" />
+	<Tactics CitationID="2166" money="2" group="1" weight="30" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2167" money="1" group="1" weight="5" startWeight="5" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2171" money="3" group="2" weight="10" startWeight="3" showItem="4" AInum="3" level="3" />
+	<Tactics CitationID="2172" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Tactics CitationID="2174" money="2" group="3" weight="5" startWeight="0" showItem="4" AInum="3" level="2" />
+	<Tactics CitationID="2175" money="4" group="3" weight="5" startWeight="0" showItem="7" AInum="3" level="4" />
+	<Tactics CitationID="2177" money="1" group="2" weight="0" startWeight="0" showItem="4" AInum="2" level="1" />
+	<Tactics CitationID="2182" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2183" money="2" group="1" weight="0" startWeight="0" showItem="7" AInum="2" level="2" />
+	<Tactics CitationID="2184" money="2" group="1" weight="0" startWeight="0" showItem="7" AInum="3" level="2" />
+	<Tactics CitationID="2185" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="4" level="3" />
+	<Tactics CitationID="2188" money="3" group="2" weight="5" startWeight="0" showItem="4" AInum="1" level="3" />
+	<Tactics CitationID="2189" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Tactics CitationID="2190" money="4" group="2" weight="10" startWeight="0" showItem="7" AInum="1" level="4" />
+	<Tactics CitationID="2191" money="3" group="1;9" weight="10" startWeight="15" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2192" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Tactics CitationID="2193" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2194" money="2" group="2" weight="10" startWeight="5" showItem="3" AInum="1" level="2" />
+	<Tactics CitationID="2195" money="3" group="2" weight="5" startWeight="0" showItem="7" AInum="1" level="3" />
+	<Tactics CitationID="2196" money="2" group="1" weight="10" startWeight="30" showItem="7" AInum="1" level="2" />
+	<Tactics CitationID="2197" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2198" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2208" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2209" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2210" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2211" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2227" money="3" group="1;9" weight="20" startWeight="30" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2228" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2238" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2239" money="3" group="3" weight="10" startWeight="5" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2240" money="4" group="0" weight="5" startWeight="0" showItem="10" AInum="1" level="4" />
+	<Tactics CitationID="2241" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2242" money="1" group="2" weight="10" startWeight="5" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2243" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2244" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2245" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2246" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2247" money="1" group="1" weight="0" startWeight="10" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2249" money="2" group="2" weight="20" startWeight="10" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2250" money="3" group="2" weight="5" startWeight="0" showItem="4" AInum="1" level="3" />
+	<Tactics CitationID="2251" money="4" group="2" weight="5" startWeight="0" showItem="7" AInum="1" level="4" />
+	<Tactics CitationID="2258" money="1" group="1" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2259" money="2" group="1" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2260" money="4" group="1" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Tactics CitationID="2261" money="2" group="1" weight="30" startWeight="35" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2262" money="3" group="1" weight="15" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2263" money="4" group="1" weight="2" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Tactics CitationID="2264" money="2" group="1" weight="30" startWeight="20" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2265" money="4" group="1" weight="10" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Tactics CitationID="2266" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Tactics CitationID="2281" money="2" group="3" weight="50" startWeight="10" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2282" money="2" group="3" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2283" money="2" group="3" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2284" money="1" group="3" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2285" money="3" group="3;9" weight="10" startWeight="10" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2286" money="4" group="3" weight="10" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Tactics CitationID="2287" money="0" group="1;2" weight="20" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Tactics CitationID="2288" money="0" group="1;2" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2289" money="2" group="3" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2290" money="3" group="3;9" weight="10" startWeight="5" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2291" money="2" group="3" weight="5" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2292" money="3" group="3" weight="5" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2293" money="3" group="3" weight="30" startWeight="15" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2294" money="2" group="2" weight="10" startWeight="5" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2295" money="2" group="2" weight="10" startWeight="5" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2296" money="2" group="2" weight="10" startWeight="5" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2297" money="2" group="2" weight="20" startWeight="5" showItem="0" AInum="1" level="2" />
+	<Tactics CitationID="2221" money="4" group="3" weight="10" startWeight="5" showItem="7" AInum="1" level="4" refreshlv="120" />
+	<Tactics CitationID="2226" money="3" group="2" weight="20" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Tactics CitationID="2298" money="2" group="1" weight="10" startWeight="10" showItem="7" AInum="2" level="2" />
+	<Tactics CitationID="2299" money="2" group="1" weight="10" startWeight="10" showItem="7" AInum="3" level="2" />
+	<!--
+		CitationID	-	物品ID
+			money	-	物品价格
+			group	-	分组 10-99，一个战法可以属于多个组，例如配置1;2
+				-	物品名称
+				-	物品描述
+			weight	-	非开局随机权重
+			startWeight	-	开局权重
+			showItem	-	最小出现回合
+			AInum	-	推荐等级（给AI用的）
+优先买等级高的
+大于等于4时需要攒钱买
+			level	-	品质
+			refreshlv	-	刷新最低等级
+大于等于配置值才可被刷出，不配置为不限制
+		-->
+	<Spell CitationID="3001" money="3" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Spell CitationID="3003" money="1" group="1" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3004" money="4" group="0" weight="10" startWeight="0" showItem="0" AInum="3" level="4" />
+	<Spell CitationID="3006" money="4" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Spell CitationID="3008" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3010" money="3" group="0" weight="10" startWeight="0" showItem="0" AInum="3" level="3" />
+	<Spell CitationID="3011" money="3" group="0" weight="10" startWeight="0" showItem="0" AInum="4" level="3" />
+	<Spell CitationID="3013" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3015" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3017" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="2" level="4" />
+	<Spell CitationID="3018" money="2" group="0" weight="12" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3019" money="3" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Spell CitationID="3020" money="3" group="0" weight="2" startWeight="0" showItem="0" AInum="4" level="3" />
+	<Spell CitationID="3021" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3022" money="2" group="0" weight="12" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3023" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="4" />
+	<Spell CitationID="3024" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="1" />
+	<Spell CitationID="3025" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="1" />
+	<Spell CitationID="3026" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3027" money="3" group="0" weight="10" startWeight="0" showItem="0" AInum="3" level="3" />
+	<Spell CitationID="3028" money="3" group="0" weight="5" startWeight="0" showItem="0" AInum="3" level="3" />
+	<Spell CitationID="3029" money="3" group="0" weight="12" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3030" money="4" group="0" weight="6" startWeight="0" showItem="0" AInum="3" level="4" />
+	<Spell CitationID="3032" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3033" money="3" group="0" weight="10" startWeight="0" showItem="0" AInum="3" level="3" />
+	<Spell CitationID="3036" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3037" money="4" group="0" weight="6" startWeight="0" showItem="0" AInum="3" level="4" />
+	<Spell CitationID="3038" money="4" group="0" weight="10" startWeight="0" showItem="0" AInum="3" level="4" />
+	<Spell CitationID="3040" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3041" money="3" group="0" weight="10" startWeight="0" showItem="0" AInum="3" level="3" />
+	<Spell CitationID="3042" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3043" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3044" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3045" money="2" group="0" weight="30" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3046" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3047" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="0" />
+	<Spell CitationID="3049" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="1" />
+	<Spell CitationID="3050" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3051" money="2" group="0" weight="12" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3052" money="2" group="0" weight="5" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Spell CitationID="3053" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3054" money="3" group="0" weight="20" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3057" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="3" level="1" />
+	<Spell CitationID="3060" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="4" level="2" />
+	<Spell CitationID="3062" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="3" />
+	<Spell CitationID="3063" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="3" level="2" />
+	<Spell CitationID="3065" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="2" />
+	<Spell CitationID="3067" money="3" group="0" weight="5" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Spell CitationID="3068" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3070" money="4" group="0" weight="1" startWeight="0" showItem="0" AInum="4" level="4" />
+	<Spell CitationID="3071" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="3" />
+	<Spell CitationID="3073" money="4" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Spell CitationID="3075" money="4" group="0" weight="10" startWeight="0" showItem="0" AInum="3" level="4" />
+	<Spell CitationID="3076" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3079" money="3" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3080" money="3" group="0" weight="5" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3081" money="3" group="0" weight="5" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Spell CitationID="3082" money="2" group="0" weight="5" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Spell CitationID="3083" money="2" group="0" weight="5" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3084" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3085" money="3" group="0" weight="5" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3086" money="3" group="0" weight="3" startWeight="0" showItem="0" AInum="3" level="3" />
+	<Spell CitationID="3087" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3089" money="2" group="0" weight="5" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3090" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="1" />
+	<Spell CitationID="3091" money="4" group="0" weight="7" startWeight="0" showItem="0" AInum="3" level="4" />
+	<Spell CitationID="3092" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3094" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3095" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3096" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3099" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3100" money="4" group="0" weight="3" startWeight="0" showItem="0" AInum="4" level="4" />
+	<Spell CitationID="3101" money="4" group="0" weight="7" startWeight="0" showItem="0" AInum="4" level="4" />
+	<Spell CitationID="3103" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3104" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3105" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Spell CitationID="3106" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3107" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Spell CitationID="3109" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3112" money="3" group="0" weight="30" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3113" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3115" money="3" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3116" money="1" group="0" weight="5" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3048" money="4" group="0" weight="5" startWeight="0" showItem="0" AInum="4" level="4" />
+	<Spell CitationID="3074" money="4" group="0" weight="5" startWeight="0" showItem="0" AInum="2" level="4" />
+	<Spell CitationID="3119" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Spell CitationID="3120" money="1" group="0" weight="20" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3125" money="2" group="0" weight="20" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3126" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Spell CitationID="3127" money="4" group="0" weight="20" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Spell CitationID="3128" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3129" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3131" money="1" group="0" weight="20" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3132" money="4" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Spell CitationID="3133" money="2" group="0" weight="20" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3134" money="1" group="0" weight="20" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3138" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3139" money="1" group="0" weight="5" startWeight="0" showItem="3" AInum="1" level="1" />
+	<Spell CitationID="3140" money="2" group="0" weight="5" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3142" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3144" money="1" group="0" weight="15" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3146" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3148" money="2" group="0" weight="5" startWeight="0" showItem="0" AInum="3" level="2" />
+	<Spell CitationID="3151" money="3" group="0" weight="15" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3152" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="1" />
+	<Spell CitationID="3153" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Spell CitationID="3154" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3155" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3156" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3157" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="2" level="4" />
+	<Spell CitationID="3158" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3159" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="4" level="3" />
+	<Spell CitationID="3160" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3161" money="3" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3162" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3163" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3164" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Spell CitationID="3168" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3172" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3176" money="4" group="0" weight="7" startWeight="0" showItem="0" AInum="3" level="4" />
+	<Spell CitationID="3177" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="1" />
+	<Spell CitationID="3178" money="1" group="0" weight="15" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3180" money="2" group="0" weight="15" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3181" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3184" money="1" group="0" weight="15" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3188" money="1" group="0" weight="20" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3190" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3196" money="1" group="0" weight="30" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3197" money="2" group="0" weight="20" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3198" money="1" group="0" weight="20" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3199" money="3" group="0" weight="15" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3204" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3205" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="3" level="1" />
+	<Spell CitationID="3207" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3210" money="2" group="0" weight="20" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3211" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3213" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="2" />
+	<Spell CitationID="3214" money="1" group="0" weight="20" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3218" money="2" group="0" weight="30" startWeight="0" showItem="0" AInum="3" level="2" />
+	<Spell CitationID="3219" money="3" group="0" weight="15" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3220" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Spell CitationID="3221" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3222" money="1" group="0" weight="30" startWeight="0" showItem="0" AInum="2" level="1" />
+	<Spell CitationID="3225" money="1" group="0" weight="30" startWeight="0" showItem="0" AInum="2" level="1" />
+	<Spell CitationID="3226" money="1" group="0" weight="2" startWeight="0" showItem="0" AInum="2" level="1" />
+	<Spell CitationID="3229" money="3" group="0" weight="10" startWeight="0" showItem="0" AInum="3" level="3" />
+	<Spell CitationID="3230" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Spell CitationID="3234" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3238" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3240" money="1" group="0" weight="15" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3244" money="3" group="0" weight="15" startWeight="0" showItem="0" AInum="4" level="3" />
+	<Spell CitationID="3246" money="3" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3247" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="4" />
+	<Spell CitationID="3248" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3249" money="3" group="0" weight="15" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Spell CitationID="3250" money="4" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="4" />
+	<Spell CitationID="3251" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Spell CitationID="3252" money="4" group="0" weight="5" startWeight="0" showItem="0" AInum="3" level="4" />
+	<Spell CitationID="3253" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Spell CitationID="3256" money="3" group="0" weight="20" startWeight="0" showItem="0" AInum="3" level="3" />
+	<Spell CitationID="3257" money="3" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Spell CitationID="3258" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="4" />
+	<Spell CitationID="3260" money="2" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Spell CitationID="3261" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="2" level="4" />
+	<Spell CitationID="3262" money="3" group="0" weight="15" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Spell CitationID="3263" money="4" group="0" weight="5" startWeight="0" showItem="0" AInum="4" level="4" />
+	<Spell CitationID="3265" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Spell CitationID="3266" money="4" group="0" weight="0" startWeight="0" showItem="0" AInum="4" level="4" />
+	<!--
+		CitationID	-	物品ID
+			money	-	物品价格
+			group	-	分组 101-199，一个战法可以属于多个组，例如配置1;2
+				-	物品名称
+				-	物品描述
+			weight	-	非开局随机权重
+			startWeight	-	开局权重
+			showItem	-	最小出现回合
+			AInum	-	推荐等级（给AI用的）
+优先买等级高的
+大于等于4时需要攒钱买
+			level	-	品质
+		-->
+	<Card CitationID="4142" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4004" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4005" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4006" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4007" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4008" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4009" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4010" money="0" group="0" weight="1" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4011" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4012" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4013" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4015" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4016" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4018" money="1" group="0" weight="30" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4026" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Card CitationID="4027" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="3" level="2" />
+	<Card CitationID="4028" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Card CitationID="4029" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4031" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Card CitationID="4032" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Card CitationID="4033" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4034" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Card CitationID="4037" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Card CitationID="4038" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4040" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4042" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4043" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4044" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4045" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4046" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Card CitationID="4047" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4048" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4049" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4050" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4052" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4053" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4054" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Card CitationID="4056" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4058" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4059" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4061" money="2" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Card CitationID="4062" money="0" group="0" weight="15" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4063" money="0" group="0" weight="15" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4064" money="0" group="0" weight="15" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4065" money="0" group="0" weight="15" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4066" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4067" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4068" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Card CitationID="4069" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Card CitationID="4070" money="0" group="0" weight="15" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4071" money="0" group="0" weight="15" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4072" money="0" group="0" weight="15" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4073" money="0" group="0" weight="15" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4074" money="1" group="0" weight="50" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4075" money="1" group="0" weight="50" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4076" money="1" group="0" weight="50" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4077" money="1" group="0" weight="50" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4078" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Card CitationID="4079" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Card CitationID="4080" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Card CitationID="4081" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="3" />
+	<Card CitationID="4082" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4083" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4084" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4085" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4086" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4087" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4088" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4089" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4090" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4091" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4092" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4093" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4094" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4095" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4096" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4097" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4098" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4099" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4100" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4101" money="1" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4102" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4103" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4104" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4105" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4106" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4107" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4108" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4109" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4110" money="0" group="0" weight="5" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4111" money="0" group="0" weight="5" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4112" money="0" group="0" weight="5" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4113" money="0" group="0" weight="5" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4114" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4115" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4116" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4117" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4118" money="2" group="0" weight="1" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Card CitationID="4119" money="2" group="0" weight="1" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Card CitationID="4120" money="2" group="0" weight="1" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Card CitationID="4121" money="2" group="0" weight="1" startWeight="0" showItem="0" AInum="1" level="4" />
+	<Card CitationID="4122" money="0" group="0" weight="1" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Card CitationID="4123" money="0" group="0" weight="1" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Card CitationID="4124" money="0" group="0" weight="1" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Card CitationID="4125" money="0" group="0" weight="1" startWeight="0" showItem="0" AInum="2" level="2" />
+	<Card CitationID="4126" money="1" group="0" weight="1" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4127" money="1" group="0" weight="1" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4128" money="1" group="0" weight="1" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4129" money="1" group="0" weight="1" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4130" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4131" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4132" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4133" money="0" group="0" weight="0" startWeight="0" showItem="0" AInum="1" level="1" />
+	<Card CitationID="4134" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4135" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4136" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4137" money="0" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="2" />
+	<Card CitationID="4138" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4139" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4140" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="1" level="3" />
+	<Card CitationID="4141" money="1" group="0" weight="10" startWeight="0" showItem="0" AInum="2" level="3" />
+	<!--
+		group	-	所在组
+				-	#分组说明
+			FirstWeight	-	先手权重
+			FirstNum	-	先手保底数
+			SecoundWeight	-	后手权重
+			SecoundNum	-	后手保底数
+		-->
+	<StartItem group="1" FirstWeight="20" SecoundWeight="25" SecoundNum="1" />
+	<StartItem group="2" FirstWeight="15" FirstNum="1" SecoundWeight="20" />
+	<StartItem group="3" FirstWeight="10" FirstNum="1" SecoundWeight="15" />
+	<!--
+		round	-	自然回合数（不算任何情况下新增或跳过的回合）,大于1000回合的代表开局成长的多种状态
+			itemNum	-	商品数量
+			FirstCoin	-	先手得币
+			SecondCoin	-	后手得币
+				-	#备注（轮次-先后手）
+			TacticsPTWeight	-	普通战法权重
+			TacticsPTNum	-	普通战法保底数；可以配置数量和组别，例如 1；2表示第2组保底1个；组别不配时则不区分组别
+			TacticsXYWeight	-	稀有战法权重
+			TacticsXYNum	-	稀有战法保底数
+			TacticsSSWeight	-	史诗战法权重
+			TacticsSSNum	-	左侧保底数
+			TacticsCSWeight	-	传说战法权重
+			TacticsCSNum	-	左侧保底数
+			SpellPTWeight	-	普通技能权重
+			SpellPTNum	-	左侧保底数
+			SpellXYWeight	-	稀有技能权重
+			SpellXYNum	-	左侧保底数
+			SpellSSWeight	-	史诗技能权重
+			SpellSSNum	-	左侧保底数
+			SpellCSWeight	-	传说技能权重
+			SpellCSNum	-	左侧保底数
+			CardPTWeight	-	普通手牌权重
+			CardPTNum	-	左侧保底数
+			CardXYWeight	-	稀有手牌权重
+			CardXYNum	-	左侧保底数
+			CardSSWeight	-	史诗手牌权重
+			CardSSNum	-	左侧保底数
+			CardCSWeight	-	传说手牌权重
+			CardCSNum	-	左侧保底数
+			ReloadCost	-	刷新花费
+		-->
+	<Reload round="2" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="3" TacticsPTNum="1" TacticsXYWeight="30" TacticsXYNum="0" TacticsSSWeight="0" TacticsSSNum="0" TacticsCSWeight="0" TacticsCSNum="0" SpellPTWeight="50" SpellPTNum="0" SpellXYWeight="50" SpellXYNum="0" SpellSSWeight="0" SpellSSNum="0" SpellCSWeight="0" SpellCSNum="0" CardPTWeight="40" CardPTNum="0" CardXYWeight="60" CardXYNum="0" CardSSWeight="0" CardSSNum="0" CardCSWeight="0" CardCSNum="0" ReloadCost="1" />
+	<Reload round="3" itemNum="4" FirstCoin="1" SecondCoin="1" TacticsPTWeight="3" TacticsPTNum="1" TacticsXYWeight="30" TacticsXYNum="0" TacticsSSWeight="0" TacticsSSNum="0" TacticsCSWeight="0" TacticsCSNum="0" SpellPTWeight="40" SpellPTNum="0" SpellXYWeight="48" SpellXYNum="0" SpellSSWeight="0" SpellSSNum="0" SpellCSWeight="0" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="4" itemNum="4" FirstCoin="1" SecondCoin="1" TacticsPTWeight="3" TacticsPTNum="1" TacticsXYWeight="25" TacticsXYNum="0" TacticsSSWeight="5" TacticsSSNum="0" TacticsCSWeight="0" TacticsCSNum="0" SpellPTWeight="35" SpellPTNum="0" SpellXYWeight="45" SpellXYNum="0" SpellSSWeight="5" SpellSSNum="0" SpellCSWeight="0" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="5" itemNum="4" FirstCoin="1" SecondCoin="1" TacticsPTWeight="3" TacticsPTNum="1" TacticsXYWeight="20" TacticsXYNum="0" TacticsSSWeight="10" TacticsSSNum="0" TacticsCSWeight="0" TacticsCSNum="0" SpellPTWeight="30" SpellPTNum="0" SpellXYWeight="40" SpellXYNum="0" SpellSSWeight="10" SpellSSNum="0" SpellCSWeight="10" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="6" itemNum="4" FirstCoin="1" SecondCoin="1" TacticsPTWeight="60" TacticsPTNum="0" TacticsXYWeight="43" TacticsXYNum="0" TacticsSSWeight="24" TacticsSSNum="0" TacticsCSWeight="4" TacticsCSNum="0" SpellPTWeight="20" SpellPTNum="0" SpellXYWeight="35" SpellXYNum="0" SpellSSWeight="30" SpellSSNum="0" SpellCSWeight="15" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="7" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="51" TacticsPTNum="0" TacticsXYWeight="44" TacticsXYNum="0" TacticsSSWeight="27" TacticsSSNum="0" TacticsCSWeight="9" TacticsCSNum="0" SpellPTWeight="15" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="20" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="8" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="42" TacticsPTNum="0" TacticsXYWeight="45" TacticsXYNum="0" TacticsSSWeight="30" TacticsSSNum="0" TacticsCSWeight="14" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="9" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="10" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="11" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="12" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="13" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="14" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="15" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="16" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="17" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="18" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="19" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="20" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="21" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="22" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="23" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="24" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="25" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="26" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="27" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="28" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="29" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="30" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="31" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="32" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="33" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="34" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="35" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="36" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="37" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="38" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="39" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="40" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<Reload round="999999" itemNum="4" FirstCoin="2" SecondCoin="2" TacticsPTWeight="33" TacticsPTNum="0" TacticsXYWeight="46" TacticsXYNum="0" TacticsSSWeight="33" TacticsSSNum="0" TacticsCSWeight="19" TacticsCSNum="0" SpellPTWeight="10" SpellPTNum="0" SpellXYWeight="30" SpellXYNum="0" SpellSSWeight="35" SpellSSNum="0" SpellCSWeight="25" SpellCSNum="0" CardPTWeight="30" CardPTNum="0" CardXYWeight="35" CardXYNum="0" CardSSWeight="25" CardSSNum="0" CardCSWeight="10" CardCSNum="0" ReloadCost="1" />
+	<!--
+		FandS	-	类型
+1=先手
+2=后手
+			addShield	-	额外护甲
+			addFirstCard	-	添加初始手牌数
+			addHp	-	额外体力
+			addsha	-	额外出杀次数
+			addcard	-	摸牌数
+			exSkills	-	附加技能
+			card	-	指定手牌
+			getCoin	-	给币数量
+		-->
+	<FandS FandS="1" addShield="0" addFirstCard="0" addHp="0" addsha="0" addcard="0" />
+	<FandS FandS="2" addShield="0" addFirstCard="1" addHp="0" addsha="0" addcard="0" getCoin="1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Grade	-	档位（与SELECT保持一致）
+			weight	-	发将权重
+			num	-	需要满足武将数量
+			dacay	-	数量不足时权重衰减（每少一个衰减X）
+			minimum	-	该等级以及以上等级的将之和，满足该数量时触发保底 （高级一档的保底触发后不再触发低级的保底）
+		-->
+	<LordMate3 Grade="1" weight="70" num="7" dacay="10" />
+	<LordMate3 Grade="2" weight="140" num="14" dacay="10" minimum="20,1;40,2" />
+	<LordMate3 Grade="3" weight="290" num="29" dacay="10" minimum="20,1;40,2" />
+	<LordMate3 Grade="4" weight="330" num="33" dacay="10" minimum="20,1;40,2" />
+	<LordMate3 Grade="5" weight="310" num="31" dacay="10" />
+	<LordMate3 Grade="6" weight="710" num="71" dacay="10" />
+	<!--
+		KeyName	-	字段名字
+			DescribeName	-	备注1
+			Key	-	主键值
+			Value	-	对应队列值
+				-
+		-->
+	<MatchPowerKeyValue KeyName="Level" DescribeName="等级,rank" Key="30" Value="1" />
+	<MatchPowerKeyValue KeyName="Level" Key="50" Value="2" />
+	<MatchPowerKeyValue KeyName="Level" Key="60" Value="3" />
+	<MatchPowerKeyValue KeyName="Level" Key="80" Value="5" />
+	<MatchPowerKeyValue KeyName="Level" Key="100" Value="7" />
+	<MatchPowerKeyValue KeyName="Level" Key="120" Value="9" />
+	<MatchPowerKeyValue KeyName="Level" Key="140" Value="11" />
+	<MatchPowerKeyValue KeyName="Level" Key="160" Value="13" />
+	<MatchPowerKeyValue KeyName="Level" Key="170" Value="15" />
+	<MatchPowerKeyValue KeyName="Level" Key="180" Value="17" />
+	<MatchPowerKeyValue KeyName="Score" DescribeName="积分,rank" Key="0" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="1000" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="2000" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="5000" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="8000" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="12000" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="16000" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="20000" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="25000" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="30000" Value="1" />
+	<MatchPowerKeyValue KeyName="Official" DescribeName="官阶,rank" Key="0" Value="1" />
+	<MatchPowerKeyValue KeyName="Official" Key="6" Value="2" />
+	<MatchPowerKeyValue KeyName="Official" Key="8" Value="3" />
+	<MatchPowerKeyValue KeyName="Official" Key="10" Value="5" />
+	<MatchPowerKeyValue KeyName="Official" Key="12" Value="7" />
+	<MatchPowerKeyValue KeyName="Official" Key="14" Value="10" />
+	<MatchPowerKeyValue KeyName="Official" Key="16" Value="12" />
+	<MatchPowerKeyValue KeyName="Official" Key="18" Value="15" />
+	<MatchPowerKeyValue KeyName="Official" Key="20" Value="17" />
+	<MatchPowerKeyValue KeyName="Official" Key="24" Value="20" />
+	<MatchPowerKeyValue KeyName="Official" Key="27" Value="22" />
+	<MatchPowerKeyValue KeyName="WinStreak" DescribeName="连胜值,连胜加成（万分比）" Key="3" Value="13000" />
+	<MatchPowerKeyValue KeyName="WinStreak" Key="5" Value="15000" />
+	<MatchPowerKeyValue KeyName="WinStreak" Key="7" Value="18000" />
+	<MatchPowerKeyValue KeyName="WinStreak" Key="9" Value="20000" />
+	<MatchPowerKeyValue KeyName="WinStreak" Key="12" Value="25000" />
+	<MatchPowerKeyValue KeyName="LoseStreak" DescribeName="连败值,连败加成（万分比）" Key="1" Value="10000" />
+	<MatchPowerKeyValue KeyName="LoseStreak" Key="3" Value="8000" />
+	<MatchPowerKeyValue KeyName="LoseStreak" Key="5" Value="7000" />
+	<MatchPowerKeyValue KeyName="LoseStreak" Key="7" Value="6000" />
+	<MatchPowerKeyValue KeyName="LoseStreak" Key="9" Value="6000" />
+	<MatchPowerKeyValue KeyName="WinRate" DescribeName="百场胜率,加成（万分比）" Key="4000" Value="8000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="4500" Value="9000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="5000" Value="10000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="5500" Value="11000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="6000" Value="12000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="6500" Value="13000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="7000" Value="14000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="7500" Value="15000" />
+	<MatchPowerKeyValue KeyName="LevelRate" DescribeName="等级,加成（万分比）" Key="0" Value="8000" />
+	<MatchPowerKeyValue KeyName="LevelRate" Key="50" Value="9000" />
+	<MatchPowerKeyValue KeyName="LevelRate" Key="150" Value="10000" />
+	<MatchPowerKeyValue KeyName="LevelRate" Key="200" Value="10000" />
+	<!--
+		type	-	类型
+1=战法
+2=技能
+3=卡牌
+			limit	-	上限数量：只管默认格子，通过战法加的格子不管
+			level	-	品质：未配置则默认是本类型的上限
+		-->
+	<limit type="1" limit="2" />
+	<limit type="2" limit="2" />
+	<limit type="3" limit="2" />
+	<limit type="3" limit="1" level="1;2" />
+	<!--
+		type	-	统计项
+			typename	-	统计项名次
+			color1	-	达到此数值显示紫色
+			color2	-	达到此数值显示橙色
+			color3	-	达到此数值显示红色
+			rankrequire	-	排行榜入榜值
+			ranknum	-	排行榜总人数（分母）
+			rankX	-	全服前X名显示名次
+			perX	-	超过X%的玩家才显示
+			desc	-	表现标语
+		-->
+	<shuju type="1" rankrequire="10" ranknum="50000" />
+	<shuju type="2" rankrequire="10" ranknum="50000" />
+	<shuju type="3" rankrequire="10" ranknum="50000" />
+	<shuju type="4" rankrequire="10" ranknum="50000" />
+	<shuju type="5" rankrequire="10" ranknum="50000" />
+	<shuju type="6" rankrequire="10" ranknum="50000" />
+	<shuju type="7" rankrequire="10" ranknum="50000" />
+	<shuju type="8" rankrequire="10" ranknum="50000" />
+</Root>

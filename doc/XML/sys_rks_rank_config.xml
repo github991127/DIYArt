@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			type	-	排行榜数据id
+			BigType	-	所属的排行榜大类
+			isIndependent	-	是否产生独立排行榜
+			isShowFriendRank	-	是否产生好友排行榜
+			Tab1	-	一级页签
+			TabName	-	一级页签名字
+			Tab2	-	二级页签
+			desc	-	排行榜名字
+				-	备注
+			maxCount	-	最多排名人数
+			clientCount	-	最多显示名次-暂时未生效
+			cycleInterval	-	排行榜快照时间
+			IsNewRank	-	特殊标识（区分新旧排行榜）
+			isArea	-	是否是 跨区
+			saveDataInterval	-	数据保存的间隔
+			phpranktime	-	php类排行榜的开启时间
+			ShowTime	-	显示时间
+		-->
+	<Rank type="1" BigType="1" Tab1="100" TabName="战功" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			cycId	-	排行榜期数id
+				-	备注
+			startTime	-	开始时间：不能比上一期的结束时间早
+			endTime	-	结束时间：永久榜和循环榜可不填
+			cycleGenerateInterval	-	循环周榜时间
+			-->
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="2" BigType="1" Tab1="100" TabName="战功" Tab2="3" desc="本周排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" cycleGenerateInterval="604800" />
+	</Rank>
+	<Rank type="34" BigType="1" Tab1="100" TabName="战功" Tab2="2" desc="本城排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="3" BigType="2" Tab1="30" TabName="4v4" Tab2="1" desc="单人排名" maxCount="1100" cycleInterval="86400" isArea="1" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200804T000000" endTime="20200824T235959" />
+		<TimeConfig cycId="2" startTime="20201209T000000" endTime="20201231T235959" />
+	</Rank>
+	<Rank type="4" BigType="2" Tab1="30" TabName="4v4" Tab2="2" desc="组队排名" maxCount="1100" cycleInterval="86400" isArea="1" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200804T000000" endTime="20200824T235959" />
+		<TimeConfig cycId="2" startTime="20201209T000000" endTime="20201231T235959" />
+	</Rank>
+	<Rank type="5" BigType="3" Tab1="29" TabName="欢乐排位" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" isArea="1" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20210208T000000" endTime="20210309T235959" />
+		<TimeConfig cycId="2" startTime="20210310T000000" endTime="20211231T235959" />
+		<TimeConfig cycId="3" startTime="20210407T000000" endTime="20210504T235959" />
+		<TimeConfig cycId="4" startTime="20210506T000000" endTime="20210602T235959" />
+		<TimeConfig cycId="5" startTime="20210603T000000" endTime="20210630T235959" />
+		<TimeConfig cycId="6" startTime="20210705T000000" endTime="20210801T235959" />
+		<TimeConfig cycId="7" startTime="20210802T000000" endTime="20210830T235959" />
+		<TimeConfig cycId="8" startTime="20210901T000000" endTime="20210928T235959" />
+		<TimeConfig cycId="9" startTime="20210930T000000" endTime="20211027T235959" />
+		<TimeConfig cycId="10" startTime="20211029T000000" endTime="20211127T235959" />
+		<TimeConfig cycId="11" startTime="20211129T000000" endTime="20211227T235959" />
+		<TimeConfig cycId="12" startTime="20211229T000000" endTime="20220125T235959" />
+		<TimeConfig cycId="13" startTime="20220127T000000" endTime="20220227T235959" />
+		<TimeConfig cycId="14" startTime="20220302T000000" endTime="20220329T235959" />
+	</Rank>
+	<Rank type="6" BigType="4" Tab1="28" TabName="统帅排位" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" isArea="1" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20201209T000000" endTime="20201231T235959" />
+		<TimeConfig cycId="2" startTime="20210310T000000" endTime="20210406T235959" />
+		<TimeConfig cycId="3" startTime="20210407T000000" endTime="20210504T235959" />
+		<TimeConfig cycId="4" startTime="20210506T000000" endTime="20210602T235959" />
+		<TimeConfig cycId="5" startTime="20210603T000000" endTime="20210630T235959" />
+		<TimeConfig cycId="6" startTime="20210705T000000" endTime="20210801T235959" />
+		<TimeConfig cycId="7" startTime="20210802T000000" endTime="20210830T235959" />
+		<TimeConfig cycId="8" startTime="20210901T000000" endTime="20210928T235959" />
+		<TimeConfig cycId="9" startTime="20210930T000000" endTime="20211027T235959" />
+		<TimeConfig cycId="10" startTime="20211029T000000" endTime="20211127T235959" />
+		<TimeConfig cycId="11" startTime="20211129T000000" endTime="20211227T235959" />
+		<TimeConfig cycId="12" startTime="20211229T000000" endTime="20220125T235959" />
+		<TimeConfig cycId="13" startTime="20220127T000000" endTime="20220227T235959" />
+		<TimeConfig cycId="14" startTime="20220302T000000" endTime="20220329T235959" />
+	</Rank>
+	<Rank type="7" BigType="5" Tab1="90" TabName="武将等阶" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="8" BigType="5" Tab1="90" TabName="武将等阶" Tab2="3" desc="本周排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" cycleGenerateInterval="604800" />
+	</Rank>
+	<Rank type="106" BigType="5" Tab1="90" TabName="武将等阶" Tab2="2" desc="本城排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600" />
+	<Rank type="9" BigType="6" Tab1="30" TabName="三国秀" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="10" BigType="6" Tab1="30" TabName="三国秀" Tab2="3" desc="本周排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" cycleGenerateInterval="604800" />
+	</Rank>
+	<Rank type="35" BigType="6" Tab1="30" TabName="三国秀" Tab2="2" desc="本城排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="11" BigType="7" Tab1="70" TabName="皮肤" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="12" BigType="7" Tab1="70" TabName="皮肤" Tab2="3" desc="本周排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" cycleGenerateInterval="604800" />
+	</Rank>
+	<Rank type="108" BigType="7" Tab1="70" TabName="皮肤" Tab2="2" desc="本城排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600" />
+	<Rank type="13" BigType="9" Tab1="26" TabName="祈福" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20210211T000000" endTime="20210219T235959" />
+		<TimeConfig cycId="2" startTime="20201209T000000" endTime="20201231T235959" />
+		<TimeConfig cycId="3" startTime="20210402T000000" endTime="20210409T235959" />
+		<TimeConfig cycId="4" startTime="20210430T000000" endTime="20210507T235959" />
+		<TimeConfig cycId="5" startTime="20210813T000000" endTime="20210820T235959" />
+		<TimeConfig cycId="6" startTime="20210917T000000" endTime="20210926T235959" />
+		<TimeConfig cycId="7" startTime="20211015T000000" endTime="20211022T235959" />
+		<TimeConfig cycId="8" startTime="20211210T000000" endTime="20211218T235959" />
+		<TimeConfig cycId="9" startTime="20220101T000000" endTime="20120110T235959" />
+		<TimeConfig cycId="10" startTime="20220130T000000" endTime="20220207T235959" />
+	</Rank>
+	<Rank type="14" BigType="10" Tab1="27" TabName="长坂坡" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200801T000000" endTime="20200831T235959" />
+		<TimeConfig cycId="2" startTime="20200901T000000" endTime="20200930T235959" />
+		<TimeConfig cycId="3" startTime="20201001T000000" endTime="20201031T235959" />
+		<TimeConfig cycId="4" startTime="20201101T000000" endTime="20201130T235959" />
+		<TimeConfig cycId="5" startTime="20201201T000000" endTime="20201231T235959" />
+		<TimeConfig cycId="6" startTime="20210101T000000" endTime="20210131T235959" />
+		<TimeConfig cycId="7" startTime="20210201T000000" endTime="20210228T235959" />
+		<TimeConfig cycId="8" startTime="20210301T000000" endTime="20210331T235959" />
+		<TimeConfig cycId="9" startTime="20210401T000000" endTime="20210430T235959" />
+		<TimeConfig cycId="10" startTime="20210501T000000" endTime="20210531T235959" />
+		<TimeConfig cycId="11" startTime="20210601T000000" endTime="20210630T235959" />
+		<TimeConfig cycId="12" startTime="20210701T000000" endTime="20210731T235959" />
+		<TimeConfig cycId="13" startTime="20210801T000000" endTime="20210831T235959" />
+		<TimeConfig cycId="14" startTime="20210901T000000" endTime="20210930T235959" />
+		<TimeConfig cycId="15" startTime="20211001T000000" endTime="20211031T235959" />
+		<TimeConfig cycId="16" startTime="20211101T000000" endTime="20211130T235959" />
+		<TimeConfig cycId="17" startTime="20211201T000000" endTime="20211231T235959" />
+		<TimeConfig cycId="18" startTime="20220101T000000" endTime="20220131T235959" />
+		<TimeConfig cycId="19" startTime="20220201T000000" endTime="20220228T235959" />
+		<TimeConfig cycId="20" startTime="20220301T000000" endTime="20220331T235959" />
+		<TimeConfig cycId="21" startTime="20220401T000000" endTime="20220424T235959" />
+		<TimeConfig cycId="22" startTime="20220501T000000" endTime="20220531T235959" />
+		<TimeConfig cycId="23" startTime="20220601T000000" endTime="20220630T235959" />
+		<TimeConfig cycId="24" startTime="20220701T000000" endTime="20220731T235959" />
+		<TimeConfig cycId="25" startTime="20220801T000000" endTime="20220831T235959" />
+		<TimeConfig cycId="26" startTime="20220901T000000" endTime="20220930T235959" />
+		<TimeConfig cycId="27" startTime="20221001T000000" endTime="20221031T235959" />
+		<TimeConfig cycId="28" startTime="20221101T000000" endTime="20221130T235959" />
+		<TimeConfig cycId="29" startTime="20221201T000000" endTime="20221231T235959" />
+		<TimeConfig cycId="30" startTime="20230331T000000" endTime="20230410T235959" />
+	</Rank>
+	<Rank type="15" BigType="13" isIndependent="1" Tab1="31" TabName="斗地主" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="2" startTime="20210713T070000" endTime="20210715T235959" />
+		<TimeConfig cycId="3" startTime="20210716T070000" endTime="20210930T235959" />
+		<TimeConfig cycId="4" startTime="20211001T070000" endTime="20211231T235959" />
+		<TimeConfig cycId="5" startTime="20220103T070000" endTime="20220420T235959" />
+		<TimeConfig cycId="6" startTime="20220502T070000" endTime="20220630T235959" />
+		<TimeConfig cycId="7" startTime="20220701T070000" endTime="20221030T235959" />
+		<TimeConfig cycId="8" startTime="20221103T070000" endTime="20230108T235959" />
+		<TimeConfig cycId="9" startTime="20230109T070000" endTime="20230402T235959" />
+		<TimeConfig cycId="10" startTime="20230403T070000" endTime="20230702T235959" />
+		<TimeConfig cycId="11" startTime="20230703T070000" endTime="20231008T235959" />
+		<TimeConfig cycId="12" startTime="20231009T070000" endTime="20231231T235959" />
+		<TimeConfig cycId="13" startTime="20240101T070000" endTime="20240331T235959" />
+		<TimeConfig cycId="14" startTime="20240401T070000" endTime="20240430T235959" />
+		<TimeConfig cycId="15" startTime="20240501T070000" endTime="20240531T235959" />
+		<TimeConfig cycId="16" startTime="20240601T070000" endTime="20240630T235959" />
+		<TimeConfig cycId="17" startTime="20240701T070000" endTime="20240731T235959" />
+		<TimeConfig cycId="18" startTime="20240801T070000" endTime="20240831T235959" />
+		<TimeConfig cycId="19" startTime="20240901T070000" endTime="20240930T235959" />
+		<TimeConfig cycId="20" startTime="20241001T070000" endTime="20241031T235959" />
+		<TimeConfig cycId="21" startTime="20241101T070000" endTime="20241130T235959" />
+		<TimeConfig cycId="22" startTime="20241201T070000" endTime="20241231T235959" />
+	</Rank>
+	<Rank type="16" BigType="13" isIndependent="1" Tab1="31" TabName="斗地主" Tab2="3" desc="本周排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" cycleGenerateInterval="604800" />
+	</Rank>
+	<Rank type="36" BigType="13" isIndependent="1" Tab1="31" TabName="斗地主" Tab2="2" desc="本城排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="14" startTime="20240401T070000" endTime="20240430T235959" />
+		<TimeConfig cycId="15" startTime="20240501T070000" endTime="20240531T235959" />
+		<TimeConfig cycId="16" startTime="20240601T070000" endTime="20240630T235959" />
+		<TimeConfig cycId="17" startTime="20240701T070000" endTime="20240731T235959" />
+		<TimeConfig cycId="18" startTime="20240801T070000" endTime="20240831T235959" />
+		<TimeConfig cycId="19" startTime="20240901T070000" endTime="20240930T235959" />
+		<TimeConfig cycId="20" startTime="20241001T070000" endTime="20241031T235959" />
+		<TimeConfig cycId="21" startTime="20241101T070000" endTime="20241130T235959" />
+		<TimeConfig cycId="22" startTime="20241201T070000" endTime="20241231T235959" />
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20210630T235959" />
+	</Rank>
+	<Rank type="17" BigType="23" isIndependent="1" Tab1="98" TabName="排位赛" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20220208T100000" endTime="20220426T075959" />
+		<TimeConfig cycId="2" startTime="20220426T080000" endTime="20220522T235959" />
+		<TimeConfig cycId="3" startTime="20220523T000000" endTime="20220630T235959" />
+		<TimeConfig cycId="4" startTime="20220701T000000" endTime="20220731T235959" />
+		<TimeConfig cycId="5" startTime="20220801T000000" endTime="20220831T235959" />
+		<TimeConfig cycId="6" startTime="20220901T000000" endTime="20220930T235959" />
+		<TimeConfig cycId="7" startTime="20221001T000000" endTime="20221031T235959" />
+		<TimeConfig cycId="8" startTime="20221101T000000" endTime="20221130T235959" />
+		<TimeConfig cycId="9" startTime="20221201T000000" endTime="20221231T235959" />
+		<TimeConfig cycId="10" startTime="20230101T000000" endTime="20230131T235959" />
+		<TimeConfig cycId="11" startTime="20230201T000000" endTime="20230228T235959" />
+		<TimeConfig cycId="12" startTime="20230301T000000" endTime="20230331T235959" />
+		<TimeConfig cycId="13" startTime="20230401T000000" endTime="20230430T235959" />
+		<TimeConfig cycId="14" startTime="20230501T000000" endTime="20230531T235959" />
+		<TimeConfig cycId="15" startTime="20230601T000000" endTime="20230630T235959" />
+		<TimeConfig cycId="16" startTime="20230701T000000" endTime="20230731T235959" />
+		<TimeConfig cycId="17" startTime="20230801T000000" endTime="20230831T235959" />
+		<TimeConfig cycId="18" startTime="20230901T000000" endTime="20230930T235959" />
+		<TimeConfig cycId="19" startTime="20231001T000000" endTime="20231031T235959" />
+		<TimeConfig cycId="20" startTime="20231101T000000" endTime="20231130T235959" />
+		<TimeConfig cycId="21" startTime="20231201T000000" endTime="20231231T235959" />
+		<TimeConfig cycId="22" startTime="20240101T000000" endTime="20240131T235959" />
+		<TimeConfig cycId="23" startTime="20240201T000000" endTime="20240229T235959" />
+		<TimeConfig cycId="24" startTime="20240301T000000" endTime="20240331T235959" />
+		<TimeConfig cycId="25" startTime="20240401T000000" endTime="20240430T235959" />
+		<TimeConfig cycId="26" startTime="20240501T000000" endTime="20240531T235959" />
+		<TimeConfig cycId="27" startTime="20240601T000000" endTime="20240630T235959" />
+		<TimeConfig cycId="28" startTime="20240701T000000" endTime="20240731T235959" />
+		<TimeConfig cycId="29" startTime="20240801T000000" endTime="20240831T235959" />
+		<TimeConfig cycId="30" startTime="20240901T000000" endTime="20240930T235959" />
+		<TimeConfig cycId="31" startTime="20241001T000000" endTime="20241031T235959" />
+		<TimeConfig cycId="32" startTime="20241101T000000" endTime="20241130T235959" />
+		<TimeConfig cycId="33" startTime="20241201T000000" endTime="20241231T235959" />
+		<TimeConfig cycId="34" startTime="20250101T000000" endTime="20250131T235959" />
+	</Rank>
+	<Rank type="18" BigType="27" isIndependent="1" Tab1="101" TabName="官阶" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" IsNewRank="1" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="19" BigType="27" isIndependent="1" Tab1="101" TabName="官阶" Tab2="3" desc="本周排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" cycleGenerateInterval="604800" />
+	</Rank>
+	<Rank type="30" BigType="27" isIndependent="1" Tab1="101" TabName="官阶" Tab2="2" desc="本城排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20230213T094000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="109" BigType="8" Tab1="25" TabName="热力" Tab2="1" desc="全服排名" maxCount="1100">
+		<TimeConfig cycId="1" startTime="20211015T000000" endTime="20211021T235959" />
+		<TimeConfig cycId="2" startTime="20211112T000000" endTime="20211118T235959" />
+		<TimeConfig cycId="3" startTime="20220101T000000" endTime="20220109T235959" />
+		<TimeConfig cycId="4" startTime="20220130T000000" endTime="20220206T235959" />
+		<TimeConfig cycId="5" startTime="20220224T000000" endTime="20220228T235959" />
+		<TimeConfig cycId="6" startTime="20220301T000000" endTime="20220301T235959" />
+	</Rank>
+	<Rank type="22" />
+	<Rank type="110" BigType="12" isIndependent="1" Tab1="10" TabName="公会争霸" Tab2="1" desc="公会榜" maxCount="1100">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="111" BigType="12" isIndependent="1" Tab1="10" TabName="公会争霸" Tab2="2" desc="用户榜" maxCount="1100">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="115" BigType="11" Tab1="15" TabName="剑阁决战" Tab2="1" desc="魏国" maxCount="5000">
+		<TimeConfig cycId="1" startTime="20221214T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="116" BigType="11" Tab1="15" TabName="剑阁决战" Tab2="2" desc="蜀国" maxCount="5000">
+		<TimeConfig cycId="1" startTime="20221214T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="117" BigType="14" Tab1="20" TabName="千里单骑" Tab2="1" desc="全服排名" maxCount="1000" />
+	<Rank type="118" BigType="15" isIndependent="1" Tab1="65" TabName="龙舟会战" Tab2="1" desc="魏" maxCount="5000" />
+	<Rank type="119" BigType="15" isIndependent="1" Tab1="65" TabName="龙舟会战" Tab2="2" desc="蜀" maxCount="5000" />
+	<Rank type="120" BigType="15" isIndependent="1" Tab1="65" TabName="龙舟会战" Tab2="3" desc="吴" maxCount="5000" />
+	<Rank type="121" BigType="15" isIndependent="1" Tab1="65" TabName="龙舟会战" Tab2="4" desc="群" maxCount="5000" />
+	<Rank type="122" BigType="15" isIndependent="1" Tab1="65" TabName="龙舟会战" Tab2="5" desc="晋" maxCount="5000" />
+	<Rank type="123" BigType="16" Tab1="64" TabName="奇门八阵" Tab2="1" desc="闯关榜" maxCount="1000" />
+	<Rank type="124" BigType="16" Tab1="64" TabName="奇门八阵" Tab2="2" desc="速通榜" maxCount="1000" />
+	<Rank type="125" BigType="17" Tab1="66" TabName="十殿阎罗" Tab2="1" desc="闯关榜" maxCount="1000" />
+	<Rank type="126" BigType="18" Tab1="67" TabName="官渡之战" Tab2="1" desc="闯关榜" maxCount="1000" />
+	<Rank type="127" BigType="19" Tab1="63" TabName="周年庆" Tab2="1" desc="元宝榜" maxCount="1000">
+		<TimeConfig cycId="2" startTime="20221224T080000" endTime="20230102T235959" />
+	</Rank>
+	<Rank type="128" BigType="20" Tab1="62" TabName="年兽" Tab2="1" desc="全服排名" maxCount="1000" />
+	<Rank type="129" BigType="21" Tab1="61" TabName="签到" Tab2="1" desc="全服排名" maxCount="1000" />
+	<Rank type="130" BigType="22" Tab1="60" TabName="限时积分" Tab2="1" desc="全服排名" maxCount="1000">
+		<TimeConfig cycId="1" startTime="20211203T100000" endTime="20220103T235959" />
+		<TimeConfig cycId="2" startTime="20220224T000000" endTime="20220228T235959" />
+	</Rank>
+	<Rank type="131" BigType="24" Tab1="17" TabName="神武再世" Tab2="1" desc="全服排名" maxCount="1000">
+		<TimeConfig cycId="1" startTime="20221214T000000" endTime="20230116T235959" />
+	</Rank>
+	<Rank type="51" BigType="1" Tab1="99" TabName="战功" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="52" BigType="1" Tab1="99" TabName="战功" Tab2="2" desc="本周排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" cycleGenerateInterval="604800" />
+	</Rank>
+	<Rank type="53" BigType="5" Tab1="89" TabName="武将等阶" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="54" BigType="5" Tab1="89" TabName="武将等阶" Tab2="2" desc="本周排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" cycleGenerateInterval="604800" />
+	</Rank>
+	<Rank type="55" BigType="6" Tab1="30" TabName="三国秀" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="56" BigType="6" Tab1="30" TabName="三国秀" Tab2="2" desc="本周排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" cycleGenerateInterval="604800" />
+	</Rank>
+	<Rank type="57" BigType="7" Tab1="69" TabName="皮肤" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="58" BigType="7" Tab1="69" TabName="皮肤" Tab2="2" desc="本周排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" cycleGenerateInterval="604800" />
+	</Rank>
+	<Rank type="23" BigType="25" Tab1="5" TabName="人气值" Tab2="1" desc="总排名" maxCount="1100" cycleInterval="86400" IsNewRank="1" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20230213T094000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="24" BigType="25" Tab1="5" TabName="人气值" Tab2="2" desc="本周排名" maxCount="1100" cycleInterval="86400" IsNewRank="1" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20230213T094000" endTime="20300803T000000" cycleGenerateInterval="604800" />
+	</Rank>
+	<Rank type="25" BigType="26" isIndependent="1" Tab1="40" TabName="山河图" Tab2="1" desc="战绩榜" maxCount="1100" IsNewRank="1">
+		<TimeConfig cycId="1" startTime="20221214T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="29" BigType="26" isIndependent="1" Tab1="40" TabName="山河图" Tab2="2" desc="通关榜" maxCount="1100" IsNewRank="1">
+		<TimeConfig cycId="1" startTime="20221214T000000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="32" BigType="25" Tab1="5" TabName="人气值" Tab2="1" desc="近期排名" maxCount="1100" cycleInterval="86400" IsNewRank="1" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20230213T094000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="59" BigType="1" Tab1="99" TabName="战功" Tab2="2" desc="本城排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20230213T094000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="60" BigType="6" Tab1="30" TabName="三国秀" Tab2="2" desc="本城排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20230213T094000" endTime="20300803T000000" />
+	</Rank>
+	<Rank type="38" BigType="28" isIndependent="1" Tab1="41" TabName="单骑无双" Tab2="1" desc="连胜周榜" maxCount="1100" IsNewRank="1" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20221210T000001" endTime="20271218T235959" cycleGenerateInterval="604800" />
+	</Rank>
+	<Rank type="39" BigType="29" isIndependent="1" Tab1="99" TabName="义气榜" Tab2="2" desc="义气榜" maxCount="100" cycleInterval="86400" IsNewRank="1" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20221210T000001" endTime="20271218T235959" />
+	</Rank>
+	<Rank type="40" BigType="40" isIndependent="1" Tab1="31" TabName="斗地主" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="18" startTime="20240801T070000" endTime="20240831T235959" />
+		<TimeConfig cycId="19" startTime="20240901T070000" endTime="20240930T235959" />
+		<TimeConfig cycId="20" startTime="20241001T070000" endTime="20241031T235959" />
+	</Rank>
+	<Rank type="41" BigType="40" isIndependent="1" Tab1="31" TabName="斗地主" Tab2="2" desc="本周排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" cycleGenerateInterval="604800" />
+	</Rank>
+	<Rank type="42" BigType="40" isIndependent="1" Tab1="31" TabName="斗地主" Tab2="3" desc="本城排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="18" startTime="20240801T070000" endTime="20240831T235959" />
+	</Rank>
+	<Rank type="33" BigType="40" isIndependent="1" Tab1="31" TabName="斗地主" Tab2="4" desc="本周连胜" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20200803T000000" endTime="20300803T000000" cycleGenerateInterval="604800" />
+	</Rank>
+	<Rank type="43" BigType="41" isIndependent="1" Tab1="32" TabName="忠义共聚" Tab2="1" desc="全服排名" maxCount="1100" cycleInterval="86400" isArea="0" saveDataInterval="3600">
+		<TimeConfig cycId="1" startTime="20221210T000001" endTime="20271218T235959" />
+	</Rank>
+</Root>

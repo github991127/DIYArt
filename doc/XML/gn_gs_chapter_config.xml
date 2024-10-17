@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 新手教程章节配置  新版新手只有3章，对应关系1-1，2-2，3-3，打到4的玩家不进新手 -->
+<ChapterInGameConfig>
+	<ChapterGameModel Model="46">
+		<ChapterRule  ChapterId="1" UserCnt="2" Exp="10" GameMoney="30" Desc="新手教程第一章">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="6,7,8,9,10,26,77,3,25,4,79,18,53,15,1,2,11,14,17,33,16,71,49,44,20,29,78,12,13,27,43,5,19,21,22,23,24,28,30,31,34,35,36,37,38,39,40,41,42,45,46,47,48,50,51,52,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,72,73,74,75,76,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,98,99,100,101,102,103,104"/>			
+			<DealChrRule ShowFigure="1" >
+				<!-- 配置武将信息 Seat 座位（0号位固定是玩家使用）ChrId 武将编号 Maxhp 武将最高血量 Figure 武将身份 IsFirst是否第一个行动（只能配置一名为1）-->
+				<Chr Seat="0" ChrId="3" Maxhp="4" Nowhp="4" CardNum="2" RemoveSpell="1" Figure="1" IsFirst="1" Desc="张飞,主公"/>
+				<Chr Seat="1" ChrId="50" Maxhp="1" Nowhp="3" CardNum="2" RemoveSpell="1" Figure="3" IsFirst="0" Desc="张郃,反贼"/>
+			</DealChrRule>			
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="2" UserCnt="4" Exp="10" GameMoney="30" Desc="新手教程第二章">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="27,72,29,31,30,32,33,34,6,7,8,9,10,26,77,3,25,4,79,18,53,15,1,2,11,14,17,16,71,49,44,20,78,12,13,43,5,19,21,22,23,24,28,35,36,37,38,39,40,41,42,45,46,47,48,50,51,52,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,73,74,75,76,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,98,99,100,101,102,103,104"/>
+			<DealChrRule ShowFigure="1" >
+				<Chr Seat="0" ChrId="6" Maxhp="4" Nowhp="2" CardNum="2" RemoveSpell="0" Figure="1" IsFirst="1" Desc="马超,主公"/>				
+				<Chr Seat="1" ChrId="42" Maxhp="4" Nowhp="2" CardNum="2" RemoveSpell="1" Figure="3" IsFirst="0" Desc="徐晃,反贼"/>
+				<Chr Seat="2" ChrId="19" Maxhp="4" Nowhp="2" CardNum="2" RemoveSpell="1" Figure="3" IsFirst="0" Desc="许褚,反贼"/>
+				<Chr Seat="3" ChrId="114" Maxhp="4" Nowhp="2" CardNum="2" RemoveSpell="1" Figure="3" IsFirst="0" Desc="曹洪,反贼"/>				
+			</DealChrRule>			
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="3" UserCnt="3" Exp="10" GameMoney="30" Desc="新手教程第三章">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="2,34,6,7,36,49,10,8,9,27,26,15,72,29,31,30,32,33,77,3,25,4,79,18,53,1,11,14,17,16,71,44,20,78,12,13,43,5,19,21,22,23,24,28,35,37,38,39,40,41,42,45,46,47,48,50,51,52,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,73,74,75,76,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,98,99,100,101,102,103,104"/>
+			<DealChrRule ShowFigure="1" >
+				<Chr Seat="0" ChrId="61" Maxhp="4" Nowhp="2" CardNum="2" RemoveSpell="1" Figure="1" IsFirst="0" Desc="黄忠,主公"/>	
+				<Chr Seat="1" ChrId="50" Maxhp="4" Nowhp="1" CardNum="2" RemoveSpell="1" Figure="3" IsFirst="0" Desc="张郃,反贼"/>	
+				<Chr Seat="2" ChrId="28" Maxhp="4" Nowhp="1" CardNum="2" RemoveSpell="1" Figure="3" IsFirst="1" Desc="夏侯渊,反贼"/>					
+			</DealChrRule>			
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="4" UserCnt="3" Exp="10" GameMoney="30" Desc="新手教程第四章">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="14,2,6,7,8,36,11,15,49,9,28,34,10,27,72,29,31,30,32,33,26,77,3,25,4,79,18,53,1,17,16,71,44,20,78,12,13,43,5,19,21,22,23,24,35,37,38,39,40,41,42,45,46,47,48,50,51,52,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,73,74,75,76,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,98,99,100,101,102,103,104"/>
+			<DealChrRule ShowFigure="1" >
+				<Chr Seat="0" ChrId="5" Maxhp="4" Nowhp="4" CardNum="2" RemoveSpell="0" Figure="1" IsFirst="1" Desc="赵云,主公"/>				
+				<Chr Seat="1" ChrId="17" Maxhp="4" Nowhp="1" CardNum="2" RemoveSpell="1" Figure="3" IsFirst="0" Desc="夏侯惇,反贼"/>
+				<Chr Seat="2" ChrId="42" Maxhp="4" Nowhp="1" CardNum="2" RemoveSpell="1" Figure="3" IsFirst="0" Desc="徐晃,反贼"/>					
+			</DealChrRule>	
+		</ChapterRule>
+		
+		<!--
+		<ChapterRule  ChapterId="5" UserCnt="4" Exp="25" GameMoney="20" Desc="新手教程第五章">
+			<InitStackCardRule CardIdList="52,6,7,101,13,8,9,45,10,26,36,49,2,42,12,31,54,55,56,57,58,59,60,1,61,62,82,39,24,53,33,34,47,63,73,74,96,17,18,35"/>
+			<DealChrRule ShowFigure="0" >
+				<Chr Seat="0" ChrId="23" Maxhp="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc="吕布,内奸"/>				
+				<Chr Seat="1" ChrId="45" Maxhp="2" RemoveSpell="1" Figure="1" IsFirst="1" Desc="董卓,主公"/>
+				<Chr Seat="2" ChrId="148" Maxhp="2" RemoveSpell="1" Figure="3" IsFirst="0" Desc="叛军,反贼"/>
+				<Chr Seat="3" ChrId="184" Maxhp="1" RemoveSpell="1" Figure="2" IsFirst="0" Desc="李儒,忠臣"/>				
+			</DealChrRule>			
+		</ChapterRule>
+		-->
+
+	</ChapterGameModel>
+	
+	<!-- 新手欢乐引导场配置，ChapterId固定，99为第一场-->
+	<ChapterGameModel Model="121">
+		<ChapterRule  ChapterId="99" UserCnt="4" Exp="15" GameMoney="30" morale="10" Desc="新手欢乐引导章" Model="121">
+			<!--配置摸牌堆卡牌内容-->			
+			<InitStackCardRule CardIdList="10,9,26,53,20,42,8,41,68,84,29,62,15,7,1,31,40,36,34,35,4"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="14,49,48,86,88,87,44,47,25,18,77,76,78,63,38,56,6,33,58,59,104,30,72,27,17,71,12,13,16,43,73,79,80,3,11,2,96,5,19,21,22,23,24,28,37,39,45,46,50,51,54,55,57,60,61,64,65,66,67,69,73,74,75,81,82,85,89,90,91,92,93,94,95,98,99,100,101,102,103"/>
+			<DealChrRule ShowFigure="1" >
+				<Chr Seat="0" ChrId="0" ChrList="3,6,5" ChrNum="3" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="1" Desc="张飞,忠臣"/>				
+				<Chr Seat="1" ChrId="12" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="周瑜,反贼"/>
+				<Chr Seat="2" ChrId="6" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="马超,反贼"/>
+				<Chr Seat="3" ChrId="30" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="小乔,忠臣"/>					
+			</DealChrRule>				
+		</ChapterRule>
+	</ChapterGameModel>	
+	
+	<!-- 新手欢乐场配置，每个账号共随机FixedDealCount场, ChapterId不能超过255，只取配置的牌库和武将，不取Exp GameMoney配置（ChrId=0表示武将不指定，取角色可选的）-->
+	<ChapterGameModel Model="122" FixedDealCount="6">
+		<ChapterRule  ChapterId="100" UserCnt="4" Exp="15" GameMoney="30" morale="10" Desc="新手欢乐新手设计">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="14,49,48,86,88,87,84,44,47,25,4,18,8,40,77,9,76,20,31,78,63,41,36,1,38"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="67,79,53,27,42,68,29,62,15,23,34,35,17,71,33,12,13,59,6,11,26,7,16,3,43,10,2,5,19,21,22,24,28,30,37,39,45,46,50,51,54,55,56,57,58,60,61,64,65,66,69,72,73,74,75,80,81,82,85,89,90,91,92,93,94,95,96,98,99,100,101,102,103,104"/>
+			<DealChrRule ShowFigure="1" IgnoreSelfConfig="1">
+				<Chr Seat="0" ChrId="0" ChrList="2,0" ChrNum="3" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="1" Desc="关羽,忠臣"/>				
+				<Chr Seat="1" ChrId="7" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="黄月英,反贼"/>
+				<Chr Seat="2" ChrId="9" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="甘宁,反贼"/>
+				<Chr Seat="3" ChrId="1" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="刘备,忠臣"/>								
+			</DealChrRule>			
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="101" UserCnt="4" Exp="20" GameMoney="30" morale="15" Desc="新手欢乐新手设计">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="53,11,63,2,25,62,15,78,29,8,44,3,9,31,5,35,76,1,6"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="18,20,23,27,38,42,36,34,26,54,67,56,16,17,33,49,43,79,7,10,14,4,19,21,22,24,28,37,39,41,45,46,47,48,50,51,55,57,58,59,60,61,62,66,68,69,72,73,74,75,80,81,82,84,85,86,87,88,89,90,91,92,93,94,95,98,99,100,101,103,104"/>
+			<DealChrRule ShowFigure="1" IgnoreSelfConfig="1">
+				<Chr Seat="0" ChrId="0" ChrList="12,0" ChrNum="4" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="1" Desc="周瑜,忠臣"/>
+				<Chr Seat="1" ChrId="24" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="貂蝉,反贼"/>
+				<Chr Seat="2" ChrId="6" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="马超,反贼"/>
+				<Chr Seat="3" ChrId="18" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="张辽,忠臣"/>									
+			</DealChrRule>									
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="102" UserCnt="4" Exp="20" GameMoney="30" morale="10" Desc="新手欢乐新手设计">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="55,54,35,25,8,80,96,59,44,29,9,76,6,10,36,26,4,23,14"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="53,11,63,2,62,15,78,3,31,5,1,18,20,27,38,42,34,67,56,16,17,33,49,43,79,7,19,21,22,24,28,37,39,41,45,46,47,48,50,51,57,58,60,61,62,66,68,69,72,73,74,75,81,82,84,85,86,87,88,89,90,91,92,93,94,95,98,99,100,101,103,104"/>
+			<DealChrRule ShowFigure="1" IgnoreSelfConfig="1">
+				<Chr Seat="0" ChrId="0" ChrList="11,0" ChrNum="4" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="1" Desc="黄盖,忠臣"/>				
+				<Chr Seat="1" ChrId="25" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="孙尚香,反贼"/>	
+				<Chr Seat="2" ChrId="10" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="吕蒙,反贼"/>
+				<Chr Seat="3" ChrId="34" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="典韦,忠臣"/>			
+			</DealChrRule>				
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="103" UserCnt="4" Exp="25" GameMoney="30" morale="15" Desc="新手欢乐新手设计">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="6,35,25,18,8,63,29,40,59,21,41,104,9,76,36,20,27,72"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="77,14,38,53,99,67,85,54,81,4,26,44,10,15,1,7,11,2,17,16,71,79,78,12,13,43,5,19,22,23,24,28,30,31,34,37,39,42,45,46,47,48,50,51,3,55,56,57,58,60,61,62,64,65,66,68,69,73,74,75,33,82,84,49,86,87,88,89,90,91,92,93,94,95,96,98,80,100,101,102,103"/>
+			<DealChrRule ShowFigure="1" >
+				<Chr Seat="0" ChrId="0" ChrList="23,0" ChrNum="4" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="1" Desc="吕布,忠臣"/>				
+				<Chr Seat="1" ChrId="7" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="黄月英,反贼"/>
+				<Chr Seat="2" ChrId="19" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="许褚,反贼"/>
+				<Chr Seat="3" ChrId="61" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="黄忠,忠臣"/>				
+			</DealChrRule>				
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="104" UserCnt="4" Exp="25" GameMoney="30" morale="10" Desc="新手欢乐新手设计">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="15,71,27,25,21,34,78,29,18,31,77,76,13,12,20,53,6,35"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="1,38,80,79,63,62,68,10,58,59,104,40,8,56,3,26,36,67,42,39,96,7,17,33,49,44,43,14,11,2,16,4,5,19,22,23,24,28,30,37,41,45,46,47,48,50,51,54,55,57,60,61,9,64,65,66,69,72,73,74,75,81,82,84,85,86,87,88,89,90,91,92,93,94,95,98,99,100,101,102,103"/>
+			<DealChrRule ShowFigure="1" IgnoreSelfConfig="1">
+				<Chr Seat="0" ChrId="0" ChrList="319,0" ChrNum="4" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="1" Desc="界吕布,忠臣"/>				
+				<Chr Seat="1" ChrId="11" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="黄盖,反贼"/>
+				<Chr Seat="2" ChrId="20" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="郭嘉,反贼"/>
+				<Chr Seat="3" ChrId="24" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="貂蝉,忠臣"/>				
+			</DealChrRule>	
+		</ChapterRule>	
+		
+		<ChapterRule  ChapterId="105" UserCnt="4" Exp="20" GameMoney="30" morale="10" Desc="新手欢乐新手设计">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList=""/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="9,16,38,10,29,25,58,59,104,77,40,8,53,56,3,71,34,26,20,36,67,42,39,80,76,21,96,35,7,17,33,15,49,44,78,12,13,6,27,43,18,79,14,11,2,1,4,5,19,22,23,24,28,30,31,37,41,45,46,47,48,50,51,54,55,57,60,61,62,63,64,65,66,68,69,72,73,74,75,81,82,84,85,86,87,88,89,90,91,92,93,94,95,98,99,100,101,102,103"/>
+			<DealChrRule ShowFigure="1" IgnoreSelfConfig="1">
+				<Chr Seat="0" ChrId="0" ChrList="301,0,19,14" ChrNum="3" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="1" Desc="马超,忠臣"/>				
+				<Chr Seat="1" ChrId="5" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="赵云,反贼"/>
+				<Chr Seat="2" ChrId="7" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="黄月英,反贼"/>
+				<Chr Seat="3" ChrId="23" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="吕布,忠臣"/>				
+			</DealChrRule>	
+		</ChapterRule>			
+		
+		<ChapterRule  ChapterId="106" UserCnt="4" Exp="20" GameMoney="30" morale="10" Desc="新手欢乐新手设计">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList=""/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="9,16,38,10,29,25,58,59,104,77,40,8,53,56,3,71,34,26,20,36,67,42,39,80,76,21,96,35,7,17,33,15,49,44,78,12,13,6,27,43,18,79,14,11,2,1,4,5,19,22,23,24,28,30,31,37,41,45,46,47,48,50,51,54,55,57,60,61,62,63,64,65,66,68,69,72,73,74,75,81,82,84,85,86,87,88,89,90,91,92,93,94,95,98,99,100,101,102,103"/>
+			<DealChrRule ShowFigure="1" IgnoreSelfConfig="1">
+				<Chr Seat="0" ChrId="0" ChrList="307,0,301,14" ChrNum="3" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="1" Desc="马超,忠臣"/>				
+				<Chr Seat="1" ChrId="11" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="黄盖,反贼"/>
+				<Chr Seat="2" ChrId="6" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="马超,反贼"/>
+				<Chr Seat="3" ChrId="21" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="甄姬,忠臣"/>				
+			</DealChrRule>	
+		</ChapterRule>				
+		
+	</ChapterGameModel>		
+	
+		
+	<!-- 六人新手引导场配置，ChapterId固定，110为第一场-->
+	<ChapterGameModel Model="125">
+		<ChapterRule  ChapterId="110" UserCnt="6" Exp="20" GameMoney="40" Desc="六人新手引导章" Model="125" Reward="910811,1">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="40,29,70,17,10,26,67,9,13,27,7,8,53,96,31,11,2,14,3,1,36,43,18,15,6,25"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="4,5,12,16,19,20,21,22,23,24,28,30,32,33,34,35,79,37,38,39,41,42,44,45,46,47,48,49,50,51,52,54,55,56,57,58,59,60,61,62,63,64,65,66,68,69,71,72,73,74,75,76,77,78,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,97,98,99,100,101,102,103,104"/>
+			<DealChrRule ShowFigure="1" >
+				<Chr Seat="0" ChrId="108" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="SP赵云,反贼"/>
+				<Chr Seat="1" ChrId="6" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="马超,反贼"/>
+				<Chr Seat="2" ChrId="2" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="关羽,忠臣"/>
+				<Chr Seat="3" ChrId="16" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc="司马懿,内奸"/>				
+				<Chr Seat="4" ChrId="1" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc="刘备,主公"/>				
+				<Chr Seat="5" ChrId="3" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="张飞,反贼"/>
+			</DealChrRule>	
+		</ChapterRule>
+	</ChapterGameModel>	
+	
+	<!-- 新手欢乐场配置，每个账号共随机FixedDealCount场, ChapterId不能超过255，只取配置的牌库和武将，不取Exp GameMoney配置（ChrId=0表示武将不指定，取角色可选的）-->
+	<ChapterGameModel Model="126" FixedDealCount="4">		
+		<ChapterRule  ChapterId="111" UserCnt="6" Exp="20" GameMoney="30" Desc="六人新手新手设计" Reward="890711,1">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="65,31,76,75,96,39,12,30,64,73,78,74,84,1,44,36,49,71,6,7,14,11,77,8,28,40"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="29,70,17,10,67,9,13,27,53,2,3,26,43,18,15,25,4,5,16,19,20,21,22,23,24,32,33,34,35,79,37,38,41,42,45,46,47,48,50,51,52,54,55,56,57,58,59,60,61,62,63,66,68,69,72,80,81,82,83,85,86,87,88,89,90,91,92,93,94,95,97,98,99,100,101,102,103,104"/>
+			<DealChrRule ShowFigure="1" IgnoreSelfConfig="1">
+				<Chr Seat="0" ChrId="0" ChrList="26,3,23,2" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="xx,反贼"/>
+				<Chr Seat="1" ChrId="11" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="黄盖,反贼"/>
+				<Chr Seat="2" ChrId="21" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="甄姬,忠臣"/>
+				<Chr Seat="3" ChrId="14" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc="陆逊,内奸"/>				
+				<Chr Seat="4" ChrId="34" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="典韦,反贼"/>				
+				<Chr Seat="5" ChrId="1" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc="刘备,主公"/>
+			</DealChrRule>	
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="112" UserCnt="6" Exp="25" GameMoney="30" Desc="六人新手新手设计" Reward="933011,1">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="36,41,72,42,13,15,7,40,63,70,73,77,46,49,50,53,32,34,51,39,12,29,10,43,33,27,6,11"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="17,1,67,9,8,96,31,2,14,3,26,18,25,4,5,16,19,20,21,22,23,24,28,30,35,79,37,38,44,45,47,48,52,54,55,56,57,58,59,60,61,62,64,65,66,68,69,71,74,75,76,78,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,97,98,99,100,101,102,103,104"/>
+			<DealChrRule ShowFigure="1" IgnoreSelfConfig="1">
+				<Chr Seat="0" ChrId="0" ChrList="41,15,1,8" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc="xx,主公"/>
+				<Chr Seat="1" ChrId="10" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="吕蒙,反贼"/>
+				<Chr Seat="2" ChrId="22" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="华佗,忠臣"/>
+				<Chr Seat="3" ChrId="12" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc="周瑜,内奸"/>				
+				<Chr Seat="4" ChrId="19" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="许褚,反贼"/>				
+				<Chr Seat="5" ChrId="11" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="黄盖,反贼"/>
+			</DealChrRule>	
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="113" UserCnt="6" Exp="25" GameMoney="30" Desc="六人新手新手设计" Reward="891811,1">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="72,42,13,15,7,40,64,70,73,77,46,49,50,53,32,34,51,39,12,29,10,43,33,27,6,11"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="17,1,67,9,8,96,31,2,14,3,26,36,18,25,4,5,16,19,20,21,22,23,24,28,30,35,79,37,38,41,44,45,47,48,52,54,55,56,57,58,59,60,61,62,63,65,66,68,69,71,74,75,76,78,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,97,98,99,100,101,102,103,104"/>
+			<DealChrRule ShowFigure="1" IgnoreSelfConfig="1">
+				<Chr Seat="0" ChrId="0" ChrList="18,5,6,2" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="xx,忠臣"/>
+				<Chr Seat="1" ChrId="9" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc="甘宁,内奸"/>
+				<Chr Seat="2" ChrId="4" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="诸葛亮,反贼"/>
+				<Chr Seat="3" ChrId="23" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="吕布,反贼"/>				
+				<Chr Seat="4" ChrId="15" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc="曹操,主公"/>				
+				<Chr Seat="5" ChrId="1" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="刘备,反贼"/>
+			</DealChrRule>	
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="114" UserCnt="5" Exp="25" GameMoney="30" Desc="五人身份引导局临时配置">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="111,110,109,108,13,55,54,66,36,12,2,1,17,16,15,26,9,8,7,6"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="115,118,119,120,121,122,138,139,140,141,29,70,17,10,9,7,53,2,3,26,43,15,25,4,5,16,19,20,21,22,23,30,32,33,34,35,79,37,38,39,42,44,45,46,47,48,49,51,52,54,55,56,57,58,59,60,61,62,63,66,68,69,72,73,76,78,80,81,82,83,85,86,87,88,89,90,91,92,93,94,95,97,98,99,100,101,102,103,104"/>
+			<DealChrRule ShowFigure="1" IgnoreSelfConfig="1">
+				<Chr Seat="0" ChrId="0" ChrList="108,26,3,2" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="xx,反贼"/>
+				<Chr Seat="1" ChrId="25" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="孙尚香,忠臣"/>
+				<Chr Seat="2" ChrId="10" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc="吕蒙,内奸"/>
+				<Chr Seat="3" ChrId="3" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="张飞,反贼"/>							
+				<Chr Seat="4" ChrId="8" Maxhp="5" Nowhp="5" CardNum="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc="孙权,主公"/>
+			</DealChrRule>	
+		</ChapterRule>
+
+	</ChapterGameModel>
+	
+<!-- 5人身份 model = 141 固定 -->
+  <Figure5Chapter Section="3">
+    <ChapterRule  ChapterId="1" UserCnt="5" Exp="15" GameMoney="30" morale="10" Desc="明身份引导局1--反贼" Model="141">
+      <!--配置摸牌堆卡牌内容-->
+		<InitStackCardRule CardIdList=""/>		<!--服务端逆转了顺序，需要倒着配-->
+		<DealStackCardRule CardIdList=""/>
+      <DealChrRule ShowFigure="3" PlayerSeatId="1">
+        <Chr Seat="0" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc=""/>        
+        <Chr Seat="1" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>
+        <Chr Seat="2" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>
+        <Chr Seat="3" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc=""/>  
+        <Chr Seat="4" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc=""/>      
+      </DealChrRule>  
+    </ChapterRule>
+
+    <ChapterRule ChapterId="2" UserCnt="5" Exp="15" GameMoney="30" morale="10" Desc="明身份引导局2--反贼" Model="141">
+      <!--配置摸牌堆卡牌内容-->
+		<InitStackCardRule CardIdList=""/>		<!--服务端逆转了顺序，需要倒着配-->
+		<DealStackCardRule CardIdList=""/>
+      <DealChrRule ShowFigure="3" PlayerSeatId="3">
+        <Chr Seat="0" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc=""/>        
+        <Chr Seat="1" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc=""/>
+        <Chr Seat="2" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>
+        <Chr Seat="3" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>  
+        <Chr Seat="4" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc=""/>      
+      </DealChrRule>  
+    </ChapterRule>
+
+    <ChapterRule ChapterId="3" UserCnt="5" Exp="15" GameMoney="30" morale="10" Desc="明身份引导局3--主公" Model="141">
+      <!--配置摸牌堆卡牌内容-->
+		<InitStackCardRule CardIdList=""/>		<!--服务端逆转了顺序，需要倒着配-->
+		<DealStackCardRule CardIdList=""/>
+      <DealChrRule ShowFigure="1" PlayerSeatId="0">
+        <Chr Seat="0" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc=""/>        
+        <Chr Seat="1" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>
+        <Chr Seat="2" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc=""/>
+        <Chr Seat="3" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc=""/>  
+        <Chr Seat="4" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>      
+      </DealChrRule>  
+    </ChapterRule>
+
+    <ChapterRule ChapterId="4" UserCnt="5" Exp="15" GameMoney="30" morale="10" Desc="明身份引导局4--忠臣" Model="141">
+      <!--配置摸牌堆卡牌内容-->
+		<InitStackCardRule CardIdList=""/>		<!--服务端逆转了顺序，需要倒着配-->
+		<DealStackCardRule CardIdList=""/>
+      <DealChrRule ShowFigure="2" PlayerSeatId="1">
+        <Chr Seat="0" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc=""/>        
+        <Chr Seat="1" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc=""/>
+        <Chr Seat="2" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>
+        <Chr Seat="3" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>  
+        <Chr Seat="4" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc=""/>      
+      </DealChrRule>  
+    </ChapterRule>
+
+    <ChapterRule ChapterId="5" UserCnt="5" Exp="15" GameMoney="30" morale="10" Desc="明身份引导局5--内奸" Model="141">
+      <!--配置摸牌堆卡牌内容-->
+		<InitStackCardRule CardIdList=""/>		<!--服务端逆转了顺序，需要倒着配-->
+		<DealStackCardRule CardIdList=""/>
+      <DealChrRule ShowFigure="4" PlayerSeatId="2">
+        <Chr Seat="0" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc=""/>        
+        <Chr Seat="1" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>
+        <Chr Seat="2" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc=""/>
+        <Chr Seat="3" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc=""/>  
+        <Chr Seat="4" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>      
+      </DealChrRule>  
+    </ChapterRule>
+  </Figure5Chapter>
+
+
+
+<!-- 5人身份 model = 141 固定 -->
+  <Figure5Chapter Section="4">
+    <ChapterRule  ChapterId="1" UserCnt="5" Exp="15" GameMoney="30" morale="10" Desc="暗身份引导局固定局-反贼" Model="141">
+		<!--配置摸牌堆卡牌内容-->
+		<InitStackCardRule CardIdList="111,110,109,108,13,55,54,66,36,12,2,1,17,16,15,26,9,8,7,6"/>		<!--服务端逆转了顺序，需要倒着配-->
+		<DealStackCardRule CardIdList="115,118,119,120,121,122,138,139,140,141,29,70,17,10,9,7,53,2,3,26,43,15,25,4,5,16,19,20,21,22,23,30,32,33,34,35,79,37,38,39,42,44,45,46,47,48,49,51,52,54,55,56,57,58,59,60,61,62,63,66,68,69,72,73,76,78,80,81,82,83,85,86,87,88,89,90,91,92,93,94,95,97,98,99,100,101,102,103,104"/>
+      <DealChrRule ShowFigure="1" PlayerSeatId="3">
+        <Chr Seat="0" ChrId="8" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc="孙权,主公"/>        
+        <Chr Seat="1" ChrId="3" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="张飞,反贼"/>
+        <Chr Seat="2" ChrId="10" ChrList=""  Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc="吕蒙,内奸"/>
+        <Chr Seat="3" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="玩家,反贼"/>  
+        <Chr Seat="4" ChrId="25" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="孙尚香,忠臣"/>        
+      </DealChrRule>  
+    </ChapterRule>
+
+    <ChapterRule ChapterId="2" UserCnt="5" Exp="15" GameMoney="30" morale="10" Desc="暗身份引导局2--反贼" Model="141">
+      <!--配置摸牌堆卡牌内容-->
+		<InitStackCardRule CardIdList=""/>		<!--服务端逆转了顺序，需要倒着配-->
+		<DealStackCardRule CardIdList=""/>
+      <DealChrRule ShowFigure="3" PlayerSeatId="3">
+        <Chr Seat="0" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc=""/>        
+        <Chr Seat="1" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc=""/>
+        <Chr Seat="2" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>
+        <Chr Seat="3" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>  
+        <Chr Seat="4" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc=""/>      
+      </DealChrRule>  
+    </ChapterRule>
+
+    <ChapterRule ChapterId="3" UserCnt="5" Exp="15" GameMoney="30" morale="10" Desc="暗身份引导局3--主公" Model="141">
+      <!--配置摸牌堆卡牌内容-->
+		<InitStackCardRule CardIdList=""/>		<!--服务端逆转了顺序，需要倒着配-->
+		<DealStackCardRule CardIdList=""/>
+      <DealChrRule ShowFigure="1" PlayerSeatId="0">
+        <Chr Seat="0" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc=""/>        
+        <Chr Seat="1" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>
+        <Chr Seat="2" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc=""/>
+        <Chr Seat="3" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc=""/>  
+        <Chr Seat="4" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>      
+      </DealChrRule>  
+    </ChapterRule>
+
+    <ChapterRule ChapterId="4" UserCnt="5" Exp="15" GameMoney="30" morale="10" Desc="暗身份引导局4--忠臣" Model="141">
+      <!--配置摸牌堆卡牌内容-->
+		<InitStackCardRule CardIdList=""/>		<!--服务端逆转了顺序，需要倒着配-->
+		<DealStackCardRule CardIdList=""/>
+      <DealChrRule ShowFigure="2" PlayerSeatId="1">
+        <Chr Seat="0" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc=""/>        
+        <Chr Seat="1" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc=""/>
+        <Chr Seat="2" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc=""/>
+        <Chr Seat="3" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>  
+        <Chr Seat="4" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>      
+      </DealChrRule>  
+    </ChapterRule>
+
+    <ChapterRule ChapterId="5" UserCnt="5" Exp="15" GameMoney="30" morale="10" Desc="暗身份引导局5--内奸" Model="141">
+      <!--配置摸牌堆卡牌内容-->
+		<InitStackCardRule CardIdList=""/>		<!--服务端逆转了顺序，需要倒着配-->
+		<DealStackCardRule CardIdList=""/>
+      <DealChrRule ShowFigure="4" PlayerSeatId="2">
+        <Chr Seat="0" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc=""/>        
+        <Chr Seat="1" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc=""/>
+        <Chr Seat="2" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc=""/>
+        <Chr Seat="3" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>  
+        <Chr Seat="4" ChrId="0" ChrList="" Maxhp="0" Nowhp="0" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc=""/>      
+      </DealChrRule>  
+    </ChapterRule>
+  </Figure5Chapter>
+
+	
+	
+	<!-- 回归排位欢乐场配置，每个账号共随机FixedDealCount场, ChapterId不能超过255，只取配置的牌库和武将，不取Exp GameMoney配置（ChrId=0表示武将不指定，取角色可选的）-->
+	<ChapterGameModel Model="143" FixedDealCount="3">
+		<ChapterRule  ChapterId="150" UserCnt="4" Exp="15" GameMoney="30" morale="10" Desc="排位">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="31,18,14,33,10,15,25,49,44,8,29,78,58,59,104,77,72,6,20,27"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="17,71,12,13,53,16,26,43,73,79,9,7,3,11,2,1,4,5,19,21,22,23,24,28,30,31,34,35,36,37,38,39,40,41,42,45,46,47,48,50,51,54,55,56,57,60,61,62,63,64,65,66,67,68,69,73,74,75,76,80,81,82,84,85,86,87,88,89,90,91,92,93,94,95,96,98,99,100,101,102,103"/>
+			<DealChrRule ShowFigure="1" IgnoreSelfConfig="1">
+				<Chr Seat="0" ChrId="0" ChrList="0" LikeUse="1,2" ChrNum="8" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="1" Desc="SP赵云,忠臣"/>				
+				<Chr Seat="1" ChrId="22" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="华佗,反贼"/>
+				<Chr Seat="2" ChrId="19" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="许褚,反贼"/>
+				<Chr Seat="3" ChrId="34" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="黄忠,忠臣"/>				
+			</DealChrRule>	
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="151" UserCnt="4" Exp="20" GameMoney="30" morale="15" Desc="新手欢乐新手设计">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="53,17,71,33,15,25,27,31,20,29,78,12,13,59,77,34,6,1,11"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="9,38,40,26,7,16,49,44,3,8,43,18,79,10,14,2,4,5,19,21,22,23,24,28,30,35,36,37,39,41,42,45,46,47,48,50,51,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,72,73,74,75,76,80,81,82,84,85,86,87,88,89,90,91,92,93,94,95,96,98,99,100,101,102,103,104"/>
+			<DealChrRule ShowFigure="1" IgnoreSelfConfig="1">
+				<Chr Seat="0" ChrId="0" ChrList="0" LikeUse="1,2" ChrNum="8" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="1" Desc="SP赵云,忠臣"/>				
+				<Chr Seat="1" ChrId="14" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="陆逊,反贼"/>
+				<Chr Seat="2" ChrId="8" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="孙权,反贼"/>
+				<Chr Seat="3" ChrId="301" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="张辽,忠臣"/>				
+			</DealChrRule>	
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="152" UserCnt="4" Exp="20" GameMoney="30" morale="15" Desc="新手欢乐新手设计">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="9,72,96,80,76,42,10,36,29,40,38,30,11,31,20,6,1,26"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="33,15,25,35,53,77,8,7,17,16,71,49,44,14,78,12,13,3,27,43,18,79,2,4,5,19,21,22,23,24,28,34,37,39,41,45,46,47,48,50,51,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,73,74,75,81,82,84,85,86,87,88,89,90,91,92,93,94,95,98,99,100,101,102,103,104"/>
+			<DealChrRule ShowFigure="1" IgnoreSelfConfig="1">
+				<Chr Seat="0" ChrId="0" ChrList="0" LikeUse="1,2" ChrNum="8" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="1" Desc="界张飞,忠臣"/>			
+				<Chr Seat="1" ChrId="12" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="周瑜,反贼"/>	
+				<Chr Seat="2" ChrId="1" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="3" IsFirst="0" Desc="刘备,反贼"/>
+				<Chr Seat="3" ChrId="307" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="典韦,忠臣"/>				
+			</DealChrRule>	
+		</ChapterRule>
+		
+	</ChapterGameModel>		
+
+	<!-- 新手斗地主配置，每个账号共随机FixedDealCount场, ChapterId不能超过255，只取配置的牌库和武将，不取Exp GameMoney配置（ChrId=0表示武将不指定，取角色可选的）Figure=0正常抢地主1指定为地主-->
+	<ChapterGameModel Model="162" FixedDealCount="4">
+		<ChapterRule  ChapterId="161" UserCnt="3" Exp="15" GameMoney="0" Bean="300" Desc="新手欢乐新手设计">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="25,8,31,14,6,7,11"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="67,79,53,27,20,42,8,41,68,84,29,62,15,23,1,31,40,36,34,35,4,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160"/>
+			<DealChrRule ShowFigure="1" IgnoreSelfConfig="1">
+				<Chr Seat="0" ChrId="0" ChrList="324,0" ChrNum="5" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="0" Desc="吴懿,地主"/>				
+				<Chr Seat="1" ChrId="0" ChrList="0" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="0" Desc="ai农民"/>
+				<Chr Seat="2" ChrId="0" ChrList="0" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="0" Desc="ai农民"/>		
+			</DealChrRule>			
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="162" UserCnt="3" Exp="15" GameMoney="0" Bean="300" Desc="新手欢乐新手设计">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="81,48,14,40,79,39,68,58,3,2,34,24,23,22,96,8,7,6"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="1,4,5,9,10,11,12,13,15,16,17,18,19,20,21,25,26,27,28,29,30,31,32,33,35,36,37,38,41,42,43,44,45,46,47,49,50,51,52,53,54,55,56,57,59,60,61,62,63,64,65,66,67,69,70,71,72,73,74,75,76,77,78,80,82,83,84,85,86,87,88,89,90,91,92,93,94,95,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160"/>
+			<DealChrRule ShowFigure="1" IgnoreSelfConfig="1">
+				<Chr Seat="0" ChrId="0" ChrList="108,0" ChrNum="3" Maxhp="4" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="3" Desc="SP赵云,农民"/>						
+				<Chr Seat="1" ChrId="0" ChrList="0" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="1" Desc="ai地主"/>						
+				<Chr Seat="2" ChrId="0" ChrList="0" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="3" Desc="ai农民"/>		
+			</DealChrRule>									
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="163" UserCnt="3" Exp="15" GameMoney="0" Bean="300" Desc="新手欢乐新手设计">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="27,26,32,39,77,39,75,74,29,11,7,6,154,37,81,72"/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="1,2,3,4,5,8,9,10,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,30,31,33,34,35,36,38,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,73,76,77,78,79,80,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,155,156,157,158,159,160"/>
+			<DealChrRule ShowFigure="1" IgnoreSelfConfig="1">
+				<Chr Seat="0" ChrId="0" ChrList="456,0" ChrNum="5" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="0" Desc="界魏延,地主"/>				
+				<Chr Seat="1" ChrId="0" ChrList="0" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="0" Desc="ai农民"/>
+				<Chr Seat="2" ChrId="0" ChrList="0" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="0" Desc="ai农民"/>		
+			</DealChrRule>				
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="164" UserCnt="3" Exp="15" GameMoney="0" Bean="300" Desc="新手欢乐新手设计">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList=""/>		<!--服务端逆转了顺序，需要倒着配-->
+			<DealStackCardRule CardIdList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160"/>
+			<DealChrRule ShowFigure="1" >
+				<Chr Seat="0" ChrId="0" ChrList="587,0" ChrNum="5" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="0" Desc="界徐盛,地主"/>				
+				<Chr Seat="1" ChrId="0" ChrList="0" Maxhp="4" Nowhp="4" CardNum="4" RemoveSpell="0" Figure="0" Desc="ai农民"/>
+				<Chr Seat="2" ChrId="0" ChrList="0" Maxhp="3" Nowhp="3" CardNum="4" RemoveSpell="0" Figure="0" Desc="ai农民"/>			
+			</DealChrRule>				
+		</ChapterRule>	
+	</ChapterGameModel>			
+	
+	
+	
+	
+</ChapterInGameConfig>

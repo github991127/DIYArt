@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--武将在游戏中的配置 包括禁止的武将 点将规则 武将分配概率等,没有和模式挂钩-->
+<CharacterInGameConfig>	
+
+	<!--身份局中武将的使用规则 
+			CharacterUseConfig->DeafultAssignRatio 武将默认的分配概率
+			CharacterUseConfig->ExpLevelRule 经验等级规则,0不使用 1在所有身份场使用 2在新手场使用
+
+			AssignVIPLevelReq:分配武将时需要的VIP等级 
+			AppointVIPLevelReq:点将时需要的VIP条件 AssignRatio:分配概率
+			CanUseDianJiangKa 是否可以使用点将卡点将（如果不配置该武将,默认是可以使用的） 
+			CanUseShenJiangKa 是否可以使用神点将卡点将(如果没有该武将的配置,默认是不可以使用的)
+			CanUseSuperDianJiangKa 使用超级点将卡权限 0：不能使用 1：可以使用，没有任何条件限制(默认值) 2：只有在开通的情况下才可以使用(例如：左慈)
+			ExpLevelReq:分配武将时需要的最低玩家等级 默认值是0 如果VIP条件不为零,这个字段不起作用(只在身份局中起作用)
+			OpenRefChrList0:如果这个值对应的武将被开通了。这个武将也会被视为开通,这个只验证一层关系
+			VipLevelMark：免费换将所需的等级，若会员免费武将是周免武将，这个字段也不用修改
+			CanNotShield：武将是否能关闭，1：不能关闭，此节点不能reload
+			RobotKindReq: 机器人免费使用武将 1是高级和普通机器人都免费 2高级机器人免费 255表示都不能选
+			CantDianJiang：=1 即使拥有此武将也不能点将；不配或配0 拥有此武将即可点将（无论是否显示）
+			CharacterInGameConfig,CharacterUseConfig,UseInfo增加属性节点 ShieldGameModel，用来表示允许在那些模式下可以屏蔽该武将，默认是所有模式
+			例如：ShieldGameModel=“1;3;4”
+			模式ID如下：
+			game_model_none				= 0,//所有模式下都可以
+			game_model_shenfen			= 1,	//身份局
+			game_model_3V3				= 2,	//3V3
+			game_model_1V1				= 3,	//1V1
+			game_model_1V3				= 4,	//1V3
+			game_model_guo_zhan			= 5,	//国战
+			game_model_new_1v1			= 6,	//新1V1
+			game_model_happy			= 7,	//欢乐
+			game_model_boss_1v3			= 8,	//打年兽模式
+			game_model_xue_zhan			= 9,	//血战到底
+			game_model_boss_fight		= 10,	//BOSS闯关模式
+			game_model_zhan_yi			= 11,	//战役模式,指的是pevpe模式
+			game_model_mobile_happy1v1 	= 12,	//手机1v1元宝模式
+			game_model_mobile_training 	= 13,
+			game_model_paiwei			= 14,	//排位4v4
+			game_model_zhong_dan		= 15,	//忠胆英杰
+			game_model_wujinzz			= 16,	//无尽之战pad
+			
+	-->
+	<!--只要玩家开通了某个武将 该武将的所有VIP规则都不适用-->
+	<CharacterUseConfig DeafultAssignRatio="10" OnlyBeginnerUseExpLv="0">
+		<!--标准包-->
+		<UseInfo ChrId="1" 	ChrName="刘备" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="2" 	ChrName="关羽" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="3" 	ChrName="张飞" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="4" 	ChrName="诸葛亮" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="5" 	ChrName="赵云" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="6" 	ChrName="马超" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="7" 	ChrName="黄月英" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="8" 	ChrName="孙权" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="9"  ChrName="甘宁" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="10" ChrName="吕蒙" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="11" ChrName="黄盖" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="12" ChrName="周瑜" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="13" ChrName="大乔" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="14" ChrName="陆逊" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="15" ChrName="曹操" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="16" ChrName="司马懿" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="17" ChrName="夏侯惇" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="18" ChrName="张辽" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="19" ChrName="许褚" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="20" ChrName="郭嘉" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="21" ChrName="甄姬" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="22" ChrName="华佗" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="23" ChrName="吕布" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="24" ChrName="貂蝉" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="25" ChrName="孙尚香" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+
+		<UseInfo ChrId="61" ChrName="黄忠" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="27" ChrName="魏延" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="28" ChrName="夏侯渊" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="29" ChrName="曹仁" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="30" ChrName="小乔" 		AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+
+
+		<!--周泰张角已经废弃，改为需开通，国战和新1v1默认免费，如果需要开通，使用OpenRefChrList0关联新张角/周泰-->
+		<UseInfo ChrId="31" ChrName="周泰" 		AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" VipLevelMark="7" AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CantDianJiang="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="32" ChrName="张角" 		AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" VipLevelMark="7" AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CantDianJiang="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="33" ChrName="于吉" 		AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" VipLevelMark="7" AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CantDianJiang="1" ShieldGameModel="1;7;28;30"/>
+		
+		<!--新风包-->
+		<UseInfo ChrId="210" ChrName="新周泰" AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="211" ChrName="新于吉" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="212" ChrName="新张角" AssignVIPLevelReq="1" AppointVIPLevelReq="1"  VipLevelMark="7" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+
+		<!--SP武将-->
+		<UseInfo ChrId="101" ChrName="公孙瓒" AssignVIPLevelReq="3" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2"/>
+		<UseInfo ChrId="102" ChrName="SP貂蝉" AssignVIPLevelReq="3" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2"  ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="103" ChrName="SP孙尚香" AssignVIPLevelReq="3" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="1"/>
+		<UseInfo ChrId="107" ChrName="SP马超" AssignVIPLevelReq="3" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		
+		<UseInfo ChrId="113" ChrName="陈琳" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CanUseSuperDianJiangKa="2" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="114" ChrName="曹洪" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="105" ChrName="SP庞德" AssignVIPLevelReq="3" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2"/>
+		<UseInfo ChrId="110" ChrName="SP贾诩" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2"/>
+		<UseInfo ChrId="108" ChrName="SP赵云2012" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2"/>
+		<UseInfo ChrId="109" ChrName="SP貂蝉2012" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2"/>
+		<UseInfo ChrId="111" ChrName="SP曹仁2012" AssignVIPLevelReq="5" AppointVIPLevelReq="5" VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2"/>
+		<UseInfo ChrId="112" ChrName="SP蔡文姬" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2"/>
+		<UseInfo ChrId="115" ChrName="关银屏" AssignVIPLevelReq="6" AppointVIPLevelReq="6" VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2"  ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="117" ChrName="大乔&amp;小乔" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="118" ChrName="诸葛恪" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CanUseSuperDianJiangKa="2" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="116" ChrName="夏侯霸" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="119" ChrName="张宝" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CanUseSuperDianJiangKa="2" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="120" ChrName="联想赵云" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CantDianJiang="1" CanUseSuperDianJiangKa="2" ShieldGameModel="1;7;28;30" RobotKindReq="255"/>
+		<UseInfo ChrId="121" ChrName="SP乐进" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="122" ChrName="曹昂" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="123" ChrName="SP诸葛瑾" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="104" ChrName="杨修" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CanUseSuperDianJiangKa="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0" RobotKindReq="255"/>
+		<UseInfo ChrId="124" ChrName="星彩" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="125" ChrName="祖茂" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="126" ChrName="丁奉" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="127" ChrName="潘凤" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="128" ChrName="马良" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="129" ChrName="诸葛诞" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="130" ChrName="程昱" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CanUseSuperDianJiangKa="2" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="131" ChrName="何太后" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="135" ChrName="孙鲁育" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="136" ChrName="文聘" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="106" ChrName="sp关羽" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="137" ChrName="孙皓" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CanUseSuperDianJiangKa="2" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="138" ChrName="sp孙尚香" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="139" ChrName="sp姜维" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="506" ChrName="sp孟获" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		
+		<UseInfo ChrId="140" ChrName="兀突骨" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CanUseSuperDianJiangKa="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0" RobotKindReq="2"/>
+		<UseInfo ChrId="343" ChrName="张鲁" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="345" ChrName="士燮" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CanUseSuperDianJiangKa="2" RobotKindReq="255" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="346" ChrName="马云禄" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0"  RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="360" ChrName="司马朗" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="361" ChrName="sp黄月英" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="362" ChrName="王基" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="347" ChrName="蹋顿" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="255"  CanUseSuperDianJiangKa="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="348" ChrName="严白虎" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="349" ChrName="关索" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CanUseSuperDianJiangKa="2" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="350" ChrName="王朗" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" CanUseSuperDianJiangKa="2" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="351" ChrName="鲍三娘" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CanUseSuperDianJiangKa="2" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="353" ChrName="曹婴" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CanUseSuperDianJiangKa="2" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+	
+		<UseInfo ChrId="363" ChrName="步骘" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" />
+		<UseInfo ChrId="364" ChrName="李通" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"  />
+		<UseInfo ChrId="365" ChrName="糜竺" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" />
+		<UseInfo ChrId="366" ChrName="董白" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" />
+		<UseInfo ChrId="367" ChrName="赵襄" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" CanUseSuperDianJiangKa="2" CanBuyInShop="0" />
+		<UseInfo ChrId="368" ChrName="贺齐" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"  />
+		<UseInfo ChrId="369" ChrName="董允" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"  />
+		<UseInfo ChrId="370" ChrName="马忠" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0"  RobotKindReq="2" ShieldGameModel="1;7;28;30" />
+		<UseInfo ChrId="371" ChrName="阚泽" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0" />
+		<UseInfo ChrId="372" ChrName="王允" AssignVIPLevelReq="10" AppointVIPLevelReq="10"  VipLevelMark="10" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CanUseSuperDianJiangKa="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="373" ChrName="诸葛果" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="374" ChrName="麹义" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"  />
+		<UseInfo ChrId="375" ChrName="戏志才" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" />
+		<UseInfo ChrId="376" ChrName="孙乾" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" />
+		<UseInfo ChrId="377" ChrName="卑弥呼" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" />
+		<UseInfo ChrId="378" ChrName="刘琦" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" />
+		<UseInfo ChrId="379" ChrName="鲁芝" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" />
+		<UseInfo ChrId="416" ChrName="司马徽" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="417" ChrName="徐荣" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+        <UseInfo ChrId="418" ChrName="李傕" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+        <UseInfo ChrId="419" ChrName="张济" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+        <UseInfo ChrId="420" ChrName="苏飞" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+        <UseInfo ChrId="421" ChrName="黄权" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+        <UseInfo ChrId="422" ChrName="唐咨" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="423" ChrName="樊稠" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="424" ChrName="郭汜" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="425" ChrName="张琪瑛" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="426" ChrName="曹纯" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="427" ChrName="许靖" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30"  RobotKindReq="2" CanUseSuperDianJiangKa="2"/>	
+		<UseInfo ChrId="428" ChrName="王粲" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		<UseInfo ChrId="429" ChrName="庞统" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0" />	
+		<UseInfo ChrId="430" ChrName="袁谭袁尚" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" CanUseSuperDianJiangKa="2" RobotKindReq="255" CanBuyInShop="0"/>	
+		<UseInfo ChrId="431" ChrName="沙摩柯" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		<UseInfo ChrId="432" ChrName="吕虔" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		<UseInfo ChrId="433" ChrName="孙邵" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		<UseInfo ChrId="434" ChrName="吕旷吕翔" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		<UseInfo ChrId="435" ChrName="辛毗" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		<UseInfo ChrId="436" ChrName="花鬘" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		<UseInfo ChrId="437" ChrName="丁原" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		<UseInfo ChrId="438" ChrName="曹嵩" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>		
+		<UseInfo ChrId="459" ChrName="审配" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		<UseInfo ChrId="460" ChrName="荀谌" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		<UseInfo ChrId="461" ChrName="高览" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		<UseInfo ChrId="464" ChrName="张陵" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		<UseInfo ChrId="465" ChrName="吕凯" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		<UseInfo ChrId="466" ChrName="张昌蒲" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="467" ChrName="蒋干" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="468" ChrName="周鲂" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="469" ChrName="曹爽" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="472" ChrName="潘濬" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="473" ChrName="严畯" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="474" ChrName="张辽" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="475" ChrName="卧龙凤雏" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="476" ChrName="曹性" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="477" ChrName="黄祖" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="478" ChrName="潘淑" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="481" ChrName="黄承彦" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="482" ChrName="高干" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="483" ChrName="杜袭" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="439" ChrName="卞夫人" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="344" ChrName="王荣" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="352" ChrName="邓芝" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="354" ChrName="左棻" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="487" ChrName="刘辩" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="488" ChrName="杨仪" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="489" ChrName="朱灵" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="490" ChrName="王双" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="491" ChrName="冯方女" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="355" ChrName="董昭" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="356" ChrName="吾彦" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="357" ChrName="张郃" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="358" ChrName="宣公主" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="493" ChrName="田豫" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="494" ChrName="范疆张达" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="495" ChrName="陈登" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="497" ChrName="羊祜" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="498" ChrName="清河公主" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="499" ChrName="杨婉" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="500" ChrName="滕芳兰" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="501" ChrName="卫兹" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="502" ChrName="芮姬" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="503" ChrName="伊籍" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="504" ChrName="唐姬" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="507" ChrName="刘宏" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="508" ChrName="郭槐" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="509" ChrName="曹宪曹华" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="510" ChrName="蒲元" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>		
+		<UseInfo ChrId="511" ChrName="赵俨" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="512" ChrName="邓忠" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="513" ChrName="霍峻" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="514" ChrName="梁兴" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>		
+		<UseInfo ChrId="515" ChrName="界荀彧" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>		
+		<UseInfo ChrId="516" ChrName="张芝" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="517" ChrName="文鸯" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="518" ChrName="周处" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="519" ChrName="夏侯玄" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>		
+		<UseInfo ChrId="520" ChrName="马日磾" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="521" ChrName="阎柔" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="522" ChrName="荀淑" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		<UseInfo ChrId="523" ChrName="荀谌" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="524" ChrName="荀采" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="525" ChrName="荀粲" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="526" ChrName="界典韦" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>		
+		<UseInfo ChrId="527" ChrName="朱儁" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>		
+		<UseInfo ChrId="528" ChrName="吴苋" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>		
+		<UseInfo ChrId="529" ChrName="吴班" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>		
+		<UseInfo ChrId="530" ChrName="董荼那" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="531" ChrName="阿会喃" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="532" ChrName="马承" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="533" ChrName="傅肜" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="534" ChrName="胡班" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="535" ChrName="屈晃" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="536" ChrName="刘巴" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="537" ChrName="孙弘" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="538" ChrName="马休马铁" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="539" ChrName="卢氏" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="540" ChrName="谯周" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>		
+		<UseInfo ChrId="541" ChrName="张翼" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>		
+		<UseInfo ChrId="542" ChrName="阎圃" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>				
+		<UseInfo ChrId="543" ChrName="周群" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="544" ChrName="张华" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="545" ChrName="罗宪" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>		
+		<UseInfo ChrId="546" ChrName="韩韶" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>		
+		<UseInfo ChrId="547" ChrName="韩融" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>		
+		<UseInfo ChrId="548" ChrName="族钟琰" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="549" ChrName="族吴匡" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="550" ChrName="界颜良文丑" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="551" ChrName="成济成倅" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="552" ChrName="曹羲" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="553" ChrName="王瓘" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="554" ChrName="杜夫人" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="555" ChrName="族王允" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="556" ChrName="族王淩" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="557" ChrName="郝普" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="558" ChrName="孟达" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="559" ChrName="张世平" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		<UseInfo ChrId="560" ChrName="段颎" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="561" ChrName="马玩" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="562" ChrName="陆郁生" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="563" ChrName="界张昭张纮" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="564" ChrName="族王昶" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="565" ChrName="族王机" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="566" ChrName="族钟毓" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="567" ChrName="族钟会" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="568" ChrName="费祎" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="569" ChrName="丁尚涴" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="570" ChrName="文钦" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="571" ChrName="步度根" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="572" ChrName="彭羕" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="573" ChrName="族荀攸" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="574" ChrName="族王浑" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="575" ChrName="族王沦" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		<UseInfo ChrId="576" ChrName="蒋琬" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="577" ChrName="李婉" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="578" ChrName="吕伯奢" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="579" ChrName="雅丹" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="580" ChrName="牵招" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="581" ChrName="张燕" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="582" ChrName="族吴乔" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="583" ChrName="何进" OpenRefChrList0="3041" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="584" ChrName="牛金" OpenRefChrList0="3042" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>		
+		<UseInfo ChrId="585" ChrName="韩遂" OpenRefChrList0="3043" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="586" ChrName="谋姜维" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="587" ChrName="界徐盛" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="588" ChrName="界凌统" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="589" ChrName="族吴懿" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="590" ChrName="陆凯" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="591" ChrName="向宠" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="592" ChrName="田畴" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="593" ChrName="谋关羽" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="594" ChrName="胡金定" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="595" ChrName="族王广" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="596" ChrName="曹宇" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="598" ChrName="凌操" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="601" ChrName="谋邓艾" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		<UseInfo ChrId="602" ChrName="谋太史慈" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+	    <UseInfo ChrId="606" ChrName="裴秀" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+        <UseInfo ChrId="607" ChrName="李异" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+        <UseInfo ChrId="608" ChrName="族王明山" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+        <UseInfo ChrId="609" ChrName="谋孙坚" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+        <UseInfo ChrId="610" ChrName="界法正" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+        <UseInfo ChrId="611" ChrName="刘磐" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+	    <UseInfo ChrId="612" ChrName="刘辟" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>					
+		 <UseInfo ChrId="617" ChrName="谋沮授" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="618" ChrName="谋张飞" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="619" ChrName="曹腾" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="620" ChrName="界程普" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="621" ChrName="界王异" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="622" ChrName="谋黄月英" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="624" ChrName="郭图" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="625" ChrName="界张春华" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="626" ChrName="界刘表" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="627" ChrName="界蔡夫人" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="628" ChrName="界曹冲" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="629" ChrName="界曹植" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="630" ChrName="族钟繇" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="631" ChrName="蔡瑁" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="632" ChrName="孙茹" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="633" ChrName="SP孙策" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+         <UseInfo ChrId="634" ChrName="刘焉" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>	
+		 <UseInfo ChrId="635" ChrName="谋庞统" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="636" ChrName="王匡" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="637" ChrName="成公英" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+	     <UseInfo ChrId="638" ChrName="轲比能" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="639" ChrName="秦朗" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="640" ChrName="界吴国太" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="641" ChrName="界廖化" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="642" ChrName="界李儒" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="643" ChrName="谋孔融" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="644" ChrName="谋华雄" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="645" ChrName="谋赵云" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+	     <UseInfo ChrId="646" ChrName="谋袁术" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="647" ChrName="族王沈" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="648" ChrName="谋公孙瓒" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="649" ChrName="陶谦" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="650" ChrName="武安国" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="651" ChrName="韩馥" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="652" ChrName="袁姬" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="653" ChrName="薛灵芸" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="654" ChrName="孔淑" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="655" ChrName="牛辅" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		 <UseInfo ChrId="656" ChrName="董翓" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanUseSuperDianJiangKa="2" CanBuyInShop="0"/>
+		
+		
+		<!--新标准-->
+		<UseInfo ChrId="214" ChrName="华雄" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="215" ChrName="袁术" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<!--火包-->
+		<UseInfo ChrId="34" ChrName="典韦" AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="35" ChrName="荀彧" AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="36" ChrName="庞统" AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="37" ChrName="卧龙诸葛" AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="38" ChrName="太史慈" AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="39" ChrName="庞德" AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="40" ChrName="颜良 文丑" AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="41" ChrName="袁绍" AssignVIPLevelReq="1" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+
+		<!--林包-->
+		<UseInfo ChrId="42" ChrName="徐晃" AssignVIPLevelReq="8" AppointVIPLevelReq="8" VipLevelMark="8" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="43" ChrName="曹丕" AssignVIPLevelReq="8" AppointVIPLevelReq="8" VipLevelMark="8" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="44" ChrName="孙坚" AssignVIPLevelReq="8" AppointVIPLevelReq="8" VipLevelMark="8" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="45" ChrName="董卓" AssignVIPLevelReq="8" AppointVIPLevelReq="8" VipLevelMark="8" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="46" ChrName="祝融" AssignVIPLevelReq="8" AppointVIPLevelReq="8" VipLevelMark="8" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="47" ChrName="孟获" AssignVIPLevelReq="8" AppointVIPLevelReq="8" VipLevelMark="8" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="48" ChrName="贾诩" AssignVIPLevelReq="8" AppointVIPLevelReq="8" VipLevelMark="8" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="49" ChrName="鲁肃" AssignVIPLevelReq="8" AppointVIPLevelReq="8" VipLevelMark="8" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+
+		<!--山包-->
+		<UseInfo ChrId="50" ChrName="张郃" AssignVIPLevelReq="9" AppointVIPLevelReq="9" VipLevelMark="9" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="51" ChrName="邓艾" AssignVIPLevelReq="9" AppointVIPLevelReq="9" VipLevelMark="9" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="52" ChrName="姜维" AssignVIPLevelReq="9" AppointVIPLevelReq="9" VipLevelMark="9" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="53" ChrName="刘禅" AssignVIPLevelReq="9" AppointVIPLevelReq="9" VipLevelMark="9" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="54" ChrName="孙策" AssignVIPLevelReq="9" AppointVIPLevelReq="9" VipLevelMark="9" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="55" ChrName="张昭 张纮" AssignVIPLevelReq="9" AppointVIPLevelReq="9" VipLevelMark="9" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="56" ChrName="左慈" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CanUseSuperDianJiangKa="2" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="57" ChrName="蔡文姬" AssignVIPLevelReq="9" AppointVIPLevelReq="9" VipLevelMark="9" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="1"/>
+		
+		<!--阴包-->
+		<UseInfo ChrId="400" ChrName="严颜" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="1"	CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="401" ChrName="王平" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="1"	CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="402" ChrName="陆绩" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="1"	CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="403" ChrName="孙亮" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="1"	CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="404" ChrName="蒯越 蒯良" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" 	CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="406" ChrName="许攸" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>	
+		<UseInfo ChrId="407" ChrName="卢植" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+
+		<!--雷包-->
+		<UseInfo ChrId="408" ChrName="郝昭" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="409" ChrName="陈到" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="410" ChrName="诸葛瞻" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="411" ChrName="周妃" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="415" ChrName="张绣" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="100" ChrName="袁术" AssignVIPLevelReq="3" AppointVIPLevelReq="1" VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="414" ChrName="陆抗" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" 	CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="413" ChrName="毌丘俭" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" 	CanUseShenJiangKa="0" RobotKindReq="1" ShieldGameModel="1;7;28;30"/>
+		
+		<!--一将成名-->
+		<UseInfo ChrId="154" ChrName="法正作废" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="159" ChrName="徐庶作废" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30"/>
+
+		<UseInfo ChrId="156" ChrName="马谡" AssignVIPLevelReq="4" AppointVIPLevelReq="1"  VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="160" ChrName="于禁" AssignVIPLevelReq="4" AppointVIPLevelReq="1"  VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		
+		<UseInfo ChrId="152" ChrName="高顺" AssignVIPLevelReq="10" AppointVIPLevelReq="10" VipLevelMark="10"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="158" ChrName="徐盛" AssignVIPLevelReq="10" AppointVIPLevelReq="10" VipLevelMark="10"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="151" ChrName="曹植" AssignVIPLevelReq="10" AppointVIPLevelReq="10" VipLevelMark="10"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="157" ChrName="吴国太" AssignVIPLevelReq="10" AppointVIPLevelReq="10" VipLevelMark="10"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="161" ChrName="张春华" AssignVIPLevelReq="10" AppointVIPLevelReq="10" VipLevelMark="10"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="153" ChrName="陈宫" AssignVIPLevelReq="10" AppointVIPLevelReq="10" VipLevelMark="10"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="155" ChrName="凌统" AssignVIPLevelReq="10" AppointVIPLevelReq="10" VipLevelMark="10"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="185" ChrName="新法正" AssignVIPLevelReq="4" AppointVIPLevelReq="1"  VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="186" ChrName="新徐庶" AssignVIPLevelReq="4" AppointVIPLevelReq="1"  VipLevelMark="7" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		
+		<!--二将成名-->
+		<UseInfo ChrId="162" ChrName="曹彰" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="168" ChrName="步练师" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="172" ChrName="刘表" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="173" ChrName="钟会" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="164" ChrName="荀攸" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="169" ChrName="程普" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="166" ChrName="廖化" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="170" ChrName="韩当" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="167" ChrName="马岱" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="171" ChrName="华雄" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="187" ChrName="王异" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="188" ChrName="关张" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		
+		<!--三将成名-->
+		<UseInfo ChrId="174" ChrName="曹冲" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="177" ChrName="关平" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="179" ChrName="刘封" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="175" ChrName="郭淮" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="183" ChrName="伏皇后" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="180" ChrName="潘璋&amp;马忠" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="176" ChrName="满宠" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="178" ChrName="简雍" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="181" ChrName="虞翻" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="182" ChrName="朱然" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="184" ChrName="李儒" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		
+		<!--界限突破-->
+		<UseInfo ChrId="299" ChrName="刘备" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0"  RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="300" ChrName="关羽" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="301" ChrName="张飞" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="302" ChrName="赵云" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="303" ChrName="马超" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="304" ChrName="徐庶" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="305" ChrName="甘宁" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="306" ChrName="吕蒙" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="307" ChrName="黄盖" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="308" ChrName="周瑜" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="309" ChrName="大乔" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="310" ChrName="陆逊" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="311" ChrName="曹操" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0"  RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="312" ChrName="司马懿" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="313" ChrName="夏侯惇" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="314" ChrName="张辽" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="315" ChrName="许褚" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="316" ChrName="郭嘉" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="317" ChrName="李典" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="318" ChrName="华佗" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="319" ChrName="吕布" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="320" ChrName="公孙瓒" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="440" ChrName="诸葛亮" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="441" ChrName="黄月英" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="442" ChrName="孙权" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="443" ChrName="孙尚香" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="444" ChrName="甄姬" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="445" ChrName="貂蝉" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="446" ChrName="华雄" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="447" ChrName="左慈" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="448" ChrName="张角" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="449" ChrName="于吉" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="450" ChrName="袁绍" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="451" ChrName="刘禅" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="452" ChrName="孙策" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="26" ChrName="黄忠" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="453" ChrName="夏侯渊" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="454" ChrName="诸葛亮" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="455" ChrName="庞统" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="456" ChrName="魏延" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="457" ChrName="小乔" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="458" ChrName="孙坚" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="462" ChrName="庞德" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="463" ChrName="太史慈" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="470" ChrName="界董卓" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="471" ChrName="界邓艾" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="479" ChrName="界祝融" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="480" ChrName="界姜维" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="484" ChrName="界贾诩" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="485" ChrName="界鲁肃" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="486" ChrName="界张郃" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="492" ChrName="界孟获" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="496" ChrName="界徐晃" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="505" ChrName="界蔡文姬" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+        
+		
+		
+		<!--文德武备武将-->
+		<UseInfo ChrId="7000" ChrName="张虎乐綝" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7001" ChrName="夏侯徽" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7002" ChrName="司马师" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7003" ChrName="司马懿" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7004" ChrName="司马昭" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7005" ChrName="王元姬" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7006" ChrName="杜预" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7007" ChrName="张春华" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7008" ChrName="羊徽瑜" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7009" ChrName="石苞" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7010" ChrName="李肃" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7011" ChrName="司马伷" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7012" ChrName="彻里吉" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7013" ChrName="卫瓘" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7014" ChrName="蔡琰" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7015" ChrName="华歆" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7016" ChrName="杨艳" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7017" ChrName="杨芷" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7018" ChrName="辛敞" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7019" ChrName="贾充" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7020" ChrName="王祥" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="7021" ChrName="王衍" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="10" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="2" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>				
+		<!--四将成名-->
+		<UseInfo ChrId="321" ChrName="曹真" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="322" ChrName="韩浩史涣" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="323" ChrName="陈群" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="324" ChrName="吴懿" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="325" ChrName="周仓" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2"/>
+		<UseInfo ChrId="326" ChrName="张松" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="327" ChrName="孙鲁班" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="328" ChrName="朱桓" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="329" ChrName="顾雍" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="330" ChrName="沮授" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="331" ChrName="蔡夫人" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+
+		<!--将5-->
+		<UseInfo ChrId="332" ChrName="曹睿" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="333" ChrName="曹休" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="334" ChrName="钟繇" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="335" ChrName="刘谌" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="336" ChrName="夏侯氏" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="337" ChrName="张嶷" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="338" ChrName="孙休" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="339" ChrName="朱治" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="340" ChrName="全琮" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="341" ChrName="公孙渊" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="342" ChrName="郭图逢纪" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+
+		<!--将6-->
+		<UseInfo ChrId="380" ChrName="郭皇后" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="381" ChrName="李严" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="382" ChrName="孙登" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="383" ChrName="刘虞" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		
+		<UseInfo ChrId="384" ChrName="岑昏" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2"/>
+		<UseInfo ChrId="385" ChrName="孙资刘放" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2"/>
+		<UseInfo ChrId="386" ChrName="黄皓" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="2"/>
+		<UseInfo ChrId="387" ChrName="张让" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		
+		<!--将7-->
+		<UseInfo ChrId="388" ChrName="辛宪英" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="389" ChrName="吴苋" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" />
+		<UseInfo ChrId="390" ChrName="徐氏" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="391" ChrName="曹节" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" />		
+		<UseInfo ChrId="393" ChrName="秦宓" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" />
+		<UseInfo ChrId="392" ChrName="嵇康" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" />
+        <UseInfo ChrId="394" ChrName="薛综" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" />
+		<UseInfo ChrId="395" ChrName="蔡邕" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="1;7;28;30" />
+		<!--虎牢关-->
+		<UseInfo ChrId="191" ChrName="最强神话吕布" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="192" ChrName="暴怒的战神吕布" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="193" ChrName="神鬼无前吕布" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		
+		<!--神将-->
+		<UseInfo ChrId="201" ChrName="神关羽" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="12" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="202" ChrName="神吕蒙" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="12" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="203" ChrName="神周瑜" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="12" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="204" ChrName="神诸葛亮" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="12" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="205" ChrName="神曹操" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="12" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="206" ChrName="神吕布" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="12" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="207" ChrName="神赵云" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="12" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="208" ChrName="神司马懿" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="12" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="220" ChrName="神刘备" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="12" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="221" ChrName="神陆逊" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="12" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="222" ChrName="神曹丕" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="8" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="223" ChrName="神甄姬" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="12" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="224" ChrName="神甘宁" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="8" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="225" ChrName="神张辽" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="12" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="226" ChrName="神孙权" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="12" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="227" ChrName="神张角" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="12" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+		<UseInfo ChrId="229" ChrName="神典韦" AssignVIPLevelReq="65536" AppointVIPLevelReq="0"  AssignRatio="12" CanUseDianJiangKa="0" CanUseShenJiangKa="1" CanUseSuperDianJiangKa="0" ShieldGameModel="1;7;28;30" RobotKindReq="255" CanBuyInShop="0"/>
+
+		
+		<!--特殊武将(奥运)-->
+		<UseInfo ChrId="70" ChrName="叶" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="0" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanUseSuperDianJiangKa="2" CantDianJiang="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="71" ChrName="孙" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="0" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanUseSuperDianJiangKa="2" CantDianJiang="1" ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="72" ChrName="伏完" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="1;7;28;30" />
+		<UseInfo ChrId="73" ChrName="刘协" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0"  ShieldGameModel="1;7;28;30"/>
+		<UseInfo ChrId="74" ChrName="灵雎" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CanUseSuperDianJiangKa="2" ShieldGameModel="1;7;28;30" CanBuyInShop="0"/>
+		<UseInfo ChrId="75" ChrName="旱魃" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="0" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CantDianJiang="1" CanUseSuperDianJiangKa="2"/>
+		<UseInfo ChrId="76" ChrName="张翼德" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CantDianJiang="1" CanUseSuperDianJiangKa="2"/>
+		<UseInfo ChrId="77" ChrName="关云长" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CantDianJiang="1" CanUseSuperDianJiangKa="2"/>
+		<UseInfo ChrId="78" ChrName="赵子龙" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="0" CanUseDianJiangKa="1" CanUseShenJiangKa="0" CantDianJiang="1" CanUseSuperDianJiangKa="2"/>
+		<UseInfo ChrId="79" ChrName="年兽" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="0" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CantDianJiang="1" CanUseSuperDianJiangKa="2"/>
+		<UseInfo ChrId="95" ChrName="崔琰" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="0" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CantDianJiang="1" CanUseSuperDianJiangKa="2"/>
+		<UseInfo ChrId="96" ChrName="皇甫嵩" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="0" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CantDianJiang="1" CanUseSuperDianJiangKa="2"/>
+	
+		<!--国战武将-->
+		<UseInfo ChrId="2000" ChrName="国战版曹操" 		OpenRefChrList0="15" AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2001" ChrName="国战版司马懿" 	OpenRefChrList0="16" AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2002" ChrName="国战版夏侯惇" 	OpenRefChrList0="17"	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2003" ChrName="国战版张辽" 		OpenRefChrList0="18"	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2004" ChrName="国战版许褚" 		OpenRefChrList0="19"	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2005" ChrName="国战版郭嘉" 		OpenRefChrList0="20"	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2006" ChrName="国战版甄姬"		OpenRefChrList0="21"	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2007" ChrName="国战版夏侯渊"	OpenRefChrList0="28"	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2008" ChrName="国战版张郃" 		OpenRefChrList0="50"	AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2009" ChrName="国战版徐晃" 		OpenRefChrList0="42"	AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2010" ChrName="国战版曹仁" 		OpenRefChrList0="29"	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2011" ChrName="国战版典韦" 		OpenRefChrList0="34"	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2012" ChrName="国战版荀彧" 		OpenRefChrList0="35"	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2013" ChrName="国战版曹丕" 		OpenRefChrList0="43"	AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		
+		
+		<UseInfo ChrId="2015" ChrName="国战版刘备" 		OpenRefChrList0="1" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2016" ChrName="国战版关羽" 		OpenRefChrList0="2" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2017" ChrName="国战版张飞" 		OpenRefChrList0="3" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2018" ChrName="国战版诸葛亮" 	OpenRefChrList0="4" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2019" ChrName="国战版赵云" 		OpenRefChrList0="5" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2020" ChrName="国战版马超" 		OpenRefChrList0="6" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2021" ChrName="国战版黄月英" 	OpenRefChrList0="7" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2022" ChrName="国战版黄忠" 		OpenRefChrList0="26" AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2023" ChrName="国战版魏延" 		OpenRefChrList0="27" AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2024" ChrName="国战版庞统" 		OpenRefChrList0="36"	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2025" ChrName="国战版卧龙" 		OpenRefChrList0="37" AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2026" ChrName="国战版刘禅" 		OpenRefChrList0="53"	AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2027" ChrName="国战版孟获" 		OpenRefChrList0="47" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2028" ChrName="国战版祝融" 		OpenRefChrList0="46" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+			
+		
+		<UseInfo ChrId="2030" ChrName="国战版孙权" 		OpenRefChrList0="8" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2031" ChrName="国战版甘宁" 		OpenRefChrList0="9" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2032" ChrName="国战版吕蒙" 		OpenRefChrList0="10" AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2033" ChrName="国战版黄盖" 		OpenRefChrList0="11" AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2034" ChrName="国战版周瑜" 		OpenRefChrList0="12" AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2035" ChrName="国战版大乔" 		OpenRefChrList0="13" AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2036" ChrName="国战版陆逊" 		OpenRefChrList0="14" AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2037" ChrName="国战版孙尚香" 	OpenRefChrList0="25" AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2038" ChrName="国战版孙坚" 		OpenRefChrList0="44"	AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2039" ChrName="国战版小乔" 		OpenRefChrList0="30" AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2040" ChrName="国战版太史慈" 	OpenRefChrList0="38"	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2041" ChrName="国战版周泰" 		OpenRefChrList0="210" AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2042" ChrName="国战版鲁肃" 		OpenRefChrList0="49"	AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2043" ChrName="国战版张昭张纮" OpenRefChrList0="55"	AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		
+		
+		<UseInfo ChrId="2045" ChrName="国战版华佗" 		OpenRefChrList0="22" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2046" ChrName="国战版吕布" 		OpenRefChrList0="23" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2047" ChrName="国战版貂蝉" 		OpenRefChrList0="24" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2048" ChrName="国战版袁绍" 		OpenRefChrList0="41" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2049" ChrName="国战版颜良文丑" OpenRefChrList0="40" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2050" ChrName="国战版贾诩" 		OpenRefChrList0="48;110" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2051" ChrName="国战版庞德" 		OpenRefChrList0="39;105" AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2052" ChrName="国战版张角" 		OpenRefChrList0="212" 	AssignVIPLevelReq="1" AppointVIPLevelReq="1" AssignRatio="10" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2053" ChrName="国战版蔡文姬" 	OpenRefChrList0="57" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2054" ChrName="国战版马腾" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2055" ChrName="国战版孔融" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2056" ChrName="国战版纪灵" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2057" ChrName="国战版田丰" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2058" ChrName="国战版潘凤" 	OpenRefChrList0="127" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2044" ChrName="国战版丁奉" 	OpenRefChrList0="126" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2059" ChrName="国战版邹氏" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2029" ChrName="国战版甘夫人" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2014" ChrName="国战版乐进" 	OpenRefChrList0="121" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+
+		<UseInfo ChrId="2060" ChrName="国战版何太后" 	OpenRefChrList0="131" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2061" ChrName="国战版蒋琬费祎" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5" RobotKindReq="2"/>
+		<UseInfo ChrId="2062" ChrName="国战版李典" 	OpenRefChrList0="317" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2063" ChrName="国战版徐盛" 	OpenRefChrList0="158" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2064" ChrName="国战版马岱" 	OpenRefChrList0="167" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2065" ChrName="国战版邓艾" 	OpenRefChrList0="51" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2066" ChrName="国战版孙策" 	OpenRefChrList0="54" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5" RobotKindReq="2"/>
+		<UseInfo ChrId="2067" ChrName="国战版董卓" 	OpenRefChrList0="45" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2068" ChrName="国战版于吉" 	OpenRefChrList0="211" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5" RobotKindReq="2"/>
+		<UseInfo ChrId="2069" ChrName="国战版臧霸" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5" RobotKindReq="2"/>
+		<UseInfo ChrId="2070" ChrName="国战版糜夫人" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2071" ChrName="国战版陈武董袭" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2072" ChrName="国战版张任" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5" RobotKindReq="2"/>
+		<UseInfo ChrId="2073" ChrName="国战版曹洪" 	OpenRefChrList0="114" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5" RobotKindReq="2"/>
+		<UseInfo ChrId="2074" ChrName="国战版蒋钦" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5" RobotKindReq="2"/>
+		<UseInfo ChrId="2075" ChrName="国战版姜维" 	OpenRefChrList0="52" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2076" ChrName="国战版李傕郭汜" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2077" ChrName="国战版荀攸" 	OpenRefChrList0="164" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2078" ChrName="国战版沙摩柯" 	OpenRefChrList0="431" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5"/>
+		<UseInfo ChrId="2079" ChrName="国战版吕范" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5" RobotKindReq="2"/>
+		<UseInfo ChrId="2080" ChrName="国战版法正" 	OpenRefChrList0="185" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5" RobotKindReq="2"/>		
+		<UseInfo ChrId="2081" ChrName="国战版张绣" 	OpenRefChrList0="415" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5" RobotKindReq="2"/>		
+		<UseInfo ChrId="2082" ChrName="国战版凌统" 	OpenRefChrList0="155" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="15" CanUseDianJiangKa="1" CanUseShenJiangKa="0" ShieldGameModel="5" RobotKindReq="2"/>		
+		<UseInfo ChrId="2083" ChrName="张虎乐綝" OpenRefChrList0="7000"	 AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2084" ChrName="夏侯徽" 	 OpenRefChrList0="7001"	AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2085" ChrName="司马师" 	 OpenRefChrList0="7002"	AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2086" ChrName="司马懿" 	OpenRefChrList0="7003"	AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2087" ChrName="司马昭" 	OpenRefChrList0="7004"	AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5"/>
+		<UseInfo ChrId="2088" ChrName="王元姬" 	OpenRefChrList0="7005"	AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2089" ChrName="杜预" 	OpenRefChrList0="7006"	AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2090" ChrName="张春华"	OpenRefChrList0="7007"	 AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2091" ChrName="羊徽瑜"	OpenRefChrList0="7008"	 AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2092" ChrName="马谡"	OpenRefChrList0="156"	 AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2093" ChrName="陆抗"	OpenRefChrList0="414"	 AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2094" ChrName="左慈"	OpenRefChrList0="56"	 AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="255" ShieldGameModel="5" />
+		<UseInfo ChrId="2095" ChrName="石苞"	OpenRefChrList0="7009"	 AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2096" ChrName="司马伷"	OpenRefChrList0="7011"	 AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2097" ChrName="卞夫人"	OpenRefChrList0="439"	 AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2098" ChrName="吴国太"	OpenRefChrList0="157"	 AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2099" ChrName="王平"	OpenRefChrList0="401"	 AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2100" ChrName="于禁"	OpenRefChrList0="160"	 AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2101" ChrName="崔琰毛玠"	OpenRefChrList0=""	 AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<UseInfo ChrId="2102" ChrName="袁术"	OpenRefChrList0="100"	 AssignVIPLevelReq="65536" AppointVIPLevelReq="65536"  AssignRatio="15" CanUseDianJiangKa="1" CanUseSuperDianJiangKa="0" CanUseShenJiangKa="0" RobotKindReq="2" ShieldGameModel="5" />
+		<!--新1V1武将-->
+		<UseInfo ChrId="3001" ChrName="新1V1曹操" 	OpenRefChrList0="15" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3002" ChrName="新1V1司马懿" 	OpenRefChrList0="16" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3003" ChrName="新1V1夏侯惇" 	OpenRefChrList0="17" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3004" ChrName="新1V1张辽" 	OpenRefChrList0="18" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3005" ChrName="新1V1许褚" 	OpenRefChrList0="19" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3006" ChrName="新1V1郭嘉" 	OpenRefChrList0="20" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3007" ChrName="新1V1甄姬" 	OpenRefChrList0="21" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3008" ChrName="新1V1夏侯渊" 	OpenRefChrList0="28" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3009" ChrName="新1V1徐晃" 	OpenRefChrList0="42" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3010" ChrName="新1V1曹仁" 	OpenRefChrList0="29" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3011" ChrName="新1V1典韦" 	OpenRefChrList0="34" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+
+		<UseInfo ChrId="3012" ChrName="新1V1刘备" 	OpenRefChrList0="1" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3013" ChrName="新1V1关羽" 	OpenRefChrList0="2" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3014" ChrName="新1V1张飞" 	OpenRefChrList0="3" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3015" ChrName="新1V1诸葛亮" 	OpenRefChrList0="4" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3016" ChrName="新1V1赵云" 	OpenRefChrList0="5" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3017" ChrName="新1V1马超" 	OpenRefChrList0="6" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3018" ChrName="新1V1黄月英" 	OpenRefChrList0="7" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3019" ChrName="新1V1黄忠" 	OpenRefChrList0="26" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3020" ChrName="新1V1魏延" 	OpenRefChrList0="27" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3021" ChrName="新1V1姜维" 	OpenRefChrList0="52" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3022" ChrName="新1V1孟获" 	OpenRefChrList0="47" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3023" ChrName="新1V1祝融" 	OpenRefChrList0="46" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+
+		<UseInfo ChrId="3024" ChrName="新1V1孙权" 	OpenRefChrList0="8" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3025" ChrName="新1V1甘宁" 	OpenRefChrList0="9" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3026" ChrName="新1V1吕蒙" 	OpenRefChrList0="10" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3027" ChrName="新1V1黄盖" 	OpenRefChrList0="11" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3028" ChrName="新1V1周瑜" 	OpenRefChrList0="12" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3029" ChrName="新1V1大乔" 	OpenRefChrList0="13" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3030" ChrName="新1V1陆逊" 	OpenRefChrList0="14" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3031" ChrName="新1V1孙尚香" 	OpenRefChrList0="25" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3032" ChrName="新1V1孙坚" 	OpenRefChrList0="44" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3033" ChrName="新1V1小乔" 	OpenRefChrList0="30" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3034" ChrName="新1V1周泰" 	OpenRefChrList0="31;210" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		
+		<UseInfo ChrId="3035" ChrName="新1V1华佗" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="0" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3036" ChrName="新1V1吕布" 	OpenRefChrList0="23" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3037" ChrName="新1V1貂蝉" 	OpenRefChrList0="24" AssignVIPLevelReq="0" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3038" ChrName="新1V1颜良文丑" 	OpenRefChrList0="40" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3039" ChrName="新1V1庞德" 	OpenRefChrList0="39;105" AssignVIPLevelReq="1" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3040" ChrName="新1V1张角" 	OpenRefChrList0="212" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3041" ChrName="新1V1何进" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3042" ChrName="新1V1牛金" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3043" ChrName="新1V1韩遂" 	OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3044" ChrName="新1V1张虎乐綝" 	OpenRefChrList0="7000" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3045" ChrName="新1V1夏侯徽" 	OpenRefChrList0="7001" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3046" ChrName="新1V1司马师" 	OpenRefChrList0="7002" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3047" ChrName="新1V1司马懿" 	OpenRefChrList0="7003" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3048" ChrName="新1V1司马昭" 	OpenRefChrList0="7004" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3049" ChrName="新1V1王元姬" 	OpenRefChrList0="7005" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3050" ChrName="新1V1杜预" 	OpenRefChrList0="7006" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+		<UseInfo ChrId="3051" ChrName="新1V1张春华" 	OpenRefChrList0="7007" AssignVIPLevelReq="65536" AppointVIPLevelReq="65536" AssignRatio="20" CanUseDianJiangKa="0" CanUseShenJiangKa="0" ShieldGameModel="6"/>
+
+		<UseInfo ChrId="60" ChrName="3v3诸葛瑾" OpenRefChrList0="123" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1001" ChrName="3v3刘备" OpenRefChrList0="299" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1002" ChrName="3v3关羽" OpenRefChrList0="2" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>		
+		<UseInfo ChrId="1003" ChrName="3v3张飞" OpenRefChrList0="301" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1004" ChrName="3v3诸葛亮" OpenRefChrList0="4" AssignVIPLevelReq="1" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1005" ChrName="3v3赵云" OpenRefChrList0="302" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1006" ChrName="3v3马超" OpenRefChrList0="303" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1007" ChrName="3v3黄月英" OpenRefChrList0="7" AssignVIPLevelReq="1" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1008" ChrName="3v3姜维" OpenRefChrList0="52" AssignVIPLevelReq="9" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1009" ChrName="3v3孙权" OpenRefChrList0="8" AssignVIPLevelReq="1" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1010" ChrName="3v3甘宁" OpenRefChrList0="305" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1011" ChrName="3v3黄盖" OpenRefChrList0="307" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1012" ChrName="3v3周瑜" OpenRefChrList0="308" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1013" ChrName="3v3大乔" OpenRefChrList0="309" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1014" ChrName="3v3孙尚香" OpenRefChrList0="25" AssignVIPLevelReq="1" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1015" ChrName="3v3孙坚" OpenRefChrList0="44" AssignVIPLevelReq="8" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1016" ChrName="3v3小乔" OpenRefChrList0="30" AssignVIPLevelReq="1" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1017" ChrName="3v3孙策" OpenRefChrList0="54" AssignVIPLevelReq="9" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1018" ChrName="3v3曹操" OpenRefChrList0="311" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1019" ChrName="3v3司马懿" OpenRefChrList0="312" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1020" ChrName="3v3夏侯惇" OpenRefChrList0="17" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1021" ChrName="3v3张辽" OpenRefChrList0="314" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1022" ChrName="3v3郭嘉" OpenRefChrList0="316" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1023" ChrName="3v3甄姬" OpenRefChrList0="21" AssignVIPLevelReq="1" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1024" ChrName="3v3夏侯渊" OpenRefChrList0="28" AssignVIPLevelReq="1" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>		
+		<UseInfo ChrId="1025" ChrName="3v3徐晃" OpenRefChrList0="42" AssignVIPLevelReq="8" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1027" ChrName="3v3华佗" OpenRefChrList0="318" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1028" ChrName="3v3吕布" OpenRefChrList0="319" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>		
+		<UseInfo ChrId="1029" ChrName="3v3貂蝉" OpenRefChrList0="24" AssignVIPLevelReq="1" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1030" ChrName="3v3庞德" OpenRefChrList0="39" AssignVIPLevelReq="1" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1031" ChrName="3v3贾诩" OpenRefChrList0="48" AssignVIPLevelReq="1" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1032" ChrName="3v3陆逊" OpenRefChrList0="310" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1033" ChrName="3v3许褚" OpenRefChrList0="315" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1034" ChrName="3v3王异" OpenRefChrList0="187" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1035" ChrName="3v3丁奉" OpenRefChrList0="126" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1036" ChrName="3v3典韦" OpenRefChrList0="1" AssignVIPLevelReq="1" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1037" ChrName="3v3马谡" OpenRefChrList0="4" AssignVIPLevelReq="4" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1038" ChrName="3v3李典" OpenRefChrList0="317" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1039" ChrName="3v3荀攸" OpenRefChrList0="164" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1040" ChrName="3v3邓艾" OpenRefChrList0="51" AssignVIPLevelReq="9" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1041" ChrName="3v3陈宫" OpenRefChrList0="153" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1042" ChrName="3v3凌统" OpenRefChrList0="155" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1043" ChrName="3v3公孙瓒" OpenRefChrList0="320" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1044" ChrName="3v3顾雍" OpenRefChrList0="329" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1045" ChrName="3v3蔡夫人" OpenRefChrList0="331" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1046" ChrName="3v3徐盛" OpenRefChrList0="158" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1047" ChrName="3v3王基" OpenRefChrList0="362" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1048" ChrName="3v3钟繇" OpenRefChrList0="334" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1049" ChrName="3v3乐进" OpenRefChrList0="121" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1050" ChrName="3v3刘谌" OpenRefChrList0="335" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1051" ChrName="3v3黄忠" OpenRefChrList0="26" AssignVIPLevelReq="1" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1052" ChrName="3v3糜竺" OpenRefChrList0="365" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1053" ChrName="3v3马岱" OpenRefChrList0="167" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1054" ChrName="3v3法正" OpenRefChrList0="185" AssignVIPLevelReq="4" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1055" ChrName="3v3徐庶" OpenRefChrList0="304" AssignVIPLevelReq="4" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1056" ChrName="3v3李严" OpenRefChrList0="381" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1057" ChrName="3v3虞翻" OpenRefChrList0="181" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1058" ChrName="3v3韩当" OpenRefChrList0="170" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1059" ChrName="3v3公孙渊" OpenRefChrList0="341" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1060" ChrName="3v3周仓" OpenRefChrList0="325" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1061" ChrName="3v3司马朗" OpenRefChrList0="360" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1062" ChrName="3v3张春华" OpenRefChrList0="161" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1063" ChrName="3v3SP曹仁" OpenRefChrList0="111" AssignVIPLevelReq="5" AppointVIPLevelReq="5" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1064" ChrName="3v3SP孙尚香" OpenRefChrList0="103" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1065" ChrName="3v3潘璋马忠" OpenRefChrList0="180" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1066" ChrName="3v3诸葛恪" OpenRefChrList0="118" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0" />
+		<UseInfo ChrId="1067" ChrName="3v3祖茂" OpenRefChrList0="125" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1068" ChrName="3v3沮授" OpenRefChrList0="330" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1069" ChrName="3v3王平" OpenRefChrList0="401" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1070" ChrName="3v3严颜" OpenRefChrList0="400" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1071" ChrName="3v3鲁芝" OpenRefChrList0="379" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1072" ChrName="3v3刘琦" OpenRefChrList0="378" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1073" ChrName="3v3麴义" OpenRefChrList0="374" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1074" ChrName="3v3马忠" OpenRefChrList0="370" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1075" ChrName="3v3蔡邕" OpenRefChrList0="395" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1076" ChrName="3v3薛综" OpenRefChrList0="394" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1077" ChrName="3v3马云騄" OpenRefChrList0="346" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1078" ChrName="3v3李通" OpenRefChrList0="364" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1026" ChrName="3v3文聘" OpenRefChrList0="136" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1079" ChrName="3v3高干" OpenRefChrList0="482" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="0" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>	
+		<UseInfo ChrId="1080" ChrName="3v3严畯" OpenRefChrList0="473" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="0" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>	
+		<UseInfo ChrId="1081" ChrName="3v3周鲂" OpenRefChrList0="468" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>		
+		<UseInfo ChrId="1082" ChrName="3v3许靖" OpenRefChrList0="427" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>	
+		<UseInfo ChrId="1083" ChrName="3v3孙乾" OpenRefChrList0="376" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="0" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>	
+		<UseInfo ChrId="1084" ChrName="3v3张虎乐綝" OpenRefChrList0="7000" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1085" ChrName="3v3李肃" OpenRefChrList0="7010" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1086" ChrName="3v3祝融" OpenRefChrList0="479" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="0" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1087" ChrName="3v3孙坚" OpenRefChrList0="458" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="0" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+		<UseInfo ChrId="1088" ChrName="3v3太史慈" OpenRefChrList0="463" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="10" CanUseDianJiangKa="0" CanUseShenJiangKa="0"/>
+
+	
+	<!--十殿阎罗-->
+		<UseInfo ChrId="4500" ChrName="秦广王" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4501" ChrName="楚江王" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4502" ChrName="宋帝王" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4503" ChrName="五官王" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4504" ChrName="阎罗王" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4505" ChrName="卞城王" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4506" ChrName="泰山王" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4507" ChrName="都市王" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4508" ChrName="平等王" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4509" ChrName="转轮王" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4510" ChrName="孟婆" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4511" ChrName="地藏王" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>	
+		<UseInfo ChrId="80" ChrName="魑" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="81" ChrName="魅" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="82" ChrName="魍" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="83" ChrName="魉" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="84" ChrName="牛头" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="85" ChrName="马面" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="86" ChrName="黑无常" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="87" ChrName="白无常" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="88" ChrName="罗刹" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="89" ChrName="夜叉" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--龙舟系列武将-->
+		<UseInfo ChrId="4033" ChrName="刘琦" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4034" ChrName="刘琦" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4035" ChrName="唐咨" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4036" ChrName="唐咨" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4100" ChrName="苏飞" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4101" ChrName="苏飞" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4102" ChrName="黄权" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255"/>
+		<UseInfo ChrId="4103" ChrName="黄权" OpenRefChrList0="" AssignVIPLevelReq="65536" AppointVIPLevelReq="65535" AssignRatio="99999" CanUseDianJiangKa="0" CanUseShenJiangKa="0" CanNotShield="1" RobotKindReq="255" />
+
+		</CharacterUseConfig>
+
+
+	<!--分配武将的个数-->
+	<GeneralSlotCount DefaultCount="3" LordDefaultCount="3">		
+		<!--ConfigExp用来表示每个经验等级可以分配的武将个数(不包括主公),如果不配置会按照默认值处理(DefaultCount)-->
+		<Config ExpLv="[min-0][max-2]" Count="1"/>
+		<Config ExpLv="[min-3][max-5]" Count="2"/>
+		
+		<!--ConfigVIP用来表示每个VIP等级额外的武将个数,没有配置的VIP等级，默认count=0-->
+		<ConfigVIP VIPLv="[min-1][max-2]" Count="1"/>
+		<ConfigVIP VIPLv="[min-3][max-5]" Count="2"/>
+		<ConfigVIP VIPLv="[min-6][max-65536]" Count="3"/>
+	</GeneralSlotCount>
+	<!--1v1场4禁的武将配置-->
+	<Ban1v14CharacterCfg>
+		<BanChr ChrId="8" ChrName="孙权"/>
+		<BanChr ChrId="22" ChrName="华佗"/>
+		<BanChr ChrId="15" ChrName="曹操"/>
+		<BanChr ChrId="10" ChrName="吕蒙"/>
+	</Ban1v14CharacterCfg>
+	
+	<!--互斥武将(不能同时出现在场上)-->
+	<CharacterMutexConfig>
+		<ChrMutex MutexList="24;102;109;445"/>貂蝉 sp貂蝉 sp貂蝉2012
+		<ChrMutex MutexList="5;108;120;302"/>赵云 sp赵云2012
+		<ChrMutex MutexList="103;25;138;443"/>孙尚香 sp孙尚香
+		<ChrMutex MutexList="107;6;303"/>SP马超 马超
+		<ChrMutex MutexList="39;105;462"/>庞德 SP庞德 
+		<ChrMutex MutexList="110;48;484"/>贾诩 SP贾诩
+		<ChrMutex MutexList="29;111"/>曹仁 SP曹仁
+		<ChrMutex MutexList="35;515"/>界荀彧
+		<ChrMutex MutexList="57;112;505"/>蔡文姬 SP蔡文姬 界蔡文姬
+		<ChrMutex MutexList="154;185"/>新老法正
+		<ChrMutex MutexList="159;186;304"/>新老徐庶
+		<ChrMutex MutexList="31;210"/>新老周泰
+		<ChrMutex MutexList="33;211;449"/>新老于吉 
+		<ChrMutex MutexList="17;313"/>界限突破夏侯惇
+		<ChrMutex MutexList="32;212;448"/>新老张角
+		<ChrMutex MutexList="163;187"/>新老王异
+		<ChrMutex MutexList="165;188"/>新老关张
+		<ChrMutex MutexList="167;189"/>新老马岱
+		<ChrMutex MutexList="2;300;106"/>界限突破关羽
+		<ChrMutex MutexList="10;306"/>界限突破吕蒙
+		<ChrMutex MutexList="15;311"/>界限突破曹操
+		<ChrMutex MutexList="22;318"/>界限突破华佗
+		<ChrMutex MutexList="3;301"/>界限突破张飞
+		<ChrMutex MutexList="12;308"/>界限突破周瑜
+		<ChrMutex MutexList="16;312"/>界限突破司马懿
+		<ChrMutex MutexList="19;315"/>界限突破许褚
+		<ChrMutex MutexList="11;307"/>界限突破黄盖
+		<ChrMutex MutexList="101;320"/>界限突破公孙瓒
+		<ChrMutex MutexList="13;309"/>界限突破大乔
+		<ChrMutex MutexList="18;314;474"/>界限突破张辽
+		<ChrMutex MutexList="23;319"/>界限突破吕布
+		<ChrMutex MutexList="9;305"/>界限突破甘宁
+		<ChrMutex MutexList="20;316"/>界限突破陆逊
+		<ChrMutex MutexList="14;310"/>界限突破郭嘉
+		<ChrMutex MutexList="171;214;446"/>华雄
+		<ChrMutex MutexList="100;215"/>袁术
+		<ChrMutex MutexList="52;139;480"/>姜维
+		<ChrMutex MutexList="1;299"/>刘备
+		<ChrMutex MutexList="7;361;441"/>黄月英
+		<ChrMutex MutexList="4033;4034"/>刘琦
+		<ChrMutex MutexList="4035;4036"/>唐咨
+		<ChrMutex MutexList="4100;4101"/>苏飞
+		<ChrMutex MutexList="4102;4103"/>黄权
+		<ChrMutex MutexList="4;440"/>诸葛亮
+		<ChrMutex MutexList="8;442"/>孙权
+		<ChrMutex MutexList="21;444"/>甄姬
+		<ChrMutex MutexList="56;447"/>左慈
+		<ChrMutex MutexList="41;450"/>袁绍
+		<ChrMutex MutexList="53;451"/>刘禅
+		<ChrMutex MutexList="54;452"/>孙策
+		<ChrMutex MutexList="36;429;455"/>庞统
+		<ChrMutex MutexList="28;453"/>夏侯渊
+		<ChrMutex MutexList="37;454"/>卧龙
+		<ChrMutex MutexList="27;456"/>魏延
+		<ChrMutex MutexList="30;457"/>小乔
+		<ChrMutex MutexList="463;38"/>太史慈
+		<ChrMutex MutexList="458;44"/>孙坚
+		<ChrMutex MutexList="1015;1087"/>统率孙坚		
+		<ChrMutex MutexList="470;45"/>董卓
+		<ChrMutex MutexList="471;51"/>邓艾
+		<ChrMutex MutexList="479;46"/>祝融	
+		<ChrMutex MutexList="485;49"/>鲁肃		
+		<ChrMutex MutexList="47;492;506"/>孟获	
+		<ChrMutex MutexList="50;357;486"/>张郃
+		<ChrMutex MutexList="42;496"/>徐晃
+		<ChrMutex MutexList="34;526"/>典韦
+		<ChrMutex MutexList="460;523"/>荀谌、族荀谌
+		<ChrMutex MutexList="389;528"/>吴苋
+		<ChrMutex MutexList="26;61"/>黄忠
+		<ChrMutex MutexList="40;550"/>颜良文丑
+		<ChrMutex MutexList="548;7014"/>钟琰
+		<ChrMutex MutexList="555;372"/>王允
+		<ChrMutex MutexList="563;55"/>二张
+		<ChrMutex MutexList="567;173"/>钟会
+
+	</CharacterMutexConfig>
+
+	<!--sp武将选择列表-->	
+	<CharacterSPSelectConfig>
+		<ChrSPList List="24;102;109;445"/>貂蝉的sp武将列表
+		<ChrSPList List="5;108;120;302"/>赵云的sp武将列表
+		<ChrSPList List="103;25;138;443"/>孙尚香的sp武将列表
+		<ChrSPList List="107;6;303"/>马超的sp武将列表
+		<ChrSPList List="39;105;462"/>庞德  
+		<ChrSPList List="110;48;484"/>贾诩 SP贾诩
+		<ChrSPList List="29;111"/>曹仁 SP曹仁
+		<ChrSPList List="35;515"/>界荀彧
+		<ChrSPList List="57;112;505"/>蔡文姬 SP蔡文姬
+		<ChrSPList List="154;185"/>新老法正
+		<ChrSPList List="159;186;304"/>新老徐庶
+		<ChrSPList List="33;211;449"/>新老于吉
+		<ChrSPList List="32;212;448"/>新老张角
+		<ChrSPList List="163;187"/>新老王异
+		<ChrSPList List="165;188"/>新老关张
+		<ChrSPList List="167;189"/>新老马岱
+		<ChrSPList List="2;300;106"/>界限突破关羽
+		<ChrSPList List="10;306"/>界限突破吕蒙
+		<ChrSPList List="15;311"/>界限突破曹操
+		<ChrSPList List="22;318"/>界限突破华佗
+		<ChrSPList List="3;301"/>界限突破张飞
+		<ChrSPList List="12;308"/>界限突破周瑜
+		<ChrSPList List="16;312"/>界限突破司马懿
+		<ChrSPList List="19;315"/>界限突破许褚
+		<ChrSPList List="11;307"/>界限突破黄盖
+		<ChrSPList List="101;320"/>界限突破公孙瓒
+		<ChrSPList List="13;309"/>界限突破大乔
+		<ChrSPList List="18;314;474"/>界限突破张辽
+		<ChrSPList List="23;319"/>界限突破吕布
+		<ChrSPList List="9;305"/>界限突破甘宁
+		<ChrSPList List="17;313"/>界限突破夏侯惇
+		<ChrSPList List="20;316"/>界限突破郭嘉
+		<ChrSPList List="14;310"/>界陆逊
+		<ChrSPList List="171;214;446"/>华雄
+		<ChrSPList List="100;215"/>袁术
+		<ChrSPList List="52;139;480"/>姜维
+		<ChrSPList List="1;299"/>刘备
+		<ChrSPList List="7;361;441"/>黄月英
+		<ChrSPList List="4;440"/>诸葛亮
+		<ChrSPList List="8;442"/>孙权
+		<ChrSPList List="21;444"/>甄姬
+		<ChrSPList List="56;447"/>左慈
+		<ChrSPList List="41;450"/>袁绍
+		<ChrSPList List="53;451"/>刘禅
+		<ChrSPList List="54;452"/>孙策
+		<ChrSPList List="36;429;455"/>庞统
+		<ChrSPList List="28;453"/>夏侯渊
+		<ChrSPList List="37;454"/>卧龙
+		<ChrSPList List="27;456"/>魏延
+		<ChrSPList List="30;457"/>小乔	
+		<ChrSPList List="463;38"/>太史慈
+		<ChrSPList List="458;44"/>孙坚
+		<ChrSPList List="470;45"/>董卓
+		<ChrSPList List="471;51"/>邓艾	
+		<ChrSPList List="479;46"/>祝融	
+		<ChrSPList List="485;49"/>鲁肃
+		<ChrSPList List="47;492;506"/>孟获	
+		<ChrSPList List="50;357;486"/>张郃	
+		<ChrSPList List="42;496"/>界徐晃
+		<ChrSPList List="34;526"/>典韦
+		<ChrSPList List="460;523"/>荀谌、族荀谌
+		<ChrSPList List="389;528"/>吴苋
+		<ChrSPList List="26;61"/>黄忠
+		<ChrSPList List="40;550"/>颜良文丑
+		<ChrSPList List="548;7014"/>钟琰
+		<ChrSPList List="555;372"/>王允
+		<ChrSPList List="563;55"/>二张
+		<ChrSPList List="567;173"/>钟会			
+	</CharacterSPSelectConfig>
+
+	<!--左慈可以抽取的武将列表,ChrIdList用","分割  NeedGeneralCount:武将开通数量大于等级该值，才会化身到该组武将-->
+	<ZuoCiSelChrConfig>
+		<SelChr Desc="所有标准武将" MeetAssignCondition="0" ChrIdList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25"/>
+		<SelChr Desc="所有风包"     MeetAssignCondition="0" ChrIdList="61,27,28,29,30,212,33"/>
+		<SelChr Desc="所有火包"     MeetAssignCondition="0" ChrIdList="34,35,36,37,38,39,40,41"/>
+		<SelChr Desc="所有林包"     MeetAssignCondition="0" ChrIdList="42,43,44,45,46,47,48,49"/>
+		<SelChr Desc="所有山包"     MeetAssignCondition="0" ChrIdList="50,51,52,53,54,55,57"/>
+		<SelChr Desc="所有阴包"     MeetAssignCondition="0" ChrIdList="400,401"/>
+
+		<!--以下为开通指定数量武将才会化身的组-->
+		<SelChr Desc="一将成名2011" NeedGeneralCount="80" MeetAssignCondition="0" ChrIdList="151,152,153,185,155,156,157,158,186,160,161"/>
+		<SelChr Desc="一将成名2012" NeedGeneralCount="90" MeetAssignCondition="0" ChrIdList="162,164,166,167,168,169,170,171,172,173,187,188"/>
+		<SelChr Desc="一将成名2013" NeedGeneralCount="110" MeetAssignCondition="0" ChrIdList="174,175,176,177,178,179,180,181,182,183,184"/>
+		<SelChr Desc="一将成名2014" NeedGeneralCount="130" MeetAssignCondition="0" ChrIdList="321,322,323,324,325,326,327,328,329,330,331"/>
+		<SelChr Desc="一将成名2015" NeedGeneralCount="150" MeetAssignCondition="0" ChrIdList="332,333,334,335,336,337,338,339,340,341,342"/>
+		<SelChr Desc="原创设计2016" NeedGeneralCount="170" MeetAssignCondition="0" ChrIdList="380,381,382,384,385,386"/>
+		
+	</ZuoCiSelChrConfig>
+<!--界左慈可以抽取的武将列表-->
+	<ZuoCiJieXianSelChrConfig>
+		<SelChr Desc="所有标准武将" MeetAssignCondition="0" ChrIdList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25"/>
+		<SelChr Desc="所有风包"     MeetAssignCondition="0" ChrIdList="61,27,28,29,30,212,33"/>
+		<SelChr Desc="所有火包"     MeetAssignCondition="0" ChrIdList="34,35,36,37,38,39,40,41"/>
+		<SelChr Desc="所有林包"     MeetAssignCondition="0" ChrIdList="42,43,44,45,46,47,48,49"/>
+		<SelChr Desc="所有山包"     MeetAssignCondition="0" ChrIdList="50,51,52,53,54,55,57"/>
+		<SelChr Desc="所有阴包"     MeetAssignCondition="0" ChrIdList="362,400,401,403,404"/>
+		<SelChr Desc="所有雷包"     MeetAssignCondition="0" ChrIdList="408,409,410,415"/>
+		<!--以下为开通指定数量武将才会化身的组-->
+		<SelChr Desc="一将成名2011" NeedGeneralCount="80" MeetAssignCondition="0" ChrIdList="151,152,153,185,155,156,157,158,186,160,161"/>
+		<SelChr Desc="一将成名2012" NeedGeneralCount="90" MeetAssignCondition="0" ChrIdList="162,164,166,167,168,169,170,171,172,173,187,188"/>
+		<SelChr Desc="一将成名2013" NeedGeneralCount="110" MeetAssignCondition="0" ChrIdList="174,175,176,177,178,179,180,181,182,183,184"/>
+		<SelChr Desc="一将成名2014" NeedGeneralCount="130" MeetAssignCondition="0" ChrIdList="321,322,323,324,325,326,327,328,329,330,331"/>
+		<SelChr Desc="一将成名2015" NeedGeneralCount="150" MeetAssignCondition="0" ChrIdList="332,333,334,335,336,337,338,339,340,341,342"/>
+		<SelChr Desc="原创设计2016" NeedGeneralCount="170" MeetAssignCondition="0" ChrIdList="380,381,382,384,385,386"/>
+		<SelChr Desc="原创设计2017" NeedGeneralCount="190" MeetAssignCondition="0" ChrIdList="388,389,390,391,392,393,394,395"/>
+		<SelChr Desc="界限突破" NeedGeneralCount="210" MeetAssignCondition="0" ChrIdList="26,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,440,441,442,443,444,445,446,448,449,450,451,452,453,454,455,456,457,458,462,463"/>	
+	</ZuoCiJieXianSelChrConfig>
+
+
+
+
+	
+	<ZhuLianBiHeCharacterConfig>
+		<ChrConfig ChrId="2000" Name="曹操" ChrIdList="2004;2011"/>
+		<ChrConfig ChrId="2002" Name="夏侯惇" ChrIdList="2007"/>
+		<ChrConfig ChrId="2013" Name="曹丕" ChrIdList="2006;2101"/>
+		
+		<ChrConfig ChrId="2015" Name="刘备" ChrIdList="2016;2017;2029"/>
+		<ChrConfig ChrId="2018" Name="诸葛亮" ChrIdList="2021"/>
+		<ChrConfig ChrId="2019" Name="赵云" ChrIdList="2026"/>		
+		<ChrConfig ChrId="2022" Name="黄忠" ChrIdList="2023"/>
+		<ChrConfig ChrId="2025" Name="卧龙诸葛亮" ChrIdList="2021;2024"/>
+		<ChrConfig ChrId="2027" Name="孟获" ChrIdList="2028"/>
+		
+		<ChrConfig ChrId="2030" Name="孙权" ChrIdList="2041"/>
+		<ChrConfig ChrId="2034" Name="周瑜" ChrIdList="2033;2039"/>
+		<ChrConfig ChrId="2035" Name="大乔" ChrIdList="2039"/>
+		
+		<ChrConfig ChrId="2046" Name="吕布" ChrIdList="2047"/>
+		<ChrConfig ChrId="2048" Name="袁绍" ChrIdList="2049"/>
+		
+		<ChrConfig ChrId="2062" Name="李典" ChrIdList="2014"/>
+		<ChrConfig ChrId="2063" Name="徐盛" ChrIdList="2044"/>
+		<ChrConfig ChrId="2064" Name="马岱" ChrIdList="2020"/>
+		<ChrConfig ChrId="2066" Name="孙策" ChrIdList="2034;2035;2040"/>
+		<ChrConfig ChrId="2069" Name="臧霸" ChrIdList="2003"/>
+		<ChrConfig ChrId="2073" Name="曹洪" ChrIdList="2010"/>
+		<ChrConfig ChrId="2074" Name="蒋钦" ChrIdList="2041"/>
+		<ChrConfig ChrId="2076" Name="陈武董袭" ChrIdList="2050"/>
+		<ChrConfig ChrId="2077" Name="荀攸" ChrIdList="2012"/>
+		<ChrConfig ChrId="2080" Name="法正" ChrIdList="2015"/>		
+		<ChrConfig ChrId="2081" Name="张绣" ChrIdList="2050"/>
+		<ChrConfig ChrId="2082" Name="凌统" ChrIdList="2031"/>		
+		<ChrConfig ChrId="2086" Name="司马懿" ChrIdList="2090"/>		
+		<ChrConfig ChrId="2087" Name="司马昭" ChrIdList="2088"/>
+		<ChrConfig ChrId="2085" Name="司马师" ChrIdList="2084;2091"/>	
+		<ChrConfig ChrId="2093" Name="陆抗" ChrIdList="2036"/>	
+		<ChrConfig ChrId="2094" Name="左慈" ChrIdList="2068"/>		
+		<ChrConfig ChrId="2095" Name="石苞" ChrIdList="2086"/>
+		<ChrConfig ChrId="2097" Name="卞夫人" ChrIdList="2000"/>
+		<ChrConfig ChrId="2098" Name="吴国太" ChrIdList="2038"/>		
+		<ChrConfig ChrId="2099" Name="王平" ChrIdList="2061"/>			
+		<ChrConfig ChrId="2100" Name="于禁" ChrIdList="2002"/>																										
+	</ZhuLianBiHeCharacterConfig>
+	
+	<!--国战 出牌阶段,你可以明置武将的技能id-->
+	<GuoZhanFaceUpPhasePlay spellIds="104,34,70,40,76,96,7009,7007,7028,7029,948,930,2125" />
+	
+	<AiSelectCharacterConfig>
+		<AllowChr ChrId="1" ChrName="刘备"/>
+		<AllowChr ChrId="2" ChrName="关羽"/>
+		<AllowChr ChrId="3" ChrName="张飞"/>
+		<AllowChr ChrId="5" ChrName="赵云"/>
+		<AllowChr ChrId="6" ChrName="马超"/>
+		<AllowChr ChrId="9" ChrName="甘宁"/>
+		<AllowChr ChrId="10" ChrName="吕蒙"/>
+		<AllowChr ChrId="12" ChrName="周瑜"/>
+		<AllowChr ChrId="14" ChrName="陆逊"/>
+		<!--AllowChr ChrId="15" ChrName="曹操"/-->
+		<!--AllowChr ChrId="17" ChrName="夏侯惇"/-->
+		<!--AllowChr ChrId="25" ChrName="孙尚香"/-->
+	</AiSelectCharacterConfig>
+
+	
+	<!--扶汉技能允许化身的武将-->
+	<FuHanAllowConfig list='26,61,47,52,103,115,116,124,128,346,349,369,156,179,324,299,300,301,302,303,304,351,381,386,440,441,451,454,455,456,431,479'/>
+	
+	
+	<!--博览允许的技能 ,分割 必须是武将技能-->
+	<BoLanSpellConfig list='65,68,874,92,99,985,91,227,872,304,209,405,423,714,605,7018,727,952'/>			
+	
+	
+	
+	
+	<!--智能点将卡 推送武将配置-->
+	<CharacterSelectRecommend>
+		<!--武将id:   1刘备, 2关羽, 3张飞, 4诸葛亮, 5赵云, 6马超, 7黄月英, 8孙权, 9甘宁, 10吕蒙, 11黄盖, 12周瑜, 13大乔, 14陆逊, 15曹操, 16司马懿, 17夏侯惇, 18张辽, 19许褚, 20郭嘉, 21甄姬, 22华佗, 23吕布, 24貂蝉, 25孙尚香, 26黄忠, 27魏延, 28夏侯渊, 29曹仁, 30小乔, 31周泰, 32张角, 33于吉, 34典韦, 35荀彧, 36庞统, 37卧龙诸葛亮, 38太史慈, 39庞德, 40颜良&文丑, 41袁绍, 42徐晃, 43曹丕, 44孙坚, 45董卓, 46祝融, 47孟获, 48贾诩, 49鲁肃, 50张颌, 51邓艾, 52姜维, 53刘禅, 54孙策, 55张昭&张弘, 56左慈, 57蔡文姬, 100袁术, 101公孙瓒, 102SP貂蝉, 103SP孙尚香, 104杨修, 105SP庞德, 106SP关羽, 151曹植, 152高顺, 153陈宫, 154法正, 155凌统, 156马谡, 157吴国太, 158徐盛, 159徐庶, 160于禁, 161张春华, 201神关羽, 202神吕蒙, 203神周瑜, 204神诸葛亮, 205神曹操, 206神吕布, 207神赵云, 208神司马懿,-->
+		<!--扩展包id: 1普通, 4风, 5火, 6林, 7山, 8神, 9onine专属武将, 10一将成名A, 11一将成名B-->
+		<!--身份id:   1主公, 2忠臣, 3反贼, 4内奸-->
+		
+		<!--主-->
+		<Config gameMode="1" position="1" figure="1" emperorCharacterId="15">
+			<Character exId="1" charIds="1,8,15,4,16,20,10,25,22,5,18,21,14,24"/>
+			<Character exId="4" charIds="27"/>
+			<Character exId="5" charIds="41,36,37"/>
+			<Character exId="6" charIds="46,45,48"/>
+			<Character exId="10" charIds="160,154,156,159"/>
+			<Character exId="9" charIds="100,103,101,102"/>
+		</Config>
+		<Config gameMode="1" position="1" figure="1" emperorCharacterId="1">
+			<Character exId="1" charIds="15,8,15,4,16,20,10,25,22,5,18,21,14,24"/>
+			<Character exId="4" charIds="27"/>
+			<Character exId="5" charIds="41,36,37"/>
+			<Character exId="6" charIds="46,45,48"/>
+			<Character exId="10" charIds="160,154,156,159"/>
+			<Character exId="9" charIds="100,103,101,102"/>
+		</Config>
+		<Config gameMode="1" position="1" figure="1" emperorCharacterId="8">
+			<Character exId="1" charIds="15,1,15,4,16,20,10,25,22,5,18,21,14,24"/>
+			<Character exId="4" charIds="27"/>
+			<Character exId="5" charIds="41,36,37"/>
+			<Character exId="6" charIds="46,45,48"/>
+			<Character exId="10" charIds="160,154,156,159"/>
+			<Character exId="9" charIds="100,103,101,102"/>
+		</Config>
+		<Config gameMode="1" position="1" figure="1" emperorCharacterId="0">
+			<Character exId="1" charIds="4,16,20,10,25,22,5,18,21,14,24"/>
+			<Character exId="4" charIds="27"/>
+			<Character exId="5" charIds="41,36,37"/>
+			<Character exId="6" charIds="46,45,48"/>
+			<Character exId="10" charIds="160,154,156,159"/>
+			<Character exId="9" charIds="100,103,101,102"/>
+		</Config>
+		<!--忠-->
+		<Config gameMode="1" position="0" figure="2" emperorCharacterId="15">
+			<Character exId="1" charIds="16,17,18,19,20,21,1,2,3,5,6,7,8,9,10,12,13,14,22,24,23"/>
+			<Character exId="4" charIds="28,29,30,31,61,27,32"/>
+			<Character exId="5" charIds="34,35,36,37,38,41,40,39"/>
+			<Character exId="6" charIds="42,43,47,46,44,49,45,48"/>
+			<Character exId="10" charIds="160,154,156,159"/>
+			<Character exId="9" charIds="100,103,101,102"/>
+		</Config>
+		<Config gameMode="1" position="0" figure="2" emperorCharacterId="1">
+			<Character exId="1" charIds="2,3,4,5,6,7,15,16,17,18,19,20,21,8,9,10,11,12,13,14,25,22,23,24"/>
+			<Character exId="4" charIds="61,27,28,29,30,31,32"/>
+			<Character exId="5" charIds="34,35,36,37,38,41,40,39"/>
+			<Character exId="6" charIds="42,43,47,46,44,49,45,48"/>
+			<Character exId="10" charIds="160,154,156,159"/>
+			<Character exId="9" charIds="100,103,101,102"/>
+		</Config>
+		<Config gameMode="1" position="0" figure="2" emperorCharacterId="8">
+			<Character exId="1" charIds="9,10,11,12,13,14,25,15,16,17,18,19,20,21,1,2,3,4,5,6,7,22,23,24"/>
+			<Character exId="4" charIds="30,31,28,29,61,27,32"/>
+			<Character exId="5" charIds="34,35,36,37,38,41,40,39"/>
+			<Character exId="6" charIds="42,43,47,46,44,49,45,48"/>
+			<Character exId="10" charIds="160,154,156,159"/>
+			<Character exId="9" charIds="100,103,101,102"/>
+		</Config>
+		<Config gameMode="1" position="0" figure="2" emperorCharacterId="32">
+			<Character exId="1" charIds="22,23,24,15,16,17,18,19,20,21,1,2,3,4,5,6,7,8,9,10,11,12,13,14,25"/>
+			<Character exId="4" charIds="28,29,30,31,61,27,32"/>
+			<Character exId="5" charIds="34,35,36,37,38,41,40,39"/>
+			<Character exId="6" charIds="42,43,47,46,44,49,45,48"/>
+			<Character exId="10" charIds="160,154,156,159"/>
+			<Character exId="9" charIds="100,103,101,102"/>
+		</Config>
+		<Config gameMode="1" position="0" figure="2" emperorCharacterId="0">
+			<Character exId="1" charIds="15,16,17,18,19,20,21,1,2,3,4,5,6,7,8,9,10,11,12,13,14,25,22,23,24"/>
+			<Character exId="4" charIds="28,29,61,27,30,31,32,33"/>
+			<Character exId="5" charIds="34,35,36,37,38,41,40,39"/>
+			<Character exId="6" charIds="42,43,47,46,44,49,45,48"/>
+			<Character exId="10" charIds="160,154,156,159"/>
+			<Character exId="9" charIds="100,103,101,102"/>
+		</Config>
+		<!--反贼 注意:这里的position的2和8代表和主公相邻的位置,而不是具体的2和8,0是除了相邻的其他位置.-->
+		<Config gameMode="1" position="2" figure="3" emperorCharacterId="0">
+			<Character exId="1" charIds="19,21,2,3,5,6,7,8,14,25,11,12,9,23,24"/>
+			<Character exId="4" charIds="28,61,27,32"/>
+			<Character exId="5" charIds="34,38,40,39"/>
+			<Character exId="6" charIds="42,47,46,45"/>
+			<Character exId="10" charIds="160,154,156,159"/>
+			<Character exId="9" charIds="100,103,101,102"/>
+		</Config>
+		<Config gameMode="1" position="8" figure="3" emperorCharacterId="0">
+			<Character exId="1" charIds="19,21,2,3,5,6,7,8,14,25,11,12,9,23,24"/>
+			<Character exId="4" charIds="28,61,27,32"/>
+			<Character exId="5" charIds="34,38,40,39"/>
+			<Character exId="6" charIds="42,47,46,45"/>
+			<Character exId="10" charIds="160,154,156,159"/>
+			<Character exId="9" charIds="100,103,101,102"/>
+		</Config>
+		<Config gameMode="1" position="0" figure="3" emperorCharacterId="0">
+			<Character exId="1" charIds="15,16,17,18,19,20,21,1,2,3,4,5,6,7,8,9,10,11,12,13,14,25,22,23,24"/>
+			<Character exId="4" charIds="28,29,61,27,30,31,32,33"/>
+			<Character exId="5" charIds="34,35,36,37,38,41,40,39"/>
+			<Character exId="6" charIds="42,43,47,46,44,49,45,48"/>
+			<Character exId="10" charIds="160,154,156,159"/>
+			<Character exId="9" charIds="100,103,101,102"/>
+		</Config>
+		<!--内奸-->
+		<Config gameMode="1" position="0" figure="4" emperorCharacterId="0">
+			<Character exId="1" charIds="15,16,17,20,21,1,5,4,8,10,13,14,25,22,24"/>
+			<Character exId="4" charIds="29,61,27,30,32"/>
+			<Character exId="5" charIds="36,37,41,39"/>
+			<Character exId="6" charIds="42,47,46,44,48"/>
+			<Character exId="10" charIds="160,154,156,159"/>
+			<Character exId="9" charIds="100,103,101,102"/>
+		</Config>
+	</CharacterSelectRecommend>
+
+	<!--互通版新手欢乐场ai配置-->
+	<!--
+	aiLevel： ai难度  1 高级ai 2 普通ai 3 蠢AI
+ 	exList	卡牌扩展类型合集		
+	idList		武将id合集
+
+	增加GM命令重载 //gm reload config pad_ai_happy_range
+	-->
+	<PadAiHappyRange>
+		<Range levelMin = "0" levelMax="19" aiLevel="3" exList="1"/>
+		<Range levelMin = "20" levelMax="29" aiLevel="2" exList="1,4,5,6,7"/>
+		<Range levelMin = "30" levelMax="39" aiLevel="1" exList="1,4,5,6,7,10,11,20" idList="100,103,105,106,107,108,109,112"/>
+		<Range levelMin = "40" levelMax="49" aiLevel="1" exList="1,4,5,6,7,9,10,11,20,25,26,29,30,31,33"/>
+	</PadAiHappyRange>
+</CharacterInGameConfig>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

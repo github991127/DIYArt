@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			dealChrId	-	分将id
+			breakScore	-	违规加扣信誉分系数
+			maxTime	-	最大牌局时间
+			guideLevel	-	弱引导等级
+			des	-	玩法说明文字
+			des_m	-	移动端玩法说明文字
+			roomName	-	房间名称
+			escapeCount	-	教学场逃跑保护次数
+			neijianlv	-	内奸引导最高出现等级
+			winRate	-	低于X级的玩家选将显示胜率
+			winRaterange	-	胜率处于此区间才显示
+依次为主忠反内
+			isshowrate	-	是否显示数据部推送的胜率
+1=显示
+0或不填不显示
+			rewardcard	-	击杀反贼奖励
+		-->
+	<Common dealChrId="1" breakScore="15000" maxTime="3600" roomName="五人身份匹配" escapeCount="999" rewardcard="3" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			group	-	引导模式组
+组1为明身份
+组2为暗身份
+			id	-	引导模式id
+			model	-	对应模式id
+			section	-	对应section
+				-	说明
+			num	-	局数
+			chapter	-	对应的章节
+			openlevel	-	开启条件-等级
+			closelevel	-	跳过等级
+			close	-	是否完成引导后关闭
+			maxlevel	-	推荐标签显示最大等级
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			winComboMod	-	连胜战力修正系数a
+			winRageA	-	胜率基础值，超过才生效
+			winRageB	-	胜率战力修正系数B
+			winRageC	-	胜率战力修正系数C
+			strHeroA	-	强将比例基础值，超过才生效
+			strHeroB	-	强将比例修正系数B
+			strHeroC	-	强将比例修正系数C
+			teamPowerArgH	-	组队战力个人战力较大者参数A
+			teamPowerArgL	-	组队战力个人战力较大者参数B
+			teamPowerArgBase	-	组队战力个人战力较大者参数C
+			ttLevA	-	组队等级个人等级较大者参数A
+			ttLevB	-	组队等级个人等级较大者参数B
+			ttLevC	-	组队等级个人等级较大者参数C
+			levA	-	组队段位个人段位较大者参数A
+			levB	-	组队段位个人段位较大者参数B
+			levC	-	组队段位个人段位较大者参数C
+			keepSeconds	-	匹配最大等待时间
+			keepSecondsMin	-	匹配最小等待时间
+			matchRecordLimit	-	匹配记录参数，次数，x时间x场x次不能一起
+			matchRecordTime	-	匹配记录参数，时间，x时间x场x次不能一起
+			matchRecordMax	-	匹配记录参数，场数，x时间x场x次不能一起
+			makeTimeout	-	超时对列 创建AI牌局数
+			makeTeams	-	队伍匹配每秒处理数
+			makeSingles	-	单人匹配每秒处理数
+			tabTipsTime	-	匹配前快结束提示时间
+			protectMaxTime	-	保护匹配ai的超时时间（同样保护匹配ai的人过少）
+			streakWinClear	-	队伍中任一人连胜达到N场后整个队伍不会匹配AI
+			AifightLevel	-	N级前前M局拟人局
+			AifightNum	-	N级前前M局拟人局
+		-->
+	<matchvalue winComboMod="100" winRageA="5500" winRageB="5500" winRageC="11000" strHeroA="1000" strHeroB="1000" strHeroC="10000" teamPowerArgH="7000" teamPowerArgL="3000" teamPowerArgBase="8000" ttLevA="7000" ttLevB="3000" ttLevC="8000" levA="7000" levB="3000" levC="8000" keepSeconds="5" keepSecondsMin="1" matchRecordLimit="2" matchRecordTime="3600" matchRecordMax="30" makeTimeout="20" makeTeams="50" makeSingles="100" protectMaxTime="30" streakWinClear="1" AifightLevel="60" AifightNum="5" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			lv	-	等级
+			matchtime1	-	超过X秒后匹配另一个玩家成局
+不配置表示不生效
+			lv_max	-	匹配的另一个玩家等级上限
+			timeOut	-	超时匹配
+1=启用
+0或不填不启用
+			matchtime2	-	超过X秒后匹配AI
+			lossCount	-	连败X场后下一场直接匹配AI
+			levelAI	-	匹配AI等级
+1=普通小杀
+2=玫瑰金小杀
+				-
+		-->
+	<MatchAiInfo lv="0" matchtime1="3" lv_max="30" timeOut="1" matchtime2="10" lossCount="2" levelAI="1" />
+	<MatchAiInfo lv="30" matchtime1="6" lv_max="60" timeOut="1" matchtime2="20" lossCount="2" levelAI="1" />
+	<MatchAiInfo lv="60" matchtime1="10" lv_max="100" timeOut="1" matchtime2="30" lossCount="2" levelAI="2" />
+	<MatchAiInfo lv="100" matchtime1="15" lv_max="180" timeOut="1" matchtime2="40" lossCount="2" levelAI="2" />
+	<MatchAiInfo lv="150" matchtime1="20" lv_max="200" timeOut="1" matchtime2="40" lossCount="2" levelAI="2" />
+	<MatchAiInfo lv="200" matchtime1="25" lv_max="999" timeOut="1" matchtime2="40" lossCount="2" levelAI="2" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	武将id
+				-	武将名称
+			zhuwinRate	-	主公胜率
+			zhongwinRate	-	忠臣胜率
+			fanwinRate	-	反贼胜率
+			neiwinRate	-	内奸胜率
+		-->
+</root>

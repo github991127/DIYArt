@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			roundId	-	数据id-只能配置一期，id递增
+			time	-	目标的登录日期
+			word	-	主界面提示文本（废弃）
+			tips	-	主界面提示文本边的问号说明文本
+			status	-	主界面宝箱中金币数量状态
+少：中：多
+			reward	-	游戏好友给我助力后，在指定日期登录，我获得的额外奖励倍数
+100=额外获得1倍
+			zhuli	-	每人每日最多可助力次数（对同一用户只能助力1此）
+			sharelimit	-	分享每日最大次数（避免微信小程序被封,次数和PHP再商议）
+			desc3	-	金币获取说明
+			ipmax	-	同ip数，超过后判定为小号
+			devicemax	-	设备号数量上限，超过后判定为小号
+			ipassistlimit	-	邀请助力同IP超过数量助力不生效
+			deviceassistlimit	-	邀请助力同设备超过数量助力不生效
+			qrurl	-	小程序二维码的地址
+			password	-	口令码
+UID直接加在口令码后面
+			shareText	-	聊天分享文本（后面带【点击助力】四个字）
+			bg	-	背景图
+			npc	-	NPC人物
+			reward1	-	活动期间每日登录奖励
+			specialreward	-	指定日期额外每日登录奖励
+			invitationBG	-	使用的邀请函背景图资源
+			invitationBG	-	使用的邀请函背景图资源
+			invitationWord	-	邀请函界面中文案
+			zhuliButton	-	PC个人信息界面中助力按钮文案
+			zhuliDesc	-	助力弹窗文案
+			zhuliReward	-	助力记录界面中游戏好友获得奖励范围
+			zhuliReward1	-	助力记录界面中微信好友获得奖励范围
+			zhulilv	-	助力者最低等级
+		-->
+	<common roundId="2409" time="20241001T000000" reward="200" zhuli="3" sharelimit="20" ipmax="30" devicemax="5" ipassistlimit="100" deviceassistlimit="20" reward1="200" specialreward="500" zhulilv="10" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			roundId	-	轮数id 不能为0 数据记录的依据
+			startTime	-	整个活动的开始结束时间
+			endTime	-	整个活动的开始结束时间同时不可邀请
+			endShopTime	-	兑换商店的关闭时间和界面关闭时间
+			priceId	-	商城兑换消耗的道具id
+			bigReward	-	本期大奖id
+			activeId	-	期数id（PHP用）
+		-->
+	<round roundId="2405" startTime="20240705T100000" endTime="20240714T235958" endShopTime="20240716T235958" priceId="8273601" bigReward="9057001" activeId="1" />
+	<round roundId="2409" startTime="20240905T100000" endTime="20241003T235958" endShopTime="20241005T235958" priceId="8273601" bigReward="9060201" activeId="1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			roundId	-	活动轮数
+			id	-	用户类型id
+				-	描述
+			playertype	-	玩家类型id
+1=小号
+2=回归用户
+3=活跃用户
+4=微信用户
+
+			value1	-	参数1：
+用户类型=2，回归用户时，此参数表示 流失天数不大于X
+用户类型=3，活跃用户时，此参数表示等级
+类型4时，1表示新用户，2表示老用户
+			value2	-	参数2
+此参数表示 历史充值金额不大于X
+			reward	-	奖励
+奖励数量1最小值，奖励数量1最大值，人数1;
+			Multiple	-	每个此类用户
+多次助力产出代币的倍数;
+助力次数,倍数（X100）
+		-->
+	<reward roundId="2405" id="1" playertype="1" reward="2,3,10;1,2,9999" Multiple="1,500;20,100;999,30" />
+	<reward roundId="2405" id="2" playertype="4" value1="1" reward="40,65,20;24,39,200;4,6,999" Multiple="1,100;20,100;999,100" />
+	<reward roundId="2405" id="3" playertype="4" value1="2" reward="40,65,20;24,39,200;4,6,999" Multiple="1,100;20,100;999,100" />
+	<reward roundId="2405" id="4" playertype="3" value1="60" reward="22,36,10;13,21,100;2,3,999" Multiple="1,143;20,100;999,30" />
+	<reward roundId="2405" id="5" playertype="3" value1="120" reward="28,45,10;16,27,100;2,4,999" Multiple="1,143;20,100;999,30" />
+	<reward roundId="2405" id="6" playertype="3" value1="180" reward="36,59,30;22,35,300;3,5,999" Multiple="1,143;20,100;999,30" />
+	<reward roundId="2405" id="7" playertype="3" value1="200" reward="46,75,30;27,45,600;4,7,999" Multiple="1,143;20,100;999,30" />
+	<reward roundId="2405" id="8" playertype="2" value1="90" value2="1000" reward="112,182,10;67,109,100;11,18,999" Multiple="1,238;20,100;999,30" />
+	<reward roundId="2405" id="9" playertype="2" value1="90" value2="30000" reward="140,227,20;84,136,150;14,22,999" Multiple="1,343;20,100;999,30" />
+	<reward roundId="2405" id="10" playertype="2" value1="90" value2="1000000" reward="186,302,50;111,181,200;18,30,999" Multiple="1,429;20,100;999,30" />
+	<reward roundId="2405" id="11" playertype="2" value1="90" value2="999999999" reward="232,378,50;139,226,300;23,37,999" Multiple="1,686;20,100;999,30" />
+	<reward roundId="2405" id="12" playertype="2" value1="180" value2="1000" reward="145,236,10;87,141,100;14,23,999" Multiple="1,201;20,100;999,30" />
+	<reward roundId="2405" id="13" playertype="2" value1="180" value2="30000" reward="181,295,20;108,177,150;18,29,999" Multiple="1,322;20,100;999,30" />
+	<reward roundId="2405" id="14" playertype="2" value1="180" value2="1000000" reward="242,393,50;145,236,200;24,39,999" Multiple="1,429;20,100;999,30" />
+	<reward roundId="2405" id="15" playertype="2" value1="180" value2="999999999" reward="303,492,50;181,295,300;30,49,999" Multiple="1,686;20,100;999,30" />
+	<reward roundId="2405" id="16" playertype="2" value1="9999" value2="1000" reward="188,306,10;113,184,100;18,30,999" Multiple="1,169;20,100;999,30" />
+	<reward roundId="2405" id="17" playertype="2" value1="9999" value2="30000" reward="236,383,20;141,230,150;23,38,999" Multiple="1,282;20,100;999,30" />
+	<reward roundId="2405" id="18" playertype="2" value1="9999" value2="1000000" reward="315,512,50;189,307,200;31,51,999" Multiple="1,429;20,100;999,30" />
+	<reward roundId="2405" id="19" playertype="2" value1="9999" value2="999999999" reward="393,639,50;236,383,300;39,63,999" Multiple="1,686;20,100;999,30" />
+</root>

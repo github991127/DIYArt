@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--  编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) --> 
+<GameLimits>
+    <GameModel Model="5" ModelDesc="五人标准场">
+        <SectionS Section="2">
+	    <Calcuate elementid="4" type="1" add="0" day_start="3" day_end="6" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="3">
+            <Calcuate elementid="4" type="1" add="0" day_start="3" day_end="6" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="4">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="5">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="6">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+    </GameModel>
+    <GameModel Model="1" ModelDesc="八人标准场">
+        <SectionS Section="2">
+	    <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="3">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="4">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="5">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="6">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+    </GameModel>
+    <GameModel Model="16" ModelDesc="五人军争场">
+        <SectionS Section="4">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="5">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+    </GameModel>
+    <GameModel Model="15" ModelDesc="八人军争场">
+        <SectionS Section="4">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="5">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+    </GameModel>
+    <GameModel Model="2" ModelDesc="八人双内场">
+        <SectionS Section="2">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="3">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="4">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="5">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="6">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+    </GameModel>
+    <GameModel Model="8" ModelDesc="3v3标准场">
+        <SectionS Section="2">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="3">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="4">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="5">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="6">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+    </GameModel>
+    <GameModel Model="9" ModelDesc="1v1标准场">
+        <SectionS Section="2">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="3">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="4">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="5">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="6">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+    </GameModel>
+    <GameModel Model="10" ModelDesc="3v3快速场">
+	<SectionS Section="2">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="3">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="4">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="5">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+        <SectionS Section="6">
+            <Calcuate elementid="4" type="1" add="0" day_start="4" day_end="1" time_start="10:00" time_end="23:00"/>
+        </SectionS>
+    </GameModel>
+    <GameModel Model="50" ModelDesc="比赛模式">
+	<SectionS MatchGameModel="1" MatchRuleType="1">
+		<Calcuate elementid="0" type="4"/>
+		<Calcuate elementid="1" type="0"/>
+		<Calcuate elementid="2" type="0"/>
+		<Calcuate elementid="3" type="0"/>
+	</SectionS>
+	<SectionS MatchGameModel="2" MatchRuleType="1">
+		<Calcuate elementid="0" type="7" param0="10" param1="-3"/>
+		<Calcuate elementid="1" type="0"/>
+		<Calcuate elementid="2" type="0"/>
+		<Calcuate elementid="3" type="0"/>
+	</SectionS>
+	<SectionS MatchGameModel="3" MatchRuleType="1">
+		<Calcuate elementid="0" type="6"/>
+		<Calcuate elementid="1" type="0"/>
+		<Calcuate elementid="2" type="0"/>
+		<Calcuate elementid="3" type="0"/>
+	</SectionS>
+	<SectionS MatchGameModel="4" MatchRuleType="1">
+		<Calcuate elementid="0" type="7" param0="10" param1="-3"/>
+		<Calcuate elementid="1" type="0"/>
+		<Calcuate elementid="2" type="0"/>
+		<Calcuate elementid="3" type="0"/>
+	</SectionS>
+	<SectionS MatchGameModel="3" MatchRuleType="2">
+		<Calcuate elementid="0" type="7" param0="15" param1="0"/>
+		<Calcuate elementid="1" type="0"/>
+		<Calcuate elementid="2" type="0"/>
+		<Calcuate elementid="3" type="0"/>
+	</SectionS>
+    </GameModel>
+    <GameModel Model="19" ModelDesc="1v1竞技场">
+	<SectionS Section="2">
+		<Calcuate elementid="5" type="1"/>
+	</SectionS>
+	<SectionS Section="4">
+		<Calcuate elementid="5" type="1"/>
+	</SectionS>
+	<SectionS Section="5">
+		<Calcuate elementid="5" type="1"/>
+	</SectionS>
+    </GameModel>
+</GameLimits>

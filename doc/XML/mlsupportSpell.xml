@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 新ai支持的二级技能动作(注意：一级技能动作是通过武将支持控制的)
+	codeid: 协议id
+	spellid：技能id
+	optType: 针对协议是21215配置
+-->
+<MLSupportMap>
+	<!-- MsgTriggerSpellNew 21265-->
+    <mlspell codeid="21265" spellid="2" desc="闪" name="SKILL_SHAN" />
+	<mlspell codeid="21265" spellid="13" desc="无懈可击" name="SKILL_JINNANG_WUXIE" />
+	<mlspell codeid="21265" spellid="16" desc="八卦阵" name="SKILL_ARMOR_BAGUA" />
+	<mlspell codeid="21265" spellid="24" desc="雌雄双股剑" name="SKILL_WEAPON_SHUANGGU" />
+	<mlspell codeid="21265" spellid="30" desc="麒麟弓" name="SKILL_WEAPON_QILINGONG" />
+	<mlspell codeid="21265" spellid="87" desc="朱雀羽扇" name="SKILL_ZHU_QUE_YU_SHAN" />
+	<mlspell codeid="21265" spellid="201" desc="寒冰剑" name="SKILL_EX_WEAPON_HANBINGJIAN" />
+	<mlspell codeid="21265" spellid="28" desc="贯石斧" name="SKILL_WEAPON_GUANSHI" />
+	<mlspell codeid="21265" spellid="38" desc="铁骑" name="SKILL_CHARACTER_TIEJI" />
+	<mlspell codeid="21265" spellid="39" desc="集智" name="SKILL_CHARACTER_JIZHI" />
+	<mlspell codeid="21265" spellid="41" desc="枭姬" name="SKILL_CHARACTER_XIAOJI" />
+	<mlspell codeid="21265" spellid="42" desc="奸雄" name="SKILL_CHARACTER_JIANXIONG" />
+	<mlspell codeid="21265" spellid="44" desc="突袭" name="SKILL_CHARACTER_TUXI" />
+	<mlspell codeid="21265" spellid="45" desc="洛神" name="SKILL_CHARACTER_LUOSHEN" />
+	<mlspell codeid="21265" spellid="47" desc="反馈" name="SKILL_CHARACTER_FANKUI" />
+	<mlspell codeid="21265" spellid="48" desc="鬼才" name="SKILL_CHARACTER_GUICAI" />
+	<mlspell codeid="21265" spellid="49" desc="刚烈" name="SKILL_CHARACTER_GANGLIE" />
+	<mlspell codeid="21265" spellid="50" desc="裸衣" name="SKILL_CHARACTER_LUOYI" />
+	<mlspell codeid="21265" spellid="51" desc="天妒" name="SKILL_CHARACTER_TIANDU" /> 
+	<mlspell codeid="21265" spellid="52" desc="遗计" name="SKILL_CHARACTER_YIJI" />
+	<mlspell codeid="21265" spellid="59" desc="连营" name="SKILL_CHARACTER_LIANYING" />
+	<mlspell codeid="21265" spellid="61" desc="流离" name="SKILL_CHARACTER_LIULI" />
+	<mlspell codeid="21265" spellid="63" desc="克己" name="SKILL_CHARACTER_KEJI" />
+	<mlspell codeid="21265" spellid="67" desc="闭月" name="SKILL_CHARACTER_BIYUE" />
+	<mlspell codeid="21265" spellid="79" desc="鬼道" name="SKILL_CHARACTER_GUI_DAO" />
+	<mlspell codeid="21265" spellid="755" desc="雷击" name="SKILL_CHARACTER_LEI_JI_2015" />
+	<mlspell codeid="21265" spellid="295" desc="狂骨" name="SKILL_CHARACTER_KUANG_GU_2016" />
+	<mlspell codeid="21265" spellid="363" desc="神速" name="SKILL_CHARACTER_SHEN_SU_2016" />
+	<mlspell codeid="21265" spellid="370" desc="据守" name="SKILL_CHARACTER_JU_SHOU_NEW" />
+	<mlspell codeid="21265" spellid="382" desc="天香" name="SKILL_CHARACTER_TIAN_XIANG_2017" />
+	<mlspell codeid="21265" spellid="467" desc="奋激" name="SKILL_CHARACTER_FEN_JI" />
+	<mlspell codeid="21265" spellid="7014" desc="昭然" name="SKILL_JIN_CHARACTER_ZHAO_RAN" />
+	<mlspell codeid="21265" spellid="7005" desc="夷灭" name="SKILL_JIN_CHARACTER_YI_MIE" />
+	<mlspell codeid="21265" spellid="7002" desc="宜室" name="SKILL_JIN_CHARACTER_YI_SHI" />
+	<mlspell codeid="21265" spellid="7000" desc="袭爵" name="SKILL_JIN_CHARACTER_XI_JUE" />
+	<mlspell codeid="21265" spellid="722" desc="突袭" name="SKILL_JIE_XIAN_CHARACTER_TU_XI" />
+	<mlspell codeid="21265" spellid="3272" desc="刚述" name="SKILL_CHARACTER_GANG_SHU" />
+	<mlspell codeid="21265" spellid="3273" desc="谏旋" name="SKILL_CHARACTER_JIAN_XUAN" />
+	<mlspell codeid="21265" spellid="3208" desc="骋烈" name="SKILL_CHARACTER_PIN_LIE" />
+	<mlspell codeid="21265" spellid="3166" desc="蹈节" name="SKILL_ZONGZU_DAO_JIE" />
+	<mlspell codeid="21265" spellid="3221" desc="三恇" name="SKILL_CHARACTER_SAN_KUANG_2" />
+	<mlspell codeid="21265" spellid="3093" desc="落宠" name="SKILL_CHARACTER_LUO_CHONG" />
+	<mlspell codeid="21265" spellid="3085" desc="谮构" name="SKILL_CHARACTER_ZEN_GOU" />
+	<mlspell codeid="21265" spellid="3086" desc="长姬" name="SKILL_CHARACTER_CHANG_JI" />
+	<mlspell codeid="21265" spellid="3035" desc="好施" name="SKILL_CHARACTER_JIE_XIAN_HAO_SHI" />
+	<mlspell codeid="21265" spellid="945" desc="严教" name="SKILL_CHARACTER_YAN_JIAO" />
+	<mlspell codeid="21265" spellid="946" desc="省身" name="SKILL_CHARACTER_XING_SHEN" />
+	<mlspell codeid="21265" spellid="938" desc="酣战" name="SKILL_JIE_XIAN_CHARACTER_HAN_ZHAN" />
+	<mlspell codeid="21265" spellid="937" desc="鞬出" name="SKILL_JIE_XIAN_CHARACTER_JIAN_CHU" />
+	<mlspell codeid="21265" spellid="108" desc="英魂" name="SKILL_CHARACTER_YING_HUN" />
+	<mlspell codeid="21265" spellid="931" desc="武烈" name="SKILL_JIE_XIAN_CHARACTER_WU_LIE" />
+	<mlspell codeid="21265" spellid="3201" desc="激昂" name="SKILL_CHARACTER_JI_ANG_JIE_XIAN" />
+	<mlspell codeid="21265" spellid="893" desc="放权" name="SKILL_JIE_XIAN_CHARACTER_FANG_QUAN" />
+	<mlspell codeid="21265" spellid="891" desc="乱击" name="SKILL_JIE_XIAN_CHARACTER_LUAN_JI" />
+	<mlspell codeid="21265" spellid="882" desc="雷击" name="SKILL_JIE_XIAN_CHARACTER_LEI_JI" />
+	<mlspell codeid="21265" spellid="883" desc="鬼道" name="SKILL_JIE_XIAN_CHARACTER_GUI_DAO" />
+	<mlspell codeid="21265" spellid="876" desc="闭月" name="SKILL_JIE_XIAN_CHARACTER_BI_YUE" />
+	<mlspell codeid="21265" spellid="870" desc="集智" name="SKILL_JIE_XIAN_CHARACTER_JI_ZHI" />
+	<mlspell codeid="21265" spellid="909" desc="蒺藜" name="SKILL_CHARACTER_JI_LI_2" />
+	<mlspell codeid="21265" spellid="904" desc="内伐" name="SKILL_CHARACTER_NEI_FA" />
+	<mlspell codeid="21265" spellid="831" desc="从谏" name="SKILL_CHARACTER_CONG_JIAN" />
+	<mlspell codeid="21265" spellid="3177" desc="良姻" name="SKILL_CHARACTER_LIANG_YIN_EX" />
+	<mlspell codeid="21265" spellid="3178" desc="箜声" name="SKILL_CHARACTER_KONG_SHENG_EX" />
+	<mlspell codeid="21265" spellid="818" desc="罪论" name="SKILL_CHARACTER_ZUI_LUN" />
+	<mlspell codeid="21265" spellid="826" desc="镇骨" name="SKILL_CHARACTER_ZHEN_GU" />
+	<mlspell codeid="21265" spellid="815" desc="恃才" name="SKILL_CHARACTER_SHI_CAI" />
+	<mlspell codeid="21265" spellid="790" desc="谏征" name="SKILL_CHARACTER_JIAN_ZHENG" />
+	<mlspell codeid="21265" spellid="791" desc="专对" name="SKILL_CHARACTER_ZUAN_DUI" />
+	<mlspell codeid="21265" spellid="784" desc="清弦" name="SKILL_CHARACTER_QING_XIAN" />
+	<mlspell codeid="21265" spellid="785" desc="绝响" name="SKILL_CHARACTER_JUE_XIANG" />
+	<mlspell codeid="21265" spellid="786" desc="激弦" name="SKILL_CHARACTER_JI_XIAN" />
+	<mlspell codeid="21265" spellid="787" desc="烈弦" name="SKILL_CHARACTER_LIE_XIAN" />
+	<mlspell codeid="21265" spellid="788" desc="柔弦" name="SKILL_CHARACTER_ROU_XIAN" />
+	<mlspell codeid="21265" spellid="789" desc="和弦" name="SKILL_CHARACTER_HE_XIAN" />
+	<mlspell codeid="21265" spellid="799" desc="清忠" name="SKILL_CHARACTER_QING_ZHONG" />
+	<mlspell codeid="21265" spellid="800" desc="卫境" name="SKILL_CHARACTER_WEI_JING" />
+	<mlspell codeid="21265" spellid="797" desc="问计" name="SKILL_CHARACTER_WEN_JI" />
+	<mlspell codeid="21265" spellid="798" desc="屯江" name="SKILL_CHARACTER_TUN_JIANG" />
+	<mlspell codeid="21265" spellid="271" desc="机巧" name="SKILL_CHARACTER_JI_QIAO" />
+	<mlspell codeid="21265" spellid="3065" desc="周旋" name="SKILL_CHARACTER_ZHOU_XUAN" />
+	<mlspell codeid="21265" spellid="3032" desc="丰姿" name="SKILL_CHARACTER_FENG_ZI" />
+	<mlspell codeid="21265" spellid="3033" desc="吉占" name="SKILL_CHARACTER_JI_ZHAN" />
+	<mlspell codeid="21265" spellid="396" desc="奋励" name="SKILL_CHARACTER_FEN_LI" />
+	<mlspell codeid="21265" spellid="397" desc="平寇" name="SKILL_CHARACTER_PING_KOU" />
+	<mlspell codeid="21265" spellid="484" desc="强识" name="SKILL_CHARACTER_QIANG_SHI" />
+	<mlspell codeid="21265" spellid="485" desc="献图" name="SKILL_CHARACTER_XIAN_TU" />
+	<mlspell codeid="21265" spellid="481" desc="法恩" name="SKILL_CHARACTER_FA_EN" />
+	<mlspell codeid="21265" spellid="728" desc="利驭" name="SKILL_JIE_XIAN_CHARACTER_LI_YU" />
+	<mlspell codeid="21265" spellid="724" desc="遗计" name="SKILL_JIE_XIAN_CHARACTER_YI_JI" />
+	<mlspell codeid="21265" spellid="723" desc="裸衣" name="SKILL_JIE_XIAN_CHARACTER_LUO_YI" />
+	<mlspell codeid="21265" spellid="717" desc="奸雄" name="SKILL_JIE_XIAN_CHARACTER_JIAN_XIONG" />
+	<mlspell codeid="21265" spellid="715" desc="谦逊" name="SKILL_JIE_XIAN_CHARACTER_QIAN_XUN" />
+	<mlspell codeid="21265" spellid="3090" desc="博图" name="SKILL_CHARACTER_BO_TU" />
+	<mlspell codeid="21265" spellid="704" desc="铁骑" name="SKILL_JIE_XIAN_CHARACTER_TIE_QI" />
+	<mlspell codeid="21265" spellid="703" desc="涯角" name="SKILL_JIE_XIAN_CHARACTER_YA_JIAO" />
+	<mlspell codeid="21265" spellid="702" desc="替身" name="SKILL_JIE_XIAN_CHARACTER_TI_SHEN" />
+	<mlspell codeid="21265" spellid="460" desc="恩怨" name="SKILL_CHARACTER_EN_YUAN_NEW" />
+	<mlspell codeid="21265" spellid="461" desc="眩惑" name="SKILL_CHARACTER_XUAN_HUO_NEW" />
+	<mlspell codeid="21265" spellid="446" desc="龙吟" name="SKILL_CHARACTER_LONG_YIN" />
+	<mlspell codeid="21265" spellid="443" desc="精策" name="SKILL_CHARACTER_JING_CE" />
+	<mlspell codeid="21265" spellid="424" desc="智愚" name="SKILL_CHARACTER_ZHI_YU" />
+	<mlspell codeid="21265" spellid="419" desc="伤逝" name="SKILL_CHARACTER_SHANG_SHI" />
+	<mlspell codeid="21265" spellid="414" desc="破军" name="SKILL_CHARACTER_PO_JUN" />
+	<mlspell codeid="21265" spellid="240" desc="鸩毒" name="SKILL_CHARACTER_ZHEN_DU" />
+	<mlspell codeid="21265" spellid="241" desc="戚乱" name="SKILL_CHARACTER_QI_LUAN" />
+	<mlspell codeid="21265" spellid="264" desc="陈情" name="SKILL_CHARACTER_CHEN_QING" />
+	<mlspell codeid="21265" spellid="265" desc="默识" name="SKILL_CHARACTER_MO_SHI" />
+	<mlspell codeid="21265" spellid="208" desc="冲阵" name="SKILL_CHARACTER_CHONG_ZHEN" />
+	<mlspell codeid="21265" spellid="3124" desc="誓仇" name="SKILL_CHARACTER_SHI_CHOU_SP2022" />
+	<mlspell codeid="21265" spellid="250" desc="良助" name="SKILL_CHARACTER_LIANG_ZHU" />
+	<mlspell codeid="21265" spellid="130" desc="激昂" name="SKILL_CHARACTER_JI_ANG" />
+	<mlspell codeid="21265" spellid="123" desc="屯田" name="SKILL_CHARACTER_TUN_TIAN" />
+	<mlspell codeid="21265" spellid="364" desc="鞬出" name="SKILL_CHARACTER_JIAN_CHU" />
+	<mlspell codeid="21265" spellid="93" desc="节命" name="SKILL_CHARACTER_JIE_MING" />
+	<mlspell codeid="21265" spellid="371" desc="解围" name="SKILL_CHARACTER_JIE_WEI" />
+	<mlspell codeid="21265" spellid="3034" desc="赋颂" name="SKILL_CHARACTER_FU_SONG" />
+	<mlspell codeid="21265" spellid="716" desc="连营" name="SKILL_JIE_XIAN_CHARACTER_LIAN_YING" />
+	<mlspell codeid="21265" spellid="55" desc="英姿" name="SKILL_CHARACTER_YINGZI" />
+	<mlspell codeid="21265" spellid="35" desc="观星" name="SKILL_CHARACTER_GUANXING" />
+	<mlspell codeid="21265" spellid="869" desc="观星" name="SKILL_JIE_XIAN_CHARACTER_GUAN_XING" />
+
+	<!-- PlayerOnDying 21217-->
+	<mlspell codeid="21217" spellid="3" desc="桃" name="SKILL_TAO" />
+	
+	<!-- MsgRoleOptTargetNtf 多一个参数optType 21215-->
+		<!-- SelRoleCardResolve 1;2;3;10;23-->
+	<mlspell codeid="21215" spellid="5" optType="1" desc="过河拆桥" name="SKILL_JINNANG_GUOCHAI" />
+	<mlspell codeid="21215" spellid="4" optType="1" desc="顺手牵羊" name="SKILL_JINNANG_SHUNQIAN" />
+	<mlspell codeid="21215" spellid="47" optType="2" desc="反馈" name="SKILL_CHARACTER_FANKUI" />
+	<mlspell codeid="21215" spellid="30" optType="10" desc="麒麟弓" name="SKILL_WEAPON_QILINGONG" />
+	<mlspell codeid="21215" spellid="83" optType="3" desc="火攻" name="SKILL_HUO_GONG" />
+	<mlspell codeid="21215" spellid="364" optType="2" desc="鞬出" name="SKILL_CHARACTER_JIAN_CHU" />
+	<mlspell codeid="21215" spellid="56" optType="3" desc="反间" name="SKILL_CHARACTER_FANJIAN" />
+	<mlspell codeid="21215" spellid="201" optType="2" desc="寒冰剑" name="SKILL_EX_WEAPON_HANBINGJIAN" />
+	<mlspell codeid="21215" spellid="7014" optType="2" desc="昭然" name="SKILL_JIN_CHARACTER_ZHAO_RAN" />
+	<mlspell codeid="21215" spellid="722" optType="3" desc="突袭" name="SKILL_JIE_XIAN_CHARACTER_TU_XI" />
+	<mlspell codeid="21215" spellid="985" optType="2" desc="挑衅" name="SKILL_JIE_XIAN_CHARACTER_TIAO_XIN" />
+	<mlspell codeid="21215" spellid="937" optType="2" desc="鞬出" name="SKILL_JIE_XIAN_CHARACTER_JIAN_CHU" />
+	<mlspell codeid="21215" spellid="108" optType="2" desc="英魂" name="SKILL_CHARACTER_YING_HUN" />
+	<mlspell codeid="21215" spellid="484" optType="3" desc="强识" name="SKILL_CHARACTER_QIANG_SHI" />
+	<mlspell codeid="21215" spellid="304" optType="3" desc="攻心" name="SKILL_CHARACTER_GONG_XIN" />
+	<mlspell codeid="21215" spellid="704" optType="2" desc="铁骑" name="SKILL_JIE_XIAN_CHARACTER_TIE_QI" />
+	<mlspell codeid="21215" spellid="703" optType="1" desc="涯角" name="SKILL_JIE_XIAN_CHARACTER_YA_JIAO" />
+	<mlspell codeid="21215" spellid="208" optType="3" desc="冲阵" name="SKILL_CHARACTER_CHONG_ZHEN" />
+		<!-- DisTargetHandCardResolve -->
+	<mlspell codeid="21215" spellid="83" optType="4" desc="火攻" name="SKILL_HUO_GONG" />
+	<mlspell codeid="21215" spellid="480" optType="4" desc="品第" name="SKILL_CHARACTER_DING_PIN" />
+		<!-- AskCiXiongShuangGuJianResolve -->
+	<mlspell codeid="21215" spellid="24" optType="5" desc="雌雄双股剑" name="SKILL_WEAPON_SHUANGGU" />
+		<!-- ResponeOptSpellZoneCardResolve -->
+	<mlspell codeid="21215" spellid="35" optType="6" desc="观星" name="SKILL_CHARACTER_GUANXING" />
+	<mlspell codeid="21215" spellid="869" optType="6" desc="观星" name="SKILL_JIE_XIAN_CHARACTER_GUAN_XING" />
+		<!-- AskShanResolve -->
+	<mlspell codeid="21215" spellid="10" optType="7" desc="万箭齐发" name="SKILL_JINNANG_WANJIAN" />
+	<mlspell codeid="21215" spellid="800" optType="7" desc="卫境" name="SKILL_CHARACTER_WEI_JING" />
+		<!-- AskShaResolve -->
+	<mlspell codeid="21215" spellid="8" optType="8" desc="决斗" name="SKILL_JINNANG_JUEDOU" />
+	<mlspell codeid="21215" spellid="9" optType="8" desc="南蛮入侵" name="SKILL_JINNANG_NANMAN" />
+	<mlspell codeid="21215" spellid="26" optType="8" desc="青龙偃月刀" name="SKILL_WEAPON_QINGLONG" />
+	<mlspell codeid="21215" spellid="14" optType="8" desc="借刀杀人" name="SKILL_JINNANG_JIEDAO" />
+	<mlspell codeid="21215" spellid="3190" optType="8" desc="乱武" name="SKILL_CHARACTER_LUAN_WU_JIEXIAN" />
+	<mlspell codeid="21215" spellid="985" optType="8" desc="挑衅" name="SKILL_JIE_XIAN_CHARACTER_TIAO_XIN" />
+	<mlspell codeid="21215" spellid="800" optType="8" desc="卫境" name="SKILL_CHARACTER_WEI_JING" />
+		<!-- SelCardForWuFuFengDengResolve -->
+	<mlspell codeid="21215" spellid="6" optType="9" desc="五谷丰登" name="SKILL_JINNANG_WUGU" />
+		<!-- ResponeYiJiCardResolve -->
+	<mlspell codeid="21215" spellid="52" optType="11" desc="遗计" name="SKILL_CHARACTER_YIJI" />
+	<mlspell codeid="21215" spellid="724" optType="11" desc="遗计" name="SKILL_JIE_XIAN_CHARACTER_YI_JI" />
+		<!-- ResponeGangLieResolve -->
+	<mlspell codeid="21215" spellid="49" optType="12" desc="刚烈" name="SKILL_CHARACTER_GANGLIE" />
+		<!-- ResponeLuoShenResolve -->
+	<mlspell codeid="21215" spellid="45" optType="13" desc="洛神" name="SKILL_CHARACTER_LUOSHEN" />
+		<!-- ResponeSelectColorResolve -->
+	<mlspell codeid="21215" spellid="56" optType="14" desc="反间" name="SKILL_CHARACTER_FANJIAN" />
+		<!-- ResponeTargetResolve -->
+	<mlspell codeid="21215" spellid="882" optType="19" desc="雷击" name="SKILL_JIE_XIAN_CHARACTER_LEI_JI" />
+	<mlspell codeid="21215" spellid="703" optType="19" desc="涯角" name="SKILL_JIE_XIAN_CHARACTER_YA_JIAO" />
+	<mlspell codeid="21215" spellid="461" optType="19" desc="眩惑" name="SKILL_CHARACTER_XUAN_HUO_NEW" />
+	<mlspell codeid="21215" spellid="92" optType="19" desc="驱虎" name="SKILL_CHARACTER_QU_HU" />
+	<mlspell codeid="21215" spellid="799" optType="19" desc="清忠" name="SKILL_CHARACTER_QING_ZHONG" />
+		<!-- ResponePinDianResolve -->
+	<mlspell codeid="21215" spellid="7003" optType="20" desc="识度" name="SKILL_JIN_CHARACTER_SHI_DU" />
+	<mlspell codeid="21215" spellid="99" optType="20" desc="天义" name="SKILL_CHARACTER_TIAN_YI" />
+	<mlspell codeid="21215" spellid="791" optType="20" desc="专对" name="SKILL_CHARACTER_ZUAN_DUI" />
+	<mlspell codeid="21215" spellid="792" optType="20" desc="天辩" name="SKILL_CHARACTER_TIAN_BIAN" />
+	<mlspell codeid="21215" spellid="92" optType="20" desc="驱虎" name="SKILL_CHARACTER_QU_HU" />
+		<!-- ResponeSelActionResolve -->
+	<mlspell codeid="21215" spellid="108" optType="24" desc="英魂" name="SKILL_CHARACTER_YING_HUN" />
+	<mlspell codeid="21215" spellid="7000" optType="24" desc="袭爵" name="SKILL_JIN_CHARACTER_XI_JUE" />
+	<mlspell codeid="21215" spellid="986" optType="24" desc="志继" name="SKILL_JIE_XIAN_CHARACTER_ZHI_JI" />
+	<mlspell codeid="21215" spellid="127" optType="24" desc="享乐" name="SKILL_CHARACTER_XIANG_LE" />
+	<mlspell codeid="21215" spellid="893" optType="24" desc="放权" name="SKILL_JIE_XIAN_CHARACTER_FANG_QUAN" />
+	<mlspell codeid="21215" spellid="904" optType="24" desc="内伐" name="SKILL_CHARACTER_NEI_FA" />
+	<mlspell codeid="21215" spellid="424" optType="24" desc="智愚" name="SKILL_CHARACTER_ZHI_YU" />
+	<mlspell codeid="21215" spellid="405" optType="24" desc="明策" name="SKILL_CHARACTER_MING_CE" />
+	<mlspell codeid="21215" spellid="371" optType="24" desc="解围" name="SKILL_CHARACTER_JIE_WEI" />
+		<!-- ResponeCommon1Resolve -->
+	<mlspell codeid="21215" spellid="370" optType="28" desc="据守" name="SKILL_CHARACTER_JU_SHOU_NEW" />
+	<mlspell codeid="21215" spellid="382" optType="28" desc="天香" name="SKILL_CHARACTER_TIAN_XIANG_2017" />
+	<mlspell codeid="21215" spellid="7017" optType="28" desc="宴戏" name="SKILL_JIN_CHARACTER_YAN_XI" />
+	<mlspell codeid="21215" spellid="7014" optType="28" desc="昭然" name="SKILL_JIN_CHARACTER_ZHAO_RAN" />
+	<mlspell codeid="21215" spellid="7003" optType="28" desc="识度" name="SKILL_JIN_CHARACTER_SHI_DU" />
+	<mlspell codeid="21215" spellid="3210" optType="28" desc="晖云" name="SKILL_CHARACTER_HUI_YUN" />
+	<mlspell codeid="21215" spellid="3208" optType="28" desc="骋烈" name="SKILL_CHARACTER_PIN_LIE" />
+	<mlspell codeid="21215" spellid="3166" optType="28" desc="蹈节" name="SKILL_ZONGZU_DAO_JIE" />
+	<mlspell codeid="21215" spellid="3221" optType="28" desc="三恇" name="SKILL_CHARACTER_SAN_KUANG_2" />
+	<mlspell codeid="21215" spellid="3094" optType="28" desc="哀尘" name="SKILL_CHARACTER_AI_CHEN" />
+	<mlspell codeid="21215" spellid="3086" optType="28" desc="长姬" name="SKILL_CHARACTER_CHANG_JI" />
+	<mlspell codeid="21215" spellid="3035" optType="28" desc="好施" name="SKILL_CHARACTER_JIE_XIAN_HAO_SHI" />
+	<mlspell codeid="21215" spellid="3036" optType="28" desc="缔盟" name="SKILL_CHARACTER_JIE_XIAN_DI_MENG" />
+	<mlspell codeid="21215" spellid="3190" optType="28" desc="乱武" name="SKILL_CHARACTER_LUAN_WU_JIEXIAN" />
+	<mlspell codeid="21215" spellid="3034" optType="28" desc="赋颂" name="SKILL_CHARACTER_FU_SONG" />
+	<!-- <mlspell codeid="21215" spellid="945" optType="28" desc="严教" name="SKILL_CHARACTER_YAN_JIAO" /> -->
+	<mlspell codeid="21215" spellid="3202" optType="28" desc="魂姿" name="SKILL_CHARACTER_HUN_ZI_JIE_XIAN" />
+	<mlspell codeid="21215" spellid="870" optType="28" desc="集智" name="SKILL_JIE_XIAN_CHARACTER_JI_ZHI" />
+	<mlspell codeid="21215" spellid="904" optType="28" desc="内伐" name="SKILL_CHARACTER_NEI_FA" />
+	<mlspell codeid="21215" spellid="3177" optType="28" desc="良姻" name="SKILL_CHARACTER_LIANG_YIN_EX" />
+	<mlspell codeid="21215" spellid="3178" optType="28" desc="箜声" name="SKILL_CHARACTER_KONG_SHENG_EX" />
+	<mlspell codeid="21215" spellid="784" optType="28" desc="清弦" name="SKILL_CHARACTER_QING_XIAN" />
+	<mlspell codeid="21215" spellid="788" optType="28" desc="柔弦" name="SKILL_CHARACTER_ROU_XIAN" />
+	<mlspell codeid="21215" spellid="789" optType="28" desc="和弦" name="SKILL_CHARACTER_HE_XIAN" />
+	<mlspell codeid="21215" spellid="797" optType="28" desc="问计" name="SKILL_CHARACTER_WEN_JI" />
+	<mlspell codeid="21215" spellid="3033" optType="28" desc="吉占" name="SKILL_CHARACTER_JI_ZHAN" />
+	<mlspell codeid="21215" spellid="485" optType="28" desc="献图" name="SKILL_CHARACTER_XIAN_TU" />
+	<mlspell codeid="21215" spellid="480" optType="28" desc="品第" name="SKILL_CHARACTER_DING_PIN" />
+	<mlspell codeid="21215" spellid="723" optType="28" desc="裸衣" name="SKILL_JIE_XIAN_CHARACTER_LUO_YI" />
+	<mlspell codeid="21215" spellid="713" optType="28" desc="反间" name="SKILL_JIE_XIAN_CHARACTER_FAN_JIAN" />
+	<mlspell codeid="21215" spellid="709" optType="28" desc="勤学" name="SKILL_JIE_XIAN_CHARACTER_QIN_XUE" />
+	<mlspell codeid="21215" spellid="703" optType="28" desc="涯角" name="SKILL_JIE_XIAN_CHARACTER_YA_JIAO" />
+	<mlspell codeid="21215" spellid="701" optType="28" desc="义绝" name="SKILL_JIE_XIAN_CHARACTER_YI_JUE" />
+	<mlspell codeid="21215" spellid="460" optType="28" desc="恩怨" name="SKILL_CHARACTER_EN_YUAN_NEW" />
+	<mlspell codeid="21215" spellid="461" optType="28" desc="眩惑" name="SKILL_CHARACTER_XUAN_HUO_NEW" />
+	<mlspell codeid="21215" spellid="414" optType="28" desc="破军" name="SKILL_CHARACTER_PO_JUN" />
+	<mlspell codeid="21215" spellid="3305" optType="28" desc="傲才" name="SKILL_CHARACTER_AO_CAI_2023" />
+	<mlspell codeid="21215" spellid="264" optType="28" desc="陈情" name="SKILL_CHARACTER_CHEN_QING" />
+	<mlspell codeid="21215" spellid="3123" optType="28" desc="追击" name="SKILL_CHARACTER_ZHUI_JI_SP2022" />
+	<mlspell codeid="21215" spellid="265" optType="28" desc="默识" name="SKILL_CHARACTER_MO_SHI" />
+		<!-- ResponeCommon2Resolve -->
+	<mlspell codeid="21215" spellid="3210" optType="29" desc="晖云" name="SKILL_CHARACTER_HUI_YUN" />
+	<mlspell codeid="21215" spellid="3208" optType="29" desc="骋烈" name="SKILL_CHARACTER_PIN_LIE" />
+	<mlspell codeid="21215" spellid="3187" optType="29" desc="狞恶" name="SKILL_CHARACTER_NING_E_JIEXIAN" />
+	<mlspell codeid="21215" spellid="3166" optType="29" desc="蹈节" name="SKILL_ZONGZU_DAO_JIE" />
+	<mlspell codeid="21215" spellid="3221" optType="29" desc="三恇" name="SKILL_CHARACTER_SAN_KUANG_2" />
+	<mlspell codeid="21215" spellid="3093" optType="29" desc="落宠" name="SKILL_CHARACTER_LUO_CHONG" />
+	<mlspell codeid="21215" spellid="3086" optType="29" desc="长姬" name="SKILL_CHARACTER_CHANG_JI" />
+	<mlspell codeid="21215" spellid="3035" optType="29" desc="好施" name="SKILL_CHARACTER_JIE_XIAN_HAO_SHI" />
+	<mlspell codeid="21215" spellid="3177" optType="29" desc="良姻" name="SKILL_CHARACTER_LIANG_YIN_EX" />
+	<mlspell codeid="21215" spellid="818" optType="29" desc="罪论" name="SKILL_CHARACTER_ZUI_LUN" />
+	<mlspell codeid="21215" spellid="826" optType="29" desc="镇骨" name="SKILL_CHARACTER_ZHEN_GU" />
+	<mlspell codeid="21215" spellid="814" optType="29" desc="成略" name="SKILL_CHARACTER_CHENG_LUE" />
+	<mlspell codeid="21215" spellid="784" optType="29" desc="清弦" name="SKILL_CHARACTER_QING_XIAN" />
+	<mlspell codeid="21215" spellid="484" optType="29" desc="强识" name="SKILL_CHARACTER_QIANG_SHI" />
+	<mlspell codeid="21215" spellid="728" optType="29" desc="利驭" name="SKILL_JIE_XIAN_CHARACTER_LI_YU" />
+	<mlspell codeid="21215" spellid="701" optType="29" desc="义绝" name="SKILL_JIE_XIAN_CHARACTER_YI_JUE" />
+	<mlspell codeid="21215" spellid="461" optType="29" desc="眩惑" name="SKILL_CHARACTER_XUAN_HUO_NEW" />
+		<!-- ResponeCommon3Resolve -->
+	<mlspell codeid="21215" spellid="3210" optType="30" desc="晖云" name="SKILL_CHARACTER_HUI_YUN" />
+	<mlspell codeid="21215" spellid="3208" optType="30" desc="骋烈" name="SKILL_CHARACTER_PIN_LIE" />
+	<mlspell codeid="21215" spellid="3177" optType="30" desc="良姻" name="SKILL_CHARACTER_LIANG_YIN_EX" />
+	<mlspell codeid="21215" spellid="818" optType="30" desc="罪论" name="SKILL_CHARACTER_ZUI_LUN" />
+	<mlspell codeid="21215" spellid="728" optType="30" desc="利驭" name="SKILL_JIE_XIAN_CHARACTER_LI_YU" />
+	<mlspell codeid="21215" spellid="699" optType="30" desc="仁德" name="SKILL_JIE_XIAN_CHARACTER_REN_DE" />
+</MLSupportMap>

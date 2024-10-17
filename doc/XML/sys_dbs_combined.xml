@@ -1,0 +1,682 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			hero_id	-	英雄id
+			item	-	对应补偿奖励-银两来源
+			item2	-	对应补偿奖励-元宝或其他来源
+				-	
+				-	武将名字
+				-	扩展包类别0
+				-	备注
+		-->
+	<compensate hero_id="1" />
+	<compensate hero_id="2" />
+	<compensate hero_id="3" />
+	<compensate hero_id="4" item="100011,700;" />
+	<compensate hero_id="5" item="100011,80;" />
+	<compensate hero_id="6" item="100011,200;" />
+	<compensate hero_id="7" item="100011,700;" />
+	<compensate hero_id="8" />
+	<compensate hero_id="9" item="100011,500;" />
+	<compensate hero_id="10" item="100011,200;" />
+	<compensate hero_id="11" item="100011,500;" />
+	<compensate hero_id="12" item="100011,500;" />
+	<compensate hero_id="13" item="100011,800;" />
+	<compensate hero_id="14" item="100011,200;" />
+	<compensate hero_id="15" />
+	<compensate hero_id="16" item="100011,500;" />
+	<compensate hero_id="17" item="100011,500;" />
+	<compensate hero_id="18" item="100011,200;" />
+	<compensate hero_id="19" item="100011,200;" />
+	<compensate hero_id="20" item="100011,700;" />
+	<compensate hero_id="21" item="100011,600;" />
+	<compensate hero_id="22" item="100011,700;" />
+	<compensate hero_id="23" />
+	<compensate hero_id="24" item="100011,700;" />
+	<compensate hero_id="25" item="100011,700;" />
+	<compensate hero_id="26" item="100011,1000;" />
+	<compensate hero_id="27" item="100011,1000;" />
+	<compensate hero_id="28" item="100011,1000;" />
+	<compensate hero_id="29" item="100011,1000;" />
+	<compensate hero_id="30" item="100011,1000;" />
+	<compensate hero_id="31" />
+	<compensate hero_id="32" />
+	<compensate hero_id="33" />
+	<compensate hero_id="34" item="100011,1648;" item2="1142201,1;" />
+	<compensate hero_id="35" item="100011,2848;" item2="1142201,2;" />
+	<compensate hero_id="36" item="100011,2198;" item2="1142201,1;" />
+	<compensate hero_id="37" item2="1142201,2;" />
+	<compensate hero_id="38" item="100011,2548;" item2="1142201,1;" />
+	<compensate hero_id="39" item="100011,1398;" item2="1142201,1;" />
+	<compensate hero_id="40" item="100011,1648;" item2="1142201,1;" />
+	<compensate hero_id="41" item="100011,2198;" item2="1142201,1;" />
+	<compensate hero_id="42" item="100011,2648;" item2="1142201,2;" />
+	<compensate hero_id="43" item2="1142201,2;" />
+	<compensate hero_id="44" item="100011,2848;" item2="1142201,2;" />
+	<compensate hero_id="45" item="100011,3288;" item2="1142201,2;" />
+	<compensate hero_id="46" item="100011,2648;" item2="1142201,2;" />
+	<compensate hero_id="47" item="100011,2298;" item2="1142201,1;" />
+	<compensate hero_id="48" item="100011,4500;" item2="1142201,2;" />
+	<compensate hero_id="49" item2="1142201,2;" />
+	<compensate hero_id="50" item2="1142201,3;" />
+	<compensate hero_id="51" item="100011,4598;" item2="1142201,2;" />
+	<compensate hero_id="52" item2="1142201,3;" />
+	<compensate hero_id="53" item="100011,3598;" item2="1142201,3;" />
+	<compensate hero_id="54" item="100011,4698;" item2="1142201,3;" />
+	<compensate hero_id="55" item2="1142201,3;" />
+	<compensate hero_id="56" />
+	<compensate hero_id="57" item="100011,4598;" item2="1142201,3;" />
+	<compensate hero_id="63" />
+	<compensate hero_id="64" />
+	<compensate hero_id="65" />
+	<compensate hero_id="66" />
+	<compensate hero_id="67" />
+	<compensate hero_id="68" />
+	<compensate hero_id="69" />
+	<compensate hero_id="70" />
+	<compensate hero_id="71" />
+	<compensate hero_id="72" />
+	<compensate hero_id="73" />
+	<compensate hero_id="74" item2="1142201,90;" />
+	<compensate hero_id="75" />
+	<compensate hero_id="76" />
+	<compensate hero_id="77" />
+	<compensate hero_id="78" />
+	<compensate hero_id="79" />
+	<compensate hero_id="80" />
+	<compensate hero_id="81" />
+	<compensate hero_id="82" />
+	<compensate hero_id="83" />
+	<compensate hero_id="84" />
+	<compensate hero_id="85" />
+	<compensate hero_id="86" />
+	<compensate hero_id="87" />
+	<compensate hero_id="88" />
+	<compensate hero_id="89" />
+	<compensate hero_id="90" />
+	<compensate hero_id="91" />
+	<compensate hero_id="92" />
+	<compensate hero_id="93" />
+	<compensate hero_id="95" />
+	<compensate hero_id="96" />
+	<compensate hero_id="100" item="100011,2548;" item2="1142201,2;" />
+	<compensate hero_id="101" item="100011,1198;" item2="1142201,1;" />
+	<compensate hero_id="102" />
+	<compensate hero_id="103" item="100011,1398;" item2="1142201,1;" />
+	<compensate hero_id="104" item2="1142201,30;" />
+	<compensate hero_id="105" item="100011,3600;" item2="1142201,2;" />
+	<compensate hero_id="106" item2="1142201,3;" />
+	<compensate hero_id="107" item="100011,3600;" item2="1142201,2;" />
+	<compensate hero_id="108" item2="1142201,2;" />
+	<compensate hero_id="109" item2="1142201,3;" />
+	<compensate hero_id="110" item="100011,8600;" item2="1142201,3;" />
+	<compensate hero_id="111" item="100011,3598;" item2="1142201,2;" />
+	<compensate hero_id="112" item="100011,8600;" item2="1142201,3;" />
+	<compensate hero_id="113" item2="1142201,30;" />
+	<compensate hero_id="114" item="100011,4148;" item2="1142201,3;" />
+	<compensate hero_id="115" item2="1142201,2;" />
+	<compensate hero_id="116" item2="1142201,3;" />
+	<compensate hero_id="117" item2="1142201,7;" />
+	<compensate hero_id="118" item2="1142201,6;" />
+	<compensate hero_id="119" item2="1142201,6;" />
+	<compensate hero_id="120" />
+	<compensate hero_id="121" item="100011,6300;" item2="1142201,4;" />
+	<compensate hero_id="122" item2="1142201,3;" />
+	<compensate hero_id="123" item2="1142201,3;" />
+	<compensate hero_id="124" item2="1142201,4;" />
+	<compensate hero_id="125" item2="1142201,3;" />
+	<compensate hero_id="126" item="100011,6298;" item2="1142201,2;" />
+	<compensate hero_id="127" item="100011,4998;" item2="1142201,2;" />
+	<compensate hero_id="128" item2="1142201,3;" />
+	<compensate hero_id="129" item2="1142201,3;" />
+	<compensate hero_id="130" item2="1142201,130;" />
+	<compensate hero_id="131" item2="1142201,5;" />
+	<compensate hero_id="135" item2="1142201,6;" />
+	<compensate hero_id="136" item2="1142201,3;" />
+	<compensate hero_id="137" item2="1142201,30;" />
+	<compensate hero_id="138" />
+	<compensate hero_id="139" item2="1142201,3;" />
+	<compensate hero_id="140" item2="1142201,30;" />
+	<compensate hero_id="141" />
+	<compensate hero_id="142" />
+	<compensate hero_id="143" />
+	<compensate hero_id="144" />
+	<compensate hero_id="145" />
+	<compensate hero_id="146" />
+	<compensate hero_id="147" />
+	<compensate hero_id="148" />
+	<compensate hero_id="149" />
+	<compensate hero_id="150" />
+	<compensate hero_id="151" item="100011,5098;" item2="1142201,3;" />
+	<compensate hero_id="152" item="100011,2548;" item2="1142201,2;" />
+	<compensate hero_id="153" item2="1142201,3;" />
+	<compensate hero_id="154" item="100011,1748;" item2="1142201,1;" />
+	<compensate hero_id="155" item="100011,4698;" item2="1142201,3;" />
+	<compensate hero_id="156" item="100011,1398;" item2="1142201,1;" />
+	<compensate hero_id="157" item="100011,3932;" item2="1142201,2;" />
+	<compensate hero_id="158" item="100011,2548;" item2="1142201,2;" />
+	<compensate hero_id="159" item="100011,1998;" item2="1142201,1;" />
+	<compensate hero_id="160" item="100011,1198;" item2="1142201,1;" />
+	<compensate hero_id="161" item2="1142201,3;" />
+	<compensate hero_id="162" item="100011,4598;" item2="1142201,3;" />
+	<compensate hero_id="164" item2="1142201,3;" />
+	<compensate hero_id="166" item="100011,4896;" item2="1142201,3;" />
+	<compensate hero_id="167" item="100011,9800;" item2="1142201,3;" />
+	<compensate hero_id="168" item2="1142201,3;" />
+	<compensate hero_id="169" item="100011,5198;" item2="1142201,3;" />
+	<compensate hero_id="170" item="100011,4298;" item2="1142201,3;" />
+	<compensate hero_id="171" />
+	<compensate hero_id="172" item="100011,3118;" item2="1142201,2;" />
+	<compensate hero_id="173" item2="1142201,3;" />
+	<compensate hero_id="174" item2="1142201,4;" />
+	<compensate hero_id="175" item="100011,4500;" item2="1142201,3;" />
+	<compensate hero_id="176" item2="1142201,4;" />
+	<compensate hero_id="177" item2="1142201,3;" />
+	<compensate hero_id="178" item2="1142201,4;" />
+	<compensate hero_id="179" item2="1142201,3;" />
+	<compensate hero_id="180" item="100011,6300;" item2="1142201,3;" />
+	<compensate hero_id="181" item2="1142201,3;" />
+	<compensate hero_id="182" item="100011,8600;" item2="1142201,3;" />
+	<compensate hero_id="183" item="100011,8600;" item2="1142201,3;" />
+	<compensate hero_id="184" item2="1142201,4;" />
+	<compensate hero_id="185" item2="1142201,3;" />
+	<compensate hero_id="186" item2="1142201,3;" />
+	<compensate hero_id="187" item2="1142201,3;" />
+	<compensate hero_id="188" item2="1142201,3;" />
+	<compensate hero_id="191" />
+	<compensate hero_id="192" />
+	<compensate hero_id="193" />
+	<compensate hero_id="201" />
+	<compensate hero_id="202" />
+	<compensate hero_id="203" />
+	<compensate hero_id="204" />
+	<compensate hero_id="205" />
+	<compensate hero_id="206" />
+	<compensate hero_id="207" />
+	<compensate hero_id="208" />
+	<compensate hero_id="210" item="100011,1000;" />
+	<compensate hero_id="211" item="100011,8000;" item2="1142201,3;" />
+	<compensate hero_id="212" item="100011,2000;" item2="1142201,3;" />
+	<compensate hero_id="214" item2="1142201,2;" />
+	<compensate hero_id="215" item2="1142201,2;" />
+	<compensate hero_id="220" />
+	<compensate hero_id="221" />
+	<compensate hero_id="299" item2="1142201,3;" />
+	<compensate hero_id="300" item="100011,8098;" item2="1142201,3;" />
+	<compensate hero_id="301" item="100011,6598;" item2="1142201,3;" />
+	<compensate hero_id="302" item="100011,8098;" item2="1142201,3;" />
+	<compensate hero_id="303" item="100011,8598;" item2="1142201,3;" />
+	<compensate hero_id="304" item="100011,8098;" item2="1142201,3;" />
+	<compensate hero_id="305" item="100011,6098;" item2="1142201,3;" />
+	<compensate hero_id="306" item="100011,8400;" item2="1142201,3;" />
+	<compensate hero_id="307" item="100011,8598;" item2="1142201,3;" />
+	<compensate hero_id="308" item="100011,8098;" item2="1142201,3;" />
+	<compensate hero_id="309" item="100011,8500;" item2="1142201,3;" />
+	<compensate hero_id="310" item="100011,8600;" item2="1142201,3;" />
+	<compensate hero_id="311" item="100011,8800;" item2="1142201,3;" />
+	<compensate hero_id="312" item="100011,7598;" item2="1142201,3;" />
+	<compensate hero_id="313" item="100011,8600;" item2="1142201,3;" />
+	<compensate hero_id="314" item="100011,6598;" item2="1142201,2;" />
+	<compensate hero_id="315" item="100011,7598;" item2="1142201,3;" />
+	<compensate hero_id="316" item="100011,6098;" item2="1142201,2;" />
+	<compensate hero_id="317" item="100011,8098;" item2="1142201,3;" />
+	<compensate hero_id="318" item="100011,7598;" item2="1142201,3;" />
+	<compensate hero_id="319" item="100011,7800;" item2="1142201,3;" />
+	<compensate hero_id="320" item="100011,7800;" item2="1142201,2;" />
+	<compensate hero_id="321" item2="1142201,3;" />
+	<compensate hero_id="322" item2="1142201,3;" />
+	<compensate hero_id="323" item2="1142201,3;" />
+	<compensate hero_id="324" item2="1142201,2;" />
+	<compensate hero_id="325" item2="1142201,3;" />
+	<compensate hero_id="326" item2="1142201,5;" />
+	<compensate hero_id="327" item2="1142201,3;" />
+	<compensate hero_id="328" item2="1142201,3;" />
+	<compensate hero_id="329" item2="1142201,3;" />
+	<compensate hero_id="330" item2="1142201,3;" />
+	<compensate hero_id="331" item2="1142201,3;" />
+	<compensate hero_id="332" item2="1142201,5;" />
+	<compensate hero_id="333" item2="1142201,4;" />
+	<compensate hero_id="334" item2="1142201,4;" />
+	<compensate hero_id="335" item2="1142201,4;" />
+	<compensate hero_id="336" item2="1142201,5;" />
+	<compensate hero_id="337" item2="1142201,3;" />
+	<compensate hero_id="338" item2="1142201,5;" />
+	<compensate hero_id="339" item2="1142201,2;" />
+	<compensate hero_id="340" item2="1142201,3;" />
+	<compensate hero_id="341" item2="1142201,3;" />
+	<compensate hero_id="342" item2="1142201,4;" />
+	<compensate hero_id="343" item2="1142201,5;" />
+	<compensate hero_id="345" item2="1142201,400;" />
+	<compensate hero_id="346" item2="1142201,13;" />
+	<compensate hero_id="347" item2="1142201,30;" />
+	<compensate hero_id="348" item2="1142201,4;" />
+	<compensate hero_id="349" item2="1142201,600;" />
+	<compensate hero_id="350" />
+	<compensate hero_id="351" item2="1142201,600;" />
+	<compensate hero_id="353" item2="1142201,600;" />
+	<compensate hero_id="360" item2="1142201,5;" />
+	<compensate hero_id="361" item2="1142201,3;" />
+	<compensate hero_id="363" item2="1142201,3;" />
+	<compensate hero_id="364" item2="1142201,2;" />
+	<compensate hero_id="365" item2="1142201,3;" />
+	<compensate hero_id="366" item2="1142201,5;" />
+	<compensate hero_id="367" item2="1142201,300;" />
+	<compensate hero_id="368" item2="1142201,4;" />
+	<compensate hero_id="369" item2="1142201,4;" />
+	<compensate hero_id="370" item2="1142201,2;" />
+	<compensate hero_id="371" item2="1142201,5;" />
+	<compensate hero_id="372" />
+	<compensate hero_id="373" />
+	<compensate hero_id="374" item2="1142201,3;" />
+	<compensate hero_id="375" item2="1142201,5;" />
+	<compensate hero_id="376" item2="1142201,4;" />
+	<compensate hero_id="377" item2="1142201,5;" />
+	<compensate hero_id="378" item2="1142201,4;" />
+	<compensate hero_id="379" item2="1142201,4;" />
+	<compensate hero_id="380" item2="1142201,5;" />
+	<compensate hero_id="381" item2="1142201,4;" />
+	<compensate hero_id="382" item2="1142201,5;" />
+	<compensate hero_id="383" item2="1142201,3;" />
+	<compensate hero_id="384" item2="1142201,5;" />
+	<compensate hero_id="385" item2="1142201,4;" />
+	<compensate hero_id="386" item2="1142201,3;" />
+	<compensate hero_id="387" item2="1142201,5;" />
+	<compensate hero_id="388" item2="1142201,4;" />
+	<compensate hero_id="389" item2="1142201,5;" />
+	<compensate hero_id="390" item2="1142201,5;" />
+	<compensate hero_id="391" item2="1142201,5;" />
+	<compensate hero_id="393" item2="1142201,4;" />
+	<compensate hero_id="392" item2="1142201,5;" />
+	<compensate hero_id="394" item2="1142201,4;" />
+	<compensate hero_id="395" item2="1142201,4;" />
+	<compensate hero_id="362" item2="1142201,5;" />
+	<compensate hero_id="400" item2="1142201,3;" />
+	<compensate hero_id="401" item2="1142201,4;" />
+	<compensate hero_id="402" item2="1142201,50;" />
+	<compensate hero_id="403" item2="1142201,5;" />
+	<compensate hero_id="404" item2="1142201,30;" />
+	<compensate hero_id="406" item2="1142201,50;" />
+	<compensate hero_id="407" item2="1142201,9;" />
+	<compensate hero_id="408" item2="1142201,30;" />
+	<compensate hero_id="409" item2="1142201,9;" />
+	<compensate hero_id="410" item2="1142201,50;" />
+	<compensate hero_id="411" item2="1142201,50;" />
+	<compensate hero_id="413" />
+	<compensate hero_id="414" item2="1142201,50;" />
+	<compensate hero_id="415" item2="1142201,50;" />
+	<compensate hero_id="416" item2="1142201,300;" />
+	<compensate hero_id="417" item2="1142201,600;" />
+	<compensate hero_id="418" item2="1142201,50;" />
+	<compensate hero_id="419" item2="1142201,7;" />
+	<compensate hero_id="420" item2="1142201,50;" />
+	<compensate hero_id="421" item2="1142201,30;" />
+	<compensate hero_id="422" item2="1142201,30;" />
+	<compensate hero_id="423" />
+	<compensate hero_id="424" item2="1142201,50;" />
+	<compensate hero_id="425" item2="1142201,600;" />
+	<compensate hero_id="2000" />
+	<compensate hero_id="2001" />
+	<compensate hero_id="2002" />
+	<compensate hero_id="2003" />
+	<compensate hero_id="2004" />
+	<compensate hero_id="2005" />
+	<compensate hero_id="2006" />
+	<compensate hero_id="2007" />
+	<compensate hero_id="2008" />
+	<compensate hero_id="2009" />
+	<compensate hero_id="2010" />
+	<compensate hero_id="2011" />
+	<compensate hero_id="2012" />
+	<compensate hero_id="2013" />
+	<compensate hero_id="2014" />
+	<compensate hero_id="2015" />
+	<compensate hero_id="2016" />
+	<compensate hero_id="2017" />
+	<compensate hero_id="2018" />
+	<compensate hero_id="2019" />
+	<compensate hero_id="2020" />
+	<compensate hero_id="2021" />
+	<compensate hero_id="2022" />
+	<compensate hero_id="2023" />
+	<compensate hero_id="2024" />
+	<compensate hero_id="2025" />
+	<compensate hero_id="2026" />
+	<compensate hero_id="2027" />
+	<compensate hero_id="2028" />
+	<compensate hero_id="2029" item="100011,4198;" item2="1142201,2;" />
+	<compensate hero_id="2030" />
+	<compensate hero_id="2031" />
+	<compensate hero_id="2032" />
+	<compensate hero_id="2033" />
+	<compensate hero_id="2034" />
+	<compensate hero_id="2035" />
+	<compensate hero_id="2036" />
+	<compensate hero_id="2037" />
+	<compensate hero_id="2038" />
+	<compensate hero_id="2039" />
+	<compensate hero_id="2040" />
+	<compensate hero_id="2041" />
+	<compensate hero_id="2042" />
+	<compensate hero_id="2043" />
+	<compensate hero_id="2044" />
+	<compensate hero_id="2045" />
+	<compensate hero_id="2046" />
+	<compensate hero_id="2047" />
+	<compensate hero_id="2048" />
+	<compensate hero_id="2049" />
+	<compensate hero_id="2050" />
+	<compensate hero_id="2051" />
+	<compensate hero_id="2052" />
+	<compensate hero_id="2053" />
+	<compensate hero_id="2054" item="100011,4198;" item2="1142201,2;" />
+	<compensate hero_id="2055" item="100011,4698;" item2="1142201,3;" />
+	<compensate hero_id="2056" item="100011,4198;" item2="1142201,2;" />
+	<compensate hero_id="2057" item="100011,8600;" item2="1142201,2;" />
+	<compensate hero_id="2058" />
+	<compensate hero_id="2059" item="100011,4998;" item2="1142201,3;" />
+	<compensate hero_id="2060" />
+	<compensate hero_id="2061" item2="1142201,2;" />
+	<compensate hero_id="2062" />
+	<compensate hero_id="2063" />
+	<compensate hero_id="2064" />
+	<compensate hero_id="2065" />
+	<compensate hero_id="2066" />
+	<compensate hero_id="2067" />
+	<compensate hero_id="2068" />
+	<compensate hero_id="2069" item2="1142201,3;" />
+	<compensate hero_id="2070" item2="1142201,3;" />
+	<compensate hero_id="2071" item2="1142201,3;" />
+	<compensate hero_id="2072" item2="1142201,4;" />
+	<compensate hero_id="2073" />
+	<compensate hero_id="2074" item2="1142201,3;" />
+	<compensate hero_id="2075" />
+	<compensate hero_id="3001" />
+	<compensate hero_id="3002" />
+	<compensate hero_id="3003" />
+	<compensate hero_id="3004" />
+	<compensate hero_id="3005" />
+	<compensate hero_id="3006" />
+	<compensate hero_id="3007" />
+	<compensate hero_id="3008" />
+	<compensate hero_id="3009" />
+	<compensate hero_id="3010" />
+	<compensate hero_id="3011" />
+	<compensate hero_id="3012" />
+	<compensate hero_id="3013" />
+	<compensate hero_id="3014" />
+	<compensate hero_id="3015" />
+	<compensate hero_id="3016" />
+	<compensate hero_id="3017" />
+	<compensate hero_id="3018" />
+	<compensate hero_id="3019" />
+	<compensate hero_id="3020" />
+	<compensate hero_id="3021" />
+	<compensate hero_id="3022" />
+	<compensate hero_id="3023" />
+	<compensate hero_id="3024" />
+	<compensate hero_id="3025" />
+	<compensate hero_id="3026" />
+	<compensate hero_id="3027" />
+	<compensate hero_id="3028" />
+	<compensate hero_id="3029" />
+	<compensate hero_id="3030" />
+	<compensate hero_id="3031" />
+	<compensate hero_id="3032" />
+	<compensate hero_id="3033" />
+	<compensate hero_id="3034" />
+	<compensate hero_id="3035" />
+	<compensate hero_id="3036" />
+	<compensate hero_id="3037" />
+	<compensate hero_id="3038" />
+	<compensate hero_id="3039" />
+	<compensate hero_id="3040" />
+	<compensate hero_id="3041" />
+	<compensate hero_id="3042" />
+	<compensate hero_id="3043" />
+	<compensate hero_id="1001" />
+	<compensate hero_id="1002" />
+	<compensate hero_id="1003" />
+	<compensate hero_id="1004" />
+	<compensate hero_id="1005" />
+	<compensate hero_id="1006" />
+	<compensate hero_id="1007" />
+	<compensate hero_id="1008" />
+	<compensate hero_id="1009" />
+	<compensate hero_id="1010" />
+	<compensate hero_id="1011" />
+	<compensate hero_id="1012" />
+	<compensate hero_id="1013" />
+	<compensate hero_id="1014" />
+	<compensate hero_id="1015" />
+	<compensate hero_id="1016" />
+	<compensate hero_id="1017" />
+	<compensate hero_id="60" />
+	<compensate hero_id="1018" />
+	<compensate hero_id="1019" />
+	<compensate hero_id="1020" />
+	<compensate hero_id="1021" />
+	<compensate hero_id="1022" />
+	<compensate hero_id="1023" />
+	<compensate hero_id="1024" />
+	<compensate hero_id="1025" />
+	<compensate hero_id="1026" />
+	<compensate hero_id="1027" />
+	<compensate hero_id="1028" />
+	<compensate hero_id="1029" />
+	<compensate hero_id="1030" />
+	<compensate hero_id="1031" />
+	<compensate hero_id="1032" />
+	<compensate hero_id="1033" />
+	<compensate hero_id="1034" />
+	<compensate hero_id="1035" />
+	<compensate hero_id="1036" />
+	<compensate hero_id="1037" />
+	<compensate hero_id="1038" />
+	<compensate hero_id="1039" />
+	<compensate hero_id="1040" />
+	<compensate hero_id="1041" />
+	<compensate hero_id="1042" />
+	<compensate hero_id="1043" />
+	<compensate hero_id="1044" />
+	<compensate hero_id="1045" />
+	<compensate hero_id="1046" />
+	<compensate hero_id="1047" />
+	<compensate hero_id="1048" />
+	<compensate hero_id="1049" />
+	<compensate hero_id="1050" />
+	<compensate hero_id="1051" />
+	<compensate hero_id="1052" />
+	<compensate hero_id="1053" />
+	<compensate hero_id="1054" />
+	<compensate hero_id="1055" />
+	<compensate hero_id="1056" />
+	<compensate hero_id="1057" />
+	<compensate hero_id="1058" />
+	<compensate hero_id="1059" />
+	<compensate hero_id="1060" />
+	<compensate hero_id="1061" />
+	<compensate hero_id="1062" item2="1142201,3;" />
+	<compensate hero_id="1063" />
+	<compensate hero_id="1064" />
+	<compensate hero_id="1065" />
+	<compensate hero_id="1066" />
+	<compensate hero_id="1067" />
+	<compensate hero_id="1068" />
+	<compensate hero_id="1069" />
+	<compensate hero_id="1070" />
+	<compensate hero_id="1071" />
+	<compensate hero_id="1072" />
+	<compensate hero_id="1073" />
+	<compensate hero_id="1074" />
+	<compensate hero_id="1075" />
+	<compensate hero_id="1076" />
+	<compensate hero_id="1077" />
+	<compensate hero_id="1078" />
+	<compensate hero_id="4000" />
+	<compensate hero_id="4001" />
+	<compensate hero_id="4002" />
+	<compensate hero_id="4003" />
+	<compensate hero_id="4004" />
+	<compensate hero_id="4005" />
+	<compensate hero_id="4006" />
+	<compensate hero_id="4007" />
+	<compensate hero_id="4008" />
+	<compensate hero_id="4009" />
+	<compensate hero_id="4010" />
+	<compensate hero_id="4011" />
+	<compensate hero_id="4012" />
+	<compensate hero_id="4013" />
+	<compensate hero_id="4014" />
+	<compensate hero_id="4015" />
+	<compensate hero_id="4016" />
+	<compensate hero_id="4017" />
+	<compensate hero_id="4018" />
+	<compensate hero_id="4019" />
+	<compensate hero_id="4020" />
+	<compensate hero_id="4021" />
+	<compensate hero_id="4022" />
+	<compensate hero_id="4023" />
+	<compensate hero_id="4024" />
+	<compensate hero_id="4025" />
+	<compensate hero_id="4026" />
+	<compensate hero_id="4027" />
+	<compensate hero_id="4028" />
+	<compensate hero_id="4029" />
+	<compensate hero_id="4030" />
+	<compensate hero_id="4098" />
+	<compensate hero_id="4031" />
+	<compensate hero_id="4032" />
+	<compensate hero_id="4033" />
+	<compensate hero_id="4034" />
+	<compensate hero_id="4035" />
+	<compensate hero_id="4036" />
+	<compensate hero_id="4100" />
+	<compensate hero_id="4101" />
+	<compensate hero_id="4102" />
+	<compensate hero_id="4103" />
+	<compensate hero_id="4037" />
+	<compensate hero_id="4038" />
+	<compensate hero_id="4039" />
+	<compensate hero_id="4040" />
+	<compensate hero_id="4041" />
+	<compensate hero_id="4042" />
+	<compensate hero_id="4043" item2="1142201,7;" />
+	<compensate hero_id="4044" />
+	<compensate hero_id="4045" />
+	<compensate hero_id="4046" />
+	<compensate hero_id="4047" />
+	<compensate hero_id="4048" />
+	<compensate hero_id="4049" />
+	<compensate hero_id="4050" />
+	<compensate hero_id="4051" />
+	<compensate hero_id="4052" />
+	<compensate hero_id="4053" />
+	<compensate hero_id="4054" />
+	<compensate hero_id="4055" />
+	<compensate hero_id="4056" />
+	<compensate hero_id="4057" />
+	<compensate hero_id="4058" />
+	<compensate hero_id="4059" />
+	<compensate hero_id="4060" />
+	<compensate hero_id="4061" />
+	<compensate hero_id="4062" />
+	<compensate hero_id="4063" />
+	<compensate hero_id="4064" />
+	<compensate hero_id="4065" />
+	<compensate hero_id="4066" />
+	<compensate hero_id="4067" />
+	<compensate hero_id="4068" />
+	<compensate hero_id="4069" />
+	<compensate hero_id="4070" />
+	<compensate hero_id="4071" />
+	<compensate hero_id="4072" />
+	<compensate hero_id="4073" />
+	<compensate hero_id="4074" />
+	<compensate hero_id="4075" />
+	<compensate hero_id="4076" />
+	<compensate hero_id="4077" />
+	<compensate hero_id="4078" />
+	<compensate hero_id="4079" />
+	<compensate hero_id="4080" />
+	<compensate hero_id="4081" />
+	<compensate hero_id="4082" />
+	<compensate hero_id="4083" />
+	<compensate hero_id="4084" />
+	<compensate hero_id="4085" />
+	<compensate hero_id="4086" />
+	<compensate hero_id="4087" />
+	<compensate hero_id="4088" />
+	<compensate hero_id="4089" />
+	<compensate hero_id="4090" />
+	<compensate hero_id="4091" />
+	<compensate hero_id="4092" />
+	<compensate hero_id="4093" />
+	<compensate hero_id="4094" />
+	<compensate hero_id="4095" />
+	<compensate hero_id="4096" />
+	<compensate hero_id="4097" />
+	<compensate hero_id="4104" />
+	<compensate hero_id="4105" />
+	<compensate hero_id="4106" />
+	<compensate hero_id="4107" />
+	<compensate hero_id="4108" />
+	<compensate hero_id="4109" />
+	<compensate hero_id="4110" />
+	<compensate hero_id="4111" />
+	<compensate hero_id="4500" />
+	<compensate hero_id="4501" />
+	<compensate hero_id="4502" />
+	<compensate hero_id="4503" />
+	<compensate hero_id="4504" />
+	<compensate hero_id="4505" />
+	<compensate hero_id="4506" />
+	<compensate hero_id="4507" />
+	<compensate hero_id="4508" />
+	<compensate hero_id="4509" />
+	<compensate hero_id="5000" />
+	<compensate hero_id="5001" />
+	<compensate hero_id="5002" />
+	<compensate hero_id="426" item2="1142201,600;" />
+	<compensate hero_id="440" item2="1142201,5;" />
+	<compensate hero_id="441" item2="1142201,4;" />
+	<compensate hero_id="442" item2="1142201,90;" />
+	<compensate hero_id="443" item2="1142201,90;" />
+	<compensate hero_id="444" item2="1142201,4;" />
+	<compensate hero_id="445" item2="1142201,4;" />
+	<compensate hero_id="446" />
+	<compensate hero_id="447" />
+	<compensate hero_id="448" />
+	<compensate hero_id="449" />
+	<compensate hero_id="4200" />
+	<compensate hero_id="4201" />
+	<compensate hero_id="4202" />
+	<compensate hero_id="4203" />
+	<compensate hero_id="4204" />
+	<compensate hero_id="4205" />
+	<compensate hero_id="4206" />
+	<compensate hero_id="4207" />
+	<compensate hero_id="4208" />
+	<compensate hero_id="4209" />
+	<compensate hero_id="4210" />
+	<compensate hero_id="4211" />
+	<compensate hero_id="4212" />
+	<compensate hero_id="4213" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			lv	-	玩家等级下限
+			items	-	对应补偿奖励
+				-
+		-->
+	<reward lv="1" items="100016,1;100011,1" />
+	<reward lv="50" items="100016,1;100011,2" />
+	<reward lv="100" items="100016,1;100011,3" />
+	<reward lv="150" items="100016,1;100011,4" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			time_choice	-	选主角色功能时间
+			time_gift	-	合服补偿 时间
+			zhusha	-	重复动态皮肤补偿的朱砂数量
+		-->
+	<parameters time_choice="20201022T000001;20201129T235959" time_gift="20201210T000001;20221230T235959" zhusha="400" />
+</root>

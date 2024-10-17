@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Root>
+	<RankList>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			type	-	排名的数据类型，1比赛积分，2天体积分，3守卫剑阁 6长坂坡
+			id	-	同一类型的排名不同的id,比赛积分的id为比赛id，天体积分的id为天体类型，守卫剑阁为1
+			rankcount	-	最多排名人数
+			timeRange	-	排名的时间
+			dataValidDay	-	排名数据有效天数，根据最后的更新时间计算，0表示永久有效，过期后会加上correctValue
+			checkDataValidEndTime	-	检查有效天数的最后时间,每天早上6点检查数据是否过期，一般填排名时间结束之后
+			correctValue	-	矫正的数据
+			-->
+		<Rank type="1" id="3051" rankcount="10000" timeRange="20140429T000001,20140520T235900" dataValidDay="0" checkDataValidEndTime="20140520T235900" />
+		<Rank type="1" id="3052" rankcount="10000" timeRange="20140714T000001,20140820T235900" dataValidDay="0" checkDataValidEndTime="20140820T235900" />
+		<Rank type="1" id="3053" rankcount="10000" timeRange="20140925T000001,20141031T235900" dataValidDay="0" checkDataValidEndTime="20141031T235900" />
+		<Rank type="1" id="3054" rankcount="10000" timeRange="20150115T000001,20150131T235900" dataValidDay="0" checkDataValidEndTime="20150131T235900" />
+		<Rank type="1" id="8002" rankcount="10000" timeRange="20150427T100000,20150501T235959" dataValidDay="0" checkDataValidEndTime="20150501T235959" />
+		<Rank type="1" id="9002" rankcount="10000" timeRange="20150502T100000,20150503T235959" dataValidDay="0" checkDataValidEndTime="20150503T235959" />
+		<Rank type="1" id="8003" rankcount="10000" timeRange="20150427T100000,20150508T235959" dataValidDay="0" checkDataValidEndTime="20150508T235959" />
+		<Rank type="1" id="8004" rankcount="10000" timeRange="20150427T100000,20150515T235959" dataValidDay="0" checkDataValidEndTime="20150515T235959" />
+		<Rank type="1" id="8005" rankcount="10000" timeRange="20150427T100000,20150522T235959" dataValidDay="0" checkDataValidEndTime="20150522T235959" />
+		<Rank type="1" id="8006" rankcount="10000" timeRange="20150427T100000,20150529T235959" dataValidDay="0" checkDataValidEndTime="20150529T235959" />
+		<Rank type="1" id="8007" rankcount="10000" timeRange="20150427T100000,20150605T235959" dataValidDay="0" checkDataValidEndTime="20150605T235959" />
+		<Rank type="1" id="8008" rankcount="10000" timeRange="20150427T100000,20150612T235959" dataValidDay="0" checkDataValidEndTime="20150612T235959" />
+		<Rank type="1" id="8009" rankcount="10000" timeRange="20150427T100000,20150619T235959" dataValidDay="0" checkDataValidEndTime="20150619T235959" />
+		<Rank type="1" id="8010" rankcount="10000" timeRange="20150622T000000,20150626T235959" dataValidDay="0" checkDataValidEndTime="20150626T235959" />
+		<Rank type="1" id="8011" rankcount="10000" timeRange="20150622T000000,20150703T235959" dataValidDay="0" checkDataValidEndTime="20150703T235959" />
+		<Rank type="1" id="8012" rankcount="10000" timeRange="20150622T000000,20150710T235959" dataValidDay="0" checkDataValidEndTime="20150710T235959" />
+		<Rank type="1" id="8013" rankcount="10000" timeRange="20150622T000000,20150717T235959" dataValidDay="0" checkDataValidEndTime="20150717T235959" />
+		<Rank type="1" id="8014" rankcount="10000" timeRange="20150920T000000,20150925T235959" dataValidDay="0" checkDataValidEndTime="20150925T235959" />
+		<Rank type="1" id="8015" rankcount="10000" timeRange="20150920T000000,20151002T235959" dataValidDay="0" checkDataValidEndTime="20151002T235959" />
+		<Rank type="1" id="8016" rankcount="10000" timeRange="20151004T000000,20151009T235959" dataValidDay="0" checkDataValidEndTime="20151009T235959" />
+		<Rank type="1" id="8017" rankcount="10000" timeRange="20151004T000000,20151023T235959" dataValidDay="0" checkDataValidEndTime="20151023T235959" />
+		<Rank type="1" id="8018" rankcount="10000" timeRange="20151004T000000,20151030T235959" dataValidDay="0" checkDataValidEndTime="20151030T235959" />
+		<Rank type="1" id="8019" rankcount="10000" timeRange="20151004T000000,20151106T235959" dataValidDay="0" checkDataValidEndTime="20151106T235959" />
+		<Rank type="1" id="8020" rankcount="10000" timeRange="20151115T000000,20151120T235959" dataValidDay="0" checkDataValidEndTime="20151120T235959" />
+		<Rank type="1" id="8021" rankcount="10000" timeRange="20151122T000000,20151127T235959" dataValidDay="0" checkDataValidEndTime="20151127T235959" />
+		<Rank type="1" id="8022" rankcount="10000" timeRange="20151129T000000,20151204T235959" dataValidDay="0" checkDataValidEndTime="20151204T235959" />
+		<Rank type="2" id="3" rankcount="100000" timeRange="20131101T100000,20131128T220000" dataValidDay="5" checkDataValidEndTime="20131128T220000" correctValue="-20" />
+		<Rank type="2" id="4" rankcount="100000" timeRange="20140501T100000,20140515T230000" dataValidDay="5" checkDataValidEndTime="20140515T230000" correctValue="-20" />
+		<Rank type="2" id="1" rankcount="100000" timeRange="20160622T100000,20160725T230000" dataValidDay="5" checkDataValidEndTime="20160725T230000" correctValue="-20" />
+		<Rank type="2" id="11" rankcount="100000" timeRange="20160622T100000,20160725T230000" dataValidDay="5" checkDataValidEndTime="20160725T230000" correctValue="-20" />
+		<Rank type="3" id="1" rankcount="100000" timeRange="20140701T000000,20150701T000000" dataValidDay="0" checkDataValidEndTime="20150701T000000" correctValue="0" />
+		<Rank type="6" id="1" rankcount="100000" timeRange="20170926T100000,20171031T220000" dataValidDay="0" checkDataValidEndTime="20171101T000000" correctValue="0" />
+		<Rank type="6" id="2" rankcount="100000" timeRange="20171101T100000,20171130T220000" dataValidDay="0" checkDataValidEndTime="20171201T000000" correctValue="0" />
+		<Rank type="6" id="3" rankcount="100000" timeRange="20171201T100000,20171231T220000" dataValidDay="0" checkDataValidEndTime="20180101T000000" correctValue="0" />
+		<Rank type="6" id="4" rankcount="100000" timeRange="20180101T100000,20180131T220000" dataValidDay="0" checkDataValidEndTime="20180201T000000" correctValue="0" />
+		<Rank type="6" id="5" rankcount="100000" timeRange="20180201T100000,20180228T220000" dataValidDay="0" checkDataValidEndTime="20180301T000000" correctValue="0" />
+		<Rank type="6" id="6" rankcount="100000" timeRange="20180301T100000,20180331T220000" dataValidDay="0" checkDataValidEndTime="20180401T000000" correctValue="0" />
+		<Rank type="6" id="7" rankcount="100000" timeRange="20180401T100000,20180430T220000" dataValidDay="0" checkDataValidEndTime="20180501T000000" correctValue="0" />
+		<Rank type="6" id="8" rankcount="100000" timeRange="20180501T100000,20180531T220000" dataValidDay="0" checkDataValidEndTime="20180601T000000" correctValue="0" />
+		<Rank type="6" id="9" rankcount="100000" timeRange="20180601T100000,20180630T220000" dataValidDay="0" checkDataValidEndTime="20180701T000000" correctValue="0" />
+		<Rank type="6" id="10" rankcount="100000" timeRange="20180701T100000,20180731T220000" dataValidDay="0" checkDataValidEndTime="20180801T000000" correctValue="0" />
+		<Rank type="6" id="11" rankcount="100000" timeRange="20180801T100000,20180831T220000" dataValidDay="0" checkDataValidEndTime="20180901T000000" correctValue="0" />
+		<Rank type="6" id="12" rankcount="100000" timeRange="20180901T100000,20180930T220000" dataValidDay="0" checkDataValidEndTime="20181001T000000" correctValue="0" />
+		<Rank type="6" id="13" rankcount="100000" timeRange="20181001T100000,20181031T220000" dataValidDay="0" checkDataValidEndTime="20181101T000000" correctValue="0" />
+		<Rank type="6" id="14" rankcount="100000" timeRange="20181101T100000,20181130T220000" dataValidDay="0" checkDataValidEndTime="20181201T000000" correctValue="0" />
+		<Rank type="6" id="15" rankcount="100000" timeRange="20181201T100000,20181231T220000" dataValidDay="0" checkDataValidEndTime="20190101T000000" correctValue="0" />
+		<Rank type="6" id="16" rankcount="100000" timeRange="20190101T100000,20190131T220000" dataValidDay="0" checkDataValidEndTime="20190201T000000" correctValue="0" />
+		<Rank type="6" id="17" rankcount="100000" timeRange="20190201T100000,20190228T220000" dataValidDay="0" checkDataValidEndTime="20190301T000000" correctValue="0" />
+		<Rank type="6" id="18" rankcount="100000" timeRange="20190301T100000,20190331T220000" dataValidDay="0" checkDataValidEndTime="20190401T000000" correctValue="0" />
+		<Rank type="6" id="19" rankcount="100000" timeRange="20190401T100000,20190430T220000" dataValidDay="0" checkDataValidEndTime="20190501T000000" correctValue="0" />
+		<Rank type="6" id="20" rankcount="100000" timeRange="20190501T100000,20190531T220000" dataValidDay="0" checkDataValidEndTime="20190601T000000" correctValue="0" />
+		<Rank type="6" id="21" rankcount="100000" timeRange="20190601T100000,20190630T220000" dataValidDay="0" checkDataValidEndTime="20190701T000000" correctValue="0" />
+		<Rank type="6" id="22" rankcount="100000" timeRange="20190701T100000,20190731T220000" dataValidDay="0" checkDataValidEndTime="20190801T000000" correctValue="0" />
+		<Rank type="6" id="23" rankcount="100000" timeRange="20190801T100000,20190831T220000" dataValidDay="0" checkDataValidEndTime="20190901T000000" correctValue="0" />
+		<Rank type="6" id="24" rankcount="100000" timeRange="20190901T100000,20190930T220000" dataValidDay="0" checkDataValidEndTime="20191001T000000" correctValue="0" />
+		<Rank type="6" id="25" rankcount="100000" timeRange="20191001T100000,20191031T220000" dataValidDay="0" checkDataValidEndTime="20191101T000000" correctValue="0" />
+		<Rank type="6" id="26" rankcount="100000" timeRange="20191101T100000,20191130T220000" dataValidDay="0" checkDataValidEndTime="20191201T000000" correctValue="0" />
+		<Rank type="6" id="27" rankcount="100000" timeRange="20191201T100000,20191231T220000" dataValidDay="0" checkDataValidEndTime="20200101T000000" correctValue="0" />
+		<Rank type="6" id="28" rankcount="100000" timeRange="20200101T100000,20200131T220000" dataValidDay="0" checkDataValidEndTime="20200201T000000" correctValue="0" />
+		<Rank type="6" id="29" rankcount="100000" timeRange="20200201T100000,20200229T220000" dataValidDay="0" checkDataValidEndTime="20200301T000000" correctValue="0" />
+		<Rank type="6" id="30" rankcount="100000" timeRange="20200301T100000,20200331T220000" dataValidDay="0" checkDataValidEndTime="20200401T000000" correctValue="0" />
+		<Rank type="6" id="31" rankcount="100000" timeRange="20200401T100000,20200430T220000" dataValidDay="0" checkDataValidEndTime="20200501T000000" correctValue="0" />
+		<Rank type="6" id="32" rankcount="100000" timeRange="20200501T100000,20200531T220000" dataValidDay="0" checkDataValidEndTime="20200601T000000" correctValue="0" />
+		<Rank type="6" id="33" rankcount="100000" timeRange="20200601T100000,20200630T220000" dataValidDay="0" checkDataValidEndTime="20200701T000000" correctValue="0" />
+		<Rank type="6" id="34" rankcount="100000" timeRange="20200701T100000,20200731T220000" dataValidDay="0" checkDataValidEndTime="20200801T000000" correctValue="0" />
+		<Rank type="6" id="35" rankcount="100000" timeRange="20200801T100000,20200831T220000" dataValidDay="0" checkDataValidEndTime="20200901T000000" correctValue="0" />
+		<Rank type="6" id="36" rankcount="100000" timeRange="20200901T100000,20200930T220000" dataValidDay="0" checkDataValidEndTime="20201001T000000" correctValue="0" />
+		<Rank type="6" id="37" rankcount="100000" timeRange="20201001T100000,20201031T220000" dataValidDay="0" checkDataValidEndTime="20201101T000000" correctValue="0" />
+		<Rank type="6" id="38" rankcount="100000" timeRange="20201101T100000,20201130T220000" dataValidDay="0" checkDataValidEndTime="20201201T000000" correctValue="0" />
+		<Rank type="6" id="39" rankcount="100000" timeRange="20201201T100000,20201231T220000" dataValidDay="0" checkDataValidEndTime="20210101T000000" correctValue="0" />
+		<Rank type="6" id="40" rankcount="100000" timeRange="20210101T100000,20210131T220000" dataValidDay="0" checkDataValidEndTime="20210201T000000" correctValue="0" />
+		<Rank type="6" id="41" rankcount="100000" timeRange="20210201T100000,20210228T220000" dataValidDay="0" checkDataValidEndTime="20210301T000000" correctValue="0" />
+		<Rank type="6" id="42" rankcount="100000" timeRange="20210301T100000,20210331T220000" dataValidDay="0" checkDataValidEndTime="20210401T000000" correctValue="0" />
+		<Rank type="6" id="43" rankcount="100000" timeRange="20210401T100000,20210430T220000" dataValidDay="0" checkDataValidEndTime="20210501T000000" correctValue="0" />
+		<Rank type="6" id="44" rankcount="100000" timeRange="20210501T100000,20210531T220000" dataValidDay="0" checkDataValidEndTime="20210601T000000" correctValue="0" />
+		<Rank type="6" id="45" rankcount="100000" timeRange="20210601T100000,20210630T220000" dataValidDay="0" checkDataValidEndTime="20210701T000000" correctValue="0" />
+		<Rank type="6" id="46" rankcount="100000" timeRange="20210701T100000,20210731T220000" dataValidDay="0" checkDataValidEndTime="20210801T000000" correctValue="0" />
+		<Rank type="6" id="47" rankcount="100000" timeRange="20210801T100000,20210831T220000" dataValidDay="0" checkDataValidEndTime="20210901T000000" correctValue="0" />
+		<Rank type="6" id="48" rankcount="100000" timeRange="20210901T100000,20210930T220000" dataValidDay="0" checkDataValidEndTime="20211001T000000" correctValue="0" />
+		<Rank type="6" id="49" rankcount="100000" timeRange="20211001T100000,20211031T220000" dataValidDay="0" checkDataValidEndTime="20211101T000000" correctValue="0" />
+		<Rank type="6" id="50" rankcount="100000" timeRange="20211101T100000,20211130T220000" dataValidDay="0" checkDataValidEndTime="20211201T000000" correctValue="0" />
+		<Rank type="6" id="51" rankcount="100000" timeRange="20211201T100000,20211231T220000" dataValidDay="0" checkDataValidEndTime="20220101T000000" correctValue="0" />
+		<Rank type="6" id="52" rankcount="100000" timeRange="20220101T100000,20220131T220000" dataValidDay="0" checkDataValidEndTime="20220201T000000" correctValue="0" />
+		<Rank type="6" id="53" rankcount="100000" timeRange="20220201T100000,20220228T220000" dataValidDay="0" checkDataValidEndTime="20220301T000000" correctValue="0" />
+		<Rank type="6" id="54" rankcount="100000" timeRange="20220301T100000,20220331T220000" dataValidDay="0" checkDataValidEndTime="20220401T000000" correctValue="0" />
+		<Rank type="6" id="55" rankcount="100000" timeRange="20220401T100000,20220424T220000" dataValidDay="0" checkDataValidEndTime="20220425T000000" correctValue="0" />
+		<Rank type="6" id="56" rankcount="100000" timeRange="20220501T100000,20220531T220000" dataValidDay="0" checkDataValidEndTime="20220601T000000" correctValue="0" />
+		<Rank type="6" id="57" rankcount="100000" timeRange="20220601T100000,20220630T220000" dataValidDay="0" checkDataValidEndTime="20220701T000000" correctValue="0" />
+		<Rank type="6" id="58" rankcount="100000" timeRange="20220701T100000,20220731T220000" dataValidDay="0" checkDataValidEndTime="20220801T000000" correctValue="0" />
+		<Rank type="6" id="59" rankcount="100000" timeRange="20220801T100000,20220831T220000" dataValidDay="0" checkDataValidEndTime="20220901T000000" correctValue="0" />
+		<Rank type="6" id="60" rankcount="100000" timeRange="20220901T100000,20220930T220000" dataValidDay="0" checkDataValidEndTime="20221001T000000" correctValue="0" />
+		<Rank type="6" id="61" rankcount="100000" timeRange="20221001T100000,20221031T220000" dataValidDay="0" checkDataValidEndTime="20221101T000000" correctValue="0" />
+		<Rank type="6" id="62" rankcount="100000" timeRange="20221101T100000,20221130T220000" dataValidDay="0" checkDataValidEndTime="20221201T000000" correctValue="0" />
+		<Rank type="6" id="63" rankcount="100000" timeRange="20221201T100000,20221231T220000" dataValidDay="0" checkDataValidEndTime="20230101T000000" correctValue="0" />
+		<Rank type="6" id="64" rankcount="100000" timeRange="20230331T100000,20230410T220000" dataValidDay="0" checkDataValidEndTime="20230411T000000" correctValue="0" />
+	</RankList>
+</Root>

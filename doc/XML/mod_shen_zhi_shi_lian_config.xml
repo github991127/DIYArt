@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+	<!--
+	<Group>节点：
+		id：组ID
+		player_seats：玩家的座位（用分号分割），格式: 座位1;座位2;座位3
+		max_time：游戏的最大时间(单位:秒)
+		
+		<Round>节点：
+					level：关卡Id,必须是顺序的,从1开始
+					rest_time：每一关开始时的休息时间(玩家选将前)
+					sel_general_time：玩家选将的等待时间
+					act_type：行动类型 0:逆时针行动 1: 双方交替行动
+					first_turn_seat：关卡开始时 首回合行动的座位ID
+					player_dealcard：关卡开始时，玩家摸牌的数量
+					reward_condition:奖励配置对应 RewardCondition 中的id
+		<Monster>节点：
+					id ：上场的武将ID
+					seat ：坐在那个座位
+					boss ：是否是BOSS
+					dealcard_count ：关卡开始时，这个角色摸牌的数量
+		<RewardCondition>
+					id 必须唯一
+					rewardcnt 奖励胜场数 condition节点里的内容必须都返回真才能完成这个奖励。
+		<Condition>
+					ach_id 战功条件id
+					compare 比较条件 1相等 2 >; 3 >= ;4< ; 5 <=
+					value  比较值
+		奖励条件ID
+			<Condition ach_id="60113" compare="3" value="1" desc="boss被击杀，自己存活"/>
+			<Condition ach_id="60114" compare="3" value="1" desc="亲手击杀的敌人数量"/>
+			<Condition ach_id="60115" compare="3" value="1" desc="对敌人造成过N伤害"/>
+			<Condition ach_id="60113" compare="3" value="1" desc="boss被击杀，自己存活"/>
+			<Condition ach_id="60117" compare="5" value="0" desc="受到“中毒”伤害的次数"/>
+			<Condition ach_id="60116" compare="5" value="0" desc="受到“行夏”伤害的次数"/>
+	-->
+	
+	
+	<SlotConfig total_slot="6">
+		 <GeneralSlot desc="明忠" min_open_general_count="0" max_open_general_count="89" free_slot="3"/>
+		 <GeneralSlot desc="明忠" min_open_general_count="90" max_open_general_count="119" free_slot="4"/>
+		 <GeneralSlot desc="明忠" min_open_general_count="120" max_open_general_count="149" free_slot="5"/>
+		 <GeneralSlot desc="明忠" min_open_general_count="150" max_open_general_count="999999" free_slot="6"/>
+	</SlotConfig>	
+		
+	
+	<!--
+		group_list：游戏开始时的随机组,格式: 组ID,出现概率;组ID,出现概率 ！！！！
+		例如：group_list="1,20;2,30"
+	-->
+	
+	<UseGroup group_list="1,300;2,300"/>
+	<!--青组-->
+	<Group id="1" player_seats="2;4;6" max_time="3600">
+		<Round level="1" rest_time="3" sel_general_time="30" act_type="1" first_turn_seat="2" player_dealcard="4" reward_condition="1">
+			<Monster id="4024" seat="0" boss="1" dealcard_count="4"/>  <!--青龙-->
+		</Round>
+		<Round level="2" rest_time="3" sel_general_time="30" act_type="0" first_turn_seat="0" player_dealcard="4" reward_condition="2">
+			<Monster id="4025" seat="0" boss="1" dealcard_count="4"/>  <!--木神句芒-->
+			<Monster id="4016" seat="3" boss="0" dealcard_count="2"/>  <!--树精-->
+			<Monster id="4017" seat="5" boss="0" dealcard_count="2"/>  <!--树精-->
+		</Round>
+		<Round level="3" rest_time="3" sel_general_time="30" act_type="0" first_turn_seat="0" player_dealcard="4" reward_condition="3">
+			<Monster id="4026" seat="0" boss="1" dealcard_count="6"/>  <!--太昊-->
+			<Monster id="4016" seat="1" boss="0" dealcard_count="2"/>  <!--树精-->
+			<Monster id="4031" seat="7" boss="0" dealcard_count="4"/>  <!--弱版木神句芒-->
+		</Round>
+	</Group>
+	<!--赤组-->	
+	<Group id="2" player_seats="2;4;6" max_time="3600">
+		<Round level="1" rest_time="3" sel_general_time="30" act_type="1" first_turn_seat="2" player_dealcard="4" reward_condition="4">
+			<Monster id="4027" seat="0" boss="1" dealcard_count="4"/>  <!--朱雀-->
+		</Round>
+		<Round level="2" rest_time="3" sel_general_time="30" act_type="0" first_turn_seat="0" player_dealcard="4" reward_condition="5">
+			<Monster id="4028" seat="0" boss="1" dealcard_count="4"/>  <!--火神祝融-->
+			<Monster id="4030" seat="1" boss="0" dealcard_count="4"/>  <!--焰灵-->
+		</Round>
+		<Round level="3" rest_time="3" sel_general_time="30" act_type="0" first_turn_seat="0" player_dealcard="4" reward_condition="6">
+			<Monster id="4029" seat="0" boss="1" dealcard_count="6"/>  <!--炎帝-->
+			<Monster id="4030" seat="1" boss="0" dealcard_count="4"/>  <!--焰灵-->
+			<Monster id="4032" seat="7" boss="0" dealcard_count="4"/>  <!--弱版火神祝融-->
+		</Round>
+	</Group>
+	<!--白组-->	
+	<Group id="3" player_seats="2;4;6" max_time="3600">
+		<Round level="1" rest_time="3" sel_general_time="30" act_type="1" first_turn_seat="2" player_dealcard="4" reward_condition="7">
+			<Monster id="4061" seat="0" boss="1" dealcard_count="4"/>  <!--白虎-->
+		</Round>
+		<Round level="2" rest_time="3" sel_general_time="30" act_type="0" first_turn_seat="0" player_dealcard="4" reward_condition="8">
+			<Monster id="4062" seat="0" boss="1" dealcard_count="4"/>  <!--金神蓐收-->
+			<Monster id="4063" seat="3" boss="0" dealcard_count="4"/>  <!--明刑柱-->
+			<Monster id="4072" seat="5" boss="0" dealcard_count="4"/>  <!--明刑柱-->
+		</Round>
+		<Round level="3" rest_time="3" sel_general_time="30" act_type="0" first_turn_seat="0" player_dealcard="4" reward_condition="9">
+			<Monster id="4064" seat="0" boss="1" dealcard_count="4"/>  <!--少昊-->
+			<Monster id="4063" seat="3" boss="0" dealcard_count="4"/>  <!--明刑柱-->
+			<Monster id="4072" seat="5" boss="0" dealcard_count="4"/>  <!--明刑柱-->
+			<Monster id="4065" seat="7" boss="0" dealcard_count="4"/>  <!--弱版金神蓐收-->
+		</Round>
+	</Group>
+
+	<!--皂组-->	
+	<Group id="4" player_seats="2;4;6" max_time="3600">
+		<Round level="1" rest_time="3" sel_general_time="30" act_type="1" first_turn_seat="2" player_dealcard="4" reward_condition="10">
+			<Monster id="4066" seat="0" boss="1" dealcard_count="4"/>  <!--玄武-->
+		</Round>
+		<Round level="2" rest_time="3" sel_general_time="30" act_type="0" first_turn_seat="0" player_dealcard="4" reward_condition="11">
+			<Monster id="4068" seat="0" boss="1" dealcard_count="4"/>  <!--水神共工-->
+			<Monster id="4067" seat="7" boss="1" dealcard_count="6"/>  <!--水神玄冥 -->
+		</Round>
+		<Round level="3" rest_time="3" sel_general_time="30" act_type="0" first_turn_seat="0" player_dealcard="4" reward_condition="12">
+			<Monster id="4069" seat="0" boss="1" dealcard_count="4"/>  <!--颛顼-->
+			<Monster id="4071" seat="1" boss="0" dealcard_count="4"/>  <!--弱版水神共工-->
+			<Monster id="4070" seat="7" boss="0" dealcard_count="4"/>  <!--弱版水神玄冥-->
+		</Round>
+	</Group>
+
+
+	<RewardCondition id="1" desc="青组1"  rewardcnt="1">
+			<Condition ach_id="60113" compare="3" value="1" desc="boss被击杀，自己存活"/>
+	</RewardCondition>
+	<RewardCondition id="2" desc="青组2"  rewardcnt="1">
+			<Condition ach_id="60113" compare="3" value="1" desc="boss被击杀，自己存活"/>
+			<Condition ach_id="60117" compare="5" value="0" desc="受到“中毒”伤害的次数"/>
+	</RewardCondition>
+	<RewardCondition id="3" desc="青组3"  rewardcnt="1">
+			<Condition ach_id="60113" compare="3" value="1" desc="boss被击杀，自己存活"/>
+			<Condition ach_id="60114" compare="3" value="1" desc="亲手击杀的敌人数量"/>
+	</RewardCondition>
+	<RewardCondition id="4" desc="赤组1"  rewardcnt="1">
+			<Condition ach_id="60113" compare="3" value="1" desc="boss被击杀，自己存活"/>
+	</RewardCondition>
+	<RewardCondition id="5" desc="赤组2"  rewardcnt="1">
+			<Condition ach_id="60113" compare="3" value="1" desc="boss被击杀，自己存活"/>
+			<Condition ach_id="60116" compare="5" value="0" desc="受到“行夏”伤害的次数"/>
+	</RewardCondition>
+	<RewardCondition id="6" desc="赤组3"  rewardcnt="1">
+			<Condition ach_id="60113" compare="3" value="1" desc="boss被击杀，自己存活"/>
+			<Condition ach_id="60115" compare="3" value="2" desc="对敌人造成过N伤害"/>
+	</RewardCondition>
+	<RewardCondition id="7" desc="白组1"  rewardcnt="1">
+			<Condition ach_id="60113" compare="3" value="1" desc="boss被击杀，自己存活"/>
+	</RewardCondition>
+	<RewardCondition id="8" desc="白组2"  rewardcnt="1">
+			<Condition ach_id="60113" compare="3" value="1" desc="boss被击杀，自己存活"/>
+			<Condition ach_id="60122" compare="1" value="0" desc="进入濒死的次数"/>
+	</RewardCondition>
+	<RewardCondition id="9" desc="白组3"  rewardcnt="1">
+			<Condition ach_id="60113" compare="3" value="1" desc="boss被击杀，自己存活"/>
+			<Condition ach_id="60120" compare="3" value="1" desc="对敌人造成过属性伤害"/>
+	</RewardCondition>
+	<RewardCondition id="10" desc="皂组1"  rewardcnt="1">
+			<Condition ach_id="60113" compare="3" value="1" desc="boss被击杀，自己存活"/>
+	</RewardCondition>
+	<RewardCondition id="11" desc="皂组2"  rewardcnt="1">			
+			<Condition ach_id="60121" compare="3" value="1" desc="六轮通过的次数"/>
+	</RewardCondition>
+	<RewardCondition id="12" desc="皂组3"  rewardcnt="1">
+			<Condition ach_id="60113" compare="3" value="1" desc="boss被击杀，自己存活"/>
+			<Condition ach_id="60123" compare="1" value="0" desc="因“皂仪”进入濒死"/>
+	</RewardCondition>
+</Root>

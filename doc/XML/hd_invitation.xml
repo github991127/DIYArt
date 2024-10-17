@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			roundId	-	数据id-只能配置一期，id递增
+			firstReward	-	首次引导奖励
+			desc2	-	宝箱获取说明
+			desc2	-	宝箱获取说明
+			desc3	-	金币获取说明
+			thankDesc	-	答谢邮件文本
+			ipmax	-	ip数量上线
+			qrurl	-	分享二维码的地址
+			bg	-	背景图
+			npc	-	NPC人物
+			endTime	-	整个活动的开始结束时间同时不可邀请
+		-->
+	<common roundId="2404" firstReward="8271901" thankDesc="主公，您收到了一份招募邀请的贺礼答谢，请在附件中领取" ipmax="3" endTime="20240910T235958" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			roundId	-	轮数id 不能为0 数据记录的依据
+			startTime	-	整个活动的开始结束时间
+			endTime	-	整个活动的开始结束时间同时不可邀请
+			endShopTime	-	兑换商店的关闭时间和界面关闭时间
+			priceId	-	商城兑换消耗的道具id
+			free	-	系统赠送代币（废弃）
+			bigReward	-	本期大奖id
+			url	-	本期落地页基础地址（废弃）
+			activeId	-	期数id（PHP用）
+		-->
+	<round roundId="2404" startTime="20240402T000101" endTime="20240410T235958" endShopTime="20240410T235958" priceId="8271801" free="0" bigReward="9047701" url="www.sanguosha.com/XXX" activeId="1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	奖励id
+			detail	-	描述
+			playertype	-	新玩家类型id
+1=小号
+2=IOS用户
+3=安卓用户
+4=PC用户
+			type	-	条件类型
+1=新用户等级达到X级
+2=累计登录X天
+3=完成首充，目标值1
+			target	-	目标值
+			reward	-	奖励宝箱id 及 数量
+				-	说明
+		-->
+	<reward id="1" playertype="1" type="2" target="1" reward="8272001,1" />
+	<reward id="2" playertype="1" type="2" target="3" reward="8272101,1" />
+	<reward id="3" playertype="1" type="2" target="5" reward="8272201,1" />
+	<reward id="4" playertype="1" type="2" target="7" reward="8272301,1" />
+	<reward id="5" playertype="1" type="1" target="30" reward="8272401,1" />
+	<reward id="6" playertype="1" type="1" target="50" reward="8272501,1" />
+	<reward id="7" playertype="1" type="1" target="80" reward="8272601,1" />
+	<reward id="8" playertype="1" type="3" target="1" reward="8272701,1" />
+	<reward id="9" playertype="2" type="2" target="1" reward="8272801,1" />
+	<reward id="10" playertype="2" type="2" target="3" reward="8272901,1" />
+	<reward id="11" playertype="2" type="2" target="5" reward="8273001,1" />
+	<reward id="12" playertype="2" type="2" target="7" reward="8273101,1" />
+	<reward id="13" playertype="2" type="1" target="30" reward="8273201,1" />
+	<reward id="14" playertype="2" type="1" target="50" reward="8273301,1" />
+	<reward id="15" playertype="2" type="1" target="80" reward="8273401,1" />
+	<reward id="16" playertype="2" type="3" target="1" reward="8273501,1" />
+	<reward id="17" playertype="3" type="2" target="1" reward="8273701,1" />
+	<reward id="18" playertype="3" type="2" target="3" reward="8273801,1" />
+	<reward id="19" playertype="3" type="2" target="5" reward="8273901,1" />
+	<reward id="20" playertype="3" type="2" target="7" reward="8274001,1" />
+	<reward id="21" playertype="3" type="1" target="30" reward="8274101,1" />
+	<reward id="22" playertype="3" type="1" target="50" reward="8274201,1" />
+	<reward id="23" playertype="3" type="1" target="80" reward="8274301,1" />
+	<reward id="24" playertype="3" type="3" target="1" reward="8274401,1" />
+	<reward id="25" playertype="4" type="2" target="1" reward="8274501,1" />
+	<reward id="26" playertype="4" type="2" target="3" reward="8274601,1" />
+	<reward id="27" playertype="4" type="2" target="5" reward="8274701,1" />
+	<reward id="28" playertype="4" type="2" target="7" reward="8274801,1" />
+	<reward id="29" playertype="4" type="1" target="30" reward="8274901,1" />
+	<reward id="30" playertype="4" type="1" target="50" reward="8275001,1" />
+	<reward id="31" playertype="4" type="1" target="80" reward="8275101,1" />
+	<reward id="32" playertype="4" type="3" target="1" reward="8275201,1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			boxid	-	宝箱id
+			boxtype	-	宝箱品质（越小越低）
+			thankRewardid	-	答谢奖励
+		-->
+	<thankReward boxid="8272001" thankRewardid="100011,50" />
+	<thankReward boxid="8272101" thankRewardid="100011,20" />
+	<thankReward boxid="8272201" thankRewardid="100011,20" />
+	<thankReward boxid="8272301" thankRewardid="100011,20" />
+	<thankReward boxid="8272401" thankRewardid="100011,20" />
+	<thankReward boxid="8272501" thankRewardid="100011,20" />
+	<thankReward boxid="8272601" thankRewardid="100011,20" />
+	<thankReward boxid="8272701" thankRewardid="100011,100" />
+	<thankReward boxid="8272801" thankRewardid="100011,100" />
+	<thankReward boxid="8272901" thankRewardid="100011,100" />
+	<thankReward boxid="8273001" thankRewardid="100011,50" />
+	<thankReward boxid="8273101" thankRewardid="100011,50" />
+	<thankReward boxid="8273201" thankRewardid="100011,100" />
+	<thankReward boxid="8273301" thankRewardid="100011,100" />
+	<thankReward boxid="8273401" thankRewardid="100011,100" />
+	<thankReward boxid="8273501" thankRewardid="100011,100" />
+	<thankReward boxid="8273701" thankRewardid="100011,100" />
+	<thankReward boxid="8273801" thankRewardid="100011,100" />
+	<thankReward boxid="8273901" thankRewardid="100011,50" />
+	<thankReward boxid="8274001" thankRewardid="100011,50" />
+	<thankReward boxid="8274101" thankRewardid="100011,100" />
+	<thankReward boxid="8274201" thankRewardid="100011,100" />
+	<thankReward boxid="8274301" thankRewardid="100011,100" />
+	<thankReward boxid="8274401" thankRewardid="100011,100" />
+	<thankReward boxid="8274501" thankRewardid="100011,100" />
+	<thankReward boxid="8274601" thankRewardid="100011,50" />
+	<thankReward boxid="8274701" thankRewardid="100011,20" />
+	<thankReward boxid="8274801" thankRewardid="100011,20" />
+	<thankReward boxid="8274901" thankRewardid="100011,100" />
+	<thankReward boxid="8275001" thankRewardid="100011,50" />
+	<thankReward boxid="8275101" thankRewardid="100011,50" />
+	<thankReward boxid="8275201" thankRewardid="100011,100" />
+	<thankReward boxid="8271901" thankRewardid="100011,100" />
+</root>

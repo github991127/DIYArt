@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Root>
+	<!-- 产出规则 -->
+	<uprule>
+		<!-- open="1" 表示开启规则，addnum="5" 每次添加点数 limit="40" 点数限制，不能为0 -->
+		<!-- 一起游戏 -->
+		<gametogether open="1" addnum="5" limit="40"/>
+		<!-- 私聊 -->
+		<chat open="1" addnum="2" limit="2" />
+		<!-- 邀请跟随 -->
+		<invitefollow open="1" addnum="2" limit="8" />
+		<!-- 赠送 addpercent="5" 赠送为价格的5% -->
+		<present open="1" addpercent="1" limit="999999"/>
+		<!-- 金兰节互动道具-->
+		<jljgoods open="1" addnum="0" limit="999999" limit2="20"/>
+	</uprule>
+	
+	<!-- 衰竭规则 -->
+	<downrule>
+		<!-- open="1" 表示是否开启 subnum="5" 每次衰竭5点 -->
+		<!-- n天不增加友好度，则以后每天衰竭5点 -->
+		<needaddday open="0" startsub="15" subnum="5" />
+	</downrule>
+	
+	<!-- 等级配置 -->
+	<level maxnum="9999">
+		<item level="1" name="萍水相逢" numrange="0-199" />
+		<item level="2" name="志同道合" numrange="200-499" />
+		<item level="3" name="高山流水" numrange="500-999" />
+		<item level="4" name="肝胆相照" numrange="1000-2999" />
+		<item level="5" name="义结金兰" numrange="3000-4999" />
+		<item level="6" name="生死莫逆" numrange="5000-9999" />
+	</level>
+</Root>

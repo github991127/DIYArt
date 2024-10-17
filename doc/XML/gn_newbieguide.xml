@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Common>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			isUseNewChapter	-	是否调用序章背景图
+			newRewardsShowMaxLev	-	成长之路奖励显示最大等级
+			newPlayerShowLev	-	成长之路奖励显示等级
+			sevenGiftShowLv	-	七日好礼奖励显示等级
+			taskShowLv	-	任务奖励显示等级
+			newChapterText	-	新手序章文字
+			newSevenGiftTime	-	新七日礼包时间
+			maxNewLevel	-	新手最大等级
+			generalShilian	-	只显示武将试炼的武将，多个武将,分开
+			generalShow	-	武将获得是否展示
+1=展示，0=不展示
+			rankRewardLevel	-	赛季奖励显示等级
+			generalLevel	-	将池、卡牌图鉴显示等级
+			teamLevel	-	组队、演武显示等级
+			spellSimpleTipsLevel	-	技能提示最大等级
+			spellTriggerTipsLevel	-	技能触发提示最大等级
+			newMaxLevel	-	新手在122模式最大等级
+			newMaxRank	-	新手在122模式最大段位
+			newCount	-	新手在122模式最大场数
+			newLordMaxLevel	-	新手在162新手斗地主模式最大等级
+			newLordCount	-	新手在162新手斗地主模式最大场数
+			tryLevel	-	推荐武将等级
+≤该等级会推荐
+			tryModel	-	推荐武将模式
+			noSkinLevel	-	跳过选皮肤的等级
+≤该等级会跳过
+			noSkinModel	-	跳过选皮肤的模式
+			noShowTime	-	条件引导不显示时间
+			rewardWinOpen	-	奖励弹窗是否生效
+1=开启 0=关闭
+			newChapterModel	-	新手局不显示倒计时模式
+			friGuideLevel	-	队友误伤引导
+			friGuideSpell	-	队友误伤的技能
+			noGeneralUp	-	新手不显示将池升级i
+			skipTime	-	新手弱引导自动关闭时间
+			levelUpSP	-	升级弹窗特殊处理等级
+			againSP	-	再来局一局按钮特殊处理等级
+			newRankPause	-	新手排位后台暂停
+			newQuestIsOpen	-	新手答题是否开启
+0=不开启
+1=开启老版
+2=新版跳过
+			newQuestNewbieTime	-	新手答题我是新手时间
+			newQuestWaitTime	-	新手答题x秒后进下一步/s
+			newQuestRightTips	-	新手答题正确提示
+			newQuestWrongTips	-	新手答题错误提示
+			newQuestRewards	-	新手答题奖励
+			newQuestRank	-	新手答题段位
+段位，星数
+			newQuestModel	-	新手答题跳过模式，大模式id
+			mainQuestShowRatio	-	主线展示进度，百分比
+			newProLv	-	新手牌局保护等级
+			newProDays	-	新手牌局保护天数
+			backProDays	-	回归牌局保护天数
+			proAddExp	-	保护牌局增加经验，百分比
+			proAddTael	-	保护牌局增加银两，百分比
+			proMaxAddTael	-	保护牌局增加银两每日最大值
+			proAddModel	-	保护牌局的模式
+			proOnceAddExpMax	-	单次经验加成最大值
+			proOnceAddTaelMax	-	单次银两加成最大值
+			newProChat	-	新手保护牌局对局提示
+			backProChat	-	回归保护牌局对局提示
+			seriousDays	-	严重恶意行为天数，分数
+x天内累计扣x分
+			commonDays	-	一般恶意行为
+			strongGenNeedLv	-	我要强将高级开启等级
+			newRewardsCreateTime	-	新手奖励提示创角时间
+			rogueCommonShowLev	-	山河图排行榜、将池、卡牌按钮出现等级
+			rogueGradeShowLev	-	山河图等阶、山河册按钮出现最大等级
+			noShowGeneralLightLevel	-	≤x级前不显示将灯
+			isNewWel	-	PC是否新手欢迎界面
+0=不出现
+1=出现
+			expression	-	新手序章ai表情
+			isNotice	-	新设备公告不弹出，1=不弹，0=弹
+			officerRankLevel	-	官阶排行榜出现最低等级
+			isNewbieMate	-	新手排位匹配动画是否开启
+1=开启，0=不开启
+			jumpGeneralAni	-	新手跳过是否跳转五虎将动画，1=到五虎将
+			fastTaskLevel	-	新手不出现快捷任务进度等级，≥该等级出现
+		-->
+	<Common newQuestRewards="100002,40;100011,120" newQuestRank="1,0" newQuestModel="46" newProLv="60" newProDays="10" backProDays="10" proAddExp="10" proAddTael="10" proMaxAddTael="120" proAddModel="132,148,33" proOnceAddExpMax="50" proOnceAddTaelMax="50" newProChat="你的队友是新人玩家，带领新人玩家获得胜利可以获得额外经验和银两奖励" backProChat="你的队友是回归玩家，带领回归玩家获得胜利可以获得额外经验和银两奖励" seriousDays="10,15" commonDays="10,5" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	id
+			model	-	模式id
+			ChapterId	-	章节id
+			general	-	武将id
+			recomGeneral	-	推荐武将id
+			winRateGeneral	-	显示胜率武将
+武将id：胜率，多个武将用；隔开
+胜率是百分比
+			textGeneral	-	显示提示的武将
+			text	-	显示的提示
+			spell	-	触发技能
+			tipsText	-	提示文字
+			aiSpell	-	ai对话触发技能
+			aiText	-	ai对话文字
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			level	-	等级
+			task	-	任务id
+			generalShow	-	是否展示武将，678级
+			rewardShotName	-	奖励简称
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	引导id
+			enterGroup	-	模式
+			name	-	模式名字
+			desc	-	显示内容
+			text	-	提示文字
+			dialogueText	-	对话文字1
+			dialogueText1	-	对话文字2
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			guidStep	-	引导大步骤，数据存储使用
+			guideId	-	引导ID
+6位数则不触发
+			nextStepState	-	引导标识
+			nextgId	-	下一个引导ID
+			tipType	-	tips类型
+0=无tips
+123=透明
+456=不透明
+			msgPosType	-	消息坐标 0 自适应 1 上 2 下 3 右 4 左  
+			closeType	-	关闭类型 0，引导区域点击  1，全屏点击
+			tipMsg	-	引导文字提示
+			tipMsg	-	引导文字提示
+			arrowType	-	箭头位置
+0=无，1=左，2=中，3=右
+			forceStateNum	-	是否强制引导
+			needXiaoShouNum	-	是否需要小手指引
+ 0不需要 1需要
+			needEffZeroNum	-	是否需要圆圈特效
+			needSelectNum	-	是否需要选中效果
+			canJumpNum	-	是否可以跳过
+			paramDataStr	-	参数
+			posMoveStr	-	UI布局位移x,y
+			posSelectStr	-	选中边框位移、大小x,y,w,h
+			zeroPosDataStr	-	圆圈坐标x,y,w,h
+			skipTime	-	自动跳过时间
+			arrowOffset	-	箭头偏移
+			needClickScaleNum	-	是否需要点击缩放
+			minLevel	-	最小出现等级，≥
+			maxLevel	-	最大出现等级，≤
+			channelId	-	关闭的渠道
+			channelId2	-	开放的渠道
+			clickEffect	-	是否其他位置提示引导
+			isAutoLayer	-	引导层级调整随引导物体
+			backGuide	-	回归玩家也触发
+			skinParams	-	武将形象，缩放，是否翻转，x、y偏移
+			itemParams	-	道具展示，位置
+0左1右
+				-	强制引导备份
+				-	
+				-
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	引导id
+			name	-	名称
+			spell	-	提示技能
+			level	-	触发等级(≤)
+			count	-	提示次数
+0=无限
+-1=不出现
+			condition	-	条件
+			priority	-	优先级， 越大越高
+			property	-	技属性 如冰杀   为 11
+			activeType	-	普通/新手:1主动;2被动;3主动+被动；应变都0
+			desc	-	PC提示文本
+			desc2	-	移动提示文本
+			mode	-	生效模式
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	引导id
+			name	-	名称
+			spell	-	提示技能
+			level	-	触发等级(≤)
+			count	-	提示次数
+0=无限
+-1=不出现
+			condition	-	条件
+			priority	-	优先级， 越大越高
+			property	-	技属性 如冰杀   为 11
+			activeType	-	普通/新手:1主动;2被动;3主动+被动；应变都0
+			desc	-	PC提示文本
+			desc2	-	移动提示文本
+			mode	-	生效模式
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	引导id
+			name	-	名称
+			spell	-	提示技能
+			level	-	触发等级(≤)
+			count	-	提示次数
+0=无限
+-1=不出现
+			condition	-	条件
+			priority	-	优先级， 越大越高
+			property	-	技属性 如冰杀   为 11
+			activeType	-	普通/新手:1主动;2被动;3主动+被动；应变都0
+			desc	-	PC提示文本
+			desc2	-	移动提示文本
+			mode	-	生效模式
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	引导id
+			srcSeat	-	原座位
+			desSeat	-	目标座位
+			general	-	武将id
+			type	-	类型
+牌=1
+技能=2
+			skill	-	技能id
+			desc	-	引导文字
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	序号
+			desSeat	-	身份类型
+1=主公 2=忠臣 3=反贼 4=内奸
+			step	-	步骤
+			target	-	指向目标
+			type	-	指向线类型
+1=绿色线
+2=黄色线
+3=红色线
+			desc	-	引导文字1
+			maxlevel	-	低于X级才显示引导，不配置为默认出现
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			keyId	-	keyId
+			questId	-	任务id
+			type	-	奖励类型
+1=主线武将 2=主线等级 3=主线皮肤 4=日常任务 5=七日盛典 6=七日礼包 7=成长礼包 8=在线礼包
+			desc	-	任务描述
+			sort	-	小的先弹
+			next	-	下一个任务
+			showGenral	-	展示明日可领武将
+			needLevel	-	最低展示等级（包括）
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	题目id
+			topic	-	题目
+支持富文本
+			difficulty	-	难度，1=难，2=易
+			option1	-	选项1
+1固定是正确答案
+			option2	-	选项2
+			option3	-	选项3
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	奖励id
+			type	-	奖励类型
+1=新手
+2=回归
+3=模式
+			maxLevel	-	最大等级
+			modelId	-	模式id
+			rewards	-	奖励
+			general	-	武将，没有则表示没有武将体验卡奖励
+			exRewards	-	
+			text	-	文字描述
+			failRewards	-	失败后领取奖励
+				-	备注名称
+				-
+		-->
+	<ModelReward id="1" type="1" maxLevel="30" modelId="151" rewards="936109,2" text="&lt;font color='#49E621'&gt;强力武将&lt;/font&gt;助您通关山河图" />
+	<ModelReward id="2" type="1" maxLevel="30" modelId="147" rewards="100401,2" text="主公，您的武将试炼&lt;font color='#49E621'&gt;专属奖励&lt;/font&gt;请收下" />
+	<ModelReward id="3" type="1" maxLevel="30" modelId="132" rewards="941501,1" text="&lt;font color='#49E621'&gt;保护卡&lt;/font&gt;请收下，下次将保护您不掉星" failRewards="1" />
+	<ModelReward id="4" type="1" maxLevel="45" modelId="148" rewards="952601,2;9020101,300" text="主公，请收下这些&lt;font color='#49E621'&gt;专属奖励&lt;/font&gt;" />
+	<ModelReward id="5" type="2" modelId="151" rewards="100401,2;100301,5;9054509,2" general="361" exRewards="100401,2;100301,5" text="欢迎回归，赠您&lt;font color='#49E621'&gt;专属奖励&lt;/font&gt;通关山河图" />
+	<ModelReward id="6" type="2" modelId="132" rewards="941501,1" text="欢迎回归，&lt;font color='#49E621'&gt;保护卡&lt;/font&gt;可以保护您排位不掉星" />
+	<ModelReward id="7" type="2" modelId="148" rewards="9020101,300;932409,1" general="324" exRewards="9020101,300" text="欢迎回归，请收下这些&lt;font color='#49E621'&gt;专属奖励&lt;/font&gt;" />
+	<ModelReward id="8" type="2" modelId="132" rewards="941501,1" text="&lt;font color='#49E621'&gt;保护卡&lt;/font&gt;保护了您不掉星，新保护卡请收下" failRewards="1" />
+	<ModelReward id="9" type="3" modelId="151" rewards="952601,2;100301,5" text="欢迎回到山河图，&lt;font color='#49E621'&gt;专属奖励&lt;/font&gt;助您通关山河图" />
+	<ModelReward id="10" type="3" modelId="148" rewards="952601,2;9020101,300" text="欢迎回到斗地主，请收下这些&lt;font color='#49E621'&gt;专属奖励&lt;/font&gt;" />
+	<ModelReward id="11" type="3" modelId="132" rewards="952601,2;941501,1" text="欢迎回到排位赛，&lt;font color='#49E621'&gt;专属奖励&lt;/font&gt;助您排位上星" />
+</Common>

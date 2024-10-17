@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			startTime	-	活动开始时间
+			endTime	-	活动结算 时间
+			daytime	-	每日开启结束时间
+			maxTime	-	一局游戏的最长时间 秒
+			activityValueCondition	-	每日购买体力规则
+			quest	-	好友挑战任务
+			startrank	-	排行榜开始时间
+			endrank	-	排行榜结算时间
+			opentips	-	开启条件文本
+			des_m	-	移动端玩法说明文字
+			des	-	玩法说明文字
+			maxGeneralStarUpgrade	-	每天的武将等阶升级游戏局数
+			goods	-	本次活动场兑换道具
+		-->
+	<Common startTime="20240403T000000" endTime="20240414T235959" maxTime="3600" activityValueCondition="9900,942601;9901,942701;9902,942801;9999,942901" quest="46876" maxGeneralStarUpgrade="2" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	难度    
+0 - 普通  1 - 困难  2 - 地狱
+			addScoreRatio	-	积分规则
+			passRewards	-	全部通关的奖励
+			desc	-	难度描述
+			unlocktips	-	解锁条件
+			leveltips	-	难度奖励描述
+			mengPoSeats	-	孟婆座位
+		-->
+	<Difficulty Id="0" addScoreRatio="0" passRewards="11480501,1;" mengPoSeats="3">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	关卡id 
+			name	-	关卡名称
+			list	-	可选武将组
+			event	-	触发事件组(触发1个）
+			-->
+		<Round Id="1" list="1001" event="102,104" />
+		<Round Id="2" list="1002,1003" />
+		<Round Id="3" list="1004" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			seatid	-	座位号
+			figure	-	身份   2=玩家  3=小兵  4=boss
+			-->
+		<SeatConfig seatid="0" figure="2" />
+		<SeatConfig seatid="1" figure="2" />
+		<SeatConfig seatid="2" figure="2" />
+		<SeatConfig seatid="3" figure="3" />
+		<SeatConfig seatid="4" figure="3" />
+		<SeatConfig seatid="5" figure="4" />
+		<SeatConfig seatid="6" figure="3" />
+	</Difficulty>
+	<Difficulty Id="1" addScoreRatio="0" passRewards="11480501,1;" mengPoSeats="3">
+		<Round Id="1" list="2001" event="201,202,203,205" />
+		<Round Id="2" list="2002,2003" />
+		<Round Id="3" list="2004" />
+		<SeatConfig seatid="0" figure="2" />
+		<SeatConfig seatid="1" figure="2" />
+		<SeatConfig seatid="2" figure="2" />
+		<SeatConfig seatid="3" figure="3" />
+		<SeatConfig seatid="4" figure="3" />
+		<SeatConfig seatid="5" figure="4" />
+		<SeatConfig seatid="6" figure="3" />
+	</Difficulty>
+	<Difficulty Id="2" addScoreRatio="0" passRewards="11480501,1;" mengPoSeats="3">
+		<Round Id="1" list="3001" event="301,302,303,304" />
+		<Round Id="2" list="3002,3003" />
+		<Round Id="3" list="3004" />
+		<SeatConfig seatid="0" figure="2" />
+		<SeatConfig seatid="1" figure="2" />
+		<SeatConfig seatid="2" figure="2" />
+		<SeatConfig seatid="3" figure="3" />
+		<SeatConfig seatid="4" figure="3" />
+		<SeatConfig seatid="5" figure="4" />
+		<SeatConfig seatid="6" figure="3" />
+	</Difficulty>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	事件ID
+			name	-	事件名称
+				-	关卡
+			type	-	事件类型
+1=击败孟婆
+2=吉人天相
+3=擒贼擒王
+			parm	-	事件参数
+			timeRange	-	开放时间
+			ratio	-	权重
+			desc	-	事件描述
+		-->
+	<event Id="101" type="1" timeRange="1;20210501T000000,20291230T235959" ratio="2000" desc="阶段1击败孟婆，跳过第二阶段" />
+	<event Id="102" type="2" parm="2" timeRange="1;20210501T000000,20291230T235959" ratio="1000" desc="阶段1中在2的倍数轮获胜，跳过第二阶段" />
+	<event Id="103" type="2" parm="3" timeRange="1;20210501T000000,20291230T235959" ratio="1000" desc="阶段1中在3的倍数轮获胜，跳过第二阶段" />
+	<event Id="104" type="3" timeRange="1;20210501T000000,20291230T235959" ratio="2000" desc="阶段1中不击杀前锋获胜，跳过第二阶段" />
+	<event Id="201" type="1" timeRange="1;20210501T000000,20291230T235959" ratio="3000" desc="阶段1击败孟婆，跳过第二阶段" />
+	<event Id="202" type="2" parm="2" timeRange="1;20210501T000000,20291230T235959" ratio="1500" desc="阶段1中在2的倍数轮获胜，跳过第二阶段" />
+	<event Id="203" type="2" parm="3" timeRange="1;20210501T000000,20291230T235959" ratio="1500" desc="阶段1中在3的倍数轮获胜，跳过第二阶段" />
+	<event Id="204" type="2" parm="4" timeRange="1;20210501T000000,20291230T235959" ratio="0" desc="阶段1中在4的倍数轮获胜，跳过第二阶段" />
+	<event Id="205" type="3" timeRange="1;20210501T000000,20291230T235959" ratio="3000" desc="阶段1中不击杀前锋获胜，跳过第二阶段" />
+	<event Id="301" type="1" timeRange="1;20210501T000000,20291230T235959" ratio="2000" desc="阶段1击败孟婆，跳过第二阶段" />
+	<event Id="302" type="2" parm="3" timeRange="1;20210501T000000,20291230T235959" ratio="1000" desc="阶段1中在3的倍数轮获胜，跳过第二阶段" />
+	<event Id="303" type="2" parm="4" timeRange="1;20210501T000000,20291230T235959" ratio="1000" desc="阶段1中在4的倍数轮获胜，跳过第二阶段" />
+	<event Id="304" type="3" timeRange="1;20210501T000000,20291230T235959" ratio="2000" desc="阶段1中不击杀前锋获胜，跳过第二阶段" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	武将组ID
+				-	关卡
+			bossCount	-	随机boss的个数
+			soldierCount	-	随机小兵的个数
+			timeRange	-	开放时间
+			firstTurnSeatId	-	首回合开始的人的座位id
+			ratio	-	权重
+		-->
+	<GeneralGroup Id="1001" bossCount="1" soldierCount="1" timeRange="1;20210501T000000,20291230T235959" firstTurnSeatId="0" ratio="1000">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			generals	-	武将id
+				-	武将名称
+				-	关卡
+			boss	-	AI类型   1=BOSS，0=小兵  2=孟婆
+			rank	-	武将等阶
+			initHp	-	初始血量总数
+			maxHp	-	最大血量
+			firstTurnHandCard	-	初始手牌
+			ratio	-	权重
+			-->
+		<General generals="4510" boss="2" rank="0" initHp="2" maxHp="2" firstTurnHandCard="2" ratio="100" />
+		<General generals="4500" boss="1" rank="0" initHp="3" maxHp="3" firstTurnHandCard="3" ratio="100" />
+		<General generals="4501" boss="1" rank="0" initHp="3" maxHp="3" firstTurnHandCard="3" ratio="100" />
+		<General generals="4502" boss="1" rank="0" initHp="3" maxHp="3" firstTurnHandCard="3" ratio="100" />
+		<General generals="4503" boss="1" rank="0" initHp="3" maxHp="3" firstTurnHandCard="3" ratio="100" />
+		<General generals="4504" boss="1" rank="0" initHp="3" maxHp="3" firstTurnHandCard="3" ratio="100" />
+		<General generals="80" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="2" ratio="100" />
+		<General generals="81" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="2" ratio="100" />
+		<General generals="82" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="2" ratio="100" />
+		<General generals="83" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="2" ratio="100" />
+	</GeneralGroup>
+	<GeneralGroup Id="1002" bossCount="1" soldierCount="0" timeRange="1;20210501T000000,20291230T235959" firstTurnSeatId="0" ratio="1000">
+		<General generals="4505" boss="1" rank="0" initHp="3" maxHp="3" firstTurnHandCard="3" ratio="100" />
+		<General generals="4506" boss="1" rank="0" initHp="3" maxHp="3" firstTurnHandCard="3" ratio="100" />
+		<General generals="4507" boss="1" rank="0" initHp="3" maxHp="3" firstTurnHandCard="3" ratio="100" />
+		<General generals="4508" boss="1" rank="0" initHp="3" maxHp="3" firstTurnHandCard="3" ratio="100" />
+		<General generals="84" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="2" ratio="100" />
+		<General generals="85" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="2" ratio="100" />
+	</GeneralGroup>
+	<GeneralGroup Id="1003" bossCount="1" soldierCount="0" timeRange="1;20210501T000000,20291230T235959" firstTurnSeatId="0" ratio="1000">
+		<General generals="4505" boss="1" rank="0" initHp="3" maxHp="3" firstTurnHandCard="3" ratio="100" />
+		<General generals="4506" boss="1" rank="0" initHp="3" maxHp="3" firstTurnHandCard="3" ratio="100" />
+		<General generals="4507" boss="1" rank="0" initHp="3" maxHp="3" firstTurnHandCard="3" ratio="100" />
+		<General generals="4508" boss="1" rank="0" initHp="3" maxHp="3" firstTurnHandCard="3" ratio="100" />
+		<General generals="86" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="2" ratio="100" />
+		<General generals="87" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="2" ratio="100" />
+	</GeneralGroup>
+	<GeneralGroup Id="1004" bossCount="1" soldierCount="0" timeRange="1;20210501T000000,20291230T235959" firstTurnSeatId="0" ratio="1000">
+		<General generals="4509" boss="1" rank="0" initHp="3" maxHp="3" firstTurnHandCard="3" ratio="200" />
+		<General generals="4511" boss="1" rank="0" initHp="3" maxHp="3" firstTurnHandCard="3" ratio="100" />
+		<General generals="88" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="2" ratio="100" />
+		<General generals="89" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="2" ratio="100" />
+	</GeneralGroup>
+	<GeneralGroup Id="2001" bossCount="1" soldierCount="1" timeRange="1;20210501T000000,20291230T235959" firstTurnSeatId="0" ratio="1000">
+		<General generals="4510" boss="2" rank="0" initHp="3" maxHp="3" firstTurnHandCard="3" ratio="100" />
+		<General generals="4500" boss="1" rank="1" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4501" boss="1" rank="1" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4502" boss="1" rank="1" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4503" boss="1" rank="1" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4504" boss="1" rank="1" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="80" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="3" ratio="100" />
+		<General generals="81" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="3" ratio="100" />
+		<General generals="82" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="3" ratio="100" />
+		<General generals="83" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="3" ratio="100" />
+	</GeneralGroup>
+	<GeneralGroup Id="2002" bossCount="1" soldierCount="1" timeRange="1;20210501T000000,20291230T235959" firstTurnSeatId="0" ratio="1000">
+		<General generals="4505" boss="1" rank="1" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4506" boss="1" rank="1" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4507" boss="1" rank="1" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4508" boss="1" rank="1" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="84" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="3" ratio="100" />
+		<General generals="85" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="3" ratio="100" />
+	</GeneralGroup>
+	<GeneralGroup Id="2003" bossCount="1" soldierCount="1" timeRange="1;20210501T000000,20291230T235959" firstTurnSeatId="0" ratio="1000">
+		<General generals="4505" boss="1" rank="1" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4506" boss="1" rank="1" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4507" boss="1" rank="1" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4508" boss="1" rank="1" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="86" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="3" ratio="100" />
+		<General generals="87" boss="0" rank="0" initHp="2" maxHp="2" firstTurnHandCard="3" ratio="100" />
+	</GeneralGroup>
+	<GeneralGroup Id="2004" bossCount="1" soldierCount="1" timeRange="1;20210501T000000,20291230T235959" firstTurnSeatId="0" ratio="1000">
+		<General generals="4509" boss="1" rank="2" initHp="4" maxHp="4" firstTurnHandCard="4" ratio="100" />
+		<General generals="4511" boss="1" rank="2" initHp="4" maxHp="4" firstTurnHandCard="4" ratio="100" />
+		<General generals="88" boss="0" rank="1" initHp="2" maxHp="2" firstTurnHandCard="3" ratio="100" />
+		<General generals="89" boss="0" rank="1" initHp="2" maxHp="2" firstTurnHandCard="3" ratio="100" />
+	</GeneralGroup>
+	<GeneralGroup Id="3001" bossCount="1" soldierCount="2" timeRange="1;20210501T000000,20291230T235959" firstTurnSeatId="0" ratio="1000">
+		<General generals="4510" boss="2" rank="1" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4500" boss="1" rank="2" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4501" boss="1" rank="2" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4502" boss="1" rank="2" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4503" boss="1" rank="2" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4504" boss="1" rank="2" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="80" boss="0" rank="1" initHp="2" maxHp="2" firstTurnHandCard="4" ratio="100" />
+		<General generals="81" boss="0" rank="1" initHp="2" maxHp="2" firstTurnHandCard="4" ratio="100" />
+		<General generals="82" boss="0" rank="1" initHp="2" maxHp="2" firstTurnHandCard="4" ratio="100" />
+		<General generals="83" boss="0" rank="1" initHp="2" maxHp="2" firstTurnHandCard="4" ratio="100" />
+	</GeneralGroup>
+	<GeneralGroup Id="3002" bossCount="1" soldierCount="1" timeRange="1;20210501T000000,20291230T235959" firstTurnSeatId="0" ratio="1000">
+		<General generals="4505" boss="1" rank="2" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4506" boss="1" rank="2" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4507" boss="1" rank="2" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4508" boss="1" rank="2" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="84" boss="0" rank="1" initHp="2" maxHp="2" firstTurnHandCard="4" ratio="100" />
+		<General generals="85" boss="0" rank="1" initHp="2" maxHp="2" firstTurnHandCard="4" ratio="100" />
+	</GeneralGroup>
+	<GeneralGroup Id="3003" bossCount="1" soldierCount="1" timeRange="1;20210501T000000,20291230T235959" firstTurnSeatId="0" ratio="2000">
+		<General generals="4505" boss="1" rank="2" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4506" boss="1" rank="2" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4507" boss="1" rank="2" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="4508" boss="1" rank="2" initHp="3" maxHp="3" firstTurnHandCard="4" ratio="100" />
+		<General generals="86" boss="0" rank="1" initHp="2" maxHp="2" firstTurnHandCard="4" ratio="100" />
+		<General generals="87" boss="0" rank="1" initHp="2" maxHp="2" firstTurnHandCard="4" ratio="100" />
+	</GeneralGroup>
+	<GeneralGroup Id="3004" bossCount="1" soldierCount="2" timeRange="1;20210501T000000,20291230T235959" firstTurnSeatId="0" ratio="2000">
+		<General generals="4509" boss="1" rank="4" initHp="5" maxHp="5" firstTurnHandCard="4" ratio="100" />
+		<General generals="4511" boss="1" rank="4" initHp="5" maxHp="5" firstTurnHandCard="4" ratio="100" />
+		<General generals="88" boss="0" rank="2" initHp="2" maxHp="2" firstTurnHandCard="4" ratio="100" />
+		<General generals="89" boss="0" rank="2" initHp="2" maxHp="2" firstTurnHandCard="4" ratio="100" />
+	</GeneralGroup>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	等阶
+			addHp	-	额外体力
+			addFirstCard	-	添加初始手牌数
+			exSkills	-	附加技能
+			desc	-	描述
+		-->
+	<GeneralRankPriv rank="0" addHp="0" addFirstCard="0" desc="无" />
+	<GeneralRankPriv rank="1" addHp="0" addFirstCard="1" exSkills="1335" desc="开局时随机使用一张装备牌" />
+	<GeneralRankPriv rank="2" addHp="1" addFirstCard="1" exSkills="1335" desc="出牌阶段出杀次数+1" />
+	<GeneralRankPriv rank="3" addHp="1" addFirstCard="2" exSkills="1335" desc="摸牌阶段摸牌数+1" />
+	<GeneralRankPriv rank="4" addHp="2" addFirstCard="2" exSkills="1333;1335" desc="获得技能【重生】" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	等阶
+			addHp	-	额外体力
+			addFirstCard	-	添加初始手牌数
+			exSkills	-	附加技能
+			desc	-	描述
+		-->
+	<BossRankPriv rank="0" addHp="0" addFirstCard="0" desc="无" />
+	<BossRankPriv rank="1" addHp="0" addFirstCard="0" exSkills="1334" desc="登场时随机使用一张武器牌和一张宝物牌" />
+	<BossRankPriv rank="2" addHp="1" addFirstCard="1" exSkills="1334" desc="出牌阶段出杀次数+1，你的回合开始时额外获得1张杀" />
+	<BossRankPriv rank="3" addHp="2" addFirstCard="2" exSkills="1334" desc="摸牌阶段摸牌数+1，你的手牌上限始终+1" />
+	<BossRankPriv rank="4" addHp="3" addFirstCard="3" exSkills="1334" desc="登场时视为使用一张南蛮入侵，且该南蛮入侵造成伤害+1（优先级高于登场技能）" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	特定ID
+			requireScore	-	所需积分
+			requireGoodsBaseId	-	所需道具
+			goodslist	-	对应奖励
+			good	-	特殊奖励外发光
+		-->
+	<Reward Id="1" requireScore="100" requireGoodsBaseId="0" goodslist="111701,1;" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	商品id
+			item_id	-	道具id
+				-	名字备注
+			points	-	积分要求
+			sorting	-	排序
+			shoprecom	-	推荐标签
+			shophot	-	热销标签
+			shopnew	-	新品标签
+			timeRange	-	开放时间
+		-->
+	<Market id="1" item_id="8195201" points="0" timeRange="1;20220329T000000,20220505T235959" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank1	-	排名
+			rank2	-	排名下限
+			itmes	-	奖励-实际上是手动发给php来发邮件的
+			name	-	奖励名字-php发邮件用
+			icon	-	显示宝箱icon123档次，1最好
+		-->
+</root>

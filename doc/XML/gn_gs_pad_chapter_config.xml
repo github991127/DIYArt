@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 新手教程章节配置 -->
+<ChapterInGameConfig>
+	<ChapterGameModel Model="46">
+	<!--<ChapterRule  ChapterId="1" UserCnt="2" Exp="15" GameMoney="10" Desc="新手教程第一章">-->
+		<!--配置摸牌堆卡牌内容-->
+		
+	<!--
+			<InitStackCardRule CardIdList="6,7,2,11,8,9,10,26,36,49,50,54,55,56,57,58,59,60,61,62,63,73,74,75,76,85,86,87,88,99"/>			
+			<DealChrRule ShowFigure="1" >
+	-->
+				<!-- 配置武将信息 Seat 座位（0号位固定是玩家使用）ChrId 武将编号 Maxhp 武将最高血量 Figure 武将身份 IsFirst是否第一个行动（只能配置一名为1）-->
+	<!--
+				<Chr Seat="0" ChrId="1" Maxhp="4" RemoveSpell="1" Figure="1" IsFirst="0" Desc="刘备,主公"/>
+				<Chr Seat="1" ChrId="146" Maxhp="1" RemoveSpell="1" Figure="3" IsFirst="1" Desc="黄巾贼,反贼"/>
+			</DealChrRule>			
+		</ChapterRule>
+	-->
+	
+	<!--2017-06-14  2.89版本修改，注释掉了第一章-->
+		<ChapterRule  ChapterId="1" UserCnt="2" Exp="15" GameMoney="20" Desc="新手教程第一章">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="15,33,2,11,8,9,10,26,36,49,34,16,3,42,47,21,59,60,61,62,63,73,74,75,76,85,86,87,88,99"/>
+			<DealChrRule ShowFigure="1" >
+				<Chr Seat="0" ChrId="1" Maxhp="4" RemoveSpell="1" Figure="1" IsFirst="0" Desc="刘备,主公"/>
+				<Chr Seat="1" ChrId="146" Maxhp="1" RemoveSpell="1" Figure="3" IsFirst="1" Desc="黄巾贼,反贼"/>
+			</DealChrRule>			
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="2" UserCnt="2" Exp="20" GameMoney="20" Desc="新手教程第二章">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="2,11,15,87,6,7,8,9,17,18,10,26,39,41,54,55,56,57,58,59,60,61,62,63,73,74,75,76,85,86,16,88,99"/>
+			<DealChrRule ShowFigure="1" >
+				<Chr Seat="0" ChrId="2" Maxhp="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc="关羽,主公"/>
+				<Chr Seat="1" ChrId="214" Maxhp="2" RemoveSpell="1" Figure="3" IsFirst="0" Desc="华雄,反贼"/>
+			</DealChrRule>			
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="3" UserCnt="4" Exp="25" GameMoney="20" Desc="新手教程第三章">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="6,7,8,9,10,28,2,103,36,49,50,54,55,56,57,58,59,60,61,62,63,73,39,74,75,76,85,86,87,88,99,100,101"/>
+			<DealChrRule ShowFigure="1" >
+				<Chr Seat="0" ChrId="3" Maxhp="4" RemoveSpell="0" Figure="2" IsFirst="0" Desc="张飞,忠臣"/>				
+				<Chr Seat="1" ChrId="2" Maxhp="4" RemoveSpell="1" Figure="2" IsFirst="1" Desc="关羽,忠臣"/>
+				<Chr Seat="2" ChrId="23" Maxhp="3" RemoveSpell="1" Figure="3" IsFirst="0" Desc="吕布,反贼"/>
+				<Chr Seat="3" ChrId="1" Maxhp="4" RemoveSpell="1" Figure="1" IsFirst="0" Desc="刘备,主公"/>			
+			</DealChrRule>			
+		</ChapterRule>
+
+		<ChapterRule  ChapterId="4" UserCnt="4" Exp="30" GameMoney="20" Desc="新手教程第四章">
+			<!--配置摸牌堆卡牌内容-->
+			<InitStackCardRule CardIdList="31,81,6,2,7,8,24,10,26,36,49,50,54,55,56,57,11,15,58,59,60,61,62,63,73,74,75,76,85,86,87,88,99,100,101"/>
+			<DealChrRule ShowFigure="1" >
+				<Chr Seat="0" ChrId="23" Maxhp="4" RemoveSpell="0" Figure="1" IsFirst="1" Desc="吕布,主公"/>				
+				<Chr Seat="1" ChrId="24" Maxhp="3" RemoveSpell="1" Figure="2" IsFirst="0" Desc="貂蝉,忠臣"/>
+				<Chr Seat="2" ChrId="45" Maxhp="3" RemoveSpell="1" Figure="3" IsFirst="0" Desc="董卓,反贼"/>
+				<Chr Seat="3" ChrId="372" Maxhp="3" RemoveSpell="1" Figure="2" IsFirst="0" Desc="王允,忠臣"/>		
+				
+			</DealChrRule>			
+		</ChapterRule>
+		
+		<!-- <ChapterRule  ChapterId="7" UserCnt="5" Exp="15" GameMoney="10" Desc="新手教程第七章">
+			<InitStackCardRule CardIdList="6,7,2,9,10,26,36,49,50,54,55,56,57,58,42,11,59,60,61,62,63,15,89,31,16,17,18,73,74,75,76,99,100,101,85,86,87,96,81,8,104"/>
+			<DealChrRule ShowFigure="1" >
+				<Chr Seat="0" ChrId="23" Maxhp="4" RemoveSpell="0" Figure="4" IsFirst="1" Desc="吕布,内奸"/>				
+				<Chr Seat="1" ChrId="148" Maxhp="1" RemoveSpell="1" Figure="3" IsFirst="0" Desc="叛军,反贼"/>
+				<Chr Seat="2" ChrId="45" Maxhp="2" RemoveSpell="1" Figure="1" IsFirst="0" Desc="董卓,主公"/>				
+				<Chr Seat="3" ChrId="147" Maxhp="1" RemoveSpell="1" Figure="2" IsFirst="0" Desc="卫兵,忠臣"/>
+				<Chr Seat="4" ChrId="149" Maxhp="1" RemoveSpell="1" Figure="3" IsFirst="0" Desc="叛军,反贼"/>
+			</DealChrRule>			
+		</ChapterRule>
+		
+		<ChapterRule  ChapterId="8" UserCnt="6" Exp="20" GameMoney="10" Desc="新手教程第八章">
+			<InitStackCardRule CardIdList="6,7,48,83,9,10,26,13,36,49,50,54,55,51,11,12,15,16,17,18,57,58,59,60,61,62,63,73,74,52,31,53,79,75,76,85,86,87,88,99,100,101,56,19,20,21,96,42,104,8"/>
+			<DealChrRule ShowFigure="0" >
+				<Chr Seat="0" ChrId="23" Maxhp="4" RemoveSpell="0" Figure="4" IsFirst="0" Desc="吕布,内奸"/>				
+				<Chr Seat="1" ChrId="149" Maxhp="1" RemoveSpell="1" Figure="3" IsFirst="0" Desc="叛军,反贼"/>
+				<Chr Seat="2" ChrId="24" Maxhp="2" RemoveSpell="1" Figure="3" IsFirst="0" Desc="貂蝉,反贼"/>
+				<Chr Seat="3" ChrId="45" Maxhp="3" RemoveSpell="1" Figure="1" IsFirst="1" Desc="董卓,主公"/>				
+				<Chr Seat="4" ChrId="148" Maxhp="2" RemoveSpell="1" Figure="3" IsFirst="0" Desc="叛军,反贼"/>
+				<Chr Seat="5" ChrId="184" Maxhp="1" RemoveSpell="1" Figure="2" IsFirst="0" Desc="李儒,忠臣"/>
+			</DealChrRule>			
+		</ChapterRule>-->
+		
+	</ChapterGameModel>
+</ChapterInGameConfig>

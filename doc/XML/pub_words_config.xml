@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--不同语言版本 使用的文字不同-->
+<!--不能动态加载-->
+<WordsConfig targetEncoding = "GBK">
+	<visitorNicknamePre>电 脑-</visitorNicknamePre>
+  <boss1v3RobotNickname>小 杀</boss1v3RobotNickname>
+  <killMonsterRobotNickname>小 杀-</killMonsterRobotNickname>
+</WordsConfig>

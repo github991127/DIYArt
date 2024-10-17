@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	积分赛id
+			channel_id	-	渠道id
+			name	-	比赛名称
+			IconOpen	-	启用赛事ICON提示 1=启用
+			Icon	-	U3D赛事ICON
+			optionRewardList	-	比赛排名奖励组
+			optionRewardList4	-	精英赛排名奖励组
+			optionRewardList2	-	比赛积分奖励组
+			optionRewardList3	-	比赛完赛奖励组
+			RaceAllTimes	-	比赛总次数
+			RaceDailyTimes	-	每日次数上限
+			Distribution	-	奖励发放形式（1=邮件，2=手动领取）
+			startTime	-	比赛创建时间
+			startTime2	-	比赛开始时间
+			endTime	-	结束时间
+			Publicity	-	比赛公示期(s)
+			ShowTime	-	展示时间，超过则不显示
+			RaceStartTime	-	每日可参与开始时间
+			RaceEndTime	-	每日可参与结束时间
+			RaceStartTime2	-	每日可参与开始时间2
+			RaceEndTime2	-	每日可参与结束时间2
+			RaceExtraTime	-	每日可参与额外时间
+！最后结尾一定不能多加分号，否则服务器会挂
+			SignTime	-	不可报名时间，距离比赛结束小于该时间不可报名
+			CloseTime	-	结算时间，距离该时间后结束（单位：秒）
+			signupGoods	-	报名道具-只能是实体道具，不能是货币（元宝购买）
+			signupGoodsCount	-	数量，0 表示免费
+			TeamAllow	-	是否允许组队.1=允许
+			ShowRank	-	比赛结算名次展示（最多展示多少名的结算弹窗）
+			clearDataTime	-	比赛结束后多久数据删除（单位：小时）
+			MatchId	-	录像id
+			ErrorTip	-	门票不足提示
+			ResourceBG	-	U3D赛事入口背景
+			DeviceLimit	-	同设备报名数量限制
+		-->
+	<scale id="22" name="王者之战S12" optionRewardList="414" optionRewardList3="1002" RaceAllTimes="20" RaceDailyTimes="8" Distribution="2" startTime="20240810T000000" startTime2="20240810T000000" endTime="20241016T230000" Publicity="432000" ShowTime="20241026T235959" RaceStartTime="90000" RaceEndTime="220000" SignTime="1800" CloseTime="1800" signupGoods="8230301" signupGoodsCount="0" TeamAllow="0" clearDataTime="360" MatchId="20000" DeviceLimit="3">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			model	-	比赛的模式
+			section	-	模式section
+			UsingOff	-	是否允许使用手气卡
+			maxGameTime	-	每局比赛时间上限
+			initScore	-	报名成功后的玩家的初始分数
+			escapeScore	-	逃跑扣除的分数
+			WinScore	-	胜利获得的分数
+			LossScore	-	失败获得的分数
+			GeneralCounts	-	发将数量
+			GiveUpOpen	-	是否允许投降
+			MateRank	-	匹配检测段位局数
+			GeneralList	-	配置将池列表,若未配置则使用logicrule配置
+			GeneralListFree	-	模式免费武将
+			Interchange	-	模式标界互通（不配置=允许，1=不允许）
+			-->
+		<GameInfo model="139" section="3" UsingOff="0" maxGameTime="1200" initScore="1000" escapeScore="100" WinScore="100" LossScore="30" GeneralCounts="10" GiveUpOpen="1" MateRank="5" GeneralList="35,39,406,410,164,188,323,326,328,335,389,392,26,299,300,301,302,303,307,310,311,314,315,316,319,440,441,442,443,444,445,446,451,452,458,463,480,485,526,587,597,600,610,627,586,602,623,635,202,203,220,226,229,103,107,108,361,506,510,543,118,344,365,369,374,378,379,418,431,467,497,502,517,521,551,558,562,572,577,578,632,612,624,631,634,657,7002,7004,7019,528,556,566,567,573,630,417,425,426,491,576" GeneralListFree="35,39,406,410,164,188,323,326,328,335,389,392,26,299,300,301,302,303,307,310,311,314,315,316,319,440,441,442,443,444,445,446,451,452,458,463,480,485,526,587,597,600,610,627,586,602,623,635,202,203,220,226,229,103,107,108,361,506,510,543,118,344,365,369,374,378,379,418,431,467,497,502,517,521,551,558,562,572,577,578,632,612,624,631,634,657,7002,7004,7019,528,556,566,567,573,630,417,425,426,491,576" Interchange="1" />
+	</scale>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			scaleId	-	奖励id
+			rank	-	排名下限，大于等于该名时的奖励（配置0表示比赛开始后没有产生牌局，给在线玩家发的奖励）
+			goods	-	奖励（最后不能填分号）
+				-	
+				-	
+				-
+		-->
+	<rewards scaleId="401" rank="1" goods="100006,51194;100006,51207;3289809,1;4084709,1;5107109,1 " />
+	<rewards scaleId="401" rank="2" goods="100006,51195;100006,51207;3289809,1;4084709,1;5107109,1" />
+	<rewards scaleId="401" rank="3" goods="100006,51196;100006,51207;3289809,1;4084709,1;5107109,1" />
+	<rewards scaleId="401" rank="4" goods="6085909,1;100006,51207;3289809,1;4084709,1;5107109,1" />
+	<rewards scaleId="401" rank="8" goods="6057409,1;1114301,1;112601,1;100006,51207;3289809,1;4084709,1;5107109,1" />
+	<rewards scaleId="401" rank="16" goods="6063109,1;1111801,1;112501,1;100006,51207;3289801,1;4084701,1;5107101,1" />
+	<rewards scaleId="401" rank="32" goods="100006,51207;3289801,1;4084701,1;5107101,1;" />
+	<rewards scaleId="402" rank="1" goods="8100801,1;1220301,1;8230601,1" />
+	<rewards scaleId="402" rank="2" goods="8100201,1" />
+	<rewards scaleId="402" rank="3" goods="1213201,1" />
+	<rewards scaleId="402" rank="8" goods="11372301,1" />
+	<rewards scaleId="405" rank="1" goods="21226101,66" />
+	<rewards scaleId="405" rank="2" goods="21226101,50" />
+	<rewards scaleId="405" rank="3" goods="21226101,28" />
+	<rewards scaleId="405" rank="8" goods="21226101,18" />
+	<rewards scaleId="405" rank="16" goods="21226101,8" />
+	<rewards scaleId="405" rank="24" goods="21226101,3" />
+	<rewards scaleId="406" rank="1" goods="21223901,5" />
+	<rewards scaleId="406" rank="2" goods="21223901,2" />
+	<rewards scaleId="406" rank="3" goods="21223901,1" />
+	<rewards scaleId="406" rank="10" goods="8100401,1" />
+	<rewards scaleId="406" rank="50" goods="8100201,3" />
+	<rewards scaleId="406" rank="100" goods="8100201,1" />
+	<rewards scaleId="407" rank="1" goods="9050201,1;6145309,1;6145909,1;3289809,1;4084709,1;5107109,1;100016,30000;21223901,3;100006,52147;" />
+	<rewards scaleId="407" rank="2" goods="6145909,1;3289809,1;4084709,1;5107109,1;100016,10000;21223901,1;100006,52147;" />
+	<rewards scaleId="407" rank="3" goods="6145909,1;3289809,1;4084709,1;5107109,1;21223901,1;100006,52147;" />
+	<rewards scaleId="407" rank="10" goods="6145909,1;3289801,1;4084701,1;5107101,1;100006,52147;" />
+	<rewards scaleId="407" rank="50" goods="6145909,1;3289801,1;4084701,1;5107101,1;100006,52147;" />
+	<rewards scaleId="407" rank="100" goods="6145909,1;3289802,1;4084702,1;5107102,1;100006,52147;" />
+	<rewards scaleId="407" rank="500" goods="3289802,1;4084702,1;5107102,1;100006,52147;" />
+	<rewards scaleId="408" rank="1" goods="3224009,1;4053009,1;5075409,1;21223901,6;7051901,1;6146809,1" />
+	<rewards scaleId="408" rank="2" goods="21223901,3;6146809,1" />
+	<rewards scaleId="408" rank="3" goods="21223901,1;6146809,1" />
+	<rewards scaleId="408" rank="10" goods="8100401,1;6146809,1" />
+	<rewards scaleId="408" rank="50" goods="8100401,1;435501,1" />
+	<rewards scaleId="408" rank="100" goods="8100201,3;435401,3" />
+	<rewards scaleId="408" rank="500" goods="435401,3" />
+	<rewards scaleId="409" rank="1" goods="21245101,1;6147109,1;7052201,1;21223901,3" />
+	<rewards scaleId="409" rank="2" goods="21245101,1;6147109,1;21223901,2" />
+	<rewards scaleId="409" rank="3" goods="21245101,1;6147109,1;21223901,1" />
+	<rewards scaleId="409" rank="10" goods="21245101,1;435501,1;8100401,1" />
+	<rewards scaleId="409" rank="50" goods="21245101,1;8100401,1" />
+	<rewards scaleId="409" rank="100" goods="8100201,3" />
+	<rewards scaleId="409" rank="500" goods="435401,3" />
+	<rewards scaleId="410" rank="1" goods="6149009,1;7053401,1;21223901,3" />
+	<rewards scaleId="410" rank="2" goods="6149009,1;21223901,2" />
+	<rewards scaleId="410" rank="3" goods="6149009,1;21223901,1" />
+	<rewards scaleId="410" rank="10" goods="435501,1;8100401,1" />
+	<rewards scaleId="410" rank="50" goods="8100401,1" />
+	<rewards scaleId="410" rank="100" goods="8100201,3" />
+	<rewards scaleId="410" rank="500" goods="435401,3" />
+	<rewards scaleId="411" rank="1" goods="6149409,1;7053801,1;21223901,3" />
+	<rewards scaleId="411" rank="2" goods="6149409,1;21223901,2" />
+	<rewards scaleId="411" rank="3" goods="6149409,1;21223901,1" />
+	<rewards scaleId="411" rank="10" goods="435501,1;8100401,1" />
+	<rewards scaleId="411" rank="50" goods="8100401,1" />
+	<rewards scaleId="411" rank="100" goods="8100201,3" />
+	<rewards scaleId="411" rank="500" goods="435401,3" />
+	<rewards scaleId="412" rank="1" goods="6151709,1;7055601,1;21223901,3" />
+	<rewards scaleId="412" rank="2" goods="6151709,1;21223901,2" />
+	<rewards scaleId="412" rank="3" goods="6151709,1;21223901,1" />
+	<rewards scaleId="412" rank="10" goods="435501,1;8100401,1" />
+	<rewards scaleId="412" rank="50" goods="8100401,1" />
+	<rewards scaleId="412" rank="100" goods="8100201,3" />
+	<rewards scaleId="412" rank="500" goods="435401,3" />
+	<rewards scaleId="413" rank="1" goods="9055601,1;21223901,6;11495901,1;3289809,1;4084709,1;5107109,1" />
+	<rewards scaleId="413" rank="2" goods="21223901,2;11495901,1;3289809,1;4084709,1;5107109,1" />
+	<rewards scaleId="413" rank="3" goods="21223901,1;11495901,1;3289809,1;4084709,1;5107109,1" />
+	<rewards scaleId="413" rank="10" goods="11495901,1;3289809,1;4084709,1;5107109,1" />
+	<rewards scaleId="413" rank="50" goods="6152709,1;3289801,1;4084701,1;5107101,1" />
+	<rewards scaleId="413" rank="100" goods="6152709,1;3289802,1;4084702,1;5107102,1" />
+	<rewards scaleId="413" rank="500" goods="435501,1;3289802,1;4084702,1;5107102,1" />
+	<rewards scaleId="414" rank="1" goods="21223901,10;100016,100000" />
+	<rewards scaleId="414" rank="2" goods="21223901,5;100016,50000" />
+	<rewards scaleId="414" rank="3" goods="21223901,3;100016,30000" />
+	<rewards scaleId="414" rank="8" goods="21223901,1;100016,10000" />
+	<rewards scaleId="414" rank="100" goods="100016,5000" />
+	<rewards scaleId="414" rank="1000" goods="100016,3000" />
+	<rewards scaleId="415" rank="1" goods="12130901,1;12131001,2;12131301,20000;" />
+	<rewards scaleId="415" rank="2" goods="12131101,1;12131001,2;12131301,20000;" />
+	<rewards scaleId="415" rank="4" goods="12131201,1;12131001,2;12131301,20000;" />
+	<rewards scaleId="415" rank="8" goods="12131001,2;12131301,20000;" />
+	<rewards scaleId="415" rank="16" goods="12131301,20000;" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			scaleId	-	奖励组id
+			RewardsId	-	奖励ID
+			scores	-	积分达标奖励
+			goods	-	奖励（最后不能填分号）
+				-	
+				-	
+				-
+		-->
+	<rewards2 scaleId="101" RewardsId="1" scores="1200" goods="8230101,1" />
+	<rewards2 scaleId="101" RewardsId="2" scores="1300" goods="435401,1" />
+	<rewards2 scaleId="101" RewardsId="3" scores="1400" goods="435401,1" />
+	<rewards2 scaleId="101" RewardsId="4" scores="1500" goods="200201,1" />
+	<rewards2 scaleId="101" RewardsId="5" scores="1600" goods="200201,1" />
+	<rewards2 scaleId="102" RewardsId="1" scores="1111" goods="1142901,1" />
+	<rewards2 scaleId="102" RewardsId="2" scores="1660" goods="435401,1" />
+	<rewards2 scaleId="102" RewardsId="3" scores="2111" goods="8100201,1" />
+	<rewards2 scaleId="103" RewardsId="1" scores="1314" goods="2131101,1" />
+	<rewards2 scaleId="103" RewardsId="2" scores="1888" goods="2131201,1" />
+	<rewards2 scaleId="103" RewardsId="3" scores="2333" goods="2131301,1" />
+	<rewards2 scaleId="104" RewardsId="1" scores="1500" goods="435401,1" />
+	<rewards2 scaleId="105" RewardsId="1" scores="1600" goods="435401,1" />
+	<rewards2 scaleId="106" RewardsId="1" scores="1600" goods="435401,1" />
+	<rewards2 scaleId="107" RewardsId="1" scores="1600" goods="435401,1" />
+	<rewards2 scaleId="108" RewardsId="1" scores="1600" goods="100006,52150" />
+	<rewards2 scaleId="109" RewardsId="1" scores="1600" goods="111801,100" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			RaceType	-	模式数据
+			SGeneralMinNum	-	S级武将最少数量
+			AGeneralMinNum	-	A级武将最少数量
+			cancelSelTime	-	取消选将等待时间
+		-->
+	<Common RaceType="139" SGeneralMinNum="15" AGeneralMinNum="25">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			type	-	发将类型
+1=交集
+2=并集
+3=额外增加格子
+			addNum	-	增加格子数
+			sGeneral	-	S
+			aGeneral	-	A
+			bGeneral	-	B
+			-->
+		<GeneralNums type="1" sGeneral="1" aGeneral="1" bGeneral="1" />
+		<GeneralNums type="2" sGeneral="1" aGeneral="2" bGeneral="2" />
+		<GeneralNums type="3" addNum="1" aGeneral="1" />
+		<GeneralNums type="3" addNum="2" aGeneral="1" bGeneral="1" />
+		<GeneralNums type="3" addNum="3" sGeneral="1" aGeneral="1" bGeneral="1" />
+		<GeneralNums type="3" addNum="4" sGeneral="1" aGeneral="2" bGeneral="1" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			score	-	积分下限
+			RaceMin	-	允许组队积分下限
+			-->
+		<SwordScores score="1000" RaceMin="0" />
+		<SwordScores score="1200" RaceMin="1000" />
+		<SwordScores score="1400" RaceMin="1200" />
+		<SwordScores score="1600" RaceMin="1400" />
+		<SwordScores score="1800" RaceMin="1600" />
+		<SwordScores score="2000" RaceMin="1800" />
+		<SwordScores score="2200" RaceMin="2000" />
+		<SwordScores score="2400" RaceMin="2200" />
+		<SwordScores score="2600" RaceMin="2400" />
+		<SwordScores score="2800" RaceMin="2600" />
+		<SwordScores score="3000" RaceMin="2800" />
+		<SwordScores score="3200" RaceMin="3000" />
+		<SwordScores score="3400" RaceMin="3200" />
+		<SwordScores score="3600" RaceMin="3400" />
+		<SwordScores score="3800" RaceMin="3600" />
+		<SwordScores score="4000" RaceMin="3800" />
+		<SwordScores score="4200" RaceMin="4000" />
+	</Common>
+	<Common RaceType="152" SGeneralMinNum="15" AGeneralMinNum="25" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			scaleId	-	奖励组id
+			RewardsId	-	奖励ID
+			Session	-	场次达标奖励
+			goods	-	奖励（最后不能填分号）
+				-	
+				-	
+				-
+		-->
+	<rewards3 scaleId="1001" RewardsId="1" Session="2" goods="8230101,1" />
+	<rewards3 scaleId="1001" RewardsId="2" Session="4" goods="435401,1" />
+	<rewards3 scaleId="1001" RewardsId="3" Session="6" goods="435401,1" />
+	<rewards3 scaleId="1001" RewardsId="4" Session="8" goods="200201,1" />
+	<rewards3 scaleId="1001" RewardsId="5" Session="10" goods="200201,1" />
+	<rewards3 scaleId="1002" RewardsId="1" Session="20" goods="100016,1000" />
+	<rewards3 scaleId="1003" RewardsId="1" Session="20" goods="100016,1500" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			name	-	名称
+			model	-	练习模式id
+			section	-	频道id
+			scaleid	-	对应的比赛id
+		-->
+	<training name="王战练习赛" model="152" section="5" scaleid="22" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			level	-	等级id
+			Name	-	等级名称
+				-	
+			Permission	-	对应权限
+			CodeType	-	生成邀请码类型1=不可重复 2=可重复
+			InviteCode	-	可生成邀请码数量
+			Initial	-	默认权限
+			InviteLevel	-	被邀请用户权限等级
+			waitTime	-	生成邀请码初始时间（单位：小时）
+		-->
+	<trainingVip level="1" Name="管理员" Permission="1,2,3" CodeType="1" InviteCode="0" InviteLevel="2" />
+	<trainingVip level="2" Name="专业" Permission="4,5,6" CodeType="1" InviteCode="7" InviteLevel="3" />
+	<trainingVip level="3" Name="高级" Permission="7,8,9" CodeType="1" InviteCode="1" InviteLevel="3" waitTime="24" />
+	<trainingVip level="4" Permission="10,11,12" CodeType="1" Initial="1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	权限id
+			ModelId	-	模式ID
+			Prior	-	权限优先级
+			CreateRoom	-	创建模式房间
+			ObVideo	-	OB视角录像
+			AiOrder	-	给AI点将功能
+			Order	-	给其他玩家点将功能
+			CardShow	-	手牌可见设置
+			GeneralData	-	将池总数据
+			Pause	-	暂停权限
+			PauseNumber	-	暂停次数
+			PauseTime	-	暂停时间
+		-->
+	<trainingLevel Id="1" ModelId="152" Prior="1521" CreateRoom="1" ObVideo="1" AiOrder="1" Order="1" CardShow="1" GeneralData="1" Pause="2" PauseNumber="999" PauseTime="600" />
+	<trainingLevel Id="2" ModelId="153" Prior="1531" CreateRoom="1" ObVideo="1" AiOrder="1" Order="1" CardShow="1" GeneralData="1" Pause="2" PauseNumber="999" PauseTime="600" />
+	<trainingLevel Id="3" ModelId="154" Prior="1541" CreateRoom="1" ObVideo="1" AiOrder="0" Order="1" CardShow="1" GeneralData="1" Pause="2" PauseNumber="999" PauseTime="600" />
+	<trainingLevel Id="4" ModelId="152" Prior="1522" CreateRoom="1" ObVideo="1" AiOrder="1" Order="1" CardShow="1" GeneralData="1" Pause="1" PauseNumber="2" PauseTime="600" />
+	<trainingLevel Id="5" ModelId="153" Prior="1532" CreateRoom="1" ObVideo="1" AiOrder="1" Order="1" CardShow="1" GeneralData="1" Pause="1" PauseNumber="2" PauseTime="600" />
+	<trainingLevel Id="6" ModelId="154" Prior="1542" CreateRoom="1" ObVideo="1" AiOrder="0" Order="0" CardShow="1" GeneralData="1" Pause="1" PauseNumber="2" PauseTime="600" />
+	<trainingLevel Id="7" ModelId="152" Prior="1523" CreateRoom="1" ObVideo="1" AiOrder="1" Order="1" CardShow="0" GeneralData="0" Pause="0" PauseNumber="0" />
+	<trainingLevel Id="8" ModelId="153" Prior="1533" CreateRoom="1" ObVideo="1" AiOrder="1" Order="1" CardShow="0" GeneralData="0" Pause="0" PauseNumber="0" />
+	<trainingLevel Id="9" ModelId="154" Prior="1543" CreateRoom="1" ObVideo="1" AiOrder="0" Order="0" CardShow="0" GeneralData="0" Pause="0" PauseNumber="0" />
+	<trainingLevel Id="10" ModelId="152" Prior="1524" CreateRoom="0" ObVideo="0" AiOrder="0" Order="0" CardShow="0" GeneralData="0" Pause="0" PauseNumber="0" />
+	<trainingLevel Id="11" ModelId="153" Prior="1534" CreateRoom="0" ObVideo="0" AiOrder="0" Order="0" CardShow="0" GeneralData="0" Pause="0" PauseNumber="0" />
+	<trainingLevel Id="12" ModelId="154" Prior="1544" CreateRoom="0" ObVideo="0" AiOrder="0" Order="0" CardShow="0" GeneralData="0" Pause="0" PauseNumber="0" />
+</root>

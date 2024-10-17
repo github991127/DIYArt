@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--举报配置
+  <ReportCfg dayMaxTimes="3">   : 每日举报上限次数
+  
+  <DirtyWords>                  : 不文明发言
+  <Unruly>                      : 违反游戏规则
+  <LongLeave>                   : 长时间托管或离开
+  
+  <DirtyWords normal="3" figureZhu="2" figureZhong="3" figureFan="4" figureNei="1" clearScore="30" punishLoopScore="20">
+  : 非身份惩罚分, 身份局主公分, 身份忠, 身份反, 身份内, 0点清理clearScore分数, 分数到达最高配置后每增加loop_score惩罚一次
+  
+  <Item score="60" banChat="15" banGame="0" />
+  : 分数累计到score时, 禁言分钟数, 禁止游戏分钟数
+-->
+
+<Root>
+  <ReportCfg dayMaxTimes="3" dayFakeMaxTimes="5">
+	<DirtyWords normal="3" figureZhu="2" figureZhong="3" figureFan="4" figureNei="1" clearScore="30" punishLoopScore="40" mailNoticeScore="5" maxSendMailCount="10">
+      <Item score="60" banChat="15" banGame="0" />
+      <Item score="90" banChat="30" banGame="3" />
+      <Item score="120" banChat="45" banGame="5" />
+      <Item score="160" banChat="60" banGame="15" />
+      <Item score="200" banChat="60" banGame="15" />
+	  <MailWarning title="被举报警告" content="你已经被多人举报不文明发言，继续被举报会被系统自动惩罚。良好的游戏环境需要我们每个人的维护"/> <!--通知被举报人邮件-->
+	  <MailNotice title="举报反馈" content="你举报的玩家$NK$由于被多人举报不文明发言，系统已开始处理，感谢你的举报。良好的游戏环境需要我们每个人的维护"/><!--通知举报人邮件，其中$NK$表示举报的昵称-->
+    </DirtyWords>
+    <Unruly normal="3" figureZhu="2" figureZhong="3" figureFan="4" figureNei="1" clearScore="30" punishLoopScore="40" mailNoticeScore="5" maxSendMailCount="10">
+      <Item score="60" banChat="0" banGame="2" />
+      <Item score="90" banChat="0" banGame="5" />
+      <Item score="120" banChat="0" banGame="15" />
+      <Item score="160" banChat="0" banGame="30" />
+      <Item score="200" banChat="0" banGame="30" />
+	  <MailWarning title="被举报警告" content="你已经被多人举报恶意违反规则，继续被举报会被系统自动惩罚。良好的游戏环境需要我们每个人的维护"/> <!--通知被举报人邮件-->
+	  <MailNotice title="举报反馈" content="你举报的玩家$NK$由于被多人举报恶意违反规则，系统已开始处理，感谢你的举报。良好的游戏环境需要我们每个人的维护"/><!--通知举报人邮件，其中$NK$表示举报的昵称-->
+    </Unruly>
+    <LongLeave normal="3" figureZhu="2" figureZhong="3" figureFan="4" figureNei="1" clearScore="30" punishLoopScore="40" mailNoticeScore="5" maxSendMailCount="10">
+      <Item score="60" banChat="0" banGame="2" />
+      <Item score="90" banChat="0" banGame="5" />
+      <Item score="120" banChat="0" banGame="15" />
+      <Item score="160" banChat="0" banGame="30" />
+      <Item score="200" banChat="0" banGame="30" />
+	  <MailWarning title="被举报警告" content="你已经被多人举报长时间托管/离开，继续被举报会被系统自动惩罚。良好的游戏环境需要我们每个人的维护"/> <!--通知被举报人邮件-->
+	  <MailNotice title="举报反馈" content="你举报的玩家$NK$由于被多人举报长时间托管/离开，系统已开始处理，感谢你的举报。良好的游戏环境需要我们每个人的维护"/><!--通知举报人邮件，其中$NK$表示举报的昵称-->
+    </LongLeave>
+  </ReportCfg>
+  
+<!--
+    <CreditInfo 
+  	maxValue 信义默认初始值 > 0
+  	minValue 扣除到的最低值 > 0
+  	reportSubValue 每被举报一次减少的值
+  	onlineAddSeconds 在线多少时间增加一次
+	onlineAddMaxPerDay 每天在线增加的最大值
+  	onlineAddValue 增加的值
+  	guardSeconds 保护扣减信义值的时间
+  	guardSubValue 最多扣多少点
+	reportPunishSeconds 被举报后多长时间之内，信义值不能增长.
+	<GameWin
+		exceptModel		那些模式例外不加信义值		labelmodel 以；分割
+		defaultValue		默认增加的信义值
+  	<GameWinAddValue
+  		model 游戏模式
+  		addValue 增加值
+  	<CreditRange
+  		min - max 惩罚状态的范围
+  		punish 格式: 惩罚类型，惩罚参数，惩罚参数；惩罚类型，惩罚参数，惩罚参数...；
+
+			惩罚类型	惩罚参数意义
+			     1         	游戏结束后扣除的额外经验
+			     2	       	游戏结束后扣除的额外银两
+			     3		只能进入的房间模式。
+-->
+  
+  <CreditInfo maxValue="100" minValue="100" reportSubValue="2" onlineAddSeconds="3600" onlineAddMaxPerDay="100" onlineAddValue="100" guardSeconds="86400" guardSubValue="1" reportPunishSeconds="90">
+  		<GameWin exceptModel="1" defaultValue="10"/>
+		<GameWinAddValue model="74" addValue="2"/>
+  		<CreditRange min="1" max="10" punish="1,1;2,1"/>
+  </CreditInfo>
+</Root>

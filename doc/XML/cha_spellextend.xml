@@ -1,0 +1,857 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ExtendParam>
+	<!--
+		id	-	0拓展技能id
+				-	说明：id和ID列要保持一样
+		-->
+	<spell id="1115">
+		<!--
+			index	-	拓展参数1
+			value	-	拓展参数2
+			desc	-	说明
+				-	说明：ParentID内填对应的技能id
+				-
+			-->
+		<Param index="0" value="4" />
+		<Param index="1" value="7" />
+		<Param index="2" value="10" />
+		<!--
+			index1	-	模式id，最大999
+			index2	-	等阶，最大9
+0~4对应1-5阶
+			index3	-	身份，最大9
+			index4	-	序号，最大99
+			value	-	参数值
+			desc	-	描述
+				-	说明：ParentID内填对应的技能id
+			-->
+		<!--
+			index	-	拓展参数1
+			value	-	拓展参数2
+			value2	-	拓展参数3
+			value3	-	拓展参数4
+			value4	-	拓展参数5
+			value5	-	拓展参数6
+			valuestring	-	拓展参数6字符串
+			desc	-	说明
+			-->
+	</spell>
+	<spell id="1120">
+		<Param index="0" value="3" />
+		<Param index="1" value="6" />
+		<Param index="2" value="9" />
+	</spell>
+	<spell id="365">
+		<Param index="0" value="196" desc="添加的七宝刀ID" />
+	</spell>
+	<spell id="1170">
+		<Param index="0" value="3" />
+		<Param index="1" value="5" />
+		<Param index="2" value="7" />
+	</spell>
+	<spell id="1191">
+		<Param index="0" value="4308" desc="霹雳车ID" />
+	</spell>
+	<spell id="1213">
+		<Param index="0" value="1201" desc="传承的技能id" />
+	</spell>
+	<spell id="1214">
+		<Param index="0" value="1202" desc="传承的技能id" />
+	</spell>
+	<spell id="1215">
+		<Param index="0" value="1203" desc="传承的技能id" />
+	</spell>
+	<spell id="1216">
+		<Param index="0" value="1204" desc="传承的技能id" />
+	</spell>
+	<spell id="1273">
+		<Param index="0" value="1205" desc="传承的技能id" />
+	</spell>
+	<spell id="1274">
+		<Param index="0" value="1206" desc="传承的技能id" />
+	</spell>
+	<spell id="1275">
+		<Param index="0" value="1207" desc="传承的技能id" />
+	</spell>
+	<spell id="1276">
+		<Param index="0" value="1208" desc="传承的技能id" />
+	</spell>
+	<spell id="1277">
+		<Param index="0" value="1209" desc="传承的技能id" />
+	</spell>
+	<spell id="1278">
+		<Param index="0" value="1210" desc="传承的技能id" />
+	</spell>
+	<spell id="1279">
+		<Param index="0" value="1211" desc="传承的技能id" />
+	</spell>
+	<spell id="1280">
+		<Param index="0" value="1212" desc="传承的技能id" />
+	</spell>
+	<spell id="1223">
+		<Param index="0" value="6" desc="第几轮发动" />
+		<Param index="1" value="6" desc="每过几轮发动" />
+		<Param index="2" value="1" desc="发动时选择的目标个数" />
+	</spell>
+	<spell id="1224">
+		<Param index="0" value="5" desc="第几轮发动" />
+		<Param index="1" value="5" desc="每过几轮发动" />
+		<Param index="2" value="1" desc="发动时选择的目标个数" />
+	</spell>
+	<spell id="1225">
+		<Param index="0" value="4" desc="第几轮发动" />
+		<Param index="1" value="4" desc="每过几轮发动" />
+		<Param index="2" value="2" desc="发动时选择的目标个数" />
+	</spell>
+	<spell id="1228">
+		<Param index="0" value="2" desc="发几个祭器技能" />
+		<Param index="1" value="2" desc="发几个九鼎技能" />
+	</spell>
+	<spell id="385">
+		<Param index="0" value="4327" />
+		<Param index="1" value="4328" />
+		<Param index="2" value="4329" />
+		<Param index="3" value="4330" />
+	</spell>
+	<spell id="1259">
+		<Param index="0" value="5000" desc="胡班" />
+		<Param index="1" value="0" desc="初始手牌" />
+	</spell>
+	<spell id="1260">
+		<Param index="0" value="5001" desc="普净" />
+		<Param index="1" value="3" desc="初始手牌" />
+	</spell>
+	<spell id="1267">
+		<Param index="0" value="1271" desc="传承的技能id" />
+	</spell>
+	<spell id="1272">
+		<Param index="0" value="1266" desc="传承的技能id" />
+	</spell>
+	<spell id="16">
+		<Param index="0" value="10020" desc="复制八卦" />
+		<Param index="1" value="10021" desc="复制八卦" />
+		<Param index="2" value="10035" desc="复制八卦" />
+		<Param index="3" value="10036" desc="复制八卦" />
+	</spell>
+	<spell id="200">
+		<Param index="0" value="10022" desc="复制仁王" />
+		<Param index="1" value="10023" desc="复制仁王" />
+	</spell>
+	<spell id="88">
+		<Param index="0" value="10024" desc="复制藤甲" />
+		<Param index="1" value="10025" desc="复制藤甲" />
+		<Param index="2" value="10037" desc="复制藤甲" />
+		<Param index="3" value="10038" desc="复制藤甲" />
+	</spell>
+	<spell id="89">
+		<Param index="0" value="10026" desc="复制白银" />
+		<Param index="1" value="10027" desc="复制白银" />
+	</spell>
+	<spell id="1404">
+		<Param index="0" value="10028" desc="获得秦弩" />
+		<Param index="1" value="10029" desc="获得秦弩" />
+	</spell>
+	<spell id="1445">
+		<Param index="0" value="10030" desc="添加三张商鞅变法" />
+		<Param index="1" value="10031" desc="添加三张商鞅变法" />
+		<Param index="2" value="10032" desc="添加三张商鞅变法" />
+	</spell>
+	<spell id="1448">
+		<Param index="0" value="10033" desc="真龙长剑" />
+		<Param index="1" value="10034" desc="传国玉玺" />
+	</spell>
+	<spell id="1439">
+		<Param index="0" value="10033" desc="真龙长剑" />
+		<Param index="1" value="10034" desc="传国玉玺" />
+	</spell>
+	<spell id="1325">
+		<Param index="0" value="4400" desc="回魂的卡牌id" />
+		<Param index="1" value="4401" desc="回魂的卡牌id" />
+	</spell>
+	<spell id="1518">
+		<Param index="0" value="10" desc="十胜十败触发使用的卡牌数量" />
+	</spell>
+	<spell id="6104">
+		<Param index="0" value="12205" desc="地契的卡牌id" />
+	</spell>
+	<spell id="973">
+		<Param index="0" value="10045" desc="彻里吉四乘粮舆" />
+		<Param index="1" value="10046" desc="彻里吉铁蒺玄舆" />
+		<Param index="2" value="10047" desc="彻里吉飞轮战舆" />
+	</spell>
+	<spell id="3053">
+		<Param index="0" value="8" desc="狷狭的技能库" />
+		<Param index="1" value="4" desc="狷狭的技能库" />
+		<Param index="2" value="5" desc="狷狭的技能库" />
+		<Param index="3" value="14" desc="狷狭的技能库" />
+		<Param index="4" value="83" desc="狷狭的技能库" />
+		<Param index="6" value="6004" desc="狷狭的技能库" />
+		<Param index="7" value="6005" desc="狷狭的技能库" />
+	</spell>
+	<spell id="3058">
+		<Param index="0" value="10048" desc="琼梳" />
+		<Param index="1" value="10049" desc="犀梳" />
+		<Param index="2" value="10050" desc="金梳" />
+	</spell>
+	<spell id="1355">
+		<ParamEx index1="116" index2="4" index3="2" index4="0" value="3" desc="回3血" />
+		<ParamEx index1="116" index2="4" index3="2" index4="1" value="3" desc="摸3牌" />
+		<ParamEx index1="91" index2="4" index3="2" index4="0" value="5" desc="回5血" />
+		<ParamEx index1="91" index2="4" index3="2" index4="1" value="5" desc="摸5牌" />
+		<ParamEx index1="91" index2="4" index3="4" index4="0" value="5" desc="回5血" />
+		<ParamEx index1="91" index2="4" index3="4" index4="1" value="5" desc="摸5牌" />
+		<ParamEx index1="91" index2="4" index3="4" index4="2" value="111" desc="获得崩坏技能" />
+		<ParamEx index1="39" index2="4" index3="1" index4="0" value="3" desc="回3血" />
+		<ParamEx index1="39" index2="4" index3="1" index4="1" value="3" desc="摸3牌" />
+		<ParamEx index1="39" index2="4" index3="4" index4="0" value="3" desc="回3血" />
+		<ParamEx index1="39" index2="4" index3="4" index4="1" value="3" desc="摸3牌" />
+		<ParamEx index1="151" index2="0" index3="4" index4="0" value="3" desc="回3血" />
+		<ParamEx index1="151" index2="0" index3="4" index4="1" value="3" desc="摸3牌" />
+		<ParamEx index1="151" index2="1" index3="4" index4="0" value="3" desc="回3血" />
+		<ParamEx index1="151" index2="1" index3="4" index4="1" value="3" desc="摸3牌" />
+		<ParamEx index1="151" index2="2" index3="4" index4="0" value="3" desc="回3血" />
+		<ParamEx index1="151" index2="2" index3="4" index4="1" value="3" desc="摸3牌" />
+		<ParamEx index1="151" index2="3" index3="4" index4="0" value="3" desc="回3血" />
+		<ParamEx index1="151" index2="3" index3="4" index4="1" value="3" desc="摸3牌" />
+		<ParamEx index1="151" index2="4" index3="4" index4="0" value="3" desc="回3血" />
+		<ParamEx index1="151" index2="4" index3="4" index4="1" value="3" desc="摸3牌" />
+		<ParamEx index1="164" index2="0" index3="4" index4="0" value="3" desc="回3血" />
+		<ParamEx index1="164" index2="0" index3="4" index4="1" value="3" desc="摸3牌" />
+		<ParamEx index1="164" index2="1" index3="4" index4="0" value="3" desc="回3血" />
+		<ParamEx index1="164" index2="1" index3="4" index4="1" value="3" desc="摸3牌" />
+		<ParamEx index1="164" index2="2" index3="4" index4="0" value="3" desc="回3血" />
+		<ParamEx index1="164" index2="2" index3="4" index4="1" value="3" desc="摸3牌" />
+		<ParamEx index1="164" index2="3" index3="4" index4="0" value="3" desc="回3血" />
+		<ParamEx index1="164" index2="3" index3="4" index4="1" value="3" desc="摸3牌" />
+		<ParamEx index1="164" index2="4" index3="4" index4="0" value="3" desc="回3血" />
+		<ParamEx index1="164" index2="4" index3="4" index4="1" value="3" desc="摸3牌" />
+	</spell>
+	<spell id="1356">
+		<ParamEx index1="116" index2="2" index3="2" index4="0" value="1" desc="玩家出杀+1" />
+		<ParamEx index1="116" index2="3" index3="2" index4="0" value="1" desc="玩家出杀+1" />
+		<ParamEx index1="116" index2="4" index3="2" index4="0" value="1" desc="玩家出杀+1" />
+		<ParamEx index1="116" index2="2" index3="4" index4="0" value="1" desc="年兽出杀+1" />
+		<ParamEx index1="116" index2="3" index3="4" index4="0" value="1" desc="年兽出杀+1" />
+		<ParamEx index1="116" index2="4" index3="4" index4="0" value="1" desc="年兽出杀+1" />
+		<ParamEx index1="116" index2="3" index3="3" index4="0" value="1" desc="生肖兽出杀+1" />
+		<ParamEx index1="116" index2="4" index3="3" index4="0" value="1" desc="生肖兽出杀+1" />
+		<ParamEx index1="91" index2="2" index3="3" index4="0" value="1" desc="烛阴出杀+1" />
+		<ParamEx index1="91" index2="2" index3="4" index4="0" value="1" desc="神武BOSS出杀+1" />
+		<ParamEx index1="91" index2="3" index3="3" index4="0" value="1" desc="烛阴出杀+1" />
+		<ParamEx index1="91" index2="3" index3="4" index4="0" value="1" desc="神武BOSS出杀+1" />
+		<ParamEx index1="91" index2="4" index3="3" index4="0" value="1" desc="烛阴出杀+1" />
+		<ParamEx index1="91" index2="4" index3="4" index4="0" value="1" desc="神武BOSS出杀+1" />
+		<ParamEx index1="91" index2="2" index3="2" index4="0" value="1" desc="玩家出杀+1" />
+		<ParamEx index1="91" index2="3" index3="2" index4="0" value="1" desc="玩家出杀+1" />
+		<ParamEx index1="91" index2="4" index3="2" index4="0" value="1" desc="玩家出杀+1" />
+		<ParamEx index1="39" index2="2" index3="1" index4="0" value="1" desc="玩家武将出杀+1" />
+		<ParamEx index1="39" index2="2" index3="2" index4="0" value="1" desc="玩家方英灵出杀+1" />
+		<ParamEx index1="39" index2="2" index3="3" index4="0" value="1" desc="玩家方器械出杀+1" />
+		<ParamEx index1="39" index2="2" index3="4" index4="0" value="1" desc="敌方英灵出杀+1" />
+		<ParamEx index1="39" index2="2" index3="5" index4="0" value="1" desc="敌方器械出杀+1" />
+		<ParamEx index1="39" index2="3" index3="1" index4="0" value="1" desc="玩家武将出杀+1" />
+		<ParamEx index1="39" index2="3" index3="2" index4="0" value="1" desc="玩家方英灵出杀+1" />
+		<ParamEx index1="39" index2="3" index3="3" index4="0" value="1" desc="玩家方器械出杀+1" />
+		<ParamEx index1="39" index2="3" index3="4" index4="0" value="1" desc="敌方英灵出杀+1" />
+		<ParamEx index1="39" index2="3" index3="5" index4="0" value="1" desc="敌方器械出杀+1" />
+		<ParamEx index1="39" index2="4" index3="1" index4="0" value="1" desc="玩家武将出杀+1" />
+		<ParamEx index1="39" index2="4" index3="2" index4="0" value="1" desc="玩家方英灵出杀+1" />
+		<ParamEx index1="39" index2="4" index3="3" index4="0" value="1" desc="玩家方器械出杀+1" />
+		<ParamEx index1="39" index2="4" index3="4" index4="0" value="2" desc="敌方英灵出杀+1" />
+		<ParamEx index1="39" index2="4" index3="5" index4="0" value="1" desc="敌方器械出杀+1" />
+		<ParamEx index1="111" index2="2" index3="1" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="2" index3="2" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="2" index3="3" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="2" index3="4" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="2" index3="5" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="2" index3="6" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="3" index3="1" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="3" index3="2" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="3" index3="3" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="3" index3="4" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="3" index3="5" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="3" index3="6" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="4" index3="1" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="4" index3="2" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="4" index3="3" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="4" index3="4" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="4" index3="5" index4="0" value="1" desc="出杀次数+1" />
+		<ParamEx index1="111" index2="4" index3="6" index4="0" value="1" desc="出杀次数+1" />
+	</spell>
+	<spell id="1357">
+		<ParamEx index1="116" index2="3" index3="2" index4="0" value="1" desc="玩家摸牌+1" />
+		<ParamEx index1="116" index2="4" index3="2" index4="0" value="1" desc="玩家摸牌+1" />
+		<ParamEx index1="116" index2="3" index3="4" index4="0" value="1" desc="玩家摸牌+1" />
+		<ParamEx index1="116" index2="4" index3="4" index4="0" value="2" desc="玩家摸牌+2" />
+		<ParamEx index1="116" index2="4" index3="3" index4="0" value="1" desc="玩家摸牌+1" />
+		<ParamEx index1="91" index2="3" index3="2" index4="0" value="1" desc="玩家摸牌+1" />
+		<ParamEx index1="91" index2="3" index3="3" index4="0" value="1" desc="烛阴摸牌+1" />
+		<ParamEx index1="91" index2="3" index3="4" index4="0" value="1" desc="神武BOSS摸牌+1" />
+		<ParamEx index1="91" index2="4" index3="2" index4="0" value="1" desc="玩家摸牌+1" />
+		<ParamEx index1="91" index2="4" index3="3" index4="0" value="1" desc="烛阴摸牌+1" />
+		<ParamEx index1="91" index2="4" index3="4" index4="0" value="1" desc="神武BOSS摸牌+1" />
+		<ParamEx index1="39" index2="3" index3="1" index4="0" value="1" desc="玩家武将摸牌+1" />
+		<ParamEx index1="39" index2="3" index3="2" index4="0" value="1" desc="玩家方英灵摸牌+1" />
+		<ParamEx index1="39" index2="3" index3="3" index4="0" value="1" desc="玩家方器械摸牌+1" />
+		<ParamEx index1="39" index2="3" index3="4" index4="0" value="1" desc="敌方英灵摸牌+1" />
+		<ParamEx index1="39" index2="3" index3="5" index4="0" value="1" desc="敌方器械摸牌+1" />
+		<ParamEx index1="39" index2="4" index3="1" index4="0" value="1" desc="玩家武将摸牌+1" />
+		<ParamEx index1="39" index2="4" index3="2" index4="0" value="1" desc="玩家方英灵摸牌+1" />
+		<ParamEx index1="39" index2="4" index3="3" index4="0" value="1" desc="玩家方器械摸牌+1" />
+		<ParamEx index1="39" index2="4" index3="4" index4="0" value="2" desc="敌方英灵摸牌+1" />
+		<ParamEx index1="39" index2="4" index3="5" index4="0" value="1" desc="敌方器械摸牌+1" />
+		<ParamEx index1="111" index2="1" index3="1" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="1" index3="2" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="1" index3="3" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="1" index3="4" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="1" index3="5" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="1" index3="6" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="2" index3="1" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="2" index3="2" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="2" index3="3" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="2" index3="4" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="2" index3="5" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="2" index3="6" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="3" index3="1" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="3" index3="2" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="3" index3="3" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="3" index3="4" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="3" index3="5" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="3" index3="6" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="4" index3="1" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="4" index3="2" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="4" index3="3" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="4" index3="4" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="4" index3="5" index4="0" value="1" desc="摸牌数+1" />
+		<ParamEx index1="111" index2="4" index3="6" index4="0" value="1" desc="摸牌数+1" />
+	</spell>
+	<spell id="1359">
+		<ParamEx index1="91" index2="1" index3="3" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="91" index2="1" index3="4" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="91" index2="2" index3="3" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="91" index2="2" index3="4" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="91" index2="3" index3="3" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="91" index2="3" index3="4" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="91" index2="4" index3="3" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="91" index2="4" index3="4" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="1" index3="1" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="1" index3="2" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="1" index3="3" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="1" index3="4" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="1" index3="5" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="2" index3="1" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="2" index3="2" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="2" index3="3" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="2" index3="4" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="2" index3="5" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="3" index3="1" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="3" index3="2" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="3" index3="3" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="3" index3="4" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="3" index3="5" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="4" index3="1" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="4" index3="2" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="4" index3="3" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="4" index3="4" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="39" index2="4" index3="5" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="1" index3="1" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="1" index3="2" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="1" index3="3" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="1" index3="4" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="1" index3="5" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="1" index3="6" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="2" index3="1" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="2" index3="2" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="2" index3="3" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="2" index3="4" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="2" index3="5" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="2" index3="6" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="3" index3="1" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="3" index3="2" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="3" index3="3" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="3" index3="4" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="3" index3="5" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="3" index3="6" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="4" index3="1" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="4" index3="2" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="4" index3="3" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="4" index3="4" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="4" index3="5" index4="0" value="3" desc="随机使用装备牌1张" />
+		<ParamEx index1="111" index2="4" index3="6" index4="0" value="3" desc="随机使用装备牌1张" />
+	</spell>
+	<spell id="1354">
+		<Param index="0" value="0" desc="难度对应暴怒伤害" />
+		<Param index="1" value="0" desc="难度对应暴怒伤害" />
+		<Param index="2" value="1" desc="难度对应暴怒伤害" />
+	</spell>
+	<spell id="1217">
+		<Param index="0" value="1" desc="难度对应汲源摸牌数" />
+		<Param index="1" value="2" desc="难度对应汲源摸牌数" />
+		<Param index="2" value="3" desc="难度对应汲源摸牌数" />
+	</spell>
+	<spell id="11003">
+		<Param2 index="0" value="12110" value2="25" desc="蒲元的无双方天戟" />
+		<Param2 index="1" value="12111" value2="100" desc="蒲元的鬼龙斩月刀" />
+		<Param2 index="2" value="12112" value2="25" desc="蒲元的赤血青锋" />
+		<Param2 index="3" value="12113" value2="50" desc="蒲元的镔铁双戟" />
+		<Param2 index="4" value="12114" value2="100" desc="乌铁锁链" />
+		<Param2 index="5" value="12115" value2="100" desc="五行鹤翎扇" />
+		<Param2 index="6" value="12116" value2="50" desc="玲珑狮蛮带" />
+		<Param2 index="7" value="12117" value2="100" desc="红棉百花袍" />
+		<Param2 index="8" value="12118" value2="2" desc="国风玉袍" />
+		<Param2 index="9" value="12119" value2="15" desc="奇门八阵" />
+		<Param2 index="10" value="12120" value2="100" desc="护心镜" />
+		<Param2 index="11" value="12121" value2="100" desc="黑光铠" />
+		<Param2 index="12" value="12122" value2="50" desc="束发紫金冠" />
+		<Param2 index="13" value="12123" value2="50" desc="虚妄之冕" />
+		<Param2 index="14" value="12124" value2="100" desc="天机图" />
+		<Param2 index="15" value="12125" value2="100" desc="太公阴符" />
+		<Param2 index="16" value="12126" value2="50" desc="三略" />
+		<Param2 index="17" value="12127" value2="25" desc="照骨镜" />
+	</spell>
+	<spell id="3135">
+		<Param index="0" value="3137" desc="圣质命运线" />
+		<Param index="1" value="3138" desc="持纲命运线" />
+		<Param index="2" value="3139" desc="穹览命运线" />
+		<Param index="3" value="3140" desc="权道命运线" />
+		<Param index="4" value="3141" desc="交辉命运线" />
+		<Param index="5" value="3142" desc="渊虑命运线" />
+	</spell>
+	<spell id="3137">
+		<Param index="0" value="108" desc="英魂" />
+		<Param index="1" value="288" desc="弘德" />
+		<Param index="2" value="3125" desc="秉壹" />
+	</spell>
+	<spell id="3138">
+		<Param index="0" value="961" desc="观微" />
+		<Param index="1" value="914" desc="弼政" />
+		<Param index="2" value="745" desc="安国" />
+	</spell>
+	<spell id="3139">
+		<Param index="0" value="303" desc="涉猎" />
+		<Param index="1" value="780" desc="问卦" />
+		<Param index="2" value="4058" desc="博图1v1" />
+	</spell>
+	<spell id="3140">
+		<Param index="0" value="872" desc="制衡" />
+		<Param index="1" value="794" desc="诫训" />
+		<Param index="2" value="429" desc="安恤" />
+	</spell>
+	<spell id="3141">
+		<Param index="0" value="361" desc="下书" />
+		<Param index="1" value="69" desc="结姻" />
+		<Param index="2" value="121" desc="缔盟" />
+	</spell>
+	<spell id="3142">
+		<Param index="0" value="963" desc="观潮" />
+		<Param index="1" value="823" desc="决堰" />
+		<Param index="2" value="3072" desc="澜疆" />
+		<Param2 index="0" valuestring="12130,12131,12132,12133,12134,12135,12136,12137,12138,12139" desc="神孙权长安大舰" />
+	</spell>
+	<spell id="3130">
+		<Param index="0" value="1" desc="雌黄的技能库" />
+		<Param index="1" value="8" desc="雌黄的技能库" />
+		<Param index="2" value="4" desc="雌黄的技能库" />
+		<Param index="3" value="5" desc="雌黄的技能库" />
+		<Param index="4" value="14" desc="雌黄的技能库" />
+		<Param index="6" value="83" desc="雌黄的技能库" />
+		<Param index="7" value="7" desc="雌黄的技能库" />
+		<Param index="8" value="6004" desc="雌黄的技能库" />
+		<Param index="9" value="6005" desc="雌黄的技能库" />
+		<Param index="10" value="6000" desc="雌黄的技能库" />
+		<Param index="11" value="6003" desc="雌黄的技能库" />
+		<Param index="12" value="3144" desc="雌黄的技能库" />
+		<Param index="13" value="2022" desc="雌黄的技能库" />
+	</spell>
+	<spell id="12001">
+		<Param index="0" value="5" desc="明察（选择）等待时间" />
+	</spell>
+	<spell id="12002">
+		<Param index="0" value="5" desc="明察（随机等待时间）" />
+	</spell>
+	<spell id="12006">
+		<Param index="0" value="5" desc="明察（选择）等待时间" />
+	</spell>
+	<spell id="12003">
+		<Param index="0" value="3" desc="奋战标记上限" />
+	</spell>
+	<spell id="3132">
+		<Param index="0" value="1" desc="笔心初始的次数(后续会互换)" />
+		<Param index="1" value="3" desc="笔心初始的摸牌量(后续会互换)" />
+	</spell>
+	<spell id="3168">
+		<Param index="0" value="8" desc="到底是几龙(配1则摸至场上角色数张，大于1配几则摸至几张)" />
+	</spell>
+	<spell id="12007">
+		<Param index="0" value="3" desc="奋战标记上限" />
+	</spell>
+	<spell id="3181">
+		<Param2 index="0" valuestring="745,961,872,3125,429,927,361,121,3072,489,914,794,743,3204,953" desc="神孙权(身份场)驭衡技能池" />
+	</spell>
+	<spell id="3182">
+		<Param2 index="0" valuestring="3183,3184,3185" desc="神孙权(身份场)帝力依次获得的技能" />
+	</spell>
+	<spell id="3212">
+		<Param index="0" value="3211" desc="传承的技能id" />
+	</spell>
+	<spell id="3214">
+		<Param index="0" value="3213" desc="传承的技能id" />
+	</spell>
+	<spell id="3240">
+		<Param index="0" value="1" desc="类型:1点数优先 2期望优先" />
+		<Param index="1" value="50000" desc="不考虑期望，纯随机的概率(分母10万)" />
+		<Param index="2" value="6" desc="最小摸牌数量" />
+		<Param index="3" value="9" desc="最大摸牌数量" />
+	</spell>
+	<spell id="3242">
+		<Param index="0" value="979" desc="贺齐绮胄技能" />
+		<Param index="1" value="712" desc="贺齐绮胄技能" />
+		<Param index="2" value="708" desc="贺齐绮胄技能" />
+		<Param index="3" value="3072" desc="贺齐绮胄技能" />
+	</spell>
+	<spell id="3239">
+		<Param index="0" value="1" desc="三首1 当你受到伤害时，你可以亮出牌堆顶三张牌，若包含本回合未使用过的类型，你防止此伤害。&#10;三首2 当你受到伤害时，你可以亮出牌堆顶三张牌，若包含本回合使用过的类型，你防止此伤害。&#10;三首3 当你受到伤害时，你可以亮出牌堆顶三张牌，若皆为本回合使用过的类型，你防止此伤害。&#10;三首4 当你受到伤害时，你可以亮出牌堆顶三张牌，若皆为本回合未使用过的类型，你防止此伤害。" />
+	</spell>
+	<spell id="3245">
+		<Param index="0" value="0" desc="无效" />
+		<Param index="1" value="3247" desc="红桃♥烈暑" />
+		<Param index="2" value="3248" desc="方块♦凝雾" />
+		<Param index="3" value="3249" desc="黑桃♠骤雨" />
+		<Param index="4" value="3250" desc="梅花♣严霜" />
+	</spell>
+	<spell id="3253">
+		<Param index="0" value="0" desc="选项2令受伤者摸牌数" />
+	</spell>
+	<spell id="12014">
+		<Param index="0" value="2" desc="每次使用锦囊时自动消耗2个粽子，并摸一张牌" />
+	</spell>
+	<spell id="12015">
+		<Param index="0" value="4" desc="每次造成伤害时自动消耗4个粽子，此伤害+1" />
+	</spell>
+	<spell id="12016">
+		<Param index="0" value="2" desc="你使用【杀】造成伤害后，自动消耗2个粽子并摸一张牌。" />
+	</spell>
+	<spell id="12017">
+		<Param index="0" value="1" desc="你每使用一张装备牌，自动消耗1个粽子并摸一张牌。" />
+	</spell>
+	<spell id="12018">
+		<Param index="0" value="4" desc="你使用【桃】回复体力后，自动消耗4个粽子额外恢复一点体力" />
+	</spell>
+	<spell id="12019">
+		<Param index="0" value="2" desc="摸牌阶段开始时移除所有粽子，每移除2个粽子摸一张牌" />
+	</spell>
+	<spell id="12020">
+		<Param index="0" value="2" desc="结束阶段开始时移除所有粽子，每移除2个粽子摸一张牌" />
+	</spell>
+	<spell id="12021">
+		<Param index="0" value="2" desc="根据拥有的粽子数提供如下效果：2个，摸牌数+1；4个，使用牌无距离限制；6个，出杀次数+1；结束阶段，移除自身一半的粽子数" />
+		<Param index="1" value="4" desc="根据拥有的粽子数提供如下效果：2个，摸牌数+1；4个，使用牌无距离限制；6个，出杀次数+1；结束阶段，移除自身一半的粽子数" />
+		<Param index="2" value="6" desc="根据拥有的粽子数提供如下效果：2个，摸牌数+1；4个，使用牌无距离限制；6个，出杀次数+1；结束阶段，移除自身一半的粽子数" />
+	</spell>
+	<spell id="3325">
+		<Param index="0" value="3" desc="SCL的飞扬，弃置几张牌可以移除一张判定区的牌" />
+	</spell>
+	<spell id="3324">
+		<Param index="0" value="1" desc="可以复活N=3次" />
+		<ParamEx index1="151" index2="4" index3="1" index4="0" value="3" desc="回3血" />
+		<ParamEx index1="151" index2="4" index3="1" index4="1" value="3" desc="摸3牌" />
+		<ParamEx index1="164" index2="4" index3="1" index4="0" value="3" desc="回3血" />
+		<ParamEx index1="164" index2="4" index3="1" index4="1" value="3" desc="摸3牌" />
+	</spell>
+	<spell id="3338">
+		<Param2 index="0" valuestring="4,5,6,7,8,9,10,12,13,14,83,85" desc="百出可以标记的技能ID" />
+	</spell>
+	<spell id="3355">
+		<Param index="0" value="0" desc="配0吕伯奢缚豕加伤减伤目标日志中仅自己可见，配1所有人皆可见" />
+	</spell>
+	<spell id="3392">
+		<Param index="0" value="31001" desc="神典韦 挈挾卡牌ID1" />
+		<Param index="1" value="31002" desc="神典韦 挈挾卡牌ID2" />
+		<Param index="2" value="31003" desc="神典韦 挈挾卡牌ID3" />
+		<Param index="3" value="31004" desc="神典韦 挈挾卡牌ID4" />
+		<Param index="4" value="31005" desc="神典韦 挈挾卡牌ID5" />
+		<Param index="5" value="31006" desc="神典韦 挈挾卡牌ID6" />
+		<Param index="6" value="31007" desc="神典韦 挈挾卡牌ID7" />
+		<Param index="7" value="31008" desc="神典韦 挈挾卡牌ID8" />
+		<Param index="8" value="31009" desc="神典韦 挈挾卡牌ID9" />
+		<Param index="9" value="31010" desc="神典韦 挈挾卡牌ID10" />
+		<Param index="10" value="31011" desc="神典韦 挈挾卡牌ID11" />
+		<Param index="11" value="31012" desc="神典韦 挈挾卡牌ID12" />
+		<Param index="12" value="31013" desc="神典韦 挈挾卡牌ID13" />
+		<Param index="13" value="31014" desc="神典韦 挈挾卡牌ID14" />
+		<Param index="14" value="31015" desc="神典韦 挈挾卡牌ID15" />
+		<Param index="15" value="31016" desc="神典韦 挈挾卡牌ID16" />
+		<Param2 index="0" valuestring="2,0,10;3;33|3,0,2;2;34|4,0,10;0;36|5,0,10;0;37|6,0,10;0;38|7,0,10;0;0|8,0,10;0;0|9,0,10;0;0|10,0,10;0;63|11,0,10;0;0|12,0,10;0;0|13,0,10;0;61|14,0,10;0;0|15,0,10;0;0|16,0,10;0;0|17,0,10;0;0|18,0,10;0;0|19,0,10;0;50|23,0,10;0;66|24,0,10;0;0|26,0,10;0;297|28,0,10;0;363|593,0,50;0;3479|585,0,5;0;3374,3375|579,0,2;0;3363|525,0,2;0;3226|480,0,2;0;985" desc="神典韦 挈挾武将将池    武将ID,是否需要开通,权重;互斥武将1,互斥武将2;技能ID1,技能ID2" />
+	</spell>
+	<spell id="3399">
+		<Param index="0" value="8" desc="玄注的技能库" />
+		<Param index="1" value="4" desc="玄注的技能库" />
+		<Param index="2" value="5" desc="玄注的技能库" />
+		<Param index="3" value="14" desc="玄注的技能库" />
+		<Param index="4" value="83" desc="玄注的技能库" />
+		<Param index="6" value="7" desc="玄注的技能库" />
+		<Param index="7" value="6004" desc="玄注的技能库" />
+		<Param index="8" value="6005" desc="玄注的技能库" />
+		<Param index="9" value="6000" desc="玄注的技能库" />
+		<Param index="10" value="6003" desc="玄注的技能库" />
+		<Param index="11" value="3144" desc="玄注的技能库" />
+		<Param index="12" value="2022" desc="玄注的技能库" />
+	</spell>
+	<spell id="14035">
+		<Param index="0" value="1" desc="若伤害值小于等于A，将此伤害改为0" />
+		<Param index="1" value="1" desc="若伤害值大于B，将伤害改为1" />
+	</spell>
+	<spell id="14036" />
+	<spell id="14037" />
+	<spell id="14038">
+		<Param index="0" value="2" desc="你使用【酒】的次数+A" />
+	</spell>
+	<spell id="14039">
+		<Param index="0" value="2" desc="回复防止伤害A倍的体力值" />
+		<Param index="1" value="1" desc="摸回复值B倍的牌" />
+	</spell>
+	<spell id="14040">
+		<Param index="0" value="0" desc="分配等同体力上限+A的火焰伤害" />
+	</spell>
+	<spell id="14041">
+		<Param index="0" value="1" desc="造成伤害后，增加的【疫】数量" />
+		<Param index="1" value="3" desc="【疫】标记达到B后，扣除的体力上限" />
+	</spell>
+	<spell id="14042">
+		<Param index="0" value="1" desc="造成A点雷属性伤害 " />
+	</spell>
+	<spell id="14043">
+		<Param index="0" value="2" desc="弃置的牌数量" />
+	</spell>
+	<spell id="14044">
+		<Param index="0" value="2" desc="重铸A张手牌" />
+		<Param index="1" value="1" desc="弃置其中B张" />
+	</spell>
+	<spell id="14045" />
+	<spell id="14046" />
+	<spell id="14047">
+		<Param index="0" value="1" desc="造成A点无属性伤害" />
+	</spell>
+	<spell id="14048" />
+	<spell id="14049">
+		<Param index="0" value="2" desc="获得A枚[目]标记" />
+	</spell>
+	<spell id="14050">
+		<Param index="0" value="1" desc="移除A枚[目]标记" />
+	</spell>
+	<spell id="14051" />
+	<spell id="14052" />
+	<spell id="14053" />
+	<spell id="14054">
+		<Param index="0" value="1" desc="增加的[瘴]标记数量" />
+	</spell>
+	<spell id="14055">
+		<Param index="0" value="1" desc="造成的伤害+A" />
+		<Param index="1" value="1" desc="造成的伤害-B" />
+	</spell>
+	<spell id="14056" />
+	<spell id="14057" />
+	<spell id="14058" />
+	<spell id="14059">
+		<Param index="0" value="3" desc="最多重铸A张卡牌" />
+	</spell>
+	<spell id="14060">
+		<Param index="0" value="0" desc="手牌上限为A" />
+	</spell>
+	<spell id="14061">
+		<Param index="0" value="3" desc="你每损失A点体力" />
+	</spell>
+	<spell id="14062" />
+	<spell id="14063" />
+	<spell id="14064" />
+	<spell id="14065" />
+	<spell id="14066" />
+	<spell id="14067">
+		<Param index="0" value="1" desc="伤害+A" />
+	</spell>
+	<spell id="14068">
+		<Param index="0" value="1" desc="回复A点体力" />
+		<Param index="1" value="2" desc="可令其摸B张牌" />
+	</spell>
+	<spell id="14069" />
+	<spell id="14070">
+		<Param index="0" value="1" desc="你的手牌上限+A" />
+		<Param index="1" value="1" desc="回复C点体力" />
+		<Param index="2" value="1" desc="下个摸牌阶段摸牌数+D" />
+	</spell>
+	<spell id="14071" />
+	<spell id="14072">
+		<Param index="0" value="1" desc="造成伤害+A" />
+	</spell>
+	<spell id="14073">
+		<Param index="0" value="2" desc="叠加A枚[碎]" />
+	</spell>
+	<spell id="14074">
+		<Param index="0" value="1" desc="弃置牌数量" />
+	</spell>
+	<spell id="14075" />
+	<spell id="14076" />
+	<spell id="14077" />
+	<spell id="14078" />
+	<spell id="14081">
+		<Param index="0" value="1" desc="回复A点体力" />
+		<Param index="1" value="2" desc="摸牌阶段摸牌数加B" />
+	</spell>
+	<spell id="14081">
+		<Param index="0" value="1" desc="回复A点体力" />
+		<Param index="1" value="2" desc="摸牌阶段摸牌数加B" />
+	</spell>
+	<spell id="14083">
+		<Param index="0" value="3" desc="A=每使用A张手牌" />
+		<Param index="1" value="1" desc="B=下一张【杀】额外造成多少伤害" />
+	</spell>
+	<spell id="14087">
+		<Param index="0" value="1" desc="A=黑色【杀】造成的伤害" />
+	</spell>
+	<spell id="14095" />
+	<spell id="14096" />
+	<spell id="14097" />
+	<spell id="14098" />
+	<spell id="3464">
+		<Param2 index="0" valuestring="30100" desc="谋袁绍 思召剑" />
+	</spell>
+	<spell id="14101">
+		<Param index="0" value="5" desc="龙卫技能每次复活或召唤后，目标摸牌数量" />
+	</spell>
+	<spell id="1342">
+		<Param index="0" value="1" desc="首张杀造成伤害+1" />
+	</spell>
+	<spell id="3557">
+		<Param2 index="0" valuestring="297,80;878,80;701,80;939,40;940,60;704,70;249,80;3123,60;3124,70;3479;70;301,50;317,40|940,60;317,80|940,70;317,80;302,40|940,80;3479,80" desc="按杀、闪、桃、酒的顺序配，不同的卡牌中间用|分隔，每个卡牌里配技能id,权重;" />
+	</spell>
+	<spell id="3608">
+		<Param index="0" value="31017" desc="身份局霹雳车" />
+		<Param2 index="0" valuestring="31017" desc="刘晔 霹雳车" />
+	</spell>
+	<!--
+		spellID	-	技能ID
+			modeID	-	模式id，最大999
+			typeID	-	身份，最大9
+			spellname	-	技能名称
+			spelldes	-	技能描述
+		-->
+	<!--
+		type	-	场景类型
+			spell	-	场景技能ID
+			time	-	生效时间
+			model	-	生效模式
+				-
+		-->
+	<GLJLX type="1" spell="3311" time="20230519T173000,20230526T235959" model="91,148,132" />
+	<!--
+		id	-	技能id
+			modeID	-	归属模式
+			difficulty	-	归属难度
+			par1	-	参数1
+			par2	-	参数2
+			par3	-	参数3
+			par4	-	参数4
+			par5	-	参数5
+			str1	-	字符串参数1
+			desc	-	技能描述
+				-	
+				-	
+				-	
+				-
+		-->
+	<spellextend id="14001" modeID="39" difficulty="0" par1="2" par2="1" />
+	<spellextend id="14001" modeID="39" difficulty="1" par1="3" par2="1" />
+	<spellextend id="14001" modeID="39" difficulty="2" par1="3" par2="1" />
+	<spellextend id="644" modeID="39" difficulty="0" par1="4" />
+	<spellextend id="644" modeID="39" difficulty="1" par1="5" />
+	<spellextend id="644" modeID="39" difficulty="2" par1="6" />
+	<spellextend id="1601" modeID="39" difficulty="0" par1="1" />
+	<spellextend id="1601" modeID="39" difficulty="1" par1="2" />
+	<spellextend id="1601" modeID="39" difficulty="2" par1="3" />
+	<spellextend id="14005" modeID="39" difficulty="2" par1="1" />
+	<spellextend id="14029" modeID="39" difficulty="0" par1="1" />
+	<spellextend id="14029" modeID="39" difficulty="1" par1="2" />
+	<spellextend id="14029" modeID="39" difficulty="2" par1="2" />
+	<spellextend id="14001" modeID="151" difficulty="99" par1="2" par2="1" />
+	<spellextend id="14001" modeID="151" difficulty="99" par1="3" par2="1" />
+	<spellextend id="14001" modeID="151" difficulty="99" par1="3" par2="1" />
+	<spellextend id="644" modeID="151" difficulty="99" par1="4" />
+	<spellextend id="644" modeID="151" difficulty="99" par1="5" />
+	<spellextend id="644" modeID="151" difficulty="99" par1="6" />
+	<spellextend id="1601" modeID="151" difficulty="99" par1="1" />
+	<spellextend id="1601" modeID="151" difficulty="99" par1="2" />
+	<spellextend id="1601" modeID="151" difficulty="99" par1="3" />
+	<spellextend id="14005" modeID="151" difficulty="99" par1="1" />
+	<spellextend id="14029" modeID="151" difficulty="99" par1="1" />
+	<spellextend id="14029" modeID="151" difficulty="99" par1="2" />
+	<spellextend id="3378" modeID="151" difficulty="99" par1="3" par2="1" />
+	<spellextend id="3379" modeID="151" difficulty="99" par1="4" par2="1" />
+	<spellextend id="3380" modeID="151" difficulty="99" par1="1" par2="1" />
+	<spellextend id="3381" modeID="151" difficulty="99" par1="1" par2="1" />
+	<spellextend id="3383" modeID="151" difficulty="99" par1="5" />
+	<spellextend id="3384" modeID="151" difficulty="99" par1="10" par2="1" />
+	<spellextend id="3385" modeID="151" difficulty="99" par1="5" par2="1" />
+	<spellextend id="3386" modeID="151" difficulty="99" par1="8" par2="2" />
+	<spellextend id="3387" modeID="151" difficulty="99" par1="3" />
+	<spellextend id="3388" modeID="151" difficulty="99" par1="1" par2="10" />
+	<spellextend id="13162" modeID="151" difficulty="99" par1="1" />
+	<spellextend id="13163" modeID="151" difficulty="99" par1="1" str1="20501,20502,20503,20504,20505,20506,20507,20508,20509,20510,20511,20512,20513,20514,20515,20516,20517,20518,20519,20520,20521,20522,20523,20524,20525,20526,20527,20528,20529,20530,20531,20532,20533,20534,20535,20536,20537,20538,20539,20540,20541,20542,20543,20544,20545,20546,20547,20548,20549,20550,20551,20552,20553,20554,20555,20556,20557,20558,20559,20560,20561,20562,20563,20564,20565,20566,20567,20568,20569,20570,20571,20572,20573,20574,20575,20611,20612,20613,20614,20615,20616,20617,20618,20619,20620,20621,20622,20623,20624,20625,20626,20627,20628,20629,20630,20631,20632,20633,20634,20635,20636,20637,20638,20639,20640,20641,20642,20643,20644,20645,20646,20647,20648,20649,20650,20651,20652,20653,20654,20655,20656,20657,20658,20659,20660,20661,20662,20663,20664,20665,20666,20667,20668,20669,20670,20671,20672,20673,20674,20675,20676,20677,20678,20679,20680,20681,20682,20683,20684,20685,20686,20687,20688,20689,20690,20691,20692,20693,20694,20695,20696,20697,20698,20699,20700,20701,20702,20703,20704,20705,20706,20707,20708,20709,20710,20711,20712,20713,20714,20715,20716,20717,20718,20719,20720,20721,20722,20723,20724,20725,20726,20727,20728,20729,20730,20731,20732,20733,20734,20735,20736,20737,20738,20739,20740,20741,20742,20743,20744,20745,20746,20747,20748,20749,20750,20751,20752,20753,20754,20755,20756,20757,20758,20759,20760,20761,20762,20763,20764,20765,20766,20767,20768,20769,20770,20771,20772,20773,20774,20775,20776,20777,20778,20779,20780" />
+	<spellextend id="13167" modeID="151" difficulty="99" par1="2" />
+	<spellextend id="14001" modeID="164" difficulty="99" par1="2" par2="1" />
+	<spellextend id="14001" modeID="164" difficulty="99" par1="3" par2="1" />
+	<spellextend id="14001" modeID="164" difficulty="99" par1="3" par2="1" />
+	<spellextend id="644" modeID="164" difficulty="99" par1="4" />
+	<spellextend id="644" modeID="164" difficulty="99" par1="5" />
+	<spellextend id="644" modeID="164" difficulty="99" par1="6" />
+	<spellextend id="1601" modeID="164" difficulty="99" par1="1" />
+	<spellextend id="1601" modeID="164" difficulty="99" par1="2" />
+	<spellextend id="1601" modeID="164" difficulty="99" par1="3" />
+	<spellextend id="14005" modeID="164" difficulty="99" par1="1" />
+	<spellextend id="14029" modeID="164" difficulty="99" par1="1" />
+	<spellextend id="14029" modeID="164" difficulty="99" par1="2" />
+	<spellextend id="3378" modeID="164" difficulty="99" par1="3" par2="1" />
+	<spellextend id="3379" modeID="164" difficulty="99" par1="4" par2="1" />
+	<spellextend id="3380" modeID="164" difficulty="99" par1="1" par2="1" />
+	<spellextend id="3381" modeID="164" difficulty="99" par1="1" par2="1" />
+	<spellextend id="3383" modeID="164" difficulty="99" par1="5" />
+	<spellextend id="3384" modeID="164" difficulty="99" par1="10" par2="1" />
+	<spellextend id="3385" modeID="164" difficulty="99" par1="5" par2="1" />
+	<spellextend id="3386" modeID="164" difficulty="99" par1="8" par2="2" />
+	<spellextend id="3387" modeID="164" difficulty="99" par1="3" />
+	<spellextend id="3388" modeID="164" difficulty="99" par1="1" par2="10" />
+	<spellextend id="13162" modeID="164" difficulty="99" par1="1" />
+	<spellextend id="13163" modeID="164" difficulty="99" par1="1" str1="20501,20502,20503,20504,20505,20506,20507,20508,20509,20510,20511,20512,20513,20514,20515,20516,20517,20518,20519,20520,20521,20522,20523,20524,20525,20526,20527,20528,20529,20530,20531,20532,20533,20534,20535,20536,20537,20538,20539,20540,20541,20542,20543,20544,20545,20546,20547,20548,20549,20550,20551,20552,20553,20554,20555,20556,20557,20558,20559,20560,20561,20562,20563,20564,20565,20566,20567,20568,20569,20570,20571,20572,20573,20574,20575,20611,20612,20613,20614,20615,20616,20617,20618,20619,20620,20621,20622,20623,20624,20625,20626,20627,20628,20629,20630,20631,20632,20633,20634,20635,20636,20637,20638,20639,20640,20641,20642,20643,20644,20645,20646,20647,20648,20649,20650,20651,20652,20653,20654,20655,20656,20657,20658,20659,20660,20661,20662,20663,20664,20665,20666,20667,20668,20669,20670,20671,20672,20673,20674,20675,20676,20677,20678,20679,20680,20681,20682,20683,20684,20685,20686,20687,20688,20689,20690,20691,20692,20693,20694,20695,20696,20697,20698,20699,20700,20701,20702,20703,20704,20705,20706,20707,20708,20709,20710,20711,20712,20713,20714,20715,20716,20717,20718,20719,20720,20721,20722,20723,20724,20725,20726,20727,20728,20729,20730,20731,20732,20733,20734,20735,20736,20737,20738,20739,20740,20741,20742,20743,20744,20745,20746,20747,20748,20749,20750,20751,20752,20753,20754,20755,20756,20757,20758,20759,20760,20761,20762,20763,20764,20765,20766,20767,20768,20769,20770,20771,20772,20773,20774,20775,20776,20777,20778,20779,20780" />
+	<spellextend id="13167" modeID="164" difficulty="99" par1="2" />
+	<spellextend id="3453" modeID="116" difficulty="0" par1="1" par2="1" />
+	<spellextend id="3453" modeID="116" difficulty="1" par1="1" par2="1" />
+	<spellextend id="3453" modeID="116" difficulty="2" par1="2" par2="2" />
+	<spellextend id="3457" modeID="116" difficulty="0" par1="1" par2="1" par3="1" par4="1" par5="3" />
+	<spellextend id="3457" modeID="116" difficulty="1" par1="1" par2="2" par3="1" par4="1" par5="3" />
+	<spellextend id="3457" modeID="116" difficulty="2" par1="2" par2="2" par3="2" par4="1" par5="3" />
+	<spellextend id="13205" modeID="151" difficulty="99" par1="1" />
+	<spellextend id="13207" modeID="151" difficulty="99" par1="5" />
+	<spellextend id="13208" modeID="151" difficulty="99" par1="2" />
+	<spellextend id="13209" modeID="151" difficulty="99" par1="10" />
+	<spellextend id="13210" modeID="151" difficulty="99" par1="15" />
+	<spellextend id="13211" modeID="151" difficulty="99" par1="20" />
+	<spellextend id="13212" modeID="151" difficulty="99" par1="3" />
+	<spellextend id="13213" modeID="151" difficulty="99" par1="5" />
+	<spellextend id="13214" modeID="151" difficulty="99" par1="10" />
+	<spellextend id="14095" modeID="151" difficulty="99" str1="67,93,107,136,148" />
+	<spellextend id="14096" modeID="151" difficulty="99" str1="5,12,14,80,84,96,103,108,122,135" />
+	<spellextend id="14097" modeID="151" difficulty="99" str1="319,1148,4328,6009" />
+	<spellextend id="14098" modeID="151" difficulty="99" str1="67,93,107,136,148,5,12,14,80,84,96,103,108,122,135,319,1148,4328,6009" />
+	<spellextend id="13205" modeID="164" difficulty="99" par1="1" />
+	<spellextend id="13207" modeID="164" difficulty="99" par1="5" />
+	<spellextend id="13208" modeID="164" difficulty="99" par1="2" />
+	<spellextend id="13209" modeID="164" difficulty="99" par1="10" />
+	<spellextend id="13210" modeID="164" difficulty="99" par1="15" />
+	<spellextend id="13211" modeID="164" difficulty="99" par1="20" />
+	<spellextend id="13212" modeID="164" difficulty="99" par1="3" />
+	<spellextend id="13213" modeID="164" difficulty="99" par1="5" />
+	<spellextend id="13214" modeID="164" difficulty="99" par1="10" />
+	<spellextend id="14095" modeID="164" difficulty="99" str1="67,93,107,136,148" />
+	<spellextend id="14096" modeID="164" difficulty="99" str1="5,12,14,80,84,96,103,108,122,135" />
+	<spellextend id="14097" modeID="164" difficulty="99" str1="319,1148,4328,6009" />
+	<spellextend id="14098" modeID="164" difficulty="99" str1="67,93,107,136,148,5,12,14,80,84,96,103,108,122,135,319,1148,4328,6009" />
+</ExtendParam>

@@ -1,0 +1,832 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			maxTime	-	一局游戏的最大时长
+			startTime	-	活动开始 时间
+			endTime	-	活动结算 时间
+上线后不要改
+			startrank	-	排行榜开始时间
+			endrank	-	排行榜结算时间
+			spRewardTime	-	春联奖励时间，该时间点之后可以领这个奖
+			chuxiRewardTime	-	除夕大奖时间点
+			chuxiReward	-	除夕大奖，支持多个奖励
+			chuxiRewardNum	-	除夕大奖需要局数
+			hengfu	-	横幅id
+			zengsongZhufu	-	赠送字符增加祝福值/次
+			shengxiaoZhufu	-	捕捉生肖兽增加祝福值/次
+			tuAddZhufu	-	捕捉卯兔额外增加祝福值/次
+			shengXiaoGenId	-	额外祝福生肖（捕捉当年生肖增加额外祝福）
+			chunlianZhufu	-	春联填充祝福值/字
+			everydayMaxZhufu	-	每日最大获得祝福值
+			needZhufu	-	领取祝福大奖需要全服祝福值
+			spRewardDropId	-	春联奖励掉落的组id
+			spRewardUnlockDropId	-	未集齐春联奖励掉落的组id
+			daytime	-	每日开启结束时间
+			reviveCondition	-	复活道具
+			spellItem	-	技能道具
+			valueBuyCondition	-	每日购买体力规则-客户端
+			activityValueCondition	-	每日购买体力规则-服务端
+			eliteTokenId	-	精英令牌id
+			scoreItem	-	年兽兑换道具id
+			spRewardItem	-	春联大奖tipsid
+			baonuExtend	-	暴怒技能描述tipsid
+			jiyuanExtend	-	汲源技能描述tipsid
+			chuxiDes	-	除夕大奖描述
+			zhufuDes	-	全服祝福礼描述
+			chuanlianDes	-	春联大奖描述
+			hongbaoReward	-	红包技能掉落道具
+			hongbaoNumber	-	红包技能每日限制次数
+			hongbaoPause	-	红包技能暂停/毫秒
+			des_m	-	移动端玩法说明文字
+			des	-	玩法说明文字
+		-->
+	<Common maxTime="3600" startTime="20240201T100000" endTime="20250224T235959" spRewardTime="20240224T000000" chuxiRewardTime="20240209T200000" chuxiReward="8100201,1;435401,1" chuxiRewardNum="1" hengfu="15,16,17,18" zengsongZhufu="10" shengxiaoZhufu="10" tuAddZhufu="5" shengXiaoGenId="4087" chunlianZhufu="20" everydayMaxZhufu="100" needZhufu="60000000" spRewardDropId="6522" spRewardUnlockDropId="55211" reviveCondition="1,1;2,1;3,1;999,1" spellItem="7909801;7909901;7910001" activityValueCondition="5,7906501;10,7906601;15,7906701;9999,7906801" hongbaoReward="50521" hongbaoNumber="20" hongbaoPause="1200" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	难度    
+0 - 普通  1 - 进阶  2 - 困难
+			firstTurnRole	-	先手座位
+			bossRankCfg	-	年兽等阶权重
+			monsterRankCfg	-	小怪等阶权重
+			passRewards	-	通关宝箱的奖励
+			winScore	-	胜利获得积分
+			loseScore	-	失败获得积分
+			desc	-	难度描述
+			unlocktips	-	解锁条件
+			leveltips	-	难度奖励描述
+		-->
+	<Group id="0" firstTurnRole="0" bossRankCfg="0,2;1,0;2,0;3,0;4,0" monsterRankCfg="0,1;1,0;2,0;3,0;4,0" passRewards="8194901,1" winScore="20" loseScore="6;3">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			system_robot_seats	-	ai座位
+			-->
+		<SeatConfig system_robot_seats="2;3;4">
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			seat	-	座位号
+			desc	-	描述
+			auto_sel	-	是否自动选将
+			group	-	身份类型
+			show_figure	-	显示身份
+			figure	-	身份
+			remove_spell	-	技能移除
+			deal_general_count	-	选将数量
+			generals	-	选将
+			rank	-	等阶
+				-->
+			<Seat seat="0" desc="一号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="3" rank="0" />
+			<Seat seat="1" desc="二号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="3" rank="0" />
+			<Seat seat="2" desc="三号位" auto_sel="1" group="2" show_figure="1" figure="3" remove_spell="0" deal_general_count="1" generals="4083,11;4084,7;4085,5;4086,5;4087,11;4088,11;4089,11;4090,7;4091,7;4092,11;4093,7;4094,7" rank="0" />
+			<Seat seat="3" desc="四号位" auto_sel="1" group="2" show_figure="1" figure="4" remove_spell="0" deal_general_count="1" generals="4095,1" rank="0" />
+			<Seat seat="4" desc="五号位" auto_sel="1" group="2" show_figure="1" figure="3" remove_spell="0" deal_general_count="1" generals="4083,11;4084,7;4085,5;4086,5;4087,11;4088,11;4089,11;4090,7;4091,7;4092,11;4093,7;4094,7" rank="0" />
+		</SeatConfig>
+	</Group>
+	<Group id="1" firstTurnRole="0" bossRankCfg="0,0;1,1;2,10;3,9;4,0" monsterRankCfg="0,0;1,1;2,1;3,0;4,0" passRewards="8195001,1" winScore="30" loseScore="8;4">
+		<SeatConfig system_robot_seats="2;3;4;5">
+			<Seat seat="0" desc="一号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="3" rank="0" />
+			<Seat seat="1" desc="二号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="3" rank="0" />
+			<Seat seat="2" desc="三号位" auto_sel="1" group="2" show_figure="1" figure="3" remove_spell="0" deal_general_count="1" generals="4083,11;4084,7;4085,5;4086,5;4087,11;4088,11;4089,11;4090,7;4091,7;4092,11;4093,7;4094,7" rank="0" />
+			<Seat seat="3" desc="四号位" auto_sel="1" group="2" show_figure="1" figure="4" remove_spell="0" deal_general_count="1" generals="4096,1" rank="0" />
+			<Seat seat="4" desc="五号位" auto_sel="1" group="2" show_figure="1" figure="3" remove_spell="0" deal_general_count="1" generals="4083,11;4084,7;4085,5;4086,5;4087,11;4088,11;4089,11;4090,7;4091,7;4092,11;4093,7;4094,7" rank="0" />
+			<Seat seat="5" desc="六号位" auto_sel="1" group="2" show_figure="1" figure="3" remove_spell="0" deal_general_count="1" generals="4083,11;4084,7;4085,5;4086,5;4087,11;4088,11;4089,11;4090,7;4091,7;4092,11;4093,7;4094,7" rank="0" />
+		</SeatConfig>
+	</Group>
+	<Group id="2" firstTurnRole="0" bossRankCfg="0,0;1,0;2,1;3,10;4,9" monsterRankCfg="0,0;1,0;2,1;3,1;4,0" passRewards="8195101,1" winScore="40" loseScore="10;5">
+		<SeatConfig system_robot_seats="2;3;4;5">
+			<Seat seat="0" desc="一号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="3" rank="0" />
+			<Seat seat="1" desc="二号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="3" rank="0" />
+			<Seat seat="2" desc="三号位" auto_sel="1" group="2" show_figure="1" figure="3" remove_spell="0" deal_general_count="1" generals="4083,11;4084,7;4085,5;4086,5;4087,11;4088,11;4089,11;4090,7;4091,7;4092,11;4093,7;4094,7" rank="0" />
+			<Seat seat="3" desc="四号位" auto_sel="1" group="2" show_figure="1" figure="4" remove_spell="0" deal_general_count="1" generals="4097,1" rank="0" />
+			<Seat seat="4" desc="五号位" auto_sel="1" group="2" show_figure="1" figure="3" remove_spell="0" deal_general_count="1" generals="4083,11;4084,7;4085,5;4086,5;4087,11;4088,11;4089,11;4090,7;4091,7;4092,11;4093,7;4094,7" rank="0" />
+			<Seat seat="5" desc="六号位" auto_sel="1" group="2" show_figure="1" figure="3" remove_spell="0" deal_general_count="1" generals="4083,11;4084,7;4085,5;4086,5;4087,11;4088,11;4089,11;4090,7;4091,7;4092,11;4093,7;4094,7" rank="0" />
+		</SeatConfig>
+	</Group>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	等阶
+			addHp	-	额外体力
+			addFirstCard	-	添加初始手牌数
+			exSkills	-	附加技能
+			desc	-	描述
+		-->
+	<GeneralRankPriv rank="0" addHp="0" addFirstCard="0" exSkills="1350" desc="无" />
+	<GeneralRankPriv rank="1" addHp="1" addFirstCard="0" exSkills="1350" desc="无" />
+	<GeneralRankPriv rank="2" addHp="1" addFirstCard="1" exSkills="1350;1356" desc="出杀次数+1" />
+	<GeneralRankPriv rank="3" addHp="2" addFirstCard="2" exSkills="1350;1356;1357" desc="出杀次数+1，摸牌数+1" />
+	<GeneralRankPriv rank="4" addHp="2" addFirstCard="2" exSkills="1350;1356;1357;1355" desc="出杀次数+1，摸牌数+1，获得技能【福神】" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	等阶
+			addHp	-	额外体力
+			addFirstCard	-	添加初始手牌数
+			addShield	-	添加初始护甲
+			exSkills	-	附加技能
+			desc	-	描述
+		-->
+	<BossRankPriv rank="0" addHp="0" addFirstCard="0" addShield="2" desc="无" />
+	<BossRankPriv rank="1" addHp="0" addFirstCard="1" addShield="3" desc="无" />
+	<BossRankPriv rank="2" addHp="1" addFirstCard="1" addShield="3" exSkills="1356" desc="出牌阶段出杀次数+1" />
+	<BossRankPriv rank="3" addHp="1" addFirstCard="1" addShield="4" exSkills="1356;1357" desc="出杀次数+1,摸牌数+1" />
+	<BossRankPriv rank="4" addHp="2" addFirstCard="2" addShield="4" exSkills="1356;1357" desc="出杀次数+1,摸牌数+2" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	等阶
+			addHp	-	额外体力
+			addFirstCard	-	添加初始手牌数
+			exSkills	-	附加技能
+			desc	-	描述
+		-->
+	<MonsterRankPriv rank="0" addHp="0" addFirstCard="0" desc="无" />
+	<MonsterRankPriv rank="1" addHp="0" addFirstCard="1" desc="无" />
+	<MonsterRankPriv rank="2" addHp="1" addFirstCard="1" desc="无" />
+	<MonsterRankPriv rank="3" addHp="1" addFirstCard="1" exSkills="1356" desc="出杀次数+1" />
+	<MonsterRankPriv rank="4" addHp="2" addFirstCard="2" exSkills="1356;1357" desc="出杀次数+1，摸牌数+1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Currenttime	-	时间段
+			Notyet	-	若比例小于
+			Grow	-	变大系数
+			Yet	-	若比例大于
+			Wane	-	变小系数
+		-->
+	<ZhufuCoefficient Currenttime="20240201T100000;20240205T235959" Notyet="20" Grow="120" Yet="40" Wane="75" />
+	<ZhufuCoefficient Currenttime="20240205T000000;20240210T235959" Notyet="40" Grow="120" Yet="85" Wane="75" />
+	<ZhufuCoefficient Currenttime="20240211T000000;20240215T235959" Notyet="60" Grow="130" Yet="100" Wane="100" />
+	<ZhufuCoefficient Currenttime="20240216T000000;20240220T235959" Notyet="80" Grow="130" Yet="100" Wane="100" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	奖励id
+			lowZhufu	-	个人最低祝福值
+			goodslist	-	奖励内容，支持多个奖励
+				-
+		-->
+	<ZhufuReward Id="1" lowZhufu="10" goodslist="8194401,1" />
+	<ZhufuReward Id="2" lowZhufu="300" goodslist="8194501,1" />
+	<ZhufuReward Id="3" lowZhufu="600" goodslist="8194601,1" />
+	<ZhufuReward Id="4" lowZhufu="1000" goodslist="8194701,1" />
+	<ZhufuReward Id="5" lowZhufu="1500" goodslist="8194801,1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	奖励id
+			requireScore	-	需要积分
+			requireGoodsBaseId	-	需要道具
+			goodslist	-	奖励内容
+		-->
+	<Reward Id="1" requireScore="100" requireGoodsBaseId="0" goodslist="1199501,10" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	兑换id
+			item_id	-	道具id
+按道具id限购，不是按market_id限购，道具id值唯一
+			name	-	道具名称
+			points	-	积分要求
+			sorting	-	排序
+			shoprecom	-	推荐标签
+			shophot	-	热销标签
+			shopnew	-	新品标签
+			timeRange	-	开放时间
+		-->
+	<Market id="1" item_id="8193601" name="洛神御水动态水晶" points="2000" timeRange="1;20210501T000000,20221230T235959" />
+	<Market id="2" item_id="8193701" name="武将-蹋顿" points="2000" timeRange="1;20210501T000000,20221230T235959" />
+	<Market id="3" item_id="8193801" name="武将-曹性" points="2000" timeRange="1;20210501T000000,20221230T235959" />
+	<Market id="4" item_id="8193901" name="武将-许靖" points="2000" timeRange="1;20210501T000000,20221230T235959" />
+	<Market id="5" item_id="8194001" name="吴懿传说皮肤" points="2000" timeRange="1;20210501T000000,20221230T235959" />
+	<Market id="6" item_id="8194101" name="皮肤包" points="200" timeRange="1;20210501T000000,20221230T235959" />
+	<Market id="7" item_id="8194201" name="精致皮肤包" points="500" timeRange="1;20210501T000000,20221230T235959" />
+	<Market id="8" item_id="8194301" name="豪华皮肤包" points="1000" timeRange="1;20210501T000000,20221230T235959" />
+	<Market id="9" item_id="8194401" name="夺宝券" points="200" timeRange="1;20210501T000000,20221230T235959" />
+	<Market id="10" item_id="8194501" name="豪华夺宝券" points="1000" timeRange="1;20210501T000000,20221230T235959" />
+	<Market id="11" item_id="8194601" name="圣魂玄晶" points="1000" timeRange="1;20210501T000000,20221230T235959" />
+	<Market id="12" item_id="8194701" name="夺宝重置券" points="100" timeRange="1;20210501T000000,20221230T235959" />
+	<Market id="13" item_id="8194801" name="银两*5" points="100" timeRange="1;20210501T000000,20221230T235959" />
+	<Compose>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	春联ID
+			desc	-	名词
+			goodslist	-	消耗物品
+			-->
+		<ChunLian id="1" desc="金" goodslist="7908301,1" />
+		<ChunLian id="2" desc="龙" goodslist="7908401,1" />
+		<ChunLian id="3" desc="拱" goodslist="7908501,1" />
+		<ChunLian id="4" desc="日" goodslist="7908601,1" />
+		<ChunLian id="5" desc="万" goodslist="7908701,1" />
+		<ChunLian id="6" desc="家" goodslist="7908801,1" />
+		<ChunLian id="7" desc="春" goodslist="7908901,1" />
+		<ChunLian id="8" desc="赤" goodslist="7909001,1" />
+		<ChunLian id="9" desc="兔" goodslist="7909101,1" />
+		<ChunLian id="10" desc="追" goodslist="7909201,1" />
+		<ChunLian id="11" desc="风" goodslist="7909301,1" />
+		<ChunLian id="12" desc="千" goodslist="7909401,1" />
+		<ChunLian id="13" desc="里" goodslist="7909501,1" />
+		<ChunLian id="14" desc="志" goodslist="7909601,1" />
+		<ChunLian id="15" desc="新" goodslist="7909701,10" />
+		<ChunLian id="16" desc="年" goodslist="7909701,10" />
+		<ChunLian id="17" desc="大" goodslist="7909701,10" />
+		<ChunLian id="18" desc="吉" goodslist="7909701,10" />
+	</Compose>
+	<Formula>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	生肖碎片ID
+			baseId	-	对应物品
+			short	-	缩写（合成记录用到）
+				-	备注名称
+			-->
+		<Define id="1" baseId="7907101" />
+		<Define id="2" baseId="7907201" />
+		<Define id="3" baseId="7907301" />
+		<Define id="4" baseId="7907401" />
+		<Define id="5" baseId="7907501" />
+		<Define id="6" baseId="7907601" />
+		<Define id="7" baseId="7907701" />
+		<Define id="8" baseId="7907801" />
+		<Define id="9" baseId="7907901" />
+		<Define id="10" baseId="7908001" />
+		<Define id="11" baseId="7908101" />
+		<Define id="12" baseId="7908201" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			params	-	配方矩阵
+			product	-	合成字符
+			-->
+		<Cfg params="1,2,3,4" product="7909701" />
+		<Cfg params="1,2,3,5" product="7909701" />
+		<Cfg params="1,2,4,5" product="7908501" />
+		<Cfg params="1,3,4,5" product="7909701" />
+		<Cfg params="2,3,4,5" product="7909501" />
+		<Cfg params="1,2,3,6" product="7909701" />
+		<Cfg params="1,2,4,6" product="7909701" />
+		<Cfg params="1,3,4,6" product="7909701" />
+		<Cfg params="2,3,4,6" product="7908301" />
+		<Cfg params="1,2,5,6" product="7909701" />
+		<Cfg params="1,3,5,6" product="7909701" />
+		<Cfg params="2,3,5,6" product="7909701" />
+		<Cfg params="1,4,5,6" product="7909701" />
+		<Cfg params="2,4,5,6" product="7908801" />
+		<Cfg params="3,4,5,6" product="7908601" />
+		<Cfg params="1,2,3,7" product="7909701" />
+		<Cfg params="1,2,4,7" product="7908701" />
+		<Cfg params="1,3,4,7" product="7909701" />
+		<Cfg params="2,3,4,7" product="7908901" />
+		<Cfg params="1,2,5,7" product="7909701" />
+		<Cfg params="1,3,5,7" product="7909701" />
+		<Cfg params="2,3,5,7" product="7909601" />
+		<Cfg params="1,4,5,7" product="7909701" />
+		<Cfg params="2,4,5,7" product="7909701" />
+		<Cfg params="3,4,5,7" product="7909701" />
+		<Cfg params="1,2,6,7" product="7908801" />
+		<Cfg params="1,3,6,7" product="7909701" />
+		<Cfg params="2,3,6,7" product="7909701" />
+		<Cfg params="1,4,6,7" product="7908501" />
+		<Cfg params="2,4,6,7" product="7909701" />
+		<Cfg params="3,4,6,7" product="7908601" />
+		<Cfg params="1,5,6,7" product="7909701" />
+		<Cfg params="2,5,6,7" product="7908701" />
+		<Cfg params="3,5,6,7" product="7909701" />
+		<Cfg params="4,5,6,7" product="7908901" />
+		<Cfg params="1,2,3,8" product="7908301" />
+		<Cfg params="1,2,4,8" product="7909701" />
+		<Cfg params="1,3,4,8" product="7908501" />
+		<Cfg params="2,3,4,8" product="7908801" />
+		<Cfg params="1,2,5,8" product="7909701" />
+		<Cfg params="1,3,5,8" product="7909001" />
+		<Cfg params="2,3,5,8" product="7909701" />
+		<Cfg params="1,4,5,8" product="7909201" />
+		<Cfg params="2,4,5,8" product="7908701" />
+		<Cfg params="3,4,5,8" product="7909701" />
+		<Cfg params="1,2,6,8" product="7909701" />
+		<Cfg params="1,3,6,8" product="7909701" />
+		<Cfg params="2,3,6,8" product="7909301" />
+		<Cfg params="1,4,6,8" product="7909701" />
+		<Cfg params="2,4,6,8" product="7909201" />
+		<Cfg params="3,4,6,8" product="7908501" />
+		<Cfg params="1,5,6,8" product="7909701" />
+		<Cfg params="2,5,6,8" product="7909701" />
+		<Cfg params="3,5,6,8" product="7908601" />
+		<Cfg params="4,5,6,8" product="7909701" />
+		<Cfg params="1,2,7,8" product="7909401" />
+		<Cfg params="1,3,7,8" product="7909701" />
+		<Cfg params="2,3,7,8" product="7909001" />
+		<Cfg params="1,4,7,8" product="7909701" />
+		<Cfg params="2,4,7,8" product="7909701" />
+		<Cfg params="3,4,7,8" product="7909701" />
+		<Cfg params="1,5,7,8" product="7908301" />
+		<Cfg params="2,5,7,8" product="7908801" />
+		<Cfg params="3,5,7,8" product="7909701" />
+		<Cfg params="4,5,7,8" product="7909701" />
+		<Cfg params="1,6,7,8" product="7908701" />
+		<Cfg params="2,6,7,8" product="7909701" />
+		<Cfg params="3,6,7,8" product="7909301" />
+		<Cfg params="4,6,7,8" product="7909701" />
+		<Cfg params="5,6,7,8" product="7908901" />
+		<Cfg params="1,2,3,9" product="7909701" />
+		<Cfg params="1,2,4,9" product="7909701" />
+		<Cfg params="1,3,4,9" product="7909701" />
+		<Cfg params="2,3,4,9" product="7909201" />
+		<Cfg params="1,2,5,9" product="7909701" />
+		<Cfg params="1,3,5,9" product="7909701" />
+		<Cfg params="2,3,5,9" product="7909001" />
+		<Cfg params="1,4,5,9" product="7909701" />
+		<Cfg params="2,4,5,9" product="7909701" />
+		<Cfg params="3,4,5,9" product="7908601" />
+		<Cfg params="1,2,6,9" product="7909401" />
+		<Cfg params="1,3,6,9" product="7909701" />
+		<Cfg params="2,3,6,9" product="7909201" />
+		<Cfg params="1,4,6,9" product="7909701" />
+		<Cfg params="2,4,6,9" product="7909301" />
+		<Cfg params="3,4,6,9" product="7909701" />
+		<Cfg params="1,5,6,9" product="7909001" />
+		<Cfg params="2,5,6,9" product="7909701" />
+		<Cfg params="3,5,6,9" product="7909701" />
+		<Cfg params="4,5,6,9" product="7909701" />
+		<Cfg params="1,2,7,9" product="7909301" />
+		<Cfg params="1,3,7,9" product="7908601" />
+		<Cfg params="2,3,7,9" product="7909701" />
+		<Cfg params="1,4,7,9" product="7909701" />
+		<Cfg params="2,4,7,9" product="7909701" />
+		<Cfg params="3,4,7,9" product="7909101" />
+		<Cfg params="1,5,7,9" product="7908701" />
+		<Cfg params="2,5,7,9" product="7909701" />
+		<Cfg params="3,5,7,9" product="7908801" />
+		<Cfg params="4,5,7,9" product="7909701" />
+		<Cfg params="1,6,7,9" product="7909701" />
+		<Cfg params="2,6,7,9" product="7908701" />
+		<Cfg params="3,6,7,9" product="7908301" />
+		<Cfg params="4,6,7,9" product="7909201" />
+		<Cfg params="5,6,7,9" product="7909701" />
+		<Cfg params="1,2,8,9" product="7909701" />
+		<Cfg params="1,3,8,9" product="7909701" />
+		<Cfg params="2,3,8,9" product="7909701" />
+		<Cfg params="1,4,8,9" product="7909601" />
+		<Cfg params="2,4,8,9" product="7909301" />
+		<Cfg params="3,4,8,9" product="7909701" />
+		<Cfg params="1,5,8,9" product="7908401" />
+		<Cfg params="2,5,8,9" product="7909701" />
+		<Cfg params="3,5,8,9" product="7909201" />
+		<Cfg params="4,5,8,9" product="7909701" />
+		<Cfg params="1,6,8,9" product="7909701" />
+		<Cfg params="2,6,8,9" product="7909701" />
+		<Cfg params="3,6,8,9" product="7909701" />
+		<Cfg params="4,6,8,9" product="7908601" />
+		<Cfg params="5,6,8,9" product="7909701" />
+		<Cfg params="1,7,8,9" product="7909701" />
+		<Cfg params="2,7,8,9" product="7909301" />
+		<Cfg params="3,7,8,9" product="7909701" />
+		<Cfg params="4,7,8,9" product="7909101" />
+		<Cfg params="5,7,8,9" product="7909701" />
+		<Cfg params="6,7,8,9" product="7909701" />
+		<Cfg params="1,2,3,10" product="7909001" />
+		<Cfg params="1,2,4,10" product="7909701" />
+		<Cfg params="1,3,4,10" product="7909701" />
+		<Cfg params="2,3,4,10" product="7908301" />
+		<Cfg params="1,2,5,10" product="7909701" />
+		<Cfg params="1,3,5,10" product="7909701" />
+		<Cfg params="2,3,5,10" product="7909701" />
+		<Cfg params="1,4,5,10" product="7908801" />
+		<Cfg params="2,4,5,10" product="7908401" />
+		<Cfg params="3,4,5,10" product="7909701" />
+		<Cfg params="1,2,6,10" product="7909701" />
+		<Cfg params="1,3,6,10" product="7908901" />
+		<Cfg params="2,3,6,10" product="7909701" />
+		<Cfg params="1,4,6,10" product="7909701" />
+		<Cfg params="2,4,6,10" product="7908501" />
+		<Cfg params="3,4,6,10" product="7909701" />
+		<Cfg params="1,5,6,10" product="7909001" />
+		<Cfg params="2,5,6,10" product="7909701" />
+		<Cfg params="3,5,6,10" product="7909701" />
+		<Cfg params="4,5,6,10" product="7909101" />
+		<Cfg params="1,2,7,10" product="7909701" />
+		<Cfg params="1,3,7,10" product="7909201" />
+		<Cfg params="2,3,7,10" product="7909701" />
+		<Cfg params="1,4,7,10" product="7909701" />
+		<Cfg params="2,4,7,10" product="7908601" />
+		<Cfg params="3,4,7,10" product="7909701" />
+		<Cfg params="1,5,7,10" product="7908301" />
+		<Cfg params="2,5,7,10" product="7909701" />
+		<Cfg params="3,5,7,10" product="7909301" />
+		<Cfg params="4,5,7,10" product="7909701" />
+		<Cfg params="1,6,7,10" product="7909701" />
+		<Cfg params="2,6,7,10" product="7908501" />
+		<Cfg params="3,6,7,10" product="7909701" />
+		<Cfg params="4,6,7,10" product="7909201" />
+		<Cfg params="5,6,7,10" product="7909701" />
+		<Cfg params="1,2,8,10" product="7909701" />
+		<Cfg params="1,3,8,10" product="7909601" />
+		<Cfg params="2,3,8,10" product="7909701" />
+		<Cfg params="1,4,8,10" product="7909701" />
+		<Cfg params="2,4,8,10" product="7909101" />
+		<Cfg params="3,4,8,10" product="7908301" />
+		<Cfg params="1,5,8,10" product="7909701" />
+		<Cfg params="2,5,8,10" product="7909701" />
+		<Cfg params="3,5,8,10" product="7908801" />
+		<Cfg params="4,5,8,10" product="7909701" />
+		<Cfg params="1,6,8,10" product="7909701" />
+		<Cfg params="2,6,8,10" product="7908601" />
+		<Cfg params="3,6,8,10" product="7909701" />
+		<Cfg params="4,6,8,10" product="7909301" />
+		<Cfg params="5,6,8,10" product="7909701" />
+		<Cfg params="1,7,8,10" product="7908501" />
+		<Cfg params="2,7,8,10" product="7909701" />
+		<Cfg params="3,7,8,10" product="7909501" />
+		<Cfg params="4,7,8,10" product="7909701" />
+		<Cfg params="5,7,8,10" product="7909701" />
+		<Cfg params="6,7,8,10" product="7909501" />
+		<Cfg params="1,2,9,10" product="7909701" />
+		<Cfg params="1,3,9,10" product="7909701" />
+		<Cfg params="2,3,9,10" product="7908301" />
+		<Cfg params="1,4,9,10" product="7909701" />
+		<Cfg params="2,4,9,10" product="7909701" />
+		<Cfg params="3,4,9,10" product="7909701" />
+		<Cfg params="1,5,9,10" product="7908401" />
+		<Cfg params="2,5,9,10" product="7909701" />
+		<Cfg params="3,5,9,10" product="7909501" />
+		<Cfg params="4,5,9,10" product="7909701" />
+		<Cfg params="1,6,9,10" product="7909201" />
+		<Cfg params="2,6,9,10" product="7909701" />
+		<Cfg params="3,6,9,10" product="7909301" />
+		<Cfg params="4,6,9,10" product="7909701" />
+		<Cfg params="5,6,9,10" product="7909701" />
+		<Cfg params="1,7,9,10" product="7908301" />
+		<Cfg params="2,7,9,10" product="7909701" />
+		<Cfg params="3,7,9,10" product="7909701" />
+		<Cfg params="4,7,9,10" product="7909001" />
+		<Cfg params="5,7,9,10" product="7909701" />
+		<Cfg params="6,7,9,10" product="7909701" />
+		<Cfg params="1,8,9,10" product="7909701" />
+		<Cfg params="2,8,9,10" product="7909701" />
+		<Cfg params="3,8,9,10" product="7908801" />
+		<Cfg params="4,8,9,10" product="7908501" />
+		<Cfg params="5,8,9,10" product="7909701" />
+		<Cfg params="6,8,9,10" product="7909601" />
+		<Cfg params="7,8,9,10" product="7909701" />
+		<Cfg params="1,2,3,11" product="7909701" />
+		<Cfg params="1,2,4,11" product="7909701" />
+		<Cfg params="1,3,4,11" product="7908601" />
+		<Cfg params="2,3,4,11" product="7909701" />
+		<Cfg params="1,2,5,11" product="7909701" />
+		<Cfg params="1,3,5,11" product="7908901" />
+		<Cfg params="2,3,5,11" product="7909701" />
+		<Cfg params="1,4,5,11" product="7908301" />
+		<Cfg params="2,4,5,11" product="7909701" />
+		<Cfg params="3,4,5,11" product="7909701" />
+		<Cfg params="1,2,6,11" product="7909701" />
+		<Cfg params="1,3,6,11" product="7909701" />
+		<Cfg params="2,3,6,11" product="7909701" />
+		<Cfg params="1,4,6,11" product="7909601" />
+		<Cfg params="2,4,6,11" product="7908701" />
+		<Cfg params="3,4,6,11" product="7909701" />
+		<Cfg params="1,5,6,11" product="7909201" />
+		<Cfg params="2,5,6,11" product="7909701" />
+		<Cfg params="3,5,6,11" product="7908901" />
+		<Cfg params="4,5,6,11" product="7909701" />
+		<Cfg params="1,2,7,11" product="7909501" />
+		<Cfg params="1,3,7,11" product="7909701" />
+		<Cfg params="2,3,7,11" product="7909701" />
+		<Cfg params="1,4,7,11" product="7909101" />
+		<Cfg params="2,4,7,11" product="7909701" />
+		<Cfg params="3,4,7,11" product="7909101" />
+		<Cfg params="1,5,7,11" product="7909701" />
+		<Cfg params="2,5,7,11" product="7909701" />
+		<Cfg params="3,5,7,11" product="7908801" />
+		<Cfg params="4,5,7,11" product="7909701" />
+		<Cfg params="1,6,7,11" product="7909701" />
+		<Cfg params="2,6,7,11" product="7909001" />
+		<Cfg params="3,6,7,11" product="7909701" />
+		<Cfg params="4,6,7,11" product="7909701" />
+		<Cfg params="5,6,7,11" product="7908401" />
+		<Cfg params="1,2,8,11" product="7909701" />
+		<Cfg params="1,3,8,11" product="7909701" />
+		<Cfg params="2,3,8,11" product="7908501" />
+		<Cfg params="1,4,8,11" product="7909701" />
+		<Cfg params="2,4,8,11" product="7909201" />
+		<Cfg params="3,4,8,11" product="7909701" />
+		<Cfg params="1,5,8,11" product="7908401" />
+		<Cfg params="2,5,8,11" product="7909701" />
+		<Cfg params="3,5,8,11" product="7909001" />
+		<Cfg params="4,5,8,11" product="7909701" />
+		<Cfg params="1,6,8,11" product="7909501" />
+		<Cfg params="2,6,8,11" product="7909701" />
+		<Cfg params="3,6,8,11" product="7909701" />
+		<Cfg params="4,6,8,11" product="7909601" />
+		<Cfg params="5,6,8,11" product="7909701" />
+		<Cfg params="1,7,8,11" product="7908601" />
+		<Cfg params="2,7,8,11" product="7909701" />
+		<Cfg params="3,7,8,11" product="7909701" />
+		<Cfg params="4,7,8,11" product="7909701" />
+		<Cfg params="5,7,8,11" product="7909701" />
+		<Cfg params="6,7,8,11" product="7908701" />
+		<Cfg params="1,2,9,11" product="7909701" />
+		<Cfg params="1,3,9,11" product="7909501" />
+		<Cfg params="2,3,9,11" product="7909701" />
+		<Cfg params="1,4,9,11" product="7909701" />
+		<Cfg params="2,4,9,11" product="7908901" />
+		<Cfg params="3,4,9,11" product="7909701" />
+		<Cfg params="1,5,9,11" product="7909701" />
+		<Cfg params="2,5,9,11" product="7909701" />
+		<Cfg params="3,5,9,11" product="7908801" />
+		<Cfg params="4,5,9,11" product="7909701" />
+		<Cfg params="1,6,9,11" product="7909701" />
+		<Cfg params="2,6,9,11" product="7909201" />
+		<Cfg params="3,6,9,11" product="7909701" />
+		<Cfg params="4,6,9,11" product="7908501" />
+		<Cfg params="5,6,9,11" product="7909701" />
+		<Cfg params="1,7,9,11" product="7909701" />
+		<Cfg params="2,7,9,11" product="7909701" />
+		<Cfg params="3,7,9,11" product="7908801" />
+		<Cfg params="4,7,9,11" product="7909701" />
+		<Cfg params="5,7,9,11" product="7909601" />
+		<Cfg params="6,7,9,11" product="7909701" />
+		<Cfg params="1,8,9,11" product="7909701" />
+		<Cfg params="2,8,9,11" product="7909701" />
+		<Cfg params="3,8,9,11" product="7909701" />
+		<Cfg params="4,8,9,11" product="7909001" />
+		<Cfg params="5,8,9,11" product="7909701" />
+		<Cfg params="6,8,9,11" product="7908801" />
+		<Cfg params="7,8,9,11" product="7909701" />
+		<Cfg params="1,2,10,11" product="7909701" />
+		<Cfg params="1,3,10,11" product="7909701" />
+		<Cfg params="2,3,10,11" product="7909701" />
+		<Cfg params="1,4,10,11" product="7908501" />
+		<Cfg params="2,4,10,11" product="7909701" />
+		<Cfg params="3,4,10,11" product="7908601" />
+		<Cfg params="1,5,10,11" product="7909701" />
+		<Cfg params="2,5,10,11" product="7909701" />
+		<Cfg params="3,5,10,11" product="7909401" />
+		<Cfg params="4,5,10,11" product="7909701" />
+		<Cfg params="1,6,10,11" product="7909301" />
+		<Cfg params="2,6,10,11" product="7909701" />
+		<Cfg params="3,6,10,11" product="7909701" />
+		<Cfg params="4,6,10,11" product="7909701" />
+		<Cfg params="5,6,10,11" product="7908501" />
+		<Cfg params="1,7,10,11" product="7909701" />
+		<Cfg params="2,7,10,11" product="7908901" />
+		<Cfg params="3,7,10,11" product="7909701" />
+		<Cfg params="4,7,10,11" product="7909701" />
+		<Cfg params="5,7,10,11" product="7908501" />
+		<Cfg params="6,7,10,11" product="7908701" />
+		<Cfg params="1,8,10,11" product="7909701" />
+		<Cfg params="2,8,10,11" product="7909701" />
+		<Cfg params="3,8,10,11" product="7909201" />
+		<Cfg params="4,8,10,11" product="7909701" />
+		<Cfg params="5,8,10,11" product="7909301" />
+		<Cfg params="6,8,10,11" product="7909701" />
+		<Cfg params="7,8,10,11" product="7909701" />
+		<Cfg params="1,9,10,11" product="7909701" />
+		<Cfg params="2,9,10,11" product="7908901" />
+		<Cfg params="3,9,10,11" product="7909701" />
+		<Cfg params="4,9,10,11" product="7909701" />
+		<Cfg params="5,9,10,11" product="7909701" />
+		<Cfg params="6,9,10,11" product="7908501" />
+		<Cfg params="7,9,10,11" product="7909701" />
+		<Cfg params="8,9,10,11" product="7909701" />
+		<Cfg params="1,2,3,12" product="7909701" />
+		<Cfg params="1,2,4,12" product="7909201" />
+		<Cfg params="1,3,4,12" product="7909701" />
+		<Cfg params="2,3,4,12" product="7909701" />
+		<Cfg params="1,2,5,12" product="7909701" />
+		<Cfg params="1,3,5,12" product="7909301" />
+		<Cfg params="2,3,5,12" product="7909701" />
+		<Cfg params="1,4,5,12" product="7909701" />
+		<Cfg params="2,4,5,12" product="7909701" />
+		<Cfg params="3,4,5,12" product="7909701" />
+		<Cfg params="1,2,6,12" product="7909601" />
+		<Cfg params="1,3,6,12" product="7909701" />
+		<Cfg params="2,3,6,12" product="7909701" />
+		<Cfg params="1,4,6,12" product="7909701" />
+		<Cfg params="2,4,6,12" product="7908801" />
+		<Cfg params="3,4,6,12" product="7908601" />
+		<Cfg params="1,5,6,12" product="7909701" />
+		<Cfg params="2,5,6,12" product="7909701" />
+		<Cfg params="3,5,6,12" product="7909701" />
+		<Cfg params="4,5,6,12" product="7909701" />
+		<Cfg params="1,2,7,12" product="7909301" />
+		<Cfg params="1,3,7,12" product="7909701" />
+		<Cfg params="2,3,7,12" product="7908701" />
+		<Cfg params="1,4,7,12" product="7909701" />
+		<Cfg params="2,4,7,12" product="7909701" />
+		<Cfg params="3,4,7,12" product="7909201" />
+		<Cfg params="1,5,7,12" product="7909701" />
+		<Cfg params="2,5,7,12" product="7909701" />
+		<Cfg params="3,5,7,12" product="7909701" />
+		<Cfg params="4,5,7,12" product="7909401" />
+		<Cfg params="1,6,7,12" product="7909701" />
+		<Cfg params="2,6,7,12" product="7909701" />
+		<Cfg params="3,6,7,12" product="7909701" />
+		<Cfg params="4,6,7,12" product="7909701" />
+		<Cfg params="5,6,7,12" product="7909701" />
+		<Cfg params="1,2,8,12" product="7909501" />
+		<Cfg params="1,3,8,12" product="7909701" />
+		<Cfg params="2,3,8,12" product="7909701" />
+		<Cfg params="1,4,8,12" product="7909301" />
+		<Cfg params="2,4,8,12" product="7909701" />
+		<Cfg params="3,4,8,12" product="7909601" />
+		<Cfg params="1,5,8,12" product="7909701" />
+		<Cfg params="2,5,8,12" product="7909701" />
+		<Cfg params="3,5,8,12" product="7909701" />
+		<Cfg params="4,5,8,12" product="7909501" />
+		<Cfg params="1,6,8,12" product="7909701" />
+		<Cfg params="2,6,8,12" product="7909701" />
+		<Cfg params="3,6,8,12" product="7909701" />
+		<Cfg params="4,6,8,12" product="7909301" />
+		<Cfg params="5,6,8,12" product="7909701" />
+		<Cfg params="1,7,8,12" product="7909701" />
+		<Cfg params="2,7,8,12" product="7909701" />
+		<Cfg params="3,7,8,12" product="7909701" />
+		<Cfg params="4,7,8,12" product="7909701" />
+		<Cfg params="5,7,8,12" product="7909701" />
+		<Cfg params="6,7,8,12" product="7909701" />
+		<Cfg params="1,2,9,12" product="7909701" />
+		<Cfg params="1,3,9,12" product="7909201" />
+		<Cfg params="2,3,9,12" product="7909701" />
+		<Cfg params="1,4,9,12" product="7909701" />
+		<Cfg params="2,4,9,12" product="7909601" />
+		<Cfg params="3,4,9,12" product="7909701" />
+		<Cfg params="1,5,9,12" product="7909701" />
+		<Cfg params="2,5,9,12" product="7909701" />
+		<Cfg params="3,5,9,12" product="7909701" />
+		<Cfg params="4,5,9,12" product="7908601" />
+		<Cfg params="1,6,9,12" product="7909701" />
+		<Cfg params="2,6,9,12" product="7909301" />
+		<Cfg params="3,6,9,12" product="7909701" />
+		<Cfg params="4,6,9,12" product="7909701" />
+		<Cfg params="5,6,9,12" product="7908401" />
+		<Cfg params="1,7,9,12" product="7909701" />
+		<Cfg params="2,7,9,12" product="7909401" />
+		<Cfg params="3,7,9,12" product="7909701" />
+		<Cfg params="4,7,9,12" product="7909701" />
+		<Cfg params="5,7,9,12" product="7909701" />
+		<Cfg params="6,7,9,12" product="7908601" />
+		<Cfg params="1,8,9,12" product="7909701" />
+		<Cfg params="2,8,9,12" product="7909501" />
+		<Cfg params="3,8,9,12" product="7909701" />
+		<Cfg params="4,8,9,12" product="7909701" />
+		<Cfg params="5,8,9,12" product="7909501" />
+		<Cfg params="6,8,9,12" product="7909701" />
+		<Cfg params="7,8,9,12" product="7909701" />
+		<Cfg params="1,2,10,12" product="7909701" />
+		<Cfg params="1,3,10,12" product="7909701" />
+		<Cfg params="2,3,10,12" product="7909701" />
+		<Cfg params="1,4,10,12" product="7909701" />
+		<Cfg params="2,4,10,12" product="7909701" />
+		<Cfg params="3,4,10,12" product="7908601" />
+		<Cfg params="1,5,10,12" product="7909701" />
+		<Cfg params="2,5,10,12" product="7909701" />
+		<Cfg params="3,5,10,12" product="7909701" />
+		<Cfg params="4,5,10,12" product="7909701" />
+		<Cfg params="1,6,10,12" product="7909701" />
+		<Cfg params="2,6,10,12" product="7908901" />
+		<Cfg params="3,6,10,12" product="7909701" />
+		<Cfg params="4,6,10,12" product="7909701" />
+		<Cfg params="5,6,10,12" product="7909501" />
+		<Cfg params="1,7,10,12" product="7909701" />
+		<Cfg params="2,7,10,12" product="7909501" />
+		<Cfg params="3,7,10,12" product="7909701" />
+		<Cfg params="4,7,10,12" product="7909701" />
+		<Cfg params="5,7,10,12" product="7909701" />
+		<Cfg params="6,7,10,12" product="7908801" />
+		<Cfg params="1,8,10,12" product="7909701" />
+		<Cfg params="2,8,10,12" product="7908601" />
+		<Cfg params="3,8,10,12" product="7909701" />
+		<Cfg params="4,8,10,12" product="7909701" />
+		<Cfg params="5,8,10,12" product="7909701" />
+		<Cfg params="6,8,10,12" product="7909701" />
+		<Cfg params="7,8,10,12" product="7909701" />
+		<Cfg params="1,9,10,12" product="7909701" />
+		<Cfg params="2,9,10,12" product="7909701" />
+		<Cfg params="3,9,10,12" product="7909501" />
+		<Cfg params="4,9,10,12" product="7909701" />
+		<Cfg params="5,9,10,12" product="7909701" />
+		<Cfg params="6,9,10,12" product="7909701" />
+		<Cfg params="7,9,10,12" product="7909401" />
+		<Cfg params="8,9,10,12" product="7909701" />
+		<Cfg params="1,2,11,12" product="7909701" />
+		<Cfg params="1,3,11,12" product="7909701" />
+		<Cfg params="2,3,11,12" product="7909701" />
+		<Cfg params="1,4,11,12" product="7908801" />
+		<Cfg params="2,4,11,12" product="7909701" />
+		<Cfg params="3,4,11,12" product="7909701" />
+		<Cfg params="1,5,11,12" product="7909701" />
+		<Cfg params="2,5,11,12" product="7909701" />
+		<Cfg params="3,5,11,12" product="7909701" />
+		<Cfg params="4,5,11,12" product="7909401" />
+		<Cfg params="1,6,11,12" product="7909701" />
+		<Cfg params="2,6,11,12" product="7909501" />
+		<Cfg params="3,6,11,12" product="7909701" />
+		<Cfg params="4,6,11,12" product="7909701" />
+		<Cfg params="5,6,11,12" product="7909501" />
+		<Cfg params="1,7,11,12" product="7909701" />
+		<Cfg params="2,7,11,12" product="7909701" />
+		<Cfg params="3,7,11,12" product="7909701" />
+		<Cfg params="4,7,11,12" product="7909401" />
+		<Cfg params="5,7,11,12" product="7909701" />
+		<Cfg params="6,7,11,12" product="7909701" />
+		<Cfg params="1,8,11,12" product="7909701" />
+		<Cfg params="2,8,11,12" product="7908501" />
+		<Cfg params="3,8,11,12" product="7909701" />
+		<Cfg params="4,8,11,12" product="7909701" />
+		<Cfg params="5,8,11,12" product="7909701" />
+		<Cfg params="6,8,11,12" product="7909701" />
+		<Cfg params="7,8,11,12" product="7909701" />
+		<Cfg params="1,9,11,12" product="7909401" />
+		<Cfg params="2,9,11,12" product="7909701" />
+		<Cfg params="3,9,11,12" product="7909701" />
+		<Cfg params="4,9,11,12" product="7908501" />
+		<Cfg params="5,9,11,12" product="7909701" />
+		<Cfg params="6,9,11,12" product="7909701" />
+		<Cfg params="7,9,11,12" product="7909401" />
+		<Cfg params="8,9,11,12" product="7909701" />
+		<Cfg params="1,10,11,12" product="7909701" />
+		<Cfg params="2,10,11,12" product="7909701" />
+		<Cfg params="3,10,11,12" product="7908801" />
+		<Cfg params="4,10,11,12" product="7909701" />
+		<Cfg params="5,10,11,12" product="7909701" />
+		<Cfg params="6,10,11,12" product="7909701" />
+		<Cfg params="7,10,11,12" product="7909701" />
+		<Cfg params="8,10,11,12" product="7909701" />
+		<Cfg params="9,10,11,12" product="7909701" />
+	</Formula>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			characterId	-	捕获武将id
+			goodslist	-	获得道具碎片
+		-->
+	<Capture characterId="4083" goodslist="7907101,1" />
+	<Capture characterId="4084" goodslist="7907201,1" />
+	<Capture characterId="4085" goodslist="7907301,1" />
+	<Capture characterId="4086" goodslist="7907401,1" />
+	<Capture characterId="4087" goodslist="7907501,1" />
+	<Capture characterId="4088" goodslist="7907601,1" />
+	<Capture characterId="4089" goodslist="7907701,1" />
+	<Capture characterId="4090" goodslist="7907801,1" />
+	<Capture characterId="4091" goodslist="7907901,1" />
+	<Capture characterId="4092" goodslist="7908001,1" />
+	<Capture characterId="4093" goodslist="7908101,1" />
+	<Capture characterId="4094" goodslist="7908201,1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			baseId	-	物品id
+			maxPerDay	-	最大赠送数量
+			short	-	缩写（求助语句用到）
+				-
+		-->
+	<Present baseId="7908301" maxPerDay="1" />
+	<Present baseId="7908401" maxPerDay="1" />
+	<Present baseId="7908501" maxPerDay="1" />
+	<Present baseId="7908601" maxPerDay="1" />
+	<Present baseId="7908701" maxPerDay="1" />
+	<Present baseId="7908801" maxPerDay="1" />
+	<Present baseId="7908901" maxPerDay="1" />
+	<Present baseId="7909001" maxPerDay="1" />
+	<Present baseId="7909101" maxPerDay="1" />
+	<Present baseId="7909201" maxPerDay="1" />
+	<Present baseId="7909301" maxPerDay="1" />
+	<Present baseId="7909401" maxPerDay="1" />
+	<Present baseId="7909501" maxPerDay="1" />
+	<Present baseId="7909601" maxPerDay="1" />
+	<Present baseId="7909701" maxPerDay="5" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	邮件ID（与服务端约定好的ID，不能改）
+			title	-	邮件标题
+			content	-	内容：$NICKNAME$ 收到邮件的玩家昵称
+    $DONATENICKNAME$ 赠送的玩家昵称
+    $GOODSLIST$  赠送的道具
+			time	-	有效期
+			goods	-	附带道具
+		-->
+	<mail id="1" time="1296000">
+		<title>
+			<![CDATA[年兽道具]]>
+		</title>
+		<content>
+			<![CDATA[尊敬的$NICKNAME$：您的好友$DONATENICKNAME$赠送了您一个春联字符$GOODSLIST$，请注意查收]]>
+		</content>
+	</mail>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank1	-	排名
+			rank2	-	排名下限
+			itmes	-	奖励-实际上是手动发给php来发邮件的
+			name	-	奖励名字-php发邮件用
+			icon	-	显示宝箱icon123档次，1最好
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			currenttime	-	时间段
+			noNumber	-	未合成字符数
+			noRandom	-	放入未合成字符概率，百分制
+		-->
+	<RandomPut currenttime="20230116T100000;20240114T235959" noNumber="12,14" noRandom="50" />
+	<RandomPut currenttime="20230116T100000;20240114T235959" noNumber="8,11" noRandom="30" />
+	<RandomPut currenttime="20230116T100000;20240114T235959" noNumber="4,7" noRandom="10" />
+	<RandomPut currenttime="20240115T000000;20240214T235959" noNumber="12,14" noRandom="50" />
+	<RandomPut currenttime="20240115T000000;20240214T235959" noNumber="8,11" noRandom="40" />
+	<RandomPut currenttime="20240115T000000;20240214T235959" noNumber="4,7" noRandom="20" />
+	<RandomPut currenttime="20240115T000000;20240214T235959" noNumber="1,3" noRandom="10" />
+	<RandomPut currenttime="20240215T000000;20240222T235959" noNumber="12,14" noRandom="70" />
+	<RandomPut currenttime="20240215T000000;20240222T235959" noNumber="8,11" noRandom="50" />
+	<RandomPut currenttime="20240215T000000;20240222T235959" noNumber="4,7" noRandom="30" />
+	<RandomPut currenttime="20240215T000000;20240222T235959" noNumber="1,3" noRandom="20" />
+</root>

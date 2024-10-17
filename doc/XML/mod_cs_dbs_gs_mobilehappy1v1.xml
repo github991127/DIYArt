@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--说明
+costgoodsid    需要道具的ID
+costgoodscnt   需要道具的数量
+freecntperday  每天免费进入次数
+begin          每天起止时间，只看时间，不看日期
+end            每天起止时间，只看时间，不看日期
+maxtimepergame 每局游戏最多消耗时间,严格控制在30分钟以内
+
+minlevel       等级匹配区间
+maxlevel       等级匹配区间
+maxcnt         最多复活次数
+
+awardgoods     奖励道具
+cost1          抢先手需要消耗对应道具数量
+
+
+-->
+
+<mobilehappy1v1>
+	<!--时间相关，resettime为每天清除前一天所有玩家进度的时间，一般为每天比赛周期结束后半小时。并支持在每天开放多个时间段。-->
+	<time resettime="003000" rankbegindate="20141201T000000">
+		<item openbegin="100000" openend="180000"/>
+		<item openbegin="190000" openend="200000"/>
+	</time>
+	<!--报名相关配置-->
+	<signup open="1" costgoodsid="9020001" costgoodscnt="50" freecntperday="2" candianjianglevel="2,3" maxtimepergame="1200"/>
+	<!--禁用武将配置，注意需要和服务器的禁用武将配置同步更改-->
+	<banrule>
+         <!--banchr list="201,202,203,204,205,206,211,8,22,10,15,108,306,307"/-->
+		 <!-- <banchr list="56,211"/> -->
+		 <!-- <banchr list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,70,71,72,73,74,100,101,102,103,105,107,108,109,110,111,112,113,114,115,116,117,118,119,121,122,123,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,183,184,185,186,187,188,189,201,202,203,204,205,206,210,211,212,104,300,301,302,304,306,307,308,309,311,312,314,315,317,318,319,320,313,303,305,316,310"/> -->
+
+	</banrule>
+
+	<!--等级匹配相关配置-->
+	<match timeout="30"> 
+		<item minlevel="0" maxlevel="11"/>
+		<item minlevel="1" maxlevel="1"/>
+		<item minlevel="2" maxlevel="2"/>
+		<item minlevel="3" maxlevel="3"/>
+		<item minlevel="4" maxlevel="4"/>
+		<item minlevel="5" maxlevel="5"/>
+		<item minlevel="6" maxlevel="6"/>
+		<item minlevel="7" maxlevel="7"/>
+		<item minlevel="8" maxlevel="8"/>
+		<item minlevel="9" maxlevel="9"/>
+		<item minlevel="10" maxlevel="11"/>
+	</match>
+	<!--复活相关配置-->
+	<revive maxcnt="3">
+		<item minlevel="0" maxlevel="0" costgoodscnt="10,11,12"/>
+		<item minlevel="1" maxlevel="1" costgoodscnt="18,19,20"/>
+		<item minlevel="2" maxlevel="2" costgoodscnt="34"/>
+		<item minlevel="3" maxlevel="3" costgoodscnt="49"/>
+		<item minlevel="4" maxlevel="4" costgoodscnt="79"/>
+		<item minlevel="5" maxlevel="5" costgoodscnt="139"/>
+		<item minlevel="6" maxlevel="6" costgoodscnt="199"/>
+		<item minlevel="7" maxlevel="7" costgoodscnt="249"/>
+		<item minlevel="8" maxlevel="8" costgoodscnt="498"/>
+		<item minlevel="9" maxlevel="9" costgoodscnt="668"/>
+		<item minlevel="10" maxlevel="10" costgoodscnt="788"/>
+		<item minlevel="11" maxlevel="11" costgoodscnt="1388"/>
+	</revive>
+	<!--奖励相关配置maxlevel最大值就是本模式最大场数,desc是客户端公告显示用的文案配置-->
+	<award>
+		<item minlevel="3" maxlevel="5" awardgoods="9020101,238" desc="238金票"/>
+		<item minlevel="6" maxlevel="8" awardgoods="9020101,888" desc="888金票"/>
+		<item minlevel="9" maxlevel="11" awardgoods="9020101,2888" desc="2888金票"/>
+		<item minlevel="12" maxlevel="12" awardgoods="9020101,8888" desc="8888金票"/><!--desc属性为发送公告时显示的奖励内容-->
+	</award>
+	<!--大厅模式标签显示奖金配置，一般和最高级奖励的元宝数额一致-->
+	<lobbyshow money="8888"/>
+	<!--抢先相关配置-->
+	<bidfirst timeout="10" cost1="40" cost2="80" cost3="150"/>
+	<!--通关指南文案配置-->
+	<guide>
+	 <text color="61,202,226" tipdesc="欢乐1V1第二期计划在11月21日晚上启动"/>
+	 <text color="255,0,0" tipdesc="本期不开放点将，同时全面下调报名、抢先手、复活的价格"/>
+	 <text color="255,255,0" tipdesc="模式开放时间:每天12:00-13:00和21:00-23:00"/>
+	 <text color="255,255,255" tipdesc="模式规则："/>
+	 <text color="255,255,255" tipdesc="1.每天第一次报名是免费的，之后每次报名只要50欢乐豆"/>
+	 <text color="255,255,255" tipdesc="2.从3胜开始就有奖励了，奖励会随着你的胜利次数提升而变高"/>
+	 <text color="255,255,255" tipdesc="3.战败不会导致你不能领奖"/>
+	 <text color="255,255,255" tipdesc="4.一旦领奖，就不能继续往后打了，再报名是从0胜开始"/>
+	 <text color="255,255,255" tipdesc="5.复活需要的欢乐豆根据胜利次数不同会有变化"/>
+	 <text color="255,255,255" tipdesc="6.复活的次数越多，需要的费用也会翻倍，并且最多只能复活3次"/>
+	 <text color="255,255,255" tipdesc="7.每天的赛程结束后，会清除你的胜利进度，只保留奖励信息"/>
+	 <text color="255,255,255" tipdesc="8.如果想提前领奖，可以点击左侧闪烁的元宝"/> 
+	 <text color="255,255,255" tipdesc="9.游戏内先手是可以争抢的，请提前准备的欢乐豆"/>
+	 <text color="255,255,255" tipdesc="10.先手只有一次报价的机会，一旦被对手报价超过就是对手的了"/>
+	 <text color="255,255,255" tipdesc="11.直接报价150则可以直接抢到先手，请多加利用"/>
+	 <text color="255,255,255" tipdesc="12.排行榜分数在领奖时增加"/>
+	</guide>
+	<!--等待匹配界面tips配置-->
+	<waittips>
+		<tip id= "1" text="谁阻碍我赚元宝，我就要灭了谁！" />
+		<!-- <tip id= "2" text="抢先手可以保证点将不被对方抢走哦" /> -->
+		<tip id= "3" text="打不过对手的话，把对手手机关掉就会赢了" />
+		<tip id= "4" text="妈妈说不玩欢乐1V1的孩子是笨孩子" />
+		<tip id= "5" text="不用着急领奖哦，你的奖励不会因为战败就消失的！" />
+		<tip id= "6" text="如果能先出牌的话，应该就能赢吧 :-D" />
+		<tip id= "7" text="快让我复活！马上就可以拿大奖了！" />
+		<tip id= "8" text="快死的时候，就努力向对手求饶吧" />
+		<tip id= "9" text="不要吝啬手气卡，这是你保证胜利的关键~" />
+		<!-- <tip id= "10" text="有时会开放一些强力武将使用诶，多留意通关指南吧" /> -->
+		<!-- <tip id= "11" text="我存在的价值就是刷排行榜" /> -->
+		<tip id= "12" text="杀！杀！杀！ 为了称号千人杀，杀啊！" />
+		<tip id= "13" text="每次拿到12胜就会被公告呢，好害羞" />
+		<!-- <tip id= "14" text="3胜之前现在点将都无效了哦" /> -->
+		<tip id= "15" text="本期不能点将了，又可以炫耀我的技术了！" />
+		<tip id= "16" text="报名降价咯，好便宜~" />
+	</waittips>
+</mobilehappy1v1>

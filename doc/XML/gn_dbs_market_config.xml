@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+	DropClass 
+		id集市类型
+		MaxSlot 最大格子数
+		RefreshTime 每天的整点刷新时间.
+	DropRule 
+		RuleId 规则id，不可重复 
+		usetime  	0 默认配置  只允许有一个
+					1 根据时间来生效.
+		EffectiveTime 生效时间（1 从起始时间到结束时间；2 从起始时间到结束时间的小时内生效）
+		ChanceMulti 概率翻倍的组别和倍数 
+		CountMulti 个数翻倍的组别和倍数 
+		GroupPrior 优先从groupid抽取物品，抽取规则根据group指定
+		GroupExcept 不抽取的groupid
+	DropGroup 
+		GroupId 组别id 
+		bRound	1 使用圆桌 0 固定概率
+		uAllItemChance 当bRound为0时指定概率的分母.
+	DropItem	
+		ItemId 道具baseid 
+		Chance 概率 
+		MinCount-MaxCount  
+		Pricetype 价格类型  只支持银两与个人贡献（94版本开始支持元宝啦，但是不能多种货币买一个道具，元宝用100016，不支持抵价券）
+		Price 价格数量
+-->
+
+<!-- 94版本新增，这个配置除了公会商店外还有用在联运服的限时礼包功能和银两武将功能
+	TypeRule
+		Type	1 工会商店	2 银两武将（其实这个规则是走掉落逻辑的，这里并不存在） 3 限时礼包商店
+		EnableRefresh	1 允许自动刷新	2 允许手动刷新 ！！！公会商店类型必须配置允许手动刷新！！！
+		DefaultDropId	如果没有condition规则时，默认的classid
+		Condition	针对限时礼包做的条件
+			ConditionType			1 达到等级 		2 进入模式		3 限时时间	
+			Min						等级下限		 模式id			判断起始时间
+			Max						等级上限		 模式id			判断结束时间
+			DropId					classid
+	DropClass 
+		id集市类型
+		MaxSlot 最大格子数
+		RefreshType 刷新时间的类型 1 每天整点刷新	2 刷新的持续时间（意思就是道具刷新出来之后多长时间就不能买了）
+		RefreshTime RefreshType:1 0-23整点时间; 2 持续的秒数  不能大于一天
+-->
+<root>
+	<TypeRule>
+		<Item Type = "1" EnableRefresh="3" DefaultDropId="1"/>
+		<!-- <Item Type = "2" EnableRefresh="3" DefaultDropId="0"/> 不存在的 -->
+ 		<Item Type = "3" EnableRefresh="1" DefaultDropId="0">
+			<Condition ConditionType="1" Min="10" Max="11" DropId="2"/>
+			<Condition ConditionType="1" Min="20" Max="21" DropId="3"/>
+			<Condition ConditionType="1" Min="30" Max="31" DropId="4"/>
+			<Condition ConditionType="1" Min="40" Max="41" DropId="5"/>
+			<Condition ConditionType="1" Min="50" Max="51" DropId="6"/>
+			<Condition ConditionType="1" Min="60" Max="61" DropId="7"/>
+			<Condition ConditionType="1" Min="70" Max="71" DropId="8"/>
+		<!-- <Condition ConditionType="3" Min="20171124T100000" Max="20171124T100100" DropId="8"/> -->
+		</Item>
+			<Item Type = "4" EnableRefresh="3" DefaultDropId="9"/>
+			<Item Type = "5" EnableRefresh="1" DefaultDropId="10"/>
+			<Item Type = "6" EnableRefresh="3" DefaultDropId="11"/>  
+		<Item Type = "7" EnableRefresh="1" DefaultDropId="0"><!-- 三选一限时礼包-->
+			<Condition ConditionType="1" Min="201" Max="202" DropId="13"/><!-- 三选一限时礼包2 -->
+			<Condition ConditionType="1" Min="201" Max="202" DropId="14" PreDropId="13"/><!-- 三选一限时礼包3 -->
+			<Condition ConditionType="1" Min="201" Max="202" DropId="15" PreDropId="14"/><!-- 三选一限时礼包4 -->
+			<Condition ConditionType="1" Min="201" Max="202" DropId="16" PreDropId="15"/><!-- 三选一限时礼包5 -->
+			<Condition ConditionType="1" Min="201" Max="202" DropId="17" PreDropId="16"/><!-- 三选一限时礼包6 -->
+			<Condition ConditionType="1" Min="201" Max="202" DropId="18" PreDropId="17"/><!-- 三选一限时礼包7 -->
+			<Condition ConditionType="1" Min="201" Max="202" DropId="19" PreDropId="18"/><!-- 三选一限时礼包8 -->
+		</Item>		
+	</TypeRule>
+    <Market>
+		<!-- 限时礼包类型 -->
+		
+		
+		<!-- 三选一限时礼包1 孙尚香（标），大乔（标），普通武将包（风林火山）*1 -->
+		<DropClass Id="12" MaxSlot="3" RefreshType="2" RefreshTime="7200">
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20581231T235959" ChanceMulti="1,1" CountMulti="1,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8212101" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="100" />
+            </DropGroup>
+			<DropGroup GroupId="2" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8212201" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="100" />
+            </DropGroup>
+			<DropGroup GroupId="3" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8212301" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="100" />
+            </DropGroup>			
+		</DropClass>		
+		
+		<!-- 三选一限时礼包2 诸葛亮，大乔，普通武将包（风林火山）*1 -->
+		<DropClass Id="13" MaxSlot="3" RefreshType="2" RefreshTime="7200">
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20581231T235959" ChanceMulti="1,1" CountMulti="1,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8214501" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="100" />
+            </DropGroup>
+			<DropGroup GroupId="2" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8214601" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="100" />
+            </DropGroup>
+			<DropGroup GroupId="3" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8212601" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="100" />
+            </DropGroup>			
+		</DropClass>
+		
+		<!-- 三选一限时礼包3 小乔（风），董卓（林）， 普通武将包（风林火山）*1 -->
+		<DropClass Id="14" MaxSlot="3" RefreshType="2" RefreshTime="21600">
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20581231T235959" ChanceMulti="1,1" CountMulti="1,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8214701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="300" />
+            </DropGroup>
+			<DropGroup GroupId="2" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8214801" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="300" />
+            </DropGroup>
+			<DropGroup GroupId="3" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8212901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="300" />
+            </DropGroup>			
+		</DropClass>
+
+		<!-- 三选一限时礼包4 曹丕（林），鲁肃（林），普通武将包（风林火山）*1 -->
+		<DropClass Id="15" MaxSlot="3" RefreshType="2" RefreshTime="21600">
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20581231T235959" ChanceMulti="1,1" CountMulti="1,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8213001" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="600" />
+            </DropGroup>
+			<DropGroup GroupId="2" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8214901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="600" />
+            </DropGroup>
+			<DropGroup GroupId="3" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8213201" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="600" />
+            </DropGroup>			
+		</DropClass>
+
+
+		<!-- 三选一限时礼包5 严颜（阴），王平（阴），普通武将包（风林火山）*4 -->
+		<DropClass Id="16" MaxSlot="3" RefreshType="2" RefreshTime="21600">
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20581231T235959" ChanceMulti="1,1" CountMulti="1,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8213301" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="1200" />
+            </DropGroup>
+			<DropGroup GroupId="2" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8213401" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="1200" />
+            </DropGroup>
+			<DropGroup GroupId="3" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8213501" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="1200" />
+            </DropGroup>			
+		</DropClass>
+
+
+		<!-- 三选一限时礼包6 陈到（雷），张济SP，豪华武将包*2 -->		
+		<DropClass Id="17" MaxSlot="3" RefreshType="2" RefreshTime="21600">
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20581231T235959" ChanceMulti="1,1" CountMulti="1,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8213601" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="3000" />
+            </DropGroup>
+			<DropGroup GroupId="2" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8213701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="3000" />
+            </DropGroup>
+			<DropGroup GroupId="3" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8213801" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="3000" />
+            </DropGroup>			
+		</DropClass>		
+		
+		<!-- 三选一限时礼包7 张角（界限突破),马云禄（SP），豪华武将包*3 -->		
+		<DropClass Id="18" MaxSlot="3" RefreshType="2" RefreshTime="21600">
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20581231T235959" ChanceMulti="1,1" CountMulti="1,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8213901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="6000" />
+            </DropGroup>
+			<DropGroup GroupId="2" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8214001" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="6000" />
+            </DropGroup>
+			<DropGroup GroupId="3" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8214101" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="6000" />
+            </DropGroup>			
+		</DropClass>		
+
+
+		<!-- 三选一限时礼包8 界卧龙诸葛，界庞统，豪华武将包*6-->		
+		<DropClass Id="19" MaxSlot="3" RefreshType="2" RefreshTime="21600">
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20581231T235959" ChanceMulti="1,1" CountMulti="1,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8214201" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="12800" />
+            </DropGroup>
+			<DropGroup GroupId="2" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8214301" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="12800" />
+            </DropGroup>
+			<DropGroup GroupId="3" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="8214401" Chance="100" MinCount="1" MaxCount="1" Pricetype="100007" Price="12800" />
+            </DropGroup>			
+		</DropClass>			
+
+				
+
+
+
+		<!-- 每日特惠幸运大奖  -->
+		<DropClass Id="11" MaxSlot="1" RefreshType="4" RefreshTime="1">
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20581231T235959" ChanceMulti="1,1" CountMulti="1,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="112601" Chance="30" MinCount="1" MaxCount="1" Pricetype="7901801" Price="100" />
+				<DropItem ItemId="1114301" Chance="50" MinCount="1" MaxCount="1" Pricetype="7901801" Price="100" />
+				<DropItem ItemId="1111801" Chance="120" MinCount="1" MaxCount="1" Pricetype="7901801" Price="100" />
+				<DropItem ItemId="1945801" Chance="150" MinCount="1" MaxCount="1" Pricetype="7901801" Price="100" />
+				<DropItem ItemId="104001" Chance="150" MinCount="1" MaxCount="1" Pricetype="7901801" Price="100" />
+				<DropItem ItemId="435601" Chance="250" MinCount="1" MaxCount="1" Pricetype="7901801" Price="100" />
+				<DropItem ItemId="1220301" Chance="250" MinCount="1" MaxCount="1" Pricetype="7901801" Price="100" />
+            </DropGroup>
+		</DropClass>
+		
+		
+		<!-- 等级达到10级限时礼包 -->
+		<DropClass Id="2" MaxSlot="1" RefreshType="2" RefreshTime="28800">
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20281231T235959" ChanceMulti="1,1" CountMulti="1,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="881001" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="100" />
+            </DropGroup>
+		</DropClass>
+		<!-- 等级达到20级限时礼包 -->
+		<DropClass Id="3" MaxSlot="1" RefreshType="2" RefreshTime="28800">
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20281231T235959" ChanceMulti="1,1" CountMulti="1,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="1242701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="1000" />
+            </DropGroup>
+		</DropClass>
+		<!-- 等级达到30级限时礼包 -->
+ 		<DropClass Id="4" MaxSlot="3" RefreshType="2" RefreshTime="28800"> 
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20281231T235959" ChanceMulti="1,1;2,1;3,1" CountMulti="1,1;2,1;3,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="435401" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="400" />
+            </DropGroup>
+			<DropGroup GroupId="2" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="435601" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="1200" />
+            </DropGroup>
+			<DropGroup GroupId="3" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="435501" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="2000" />
+            </DropGroup>
+		</DropClass>
+		<!-- 等级达到40级限时礼包 -->
+ 		<DropClass Id="5" MaxSlot="3" RefreshType="2" RefreshTime="28800">
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20281231T235959" ChanceMulti="1,1;2,1;3,1" CountMulti="1,1;2,1;3,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="435401" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="400" />
+            </DropGroup>
+			<DropGroup GroupId="2" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="904301" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="1280" />
+            </DropGroup>
+			<DropGroup GroupId="3" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="910801" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="1998" />
+            </DropGroup>
+		</DropClass>
+		<!-- 等级达到50级限时礼包 -->
+ 		<DropClass Id="6" MaxSlot="3" RefreshType="2" RefreshTime="28800">
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20281231T235959" ChanceMulti="1,1;2,1;3,1" CountMulti="1,1;2,1;3,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="435401" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="400" />
+            </DropGroup>
+			<DropGroup GroupId="2" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="435601" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="1200" />
+            </DropGroup>
+			<DropGroup GroupId="3" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="435501" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="2000" />
+            </DropGroup>
+		</DropClass>
+		<!-- 等级达到60级限时礼包 -->
+ 		<DropClass Id="7" MaxSlot="3" RefreshType="2" RefreshTime="28800">
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20281231T235959" ChanceMulti="1,1;2,1;3,1" CountMulti="1,1;2,1;3,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="1242901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="3000" />
+            </DropGroup>
+			<DropGroup GroupId="2" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="874801" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="5000" />
+            </DropGroup>
+			<DropGroup GroupId="3" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="874901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="9900" />
+            </DropGroup>
+		</DropClass>
+		<!-- 等级达到70级限时礼包 -->
+ 		<DropClass Id="8" MaxSlot="3" RefreshType="2" RefreshTime="28800">
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20281231T235959" ChanceMulti="1,1;2,1;3,1" CountMulti="1,1;2,1;3,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="916801" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="2398" />
+            </DropGroup>
+			<DropGroup GroupId="2" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="917301" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="2398" />
+            </DropGroup>
+			<DropGroup GroupId="3" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="917401" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="2898" />
+            </DropGroup>
+		</DropClass>
+		<!-- 11月24日晚上10点全服限购礼包 -->
+	<!--	<DropClass Id="8" MaxSlot="3" RefreshType="2" RefreshTime="3600">
+			<DropRule>
+                <RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20281231T235959" ChanceMulti="1,1;2,1;3,1" CountMulti="1,1;2,1;3,1" GroupPrior="" GroupExcept="" />
+            </DropRule>
+			<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="435401" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="9999" />
+            </DropGroup>
+			<DropGroup GroupId="2" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="435601" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="9999" />
+            </DropGroup>
+			<DropGroup GroupId="3" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="435501" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="9999" />
+            </DropGroup>
+		</DropClass>-->
+		
+		
+		<!-- 公会商店类型 94版新增了RefreshType这个字段等于1代表整点刷新，其他规则不变-->
+		<DropClass Id="1" MaxSlot="9" RefreshType="1" RefreshTime="10">
+        	<DropRule>
+                <RuleItem RuleId="1" UseTime="1" EffectiveTime="1;20181101T000000;20181115T235959" ChanceMulti="1,1;2,1;4,1" CountMulti="1,1;2,1;4,1" GroupPrior="" GroupExcept="3;5;6;7;8;9;10;11;12;13" NextRuleId="4"/>
+                <RuleItem RuleId="2" UseTime="1" EffectiveTime="1;20181016T000000;20181031T235959" ChanceMulti="1,1;2,1;11,1" CountMulti="1,1;2,1;11,1" GroupPrior="" GroupExcept="3;4;5;6;7;8;9;10;12;13" NextRuleId="1"/>
+				<RuleItem RuleId="4" UseTime="1" EffectiveTime="3;1116;1201" ChanceMulti="1,1;2,1;5,1" CountMulti="1,1;2,1;5,1" GroupPrior="" GroupExcept="3;4;6;7;8;9;10;11;12;13" NextRuleId="5"/>
+				<RuleItem RuleId="5" UseTime="1" EffectiveTime="3;1201;1216" ChanceMulti="1,1;2,1;6,1" CountMulti="1,1;2,1;6,1" GroupPrior="" GroupExcept="3;4;5;7;8;9;10;11;12;13" NextRuleId="6"/>
+				<RuleItem RuleId="6" UseTime="1" EffectiveTime="3;1216;0101" ChanceMulti="3,1;2,1;7,1" CountMulti="3,1;2,1;7,1" GroupPrior="" GroupExcept="1;4;5;6;8;9;10;11;12;13" NextRuleId="7"/>
+				<RuleItem RuleId="7" UseTime="1" EffectiveTime="3;0101;0116" ChanceMulti="3,1;2,1;8,1" CountMulti="3,1;2,1;8,1" GroupPrior="" GroupExcept="1;4;5;6;7;9;10;11;12;13" NextRuleId="8"/>
+				<RuleItem RuleId="8" UseTime="1" EffectiveTime="3;0116;0201" ChanceMulti="3,1;2,1;9,1" CountMulti="3,1;2,1;9,1" GroupPrior="" GroupExcept="1;4;5;6;7;8;10;11;12;13" NextRuleId="9"/>
+				<RuleItem RuleId="9" UseTime="1" EffectiveTime="3;0201;0216" ChanceMulti="3,1;2,1;10,1" CountMulti="3,1;2,1;10,1" GroupPrior="" GroupExcept="1;4;5;6;7;8;9;11;12;13" NextRuleId="10"/>
+				<RuleItem RuleId="10" UseTime="1" EffectiveTime="3;0216;0301" ChanceMulti="2,1;13,1;4,1" CountMulti="2,1;13,1;4,1" GroupPrior="" GroupExcept="1;5;6;7;8;9;10;11;12;3" NextRuleId="11"/>
+				<RuleItem RuleId="11" UseTime="1" EffectiveTime="3;0301;0316" ChanceMulti="2,1;13,1;5,1" CountMulti="2,1;13,1;5,1" GroupPrior="" GroupExcept="1;4;6;7;8;9;10;11;12;3" NextRuleId="12"/>
+				<RuleItem RuleId="12" UseTime="1" EffectiveTime="3;0316;0401" ChanceMulti="2,1;13,1;6,1" CountMulti="2,1;13,1;6,1" GroupPrior="" GroupExcept="1;4;5;7;8;9;10;11;12;3" NextRuleId="13"/>
+				<RuleItem RuleId="13" UseTime="1" EffectiveTime="3;0401;0416" ChanceMulti="2,1;13,1;7,1" CountMulti="2,1;13,1;7,1" GroupPrior="" GroupExcept="1;4;5;6;8;9;10;11;12;3" NextRuleId="14"/>
+				<RuleItem RuleId="14" UseTime="1" EffectiveTime="3;0416;0501" ChanceMulti="2,1;13,1;8,1" CountMulti="2,1;13,1;8,1" GroupPrior="" GroupExcept="1;4;5;6;7;9;10;11;12;3" NextRuleId="15"/>
+				<RuleItem RuleId="15" UseTime="1" EffectiveTime="3;0501;0516" ChanceMulti="2,1;13,1;9,1" CountMulti="2,1;13,1;9,1" GroupPrior="" GroupExcept="1;4;5;6;7;8;10;11;12;3" NextRuleId="16"/>
+				<RuleItem RuleId="16" UseTime="1" EffectiveTime="3;0516;0601" ChanceMulti="12,1;2,1;10,1" CountMulti="12,1;2,1;10,1" GroupPrior="" GroupExcept="1;3;4;5;6;7;8;9;11;13" NextRuleId="17"/>
+				<RuleItem RuleId="17" UseTime="1" EffectiveTime="3;0601;0616" ChanceMulti="12,1;2,1;5,1" CountMulti="12,1;2,1;5,1" GroupPrior="" GroupExcept="1;3;4;6;7;8;9;10;11;13" NextRuleId="18"/>
+				<RuleItem RuleId="18" UseTime="1" EffectiveTime="3;0616;0701" ChanceMulti="12,1;2,1;6,1" CountMulti="12,1;2,1;6,1" GroupPrior="" GroupExcept="1;3;4;5;7;8;9;10;11;13" NextRuleId="19"/>
+				<RuleItem RuleId="19" UseTime="1" EffectiveTime="3;0701;0716" ChanceMulti="12,1;2,1;7,1" CountMulti="12,1;2,1;7,1" GroupPrior="" GroupExcept="1;3;4;5;6;8;9;10;11;13" NextRuleId="20"/>
+				<RuleItem RuleId="20" UseTime="1" EffectiveTime="3;0716;0801" ChanceMulti="12,1;2,1;8,1" CountMulti="12,1;2,1;8,1" GroupPrior="" GroupExcept="1;3;4;5;6;7;9;10;11;13" NextRuleId="21"/>
+				<RuleItem RuleId="21" UseTime="1" EffectiveTime="3;0801;0816" ChanceMulti="12,1;2,1;9,1" CountMulti="12,1;2,1;9,1" GroupPrior="" GroupExcept="1;3;4;5;6;7;8;10;11;13" NextRuleId="22"/>
+				<RuleItem RuleId="22" UseTime="1" EffectiveTime="3;0816;0901" ChanceMulti="13,1;3,1;10,1" CountMulti="13,1;2,1;10,1" GroupPrior="" GroupExcept="1;3;4;5;6;7;8;9;11;12" NextRuleId="23"/>
+				<RuleItem RuleId="23" UseTime="1" EffectiveTime="3;0901;0916" ChanceMulti="13,1;3,1;5,1" CountMulti="13,1;2,1;5,1" GroupPrior="" GroupExcept="1;3;4;6;7;8;9;10;11;12" NextRuleId="24"/>
+				<RuleItem RuleId="24" UseTime="1" EffectiveTime="3;0916;1001" ChanceMulti="13,1;3,1;6,1" CountMulti="13,1;2,1;6,1" GroupPrior="" GroupExcept="1;3;4;5;7;8;9;10;11;12" NextRuleId="25"/>
+				<RuleItem RuleId="25" UseTime="1" EffectiveTime="3;1001;1016" ChanceMulti="13,1;3,1;7,1" CountMulti="13,1;2,1;7,1" GroupPrior="" GroupExcept="1;3;4;5;6;8;9;10;11;12" NextRuleId="26"/>
+				<RuleItem RuleId="26" UseTime="1" EffectiveTime="3;1016;1101" ChanceMulti="13,1;3,1;8,1" CountMulti="13,1;2,1;8,1" GroupPrior="" GroupExcept="1;3;4;5;6;7;9;10;11;12" NextRuleId="27"/>
+				<RuleItem RuleId="27" UseTime="1" EffectiveTime="3;1101;1116" ChanceMulti="1,1;2,1;4,1" CountMulti="1,1;2,1;4,1" GroupPrior="" GroupExcept="3;5;6;7;8;9;10;11;12;13" NextRuleId="4"/>
+				<RuleItem RuleId="0" UseTime="0" EffectiveTime="1;20160101T000000;20181231T235959" ChanceMulti="1,1;2,1;3,1" CountMulti="1,1;2,1;3,1" GroupPrior="" GroupExcept="4;5;6" NextRuleId="0"/>
+            </DropRule>
+			
+            <DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+				<DropItem ItemId="1410001" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="68" />
+				<DropItem ItemId="1410101" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="136" />
+				<DropItem ItemId="1410201" Chance="1000" MinCount="1" MaxCount="5" Pricetype="100013" Price="680" />
+				<DropItem ItemId="1410301" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="136" />
+				<DropItem ItemId="1410401" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="136" />
+				<!-- 月光宝盒不再投放<DropItem ItemId="1410501" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="95" />-->
+				<DropItem ItemId="1410601" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="816" />
+				<DropItem ItemId="1410701" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1410801" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1410901" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411001" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411101" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411201" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411301" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411401" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="1800" />
+				<DropItem ItemId="1411501" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="1800" />
+				<DropItem ItemId="1424101" Chance="4000" MinCount="1" MaxCount="4" Pricetype="100013" Price="500" />
+            </DropGroup>
+			
+            <DropGroup GroupId="2" bRound="1" uAllItemChance="0">
+                <DropItem ItemId="1411601" Chance="500" MinCount="1" MaxCount="1" Pricetype="100013" Price="500" />
+				<DropItem ItemId="1411701" Chance="500" MinCount="1" MaxCount="1" Pricetype="100013" Price="2500" />
+				<DropItem ItemId="1411801" Chance="500" MinCount="1" MaxCount="10" Pricetype="100013" Price="1000" />
+				<DropItem ItemId="1412001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1412701" Chance="500" MinCount="1" MaxCount="1" Pricetype="100013" Price="5000" />
+				<DropItem ItemId="1418401" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1425601" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1440301" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" /><!-- 留香满屋*形象 -->
+				<DropItem ItemId="1440401" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" /><!-- 留香满屋*背景 -->
+				<DropItem ItemId="1440501" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" /><!-- 留香满屋*边框 -->
+				<DropItem ItemId="1440601" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" /><!-- 界限突破郭嘉 -->
+				<DropItem ItemId="1440701" Chance="0" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" /><!-- 界限突破吕布 -->
+				<DropItem ItemId="1440801" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" /><!-- 张郃 -->
+				<DropItem ItemId="1440901" Chance="500" MinCount="1" MaxCount="10" Pricetype="100013" Price="2000" /><!-- 王异31天 -->
+				<DropItem ItemId="1441001" Chance="500" MinCount="1" MaxCount="10" Pricetype="100013" Price="2000" /><!-- 夏侯氏31天 -->
+				<DropItem ItemId="1441101" Chance="500" MinCount="1" MaxCount="10" Pricetype="100013" Price="2000" /><!-- 吴苋31天 -->
+				<DropItem ItemId="1441201" Chance="500" MinCount="1" MaxCount="10" Pricetype="100013" Price="1000" /><!-- 夺宝券 -->
+				<DropItem ItemId="1441301" Chance="100" MinCount="1" MaxCount="4" Pricetype="100013" Price="4000" /><!-- 界限突破蜀将宝箱 -->
+				<DropItem ItemId="1441401" Chance="100" MinCount="1" MaxCount="4" Pricetype="100013" Price="4500" /><!-- 原6宝箱 -->
+            </DropGroup>
+			
+			<DropGroup GroupId="3" bRound="1" uAllItemChance="0">
+				<DropItem ItemId="1416901" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="10000" />
+				<DropItem ItemId="1419401" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1419801" Chance="1000" MinCount="1" MaxCount="5" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1419901" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1415001" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1416401" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="30000" />
+				<DropItem ItemId="1415101" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1415201" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1410801" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1410901" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411001" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411101" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411201" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1417701" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1417801" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1419101" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1419201" Chance="4000" MinCount="1" MaxCount="4" Pricetype="100013" Price="20000" />
+            </DropGroup>
+			
+            <DropGroup GroupId="4" bRound="1" uAllItemChance="0">
+				<DropItem ItemId="1416201" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="1000" />
+				<DropItem ItemId="1416301" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="4000" />
+				<DropItem ItemId="1418001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="5000" />
+				<DropItem ItemId="1418101" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1423001" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="40000" />
+				<DropItem ItemId="1423701" Chance="500" MinCount="1" MaxCount="1" Pricetype="100013" Price="500" />
+				<DropItem ItemId="1424201" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1423901" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1424001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1425501" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1437501" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1426301" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1427301" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1429201" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1437601" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1437701" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1423301" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="4500" />
+				<DropItem ItemId="1411901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1432701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1432801" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1421901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+			</DropGroup>
+			<DropGroup GroupId="5" bRound="1" uAllItemChance="0">
+				<DropItem ItemId="1416201" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="1000" />
+				<DropItem ItemId="1416301" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="4000" />
+				<DropItem ItemId="1418001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="5000" />
+				<DropItem ItemId="1418101" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1423001" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="40000" />
+				<DropItem ItemId="1423701" Chance="500" MinCount="1" MaxCount="1" Pricetype="100013" Price="500" />
+				<DropItem ItemId="1424201" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1423901" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1424001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1425501" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />				
+				<DropItem ItemId="1437801" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1437901" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1438001" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1438101" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1438201" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1438301" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />				
+				<DropItem ItemId="1423301" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="4500" />
+				<DropItem ItemId="1411901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1432701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1432801" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1421901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+			</DropGroup>
+			<DropGroup GroupId="6" bRound="1" uAllItemChance="0">
+				<DropItem ItemId="1416201" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="1000" />
+				<DropItem ItemId="1416301" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="4000" />
+				<DropItem ItemId="1418001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="5000" />
+				<DropItem ItemId="1418101" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1423001" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="40000" />
+				<DropItem ItemId="1423701" Chance="500" MinCount="1" MaxCount="1" Pricetype="100013" Price="500" />
+				<DropItem ItemId="1424201" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1423901" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1424001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />				
+				<DropItem ItemId="1425701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1438401" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1438501" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1432901" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1438601" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1438701" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1438801" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />				
+				<DropItem ItemId="1423301" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="4500" />
+				<DropItem ItemId="1411901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1432701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1432801" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1421901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+			</DropGroup>
+			<!-- 10.1日更新内容-->
+			<DropGroup GroupId="7" bRound="1" uAllItemChance="0">
+				<DropItem ItemId="1416201" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="1000" /><!-- 皮肤包 -->
+				<DropItem ItemId="1416301" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="4000" /><!-- 将1武将宝箱 -->
+				<DropItem ItemId="1418001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="5000" /><!-- 山包武将宝箱 -->
+				<DropItem ItemId="1418101" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" /><!-- 10000功勋 -->
+				<DropItem ItemId="1423001" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="40000" /><!-- 蹋顿(SP) -->
+				<DropItem ItemId="1423701" Chance="500" MinCount="1" MaxCount="1" Pricetype="100013" Price="500" /><!-- 7天武将宝箱 -->
+				<DropItem ItemId="1424201" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" /><!-- 曹叡(31天) -->
+				<DropItem ItemId="1423901" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" /><!-- 张星彩(31天) -->
+				<DropItem ItemId="1424001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" /><!-- 步练师(31天) -->
+				<DropItem ItemId="1425701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" /><!-- 韩遂 -->
+				<DropItem ItemId="1441501" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" /><!-- 倚栏诸葛*形象 -->
+				<DropItem ItemId="1441601" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="12000" /><!-- 倚栏诸葛*静态形象 -->
+				<DropItem ItemId="1441701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" /><!-- 倚栏观荷*边框 -->
+				<DropItem ItemId="1441801" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" /><!-- 倚栏观荷*静态边框 -->
+				<DropItem ItemId="1441901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" /><!-- 倚栏观荷*背景 -->
+				<DropItem ItemId="1442001" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" /><!-- 倚栏观荷*静态背景 -->
+				<DropItem ItemId="1423301" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="4500" /><!-- 将4武将宝箱 -->
+				<DropItem ItemId="1411401" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="1800" /><!-- 袁术(标) -->
+				<DropItem ItemId="1411501" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="1800" /><!-- 华雄(标) -->
+				<DropItem ItemId="1432801" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" /><!-- 公孙瓒(界限突破) -->
+				<DropItem ItemId="1421901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" /><!-- 张辽(界限突破) -->	
+			</DropGroup>
+			<!-- 10.16日更新内容-->
+			<DropGroup GroupId="8" bRound="1" uAllItemChance="0">
+				<DropItem ItemId="1416201" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="1000" /><!-- 皮肤包 -->
+				<DropItem ItemId="1416301" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="4000" /><!-- 将1武将宝箱 -->
+				<DropItem ItemId="1418001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="5000" /><!-- 山包武将宝箱 -->
+				<DropItem ItemId="1418101" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" /><!-- 10000功勋 -->
+				<DropItem ItemId="1423001" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="40000" /><!-- 蹋顿(SP) -->
+				<DropItem ItemId="1423701" Chance="500" MinCount="1" MaxCount="1" Pricetype="100013" Price="500" /><!-- 7天武将宝箱 -->
+				<DropItem ItemId="1425701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" /><!-- 韩遂 -->
+				<DropItem ItemId="1423901" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" /><!-- 张星彩(31天) -->
+				<DropItem ItemId="1424001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" /><!-- 步练师(31天) -->
+				<DropItem ItemId="1441701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" /><!-- 倚栏观荷*边框 -->
+				<DropItem ItemId="1441801" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" /><!-- 倚栏观荷*静态边框 -->
+				<DropItem ItemId="1441901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" /><!-- 倚栏观荷*背景 -->
+				<DropItem ItemId="1442001" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" /><!-- 倚栏观荷*静态背景 -->
+				<DropItem ItemId="1442101" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" /><!-- 观荷月英*形象 -->
+				<DropItem ItemId="1442201" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="12000" /><!-- 观荷月英*静态形象 -->
+				<DropItem ItemId="1439601" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" /><!-- 潮汐海滩 -->
+				<DropItem ItemId="1423301" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="4500" /><!-- 将4武将宝箱 -->
+				<DropItem ItemId="1411401" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="1800" /><!-- 袁术(标) -->
+				<DropItem ItemId="1411501" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="1800" /><!-- 华雄(标) -->
+				<DropItem ItemId="1432801" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" /><!-- 公孙瓒(界限突破) -->
+				<DropItem ItemId="1421901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" /><!-- 张辽(界限突破) -->	
+			</DropGroup>
+
+			
+			<!-- 原先内容
+			<DropGroup GroupId="7" bRound="1" uAllItemChance="0">
+				<DropItem ItemId="1416201" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="1000" />
+				<DropItem ItemId="1416301" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="4000" />
+				<DropItem ItemId="1418001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="5000" />
+				<DropItem ItemId="1418101" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1423001" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="40000" />
+				<DropItem ItemId="1423701" Chance="500" MinCount="1" MaxCount="1" Pricetype="100013" Price="500" />
+				<DropItem ItemId="1424201" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1423901" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1424001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />				
+				<DropItem ItemId="1425701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1438901" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1428901" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1426401" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1439001" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1439101" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1439201" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />				
+				<DropItem ItemId="1423301" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="4500" />
+				<DropItem ItemId="1411901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1432701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1432801" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1421901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+			</DropGroup>
+			
+			<DropGroup GroupId="8" bRound="1" uAllItemChance="0">
+				<DropItem ItemId="1416201" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="1000" />
+				<DropItem ItemId="1416301" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="4000" />
+				<DropItem ItemId="1418001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="5000" />
+				<DropItem ItemId="1418101" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1423001" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="40000" />
+				<DropItem ItemId="1423701" Chance="500" MinCount="1" MaxCount="1" Pricetype="100013" Price="500" />
+				<DropItem ItemId="1424201" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1423901" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1424001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />				
+				<DropItem ItemId="1425701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1439301" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1439401" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1433901" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1413801" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1414601" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1439601" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />				
+				<DropItem ItemId="1423301" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="4500" />
+				<DropItem ItemId="1411901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1432701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1432801" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1421901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+			</DropGroup>
+			-->
+			
+			<DropGroup GroupId="9" bRound="1" uAllItemChance="0">
+				<DropItem ItemId="1416201" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="1000" />
+				<DropItem ItemId="1416301" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="4000" />
+				<DropItem ItemId="1418001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="5000" />
+				<DropItem ItemId="1418101" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1423001" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="40000" />
+				<DropItem ItemId="1423701" Chance="500" MinCount="1" MaxCount="1" Pricetype="100013" Price="500" />
+				<DropItem ItemId="1424201" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1423901" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1424001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />				
+				<DropItem ItemId="1425701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1439701" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1439801" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1436101" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1421701" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="4000" />
+				<DropItem ItemId="1439901" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1440001" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />				
+				<DropItem ItemId="1423301" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="4500" />
+				<DropItem ItemId="1411901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1432701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1432801" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1421901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+			</DropGroup>
+			
+			<DropGroup GroupId="10" bRound="1" uAllItemChance="0">
+				<DropItem ItemId="1416201" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="1000" />
+				<DropItem ItemId="1416301" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="4000" />
+				<DropItem ItemId="1418001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="5000" />
+				<DropItem ItemId="1418101" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1423001" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="40000" />
+				<DropItem ItemId="1423701" Chance="500" MinCount="1" MaxCount="1" Pricetype="100013" Price="500" />
+				<DropItem ItemId="1424201" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1423901" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1424001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1425501" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />				
+				<DropItem ItemId="1440101" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1440201" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1427501" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1424501" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1434401" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1423501" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="15000" />				
+				<DropItem ItemId="1423301" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="4500" />
+				<DropItem ItemId="1411901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1432701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1432801" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1421901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+			</DropGroup>
+			<DropGroup GroupId="11" bRound="1" uAllItemChance="0">
+				<DropItem ItemId="1416201" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="1000" />
+				<DropItem ItemId="1416301" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="4000" />
+				<DropItem ItemId="1418001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="5000" />
+				<DropItem ItemId="1418101" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1423001" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="40000" />
+				<DropItem ItemId="1423701" Chance="500" MinCount="1" MaxCount="1" Pricetype="100013" Price="500" />
+				<DropItem ItemId="1424201" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1423901" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1424001" Chance="300" MinCount="1" MaxCount="1" Pricetype="100013" Price="2000" />
+				<DropItem ItemId="1425501" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1436901" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1437001" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="8000" />
+				<DropItem ItemId="1437101" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1437201" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1437301" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1437401" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1423301" Chance="200" MinCount="1" MaxCount="1" Pricetype="100013" Price="4500" />
+				<DropItem ItemId="1411901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1432701" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1432801" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+				<DropItem ItemId="1421901" Chance="100" MinCount="1" MaxCount="1" Pricetype="100013" Price="3000" />
+			</DropGroup>
+			<DropGroup GroupId="12" bRound="1" uAllItemChance="0">
+				<DropItem ItemId="1420001" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1421301" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="15000" />
+				<DropItem ItemId="1421601" Chance="1000" MinCount="1" MaxCount="5" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1427101" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1415301" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1413601" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1416501" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1416601" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1410801" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1410901" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411001" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411101" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411201" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1420601" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1420701" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1420801" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1420901" Chance="4000" MinCount="1" MaxCount="4" Pricetype="100013" Price="20000" />
+            </DropGroup>
+			<DropGroup GroupId="13" bRound="1" uAllItemChance="0">
+				<DropItem ItemId="1433201" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1433901" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1434301" Chance="1000" MinCount="1" MaxCount="5" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1434601" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1416701" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1417601" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1410801" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1417101" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="30000" />
+				<DropItem ItemId="1417501" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1410901" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411001" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411101" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411201" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1422101" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="6000" />
+				<DropItem ItemId="1421401" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="15000" />
+				<DropItem ItemId="1425401" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="15000" />
+				<DropItem ItemId="1425801" Chance="4000" MinCount="1" MaxCount="4" Pricetype="100013" Price="6000" />
+            </DropGroup>
+			
+		    
+		</DropClass>
+
+		
+		<!-- 11月15日更新上去
+            <DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+				<DropItem ItemId="1414601" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1424501" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="20000" />
+				<DropItem ItemId="1415401" Chance="1000" MinCount="1" MaxCount="5" Pricetype="100013" Price="30000" />
+				<DropItem ItemId="1415501" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="30000" />
+				<DropItem ItemId="1413601" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1414401" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1414501" Chance="1000" MinCount="1" MaxCount="10" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1413701" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1410801" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1410901" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411001" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411101" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1411201" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="3500" />
+				<DropItem ItemId="1413801" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1413901" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1414801" Chance="1000" MinCount="1" MaxCount="1" Pricetype="100013" Price="50000" />
+				<DropItem ItemId="1417001" Chance="4000" MinCount="1" MaxCount="4" Pricetype="100013" Price="10000" />
+            </DropGroup>-->
+			
+			
+ 
+			
+		<!-- 互通版神秘商店-->
+
+			<DropClass Id="9" MaxSlot="5" RefreshType="1" RefreshTime="0">
+				<DropRule>
+				<RuleItem RuleId="0" UseTime="0" EffectiveTime="" ChanceMulti="1,1" CountMulti="1,1" GroupPrior="" GroupExcept="" />
+				</DropRule>
+
+				<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+				<DropItem ItemId="435401" Chance="100" MinCount="1" MaxCount="1" Pricetype="100016" Price="4500" />				
+				</DropGroup>
+			</DropClass>
+			
+			<!--将魂商店-->
+			<DropClass Id="10" MaxSlot="5" RefreshType="3" RefreshTime="0">
+				<DropRule>
+					<RuleItem RuleId="0" UseTime="1" EffectiveTime="3;0101;0201"  GroupPrior="" GroupExcept="3;4;5;6;7;8;9;10;11;12" />
+					<RuleItem RuleId="0" UseTime="1" EffectiveTime="3;0201;0301"  GroupPrior="" GroupExcept="2;4;5;6;7;8;9;10;11;12" />
+					<RuleItem RuleId="0" UseTime="1" EffectiveTime="3;0301;0401"  GroupPrior="" GroupExcept="2;3;5;6;7;8;9;10;11;12" />
+					<RuleItem RuleId="0" UseTime="1" EffectiveTime="3;0401;0501"  GroupPrior="" GroupExcept="2;3;4;6;7;8;9;10;11;12" />
+					<RuleItem RuleId="0" UseTime="1" EffectiveTime="3;0501;0601"  GroupPrior="" GroupExcept="2;3;4;5;7;8;9;10;11;12" />
+					<RuleItem RuleId="0" UseTime="1" EffectiveTime="3;0601;0701"  GroupPrior="" GroupExcept="2;3;4;5;6;8;9;10;11;12" />
+					<RuleItem RuleId="0" UseTime="1" EffectiveTime="3;0701;0801"  GroupPrior="" GroupExcept="2;3;4;5;6;7;9;10;11;12" />
+					<RuleItem RuleId="0" UseTime="1" EffectiveTime="3;0801;0901"  GroupPrior="" GroupExcept="3;4;5;6;7;8;9;10;11;12" />
+					<RuleItem RuleId="0" UseTime="1" EffectiveTime="3;0901;1001"  GroupPrior="" GroupExcept="2;3;4;5;6;7;8;10;11;12" />
+					<RuleItem RuleId="0" UseTime="1" EffectiveTime="3;1001;1101"  GroupPrior="" GroupExcept="2;3;4;5;6;7;8;9;11;12" />
+					<RuleItem RuleId="0" UseTime="1" EffectiveTime="3;1101;1201"  GroupPrior="" GroupExcept="2;3;4;5;6;7;8;9;10;12" />
+					<RuleItem RuleId="0" UseTime="1" EffectiveTime="3;1201;0101"  GroupPrior="" GroupExcept="2;3;4;5;6;7;8;9;10;11" />
+				</DropRule>
+				<DropGroup GroupId="1" bRound="1" uAllItemChance="0">
+					<DropItem ItemId="1218501" Chance="1" MinCount="999" MaxCount="9999" Pricetype="1113701" Price="2" />
+					<DropItem ItemId="113401" Chance="1" MinCount="999" MaxCount="9999" Pricetype="1113701" Price="6" />
+				</DropGroup>
+				<DropGroup GroupId="2" bRound="1" uAllItemChance="0">
+					<DropItem ItemId="932901" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="26" />
+					<DropItem ItemId="917701" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="33" />
+					<DropItem ItemId="912201" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="32" />
+				</DropGroup>
+				<DropGroup GroupId="3" bRound="1" uAllItemChance="0">
+					<DropItem ItemId="916401" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="31" />
+					<DropItem ItemId="905201" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="28" />
+					<DropItem ItemId="918401" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="37" />
+				</DropGroup>
+				<DropGroup GroupId="4" bRound="1" uAllItemChance="0">
+					<DropItem ItemId="912801" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="29" />
+					<DropItem ItemId="933101" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="30" />
+					<DropItem ItemId="912501" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="30" />
+				</DropGroup>
+				<DropGroup GroupId="5" bRound="1" uAllItemChance="0">
+					<DropItem ItemId="933901" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="16" />
+					<DropItem ItemId="936101" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="25" />
+					<DropItem ItemId="917601" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="37" />
+				</DropGroup>
+				<DropGroup GroupId="6" bRound="1" uAllItemChance="0">
+					<DropItem ItemId="905501" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="30" />
+					<DropItem ItemId="910601" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="26" />
+					<DropItem ItemId="917301" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="30" />
+				</DropGroup>
+				<DropGroup GroupId="7" bRound="1" uAllItemChance="0">
+					<DropItem ItemId="917801" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="38" />
+					<DropItem ItemId="933501" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="35" />
+					<DropItem ItemId="913101" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="45" />
+				</DropGroup>
+				<DropGroup GroupId="8" bRound="1" uAllItemChance="0">
+					<DropItem ItemId="912901" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="33" />
+					<DropItem ItemId="913601" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="25" />
+					<DropItem ItemId="918101" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="35" />
+				</DropGroup>
+				<DropGroup GroupId="9" bRound="1" uAllItemChance="0">
+					<DropItem ItemId="938301" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="30" />
+					<DropItem ItemId="938101" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="35" />
+					<DropItem ItemId="932301" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="31" />
+				</DropGroup>
+				<DropGroup GroupId="10" bRound="1" uAllItemChance="0">
+					<DropItem ItemId="933701" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="25" />
+					<DropItem ItemId="932801" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="30" />
+					<DropItem ItemId="933301" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="35" />
+				</DropGroup>
+				<DropGroup GroupId="11" bRound="1" uAllItemChance="0">
+					<DropItem ItemId="917901" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="33" />
+					<DropItem ItemId="934001" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="30" />
+					<DropItem ItemId="932401" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="25" />
+				</DropGroup>
+				<DropGroup GroupId="12" bRound="1" uAllItemChance="0">
+					<DropItem ItemId="932501" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="30" />
+					<DropItem ItemId="938601" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="30" />
+					<DropItem ItemId="932101" Chance="1" MinCount="1" MaxCount="1" Pricetype="1113701" Price="30" />
+				</DropGroup>
+			</DropClass>
+    </Market>
+</root>

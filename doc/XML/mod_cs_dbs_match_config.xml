@@ -1,0 +1,2500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<MatchList>
+		<field_desc>
+			<说明>一个比赛的配置</说明>
+			<id>比赛id,不能重复,从1开始</id>
+			<name>比赛名称</name>
+			<state>比赛状态设置,二进制配置(不用配置,默认0)</state>
+			<type>比赛类型,1默认普通单区比赛.2单场全区比赛</type>
+			<gameZone>比赛游戏区,当type为2时,此值为比赛区区号</gameZone>
+			<label>标签</label>
+			<userCntRange>玩家范围,如"1000,2000"</userCntRange>
+			<specialConditionIds>特殊报名条件id,可多个,如"1,2,3",见下面ConditionList配置</specialConditionIds>
+			<conditionIds>普通报名条件id,可多个,如"7,9",见下面ConditionList配置</conditionIds>
+			<specialConditionIds2>组队赛使用, 队员特殊报名条件id,可多个,如"1,2,3",见下面ConditionList配置</specialConditionIds2>
+			<conditionIds2>组队赛使用, 队员普通报名条件id,可多个,如"7,9",见下面ConditionList配置</conditionIds2>
+			<prizeIds>比赛奖励id,见下面PrizeList配置</prizeIds>
+			<ruleId>比赛规则id,见下面RuleList配置</ruleId>
+			<signUpDate>报名时间范围,如"20110411T080000,20110423T230000"</signUpDate>
+			<gameDate>游戏时间范围,如"20110411T080000,20110423T230000"</gameDate>
+			<prizeDate>奖励时间范围,如"20110411T080000,20110423T230000"</prizeDate>
+			<delayDays>比赛奖励结束后,延长显示时间</delayDays>
+			<restartInterval>(不用配置,默认0)</restartInterval>
+			<picture>client用,比赛图片</picture>
+			<describe>描述</describe>
+			<anonymous>是否匿名,1为匿名,0为昵称可见</anonymous>
+			<showWhenSignup>是否到报名时间才显示此比赛,1为报名时间开始后才显示此比赛,0为配置加了就显示不管报名是否开始</showWhenSignup>
+			<is1v1Ban4Char>1v1场是否4禁,只在1v1场有作用(20120210添加)</is1v1Ban4Char>
+			<GameTime>
+				<说明>游戏具体时间配置</说明>
+				<dateRange>日期星期范围,如"20110420,20110430,6,7",前两个是日期范围在gameDate范围内,后面可以加星期几,星期由0~6表示,0代表星期天.</dateRange>
+				<timeRange>时间范围,如"133000,233000",小时分秒</timeRange>
+			</GameTime>
+			<RuleUrl>
+				<说明>单个比赛规则更多详情与排名的网页地址http://开头</说明>
+			</RuleUrl>
+			<ReportUrl>
+				<说明>举报作弊的网页地址http://开头</说明>
+			</ReportUrl>
+			<AwardUrl>
+				<说明>比赛奖励详情</说明>
+			</AwardUrl>
+			<!-- <Match id="10003" index="302" name="WCA夏季月赛" ShowFlag="3" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="10001,10002" specialConditionIds2="" conditionIds2="" prizeIds="" ruleId="10001" lookonprizeIds="10001" signUpDate="20150719T094500,20150719T215959" gameDate="20150719T094500,20150719T215959" prizeDate="20150719T094500,20150719T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20150719,20150719" timeRange="000000,235959"/>
+			</GameTime>
+			<GameNtf>
+					<Title>WCA周决赛64强晋级通知</Title>
+					<Content><![CDATA[$NICKNAME$,您好!恭喜您晋级WCA周决赛64强决赛。您的下一场比赛将于今天$DAY$ $TIME$开始,请按时参加比赛，祝您游戏愉快！<b><a href='event:http://wca.sanguosha.com/'><font color='#EE9A49'>WCA比赛选手守则>></font></a></b>]]></Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com/?ref=introduction]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+		</Match> -->
+		</field_desc>
+		<Match id="20000" index="302" name="欢乐积分赛" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="3" specialConditionIds2="" conditionIds2="" prizeIds="20021,201" ruleId="13" signUpDate="20150113T000001,20150122T220000" gameDate="20150115T120000,20150122T220000" prizeDate="20150125T140000,20150131T235900" delayDays="0" restartInterval="0" picture="3054" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="1V1比赛2领奖描述" limitDescribe="8人标准比赛2条件描述" limitDetail="8人标准比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="40">
+		</Match>
+		<Match id="3054" index="302" name="8人身份挑战赛" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="3" specialConditionIds2="" conditionIds2="" prizeIds="20021,201" ruleId="13" signUpDate="20150113T000001,20150122T220000" gameDate="20150115T120000,20150122T220000" prizeDate="20150125T140000,20150131T235900" delayDays="0" restartInterval="0" picture="3054" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="1V1比赛2领奖描述" limitDescribe="8人标准比赛2条件描述" limitDetail="8人标准比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="40">
+			<GameTime>
+				<Item dateRange="20150115,20150122" timeRange="120000,220000"/>
+			</GameTime>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150107_2791_3216.html]]></RuleUrl>
+			<ReportUrl><![CDATA[http://www.sanguosha.com/detail/20150107_2791_3216.html]]></ReportUrl>
+			<AwardUrl><![CDATA[http://www.sanguosha.com/detail/20150107_2791_3216.html]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[http://ljxx.sanguosha.com/]]></OfflineAwardUrl>
+		</Match>
+		<!-- WCA比赛 -->
+		<Match id="8013" index="302" name="WCA周预赛" ShowFlag="1" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="8001" specialConditionIds2="" conditionIds2="" prizeIds="8003,803" ruleId="8003" lookonprizeIds="" signUpDate="20150713T100000,20150717T140000" gameDate="20150713T100000,20150717T140000" prizeDate="20150713T100000,20150717T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20150713,20150716,1,2,3,4" timeRange="100000,220000"/>
+				<Item dateRange="20150717,20150717" timeRange="100000,140000"/>
+			</GameTime>
+			<GameNtf>
+					<Title>wca比赛通知</Title>
+					<Content>$NICKNAME$你好：你将在$DAY$ $TIME$开始</Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150505_1947_2618.html]]></RuleUrl>
+			<ReportUrl><![CDATA[http://info.wca.sanguosha.com/]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com/?ref=introduction]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+		</Match>
+		
+		<Match id="9013" index="302" name="WCA周决赛" ShowFlag="2" state="0" type="2" gameZone="1" label="0" WcaPreMatchID="8013" userCntRange="1,200000" specialConditionIds="" conditionIds="9001,9002" specialConditionIds2="" conditionIds2="" prizeIds="" ruleId="9003" lookonprizeIds="9001" signUpDate="20150718T124500,20150719T060000" gameDate="20150718T124500,20150719T060000" prizeDate="20150718T124500,20150719T080000" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20150718,20150719" timeRange="000000,235959"/>
+			</GameTime>
+			<GameNtf>
+					<Title>WCA周决赛64强晋级通知</Title>
+					<Content><![CDATA[$NICKNAME$,您好!恭喜您晋级WCA周决赛64强决赛。您的下一场比赛将于今天$DAY$ $TIME$开始,请按时参加比赛，祝您游戏愉快！<b><a href='event:http://wca.sanguosha.com/'><font color='#EE9A49'>WCA比赛选手守则>></font></a></b>]]></Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150505_1947_2618.html]]></RuleUrl>
+			<ReportUrl><![CDATA[]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com/]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+		</Match>
+		
+		<Match id="10003" index="302" name="WCA月赛" ShowFlag="3" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="10001,10002" specialConditionIds2="" conditionIds2="" prizeIds="" ruleId="10002" lookonprizeIds="10002" signUpDate="20150818T124500,20150818T215959" gameDate="20150818T124500,20150818T215959" prizeDate="20150818T124500,20150818T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20150818,20150818" timeRange="000000,235959"/>
+			</GameTime>
+			<GameNtf>
+					<Title>WCA周决赛64强晋级通知</Title>
+					<Content><![CDATA[$NICKNAME$,您好!恭喜您晋级WCA周决赛64强决赛。您的下一场比赛将于今天$DAY$ $TIME$开始,请按时参加比赛，祝您游戏愉快！<b><a href='event:http://wca.sanguosha.com/'><font color='#EE9A49'>WCA比赛选手守则>></font></a></b>]]></Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150505_1947_2618.html]]></RuleUrl>
+			<ReportUrl><![CDATA[]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+		</Match>
+		
+	<!-- WCA秋季开赛 -->
+	<!-- 第一轮月赛第一周周赛 -->
+		<Match id="8014" index="302" name="WCA周预赛" ShowFlag="1" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="8001" specialConditionIds2="" conditionIds2="" prizeIds="8003,803" ruleId="8003" lookonprizeIds="" signUpDate="20150920T100000,20150925T140000" gameDate="20150920T100000,20150925T140000" prizeDate="20150920T100000,20150925T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20150920,20150924,0,1,2,3,4" timeRange="100000,230000"/>
+				<Item dateRange="20150925,20150925" timeRange="100000,140000"/>
+			</GameTime>
+			<GameNtf>
+					<Title>wca比赛通知</Title>
+					<Content>$NICKNAME$你好：你将在$DAY$ $TIME$开始</Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[http://info.wca.sanguosha.com/]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+			<AwardWeekDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>  1-8：50000绑定元宝</font>&#xA; 9-16：30000绑定元宝&#xA;17-32：20000绑定元宝&#xA;33-64：10000绑定元宝&#xA;</font>]]></AwardWeekDesc>
+			<AwardMonthDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>冠军：30000人民币</font>&#xA;亚军：15000人民币&#xA;季军：10000人民币&#xA;殿军：5000 人民币&#xA; 5-8：3000 人民币&#xA;9-16：1000 人民币&#xA;]]></AwardMonthDesc>
+			<WCAPreDesc><![CDATA[比赛时间：每周日至周四（10点-23点）每周五（10点-14点）.单场比赛无时间限制。&#xA;参赛方式：购买<font color = '#ffde00'>WCA参赛券</font>可在WCA线上赛专区通过匹配参与比赛。每名选手最多重复报名<font color = '#ffde00'>5次</font>，参赛成绩按<font color = '#ffde00'>胜场数最多</font>的一次计算。&#xA;参赛奖励：选手完成<font color = '#ffde00'>12场</font>比赛或提前放弃比赛，可根据<font color = '#ffde00'>当前的胜场数</font>领取参赛奖励。胜场数越多，奖励越丰厚！完成全部12场比赛的选手将额外获赠<font color = '#ffde00'>WCA周赛观赛银券</font>。预赛排名第65-100名选手可获得2000绑定元宝，第101-500名选手可获得1000绑定元宝，第501-1000名选手可获得皮肤包1个，胜场数最多的<font color = '#ffde00'>64名</font>选手（若多名选手胜场数相同，则最近一场胜利时间较前的玩家排名较前），将获得参加周赛决赛的资格。]]></WCAPreDesc>
+			<WCAWeekDesc><![CDATA[比赛时间：周六，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛预赛<font color = '#ffde00'>排名前64名</font>的选手，可在WCA线上赛专区参加比赛（参加周决赛的选手需要提供一张分辨率不低于800*600的半身个人照片，不可赤膊或有其他不文明行为动作，否则将取消参赛资格）。&#xA;赛程奖励：预赛前64名选手将按照系统安排进行3轮淘汰赛，分别是64强晋级32强、32强晋级16强，16强晋级8强，均采取BO3（即三局两胜）赛制，最终有<font color = '#ffde00'>8名</font>选手晋级月赛。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：周赛决赛的每轮比赛，持有<font color = '#ffde00'>WCA周赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAWeekDesc>
+			<WCAMonthDesc><![CDATA[比赛时间：第四周为月赛周，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛决赛的<font color = '#ffde00'>8强</font>选手，可在WCA线上赛专区参加比赛。&#xA;赛程奖励：周一至周四（三轮周赛结束后），32名晋级选手将随机被分成A、B、C、D四个小组进行1轮淘汰赛，采取BO5（即五局三胜）赛制，每小组产生4名选手在周五、周六再次进行四轮淘汰赛决出冠军。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：月赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAMonthDesc>
+			<WCAPerformDesc><![CDATA[比赛时间：不进行月赛的周日，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：将由官方邀请嘉宾或玩家报名的方式决定参赛选手。&#xA;参赛奖励：2名选手将进行三局两胜制擂台赛，擂主被击败后将根据成功守擂的次数发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：表演赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以抽取随机奖励（每轮比赛限一次）。]]></WCAPerformDesc>
+			<WCAOtherDesc><![CDATA[提前结束规则：比赛时间到且双方主帅均存活，当前结算结束时，比赛结束，裁判根据存活角色数、存活角色损失体力值等情况判定比赛胜负。&#xA;如果以上数值都相同，无法分出胜负时，周预赛排名较前的玩家获得胜利。]]></WCAOtherDesc>
+		</Match>
+		<Match id="9014" index="302" name="WCA周决赛" ShowFlag="2" state="0" type="2" gameZone="1" label="0" WcaPreMatchID="8014" userCntRange="1,200000" specialConditionIds="" conditionIds="9001,9002" specialConditionIds2="" conditionIds2="" prizeIds="" ruleId="9003" lookonprizeIds="9002" signUpDate="20150926T134500,20150926T235959" gameDate="20150926T134500,20150926T235959" prizeDate="20150926T134500,20150926T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20150926,20150926" timeRange="000000,235959"/>
+			</GameTime>
+			<GameNtf>
+					<Title>WCA周决赛64强晋级通知</Title>
+					<Content><![CDATA[$NICKNAME$,您好!恭喜您晋级WCA周决赛64强决赛。您的下一场比赛将于今天$DAY$ $TIME$开始,请按时参加比赛，祝您游戏愉快！<b><a href='event:http://wca.sanguosha.com/'><font color='#EE9A49'>WCA比赛选手守则>></font></a></b>]]></Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+		</Match>
+		
+	<!-- 第一轮月赛第二周周赛 -->	
+		<Match id="8015" index="302" name="WCA周预赛" ShowFlag="1" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="8001" specialConditionIds2="" conditionIds2="" prizeIds="8003,803" ruleId="8003" lookonprizeIds="" signUpDate="20150927T100000,20151002T140000" gameDate="20150927T100000,20151002T140000" prizeDate="20150927T100000,20151002T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20150927,20151001,0,1,2,3,4" timeRange="100000,230000"/>
+				<Item dateRange="20151002,20151002" timeRange="100000,140000"/>
+			</GameTime>
+			<GameNtf>
+					<Title>wca比赛通知</Title>
+					<Content>$NICKNAME$你好：你将在$DAY$ $TIME$开始</Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[http://info.wca.sanguosha.com/]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+			<AwardWeekDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>  1-8：50000绑定元宝</font>&#xA; 9-16：30000绑定元宝&#xA;17-32：20000绑定元宝&#xA;33-64：10000绑定元宝&#xA;</font>]]></AwardWeekDesc>
+			<AwardMonthDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>冠军：30000人民币</font>&#xA;亚军：15000人民币&#xA;季军：10000人民币&#xA;殿军：5000 人民币&#xA; 5-8：3000 人民币&#xA;9-16：1000 人民币&#xA;]]></AwardMonthDesc>
+			<WCAPreDesc><![CDATA[比赛时间：每周日至周四（10点-23点）每周五（10点-14点）.单场比赛无时间限制。&#xA;参赛方式：购买<font color = '#ffde00'>WCA参赛券</font>可在WCA线上赛专区通过匹配参与比赛。每名选手最多重复报名<font color = '#ffde00'>5次</font>，参赛成绩按<font color = '#ffde00'>胜场数最多</font>的一次计算。&#xA;参赛奖励：选手完成<font color = '#ffde00'>12场</font>比赛或提前放弃比赛，可根据<font color = '#ffde00'>当前的胜场数</font>领取参赛奖励。胜场数越多，奖励越丰厚！完成全部12场比赛的选手将额外获赠<font color = '#ffde00'>WCA周赛观赛银券</font>。预赛排名第65-100名选手可获得2000绑定元宝，第101-500名选手可获得1000绑定元宝，第501-1000名选手可获得皮肤包1个，胜场数最多的<font color = '#ffde00'>64名</font>选手（若多名选手胜场数相同，则最近一场胜利时间较前的玩家排名较前），将获得参加周赛决赛的资格。]]></WCAPreDesc>
+			<WCAWeekDesc><![CDATA[比赛时间：周六，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛预赛<font color = '#ffde00'>排名前64名</font>的选手，可在WCA线上赛专区参加比赛（参加周决赛的选手需要提供一张分辨率不低于800*600的半身个人照片，不可赤膊或有其他不文明行为动作，否则将取消参赛资格）。&#xA;赛程奖励：预赛前64名选手将按照系统安排进行3轮淘汰赛，分别是64强晋级32强、32强晋级16强，16强晋级8强，均采取BO3（即三局两胜）赛制，最终有<font color = '#ffde00'>8名</font>选手晋级月赛。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：周赛决赛的每轮比赛，持有<font color = '#ffde00'>WCA周赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAWeekDesc>
+			<WCAMonthDesc><![CDATA[比赛时间：第四周为月赛周，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛决赛的<font color = '#ffde00'>8强</font>选手，可在WCA线上赛专区参加比赛。&#xA;赛程奖励：周一至周四（三轮周赛结束后），32名晋级选手将随机被分成A、B、C、D四个小组进行1轮淘汰赛，采取BO5（即五局三胜）赛制，每小组产生4名选手在周五、周六再次进行四轮淘汰赛决出冠军。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：月赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAMonthDesc>
+			<WCAPerformDesc><![CDATA[比赛时间：不进行月赛的周日，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：将由官方邀请嘉宾或玩家报名的方式决定参赛选手。&#xA;参赛奖励：2名选手将进行三局两胜制擂台赛，擂主被击败后将根据成功守擂的次数发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：表演赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以抽取随机奖励（每轮比赛限一次）。]]></WCAPerformDesc>
+			<WCAOtherDesc><![CDATA[提前结束规则：比赛时间到且双方主帅均存活，当前结算结束时，比赛结束，裁判根据存活角色数、存活角色损失体力值等情况判定比赛胜负。&#xA;如果以上数值都相同，无法分出胜负时，周预赛排名较前的玩家获得胜利。]]></WCAOtherDesc>
+		</Match>
+		<Match id="9015" index="302" name="WCA周决赛" ShowFlag="2" state="0" type="2" gameZone="1" label="0" WcaPreMatchID="8015" userCntRange="1,200000" specialConditionIds="" conditionIds="9001,9002" specialConditionIds2="" conditionIds2="" prizeIds="" ruleId="9003" lookonprizeIds="9002" signUpDate="20151003T134500,20151003T235959" gameDate="20151003T134500,20151003T235959" prizeDate="20151003T134500,20151003T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151003,20151003" timeRange="000000,235959"/>
+			</GameTime>
+			<GameNtf>
+					<Title>WCA周决赛64强晋级通知</Title>
+					<Content><![CDATA[$NICKNAME$,您好!恭喜您晋级WCA周决赛64强决赛。您的下一场比赛将于今天$DAY$ $TIME$开始,请按时参加比赛，祝您游戏愉快！<b><a href='event:http://wca.sanguosha.com/'><font color='#EE9A49'>WCA比赛选手守则>></font></a></b>]]></Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+		</Match>
+		
+		<!-- 第一轮月赛第三周周赛 -->
+		<Match id="8016" index="302" name="WCA周预赛" ShowFlag="1" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="8001" specialConditionIds2="" conditionIds2="" prizeIds="8003,803" ruleId="8003" lookonprizeIds="" signUpDate="20151004T100000,20151009T140000" gameDate="20151004T100000,20151009T140000" prizeDate="20151004T100000,20151009T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151004,20151008,0,1,2,3,4" timeRange="100000,230000"/>
+				<Item dateRange="20151009,20151009" timeRange="100000,140000"/>
+			</GameTime>
+			<GameNtf>
+					<Title>wca比赛通知</Title>
+					<Content>$NICKNAME$你好：你将在$DAY$ $TIME$开始</Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[http://info.wca.sanguosha.com/]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+			<AwardWeekDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>  1-8：50000绑定元宝</font>&#xA; 9-16：30000绑定元宝&#xA;17-32：20000绑定元宝&#xA;33-64：10000绑定元宝&#xA;</font>]]></AwardWeekDesc>
+			<AwardMonthDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>冠军：30000人民币</font>&#xA;亚军：15000人民币&#xA;季军：10000人民币&#xA;殿军：5000 人民币&#xA; 5-8：3000 人民币&#xA;9-16：1000 人民币&#xA;]]></AwardMonthDesc>
+			<WCAPreDesc><![CDATA[比赛时间：每周日至周四（10点-23点）每周五（10点-14点）.单场比赛无时间限制。&#xA;参赛方式：购买<font color = '#ffde00'>WCA参赛券</font>可在WCA线上赛专区通过匹配参与比赛。每名选手最多重复报名<font color = '#ffde00'>5次</font>，参赛成绩按<font color = '#ffde00'>胜场数最多</font>的一次计算。&#xA;参赛奖励：选手完成<font color = '#ffde00'>12场</font>比赛或提前放弃比赛，可根据<font color = '#ffde00'>当前的胜场数</font>领取参赛奖励。胜场数越多，奖励越丰厚！完成全部12场比赛的选手将额外获赠<font color = '#ffde00'>WCA周赛观赛银券</font>。预赛排名第65-100名选手可获得2000绑定元宝，第101-500名选手可获得1000绑定元宝，第501-1000名选手可获得皮肤包1个，胜场数最多的<font color = '#ffde00'>64名</font>选手（若多名选手胜场数相同，则最近一场胜利时间较前的玩家排名较前），将获得参加周赛决赛的资格。]]></WCAPreDesc>
+			<WCAWeekDesc><![CDATA[比赛时间：周六，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛预赛<font color = '#ffde00'>排名前64名</font>的选手，可在WCA线上赛专区参加比赛（参加周决赛的选手需要提供一张分辨率不低于800*600的半身个人照片，不可赤膊或有其他不文明行为动作，否则将取消参赛资格）。&#xA;赛程奖励：预赛前64名选手将按照系统安排进行3轮淘汰赛，分别是64强晋级32强、32强晋级16强，16强晋级8强，均采取BO3（即三局两胜）赛制，最终有<font color = '#ffde00'>8名</font>选手晋级月赛。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：周赛决赛的每轮比赛，持有<font color = '#ffde00'>WCA周赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAWeekDesc>
+			<WCAMonthDesc><![CDATA[比赛时间：第四周为月赛周，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛决赛的<font color = '#ffde00'>8强</font>选手，可在WCA线上赛专区参加比赛。&#xA;赛程奖励：周一至周四（三轮周赛结束后），32名晋级选手将随机被分成A、B、C、D四个小组进行1轮淘汰赛，采取BO5（即五局三胜）赛制，每小组产生4名选手在周五、周六再次进行四轮淘汰赛决出冠军。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：月赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAMonthDesc>
+			<WCAPerformDesc><![CDATA[比赛时间：不进行月赛的周日，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：将由官方邀请嘉宾或玩家报名的方式决定参赛选手。&#xA;参赛奖励：2名选手将进行三局两胜制擂台赛，擂主被击败后将根据成功守擂的次数发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：表演赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以抽取随机奖励（每轮比赛限一次）。]]></WCAPerformDesc>
+			<WCAOtherDesc><![CDATA[提前结束规则：比赛时间到且双方主帅均存活，当前结算结束时，比赛结束，裁判根据存活角色数、存活角色损失体力值等情况判定比赛胜负。&#xA;如果以上数值都相同，无法分出胜负时，周预赛排名较前的玩家获得胜利。]]></WCAOtherDesc>
+		</Match>
+		
+		<Match id="9016" index="302" name="WCA周决赛" ShowFlag="2" state="0" type="2" gameZone="1" label="0" WcaPreMatchID="8016" userCntRange="1,200000" specialConditionIds="" conditionIds="9001,9002" specialConditionIds2="" conditionIds2="" prizeIds="" ruleId="9003" lookonprizeIds="9002" signUpDate="20151010T134500,20151010T235959" gameDate="20151010T134500,20151010T235959" prizeDate="20151010T134500,20151010T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151010,20151010" timeRange="000000,235959"/>
+			</GameTime>
+			<GameNtf>
+					<Title>WCA周决赛64强晋级通知</Title>
+					<Content><![CDATA[$NICKNAME$,您好!恭喜您晋级WCA周决赛64强决赛。您的下一场比赛将于今天$DAY$ $TIME$开始,请按时参加比赛，祝您游戏愉快！<b><a href='event:http://wca.sanguosha.com/'><font color='#EE9A49'>WCA比赛选手守则>></font></a></b>]]></Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+		</Match>
+		
+		<!-- 第一轮月赛 -->
+		<Match id="10004" index="302" name="WCA秋季月赛" ShowFlag="3" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="10001,10002" specialConditionIds2="" conditionIds2="" prizeIds="" ruleId="10002" lookonprizeIds="10002" signUpDate="20151012T184500,20151017T235959" gameDate="20151012T184500,20151017T235959" prizeDate="20151012T184500,20151018T020000" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151012,20151016,1,2,3,4,5" timeRange="184500,235959"/>
+				<Item dateRange="20151017,20151017" timeRange="094500,235959"/>
+			</GameTime>
+			<GameNtf>
+					<Title>WCA月赛32强晋级通知</Title>
+					<Content><![CDATA[$NICKNAME$,您好!恭喜您晋级WCA月赛。您的下一场比赛将于今天$DAY$ $TIME$开始,请按时参加比赛，祝您游戏愉快！<b><a href='event:http://wca.sanguosha.com/'><font color='#EE9A49'>WCA比赛选手守则>></font></a></b>]]></Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+		</Match>
+		
+			<!-- 第二轮月赛第一周周赛 -->
+		<Match id="8017" index="302" name="WCA周预赛" ShowFlag="1" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="8001" specialConditionIds2="" conditionIds2="" prizeIds="8003,803" ruleId="8003" lookonprizeIds="" signUpDate="20151018T100000,20151023T140000" gameDate="20151018T100000,20151023T140000" prizeDate="20151018T100000,20151023T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151018,20151022,0,1,2,3,4" timeRange="100000,230000"/>
+				<Item dateRange="20151023,20151023" timeRange="100000,140000"/>
+			</GameTime>
+			<GameNtf>
+					<Title>wca比赛通知</Title>
+					<Content>$NICKNAME$你好：你将在$DAY$ $TIME$开始</Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[http://info.wca.sanguosha.com/]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+			<AwardWeekDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>  1-8：50000绑定元宝</font>&#xA; 9-16：30000绑定元宝&#xA;17-32：20000绑定元宝&#xA;33-64：10000绑定元宝&#xA;</font>]]></AwardWeekDesc>
+			<AwardMonthDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>冠军：30000人民币</font>&#xA;亚军：15000人民币&#xA;季军：10000人民币&#xA;殿军：5000 人民币&#xA; 5-8：3000 人民币&#xA;9-16：1000 人民币&#xA;]]></AwardMonthDesc>
+			<WCAPreDesc><![CDATA[比赛时间：每周日至周四（10点-23点）每周五（10点-14点）.单场比赛无时间限制。&#xA;参赛方式：购买<font color = '#ffde00'>WCA参赛券</font>可在WCA线上赛专区通过匹配参与比赛。每名选手最多重复报名<font color = '#ffde00'>5次</font>，参赛成绩按<font color = '#ffde00'>胜场数最多</font>的一次计算。&#xA;参赛奖励：选手完成<font color = '#ffde00'>12场</font>比赛或提前放弃比赛，可根据<font color = '#ffde00'>当前的胜场数</font>领取参赛奖励。胜场数越多，奖励越丰厚！完成全部12场比赛的选手将额外获赠<font color = '#ffde00'>WCA周赛观赛银券</font>。预赛排名第65-100名选手可获得2000绑定元宝，第101-500名选手可获得1000绑定元宝，第501-1000名选手可获得皮肤包1个，胜场数最多的<font color = '#ffde00'>64名</font>选手（若多名选手胜场数相同，则最近一场胜利时间较前的玩家排名较前），将获得参加周赛决赛的资格。]]></WCAPreDesc>
+			<WCAWeekDesc><![CDATA[比赛时间：周六，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛预赛<font color = '#ffde00'>排名前64名</font>的选手，可在WCA线上赛专区参加比赛（参加周决赛的选手需要提供一张分辨率不低于800*600的半身个人照片，不可赤膊或有其他不文明行为动作，否则将取消参赛资格）。&#xA;赛程奖励：预赛前64名选手将按照系统安排进行3轮淘汰赛，分别是64强晋级32强、32强晋级16强，16强晋级8强，均采取BO3（即三局两胜）赛制，最终有<font color = '#ffde00'>8名</font>选手晋级月赛。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：周赛决赛的每轮比赛，持有<font color = '#ffde00'>WCA周赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAWeekDesc>
+			<WCAMonthDesc><![CDATA[比赛时间：第四周为月赛周，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛决赛的<font color = '#ffde00'>8强</font>选手，可在WCA线上赛专区参加比赛。&#xA;赛程奖励：周一至周四（三轮周赛结束后），32名晋级选手将随机被分成A、B、C、D四个小组进行1轮淘汰赛，采取BO5（即五局三胜）赛制，每小组产生4名选手在周五、周六再次进行四轮淘汰赛决出冠军。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：月赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAMonthDesc>
+			<WCAPerformDesc><![CDATA[比赛时间：不进行月赛的周日，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：将由官方邀请嘉宾或玩家报名的方式决定参赛选手。&#xA;参赛奖励：2名选手将进行三局两胜制擂台赛，擂主被击败后将根据成功守擂的次数发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：表演赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以抽取随机奖励（每轮比赛限一次）。]]></WCAPerformDesc>
+			<WCAOtherDesc><![CDATA[提前结束规则：比赛时间到且双方主帅均存活，当前结算结束时，比赛结束，裁判根据存活角色数、存活角色损失体力值等情况判定比赛胜负。&#xA;如果以上数值都相同，无法分出胜负时，周预赛排名较前的玩家获得胜利。]]></WCAOtherDesc>
+		</Match>
+		<Match id="9017" index="302" name="WCA周决赛" ShowFlag="2" state="0" type="2" gameZone="1" label="0" WcaPreMatchID="8017" userCntRange="1,200000" specialConditionIds="" conditionIds="9001,9002" specialConditionIds2="" conditionIds2="" prizeIds="" ruleId="9003" lookonprizeIds="9002" signUpDate="20151024T134500,20151024T235959" gameDate="20151024T134500,20151024T235959" prizeDate="20151024T134500,20151024T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151024,20151024" timeRange="000000,235959"/>
+			</GameTime>
+			<GameNtf>
+					<Title>WCA周决赛64强晋级通知</Title>
+					<Content><![CDATA[$NICKNAME$,您好!恭喜您晋级WCA周决赛64强决赛。您的下一场比赛将于今天$DAY$ $TIME$开始,请按时参加比赛，祝您游戏愉快！<b><a href='event:http://wca.sanguosha.com/'><font color='#EE9A49'>WCA比赛选手守则>></font></a></b>]]></Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+		</Match>
+		
+	<!-- 第二轮月赛第二周周赛 -->	
+		<Match id="8018" index="302" name="WCA周预赛" ShowFlag="1" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="8001" specialConditionIds2="" conditionIds2="" prizeIds="8003,803" ruleId="8003" lookonprizeIds="" signUpDate="20151025T100000,20151030T140000" gameDate="20151025T100000,20151030T140000" prizeDate="20151025T100000,20151030T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151025,20151029,0,1,2,3,4" timeRange="100000,230000"/>
+				<Item dateRange="20151030,20151030" timeRange="100000,140000"/>
+			</GameTime>
+			<GameNtf>
+					<Title>wca比赛通知</Title>
+					<Content>$NICKNAME$你好：你将在$DAY$ $TIME$开始</Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[http://info.wca.sanguosha.com/]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+			<AwardWeekDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>  1-8：50000绑定元宝</font>&#xA; 9-16：30000绑定元宝&#xA;17-32：20000绑定元宝&#xA;33-64：10000绑定元宝&#xA;</font>]]></AwardWeekDesc>
+			<AwardMonthDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>冠军：30000人民币</font>&#xA;亚军：15000人民币&#xA;季军：10000人民币&#xA;殿军：5000 人民币&#xA; 5-8：3000 人民币&#xA;9-16：1000 人民币&#xA;]]></AwardMonthDesc>
+			<WCAPreDesc><![CDATA[比赛时间：每周日至周四（10点-23点）每周五（10点-14点）.单场比赛无时间限制。&#xA;参赛方式：购买<font color = '#ffde00'>WCA参赛券</font>可在WCA线上赛专区通过匹配参与比赛。每名选手最多重复报名<font color = '#ffde00'>5次</font>，参赛成绩按<font color = '#ffde00'>胜场数最多</font>的一次计算。&#xA;参赛奖励：选手完成<font color = '#ffde00'>12场</font>比赛或提前放弃比赛，可根据<font color = '#ffde00'>当前的胜场数</font>领取参赛奖励。胜场数越多，奖励越丰厚！完成全部12场比赛的选手将额外获赠<font color = '#ffde00'>WCA周赛观赛银券</font>。预赛排名第65-100名选手可获得2000绑定元宝，第101-500名选手可获得1000绑定元宝，第501-1000名选手可获得皮肤包1个，胜场数最多的<font color = '#ffde00'>64名</font>选手（若多名选手胜场数相同，则最近一场胜利时间较前的玩家排名较前），将获得参加周赛决赛的资格。]]></WCAPreDesc>
+			<WCAWeekDesc><![CDATA[比赛时间：周六，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛预赛<font color = '#ffde00'>排名前64名</font>的选手，可在WCA线上赛专区参加比赛（参加周决赛的选手需要提供一张分辨率不低于800*600的半身个人照片，不可赤膊或有其他不文明行为动作，否则将取消参赛资格）。&#xA;赛程奖励：预赛前64名选手将按照系统安排进行3轮淘汰赛，分别是64强晋级32强、32强晋级16强，16强晋级8强，均采取BO3（即三局两胜）赛制，最终有<font color = '#ffde00'>8名</font>选手晋级月赛。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：周赛决赛的每轮比赛，持有<font color = '#ffde00'>WCA周赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAWeekDesc>
+			<WCAMonthDesc><![CDATA[比赛时间：第四周为月赛周，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛决赛的<font color = '#ffde00'>8强</font>选手，可在WCA线上赛专区参加比赛。&#xA;赛程奖励：周一至周四（三轮周赛结束后），32名晋级选手将随机被分成A、B、C、D四个小组进行1轮淘汰赛，采取BO5（即五局三胜）赛制，每小组产生4名选手在周五、周六再次进行四轮淘汰赛决出冠军。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：月赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAMonthDesc>
+			<WCAPerformDesc><![CDATA[比赛时间：不进行月赛的周日，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：将由官方邀请嘉宾或玩家报名的方式决定参赛选手。&#xA;参赛奖励：2名选手将进行三局两胜制擂台赛，擂主被击败后将根据成功守擂的次数发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：表演赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以抽取随机奖励（每轮比赛限一次）。]]></WCAPerformDesc>
+			<WCAOtherDesc><![CDATA[提前结束规则：比赛时间到且双方主帅均存活，当前结算结束时，比赛结束，裁判根据存活角色数、存活角色损失体力值等情况判定比赛胜负。&#xA;如果以上数值都相同，无法分出胜负时，周预赛排名较前的玩家获得胜利。]]></WCAOtherDesc>
+		</Match>
+		<Match id="9018" index="302" name="WCA周决赛" ShowFlag="2" state="0" type="2" gameZone="1" label="0" WcaPreMatchID="8018" userCntRange="1,200000" specialConditionIds="" conditionIds="9001,9002" specialConditionIds2="" conditionIds2="" prizeIds="" ruleId="9003" lookonprizeIds="9002" signUpDate="20151031T134500,20151031T235959" gameDate="20151031T134500,20151031T235959" prizeDate="20151031T134500,20151031T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151031,20151031" timeRange="000000,235959"/>
+			</GameTime>
+			<GameNtf>
+					<Title>WCA周决赛64强晋级通知</Title>
+					<Content><![CDATA[$NICKNAME$,您好!恭喜您晋级WCA周决赛64强决赛。您的下一场比赛将于今天$DAY$ $TIME$开始,请按时参加比赛，祝您游戏愉快！<b><a href='event:http://wca.sanguosha.com/'><font color='#EE9A49'>WCA比赛选手守则>></font></a></b>]]></Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+		</Match>
+		
+		<!-- 第二轮月赛第三周周赛 -->
+		<Match id="8019" index="302" name="WCA周预赛" ShowFlag="1" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="8001" specialConditionIds2="" conditionIds2="" prizeIds="8003,803" ruleId="8003" lookonprizeIds="" signUpDate="20151101T100000,20151106T140000" gameDate="20151101T100000,20151106T140000" prizeDate="20151101T100000,20151106T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151101,20151105,0,1,2,3,4" timeRange="100000,230000"/>
+				<Item dateRange="20151106,20151106" timeRange="100000,140000"/>
+			</GameTime>
+			<GameNtf>
+					<Title>wca比赛通知</Title>
+					<Content>$NICKNAME$你好：你将在$DAY$ $TIME$开始</Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[http://info.wca.sanguosha.com/]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+			<AwardWeekDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>  1-8：50000绑定元宝</font>&#xA; 9-16：30000绑定元宝&#xA;17-32：20000绑定元宝&#xA;33-64：10000绑定元宝&#xA;</font>]]></AwardWeekDesc>
+			<AwardMonthDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>冠军：30000人民币</font>&#xA;亚军：15000人民币&#xA;季军：10000人民币&#xA;殿军：5000 人民币&#xA; 5-8：3000 人民币&#xA;9-16：1000 人民币&#xA;]]></AwardMonthDesc>
+			<WCAPreDesc><![CDATA[比赛时间：每周日至周四（10点-23点）每周五（10点-14点）.单场比赛无时间限制。&#xA;参赛方式：购买<font color = '#ffde00'>WCA参赛券</font>可在WCA线上赛专区通过匹配参与比赛。每名选手最多重复报名<font color = '#ffde00'>5次</font>，参赛成绩按<font color = '#ffde00'>胜场数最多</font>的一次计算。&#xA;参赛奖励：选手完成<font color = '#ffde00'>12场</font>比赛或提前放弃比赛，可根据<font color = '#ffde00'>当前的胜场数</font>领取参赛奖励。胜场数越多，奖励越丰厚！完成全部12场比赛的选手将额外获赠<font color = '#ffde00'>WCA周赛观赛银券</font>。预赛排名第65-100名选手可获得2000绑定元宝，第101-500名选手可获得1000绑定元宝，第501-1000名选手可获得皮肤包1个，胜场数最多的<font color = '#ffde00'>64名</font>选手（若多名选手胜场数相同，则最近一场胜利时间较前的玩家排名较前），将获得参加周赛决赛的资格。]]></WCAPreDesc>
+			<WCAWeekDesc><![CDATA[比赛时间：周六，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛预赛<font color = '#ffde00'>排名前64名</font>的选手，可在WCA线上赛专区参加比赛（参加周决赛的选手需要提供一张分辨率不低于800*600的半身个人照片，不可赤膊或有其他不文明行为动作，否则将取消参赛资格）。&#xA;赛程奖励：预赛前64名选手将按照系统安排进行3轮淘汰赛，分别是64强晋级32强、32强晋级16强，16强晋级8强，均采取BO3（即三局两胜）赛制，最终有<font color = '#ffde00'>8名</font>选手晋级月赛。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：周赛决赛的每轮比赛，持有<font color = '#ffde00'>WCA周赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAWeekDesc>
+			<WCAMonthDesc><![CDATA[比赛时间：第四周为月赛周，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛决赛的<font color = '#ffde00'>8强</font>选手，可在WCA线上赛专区参加比赛。&#xA;赛程奖励：周一至周四（三轮周赛结束后），32名晋级选手将随机被分成A、B、C、D四个小组进行1轮淘汰赛，采取BO5（即五局三胜）赛制，每小组产生4名选手在周五、周六再次进行四轮淘汰赛决出冠军。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：月赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAMonthDesc>
+			<WCAPerformDesc><![CDATA[比赛时间：不进行月赛的周日，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：将由官方邀请嘉宾或玩家报名的方式决定参赛选手。&#xA;参赛奖励：2名选手将进行三局两胜制擂台赛，擂主被击败后将根据成功守擂的次数发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：表演赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以抽取随机奖励（每轮比赛限一次）。]]></WCAPerformDesc>
+			<WCAOtherDesc><![CDATA[提前结束规则：比赛时间到且双方主帅均存活，当前结算结束时，比赛结束，裁判根据存活角色数、存活角色损失体力值等情况判定比赛胜负。&#xA;如果以上数值都相同，无法分出胜负时，周预赛排名较前的玩家获得胜利。]]></WCAOtherDesc>
+		</Match>
+		
+		<Match id="9019" index="302" name="WCA周决赛" ShowFlag="2" state="0" type="2" gameZone="1" label="0" WcaPreMatchID="8019" userCntRange="1,200000" specialConditionIds="" conditionIds="9001,9002" specialConditionIds2="" conditionIds2="" prizeIds="" ruleId="9003" lookonprizeIds="9002" signUpDate="20151107T134500,20151107T235959" gameDate="20151107T134500,20151107T235959" prizeDate="20151107T134500,20151107T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151107,20151107" timeRange="000000,235959"/>
+			</GameTime>
+			<GameNtf>
+					<Title>WCA周决赛64强晋级通知</Title>
+					<Content><![CDATA[$NICKNAME$,您好!恭喜您晋级WCA周决赛64强决赛。您的下一场比赛将于今天$DAY$ $TIME$开始,请按时参加比赛，祝您游戏愉快！<b><a href='event:http://wca.sanguosha.com/'><font color='#EE9A49'>WCA比赛选手守则>></font></a></b>]]></Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+		</Match>
+		
+		<!-- 第二轮月赛 -->
+		<Match id="10005" index="302" name="WCA秋季月赛" ShowFlag="3" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="10001,10002" specialConditionIds2="" conditionIds2="" prizeIds="" ruleId="10002" lookonprizeIds="10002" signUpDate="20151109T184500,20151114T235959" gameDate="20151109T184500,20151114T235959" prizeDate="20151109T184500,20151115T020000" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151109,20151113,1,2,3,4,5" timeRange="184500,235959"/>
+				<Item dateRange="20151114,20151114" timeRange="094500,235959"/>
+			</GameTime>
+			<GameNtf>
+					<Title>WCA月赛32强晋级通知</Title>
+					<Content><![CDATA[$NICKNAME$,您好!恭喜您晋级WCA月赛。您的下一场比赛将于今天$DAY$ $TIME$开始,请按时参加比赛，祝您游戏愉快！<b><a href='event:http://wca.sanguosha.com/'><font color='#EE9A49'>WCA比赛选手守则>></font></a></b>]]></Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+		</Match>	
+		
+		
+		<!-- 第三轮月赛第一周周赛 -->
+		<Match id="8020" index="302" name="WCA周预赛" ShowFlag="1" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="8001" specialConditionIds2="" conditionIds2="" prizeIds="8003,803" ruleId="8003" lookonprizeIds="" signUpDate="20151115T100000,20151120T140000" gameDate="20151115T100000,20151120T140000" prizeDate="20151115T100000,20151120T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151115,20151119,0,1,2,3,4" timeRange="100000,230000"/>
+				<Item dateRange="20151120,20151120" timeRange="100000,140000"/>
+			</GameTime>
+			<GameNtf>
+					<Title>wca比赛通知</Title>
+					<Content>$NICKNAME$你好：你将在$DAY$ $TIME$开始</Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[http://info.wca.sanguosha.com/]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+			<AwardWeekDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>  1-8：50000绑定元宝</font>&#xA; 9-16：30000绑定元宝&#xA;17-32：20000绑定元宝&#xA;33-64：10000绑定元宝&#xA;</font>]]></AwardWeekDesc>
+			<AwardMonthDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>冠军：30000人民币</font>&#xA;亚军：15000人民币&#xA;季军：10000人民币&#xA;殿军：5000 人民币&#xA; 5-8：3000 人民币&#xA;9-16：1000 人民币&#xA;]]></AwardMonthDesc>
+			<WCAPreDesc><![CDATA[比赛时间：每周日至周四（10点-23点）每周五（10点-14点）.单场比赛无时间限制。&#xA;参赛方式：购买<font color = '#ffde00'>WCA参赛券</font>可在WCA线上赛专区通过匹配参与比赛。每名选手最多重复报名<font color = '#ffde00'>5次</font>，参赛成绩按<font color = '#ffde00'>胜场数最多</font>的一次计算。&#xA;参赛奖励：选手完成<font color = '#ffde00'>12场</font>比赛或提前放弃比赛，可根据<font color = '#ffde00'>当前的胜场数</font>领取参赛奖励。胜场数越多，奖励越丰厚！完成全部12场比赛的选手将额外获赠<font color = '#ffde00'>WCA周赛观赛银券</font>。预赛排名第65-100名选手可获得2000绑定元宝，第101-500名选手可获得1000绑定元宝，第501-1000名选手可获得皮肤包1个，胜场数最多的<font color = '#ffde00'>64名</font>选手（若多名选手胜场数相同，则最近一场胜利时间较前的玩家排名较前），将获得参加周赛决赛的资格。]]></WCAPreDesc>
+			<WCAWeekDesc><![CDATA[比赛时间：周六，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛预赛<font color = '#ffde00'>排名前64名</font>的选手，可在WCA线上赛专区参加比赛（参加周决赛的选手需要提供一张分辨率不低于800*600的半身个人照片，不可赤膊或有其他不文明行为动作，否则将取消参赛资格）。&#xA;赛程奖励：预赛前64名选手将按照系统安排进行3轮淘汰赛，分别是64强晋级32强、32强晋级16强，16强晋级8强，均采取BO3（即三局两胜）赛制，最终有<font color = '#ffde00'>8名</font>选手晋级月赛。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：周赛决赛的每轮比赛，持有<font color = '#ffde00'>WCA周赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAWeekDesc>
+			<WCAMonthDesc><![CDATA[比赛时间：第四周为月赛周，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛决赛的<font color = '#ffde00'>8强</font>选手，可在WCA线上赛专区参加比赛。&#xA;赛程奖励：周一至周四（三轮周赛结束后），32名晋级选手将随机被分成A、B、C、D四个小组进行1轮淘汰赛，采取BO5（即五局三胜）赛制，每小组产生4名选手在周五、周六再次进行四轮淘汰赛决出冠军。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：月赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAMonthDesc>
+			<WCAPerformDesc><![CDATA[比赛时间：不进行月赛的周日，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：将由官方邀请嘉宾或玩家报名的方式决定参赛选手。&#xA;参赛奖励：2名选手将进行三局两胜制擂台赛，擂主被击败后将根据成功守擂的次数发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：表演赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以抽取随机奖励（每轮比赛限一次）。]]></WCAPerformDesc>
+			<WCAOtherDesc><![CDATA[提前结束规则：比赛时间到且双方主帅均存活，当前结算结束时，比赛结束，裁判根据存活角色数、存活角色损失体力值等情况判定比赛胜负。&#xA;如果以上数值都相同，无法分出胜负时，周预赛排名较前的玩家获得胜利。]]></WCAOtherDesc>
+		</Match>
+		<Match id="9020" index="302" name="WCA周决赛" ShowFlag="2" state="0" type="2" gameZone="1" label="0" WcaPreMatchID="8020" userCntRange="1,200000" specialConditionIds="" conditionIds="9001,9002" specialConditionIds2="" conditionIds2="" prizeIds="" ruleId="9003" lookonprizeIds="9002" signUpDate="20151121T134500,20151121T235959" gameDate="20151121T134500,20151121T235959" prizeDate="20151121T134500,20151121T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151121,20151121" timeRange="000000,235959"/>
+			</GameTime>
+			<GameNtf>
+					<Title>WCA周决赛64强晋级通知</Title>
+					<Content><![CDATA[$NICKNAME$,您好!恭喜您晋级WCA周决赛64强决赛。您的下一场比赛将于今天$DAY$ $TIME$开始,请按时参加比赛，祝您游戏愉快！<b><a href='event:http://wca.sanguosha.com/'><font color='#EE9A49'>WCA比赛选手守则>></font></a></b>]]></Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+		</Match>
+		
+	<!-- 第三轮月赛第二周周赛 -->	
+		<Match id="8021" index="302" name="WCA周预赛" ShowFlag="1" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="8001" specialConditionIds2="" conditionIds2="" prizeIds="8003,803" ruleId="8003" lookonprizeIds="" signUpDate="20151122T100000,20151127T140000" gameDate="20151122T100000,20151127T140000" prizeDate="20151122T100000,20151127T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151122,20151126,0,1,2,3,4" timeRange="100000,230000"/>
+				<Item dateRange="20151127,20151127" timeRange="100000,140000"/>
+			</GameTime>
+			<GameNtf>
+					<Title>wca比赛通知</Title>
+					<Content>$NICKNAME$你好：你将在$DAY$ $TIME$开始</Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[http://info.wca.sanguosha.com/]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+			<AwardWeekDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>  1-8：50000绑定元宝</font>&#xA; 9-16：30000绑定元宝&#xA;17-32：20000绑定元宝&#xA;33-64：10000绑定元宝&#xA;</font>]]></AwardWeekDesc>
+			<AwardMonthDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>冠军：30000人民币</font>&#xA;亚军：15000人民币&#xA;季军：10000人民币&#xA;殿军：5000 人民币&#xA; 5-8：3000 人民币&#xA;9-16：1000 人民币&#xA;]]></AwardMonthDesc>
+			<WCAPreDesc><![CDATA[比赛时间：每周日至周四（10点-23点）每周五（10点-14点）.单场比赛无时间限制。&#xA;参赛方式：购买<font color = '#ffde00'>WCA参赛券</font>可在WCA线上赛专区通过匹配参与比赛。每名选手最多重复报名<font color = '#ffde00'>5次</font>，参赛成绩按<font color = '#ffde00'>胜场数最多</font>的一次计算。&#xA;参赛奖励：选手完成<font color = '#ffde00'>12场</font>比赛或提前放弃比赛，可根据<font color = '#ffde00'>当前的胜场数</font>领取参赛奖励。胜场数越多，奖励越丰厚！完成全部12场比赛的选手将额外获赠<font color = '#ffde00'>WCA周赛观赛银券</font>。预赛排名第65-100名选手可获得2000绑定元宝，第101-500名选手可获得1000绑定元宝，第501-1000名选手可获得皮肤包1个，胜场数最多的<font color = '#ffde00'>64名</font>选手（若多名选手胜场数相同，则最近一场胜利时间较前的玩家排名较前），将获得参加周赛决赛的资格。]]></WCAPreDesc>
+			<WCAWeekDesc><![CDATA[比赛时间：周六，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛预赛<font color = '#ffde00'>排名前64名</font>的选手，可在WCA线上赛专区参加比赛（参加周决赛的选手需要提供一张分辨率不低于800*600的半身个人照片，不可赤膊或有其他不文明行为动作，否则将取消参赛资格）。&#xA;赛程奖励：预赛前64名选手将按照系统安排进行3轮淘汰赛，分别是64强晋级32强、32强晋级16强，16强晋级8强，均采取BO3（即三局两胜）赛制，最终有<font color = '#ffde00'>8名</font>选手晋级月赛。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：周赛决赛的每轮比赛，持有<font color = '#ffde00'>WCA周赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAWeekDesc>
+			<WCAMonthDesc><![CDATA[比赛时间：第四周为月赛周，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛决赛的<font color = '#ffde00'>8强</font>选手，可在WCA线上赛专区参加比赛。&#xA;赛程奖励：周一至周四（三轮周赛结束后），32名晋级选手将随机被分成A、B、C、D四个小组进行1轮淘汰赛，采取BO5（即五局三胜）赛制，每小组产生4名选手在周五、周六再次进行四轮淘汰赛决出冠军。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：月赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAMonthDesc>
+			<WCAPerformDesc><![CDATA[比赛时间：不进行月赛的周日，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：将由官方邀请嘉宾或玩家报名的方式决定参赛选手。&#xA;参赛奖励：2名选手将进行三局两胜制擂台赛，擂主被击败后将根据成功守擂的次数发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：表演赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以抽取随机奖励（每轮比赛限一次）。]]></WCAPerformDesc>
+			<WCAOtherDesc><![CDATA[提前结束规则：比赛时间到且双方主帅均存活，当前结算结束时，比赛结束，裁判根据存活角色数、存活角色损失体力值等情况判定比赛胜负。&#xA;如果以上数值都相同，无法分出胜负时，周预赛排名较前的玩家获得胜利。]]></WCAOtherDesc>
+		</Match>
+		<Match id="9021" index="302" name="WCA周决赛" ShowFlag="2" state="0" type="2" gameZone="1" label="0" WcaPreMatchID="8021" userCntRange="1,200000" specialConditionIds="" conditionIds="9001,9002" specialConditionIds2="" conditionIds2="" prizeIds="" ruleId="9003" lookonprizeIds="9002" signUpDate="20151128T134500,20151128T235959" gameDate="20151128T134500,20151128T235959" prizeDate="20151128T134500,20151128T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151128,20151128" timeRange="000000,235959"/>
+			</GameTime>
+			<GameNtf>
+					<Title>WCA周决赛64强晋级通知</Title>
+					<Content><![CDATA[$NICKNAME$,您好!恭喜您晋级WCA周决赛64强决赛。您的下一场比赛将于今天$DAY$ $TIME$开始,请按时参加比赛，祝您游戏愉快！<b><a href='event:http://wca.sanguosha.com/'><font color='#EE9A49'>WCA比赛选手守则>></font></a></b>]]></Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+		</Match>
+		
+		<!-- 第三轮月赛第三周周赛 -->
+		<Match id="8022" index="302" name="WCA周预赛" ShowFlag="1" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="8001" specialConditionIds2="" conditionIds2="" prizeIds="8003,803" ruleId="8003" lookonprizeIds="" signUpDate="20151129T100000,20151204T140000" gameDate="20151129T100000,20151204T140000" prizeDate="20151129T100000,20151204T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151129,20151203,0,1,2,3,4" timeRange="100000,230000"/>
+				<Item dateRange="20151204,20151204" timeRange="100000,140000"/>
+			</GameTime>
+			<GameNtf>
+					<Title>wca比赛通知</Title>
+					<Content>$NICKNAME$你好：你将在$DAY$ $TIME$开始</Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[http://info.wca.sanguosha.com/]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+			<AwardWeekDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>  1-8：50000绑定元宝</font>&#xA; 9-16：30000绑定元宝&#xA;17-32：20000绑定元宝&#xA;33-64：10000绑定元宝&#xA;</font>]]></AwardWeekDesc>
+			<AwardMonthDesc><![CDATA[<font color = '#e4d5a0'><font color = '#ffde00'>冠军：30000人民币</font>&#xA;亚军：15000人民币&#xA;季军：10000人民币&#xA;殿军：5000 人民币&#xA; 5-8：3000 人民币&#xA;9-16：1000 人民币&#xA;]]></AwardMonthDesc>
+			<WCAPreDesc><![CDATA[比赛时间：每周日至周四（10点-23点）每周五（10点-14点）.单场比赛无时间限制。&#xA;参赛方式：购买<font color = '#ffde00'>WCA参赛券</font>可在WCA线上赛专区通过匹配参与比赛。每名选手最多重复报名<font color = '#ffde00'>5次</font>，参赛成绩按<font color = '#ffde00'>胜场数最多</font>的一次计算。&#xA;参赛奖励：选手完成<font color = '#ffde00'>12场</font>比赛或提前放弃比赛，可根据<font color = '#ffde00'>当前的胜场数</font>领取参赛奖励。胜场数越多，奖励越丰厚！完成全部12场比赛的选手将额外获赠<font color = '#ffde00'>WCA周赛观赛银券</font>。预赛排名第65-100名选手可获得2000绑定元宝，第101-500名选手可获得1000绑定元宝，第501-1000名选手可获得皮肤包1个，胜场数最多的<font color = '#ffde00'>64名</font>选手（若多名选手胜场数相同，则最近一场胜利时间较前的玩家排名较前），将获得参加周赛决赛的资格。]]></WCAPreDesc>
+			<WCAWeekDesc><![CDATA[比赛时间：周六，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛预赛<font color = '#ffde00'>排名前64名</font>的选手，可在WCA线上赛专区参加比赛（参加周决赛的选手需要提供一张分辨率不低于800*600的半身个人照片，不可赤膊或有其他不文明行为动作，否则将取消参赛资格）。&#xA;赛程奖励：预赛前64名选手将按照系统安排进行3轮淘汰赛，分别是64强晋级32强、32强晋级16强，16强晋级8强，均采取BO3（即三局两胜）赛制，最终有<font color = '#ffde00'>8名</font>选手晋级月赛。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：周赛决赛的每轮比赛，持有<font color = '#ffde00'>WCA周赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAWeekDesc>
+			<WCAMonthDesc><![CDATA[比赛时间：第四周为月赛周，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：周赛决赛的<font color = '#ffde00'>8强</font>选手，可在WCA线上赛专区参加比赛。&#xA;赛程奖励：周一至周四（三轮周赛结束后），32名晋级选手将随机被分成A、B、C、D四个小组进行1轮淘汰赛，采取BO5（即五局三胜）赛制，每小组产生4名选手在周五、周六再次进行四轮淘汰赛决出冠军。比赛完成后将根据比赛名次发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：月赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以获取随机奖励（每轮比赛限一次）。]]></WCAMonthDesc>
+			<WCAPerformDesc><![CDATA[比赛时间：不进行月赛的周日，单场比赛总时间限制30分钟，每方选手各12分钟，一方选手12分钟时间耗尽后，每次响应时间由15秒改为5秒，直到游戏结束。&#xA;参赛方式：将由官方邀请嘉宾或玩家报名的方式决定参赛选手。&#xA;参赛奖励：2名选手将进行三局两胜制擂台赛，擂主被击败后将根据成功守擂的次数发放奖励（现金/实物奖励需要选手提交登记信息后方可领取）。&#xA;观赛奖励：表演赛的每轮比赛，持有<font color = '#ffde00'>WCA月赛观赛金/银券</font>的玩家均可在WCA线上赛专区旁观比赛，比赛结束时，可以抽取随机奖励（每轮比赛限一次）。]]></WCAPerformDesc>
+			<WCAOtherDesc><![CDATA[提前结束规则：比赛时间到且双方主帅均存活，当前结算结束时，比赛结束，裁判根据存活角色数、存活角色损失体力值等情况判定比赛胜负。&#xA;如果以上数值都相同，无法分出胜负时，周预赛排名较前的玩家获得胜利。]]></WCAOtherDesc>
+		</Match>
+		
+		<Match id="9022" index="302" name="WCA周决赛" ShowFlag="2" state="0" type="2" gameZone="1" label="0" WcaPreMatchID="8022" userCntRange="1,200000" specialConditionIds="" conditionIds="9001,9002" specialConditionIds2="" conditionIds2="" prizeIds="" ruleId="9003" lookonprizeIds="9002" signUpDate="20151205T134500,20151205T235959" gameDate="20151205T134500,20151205T235959" prizeDate="20151205T134500,20151205T235959" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151205,20151205" timeRange="000000,235959"/>
+			</GameTime>
+			<GameNtf>
+					<Title>WCA周决赛64强晋级通知</Title>
+					<Content><![CDATA[$NICKNAME$,您好!恭喜您晋级WCA周决赛64强决赛。您的下一场比赛将于今天$DAY$ $TIME$开始,请按时参加比赛，祝您游戏愉快！<b><a href='event:http://wca.sanguosha.com/'><font color='#EE9A49'>WCA比赛选手守则>></font></a></b>]]></Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+		</Match>
+		
+		<!-- 第三轮月赛 -->
+		<Match id="10006" index="302" name="WCA秋季月赛" ShowFlag="3" state="0" type="2" gameZone="1" label="0" userCntRange="1,200000" specialConditionIds="" conditionIds="10001,10002" specialConditionIds2="" conditionIds2="" prizeIds="" ruleId="10002" lookonprizeIds="10002" signUpDate="20151207T184500,20151212T235959" gameDate="20151207T184500,20151212T235959" prizeDate="20151207T184500,20151213T020000" delayDays="0" restartInterval="0" picture="" describe="在规定的报名时间内，进比赛场报名参加，即可报名参加比赛。详情请点击“更多”。" awardDescribe="2人3v3比赛2领奖描述" limitDescribe="2人3v3比赛2条件描述" limitDetail="2人3v3比赛2条件明细" anonymous="1" showWhenSignup="0" is1v1Ban4Char="0" inQueueMaxWaitTime="0"> 
+			<GameTime> 
+				<Item dateRange="20151207,20151211,1,2,3,4,5" timeRange="184500,235959"/>
+				<Item dateRange="20151212,20151212" timeRange="094500,235959"/>
+			</GameTime>
+			<GameNtf>
+					<Title>WCA月赛32强晋级通知</Title>
+					<Content><![CDATA[$NICKNAME$,您好!恭喜您晋级WCA月赛。您的下一场比赛将于今天$DAY$ $TIME$开始,请按时参加比赛，祝您游戏愉快！<b><a href='event:http://wca.sanguosha.com/'><font color='#EE9A49'>WCA比赛选手守则>></font></a></b>]]></Content>
+			</GameNtf>
+			<RuleUrl><![CDATA[http://www.sanguosha.com/detail/20150811_2208_1118.html]]></RuleUrl>
+			<ReportUrl><![CDATA[]]></ReportUrl>
+			<AwardUrl><![CDATA[http://wca.sanguosha.com]]></AwardUrl>
+			<OfflineAwardUrl><![CDATA[]]></OfflineAwardUrl>
+		</Match>	
+		
+	</MatchList>
+	<AreaMultiMatchCfg>
+		<field_desc>
+			<说明>王战配置</说明>
+			<id>王战id,唯一,从1开始</id>
+			<matchIdInclude>王战包含的比赛的id,如"100,200"</matchIdInclude>
+			<prizeIds>王战包含的奖励的id,如"100,200"</prizeIds>
+			<areaPrizeDate>王战的奖励时范围,注意时间必须在其包含的最后的比赛之后,如"20110627T000000,20110703T235959"</areaPrizeDate>
+			<areaPrizeDelayShowDays>奖励延时显示时间</areaPrizeDelayShowDays>
+		</field_desc>
+		<AreaMultiMatch id="901" matchIdInclude="11" prizeIds="" areaPrizeDate="20110626T000000,20120629T235959" areaPrizeDelayShowDays="0" picture="103" describe="王战1V1总页面">
+			<RuleUrl><![CDATA[http://bbs.sanguosha.com/index.php]]></RuleUrl>
+			<ReportUrl><![CDATA[http://bbs.sanguosha.com/index.php]]></ReportUrl>
+			<AwardUrl><![CDATA[http://bbs.sanguosha.com/index.php]]></AwardUrl>
+		</AreaMultiMatch>
+		<AreaMultiMatch id="908" matchIdInclude="81" prizeIds="60014" areaPrizeDate="20110626T000000,20120629T235959" areaPrizeDelayShowDays="0" picture="104" describe="王战8人局总页面">
+			<RuleUrl><![CDATA[http://bbs.sanguosha.com/index.php]]></RuleUrl>
+			<ReportUrl><![CDATA[http://bbs.sanguosha.com/index.php]]></ReportUrl>
+			<AwardUrl><![CDATA[http://bbs.sanguosha.com/index.php]]></AwardUrl>
+		</AreaMultiMatch>
+	</AreaMultiMatchCfg>
+	<Config>
+		<ConditionList>
+			<field_desc>
+				<说明>比赛报名条件,下面的条件配置中,0为无效值或者不填写</说明>
+				<id>条件id,唯一,从1开始</id>
+				<level>角色等级,如"0,20"</level>
+				<glory8>文功</glory8>
+				<glory3v3>武勋</glory3v3>
+				<glory1v1>勇武</glory1v1>
+				<perWin8>8人局胜率</perWin8>
+				<perWin1v1>3v3胜率</perWin1v1>
+				<perWin3v3>1v1胜率</perWin3v3>
+				<perWin>总胜率</perWin>
+				<perRunAway>所有比赛逃跑率</perRunAway>
+				<city>城市</city>
+				<sex>性别</sex>
+				<birthdayRange>生日范围,如"19800101,20000101"</birthdayRange>
+				<vip>是否会员</vip>
+				<gameCount>总游戏局数</gameCount>
+				<DelItem>
+					<说明>需要扣出的物品</说明>
+					<itemTypeId>物品类型id</itemTypeId>
+					<count>物品个数</count>
+					<param1>参数,根据具体物品而定</param1>
+				</DelItem>
+				<HaveItem>需要拥有的物品,item中的属性说明与delItem同</HaveItem>
+				<BlackList>Account作弊不让报名的黑名单</BlackList>
+			</field_desc>
+			<Condition id="1" level="0,201" glory8="0" glory3v3="0" glory1v1="0" perWin8="0" perWin1v1="0" perWin3v3="0" perWin="0" perRunAway="0" city="0" sex="0" birthdayRange="0" vip="0" gameCount="0">
+				<DelItem>
+					<Item itemTypeId="100001" count="50000" param1="0" desc="铜钱"/>
+				</DelItem>
+				<HaveItem>
+				</HaveItem>
+			</Condition>
+			<Condition id="2" level="0,201" glory8="0" glory3v3="0" glory1v1="0" perWin8="0" perWin1v1="0" perWin3v3="0" perWin="0" perRunAway="0" city="0" sex="0" birthdayRange="0" vip="0" gameCount="0">
+				<DelItem>
+					<Item itemTypeId="103711" count="1" param1="0" desc="参赛券">
+						<IntroUrl><![CDATA[http://www.sanguosha.com/web2/newsDetail2.asp?id=3606]]></IntroUrl>
+					</Item>
+				</DelItem>
+				<HaveItem>
+				</HaveItem>
+			</Condition>
+			<Condition id="3" level="0,201" glory8="0" glory3v3="0" glory1v1="0" perWin8="0" perWin1v1="0" perWin3v3="0" perWin="0" perRunAway="0" city="0" sex="0" birthdayRange="0" vip="0" gameCount="0">
+				<DelItem>
+					<Item itemTypeId="100011" count="99" param1="0" desc="银两">
+						<IntroUrl><![CDATA[http://www.sanguosha.com/yinliang/index.html]]></IntroUrl>
+					</Item>
+				</DelItem>
+				<HaveItem>
+				</HaveItem>
+			</Condition>
+			<Condition id="4" level="50,201" glory8="0" glory3v3="0" glory1v1="0" perWin8="0" perWin1v1="0" perWin3v3="0" perWin="0" perRunAway="0" city="0" sex="0" birthdayRange="0" vip="0" gameCount="0">
+				<HaveItem>
+				</HaveItem>
+			</Condition>
+			<Condition id="5" level="20,201" glory8="0" glory3v3="0" glory1v1="0" perWin8="0" perWin1v1="0" perWin3v3="0" perWin="0" perRunAway="0" city="0" sex="0" birthdayRange="0" vip="0" gameCount="0">
+				<HaveItem>
+				</HaveItem>
+			</Condition>
+			<Condition id="6" level="40,201" glory8="0" glory3v3="0" glory1v1="300" perWin8="0" perWin1v1="0" perWin3v3="0" perWin="0" perRunAway="0" city="0" sex="0" birthdayRange="0" vip="0" gameCount="0">
+				<DelItem>
+					<Item itemTypeId="100011" count="100" param1="0" desc="银两">
+						<IntroUrl><![CDATA[http://www.sanguosha.com/yinliang/index.html]]></IntroUrl>
+					</Item>
+				</DelItem>
+				<HaveItem>
+				</HaveItem>
+				<BlackList>
+					<Account>aaxy01</Account>
+				</BlackList>
+			</Condition>
+			<Condition id="7" level="0,201" glory8="0" glory3v3="0" glory1v1="0" perWin8="0" perWin1v1="0" perWin3v3="0" perWin="0" perRunAway="0" city="0" sex="0" birthdayRange="0" vip="1" gameCount="0">
+				<HaveItem>
+				</HaveItem>
+				<BlackList>
+					<Account>aaxy01</Account>
+				</BlackList>
+			</Condition>
+			<Condition id="8" level="40,201" glory8="800" glory3v3="0" glory1v1="0" perWin8="0" perWin1v1="0" perWin3v3="0" perWin="0" perRunAway="0" city="0" sex="0" birthdayRange="0" vip="0" gameCount="0">
+				<DelItem>
+					<Item itemTypeId="100011" count="100" param1="0" desc="银两">
+						<IntroUrl><![CDATA[http://www.sanguosha.com/yinliang/index.html]]></IntroUrl>
+					</Item>
+				</DelItem>
+				<HaveItem>
+				</HaveItem>
+				<BlackList>
+					<Account>aaxy01</Account>
+				</BlackList>
+			</Condition>
+			<!--WCA预赛 条件-->
+			<Condition id="8001" level="0,201" glory8="0" glory3v3="0" glory1v1="0" perWin8="0" perWin1v1="0" perWin3v3="0" perWin="0" perRunAway="0" city="0" sex="0" birthdayRange="0" vip="0" gameCount="0"> 
+				<DelItem> 
+					<Item itemTypeId="106001" count="1" param1="0" desc="WCA秋季赛参赛券"> 
+						<IntroUrl><![CDATA[]]></IntroUrl> 
+					</Item> 
+				</DelItem>
+				<HaveItem></HaveItem> 
+			</Condition>
+			<!--WCA周赛 条件-->
+			<Condition id="9001" level="0,201" glory8="0" glory3v3="0" glory1v1="0" perWin8="0" perWin1v1="0" perWin3v3="0" perWin="0" perRunAway="0" city="0" sex="0" birthdayRange="0" vip="0" gameCount="0"> 
+				<HaveItem>
+					<Item itemTypeId="105701" count="1" param1="0" desc="WCA周赛观赛券金券" />
+				</HaveItem>
+			</Condition>
+			<Condition id="9002" level="0,201" glory8="0" glory3v3="0" glory1v1="0" perWin8="0" perWin1v1="0" perWin3v3="0" perWin="0" perRunAway="0" city="0" sex="0" birthdayRange="0" vip="0" gameCount="0"> 
+				<HaveItem>
+					<Item itemTypeId="105801" count="1" param1="0" desc="WCA周赛观赛券银券" />
+				</HaveItem>
+			</Condition>
+			<!--WCA月赛 条件-->
+			<Condition id="10001" level="0,201" glory8="0" glory3v3="0" glory1v1="0" perWin8="0" perWin1v1="0" perWin3v3="0" perWin="0" perRunAway="0" city="0" sex="0" birthdayRange="0" vip="0" gameCount="0"> 
+				<HaveItem>
+					<Item itemTypeId="105501" count="1" param1="0" desc="WCA月赛观赛券金券" />
+				</HaveItem>
+			</Condition>
+			<Condition id="10002" level="0,201" glory8="0" glory3v3="0" glory1v1="0" perWin8="0" perWin1v1="0" perWin3v3="0" perWin="0" perRunAway="0" city="0" sex="0" birthdayRange="0" vip="0" gameCount="0"> 
+				<HaveItem>
+					<Item itemTypeId="105601" count="1" param1="0" desc="WCA月赛观赛券银券" />
+				</HaveItem>
+			</Condition>
+		</ConditionList>
+		<RuleList>
+			<ScoreRule>
+				<field_desc>
+					<说明>积分赛规则列表, rule为一个规则</说明>
+					<ruleId>规则id,唯一,不同规则间也不能重复,从1开始</ruleId>
+					<gamePattern>游戏类型,1为8人标准,2为标准3v3,3为标准1v1</gamePattern>
+					<cardEx>扩展包</cardEx>
+					<assignType>开桌排队方式的id索引,对应下面AssignList配置</assignType>
+					<maxMatchCntPerUser>最大游戏数</maxMatchCntPerUser>
+					<maxMatchCntPerDayOfUser>每日最大游戏数</maxMatchCntPerDayOfUser>
+					<maxRunAwayTimesPerDay>每日最多逃跑次数</maxRunAwayTimesPerDay>
+					<runAwayPunishTime>逃惩罚时间,单位秒</runAwayPunishTime>
+				</field_desc>
+				<Rule ruleId="1" gamePattern="3" cardEx="7" assignType="11" maxMatchCntPerUser="20" maxMatchCntPerDayOfUser="10" maxRunAwayTimesPerDay="5" runAwayPunishTime="900"/>
+				<Rule ruleId="2" gamePattern="2" cardEx="7" assignType="12" maxMatchCntPerUser="20" maxMatchCntPerDayOfUser="10" maxRunAwayTimesPerDay="5" runAwayPunishTime="900"/>
+				<Rule ruleId="3" gamePattern="1" cardEx="7" assignType="13" maxMatchCntPerUser="20" maxMatchCntPerDayOfUser="10" maxRunAwayTimesPerDay="5" runAwayPunishTime="900"/>
+				<Rule ruleId="4" gamePattern="3" cardEx="7" assignType="14" maxMatchCntPerUser="50" maxMatchCntPerDayOfUser="20" maxRunAwayTimesPerDay="5" runAwayPunishTime="900"/>
+				<Rule ruleId="5" gamePattern="1" cardEx="7" assignType="15" maxMatchCntPerUser="105" maxMatchCntPerDayOfUser="15" maxRunAwayTimesPerDay="5" runAwayPunishTime="900"/>
+				<Rule ruleId="6" gamePattern="3" cardEx="7" assignType="16" maxMatchCntPerUser="10" maxMatchCntPerDayOfUser="10" maxRunAwayTimesPerDay="2" runAwayPunishTime="900"/>
+				<Rule ruleId="7" gamePattern="3" cardEx="7" assignType="17" maxMatchCntPerUser="50" maxMatchCntPerDayOfUser="20" maxRunAwayTimesPerDay="5" runAwayPunishTime="900"/>
+				<Rule ruleId="8" gamePattern="1" cardEx="7" assignType="18" maxMatchCntPerUser="60" maxMatchCntPerDayOfUser="20" maxRunAwayTimesPerDay="5" runAwayPunishTime="900"/>
+				<Rule ruleId="9" gamePattern="1" cardEx="31" assignType="18" maxMatchCntPerUser="5" maxMatchCntPerDayOfUser="5" maxRunAwayTimesPerDay="1" runAwayPunishTime="900"/>
+				<Rule ruleId="10" gamePattern="1" cardEx="7" assignType="20" maxMatchCntPerUser="15" maxMatchCntPerDayOfUser="5" maxRunAwayTimesPerDay="2" runAwayPunishTime="900"/>
+				<Rule ruleId="11" gamePattern="3" cardEx="7" assignType="17" maxMatchCntPerUser="60" maxMatchCntPerDayOfUser="10" maxRunAwayTimesPerDay="5" runAwayPunishTime="900"/>
+				<Rule ruleId="12" gamePattern="3" cardEx="7" assignType="19" maxMatchCntPerUser="20" maxMatchCntPerDayOfUser="5" maxRunAwayTimesPerDay="1" runAwayPunishTime="900"/>
+				<Rule ruleId="13" gamePattern="1" cardEx="31" assignType="20" maxMatchCntPerUser="20" maxMatchCntPerDayOfUser="5" maxRunAwayTimesPerDay="1" runAwayPunishTime="900"/>
+			</ScoreRule>
+			<ChallengeRule>
+				<field_desc>
+					<说明>挑战赛规则列表,rule为一个规则</说明>
+					<ruleId>规则id,唯一,不同规则间也不能重复,从1开始</ruleId>
+					<gamePattern>游戏类型,1为8人标准,2为标准3v3,3为标准1v1</gamePattern>
+					<cardEx>扩展包</cardEx>
+					<assignType>开桌排队方式 1为一个队列简单排队 2为两个队列排队方式</assignType>
+					<challengeCnt>最大挑战次数,0为不设置上限</challengeCnt>
+					<maxRunAwayTimesPerDay>每日最多逃跑次数</maxRunAwayTimesPerDay>
+					<runAwayPunishTime>逃惩罚时间,单位秒</runAwayPunishTime>
+				</field_desc>
+				<Rule ruleId="101" gamePattern="3" cardEx="5" assignType="1" challengeCnt="3" maxRunAwayTimesPerDay="3" runAwayPunishTime="300"/>
+			</ChallengeRule>
+			<!--WCA比赛 预赛规则-->
+			<WcaPreRule> 
+				<Rule ruleId="8001" gamePattern="6" assignType="8001" maxMatchCntPerUser="10" maxRunAwayTimesPerDay="10" runAwayPunishTime="900" signupTimes="3"/> 
+				<Rule ruleId="8002" gamePattern="6" assignType="8001" maxMatchCntPerUser="12" maxRunAwayTimesPerDay="10" runAwayPunishTime="900" signupTimes="5"/> 
+				<Rule ruleId="8003" gamePattern="6" assignType="8001" maxMatchCntPerUser="12" maxRunAwayTimesPerDay="15" runAwayPunishTime="900" signupTimes="5"/> 
+			</WcaPreRule>
+			<!--WCA比赛 决赛规则-->
+			<WcaFinalRule>
+				<!--
+					createTblTime 比赛前多久系统创建房间等待选手，即选手可在比赛前多久在房间中等待/分钟
+					waitStartTime 比赛开始后选手未到等待时间，过期未进算弃权/分钟
+					liveInterval 有comingLive的比赛，代表本次比赛结束后开始的下一场，两场之间的延时/分钟
+					boXInterval bo3比赛间隔/分钟
+					Game 节点是第turnId场的比赛，这场比赛是gameDate后startTime分钟后开始，共打tblGameCnt局决胜负
+						Vs节点table是序号，pos1和pos2是选手id，w/l是胜利/失败选手分配下一场比赛id，半决赛以前一般无需为l分配id
+				-->
+				<!--WCA比赛 决赛两天规则-->
+				<Rule ruleId="9001" gamePattern="6" assignType="0" createTblTime="15" waitStartTime="5" liveInterval="10" boXInterval="3" maxGameTime="30" PlayerPlayCardTime="720" userCnt="64"> 
+					<Turns>
+						<Game startTime="15" turnId ="1" tblGameCnt="1"><!--64进32-->
+						  <Vs table="1" pos1="1" pos2="64" w="65" l="" wscore="" lscore="1"/>
+						  <Vs table="2" pos1="33" pos2="32" w="66" l="" wscore="" lscore="1"/>
+						  <Vs table="3" pos1="17" pos2="48" w="67" l="" wscore="" lscore="1"/>
+						  <Vs table="4" pos1="16" pos2="49" w="68" l="" wscore="" lscore="1"/>
+						  <Vs table="5" pos1="9" pos2="56" w="69" l="" wscore="" lscore="1"/>
+						  <Vs table="6" pos1="24" pos2="41" w="70" l="" wscore="" lscore="1"/>
+						  <Vs table="7" pos1="25" pos2="40" w="71" l="" wscore="" lscore="1"/>
+						  <Vs table="8" pos1="8" pos2="57" w="72" l="" wscore="" lscore="1"/>
+						  <Vs table="9" pos1="5" pos2="60" w="88" l="" wscore="" lscore="1"/>
+						  <Vs table="10" pos1="28" pos2="37" w="87" l="" wscore="" lscore="1"/>
+						  <Vs table="11" pos1="21" pos2="44" w="86" l="" wscore="" lscore="1"/>
+						  <Vs table="12" pos1="12" pos2="53" w="85" l="" wscore="" lscore="1"/>
+						  <Vs table="13" pos1="13" pos2="52" w="84" l="" wscore="" lscore="1"/>
+						  <Vs table="14" pos1="20" pos2="45" w="83" l="" wscore="" lscore="1"/>
+						  <Vs table="15" pos1="36" pos2="29" w="82" l="" wscore="" lscore="1"/>
+						  <Vs table="16" pos1="4" pos2="61" w="81" l="" wscore="" lscore="1"/>
+						  <Vs table="17" pos1="11" pos2="54" w="76" l="" wscore="" lscore="1"/>
+						  <Vs table="18" pos1="22" pos2="43" w="75" l="" wscore="" lscore="1"/>
+						  <Vs table="19" pos1="27" pos2="38" w="74" l="" wscore="" lscore="1"/>
+						  <Vs table="20" pos1="6" pos2="59" w="73" l="" wscore="" lscore="1"/>
+						  <Vs table="21" pos1="3" pos2="62" w="80" l="" wscore="" lscore="1"/>
+						  <Vs table="22" pos1="30" pos2="35" w="79" l="" wscore="" lscore="1"/>
+						  <Vs table="23" pos1="19" pos2="46" w="78" l="" wscore="" lscore="1"/>
+						  <Vs table="24" pos1="14" pos2="51" w="77" l="" wscore="" lscore="1"/>
+						  <Vs table="25" pos1="7" pos2="58" w="89" l="" wscore="" lscore="1"/>
+						  <Vs table="26" pos1="26" pos2="39" w="90" l="" wscore="" lscore="1"/>
+						  <Vs table="27" pos1="23" pos2="42" w="91" l="" wscore="" lscore="1"/>
+						  <Vs table="28" pos1="10" pos2="55" w="92" l="" wscore="" lscore="1"/>
+						  <Vs table="29" pos1="15" pos2="50" w="93" l="" wscore="" lscore="1"/>
+						  <Vs table="30" pos1="18" pos2="47" w="94" l="" wscore="" lscore="1"/>
+						  <Vs table="31" pos1="31" pos2="34" w="95" l="" wscore="" lscore="1"/>
+						  <Vs table="32" pos1="2" pos2="63" w="96" l="" wscore="" lscore="1"/>
+						</Game>
+						<Game startTime="65" turnId ="2" tblGameCnt="1"><!--32进16-->
+						  <Vs table="1" pos1="65" pos2="66" w="97" l="" wscore="" lscore="2"/>
+						  <Vs table="2" pos1="67" pos2="68" w="98" l="" wscore="" lscore="2"/>
+						  <Vs table="3" pos1="69" pos2="70" w="99" l="" wscore="" lscore="2"/>
+						  <Vs table="4" pos1="71" pos2="72" w="100" l="" wscore="" lscore="2"/>
+						  <Vs table="5" pos1="73" pos2="74" w="101" l="" wscore="" lscore="2"/>
+						  <Vs table="6" pos1="75" pos2="76" w="102" l="" wscore="" lscore="2"/>
+						  <Vs table="7" pos1="77" pos2="78" w="103" l="" wscore="" lscore="2"/>
+						  <Vs table="8" pos1="79" pos2="80" w="104" l="" wscore="" lscore="2"/>
+						  <Vs table="9" pos1="81" pos2="82" w="105" l="" wscore="" lscore="2"/>
+						  <Vs table="10" pos1="83" pos2="84" w="106" l="" wscore="" lscore="2"/>
+						  <Vs table="11" pos1="85" pos2="86" w="107" l="" wscore="" lscore="2"/>
+						  <Vs table="12" pos1="87" pos2="88" w="108" l="" wscore="" lscore="2"/>
+						  <Vs table="13" pos1="89" pos2="90" w="109" l="" wscore="" lscore="2"/>
+						  <Vs table="14" pos1="91" pos2="92" w="110" l="" wscore="" lscore="2"/>
+						  <Vs table="15" pos1="93" pos2="94" w="111" l="" wscore="" lscore="2"/>
+						  <Vs table="16" pos1="95" pos2="96" w="112" l="" wscore="" lscore="2"/>
+						</Game>
+						<Game startTime="115" turnId ="3" tblGameCnt="1"><!--16进8-->
+						  <Vs table="1" pos1="97" pos2="98" w="113" l="" wscore="" lscore="3"/>
+						  <Vs table="2" pos1="99" pos2="100" w="114" l="" wscore="" lscore="3"/>
+						  <Vs table="3" pos1="101" pos2="102" w="115" l="" wscore="" lscore="3"/>
+						  <Vs table="4" pos1="103" pos2="104" w="116" l="" wscore="" lscore="3"/>
+						  <Vs table="5" pos1="105" pos2="106" w="117" l="" wscore="" lscore="3"/>
+						  <Vs table="6" pos1="107" pos2="108" w="118" l="" wscore="" lscore="3"/>
+						  <Vs table="7" pos1="109" pos2="110" w="119" l="" wscore="" lscore="3"/>
+						  <Vs table="8" pos1="111" pos2="112" w="120" l="" wscore="" lscore="3"/>
+						</Game>
+						<Game startTime="165" turnId ="4" tblGameCnt="3"><!--8进4-->
+						  <Vs table="1" pos1="113" pos2="114" w="121" l="" wscore="" lscore="4"/>
+						  <Vs table="2" pos1="115" pos2="116" w="122" l="" wscore="" lscore="4"/>
+						  <Vs table="3" pos1="117" pos2="118" w="123" l="" wscore="" lscore="4"/>
+						  <Vs table="4" pos1="119" pos2="120" w="124" l="" wscore="" lscore="4"/>
+						</Game>
+						<Game startTime="1515" turnId ="5" tblGameCnt="3"><!--半决赛第一组-->
+						  <Vs table="1" pos1="121" pos2="122" w="125" l="127" comingLive="6,1" wscore="" lscore=""/>
+						</Game>
+						<Game startTime="1620" turnId ="6" tblGameCnt="3"><!--半决赛第二组-->
+						  <Vs table="1" pos1="123" pos2="124" w="126" l="128" comingLive="7,1" wscore="" lscore=""/>
+						</Game>
+						<Game startTime="1725" turnId ="7" tblGameCnt="3"><!--决赛-->
+						  <Vs table="1" pos1="125" pos2="126" w="129" l="130" comingLive="8,1" wscore="24" lscore="12"/>
+						</Game>
+						<Game startTime="1830" turnId ="8" tblGameCnt="3"><!--3/4名决赛-->
+						  <Vs table="1" pos1="127" pos2="128" w="131" l="132" wscore="8" lscore="6"/>
+						</Game>
+					</Turns>
+				</Rule>
+				
+				<!--WCA比赛 决赛一天规则-->
+				<Rule ruleId="9002" gamePattern="6" assignType="0" createTblTime="15" waitStartTime="5" liveInterval="10" boXInterval="3" maxGameTime="30" PlayerPlayCardTime="720" userCnt="64"> 
+					<Turns>
+						<Game startTime="15" turnId ="1" tblGameCnt="1"><!--64进32-->
+						  <Vs table="1" pos1="1" pos2="64" w="65" l="" wscore="" lscore="1"/>
+						  <Vs table="2" pos1="33" pos2="32" w="66" l="" wscore="" lscore="1"/>
+						  <Vs table="3" pos1="17" pos2="48" w="67" l="" wscore="" lscore="1"/>
+						  <Vs table="4" pos1="16" pos2="49" w="68" l="" wscore="" lscore="1"/>
+						  <Vs table="5" pos1="9" pos2="56" w="69" l="" wscore="" lscore="1"/>
+						  <Vs table="6" pos1="24" pos2="41" w="70" l="" wscore="" lscore="1"/>
+						  <Vs table="7" pos1="25" pos2="40" w="71" l="" wscore="" lscore="1"/>
+						  <Vs table="8" pos1="8" pos2="57" w="72" l="" wscore="" lscore="1"/>
+						  <Vs table="9" pos1="5" pos2="60" w="88" l="" wscore="" lscore="1"/>
+						  <Vs table="10" pos1="28" pos2="37" w="87" l="" wscore="" lscore="1"/>
+						  <Vs table="11" pos1="21" pos2="44" w="86" l="" wscore="" lscore="1"/>
+						  <Vs table="12" pos1="12" pos2="53" w="85" l="" wscore="" lscore="1"/>
+						  <Vs table="13" pos1="13" pos2="52" w="84" l="" wscore="" lscore="1"/>
+						  <Vs table="14" pos1="20" pos2="45" w="83" l="" wscore="" lscore="1"/>
+						  <Vs table="15" pos1="36" pos2="29" w="82" l="" wscore="" lscore="1"/>
+						  <Vs table="16" pos1="4" pos2="61" w="81" l="" wscore="" lscore="1"/>
+						  <Vs table="17" pos1="11" pos2="54" w="76" l="" wscore="" lscore="1"/>
+						  <Vs table="18" pos1="22" pos2="43" w="75" l="" wscore="" lscore="1"/>
+						  <Vs table="19" pos1="27" pos2="38" w="74" l="" wscore="" lscore="1"/>
+						  <Vs table="20" pos1="6" pos2="59" w="73" l="" wscore="" lscore="1"/>
+						  <Vs table="21" pos1="3" pos2="62" w="80" l="" wscore="" lscore="1"/>
+						  <Vs table="22" pos1="30" pos2="35" w="79" l="" wscore="" lscore="1"/>
+						  <Vs table="23" pos1="19" pos2="46" w="78" l="" wscore="" lscore="1"/>
+						  <Vs table="24" pos1="14" pos2="51" w="77" l="" wscore="" lscore="1"/>
+						  <Vs table="25" pos1="7" pos2="58" w="89" l="" wscore="" lscore="1"/>
+						  <Vs table="26" pos1="26" pos2="39" w="90" l="" wscore="" lscore="1"/>
+						  <Vs table="27" pos1="23" pos2="42" w="91" l="" wscore="" lscore="1"/>
+						  <Vs table="28" pos1="10" pos2="55" w="92" l="" wscore="" lscore="1"/>
+						  <Vs table="29" pos1="15" pos2="50" w="93" l="" wscore="" lscore="1"/>
+						  <Vs table="30" pos1="18" pos2="47" w="94" l="" wscore="" lscore="1"/>
+						  <Vs table="31" pos1="31" pos2="34" w="95" l="" wscore="" lscore="1"/>
+						  <Vs table="32" pos1="2" pos2="63" w="96" l="" wscore="" lscore="1"/>
+						</Game>
+						<Game startTime="65" turnId ="2" tblGameCnt="1"><!--32进16-->
+						  <Vs table="1" pos1="65" pos2="66" w="97" l="" wscore="" lscore="2"/>
+						  <Vs table="2" pos1="67" pos2="68" w="98" l="" wscore="" lscore="2"/>
+						  <Vs table="3" pos1="69" pos2="70" w="99" l="" wscore="" lscore="2"/>
+						  <Vs table="4" pos1="71" pos2="72" w="100" l="" wscore="" lscore="2"/>
+						  <Vs table="5" pos1="73" pos2="74" w="101" l="" wscore="" lscore="2"/>
+						  <Vs table="6" pos1="75" pos2="76" w="102" l="" wscore="" lscore="2"/>
+						  <Vs table="7" pos1="77" pos2="78" w="103" l="" wscore="" lscore="2"/>
+						  <Vs table="8" pos1="79" pos2="80" w="104" l="" wscore="" lscore="2"/>
+						  <Vs table="9" pos1="81" pos2="82" w="105" l="" wscore="" lscore="2"/>
+						  <Vs table="10" pos1="83" pos2="84" w="106" l="" wscore="" lscore="2"/>
+						  <Vs table="11" pos1="85" pos2="86" w="107" l="" wscore="" lscore="2"/>
+						  <Vs table="12" pos1="87" pos2="88" w="108" l="" wscore="" lscore="2"/>
+						  <Vs table="13" pos1="89" pos2="90" w="109" l="" wscore="" lscore="2"/>
+						  <Vs table="14" pos1="91" pos2="92" w="110" l="" wscore="" lscore="2"/>
+						  <Vs table="15" pos1="93" pos2="94" w="111" l="" wscore="" lscore="2"/>
+						  <Vs table="16" pos1="95" pos2="96" w="112" l="" wscore="" lscore="2"/>
+						</Game>
+						<Game startTime="115" turnId ="3" tblGameCnt="1"><!--16进8-->
+						  <Vs table="1" pos1="97" pos2="98" w="113" l="" wscore="" lscore="3"/>
+						  <Vs table="2" pos1="99" pos2="100" w="114" l="" wscore="" lscore="3"/>
+						  <Vs table="3" pos1="101" pos2="102" w="115" l="" wscore="" lscore="3"/>
+						  <Vs table="4" pos1="103" pos2="104" w="116" l="" wscore="" lscore="3"/>
+						  <Vs table="5" pos1="105" pos2="106" w="117" l="" wscore="" lscore="3"/>
+						  <Vs table="6" pos1="107" pos2="108" w="118" l="" wscore="" lscore="3"/>
+						  <Vs table="7" pos1="109" pos2="110" w="119" l="" wscore="" lscore="3"/>
+						  <Vs table="8" pos1="111" pos2="112" w="120" l="" wscore="" lscore="3"/>
+						</Game>
+						<Game startTime="165" turnId ="4" tblGameCnt="3"><!--8进4-->
+						  <Vs table="1" pos1="113" pos2="114" w="121" l="" wscore="" lscore="4"/>
+						  <Vs table="2" pos1="115" pos2="116" w="122" l="" wscore="" lscore="4"/>
+						  <Vs table="3" pos1="117" pos2="118" w="123" l="" wscore="" lscore="4"/>
+						  <Vs table="4" pos1="119" pos2="120" w="124" l="" wscore="" lscore="4"/>
+						</Game>
+						<Game startTime="315" turnId ="5" tblGameCnt="3"><!--半决赛第一组-->
+						  <Vs table="1" pos1="121" pos2="122" w="125" l="127" comingLive="6,1" wscore="" lscore=""/>
+						</Game>
+						<Game startTime="420" turnId ="6" tblGameCnt="3"><!--半决赛第二组-->
+						  <Vs table="1" pos1="123" pos2="124" w="126" l="128" comingLive="7,1" wscore="" lscore=""/>
+						</Game>
+						<Game startTime="525" turnId ="7" tblGameCnt="3"><!--决赛-->
+						  <Vs table="1" pos1="125" pos2="126" w="129" l="130" comingLive="8,1" wscore="24" lscore="12"/>
+						</Game>
+						<Game startTime="630" turnId ="8" tblGameCnt="3"><!--3/4名决赛-->
+						  <Vs table="1" pos1="127" pos2="128" w="131" l="132" wscore="8" lscore="6"/>
+						</Game>
+					</Turns>
+				</Rule>
+				
+				<!--WCA比赛 决赛秋季赛规则-->
+				<Rule ruleId="9003" gamePattern="6" assignType="0" createTblTime="15" waitStartTime="5" liveInterval="10" boXInterval="3" maxGameTime="30" PlayerPlayCardTime="720" userCnt="64"> 
+					<Turns>
+						<Game startTime="15" turnId ="1" tblGameCnt="3"><!--64进32-->
+						  <Vs table="1" pos1="1" pos2="64" w="65" l="" wscore="" lscore="1"/>
+						  <Vs table="2" pos1="33" pos2="32" w="66" l="" wscore="" lscore="1"/>
+						  <Vs table="3" pos1="17" pos2="48" w="67" l="" wscore="" lscore="1"/>
+						  <Vs table="4" pos1="16" pos2="49" w="68" l="" wscore="" lscore="1"/>
+						  <Vs table="5" pos1="9" pos2="56" w="69" l="" wscore="" lscore="1"/>
+						  <Vs table="6" pos1="24" pos2="41" w="70" l="" wscore="" lscore="1"/>
+						  <Vs table="7" pos1="25" pos2="40" w="71" l="" wscore="" lscore="1"/>
+						  <Vs table="8" pos1="8" pos2="57" w="72" l="" wscore="" lscore="1"/>
+						  <Vs table="9" pos1="5" pos2="60" w="88" l="" wscore="" lscore="1"/>
+						  <Vs table="10" pos1="28" pos2="37" w="87" l="" wscore="" lscore="1"/>
+						  <Vs table="11" pos1="21" pos2="44" w="86" l="" wscore="" lscore="1"/>
+						  <Vs table="12" pos1="12" pos2="53" w="85" l="" wscore="" lscore="1"/>
+						  <Vs table="13" pos1="13" pos2="52" w="84" l="" wscore="" lscore="1"/>
+						  <Vs table="14" pos1="20" pos2="45" w="83" l="" wscore="" lscore="1"/>
+						  <Vs table="15" pos1="36" pos2="29" w="82" l="" wscore="" lscore="1"/>
+						  <Vs table="16" pos1="4" pos2="61" w="81" l="" wscore="" lscore="1"/>
+						  <Vs table="17" pos1="11" pos2="54" w="76" l="" wscore="" lscore="1"/>
+						  <Vs table="18" pos1="22" pos2="43" w="75" l="" wscore="" lscore="1"/>
+						  <Vs table="19" pos1="27" pos2="38" w="74" l="" wscore="" lscore="1"/>
+						  <Vs table="20" pos1="6" pos2="59" w="73" l="" wscore="" lscore="1"/>
+						  <Vs table="21" pos1="3" pos2="62" w="80" l="" wscore="" lscore="1"/>
+						  <Vs table="22" pos1="30" pos2="35" w="79" l="" wscore="" lscore="1"/>
+						  <Vs table="23" pos1="19" pos2="46" w="78" l="" wscore="" lscore="1"/>
+						  <Vs table="24" pos1="14" pos2="51" w="77" l="" wscore="" lscore="1"/>
+						  <Vs table="25" pos1="7" pos2="58" w="89" l="" wscore="" lscore="1"/>
+						  <Vs table="26" pos1="26" pos2="39" w="90" l="" wscore="" lscore="1"/>
+						  <Vs table="27" pos1="23" pos2="42" w="91" l="" wscore="" lscore="1"/>
+						  <Vs table="28" pos1="10" pos2="55" w="92" l="" wscore="" lscore="1"/>
+						  <Vs table="29" pos1="15" pos2="50" w="93" l="" wscore="" lscore="1"/>
+						  <Vs table="30" pos1="18" pos2="47" w="94" l="" wscore="" lscore="1"/>
+						  <Vs table="31" pos1="31" pos2="34" w="95" l="" wscore="" lscore="1"/>
+						  <Vs table="32" pos1="2" pos2="63" w="96" l="" wscore="" lscore="1"/>
+						</Game>
+						<Game startTime="135" turnId ="2" tblGameCnt="3"><!--32进16-->
+						  <Vs table="1" pos1="65" pos2="66" w="97" l="" wscore="" lscore="2"/>
+						  <Vs table="2" pos1="67" pos2="68" w="98" l="" wscore="" lscore="2"/>
+						  <Vs table="3" pos1="69" pos2="70" w="99" l="" wscore="" lscore="2"/>
+						  <Vs table="4" pos1="71" pos2="72" w="100" l="" wscore="" lscore="2"/>
+						  <Vs table="5" pos1="73" pos2="74" w="101" l="" wscore="" lscore="2"/>
+						  <Vs table="6" pos1="75" pos2="76" w="102" l="" wscore="" lscore="2"/>
+						  <Vs table="7" pos1="77" pos2="78" w="103" l="" wscore="" lscore="2"/>
+						  <Vs table="8" pos1="79" pos2="80" w="104" l="" wscore="" lscore="2"/>
+						  <Vs table="9" pos1="81" pos2="82" w="105" l="" wscore="" lscore="2"/>
+						  <Vs table="10" pos1="83" pos2="84" w="106" l="" wscore="" lscore="2"/>
+						  <Vs table="11" pos1="85" pos2="86" w="107" l="" wscore="" lscore="2"/>
+						  <Vs table="12" pos1="87" pos2="88" w="108" l="" wscore="" lscore="2"/>
+						  <Vs table="13" pos1="89" pos2="90" w="109" l="" wscore="" lscore="2"/>
+						  <Vs table="14" pos1="91" pos2="92" w="110" l="" wscore="" lscore="2"/>
+						  <Vs table="15" pos1="93" pos2="94" w="111" l="" wscore="" lscore="2"/>
+						  <Vs table="16" pos1="95" pos2="96" w="112" l="" wscore="" lscore="2"/>
+						</Game>
+						<Game startTime="255" turnId ="3" tblGameCnt="3"><!--16进8-->
+						  <Vs table="1" pos1="97" pos2="98" w="113" l="" wscore="" lscore="3"/>
+						  <Vs table="2" pos1="99" pos2="100" w="114" l="" wscore="" lscore="3"/>
+						  <Vs table="3" pos1="101" pos2="102" w="115" l="" wscore="" lscore="3"/>
+						  <Vs table="4" pos1="103" pos2="104" w="116" l="" wscore="" lscore="3"/>
+						  <Vs table="5" pos1="105" pos2="106" w="117" l="" wscore="" lscore="3"/>
+						  <Vs table="6" pos1="107" pos2="108" w="118" l="" wscore="" lscore="3"/>
+						  <Vs table="7" pos1="109" pos2="110" w="119" l="" wscore="" lscore="3"/>
+						  <Vs table="8" pos1="111" pos2="112" w="120" l="" wscore="" lscore="3"/>
+						</Game>
+					</Turns>
+				</Rule>
+				
+				<!--WCA月赛 5轮夏季赛规则-->
+				<Rule ruleId="10001" gamePattern="6" assignType="0" createTblTime="15" waitStartTime="5" liveInterval="10" boXInterval="3" maxGameTime="30" PlayerPlayCardTime="720" userCnt="8"> 
+					<Turns>
+						<Game startTime="15" turnId ="1" tblGameCnt="3"><!--8进4-->
+						  <Vs table="1" pos1="1" pos2="2" w="9" l="" wscore="" lscore="12"/>
+						  <Vs table="2" pos1="3" pos2="4" w="10" l="" wscore="" lscore="12"/>
+						  <Vs table="3" pos1="5" pos2="6" w="11" l="" wscore="" lscore="12"/>
+						  <Vs table="4" pos1="7" pos2="8" w="12" l="" wscore="" lscore="12"/>
+						</Game>
+						<Game startTime="255" turnId ="2" tblGameCnt="3"><!--半决赛第一组-->
+						  <Vs table="1" pos1="9" pos2="10" w="13" l="15" wscore="" lscore="" comingLive="3,1"/>
+						</Game>
+						<Game startTime="295" turnId ="3" tblGameCnt="3"><!--半决赛第二组-->
+						  <Vs table="1" pos1="11" pos2="12" w="14" l="16" wscore="" lscore="" comingLive="4,1"/>
+						</Game>
+						<Game startTime="335" turnId ="4" tblGameCnt="3"><!--决赛-->
+						  <Vs table="1" pos1="13" pos2="14" w="17" l="18" wscore="108" lscore="54" comingLive="5,1"/>
+						</Game>
+						<Game startTime="375" turnId ="5" tblGameCnt="3"><!--3/4名决赛-->
+						  <Vs table="1" pos1="15" pos2="16" w="19" l="20"  wscore="27" lscore="18"/>
+						</Game>
+					</Turns>
+				</Rule>
+				
+				<!--WCA月赛 9轮秋季赛规则-->
+				<Rule ruleId="10002" gamePattern="6" assignType="0" createTblTime="15" waitStartTime="5" liveInterval="10" boXInterval="3" maxGameTime="30" PlayerPlayCardTime="720" userCnt="32"> 
+					<Turns>
+						<Game startTime="15" turnId ="1" tblGameCnt="5"><!--A组8进4-->
+						  <Vs table="1" pos1="1" pos2="2" w="33" l="" wscore="" lscore=""/>
+						  <Vs table="2" pos1="3" pos2="4" w="34" l="" wscore="" lscore=""/>
+						  <Vs table="3" pos1="5" pos2="6" w="35" l="" wscore="" lscore=""/>
+						  <Vs table="4" pos1="7" pos2="8" w="36" l="" wscore="" lscore=""/>
+						</Game>
+						<Game startTime="1455" turnId ="2" tblGameCnt="5"><!--B组8进4-->
+						  <Vs table="1" pos1="9" pos2="10" w="37" l="" wscore="" lscore=""/>
+						  <Vs table="2" pos1="11" pos2="12" w="38" l="" wscore="" lscore=""/>
+						  <Vs table="3" pos1="13" pos2="14" w="39" l="" wscore="" lscore=""/>
+						  <Vs table="4" pos1="15" pos2="16" w="40" l="" wscore="" lscore=""/>
+						</Game>
+						<Game startTime="2895" turnId ="3" tblGameCnt="5"><!--C组8进4-->
+						  <Vs table="1" pos1="17" pos2="18" w="41" l="" wscore="" lscore=""/>
+						  <Vs table="2" pos1="19" pos2="20" w="42" l="" wscore="" lscore=""/>
+						  <Vs table="3" pos1="21" pos2="22" w="43" l="" wscore="" lscore=""/>
+						  <Vs table="4" pos1="23" pos2="24" w="44" l="" wscore="" lscore=""/>
+						</Game>
+						<Game startTime="4335" turnId ="4" tblGameCnt="5"><!--D组8进4-->
+						  <Vs table="1" pos1="25" pos2="26" w="45" l="" wscore="" lscore=""/>
+						  <Vs table="2" pos1="27" pos2="28" w="46" l="" wscore="" lscore=""/>
+						  <Vs table="3" pos1="29" pos2="30" w="47" l="" wscore="" lscore=""/>
+						  <Vs table="4" pos1="31" pos2="32" w="48" l="" wscore="" lscore=""/>
+						</Game>
+						<Game startTime="5775" turnId ="5" tblGameCnt="5"><!--16进8-->
+						  <Vs table="1" pos1="33" pos2="34" w="49" l="" wscore="" lscore=""/>
+						  <Vs table="2" pos1="35" pos2="36" w="50" l="" wscore="" lscore=""/>
+						  <Vs table="3" pos1="37" pos2="38" w="51" l="" wscore="" lscore=""/>
+						  <Vs table="4" pos1="39" pos2="40" w="52" l="" wscore="" lscore=""/>
+						  <Vs table="5" pos1="41" pos2="42" w="53" l="" wscore="" lscore=""/>
+						  <Vs table="6" pos1="43" pos2="44" w="54" l="" wscore="" lscore=""/>
+						  <Vs table="7" pos1="45" pos2="46" w="55" l="" wscore="" lscore=""/>
+						  <Vs table="8" pos1="47" pos2="48" w="56" l="" wscore="" lscore=""/>
+						</Game>
+						<Game startTime="6675" turnId ="6" tblGameCnt="5"><!--8进4-->
+						  <Vs table="1" pos1="49" pos2="50" w="57" l="" wscore="" lscore=""/>
+						  <Vs table="2" pos1="51" pos2="52" w="58" l="" wscore="" lscore=""/>
+						  <Vs table="3" pos1="53" pos2="54" w="59" l="" wscore="" lscore=""/>
+						  <Vs table="4" pos1="55" pos2="56" w="60" l="" wscore="" lscore=""/>
+						</Game>
+						<Game startTime="6915" turnId ="7" tblGameCnt="5"><!--半决赛-->
+						  <Vs table="1" pos1="57" pos2="58" w="61" l="62" wscore="" lscore=""/>
+						  <Vs table="2" pos1="59" pos2="60" w="63" l="64" wscore="" lscore=""/>
+						</Game>
+						<Game startTime="7155" turnId ="8" tblGameCnt="5"><!--决赛-->
+						  <Vs table="1" pos1="61" pos2="63" w="65" l="66" wscore="" lscore="" comingLive="9,1"/>
+						</Game>
+						<Game startTime="7200" turnId ="9" tblGameCnt="5"><!--3/4名决赛-->
+						  <Vs table="1" pos1="62" pos2="64" w="67" l="68"  wscore="" lscore=""/>
+						</Game>
+					</Turns>
+				</Rule>
+				
+			</WcaFinalRule>
+		</RuleList>
+		<PrizeList>
+			<NormalPrize>
+				<field_desc>
+					<说明>通用奖励方式(100开头)</说明>
+					<prizeId>奖励id,唯一,不同奖励类型也不能重复,从1开始</prizeId>
+					<prizeType>奖励类型,现有 1完赛 2报名 11王战全区比赛总完赛奖 </prizeType>
+					<prizeName>根据prizeType和rank或score的奖励名字,自行配置 有很多个</prizeName>
+					<Item>
+						<说明>奖励物品</说明>
+						<itemTypeId>物品类型id,(实物奖励时物品id为1)</itemTypeId>
+						<count>物品个数</count>
+						<param1>备用参数,根据具体奖励物品而定.(默认0)</param1>
+						<desc>奖励描述</desc>
+					</Item>
+				</field_desc>
+				<Prize prizeId="501" prizeType="2" prizeName="参赛奖">
+					<Item itemTypeId="325307" count="1" param1="0" desc="amo*QSP杨修7天"/>
+				</Prize>
+				<Prize prizeId="503" prizeType="1" prizeName="完赛奖">
+					<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+					<Item itemTypeId="501007" count="1" param1="0" desc="会员边框7天"/>
+				</Prize>
+				<Prize prizeId="801" prizeType="2" prizeName="参赛奖">
+					<Item itemTypeId="507708" count="1" param1="0" desc="祥灯庆春边框"/>
+				</Prize>
+				
+				<!--wca初赛完赛 决赛观赛券-->
+				<Prize prizeId="803" prizeType="1" prizeName="完赛奖">
+					<Item itemTypeId="105801" count="1" param1="0" desc="WAC周赛观赛券银券"/>
+				</Prize>
+				
+				<Prize prizeId="701" prizeType="2" prizeName="参赛奖">
+					<Item itemTypeId="309301" count="1" param1="0" desc="桃园三杰1天"/>
+				</Prize>
+				<Prize prizeId="703" prizeType="1" prizeName="完赛奖">
+					<Item itemTypeId="307907" count="1" param1="0" desc="amo*神吕蒙7天"/>
+				</Prize>
+				<Prize prizeId="902" prizeType="2" prizeName="参赛奖">
+					<Item itemTypeId="502907" count="1" param1="0" desc="皓月玉兔边框7天"/>
+				</Prize>
+				<Prize prizeId="901" prizeType="1" prizeName="完赛奖">
+					<Item itemTypeId="326408" count="1" param1="0" desc="Q张郃形象31天"/>
+					<Item itemTypeId="100107" count="1" param1="0" desc="7天会员"/>
+					<Item itemTypeId="501007" count="1" param1="0" desc="7天会员边框"/>
+				</Prize>
+				<Prize prizeId="601" prizeType="1" prizeName="完赛奖">
+					<Item itemTypeId="334907" count="1" param1="0" desc="萌之曹冲形象7天"/>
+				</Prize>
+				<Prize prizeId="602" prizeType="2" prizeName="参赛奖">
+					<Item itemTypeId="346307" count="1" param1="0" desc="萌之周瑜7天"/>
+				</Prize>
+				<Prize prizeId="401" prizeType="1" prizeName="完赛奖">
+					<Item itemTypeId="100801" count="1" param1="0" desc="临时通行证一天"/>
+					<Item itemTypeId="100201" count="10" param1="0" desc="点将卡"/>
+					<Item itemTypeId="100301" count="10" param1="0" desc="手气卡"/>
+					<Item itemTypeId="100401" count="10" param1="0" desc="换将卡"/>
+					<Item itemTypeId="100601" count="1" param1="0" desc="多多益善一天"/>
+					<Item itemTypeId="390101" count="1" param1="0" desc="月光宝盒一天"/>
+				</Prize>
+				<Prize prizeId="402" prizeType="2" prizeName="参赛奖">
+					<Item itemTypeId="310007" count="1" param1="0" desc="一骑当千7天"/>
+					<Item itemTypeId="100201" count="10" param1="0" desc="点将卡"/>
+					<Item itemTypeId="100301" count="10" param1="0" desc="手气卡"/>
+					<Item itemTypeId="100401" count="10" param1="0" desc="换将卡"/>
+				</Prize>
+				<Prize prizeId="303" prizeType="1" prizeName="完赛奖">
+					<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+					<Item itemTypeId="501007" count="1" param1="0" desc="会员至尊边框7天"/>
+					<Item itemTypeId="336609" count="1" param1="0" desc="单挑王者2013"/>
+				</Prize>
+				<Prize prizeId="301" prizeType="1" prizeName="完赛奖">
+					<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+					<Item itemTypeId="501007" count="1" param1="0" desc="会员至尊边框7天"/>
+					<Item itemTypeId="336709" count="1" param1="0" desc="身份王者2013"/>
+				</Prize>
+				<Prize prizeId="302" prizeType="2" prizeName="参赛奖">
+					<Item itemTypeId="100006" count="328" param1="0" desc="王者再战专属战功"/>
+				</Prize>
+				<Prize prizeId="201" prizeType="1" prizeName="完赛奖">
+					<Item itemTypeId="435401" count="1" param1="0" desc="皮肤包"/>
+					<Item itemTypeId="362608" count="1" param1="0" desc="美撼凡尘31天"/>
+				</Prize>
+				<Prize prizeId="202" prizeType="2" prizeName="参赛奖">
+					<Item itemTypeId="308707" count="1" param1="0" desc="更大的炮灰7天"/>
+				</Prize>
+			</NormalPrize>
+			<RankPrize>
+				<field_desc>
+					<说明>排名奖励(200开头)</说明>
+					<prizeId>奖励id,唯一,不同奖励类型也不能重复,从1开始</prizeId>
+					<prizeType>奖励类型: 3总积分排名, 7额外积分排名, 8完赛且胜率最高, 9完赛且胜率最低, 10最速完赛且胜率不低于40%, 12王战总积分最高, 13王战总附加分最高, 14王战总游戏时长最长, 15王战总胜场数最多, 16王战2次以上(包括2)周积分冠军, 17王战单周积分排名 </prizeType>
+					<Rank>
+						<说明>排名</说明>
+						<rankRange>排名范围,如"11,15"</rankRange>
+						<prizeName>根据prizeType和rank或score的奖励名字,如果要现实具体奖励名字 请写成第{0}名</prizeName>
+						<Item>奖励物品,见通用奖励方式说明</Item>
+					</Rank>
+				</field_desc>
+				<Prize prizeId="20021" prizeType="3">
+					<Rank rankRange="1" prizeName="一等奖">
+						<Item itemTypeId="1" count="1" param1="0" desc="IPAD一台"/>
+						<Item itemTypeId="100016" count="50000" param1="0" desc="绑定元宝"/>
+						<Item itemTypeId="990406" count="1" param1="0" desc="一将2011"/>
+						<Item itemTypeId="990506" count="1" param1="0" desc="一将2012"/>
+						<Item itemTypeId="990601" count="1" param1="0" desc="一将2013"/>
+						<Item itemTypeId="100105" count="1" param1="0" desc="会员卡1年"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="会员边框1年"/>
+					</Rank>
+					<Rank rankRange="2,3" prizeName="二等奖">
+						<Item itemTypeId="1" count="1" param1="0" desc="雷蛇鼠标一个"/>
+						<Item itemTypeId="100016" count="30000" param1="0" desc="绑定元宝"/>
+						<Item itemTypeId="990406" count="1" param1="0" desc="一将2011"/>
+						<Item itemTypeId="990506" count="1" param1="0" desc="一将2012"/>
+						<Item itemTypeId="990601" count="1" param1="0" desc="一将2013"/>
+						<Item itemTypeId="100105" count="1" param1="0" desc="会员卡1年"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="会员边框1年"/>
+					</Rank>
+					<Rank rankRange="4,10" prizeName="三等奖">
+						<Item itemTypeId="100016" count="10000" param1="0" desc="绑定元宝"/>
+						<Item itemTypeId="990306" count="1" param1="0" desc="山包(除左慈)"/>
+						<Item itemTypeId="435501" count="1" param1="0" desc="豪华皮肤包"/>
+						<Item itemTypeId="100105" count="1" param1="0" desc="会员卡1年"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="会员边框1年"/>
+					</Rank>
+					<Rank rankRange="11,100" prizeName="四等奖">
+						<Item itemTypeId="100016" count="5000" param1="0" desc="绑定元宝"/>
+						<Item itemTypeId="990106" count="1" param1="0" desc="火包开通"/>
+						<Item itemTypeId="435601" count="1" param1="0" desc="精致皮肤包"/>
+					</Rank>
+					<Rank rankRange="101,500" prizeName="五等奖">
+						<Item itemTypeId="100016" count="1000" param1="0" desc="绑定元宝"/>
+						<Item itemTypeId="435401" count="1" param1="0" desc="皮肤包"/>
+						<Item itemTypeId="362608" count="1" param1="0" desc="美撼凡尘31天"/>
+					</Rank>
+				</Prize>				
+				<Prize prizeId="20020" prizeType="3">
+					<Rank rankRange="1" prizeName="一等奖">
+						<Item itemTypeId="912101" count="1" param1="0" desc="武将乐进永久"/>
+					</Rank>
+					<Rank rankRange="2" prizeName="二等奖">
+						<Item itemTypeId="912118" count="1" param1="0" desc="武将乐进31天"/>
+					</Rank>
+					<Rank rankRange="3" prizeName="三等奖">
+						<Item itemTypeId="912117" count="1" param1="0" desc="武将乐进7天"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20019" prizeType="3">
+					<Rank rankRange="1" prizeName="一等奖">
+						<Item itemTypeId="1" count="1" param1="0" desc="联想扬天笔记本电脑一台"/>
+						<Item itemTypeId="100105" count="1" param1="0" desc="会员卡一年"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="会员边框一年"/>
+						<Item itemTypeId="990306" count="1" param1="0" desc="山武将包"/>
+						<Item itemTypeId="506209" count="1" param1="0" desc="萤火悲歌（永久）"/>
+						<Item itemTypeId="408009" count="1" param1="0" desc="异乡萤火（永久）"/>
+						<Item itemTypeId="315009" count="1" param1="0" desc="吸血鬼魏延（永久）"/>
+						<Item itemTypeId="630305" count="1" param1="0" desc="东吴大帝*孙权1年"/>
+						<Item itemTypeId="630105" count="1" param1="0" desc="仁君降世*刘备1年"/>
+						<Item itemTypeId="630205" count="1" param1="0" desc="奇智女杰*黄月英1年"/>
+						<Item itemTypeId="631105" count="1" param1="0" desc="武将列传*陆逊1年"/>
+						<Item itemTypeId="100301" count="30" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="30" param1="0" desc="身份卡"/>
+						<Item itemTypeId="100201" count="30" param1="0" desc="点将卡"/>
+					</Rank>
+					<Rank rankRange="2" prizeName="二等奖">
+						<Item itemTypeId="100104" count="1" param1="0" desc="会员卡半年"/>
+						<Item itemTypeId="501004" count="1" param1="0" desc="会员边框半年"/>
+						<Item itemTypeId="990206" count="1" param1="0" desc="林武将包"/>
+						<Item itemTypeId="506208" count="6" param1="0" desc="萤火悲歌（半年）"/>
+						<Item itemTypeId="408008" count="6" param1="0" desc="异乡萤火（半年）"/>
+						<Item itemTypeId="315008" count="6" param1="0" desc="吸血鬼魏延（半年）"/>
+						<Item itemTypeId="630308" count="6" param1="0" desc="东吴大帝*孙权半年"/>
+						<Item itemTypeId="630108" count="6" param1="0" desc="仁君降世*刘备半年"/>
+						<Item itemTypeId="630208" count="6" param1="0" desc="奇智女杰*黄月英半年"/>
+						<Item itemTypeId="631108" count="6" param1="0" desc="武将列传*陆逊半年"/>
+						<Item itemTypeId="100301" count="20" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="20" param1="0" desc="身份卡"/>
+						<Item itemTypeId="100201" count="20" param1="0" desc="点将卡"/>
+					</Rank>
+					<Rank rankRange="3" prizeName="三等奖">
+						<Item itemTypeId="100106" count="1" param1="0" desc="会员卡三个月"/>
+						<Item itemTypeId="501006" count="1" param1="0" desc="会员边框三个月"/>
+						<Item itemTypeId="990106" count="1" param1="0" desc="火武将包"/>
+						<Item itemTypeId="630308" count="3" param1="0" desc="东吴大帝*孙权三个月"/>
+						<Item itemTypeId="630108" count="3" param1="0" desc="仁君降世*刘备三个月"/>
+						<Item itemTypeId="630208" count="3" param1="0" desc="奇智女杰*黄月英三个月"/>
+						<Item itemTypeId="631108" count="3" param1="0" desc="武将列传*陆逊三个月"/>
+						<Item itemTypeId="100301" count="10" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="10" param1="0" desc="身份卡"/>
+						<Item itemTypeId="100201" count="10" param1="0" desc="点将卡"/>
+					</Rank>
+					<Rank rankRange="4,100" prizeName="四等奖">
+						<Item itemTypeId="326308" count="1" param1="0" desc="amo*Q孙策一个月"/>
+						<Item itemTypeId="100108" count="1" param1="0" desc="会员卡1个月"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="会员边框1个月"/>
+						<Item itemTypeId="311008" count="1" param1="0" desc="amo*Q荀彧一个月"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20018" prizeType="3">
+					<Rank rankRange="1,30" prizeName="奖励">
+						<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+						<Item itemTypeId="501007" count="1" param1="0" desc="会员边框7天"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20015" prizeType="3">
+					<Rank rankRange="1" prizeName="特等奖">
+						<Item itemTypeId="100105" count="1" param1="0" desc="会员卡一年"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="会员边框一年"/>
+						<Item itemTypeId="990306" count="1" param1="0" desc="山武将包"/>
+						<Item itemTypeId="990206" count="1" param1="0" desc="林武将包"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="3000元"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="全套3D闪卡"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="珍藏版"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="国战版"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="标准版"/>
+					</Rank>
+					<Rank rankRange="2,3" prizeName="一等奖">
+						<Item itemTypeId="100105" count="1" param1="0" desc="会员卡一年"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="会员边框一年"/>
+						<Item itemTypeId="990206" count="1" param1="0" desc="林武将包"/>
+						<Item itemTypeId="990106" count="1" param1="0" desc="火武将包"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="1500元"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="全套3D闪卡"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="珍藏版"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="国战版"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="标准版"/>
+					</Rank>
+					<Rank rankRange="4,6" prizeName="二等奖">
+						<Item itemTypeId="100105" count="1" param1="0" desc="会员卡一年"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="会员边框一年"/>
+						<Item itemTypeId="990206" count="1" param1="0" desc="林武将包"/>
+						<Item itemTypeId="990106" count="1" param1="0" desc="火武将包"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="800元"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="珍藏版"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="国战版"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="标准版"/>
+					</Rank>
+					<Rank rankRange="7,100" prizeName="三等奖">
+						<Item itemTypeId="100108" count="2" param1="0" desc="会员卡两个月"/>
+						<Item itemTypeId="501008" count="2" param1="0" desc="会员边框两个月"/>
+						<Item itemTypeId="990106" count="1" param1="0" desc="火武将包"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="5000元宝"/>
+					</Rank>
+					<Rank rankRange="101,300" prizeName="四等奖">
+						<Item itemTypeId="990106" count="1" param1="0" desc="火武将包"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="1000元宝"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20014" prizeType="3">
+					<Rank rankRange="1,1000" prizeName="优秀奖">
+						<Item itemTypeId="100006" count="329" param1="0" desc="王者降临专属战功"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20013" prizeType="3">
+					<Rank rankRange="1" prizeName="特等奖">
+						<Item itemTypeId="100105" count="1" param1="0" desc="会员卡一年"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="会员边框一年"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="全武将开通（不含未上线武将、左慈、陈琳、诸葛恪）"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="5000元"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="全套3D闪卡"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="珍藏版"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="国战版"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="标准版"/>
+					</Rank>
+					<Rank rankRange="2,3" prizeName="一等奖">
+						<Item itemTypeId="100105" count="1" param1="0" desc="会员卡一年"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="会员边框一年"/>
+						<Item itemTypeId="990306" count="1" param1="0" desc="山武将包"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="一将成名武将开通（不含未上线武将）"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="3000元"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="全套3D闪卡"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="珍藏版"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="国战版"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="标准版"/>
+					</Rank>
+					<Rank rankRange="4,6" prizeName="二等奖">
+						<Item itemTypeId="100105" count="1" param1="0" desc="会员卡一年"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="会员边框一年"/>
+						<Item itemTypeId="990306" count="1" param1="0" desc="山武将包"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="1000元"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="珍藏版"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="国战版"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="标准版"/>
+					</Rank>
+					<Rank rankRange="7,100" prizeName="三等奖">
+						<Item itemTypeId="100108" count="2" param1="0" desc="会员卡两个月"/>
+						<Item itemTypeId="501008" count="2" param1="0" desc="会员边框两个月"/>
+						<Item itemTypeId="990106" count="1" param1="0" desc="火武将包"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="5000元宝"/>
+					</Rank>
+					<Rank rankRange="101,300" prizeName="四等奖">
+						<Item itemTypeId="990106" count="1" param1="0" desc="火武将包"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="1000元宝"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20012" prizeType="3">
+					<Rank rankRange="1" prizeName="冠军">
+						<Item itemTypeId="1" count="1" param1="0" desc="有机会获得电视台参赛资格"/>
+						<Item itemTypeId="100105" count="1" param1="0" desc="会员卡一年"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="会员边框一年"/>
+						<Item itemTypeId="990106" count="1" param1="0" desc="火武将包"/>
+						<Item itemTypeId="990206" count="1" param1="0" desc="林武将包"/>
+						<Item itemTypeId="990306" count="1" param1="0" desc="山武将包"/>
+						<Item itemTypeId="100401" count="25" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100301" count="35" param1="0" desc="手气卡"/>
+						<Item itemTypeId="100201" count="25" param1="0" desc="点将卡"/>
+						<Item itemTypeId="370105" count="1" param1="0" desc="表情-Q版郭嘉1年"/>
+						<Item itemTypeId="630305" count="1" param1="0" desc="东吴大帝*孙权1年"/>
+						<Item itemTypeId="630105" count="1" param1="0" desc="仁君降世*刘备1年"/>
+						<Item itemTypeId="630205" count="1" param1="0" desc="奇智女杰*黄月英1年"/>
+						<Item itemTypeId="631105" count="1" param1="0" desc="武将列传*陆逊1年"/>
+					</Rank>
+					<Rank rankRange="2" prizeName="亚军">
+						<Item itemTypeId="1" count="1" param1="0" desc="有机会获得电视台参赛资格"/>
+						<Item itemTypeId="100104" count="1" param1="0" desc="会员卡半年"/>
+						<Item itemTypeId="501004" count="1" param1="0" desc="会员边框半年"/>
+						<Item itemTypeId="990106" count="1" param1="0" desc="火武将包"/>
+						<Item itemTypeId="990206" count="1" param1="0" desc="林武将包"/>
+						<Item itemTypeId="100401" count="20" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100301" count="30" param1="0" desc="手气卡"/>
+						<Item itemTypeId="100201" count="20" param1="0" desc="点将卡"/>
+						<Item itemTypeId="370108" count="6" param1="0" desc="表情-Q版郭嘉半年"/>
+						<Item itemTypeId="630308" count="6" param1="0" desc="东吴大帝*孙权半年"/>
+						<Item itemTypeId="630108" count="6" param1="0" desc="仁君降世*刘备半年"/>
+						<Item itemTypeId="630208" count="6" param1="0" desc="奇智女杰*黄月英半年"/>
+						<Item itemTypeId="631108" count="6" param1="0" desc="武将列传*陆逊半年"/>
+					</Rank>
+					<Rank rankRange="3" prizeName="季军">
+						<Item itemTypeId="1" count="1" param1="0" desc="有机会获得电视台参赛资格"/>
+						<Item itemTypeId="100108" count="3" param1="0" desc="会员卡三个月"/>
+						<Item itemTypeId="501008" count="3" param1="0" desc="会员边框三个月"/>
+						<Item itemTypeId="990106" count="1" param1="0" desc="火武将包"/>
+						<Item itemTypeId="100401" count="10" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100301" count="15" param1="0" desc="手气卡"/>
+						<Item itemTypeId="100201" count="10" param1="0" desc="点将卡"/>
+						<Item itemTypeId="370108" count="3" param1="0" desc="表情-Q版郭嘉三个月"/>
+						<Item itemTypeId="630308" count="3" param1="0" desc="东吴大帝*孙权三个月"/>
+						<Item itemTypeId="630108" count="3" param1="0" desc="仁君降世*刘备三个月"/>
+						<Item itemTypeId="630208" count="3" param1="0" desc="奇智女杰*黄月英三个月"/>
+						<Item itemTypeId="631108" count="3" param1="0" desc="武将列传*陆逊三个月"/>
+					</Rank>
+					<Rank rankRange="4,100" prizeName="优秀奖">
+						<Item itemTypeId="1" count="1" param1="0" desc="有机会获得电视台参赛资格"/>
+						<Item itemTypeId="100108" count="1" param1="0" desc="会员卡一个月"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="会员边框一个月"/>
+						<Item itemTypeId="100401" count="10" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="10" param1="0" desc="点将卡"/>
+						<Item itemTypeId="100301" count="10" param1="0" desc="手气卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20011" prizeType="17">
+					<Rank rankRange="1" prizeName="17-1">
+						<Item itemTypeId="100108" count="1" param1="0" desc="会员卡30天"/>
+						<Item itemTypeId="100401" count="50" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="50" param1="0" desc="点将卡"/>
+					</Rank>
+					<Rank rankRange="2,10" prizeName="17-2-10">
+						<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+						<Item itemTypeId="100401" count="30" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="30" param1="0" desc="点将卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20010" prizeType="16">
+					<Rank rankRange="1" prizeName="16-1">
+						<Item itemTypeId="100108" count="1" param1="0" desc="会员卡30天"/>
+						<Item itemTypeId="100401" count="50" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="50" param1="0" desc="点将卡"/>
+					</Rank>
+					<Rank rankRange="2,10" prizeName="16-2">
+						<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+						<Item itemTypeId="100401" count="30" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="30" param1="0" desc="点将卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20009" prizeType="15">
+					<Rank rankRange="1" prizeName="15-1">
+						<Item itemTypeId="100108" count="1" param1="0" desc="会员卡30天"/>
+						<Item itemTypeId="100401" count="50" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="50" param1="0" desc="点将卡"/>
+					</Rank>
+					<Rank rankRange="2,10" prizeName="15-2">
+						<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+						<Item itemTypeId="100401" count="30" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="30" param1="0" desc="点将卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20008" prizeType="14">
+					<Rank rankRange="1" prizeName="14-1">
+						<Item itemTypeId="100108" count="1" param1="0" desc="会员卡30天"/>
+						<Item itemTypeId="100401" count="50" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="50" param1="0" desc="点将卡"/>
+					</Rank>
+					<Rank rankRange="2,10" prizeName="14-2">
+						<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+						<Item itemTypeId="100401" count="30" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="30" param1="0" desc="点将卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20007" prizeType="13">
+					<Rank rankRange="1" prizeName="13-1">
+						<Item itemTypeId="100108" count="1" param1="0" desc="会员卡30天"/>
+						<Item itemTypeId="100401" count="50" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="50" param1="0" desc="点将卡"/>
+					</Rank>
+					<Rank rankRange="2,10" prizeName="13-2">
+						<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+						<Item itemTypeId="100401" count="30" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="30" param1="0" desc="点将卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20006" prizeType="12">
+					<Rank rankRange="1" prizeName="12-1">
+						<Item itemTypeId="100108" count="1" param1="0" desc="会员卡30天"/>
+						<Item itemTypeId="100401" count="50" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="50" param1="0" desc="点将卡"/>
+					</Rank>
+					<Rank rankRange="2,10" prizeName="12-2">
+						<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+						<Item itemTypeId="100401" count="30" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="30" param1="0" desc="点将卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20005" prizeType="10">
+					<Rank rankRange="1" prizeName="10-1">
+						<Item itemTypeId="100108" count="1" param1="0" desc="会员卡30天"/>
+						<Item itemTypeId="100401" count="50" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="50" param1="0" desc="点将卡"/>
+						<Item itemTypeId="1" count="2" param1="0" desc="张浩"/>
+					</Rank>
+					<Rank rankRange="2,10" prizeName="10-2">
+						<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+						<Item itemTypeId="100401" count="30" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="30" param1="0" desc="点将卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20004" prizeType="3">
+					<Rank rankRange="1,1000" prizeName="进步奖">
+						<Item itemTypeId="100006" count="226" param1="0" desc="赤壁的火神战功"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20003" prizeType="3">
+					<Rank rankRange="1" prizeName="冠军">
+						<Item itemTypeId="100108" count="1" param1="0" desc="会员卡30天"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="会员边框30天"/>
+					</Rank>
+					<Rank rankRange="2,10" prizeName="优胜奖">
+						<Item itemTypeId="100108" count="1" param1="0" desc="会员卡30天"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="会员边框30天"/>
+					</Rank>
+					<Rank rankRange="11,510" prizeName="优秀奖">
+						<Item itemTypeId="100201" count="5" param1="0" desc="点将卡"/>
+						<Item itemTypeId="100301" count="10" param1="0" desc="手气卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20002" prizeType="3">
+					<Rank rankRange="1" prizeName="冠军">
+						<Item itemTypeId="1" count="1" param1="0" desc="优派23寸显示器"/>
+						<Item itemTypeId="100105" count="1" param1="0" desc="会员卡1年"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="会员边框1年"/>
+						<Item itemTypeId="990306" count="1" param1="0" desc="山包7将开通"/>
+						<Item itemTypeId="307909" count="1" param1="0" desc="Q神吕蒙永久形象"/>
+					</Rank>
+					<Rank rankRange="2" prizeName="亚军">
+						<Item itemTypeId="1" count="1" param1="0" desc="优派23寸显示器"/>
+						<Item itemTypeId="100105" count="1" param1="0" desc="会员卡1年"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="会员边框1年"/>
+						<Item itemTypeId="990306" count="1" param1="0" desc="山包7将开通"/>
+						<Item itemTypeId="308009" count="1" param1="0" desc="Q神关羽永久形象"/>
+					</Rank>
+					<Rank rankRange="3" prizeName="季军">
+						<Item itemTypeId="1" count="1" param1="0" desc="优派23寸显示器"/>
+						<Item itemTypeId="100105" count="1" param1="0" desc="会员卡1年"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="会员边框1年"/>
+						<Item itemTypeId="990306" count="1" param1="0" desc="山包7将开通"/>
+						<Item itemTypeId="312609" count="1" param1="0" desc="暴怒的战神永久形象"/>
+					</Rank>
+					<Rank rankRange="4,100" prizeName="优胜奖">
+						<Item itemTypeId="100104" count="1" param1="0" desc="会员卡半年"/>
+						<Item itemTypeId="501004" count="1" param1="0" desc="会员边框半年"/>
+						<Item itemTypeId="990206" count="1" param1="0" desc="林包武将开通"/>
+					</Rank>
+					<Rank rankRange="101,300" prizeName="优秀奖">
+						<Item itemTypeId="100104" count="1" param1="0" desc="会员卡半年"/>
+						<Item itemTypeId="501004" count="1" param1="0" desc="会员边框半年"/>
+						<Item itemTypeId="990106" count="1" param1="0" desc="火包武将开通"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="20001" prizeType="3">
+					<Rank rankRange="1" prizeName="冠军">
+						<Item itemTypeId="1" count="1" param1="0" desc="联想A68e手机"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="三国杀珍藏版"/>
+						<Item itemTypeId="100301" count="100" param1="0" desc="手气卡"/>
+						<Item itemTypeId="100401" count="50" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="50" param1="0" desc="点将卡"/>
+					</Rank>
+					<Rank rankRange="2" prizeName="亚军">
+						<Item itemTypeId="1" count="1" param1="0" desc="Coolpad5860手机"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="三国杀珍藏版"/>
+						<Item itemTypeId="100301" count="100" param1="0" desc="手气卡"/>
+						<Item itemTypeId="100401" count="50" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="50" param1="0" desc="点将卡"/>
+					</Rank>
+					<Rank rankRange="3" prizeName="季军">
+						<Item itemTypeId="1" count="1" param1="0" desc="盛大手机BambookS1(8GB)"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="三国杀珍藏版"/>
+						<Item itemTypeId="100301" count="100" param1="0" desc="手气卡"/>
+						<Item itemTypeId="100401" count="50" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="50" param1="0" desc="点将卡"/>
+					</Rank>
+					<Rank rankRange="4,100" prizeName="优胜奖">
+						<Item itemTypeId="100108" count="1" param1="0" desc="会员卡31天"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="会员边框31天"/>
+						<Item itemTypeId="100301" count="60" param1="0" desc="手气卡"/>
+						<Item itemTypeId="100401" count="30" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="30" param1="0" desc="点将卡"/>
+						<Item itemTypeId="103201" count="5" param1="0" desc="房间改名卡"/>
+					</Rank>
+					<Rank rankRange="101,300" prizeName="优秀奖">
+						<Item itemTypeId="100108" count="1" param1="0" desc="会员卡31天"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="会员边框31天"/>
+						<Item itemTypeId="100301" count="40" param1="0" desc="手气卡"/>
+						<Item itemTypeId="100401" count="20" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="20" param1="0" desc="点将卡"/>
+						<Item itemTypeId="103201" count="3" param1="0" desc="房间改名卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="50003" prizeType="3">
+					<Rank rankRange="1" prizeName="王战帝王">
+						<Item itemTypeId="1" count="1" param1="0" desc="￥5000元"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="实物卡超级礼包"/>
+						<Item itemTypeId="100105" count="1" param1="0" desc="1年会员卡"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="1年会员边框"/>
+						<Item itemTypeId="990201" count="1" param1="0" desc="林武将包"/>
+					</Rank>
+					<Rank rankRange="2" prizeName="王战左丞相">
+						<Item itemTypeId="1" count="1" param1="0" desc="￥3000元"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="实物卡超级礼包"/>
+						<Item itemTypeId="100105" count="1" param1="0" desc="1年会员卡"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="1年会员边框"/>
+						<Item itemTypeId="990201" count="1" param1="0" desc="林武将包"/>
+					</Rank>
+					<Rank rankRange="3" prizeName="王战右丞相">
+						<Item itemTypeId="1" count="1" param1="0" desc="￥3000元"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="实物卡超级礼包"/>
+						<Item itemTypeId="100105" count="1" param1="0" desc="1年会员卡"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="1年会员边框"/>
+						<Item itemTypeId="990201" count="1" param1="0" desc="林武将包"/>
+					</Rank>
+					<Rank rankRange="4" prizeName="王战太尉">
+						<Item itemTypeId="1" count="1" param1="0" desc="￥1000元"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="实物卡超级礼包"/>
+						<Item itemTypeId="100105" count="1" param1="0" desc="1年会员卡"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="1年会员边框"/>
+						<Item itemTypeId="990201" count="1" param1="0" desc="林武将包"/>
+					</Rank>
+					<Rank rankRange="5" prizeName="王战司徒">
+						<Item itemTypeId="1" count="1" param1="0" desc="￥1000元"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="实物卡超级礼包"/>
+						<Item itemTypeId="100105" count="1" param1="0" desc="1年会员卡"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="1年会员边框"/>
+						<Item itemTypeId="990201" count="1" param1="0" desc="林武将包"/>
+					</Rank>
+					<Rank rankRange="6" prizeName="王战司空">
+						<Item itemTypeId="1" count="1" param1="0" desc="￥1000元"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="实物卡超级礼包"/>
+						<Item itemTypeId="100105" count="1" param1="0" desc="1年会员卡"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="1年会员边框"/>
+						<Item itemTypeId="990201" count="1" param1="0" desc="林武将包"/>
+					</Rank>
+					<Rank rankRange="7,11" prizeName="王战光禄勋">
+						<Item itemTypeId="1" count="1" param1="0" desc="30000点券"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="实物卡礼包"/>
+						<Item itemTypeId="100105" count="1" param1="0" desc="1年会员卡"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="1年会员边框"/>
+						<Item itemTypeId="240060" count="1" param1="0" desc="60万铜钱包"/>
+					</Rank>
+					<Rank rankRange="12,16" prizeName="王战执金吾">
+						<Item itemTypeId="1" count="1" param1="0" desc="30000点券"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="实物卡礼包"/>
+						<Item itemTypeId="100105" count="1" param1="0" desc="1年会员卡"/>
+						<Item itemTypeId="501005" count="1" param1="0" desc="1年会员边框"/>
+						<Item itemTypeId="240060" count="1" param1="0" desc="60万铜钱包"/>
+					</Rank>
+					<Rank rankRange="17,116" prizeName="王战州刺史">
+						<Item itemTypeId="1" count="1" param1="0" desc="5000点券"/>
+						<Item itemTypeId="100108" count="1" param1="0" desc="31天会员卡"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="31天会员边框"/>
+						<Item itemTypeId="240010" count="1" param1="0" desc="10万铜钱包"/>
+					</Rank>
+					<Rank rankRange="117,616" prizeName="王战中郎">
+						<Item itemTypeId="1" count="1" param1="0" desc="1000点券"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="50004" prizeType="3">
+					<Rank rankRange="1,200" prizeName="王战郡长史">
+						<Item itemTypeId="990101" count="1" param1="0" desc="火武将包"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="50005" prizeType="3">
+					<Rank rankRange="1,1000" prizeName="鼓励奖">
+						<Item itemTypeId="100006" count="276" param1="0" desc="战功王者归来"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="50007" prizeType="7">
+					<Rank rankRange="1,10" prizeName="骁勇善战">
+						<Item itemTypeId="1" count="1" param1="0" desc="5000点券"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="50008" prizeType="8">
+					<Rank rankRange="1,10" prizeName="常胜将军">
+						<Item itemTypeId="1" count="1" param1="0" desc="5000点券"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="50010" prizeType="10">
+					<Rank rankRange="1" prizeName="速战速决">
+						<Item itemTypeId="1" count="1" param1="0" desc="10000点券"/>
+						<Item itemTypeId="1" count="1" param1="0" desc="神话再临卡牌礼包"/>
+						<Item itemTypeId="990201" count="1" param1="0" desc="林武将包"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="80003" prizeType="3">
+					<Rank rankRange="1" prizeName="冠军">
+						<Item itemTypeId="1" count="1" param1="0" desc="20000元宝"/>
+					</Rank>
+					<Rank rankRange="2" prizeName="亚军">
+						<Item itemTypeId="1" count="1" param1="0" desc="15000元宝"/>
+					</Rank>
+					<Rank rankRange="3" prizeName="季军">
+						<Item itemTypeId="1" count="1" param1="0" desc="10000元宝"/>
+					</Rank>
+					<Rank rankRange="4,100" prizeName="杰出">
+						<Item itemTypeId="1" count="1" param1="0" desc="5000元宝"/>
+					</Rank>
+					<Rank rankRange="101,300" prizeName="优秀">
+						<Item itemTypeId="1" count="1" param1="0" desc="2000元宝"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="80004" prizeType="3">
+					<Rank rankRange="1,1000" prizeName="鼓励奖">
+						<Item itemTypeId="100006" count="276" param1="0" desc="战功王者归来"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="80007" prizeType="7">
+					<Rank rankRange="1,5" prizeName="勇冠三军">
+						<Item itemTypeId="1" count="1" param1="0" desc="10000点券"/>
+						<Item itemTypeId="100108" count="1" param1="0" desc="31天会员卡"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="31天会员边框"/>
+						<Item itemTypeId="240060" count="1" param1="0" desc="60万铜钱包"/>
+						<Item itemTypeId="100301" count="50" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="50" param1="0" desc="身份卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="80008" prizeType="8">
+					<Rank rankRange="1,10" prizeName="常胜将军">
+						<Item itemTypeId="1" count="1" param1="0" desc="5000点券"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="80010" prizeType="10">
+					<Rank rankRange="1,5" prizeName="兵贵神速">
+						<Item itemTypeId="1" count="1" param1="0" desc="10000点券"/>
+						<Item itemTypeId="100108" count="1" param1="0" desc="31天会员卡"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="31天会员边框"/>
+						<Item itemTypeId="240060" count="1" param1="0" desc="60万铜钱包"/>
+						<Item itemTypeId="100301" count="50" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="50" param1="0" desc="身份卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="70003" prizeType="3">
+					<Rank rankRange="1" prizeName="冠军">
+						<Item itemTypeId="1" count="1" param1="0" desc="国战卡牌首发限定纪念版"/>
+						<Item itemTypeId="100301" count="50" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="50" param1="0" desc="身份卡"/>
+						<Item itemTypeId="240010" count="3" param1="0" desc="10万铜钱包"/>
+						<Item itemTypeId="100108" count="1" param1="0" desc="31天会员卡"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="31天会员边框"/>
+					</Rank>
+					<Rank rankRange="2" prizeName="亚军">
+						<Item itemTypeId="1" count="1" param1="0" desc="国战卡牌首发限定纪念版"/>
+						<Item itemTypeId="100301" count="50" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="50" param1="0" desc="身份卡"/>
+						<Item itemTypeId="240010" count="3" param1="0" desc="10万铜钱包"/>
+						<Item itemTypeId="100108" count="1" param1="0" desc="31天会员卡"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="31天会员边框"/>
+					</Rank>
+					<Rank rankRange="3" prizeName="季军">
+						<Item itemTypeId="1" count="1" param1="0" desc="国战卡牌首发限定纪念版"/>
+						<Item itemTypeId="100301" count="50" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="50" param1="0" desc="身份卡"/>
+						<Item itemTypeId="240010" count="3" param1="0" desc="10万铜钱包"/>
+						<Item itemTypeId="100108" count="1" param1="0" desc="31天会员卡"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="31天会员边框"/>
+					</Rank>
+					<Rank rankRange="4,10" prizeName="杰出奖">
+						<Item itemTypeId="1" count="1" param1="0" desc="三国杀精美抱枕"/>
+						<Item itemTypeId="100301" count="30" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="30" param1="0" desc="身份卡"/>
+						<Item itemTypeId="240010" count="3" param1="0" desc="10万铜钱包"/>
+						<Item itemTypeId="100108" count="1" param1="0" desc="31天会员卡"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="31天会员边框"/>
+					</Rank>
+					<Rank rankRange="11,510" prizeName="优秀奖">
+						<Item itemTypeId="100301" count="10" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="10" param1="0" desc="身份卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="70004" prizeType="3">
+					<Rank rankRange="1,1000" prizeName="进步奖">
+						<Item itemTypeId="502308" count="1" param1="0" desc="水色点点"/>
+						<Item itemTypeId="311808" count="1" param1="0" desc="夏日小鹿"/>
+						<Item itemTypeId="407108" count="1" param1="0" desc="潮汐海滩"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="70007" prizeType="7">
+					<Rank rankRange="1,10" prizeName="醉卧杀场">
+						<Item itemTypeId="240010" count="1" param1="0" desc="10万铜钱包"/>
+						<Item itemTypeId="100301" count="20" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="20" param1="0" desc="身份卡"/>
+						<Item itemTypeId="100108" count="1" param1="0" desc="31天会员卡"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="31天会员边框"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="70008" prizeType="8">
+					<Rank rankRange="1,10" prizeName="常胜将军">
+						<Item itemTypeId="240010" count="1" param1="0" desc="10万铜钱包"/>
+						<Item itemTypeId="100301" count="20" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="20" param1="0" desc="身份卡"/>
+						<Item itemTypeId="100108" count="1" param1="0" desc="31天会员卡"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="31天会员边框"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="70010" prizeType="10">
+					<Rank rankRange="1" prizeName="机不可失">
+						<Item itemTypeId="240010" count="1" param1="0" desc="10万铜钱包"/>
+						<Item itemTypeId="100301" count="20" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="20" param1="0" desc="身份卡"/>
+						<Item itemTypeId="100108" count="1" param1="0" desc="31天会员卡"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="31天会员边框"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="90003" prizeType="3">
+					<Rank rankRange="1" prizeName="冠军">
+						<Item itemTypeId="1" count="1" param1="0" desc="国战卡牌首发限定纪念版"/>
+						<Item itemTypeId="100301" count="50" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="50" param1="0" desc="身份卡"/>
+						<Item itemTypeId="240010" count="3" param1="0" desc="10万铜钱包"/>
+						<Item itemTypeId="100108" count="1" param1="0" desc="31天会员卡"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="31天会员边框"/>
+					</Rank>
+					<Rank rankRange="2,10" prizeName="杰出奖">
+						<Item itemTypeId="1" count="1" param1="0" desc="三国杀精美抱枕"/>
+						<Item itemTypeId="100301" count="30" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="30" param1="0" desc="身份卡"/>
+						<Item itemTypeId="240010" count="3" param1="0" desc="10万铜钱包"/>
+						<Item itemTypeId="100108" count="1" param1="0" desc="31天会员卡"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="31天会员边框"/>
+					</Rank>
+					<Rank rankRange="11,510" prizeName="优秀奖">
+						<Item itemTypeId="100301" count="10" param1="0" desc="手气卡"/>
+						<Item itemTypeId="100201" count="10" param1="0" desc="点将卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="90004" prizeType="3">
+					<Rank rankRange="1,1000" prizeName="进步奖">
+						<Item itemTypeId="311908" count="1" param1="0" desc="夏日小乔"/>
+						<Item itemTypeId="502408" count="1" param1="0" desc="星光点点"/>
+						<Item itemTypeId="407108" count="1" param1="0" desc="潮汐海滩"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="90007" prizeType="7">
+					<Rank rankRange="1,5" prizeName="勇冠三军">
+						<Item itemTypeId="240010" count="1" param1="0" desc="10万铜钱包"/>
+						<Item itemTypeId="100301" count="20" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="20" param1="0" desc="身份卡"/>
+						<Item itemTypeId="100108" count="1" param1="0" desc="31天会员卡"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="31天会员边框"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="90008" prizeType="8">
+					<Rank rankRange="1" prizeName="常胜将军">
+						<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+						<Item itemTypeId="100401" count="35" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="35" param1="0" desc="点将卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="90010" prizeType="10">
+					<Rank rankRange="1,5" prizeName="兵贵神速">
+						<Item itemTypeId="240010" count="1" param1="0" desc="10万铜钱包"/>
+						<Item itemTypeId="100301" count="20" param1="0" desc="手气卡"/>
+						<Item itemTypeId="180001" count="20" param1="0" desc="身份卡"/>
+						<Item itemTypeId="100108" count="1" param1="0" desc="31天会员卡"/>
+						<Item itemTypeId="501008" count="1" param1="0" desc="31天会员边框"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="60012" prizeType="12">
+					<Rank rankRange="1" prizeName="王战战神">
+						<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+						<Item itemTypeId="100401" count="33" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="33" param1="0" desc="点将卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="60013" prizeType="13">
+					<Rank rankRange="1" prizeName="战场刺客">
+						<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+						<Item itemTypeId="100401" count="32" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="32" param1="0" desc="点将卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="60014" prizeType="14">
+					<Rank rankRange="1" prizeName="特殊条件奖励4">
+						<Item itemTypeId="990101" count="1" param1="0" desc="火包武将"/>
+						<Item itemTypeId="990201" count="1" param1="0" desc="林包武将"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="60015" prizeType="15">
+					<Rank rankRange="1" prizeName="戎马一生">
+						<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+						<Item itemTypeId="100401" count="30" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="30" param1="0" desc="点将卡"/>
+					</Rank>
+				</Prize>
+				<Prize prizeId="60016" prizeType="16">
+					<Rank rankRange="1" prizeName="联军盟主">
+						<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+						<Item itemTypeId="100401" count="29" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="29" param1="0" desc="点将卡"/>
+					</Rank>
+				</Prize>
+			</RankPrize>
+			<LuckyPrize>
+				<field_desc>
+					<说明>幸运奖励(300开头)</说明>
+					<prizeId>奖励id,唯一,不同奖励类型也不能重复,从1开始</prizeId>
+					<prizeType>奖励类型 4幸运</prizeType>
+					<luckyPercent>报名人数的百分之多少中奖1~100</luckyPercent>
+					<Item>奖励物品,见通用奖励方式说明</Item>
+				</field_desc>
+				<Prize prizeId="30001" prizeType="4" luckyPercent="10" prizeName="幸运奖">
+					<Item itemTypeId="100607" count="1" param1="0" desc="多多益善7天"/>
+				</Prize>
+			</LuckyPrize>
+			<ChallengePrize>
+				<field_desc>
+					<说明>挑战奖励(400开头)</说明>
+					<prizeId>奖励id,唯一,不同奖励类型也不能重复,从1开始</prizeId>
+					<prizeType>奖励类型 5挑战奖励</prizeType>
+					<rewardPercent>奖励铜钱的百分之多少1~100.公式为:奖励铜钱数=报名费用+报名费用*挑战次数*rewardPercent%. (报名费在报名条件中设置,挑战次数在挑战赛规则中设置) </rewardPercent>
+				</field_desc>
+				<Prize prizeId="40001" prizeType="5" rewardPercent="80" prizeName="挑战奖"/>
+			</ChallengePrize>
+			<ScorePrize>
+				<field_desc>
+					<说明>积分奖励(500开头)</说明>
+					<prizeId>奖励id,唯一,不同奖励类型也不能重复,从1开始</prizeId>
+					<prizeType>奖励类型 6积分</prizeType>
+					<Score>
+						<说明>排名</说明>
+						<scoreRange>积分范围,如"11,15"</scoreRange>
+						<Item>奖励物品,见通用奖励方式说明</Item>
+					</Score>
+				</field_desc>
+				<Prize prizeId="50001" prizeType="6">
+					<Score scoreRange="31,50" prizeName="积分奖">
+						<Item itemTypeId="100108" count="1" param1="0" desc="会员卡30天"/>
+						<Item itemTypeId="100401" count="50" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="50" param1="0" desc="点将卡"/>
+					</Score>
+					<Score scoreRange="5,30" prizeName="积分奖">
+						<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+						<Item itemTypeId="100401" count="30" param1="0" desc="换将卡"/>
+						<Item itemTypeId="100201" count="30" param1="0" desc="点将卡"/>
+					</Score>
+				</Prize>
+			</ScorePrize>
+			<!--WCA比赛 奖励-->
+			<WCAWeekPrize> 
+				<Prize prizeId="8001" prizeType="18"> 
+					<Win winRange="0,0" prizeName="胜利奖" maxValue="600"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100201" minCount="1" maxCount="1" value="50" desc="点将卡"/>
+							<Item itemId="100401" minCount="1" maxCount="1" value="50" desc="换将卡"/> 
+							<Item itemId="100301" minCount="1" maxCount="1" value="50" desc="手气卡"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="1,1" prizeName="胜利奖" maxValue="600"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100201" minCount="1" maxCount="1" value="50" desc="点将卡"/>
+							<Item itemId="100401" minCount="1" maxCount="1" value="50" desc="换将卡"/> 
+							<Item itemId="100301" minCount="1" maxCount="1" value="50" desc="手气卡"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="2,2" prizeName="胜利奖" maxValue="700"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100201" minCount="2" maxCount="2" value="50" desc="点将卡"/>
+							<Item itemId="100401" minCount="2" maxCount="2" value="50" desc="换将卡"/> 
+							<Item itemId="100301" minCount="2" maxCount="2" value="50" desc="手气卡"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group>  
+					</Win>
+					<Win winRange="3,3" prizeName="胜利奖" maxValue="800"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100201" minCount="3" maxCount="4" value="50" desc="点将卡"/>
+							<Item itemId="100401" minCount="3" maxCount="4" value="50" desc="换将卡"/> 
+							<Item itemId="100301" minCount="3" maxCount="4" value="50" desc="手气卡"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group>  
+					</Win>
+					<Win winRange="4,4" prizeName="胜利奖" maxValue="1000"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100201" minCount="3" maxCount="4" value="50" desc="点将卡"/>
+							<Item itemId="100401" minCount="3" maxCount="4" value="50" desc="换将卡"/> 
+							<Item itemId="100301" minCount="3" maxCount="4" value="50" desc="手气卡"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group>  
+					</Win>
+					<Win winRange="5,5" prizeName="胜利奖" maxValue="1150"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="3" maxCount="5" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group>  
+					</Win>
+					<Win winRange="6,6" prizeName="胜利奖" maxValue="1650"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="6" maxCount="10" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="7,7" prizeName="胜利奖" maxValue="2300"> 
+						<Group> 
+							<Item itemId="435401" minCount="2" maxCount="2" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="6" maxCount="10" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="8,8" prizeName="胜利奖" maxValue="2950"> 
+						<Group> 
+							<Item itemId="435601" minCount="1" maxCount="1" value="1500" desc="精致皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="9" maxCount="15" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="9,9" prizeName="胜利奖" maxValue="3700"> 
+						<Group> 
+							<Item itemId="435601" minCount="1" maxCount="1" value="1500" desc="精致皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="12" maxCount="20" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="10,10" prizeName="胜利奖" maxValue="4700"> 
+						<Group> 
+							<Item itemId="435501" minCount="1" maxCount="1" value="1500" desc="豪华皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="12" maxCount="20" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+				</Prize>
+				
+				<Prize prizeId="8002" prizeType="18"> 
+					<Win winRange="0,0" prizeName="胜利奖" maxValue="600"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100201" minCount="1" maxCount="1" value="50" desc="点将卡"/>
+							<Item itemId="100401" minCount="1" maxCount="1" value="50" desc="换将卡"/> 
+							<Item itemId="100301" minCount="1" maxCount="1" value="50" desc="手气卡"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="1,1" prizeName="胜利奖" maxValue="600"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100201" minCount="1" maxCount="1" value="50" desc="点将卡"/>
+							<Item itemId="100401" minCount="1" maxCount="1" value="50" desc="换将卡"/> 
+							<Item itemId="100301" minCount="1" maxCount="1" value="50" desc="手气卡"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="2,2" prizeName="胜利奖" maxValue="700"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100201" minCount="2" maxCount="2" value="50" desc="点将卡"/>
+							<Item itemId="100401" minCount="2" maxCount="2" value="50" desc="换将卡"/> 
+							<Item itemId="100301" minCount="2" maxCount="2" value="50" desc="手气卡"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group>  
+					</Win>
+					<Win winRange="3,3" prizeName="胜利奖" maxValue="800"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100201" minCount="3" maxCount="4" value="50" desc="点将卡"/>
+							<Item itemId="100401" minCount="3" maxCount="4" value="50" desc="换将卡"/> 
+							<Item itemId="100301" minCount="3" maxCount="4" value="50" desc="手气卡"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group>  
+					</Win>
+					<Win winRange="4,4" prizeName="胜利奖" maxValue="1000"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100201" minCount="3" maxCount="4" value="50" desc="点将卡"/>
+							<Item itemId="100401" minCount="3" maxCount="4" value="50" desc="换将卡"/> 
+							<Item itemId="100301" minCount="3" maxCount="4" value="50" desc="手气卡"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group>  
+					</Win>
+					<Win winRange="5,5" prizeName="胜利奖" maxValue="1150"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="3" maxCount="5" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group>  
+					</Win>
+					<Win winRange="6,6" prizeName="胜利奖" maxValue="1650"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="6" maxCount="10" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="7,7" prizeName="胜利奖" maxValue="2300"> 
+						<Group> 
+							<Item itemId="435401" minCount="2" maxCount="2" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="6" maxCount="10" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="8,8" prizeName="胜利奖" maxValue="2950"> 
+						<Group> 
+							<Item itemId="435601" minCount="1" maxCount="1" value="1500" desc="精致皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="9" maxCount="15" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="9,9" prizeName="胜利奖" maxValue="3700"> 
+						<Group> 
+							<Item itemId="435601" minCount="1" maxCount="1" value="1500" desc="精致皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="12" maxCount="20" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="10,10" prizeName="胜利奖" maxValue="4700"> 
+						<Group> 
+							<Item itemId="435501" minCount="1" maxCount="1" value="1500" desc="豪华皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="12" maxCount="20" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="11,11" prizeName="胜利奖" maxValue="5200"> 
+						<Group> 
+							<Item itemId="435501" minCount="1" maxCount="1" value="1500" desc="豪华皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="12" maxCount="22" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="12,12" prizeName="胜利奖" maxValue="6000"> 
+						<Group> 
+							<Item itemId="435501" minCount="1" maxCount="1" value="1500" desc="豪华皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="22" maxCount="30" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+				</Prize>
+				
+				<Prize prizeId="8003" prizeType="18"> 
+					<Win winRange="0,0" prizeName="胜利奖" maxValue="600"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100201" minCount="1" maxCount="0" value="50" desc="点将卡"/>
+							<Item itemId="100401" minCount="1" maxCount="0" value="50" desc="换将卡"/> 
+							<Item itemId="100301" minCount="1" maxCount="0" value="50" desc="手气卡"/>
+						</Group> 
+					</Win>
+					<Win winRange="1,1" prizeName="胜利奖" maxValue="600"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100201" minCount="1" maxCount="0" value="50" desc="点将卡"/>
+							<Item itemId="100401" minCount="1" maxCount="0" value="50" desc="换将卡"/> 
+							<Item itemId="100301" minCount="1" maxCount="0" value="50" desc="手气卡"/>
+						</Group> 
+					</Win>
+					<Win winRange="2,2" prizeName="胜利奖" maxValue="700"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100201" minCount="2" maxCount="2" value="50" desc="点将卡"/>
+							<Item itemId="100401" minCount="2" maxCount="2" value="50" desc="换将卡"/> 
+							<Item itemId="100301" minCount="2" maxCount="2" value="50" desc="手气卡"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group>  
+					</Win>
+					<Win winRange="3,3" prizeName="胜利奖" maxValue="800"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100201" minCount="4" maxCount="4" value="50" desc="点将卡"/>
+							<Item itemId="100401" minCount="4" maxCount="4" value="50" desc="换将卡"/> 
+							<Item itemId="100301" minCount="4" maxCount="4" value="50" desc="手气卡"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group>  
+					</Win>
+					<Win winRange="4,4" prizeName="胜利奖" maxValue="1000"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100201" minCount="4" maxCount="4" value="50" desc="点将卡"/>
+							<Item itemId="100401" minCount="4" maxCount="4" value="50" desc="换将卡"/> 
+							<Item itemId="100301" minCount="4" maxCount="4" value="50" desc="手气卡"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group>  
+					</Win>
+					<Win winRange="5,5" prizeName="胜利奖" maxValue="1150"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="3" maxCount="5" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group>  
+					</Win>
+					<Win winRange="6,6" prizeName="胜利奖" maxValue="1650"> 
+						<Group> 
+							<Item itemId="435401" minCount="1" maxCount="1" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="6" maxCount="10" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="7,7" prizeName="胜利奖" maxValue="2300"> 
+						<Group> 
+							<Item itemId="435401" minCount="2" maxCount="2" value="500" desc="皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="6" maxCount="10" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="8,8" prizeName="胜利奖" maxValue="2950"> 
+						<Group> 
+							<Item itemId="435601" minCount="1" maxCount="1" value="1500" desc="精致皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="9" maxCount="15" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="9,9" prizeName="胜利奖" maxValue="3700"> 
+						<Group> 
+							<Item itemId="435601" minCount="1" maxCount="1" value="1500" desc="精致皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="12" maxCount="20" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="10,10" prizeName="胜利奖" maxValue="4700"> 
+						<Group> 
+							<Item itemId="435501" minCount="1" maxCount="1" value="2500" desc="豪华皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="12" maxCount="20" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="11,11" prizeName="胜利奖" maxValue="5200"> 
+						<Group> 
+							<Item itemId="435501" minCount="1" maxCount="1" value="2500" desc="豪华皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="12" maxCount="22" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+					<Win winRange="12,12" prizeName="胜利奖" maxValue="6000"> 
+						<Group> 
+							<Item itemId="435501" minCount="1" maxCount="1" value="2500" desc="豪华皮肤包"/>
+						</Group> 
+						<Group> 
+							<Item itemId="112101" minCount="30" maxCount="30" value="50" desc="朱砂"/>
+						</Group> 
+						<Group> 
+							<Item itemId="100016" minCount="1" maxCount="0" value="1" desc="绑定元宝"/>
+						</Group> 
+					</Win>
+				</Prize>
+				
+			</WCAWeekPrize>
+			<LookonPrize>
+				<field_desc>
+					<说明>幸运奖励(300开头)</说明>
+					<prizeId>奖励id,唯一,不同奖励类型也不能重复,从1开始</prizeId>
+					<prizeType>奖励类型 20观赛</prizeType>
+					<prizeDrops>goodsid,dropid;goodsid,dropid;</prizeDrops>
+					<turnid></turnid>
+				</field_desc>
+				<Prize prizeId="9001" prizeType="20" prizeName="夏季决赛观赛奖" silverTicketId="105801" goldTicketId="105701">
+					 <Item turnid="1" prizeDropId="1015" prizeDesc="440401,1,100016,500,440301,1,100016,2000">
+					 	<GoodsDrop priority="2" goodsId="105801" prizeDropId="1002" /><!-- 64进32观赛奖励 银 -->
+						<GoodsDrop priority="1" goodsId="105701" prizeDropId="1001" /><!-- 64进32观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="2" prizeDropId="1015" prizeDesc="440401,1,100016,500,440301,1,100016,2000" >
+						<GoodsDrop priority="2" goodsId="105801" prizeDropId="1004" /><!-- 32进16观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105701" prizeDropId="1003" /><!-- 32进16观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="3" prizeDropId="1015" prizeDesc="440401,1,100016,500,440301,1,100016,2000" >
+						<GoodsDrop priority="2" goodsId="105801" prizeDropId="1006" /><!-- 16进8观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105701" prizeDropId="1005" /><!-- 16进8观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="4" prizeDropId="1015" prizeDesc="440401,1,100016,500,440301,1,100016,2000" >
+						<GoodsDrop priority="2" goodsId="105801" prizeDropId="1008" /><!-- 8进4观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105701" prizeDropId="1007" /><!-- 8进4观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="5" prizeDropId="1015" prizeDesc="440401,2,100016,800,440301,2,100016,3000" >
+						<GoodsDrop priority="2" goodsId="105801" prizeDropId="1010" /><!-- 半决赛第一场观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105701" prizeDropId="1009" /><!-- 半决赛第一场观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="6" prizeDropId="1015" prizeDesc="440401,2,100016,800,440301,2,100016,3000" >
+						<GoodsDrop priority="2" goodsId="105801" prizeDropId="1010" /><!-- 半决赛第二场观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105701" prizeDropId="1009" /><!-- 半决赛第二场观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="7" prizeDropId="1015" prizeDesc="435401,1,100016,2888,435501,1,100016,8888" >
+						<GoodsDrop priority="2" goodsId="105801" prizeDropId="1012" /><!-- 总决赛观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105701" prizeDropId="1011" /><!-- 总决赛观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="8" prizeDropId="1015" prizeDesc="440401,2,100016,800,440301,2,100016,3000" >
+						<GoodsDrop priority="2" goodsId="105801" prizeDropId="1014" /><!-- 3/4名决赛观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105701" prizeDropId="1013" /><!-- 3/4名决赛观赛奖励 金 -->
+					 </Item>
+				</Prize>
+				
+				<Prize prizeId="9002" prizeType="20" prizeName="秋季决赛观赛奖" silverTicketId="105801" goldTicketId="105701">
+					 <Item turnid="1" prizeDropId="1015" prizeDesc="440401,2,100016,500,440301,2,100016,2000">
+						<GoodsDrop priority="1" goodsId="105701" prizeDropId="1001" /><!-- 64进32观赛奖励 金 -->
+					 	<GoodsDrop priority="2" goodsId="105801" prizeDropId="1002" /><!-- 64进32观赛奖励 银 -->
+					 </Item>
+					 <Item turnid="2" prizeDropId="1015" prizeDesc="440401,2,100016,500,440301,2,100016,2000" >
+						<GoodsDrop priority="1" goodsId="105701" prizeDropId="1003" /><!-- 32进16观赛奖励 金 -->
+						<GoodsDrop priority="2" goodsId="105801" prizeDropId="1004" /><!-- 32进16观赛奖励 银 -->
+					 </Item>
+					 <Item turnid="3" prizeDropId="1015" prizeDesc="440401,2,100016,500,435401,1,100016,2000" >
+						<GoodsDrop priority="1" goodsId="105701" prizeDropId="1005" /><!-- 16进8观赛奖励 金 -->
+						<GoodsDrop priority="2" goodsId="105801" prizeDropId="1006" /><!-- 16进8观赛奖励 银 -->
+					 </Item>
+				</Prize>
+				
+				<Prize prizeId="10001" prizeType="20" prizeName="夏季月赛观赛奖" silverTicketId="105601" goldTicketId="105501">
+					 <Item turnid="1" prizeDropId="1015" prizeDesc="440401,2,100016,500,440301,2,100016,2000" >
+					 	<GoodsDrop priority="2" goodsId="105601" prizeDropId="2002" /><!-- 8进4观赛奖励 银 -->
+						<GoodsDrop priority="1" goodsId="105501" prizeDropId="2001" /><!-- 8进4观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="2" prizeDropId="1015" prizeDesc="440401,2,100016,800,440301,2,100016,3000" >
+						<GoodsDrop priority="2" goodsId="105601" prizeDropId="2004" /><!-- 半决赛第一场观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105501" prizeDropId="2003" /><!-- 半决赛第一场观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="3" prizeDropId="1015" prizeDesc="440401,2,100016,800,440301,2,100016,3000" >
+						<GoodsDrop priority="2" goodsId="105601" prizeDropId="2004" /><!-- 半决赛第二场观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105501" prizeDropId="2003" /><!-- 半决赛第二场观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="4" prizeDropId="1015" prizeDesc="435401,1,100016,2888,435501,1,100016,8888" >
+						<GoodsDrop priority="2" goodsId="105601" prizeDropId="2006" /><!-- 总决赛观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105501" prizeDropId="2005" /><!-- 总决赛观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="5" prizeDropId="1015" prizeDesc="440401,4,100016,800,440301,4,100016,3000" >
+						<GoodsDrop priority="2" goodsId="105601" prizeDropId="2008" /><!-- 3/4名决赛观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105501" prizeDropId="2007" /><!-- 3/4名决赛观赛奖励 金 -->
+					 </Item>
+				</Prize>
+				
+				<Prize prizeId="10002" prizeType="20" prizeName="秋季月赛观赛奖" silverTicketId="105601" goldTicketId="105501">
+					 <Item turnid="1" prizeDropId="1015" prizeDesc="440401,2,100016,500,440301,2,100016,2000" >
+					 	<GoodsDrop priority="2" goodsId="105601" prizeDropId="2002" /><!-- A组8进4观赛奖励 银 -->
+						<GoodsDrop priority="1" goodsId="105501" prizeDropId="2001" /><!-- A组8进4观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="2" prizeDropId="1015" prizeDesc="440401,2,100016,500,440301,2,100016,2000" >
+						<GoodsDrop priority="2" goodsId="105601" prizeDropId="2002" /><!-- B组8进4观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105501" prizeDropId="2001" /><!-- B组8进4观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="3" prizeDropId="1015" prizeDesc="440401,2,100016,500,440301,2,100016,2000" >
+						<GoodsDrop priority="2" goodsId="105601" prizeDropId="2002" /><!-- C组8进4观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105501" prizeDropId="2001" /><!-- C组8进4观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="4" prizeDropId="1015" prizeDesc="440401,2,100016,500,440301,2,100016,2000" >
+						<GoodsDrop priority="2" goodsId="105601" prizeDropId="2002" /><!-- D组8进4观赛奖励 银-->
+					 	<GoodsDrop priority="1" goodsId="105501" prizeDropId="2001" /><!-- D组8进4观赛奖励 金-->
+					 </Item>
+					 <Item turnid="5" prizeDropId="1015" prizeDesc="440401,2,100016,800,440301,2,100016,3000" >
+					 	<GoodsDrop priority="2" goodsId="105601" prizeDropId="2002" /><!-- 16进8观赛奖励 银 -->
+						<GoodsDrop priority="1" goodsId="105501" prizeDropId="2001" /><!-- 16进8观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="6" prizeDropId="1015" prizeDesc="440401,3,100016,800,440301,3,100016,3000" >
+						<GoodsDrop priority="2" goodsId="105601" prizeDropId="2004" /><!-- 8进4观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105501" prizeDropId="2003" /><!-- 8进4观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="7" prizeDropId="1015" prizeDesc="440401,3,100016,800,440301,3,100016,3000" >
+						<GoodsDrop priority="2" goodsId="105601" prizeDropId="2004" /><!-- 半决赛观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105501" prizeDropId="2003" /><!-- 半决赛观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="8" prizeDropId="1015" prizeDesc="435401,1,100016,2000,435501,1,100016,8000" >
+						<GoodsDrop priority="2" goodsId="105601" prizeDropId="2006" /><!-- 总决赛观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105501" prizeDropId="2005" /><!-- 总决赛观赛奖励 金 -->
+					 </Item>
+					 <Item turnid="9" prizeDropId="1015" prizeDesc="440401,3,100016,800,440301,3,100016,3000" >
+						<GoodsDrop priority="2" goodsId="105601" prizeDropId="2008" /><!-- 3/4名决赛观赛奖励 银 -->
+					 	<GoodsDrop priority="1" goodsId="105501" prizeDropId="2007" /><!-- 3/4名决赛观赛奖励 金 -->
+					 </Item>
+				</Prize>
+				
+			</LookonPrize>
+		</PrizeList>
+		<AssignList>
+			<NormalQueue>
+				<field_desc>
+					<说明>比赛排队机制,不需要其他参数配置的排队</说明>
+					<id>排队机制id,不能重复,不论是哪种类型的排队机制,此值都不能重复</id>
+					<type>排队机制的类型, 1为单个队列排队(一般为测试所用), 2为两个队列排队, 3为加了队列人数限制的两个排队机制48人</type>
+				</field_desc>
+				<Assign id="1" type="1"/>
+				<Assign id="2" type="2"/>
+			</NormalQueue>
+			<MultiQueue>
+				<field_desc>
+					<说明>多队列排队,可配置,多了一些功能,防止刷分</说明>
+					<id>排队机制id,不能重复,不论是哪种类型的排队机制,此值都不能重复</id>
+					<type>排队机制的类型, 4为多队列排队机制,加了各种配置</type>
+					<ipFilter>是否过滤ip地址,既相同ip不在分配同一桌.0不过滤,1过滤</ipFilter>
+					<queueCnt>有几个队列</queueCnt>
+					<queueMaxUser>单个队列人数达到此值才开始分配桌子,人数多则增加了配桌的随机性,但会增加玩家的等待时间</queueMaxUser>
+				</field_desc>
+				<Assign id="11" type="4" ipFilter="1" queueCnt="1" queueMaxUser="8"/>
+				<Assign id="12" type="4" ipFilter="1" queueCnt="1" queueMaxUser="6"/>
+				<Assign id="13" type="4" ipFilter="1" queueCnt="2" queueMaxUser="16"/>
+				<Assign id="14" type="4" ipFilter="1" queueCnt="5" queueMaxUser="2"/>
+				<Assign id="15" type="4" ipFilter="1" queueCnt="2" queueMaxUser="8"/>
+				<Assign id="16" type="4" ipFilter="1" queueCnt="3" queueMaxUser="2"/>
+				<Assign id="17" type="4" ipFilter="1" queueCnt="5" queueMaxUser="2"/>
+				<Assign id="18" type="4" ipFilter="1" queueCnt="2" queueMaxUser="16"/>
+				<Assign id="19" type="4" ipFilter="1" queueCnt="5" queueMaxUser="2"/>
+				<Assign id="20" type="4" ipFilter="1" queueCnt="2" queueMaxUser="16"/>
+			</MultiQueue>
+			<!--WCA初赛 匹配规则-->
+			<KSLQueue>
+				<Assign id="8001" type="5" n="1" m="8" userCnt="2">
+				  <MPTime>
+					<Item userCnt="0" keepSeconds="40" strictSeconds="120"/>
+					<Item userCnt="100" keepSeconds="30" strictSeconds="120"/>
+					<Item userCnt="300" keepSeconds="20" strictSeconds="120"/>
+					<Item userCnt="500" keepSeconds="10" strictSeconds="120"/>
+				  </MPTime>
+				  <StrictMP k="2" param1X="1" p1xMax="5" param2X="100" ip="1" ipSameCnt="1"/>
+				</Assign>
+			</KSLQueue>
+		</AssignList>
+	</Config>
+</Root>

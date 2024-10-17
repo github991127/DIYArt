@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--  编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) --> 
+<ExprLimitPerDay>
+	<lvlimit defaultmax="900" max_lv_reset_today_get_xp="50">
+		<item fromlv="0" tolv="15" max="900" />
+		<item fromlv="16" tolv="30" max="900" />
+		<item fromlv="31" tolv="50" max="900" />
+		<item fromlv="51" tolv="80" max="900" />
+		<item fromlv="81" tolv="100" max="900" />
+		<item fromlv="101" tolv="150" max="900" />
+		<item fromlv="151" tolv="180" max="900" />
+		<item fromlv="181" tolv="1000" max="900" />
+	</lvlimit>
+</ExprLimitPerDay>
+

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+	<Root>
+	<!--要退货的武将-->
+	<ReturnCfg>
+		<!--2.64版本限时退回-->
+		<Chr id="158" yuanbao="1600" yinliang="2548" maxReturnCnt="1" startTime="20150701T000000" endTime="20150731T235959"/>
+		<Chr id="174" yuanbao="3598" yinliang="6698" maxReturnCnt="1" startTime="20150701T000000" endTime="20150731T235959"/>
+		<Chr id="183" yuanbao="3398" yinliang="6098" maxReturnCnt="1" startTime="20150701T000000" endTime="20150731T235959"/>
+		<!--2.65版本限时退回-->
+		<Chr id="167" yuanbao="3498" yinliang="6098" maxReturnCnt="1" startTime="20150714T000000" endTime="20150814T235959"/>
+		<Chr id="187" yuanbao="2898" yinliang="6098" maxReturnCnt="1" startTime="20150714T000000" endTime="20150814T235959"/>
+		<!--2.66-2.67版本限时退回-->
+		<Chr id="184" yuanbao="3698" yinliang="6098" maxReturnCnt="1" startTime="20150825T000000" endTime="20150925T235959"/>
+		<Chr id="313" yuanbao="2998" yinliang="6098" maxReturnCnt="1" startTime="20150825T000000" endTime="20150925T235959"/>
+		<!--2.79版本限时退回-->
+		<Chr id="112" desc="SP蔡文姬" yuanbao="2998" yinliang="4196" maxReturnCnt="1" startTime="20160816T000000" endTime="20160824T235959"/>
+		<Chr id="110" desc="SP贾诩" yuanbao="2200" yinliang="5998" maxReturnCnt="1" startTime="20160816T000000" endTime="20160824T235959"/>
+		<Chr id="107" desc="SP马超" yuanbao="800" yinliang="1398" maxReturnCnt="1" startTime="20160816T000000" endTime="20160824T235959"/>
+		<Chr id="105" desc="SP庞德" yuanbao="800" yinliang="1598" maxReturnCnt="1" startTime="20160816T000000" endTime="20160824T235959"/>
+		<!--2.82版本限时退回-->
+		<Chr id="321" desc="曹真" yuanbao="2898" yinliang="0" maxReturnCnt="1" startTime="20161103T000000" endTime="20161114T235959"/>
+		<Chr id="325" desc="周仓" yuanbao="2498" yinliang="0" maxReturnCnt="1" startTime="20161103T000000" endTime="20161114T235959"/>
+		<Chr id="125" desc="祖茂" yuanbao="2498" yinliang="0" maxReturnCnt="1" startTime="20161103T000000" endTime="20161114T235959"/>
+		<!--2.85版本限时退回-->
+		<Chr id="39" desc="庞德" yuanbao="800" yinliang="1398" maxReturnCnt="1" startTime="20170221T000000" endTime="20170301T235959"/>
+	</ReturnCfg>
+
+
+	<!--退武将包时,分解出来的武将-->
+	<DecomposeCfg>
+		<!--火包 990101 990106 -->
+		<DeChr id="34" ybItemId="903401" ylItemId="" />
+		<DeChr id="35" ybItemId="903501" ylItemId="" />
+		<DeChr id="36" ybItemId="903601" ylItemId="" />
+		<DeChr id="37" ybItemId="903701" ylItemId="" />
+		<DeChr id="38" ybItemId="903801" ylItemId="" />
+		<DeChr id="39" ybItemId="903901" ylItemId="" />
+		<DeChr id="40" ybItemId="904001" ylItemId="" />
+		<DeChr id="41" ybItemId="904101" ylItemId="" />
+
+		<!--林包 990201 990206-->
+		<DeChr id="42" ybItemId="904201" ylItemId="" />
+		<DeChr id="43" ybItemId="904301" ylItemId="" />
+		<DeChr id="44" ybItemId="904401" ylItemId="" />
+		<DeChr id="45" ybItemId="904501" ylItemId="" />
+		<DeChr id="46" ybItemId="904601" ylItemId="" />
+		<DeChr id="47" ybItemId="904701" ylItemId="" />
+		<DeChr id="48" ybItemId="904801" ylItemId="" />
+		<DeChr id="49" ybItemId="904901" ylItemId="" />
+
+		<!--山包 990301 990306-->
+		<DeChr id="50" ybItemId="905001" ylItemId="" />
+		<DeChr id="51" ybItemId="905101" ylItemId="" />
+		<DeChr id="52" ybItemId="905201" ylItemId="" />
+		<DeChr id="53" ybItemId="905301" ylItemId="" />
+		<DeChr id="54" ybItemId="905401" ylItemId="" />
+		<DeChr id="55" ybItemId="905501" ylItemId="" />
+		<!-- <DeChr id="56" ybItemId="905601" ylItemId="" /> -->
+		<DeChr id="57" ybItemId="905701" ylItemId="" />
+
+		<!--一将2011 990401 990406-->
+		<DeChr id="151" ybItemId="915101" ylItemId="" />
+		<DeChr id="152" ybItemId="915201" ylItemId="" />
+		<DeChr id="153" ybItemId="915301" ylItemId="" />
+		<DeChr id="185" ybItemId="915401" ylItemId="" />
+		<DeChr id="155" ybItemId="915501" ylItemId="" />
+		<DeChr id="156" ybItemId="915601" ylItemId="" />
+		<DeChr id="157" ybItemId="915701" ylItemId="" />
+		<DeChr id="158" ybItemId="915801" ylItemId="" />
+		<DeChr id="186" ybItemId="915901" ylItemId="" />
+		<DeChr id="160" ybItemId="916001" ylItemId="" />
+		<DeChr id="161" ybItemId="916101" ylItemId="" />
+		<!-- <DeChr id="185" ybItemId="918501" ylItemId="" />
+		<DeChr id="186" ybItemId="918601" ylItemId="" /> -->
+
+		<!--一将2012 990501-->
+		<DeChr id="162" ybItemId="916201" ylItemId="" />
+		<DeChr id="164" ybItemId="916401" ylItemId="" />
+		<DeChr id="166" ybItemId="916601" ylItemId="" />
+		<DeChr id="167" ybItemId="918901" ylItemId="" />
+		<DeChr id="168" ybItemId="916801" ylItemId="" />
+		<DeChr id="169" ybItemId="916901" ylItemId="" />
+		<DeChr id="170" ybItemId="917001" ylItemId="" />
+		<DeChr id="171" ybItemId="917101" ylItemId="" />
+		<DeChr id="172" ybItemId="917201" ylItemId="" />
+		<DeChr id="173" ybItemId="917301" ylItemId="" />
+		<DeChr id="187" ybItemId="916301" ylItemId="" />
+		<DeChr id="188" ybItemId="916501" ylItemId="" />
+
+		<!--一将2013 990601-->
+		<DeChr id="174" ybItemId="917401" ylItemId="" />
+		<DeChr id="175" ybItemId="917501" ylItemId="" />
+		<DeChr id="176" ybItemId="917601" ylItemId="" />
+		<DeChr id="177" ybItemId="917701" ylItemId="" />
+		<DeChr id="178" ybItemId="917801" ylItemId="" />
+		<DeChr id="179" ybItemId="917901" ylItemId="" />
+		<DeChr id="180" ybItemId="918001" ylItemId="" />
+		<DeChr id="181" ybItemId="918101" ylItemId="" />
+		<DeChr id="182" ybItemId="918201" ylItemId="" />
+		<DeChr id="183" ybItemId="918301" ylItemId="" />
+		<DeChr id="184" ybItemId="918401" ylItemId="" />
+
+
+	</DecomposeCfg>
+</Root>

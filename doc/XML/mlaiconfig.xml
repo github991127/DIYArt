@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MLAIConfigMap>
+    <!-- <mlaiconfig id="1" version="1" dev_version="1" > -->
+        <!-- <item idx="1" modelname="model_choose_action_v1" filename="ver1/dev1/model_choose_action_v1.model" featuresize="276" labelsize="88" /> -->
+        <!-- <item idx="2" modelname="model_choose_action_new_v1" filename="ver1/dev1/model_choose_action_new_v1" featuresize="162" labelsize="88" /> -->
+        <!-- <item idx="3" modelname="model_choose_target_v1" filename="ver1/dev1/model_choose_target_v1.model" featuresize="277" labelsize="18" /> -->
+        <!-- <item idx="4" modelname="model_choose_target_new_v1" filename="ver1/dev1/model_choose_target_new_v1.model" featuresize="163" labelsize="18" /> -->
+        <!-- <item idx="5" modelname="model_choose_base_card_v1" filename="ver1/dev1/model_choose_base_card_v1.model" featuresize="148" labelsize="136" /> -->
+        <!-- <item idx="6" modelname="model_sel_target_card_enemy_v1" filename="ver1/dev1/model_sel_target_card_enemy.model" featuresize="179" labelsize="162" /> -->
+        <!-- <item idx="7" modelname="model_sel_target_card_fri_v1" filename="ver1/dev1/model_sel_target_card_fri.model" featuresize="316" labelsize="162" /> -->
+        <!-- <item idx="8" modelname="model_abandon_card_v1" filename="ver1/dev1/model_abandon_card_v1.model" featuresize="178" labelsize="136" /> -->
+        <!-- <item idx="9" modelname="model_liangzhu_v1" filename="ver1/dev1/model_liangzhu.model" featuresize="210" labelsize="2" /> -->
+        <!-- <item idx="10" modelname="model_wugu_v1" filename="ver1/dev1/model_wugu.model" featuresize="564" labelsize="136" /> -->
+        <!-- <item idx="11" modelname="model_response_choose_action_v1" filename="ver1/dev1/model_response_choose_action_v1.model" featuresize="184" labelsize="88" /> -->
+        <!-- <item idx="12" modelname="model_response_choose_target_v1" filename="ver1/dev1/model_response_choose_target_v1.model" featuresize="184" labelsize="18" /> -->
+        <!-- <item idx="13" modelname="model_response_choose_card_v1" filename="ver1/dev1/model_response_choose_card_v1.model" featuresize="147" labelsize="136" /> -->
+        <!-- <item idx="14" modelname="model_wx_qiutao" filename="ver1/dev1/model_wx_qiutao.model" featuresize="226" labelsize="88" /> -->
+        <!-- <item idx="15" modelname="model_huogong_choose_card" filename="ver1/dev1/model_huogong_choose_card.model" featuresize="178" labelsize="137" /> -->
+        <!-- <item idx="16" modelname="model_gaipan_relative_action" filename="ver1/dev1/model_gaipan_relative_action.model" featuresize="192" labelsize="88" /> -->
+        <!-- <item idx="17" modelname="model_gaipan_relative_card" filename="ver1/dev1/model_gaipan_relative_card.model" featuresize="193" labelsize="136" /> -->
+        <!-- <item idx="18" modelname="biaobao_estimate_1_action" filename="ver1/dev1/biaobao_estimate_1_action.model" featuresize="293" labelsize="1" /> -->
+        <!-- <item idx="19" modelname="biaobao_estimate_1_action_target_card" filename="ver1/dev1/biaobao_estimate_1_action_target_card.model" featuresize="295" labelsize="1" /> -->
+    <!-- </mlaiconfig> -->
+    <!-- <mlaiconfig id="2" version="1" dev_version="2" > -->
+        <!-- <item idx="1" modelname="model_choose_action_v2" filename="ver1/dev1/model_choose_action_v1.model" featuresize="276" labelsize="88" /> -->
+        <!-- <item idx="2" modelname="model_choose_action_new_v2" filename="ver1/dev1/model_choose_action_new_v1" featuresize="162" labelsize="88" /> -->
+        <!-- <item idx="3" modelname="model_choose_target_v2" filename="ver1/dev1/model_choose_target_v1.model" featuresize="277" labelsize="18" /> -->
+        <!-- <item idx="4" modelname="model_choose_target_new_v2" filename="ver1/dev1/model_choose_target_new_v1.model" featuresize="163" labelsize="18" /> -->
+        <!-- <item idx="5" modelname="model_choose_base_card_v2" filename="ver1/dev1/model_choose_base_card_v1.model" featuresize="148" labelsize="136" /> -->
+        <!-- <item idx="6" modelname="model_sel_target_card_enemy" filename="ver1/dev1/model_sel_target_card_enemy.model" featuresize="179" labelsize="162" /> -->
+        <!-- <item idx="7" modelname="model_sel_target_card_fri" filename="ver1/dev1/model_sel_target_card_fri.model" featuresize="316" labelsize="162" /> -->
+        <!-- <item idx="8" modelname="model_abandon_card_v1" filename="ver1/dev1/model_abandon_card_v1.model" featuresize="178" labelsize="136" /> -->
+        <!-- <item idx="9" modelname="model_liangzhu" filename="ver1/dev1/model_liangzhu.model" featuresize="210" labelsize="2" /> -->
+        <!-- <item idx="10" modelname="model_wugu" filename="ver1/dev1/model_wugu.model" featuresize="564" labelsize="136" /> -->
+        <!-- <item idx="11" modelname="model_response_choose_action_v1" filename="ver1/dev1/model_response_choose_action_v1.model" featuresize="184" labelsize="88" /> -->
+        <!-- <item idx="12" modelname="model_response_choose_target_v1" filename="ver1/dev1/model_response_choose_target_v1.model" featuresize="184" labelsize="18" /> -->
+        <!-- <item idx="13" modelname="model_response_choose_card_v1" filename="ver1/dev1/model_response_choose_card_v1.model" featuresize="147" labelsize="136" /> -->
+        <!-- <item idx="14" modelname="model_wx_qiutao" filename="ver1/dev1/model_wx_qiutao.model" featuresize="226" labelsize="88" /> -->
+        <!-- <item idx="15" modelname="model_huogong_choose_card" filename="ver1/dev1/model_huogong_choose_card.model" featuresize="178" labelsize="137" /> -->
+        <!-- <item idx="16" modelname="model_gaipan_relative_action" filename="ver1/dev2/model_gaipan_relative_action.model" featuresize="192" labelsize="88" /> -->
+        <!-- <item idx="17" modelname="model_gaipan_relative_card" filename="ver1/dev2/model_gaipan_relative_card.model" featuresize="193" labelsize="136" /> -->
+        <!-- <item idx="18" modelname="biaobao_estimate_1_action" filename="ver1/dev2/biaobao_estimate_1_action.model" featuresize="303" labelsize="1" /> -->
+        <!-- <item idx="19" modelname="biaobao_estimate_1_action_target_card" filename="ver1/dev2/biaobao_estimate_1_action_target_card.model" featuresize="305" labelsize="1" /> -->
+    <!-- </mlaiconfig> -->
+	<mlaiconfig id="3" version="1" dev_version="3" >
+        <item idx="1" modelname="model_sel_target_card_enemy" filename="ver1/dev3/model_sel_target_card_enemy.model" featuresize="197" labelsize="162" />
+        <item idx="2" modelname="model_sel_target_card_fri" filename="ver1/dev3/model_sel_target_card_fri.model" featuresize="334" labelsize="162" />
+        <item idx="3" modelname="model_abandon_card" filename="ver1/dev3/model_abandon_card.model" featuresize="178" labelsize="136" />
+        <item idx="4" modelname="model_liangzhu" filename="ver1/dev3/model_liangzhu.model" featuresize="210" labelsize="2" />
+        <item idx="5" modelname="model_wugu" filename="ver1/dev3/model_wugu.model" featuresize="564" labelsize="136" />
+        <item idx="6" modelname="model_response_choose_action" filename="ver1/dev3/model_response_choose_action.model" featuresize="193" labelsize="101" />
+        <item idx="7" modelname="model_response_choose_target" filename="ver1/dev3/model_response_choose_target.model" featuresize="194" labelsize="18" />
+        <item idx="8" modelname="model_response_choose_card" filename="ver1/dev3/model_response_choose_card.model" featuresize="147" labelsize="136" />
+        <item idx="9" modelname="model_wx_qiutao" filename="ver1/dev3/model_wx_qiutao.model" featuresize="226" labelsize="88" />
+        <item idx="10" modelname="model_huogong_choose_card" filename="ver1/dev3/model_huogong_choose_card.model" featuresize="178" labelsize="137" />
+        <item idx="11" modelname="model_gaipan_relative_action" filename="ver1/dev3/model_gaipan_relative_action.model" featuresize="198" labelsize="101" />
+        <item idx="12" modelname="model_gaipan_relative_card" filename="ver1/dev3/model_gaipan_relative_card.model" featuresize="199" labelsize="136" />
+        <item idx="13" modelname="biaobao_estimate_1_action" filename="ver1/dev3/biaobao_estimate_1_action.model" featuresize="319" labelsize="1" />
+        <item idx="14" modelname="biaobao_estimate_1_action_target_card" filename="ver1/dev3/biaobao_estimate_1_action_target_card.model" featuresize="321" labelsize="1" />
+    </mlaiconfig>
+</MLAIConfigMap>

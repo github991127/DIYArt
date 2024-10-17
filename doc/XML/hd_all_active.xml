@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Description	-	等阶加成文本说明
+		-->
+	<Common Description="升阶进度为当前拥有的所有在当前模式可用武将的升阶进度，当全为5阶时，进度达到100%" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ModelID	-	模式ID
+			RoleID	-	局内角色ID，这项之前是不存在的，需要通过这个去找对应身份，加这个是为了方便配置维护
+				-	#角色备注
+			Rank	-	等阶
+			MaxHP	-	体力上限
+			EmptyHP	-	空体力
+			Armor	-	护甲
+			GetArmor	-	护甲回复
+			AttackNum	-	出杀次数
+			DrawCard	-	摸牌数
+			AddCard	-	初始手牌
+			MaxCard	-	手牌上限
+			Extra	-	额外伤害
+			GetSpell	-	额外技能
+			desc	-	客户端描述
+			desc	-	客户端描述
+		-->
+	<ShowLevel ModelID="111" RoleID="1" Rank="0" MaxHP="0" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="0" AddCard="0" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="111" RoleID="1" Rank="1" MaxHP="1" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="0" AddCard="0" MaxCard="0" Extra="0" GetSpell="1359" />
+	<ShowLevel ModelID="111" RoleID="1" Rank="2" MaxHP="1" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="0" AddCard="1" MaxCard="0" Extra="0" GetSpell="1359" />
+	<ShowLevel ModelID="111" RoleID="1" Rank="3" MaxHP="2" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="0" AddCard="1" MaxCard="0" Extra="0" GetSpell="1359" />
+	<ShowLevel ModelID="111" RoleID="1" Rank="4" MaxHP="2" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="1" AddCard="2" MaxCard="0" Extra="0" GetSpell="1359;1355" />
+	<ShowLevel ModelID="151" RoleID="1" Rank="0" MaxHP="0" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="0" AddCard="0" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="151" RoleID="1" Rank="1" MaxHP="1" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="0" AddCard="0" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="151" RoleID="1" Rank="2" MaxHP="1" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="0" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="151" RoleID="1" Rank="3" MaxHP="1" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="1" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="151" RoleID="1" Rank="4" MaxHP="2" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="1" AddCard="1" MaxCard="0" Extra="0" GetSpell="3324" />
+	<ShowLevel ModelID="_" RoleID="1" Rank="0" MaxHP="0" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="0" AddCard="0" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="_" RoleID="1" Rank="1" MaxHP="1" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="0" AddCard="0" MaxCard="0" Extra="0" GetSpell="1359" />
+	<ShowLevel ModelID="_" RoleID="1" Rank="2" MaxHP="1" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="0" AddCard="1" MaxCard="0" Extra="0" GetSpell="1359" />
+	<ShowLevel ModelID="_" RoleID="1" Rank="3" MaxHP="2" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="0" AddCard="1" MaxCard="0" Extra="0" GetSpell="1359" />
+	<ShowLevel ModelID="_" RoleID="1" Rank="4" MaxHP="2" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="1" AddCard="2" MaxCard="0" Extra="0" GetSpell="1359;1355" />
+	<ShowLevel ModelID="39" RoleID="1" Rank="0" MaxHP="0" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="0" AddCard="0" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="1" Rank="1" MaxHP="1" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="0" AddCard="0" MaxCard="0" Extra="0" GetSpell="1359" />
+	<ShowLevel ModelID="39" RoleID="1" Rank="2" MaxHP="1" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="0" AddCard="1" MaxCard="0" Extra="0" GetSpell="1359" />
+	<ShowLevel ModelID="39" RoleID="1" Rank="3" MaxHP="2" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="0" AddCard="1" MaxCard="0" Extra="0" GetSpell="1359" />
+	<ShowLevel ModelID="39" RoleID="1" Rank="4" MaxHP="2" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="1" AddCard="2" MaxCard="0" Extra="0" GetSpell="1359;1355" />
+	<ShowLevel ModelID="39" RoleID="2" Rank="0" MaxHP="0" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="0" AddCard="0" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="2" Rank="1" MaxHP="1" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="1" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="2" Rank="2" MaxHP="2" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="1" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="2" Rank="3" MaxHP="3" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="2" AddCard="2" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="2" Rank="4" MaxHP="3" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="2" DrawCard="2" AddCard="3" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="3" Rank="0" MaxHP="0" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="0" AddCard="0" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="3" Rank="1" MaxHP="1" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="1" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="3" Rank="2" MaxHP="2" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="1" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="3" Rank="3" MaxHP="3" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="2" AddCard="2" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="3" Rank="4" MaxHP="3" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="2" DrawCard="2" AddCard="3" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="6" Rank="0" MaxHP="0" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="0" AddCard="0" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="6" Rank="1" MaxHP="1" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="1" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="6" Rank="2" MaxHP="2" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="1" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="6" Rank="3" MaxHP="3" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="2" AddCard="2" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="6" Rank="4" MaxHP="3" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="2" DrawCard="2" AddCard="3" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="7" Rank="0" MaxHP="0" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="0" AddCard="0" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="7" Rank="1" MaxHP="1" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="1" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="7" Rank="2" MaxHP="2" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="1" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="7" Rank="3" MaxHP="3" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="2" AddCard="2" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="39" RoleID="7" Rank="4" MaxHP="3" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="2" DrawCard="2" AddCard="3" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="159" RoleID="4" Rank="0" MaxHP="0" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="0" AddCard="0" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="159" RoleID="4" Rank="1" MaxHP="0" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="0" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="159" RoleID="4" Rank="2" MaxHP="0" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="0" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="159" RoleID="4" Rank="3" MaxHP="0" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="1" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="159" RoleID="4" Rank="4" MaxHP="1" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="1" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="159" RoleID="1" Rank="0" MaxHP="0" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="0" AddCard="0" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="159" RoleID="1" Rank="1" MaxHP="0" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="0" DrawCard="0" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="159" RoleID="1" Rank="2" MaxHP="0" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="0" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="159" RoleID="1" Rank="3" MaxHP="0" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="1" AddCard="1" MaxCard="0" Extra="0" />
+	<ShowLevel ModelID="159" RoleID="1" Rank="4" MaxHP="1" EmptyHP="0" Armor="0" GetArmor="0" AttackNum="1" DrawCard="1" AddCard="1" MaxCard="0" Extra="0" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ModelID	-	模式ID
+			Manual	-	手动展示
+			Manual	-	手动展示
+			Auto	-	自动展示
+		-->
+	<ShowLabel ModelID="38" />
+	<ShowLabel ModelID="39" />
+	<ShowLabel ModelID="48" />
+	<ShowLabel ModelID="51" />
+	<ShowLabel ModelID="55" />
+	<ShowLabel ModelID="56" />
+	<ShowLabel ModelID="57" />
+	<ShowLabel ModelID="58" />
+	<ShowLabel ModelID="59" />
+	<ShowLabel ModelID="70" />
+	<ShowLabel ModelID="78" />
+	<ShowLabel ModelID="86" />
+	<ShowLabel ModelID="88" />
+	<ShowLabel ModelID="89" />
+	<ShowLabel ModelID="91" />
+	<ShowLabel ModelID="98" />
+	<ShowLabel ModelID="99" />
+	<ShowLabel ModelID="100" />
+	<ShowLabel ModelID="106" />
+	<ShowLabel ModelID="106" />
+	<ShowLabel ModelID="106" />
+	<ShowLabel ModelID="111" />
+	<ShowLabel ModelID="116" />
+	<ShowLabel ModelID="124" />
+	<ShowLabel ModelID="151" />
+	<ShowLabel ModelID="147" />
+	<ShowLabel ModelID="148" />
+	<ShowLabel ModelID="152" />
+	<ShowLabel ModelID="154" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			LabelID	-	标签ID
+			ShowText	-	展示文本
+			Showdesc	-	展示规则备注
+			showtip	-	标签
+		-->
+	<Labeltext LabelID="1" Showdesc="需要参与人数比较" />
+	<Labeltext LabelID="2" Showdesc="无" />
+	<Labeltext LabelID="3" Showdesc="无" />
+	<Labeltext LabelID="4" Showdesc="无" />
+	<Labeltext LabelID="5" Showdesc="无" />
+	<Labeltext LabelID="6" Showdesc="无" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			modeid	-	模式ID
+			bgmid	-	所用序号
+				-	#位置备注
+			bgmname	-	所用音乐
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	H5武将等阶
+			swapCardCnt	-	H5免费手气卡次数
+			yinLiangAdd	-	H5银两加成百分比
+			extraSecond	-	H5额外出手时间/秒
+			borderType	-	H5武将边框等级-0为普通，3为银框，4为金框
+			skillAnimation	-	H5技能特效-1是有特效，0是没有
+			skillAnimation2	-	H5高级技能特效
+			enterAnimation	-	H5登场特效
+			dynamicSkin	-	H5未知
+			cardAnimation	-	H5手牌特效
+			skillLine	-	H5金色指向线
+			dynamicSkinGeneralIds	-	H5未知
+			rightDesc	-	H5-特权描述
+			rightDesc_m	-	H5移动-特权描述
+			GRightDesc_m	-	H5移动-特权展示界面描述
+			GRightDescTips_m	-	H5移动-特权补充tips
+			rightDesc_u3d	-	U3D-特权描述
+			rightTipsTpye_u3d	-	U3D-特权描述补充
+		-->
+</Root>

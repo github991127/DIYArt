@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<treeconfig>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			reset_hour	-	每天几点重置免费刷新次数
+			times_perday	-	重置上限
+		-->
+	<general_tree_market reset_hour="10" times_perday="3">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			level	-	等级
+			general_count	-	武将数量
+			dropid	-	满足上面2个条件中的任意一个，则使用此dropid    若满足多个，则使用较大的dropid    对应掉落表中的DropTemplete Id
+			-->
+		<item level="30" general_count="32" dropid="407" />
+		<item level="40" general_count="35" dropid="408" />
+		<item level="50" general_count="38" dropid="409" />
+		<item level="60" general_count="46" dropid="410" />
+		<item level="80" general_count="50" dropid="411" />
+		<item level="100" general_count="53" dropid="412" />
+		<item level="120" general_count="60" dropid="413" />
+	</general_tree_market>
+	<general_Silver_Open>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			desc1	-	描述1
+			desc2	-	描述2
+			openLevel	-	开启等级
+			generalCount	-	数量
+			-->
+		<info desc1="等级大于等于X" desc2="拥有X个永久武将" openLevel="0" generalCount="0" />
+	</general_Silver_Open>
+	<general_Silver>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			index	-	阶段
+			desc	-	描述
+			list	-	显示内容
+			-->
+	</general_Silver>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			list	-	H5显示内容-国战武将
+		-->
+</treeconfig>

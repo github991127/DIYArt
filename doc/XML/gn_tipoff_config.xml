@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			NewReputation	-	初始信誉
+			LoginReturn	-	每日登录恢复信誉值
+			MaxReturn	-	每日牌局恢复信誉上限
+			MaxReturnTime	-	演武模式需要对局时间（大于N恢复信誉）
+			MinReturn	-	A时间后首次登录时，信誉低于N分会自动恢复至N分
+			MaxReport	-	每日最大举报次数
+			ReportCD	-	举报CD（秒）
+			PunishCD	-	骂人不重复触发（不会重复扣分）（秒）
+			PunishAmount	-	不文明用语前后推送的消息数量
+			PunishLink	-	不文明用语推送链接
+			PunishWait	-	自动检测处罚等待时间（秒）
+			TrusteeShipEscape	-	托管惩罚时间（超过进行惩罚）(秒）
+			DepleteRound	-	恶意消耗比赛次数（达成次数后惩罚）(秒）
+			PunishModel	-	除现有禁赛模式外还需禁赛的模式（配置模式ID）
+			PunishModel2	-	牌局内举报生效的模式ID（配置模式ID）
+			DepleteParm	-	烧绳缩短后百分比参数(第一次；第二次）
+			DepleteParm2	-	烧绳最小检测次数（总次数，检测次数）
+			DepleteParm3	-	烧条判断值X=min(配置值，配置最大出牌时间百分比）
+			DepleteModel	-	牌局内烧绳生效的模式ID（配置模式ID）
+			DepleteLevel	-	烧绳生效的等级
+			CheckModel	-	新手不文明用语过滤的模式ID（配置模式ID）
+			NegativePram1	-	身份攻击/杀死主公检测的模式
+			NegativePram2	-	攻击队友检测模式
+			NegativePram3	-	杀死队友检测模式
+			NegativePram4	-	多次不出牌检测模式
+			AbusePram2	-	新手牌局警告，禁言不文明用语分
+			AbusePram3	-	普通牌局警告，禁言不文明用语分
+			AbusePram4	-	不文明用语系统检测和举报积分倍率(百分比）
+		-->
+	<Common NewReputation="100" LoginReturn="1" MaxReturn="999" MaxReturnTime="120" MinReturn="20220914T000000;60" MaxReport="10" ReportCD="3" PunishCD="600" PunishAmount="10" PunishLink="https://oltipoff.sanguosha.com/report/push" PunishWait="180" TrusteeShipEscape="60;10" DepleteRound="1;1" PunishModel="22;28;30;33;120;4" PunishModel2="1;4;22;28;30;27;76;87;120;4;112;114;113;117;118;127;129;130;131;78;132;38;86;88;99;39;111;139;136;91;143;148;149;156;164" DepleteParm="80;50;30" DepleteParm2="8;3" DepleteParm3="3;20" DepleteModel="1;4;22;28;30;27;76;87;120;4;112;114;113;117;118;127;129;130;131;78;132;38;86;88;99;39;111;139;136;91;143;148;149;156" DepleteLevel="60" CheckModel="1;4;22;28;30;27;76;87;120;4;112;114;113;117;118;127;129;130;131;78;132;38;86;88;99;39;111;139;136;91;143;148;149;156" NegativePram1="1;22;156" NegativePram2="33;132;139;148;149" NegativePram3="148;149" NegativePram4="1;4;22;28;30;27;76;87;120;4;112;114;113;117;118;127;129;130;131;78;132;38;86;88;99;39;111;139;136;91;143;148;149;156" AbusePram2="100,200" AbusePram3="150,300" AbusePram4="50,100" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ReportType	-	举报类型
+			ReportDetails	-	举报详细说明
+			Punishment1	-	举报信誉惩罚
+			Punishment2	-	举报禁言惩罚（秒）
+			Punishment3	-	举报禁赛惩罚（秒）
+			Trigger	-	是否被举报后才触发触发，1=是
+			ExtraPunish	-	举报人数额外信誉惩罚(人数，信誉分）
+		-->
+	<Punishment ReportType="1" ReportDetails="不文明用语" Punishment1="1;3;3;3;3;5" Punishment2="0;1800;1800;1800;1800;7200" Punishment3="0" Trigger="1" />
+	<Punishment ReportType="2" ReportDetails="长时间托管/离开" Punishment1="2;3;5;7;10" Punishment2="0" Punishment3="0;0;1800;3600" Trigger="1" ExtraPunish="1,1;3,3" />
+	<Punishment ReportType="3" ReportDetails="恶意逃跑" Punishment1="2;3;5;7;10" Punishment2="0" Punishment3="0;300;1800;3600" Trigger="0" ExtraPunish="1,1;3,3" />
+	<Punishment ReportType="4" ReportDetails="恶意消耗比赛时间" Punishment1="2;3;5;7;10" Punishment2="0" Punishment3="0;0;1800;3600" Trigger="1" ExtraPunish="1,1;3,3" />
+	<Punishment ReportType="5" ReportDetails="消极游戏" Punishment1="2;3;5;7;10" Punishment2="0" Punishment3="0;0;1800;3600" Trigger="1" ExtraPunish="1,1;3,3" />
+	<Punishment ReportType="999" ReportDetails="其他" Punishment1="0" Punishment2="0" Punishment3="0" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			MaxReputation	-	信誉分上限值
+			ReputationDetails	-	信誉分详细说明
+			PunishmentType	-	信誉分惩罚类型
+			Punishment	-	信誉惩罚
+			MateTips	-	是否进行匹配提示
+			Muzzle	-	是否禁言
+			ReputationTips	-	信誉分提示
+		-->
+	<Reputation MaxReputation="90" ReputationDetails="发送警告邮件" PunishmentType="1" />
+	<Reputation MaxReputation="80" ReputationDetails="禁止参与排位赛（排位演武除外），挑战赛" PunishmentType="2" Punishment="132;127;129;130;131;139" />
+	<Reputation MaxReputation="60" ReputationDetails=" 禁止参与除演武外的其他模式" PunishmentType="3" Punishment="74;84;85;133" Muzzle="1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	邮件ID（与服务端约定好的ID，不能改）
+			name	-	标题
+			content	-	内容：说 明：$PLAYERNAME$替换成对应的被举报玩家名，$PUNISHMENTTYPE$替换成对应的惩罚类型，$PUNISHMENTDETAIL$替换成对应的惩罚内容
+			content_more	-	内容2
+			time	-	有效期
+			goods	-	附带道具
+				-	说明
+		-->
+	<Mail id="1001" name="举报反馈" time="1296000">
+		<content>
+			<![CDATA[您好，我们已经收到了您对$PLAYERNAME$的举报，我们将尽快核实并对他们的恶意行为进行处罚，感谢您为维护游戏环境做出的贡献，祝您游戏愉快！]]>
+		</content>
+	</Mail>
+	<Mail id="1002" name="举报反馈" time="1296000">
+		<content>
+			<![CDATA[您好，我们已经收到了您对$PLAYERNAME$的举报，我们将尽快核实并对他们的恶意行为进行处罚，感谢您为维护游戏环境做出的贡献，祝您游戏愉快！]]>
+		</content>
+	</Mail>
+	<Mail id="1003" name="举报反馈" time="1296000">
+		<content>
+			<![CDATA[系统正在核实举报信息，感谢您的监督举报！]]>
+		</content>
+	</Mail>
+	<Mail id="1004" name="不文明行为处罚" time="1296000">
+		<content>
+			<![CDATA[由于您被举报存在不文明用语行为，我们进行核实后发现您有上述游戏行为倾向，将作出下列惩罚：$PUNISHMENTDETAIL$，希望您以后在游戏中注意言行，祝您游戏愉快！]]>
+		</content>
+	</Mail>
+	<Mail id="1005" name="不文明行为处罚" time="1296000">
+		<content>
+			<![CDATA[由于您被举报存在不文明用语行为，我们进行核实后发现您有上述游戏行为倾向，将作出下列惩罚：$PUNISHMENTDETAIL$，希望您以后在游戏中注意言行，祝您游戏愉快！]]>
+		</content>
+	</Mail>
+	<Mail id="1006" name="长时间托管/离开处罚" time="1296000">
+		<content>
+			<![CDATA[由于您被举报存在长时间托管/离开行为，我们进行核实后发现您有上述游戏行为倾向，将作出下列惩罚：$PUNISHMENTDETAIL$，希望您以后在游戏中注意言行，祝您游戏愉快！]]>
+		</content>
+	</Mail>
+	<Mail id="1007" name="长时间托管/离开处罚" time="1296000">
+		<content>
+			<![CDATA[由于您被举报存在长时间托管/离开行为，我们进行核实后发现您有上述游戏行为倾向，将作出下列惩罚：$PUNISHMENTDETAIL$，希望您以后在游戏中注意言行，祝您游戏愉快！]]>
+		</content>
+	</Mail>
+	<Mail id="1008" name="恶意逃跑处罚" time="1296000">
+		<content>
+			<![CDATA[由于您被举报存在恶意逃跑行为，我们进行核实后发现您有上述游戏行为倾向，将作出下列惩罚：$PUNISHMENTDETAIL$，希望您以后在游戏中注意言行，祝您游戏愉快！]]>
+		</content>
+	</Mail>
+	<Mail id="1009" name="恶意逃跑处罚" time="1296000">
+		<content>
+			<![CDATA[由于您被举报存在恶意逃跑行为，我们进行核实后发现您有上述游戏行为倾向，将作出下列惩罚：$PUNISHMENTDETAIL$，希望您以后在游戏中注意言行，祝您游戏愉快！]]>
+		</content>
+	</Mail>
+	<Mail id="1010" name="恶意消耗时间处罚" time="1296000">
+		<content>
+			<![CDATA[由于您被举报存在恶意消耗时间行为，我们进行核实后发现您有上述游戏行为倾向，将作出下列惩罚：$PUNISHMENTDETAIL$，希望您以后在游戏中注意言行，祝您游戏愉快！]]>
+		</content>
+	</Mail>
+	<Mail id="1011" name="恶意消耗时间处罚" time="1296000">
+		<content>
+			<![CDATA[由于您被举报存在恶意消耗时间行为，我们进行核实后发现您有上述游戏行为倾向，将作出下列惩罚：$PUNISHMENTDETAIL$，希望您以后在游戏中注意言行，祝您游戏愉快！]]>
+		</content>
+	</Mail>
+	<Mail id="1012" name="信誉提示" time="1296000">
+		<content>
+			<![CDATA[您的信誉分已低于90分，若继续降低将触发部分模式的禁赛惩罚，请您维护健康积极的游戏氛围，积极游戏可加速信誉值的恢复，祝您游戏愉快！]]>
+		</content>
+	</Mail>
+	<Mail id="1013" name="信誉处罚" time="1296000">
+		<content>
+			<![CDATA[您的信誉分已低于80分，受到惩罚：禁止参与排位赛（排位演武除外）和挑战赛，请您维护健康积极的游戏氛围，积极游戏可加速信誉值的恢复，祝您游戏愉快。]]>
+		</content>
+	</Mail>
+	<Mail id="1014" name="信誉处罚" time="1296000">
+		<content>
+			<![CDATA[您的信誉分已低于60分，受到惩罚： 禁止参与除演武外的其他模式，请您维护健康积极的游戏氛围，积极游戏可加速信誉值的恢复，如有疑问，可以向客服咨询。]]>
+		</content>
+	</Mail>
+	<Mail id="1015" name="消极游戏处罚" time="1296000">
+		<content>
+			<![CDATA[由于您被举报存在消极游戏行为，我们进行核实后发现您有上述游戏行为倾向，将作出下列惩罚：$PUNISHMENTDETAIL$，希望您以后在游戏中注意言行，祝您游戏愉快！]]>
+		</content>
+	</Mail>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			model	-	生效模式
+				-	备注
+			TrusteeShipEscape	-	托管惩罚时间（超过进行惩罚）(秒）
+			DepleteRound	-	恶意消耗比赛次数（达成次数后惩罚）(秒）
+			DepleteParm2	-	烧绳最小检测次数（总次数，检测次数）
+			DepleteParm3	-	烧条判断值X=min(配置值，配置最大出牌时间百分比）
+		-->
+	<Common2 model="22;156" TrusteeShipEscape="30;5" DepleteRound="1;1" DepleteParm2="9;3" DepleteParm3="3;20" />
+	<Common2 model="28" TrusteeShipEscape="30;5" DepleteRound="1;1" DepleteParm2="6;2" DepleteParm3="3;20" />
+	<Common2 model="33;132;139;148;149" TrusteeShipEscape="30;10" DepleteRound="1;1" DepleteParm2="8;3" DepleteParm3="3;20" />
+</root>

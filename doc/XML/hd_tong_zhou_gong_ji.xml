@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			startTime	-	活动开始 时间
+			endTime	-	活动结算 时间
+上线后不要改
+			resetTime	-	龙舟势力积分重置时间，尽量在0点开始
+			startrank	-	排行榜开始时间
+			endrank	-	排行榜结算时间
+			daytime	-	每日开启结束时间
+			maxTime	-	一局游戏的最大时长
+			valueBuyCondition	-	每日购买体力规则-客户端
+			activityValueCondition	-	每日购买体力规则-服务端
+			recommendScore	-	第一次选推荐势力增加的积分
+			reselectionGoodsList	-	重选需要消耗的道具，绝对不能以分号结尾
+			calcTime	-	计算势力积分的间隔时间
+			reduce	-	计算势力衰减的积分百分比
+			paramList	-	参数列表，个数必须等于3
+			jinRequireCount	-	选晋势力需要晋武将数量
+			fakeUserCnt	-	势力人数必须大于这个值才不可选
+			addScore	-	击败敌人增加积分
+			ExtraScore	-	落后阵营额外积分加成
+			step	-	阶段
+			des1_m	-	移动端选择阵营
+			des1	-	选择阵营文字
+			des_m	-	移动端玩法说明文字
+			des	-	玩法说明文字
+			passRewards	-	通关宝箱的奖励
+		-->
+	<Common startTime="20240605T000000" endTime="20241017T235959" resetTime="86400" maxTime="86400" valueBuyCondition="9999,7903601" activityValueCondition="9999,7903601" recommendScore="20" reselectionGoodsList="7904001;7904101;7904201;7904301;7904401" calcTime="600" reduce="90" paramList="30;2;5" jinRequireCount="4" fakeUserCnt="100" addScore="0;3;6;9;12;15;18;21;24;26;28;30;32" ExtraScore="3,20;4,40;5,60" step="交锋;激斗;鏖战" passRewards="8195801,1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	等阶
+			addFirstCard	-	添加初始手牌数
+			desc	-	描述
+			addHp	-	额外体力
+			exSkills	-	额外技能ID
+		-->
+	<GeneralRankPriv rank="0" addFirstCard="0" desc="无；" addHp="0" />
+	<GeneralRankPriv rank="1" addFirstCard="1" desc="开局随机使用装备牌，摸牌数+1；" addHp="0" exSkills="1359" />
+	<GeneralRankPriv rank="2" addFirstCard="1" desc="开局随机使用装备牌，体力+1，出杀次数+1，起始手牌+1；" addHp="1" exSkills="1356;1359" />
+	<GeneralRankPriv rank="3" addFirstCard="2" desc="开局随机使用装备牌，体力+1，出杀次数+1，起始手牌+2；" addHp="1" exSkills="1356;1359" />
+	<GeneralRankPriv rank="4" addFirstCard="2" desc="开局随机使用装备牌，体力+2，出杀次数+1，起始手牌+2，技能“艾叶”" addHp="2" exSkills="1333;1359;1356" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	特定ID
+			requireScore	-	所需积分
+			requireGoodsBaseId	-	所需道具
+			goodslist	-	对应奖励
+			good	-	特殊奖励外发光
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank1	-	排名
+			rank2	-	排名下限
+			itmes	-	奖励-实际上是手动发给php来发邮件的
+			name	-	奖励名字-php发邮件用
+			icon	-	显示宝箱icon123档次，1最好
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	排名
+			itmes	-	奖励道具-php发邮件用
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	等阶
+			addFirstCard	-	添加初始手牌数
+			desc	-	描述
+			addHp	-	额外体力
+			freeRevive	-	免费复活次数
+			exSkills	-	额外技能ID
+		-->
+	<BossRankPriv rank="0" addFirstCard="0" desc="无；" addHp="0" freeRevive="0" />
+	<BossRankPriv rank="1" addFirstCard="1" desc="起始手牌+1；" addHp="0" freeRevive="0" />
+	<BossRankPriv rank="2" addFirstCard="1" desc="体力+1，起始手牌+1；" addHp="1" freeRevive="0" exSkills="1356" />
+	<BossRankPriv rank="3" addFirstCard="2" desc="体力+1，起始手牌+2；" addHp="1" freeRevive="0" exSkills="1356" />
+	<BossRankPriv rank="4" addFirstCard="2" desc="体力+2，起始手牌+2" addHp="2" freeRevive="0" exSkills="1356" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			round	-	关卡
+			rank	-	玩家等阶
+			rankRatio	-	ai等阶随机概率
+		-->
+	<RobotRank round="1" rank="0" rankRatio="0,80;1,20" />
+	<RobotRank round="1" rank="1" rankRatio="0,15;1,65;2,20" />
+	<RobotRank round="1" rank="2" rankRatio="1,15;2,65;3,20" />
+	<RobotRank round="1" rank="3" rankRatio="1,15;2,25;3,60" />
+	<RobotRank round="1" rank="4" rankRatio="1,10;2,10;3,80" />
+	<RobotRank round="2" rank="0" rankRatio="0,55;1,20;2,25" />
+	<RobotRank round="2" rank="1" rankRatio="0,5;1,55;2,40" />
+	<RobotRank round="2" rank="2" rankRatio="1,15;2,55;3,30" />
+	<RobotRank round="2" rank="3" rankRatio="1,5;2,25;3,70" />
+	<RobotRank round="2" rank="4" rankRatio="2,30;3,30;4,40" />
+	<RobotRank round="3" rank="0" rankRatio="0,25;1,45;2,30" />
+	<RobotRank round="3" rank="1" rankRatio="1,60;2,15;3,25" />
+	<RobotRank round="3" rank="2" rankRatio="2,55;3,45" />
+	<RobotRank round="3" rank="3" rankRatio="2,15;3,55;4,30" />
+	<RobotRank round="3" rank="4" rankRatio="2,15;3,15;4,70" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	口号id
+			camp	-	所属阵营
+1魏；2蜀；3吴；4群；6晋
+			desc	-	喊话
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	技能id
+			camp	-	所属阵营
+1魏；2蜀；3吴；4群；6晋
+			desc	-	喊话
+		-->
+</root>

@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			month	-	月份
+			loginday	-	天数
+			goods	-	奖励
+				-	备注
+			totalRewards	-	累计签到奖励
+			doubleVipLevel	-	双倍奖励VIP要求
+			messages	-	事件标语（12字以下）
+		-->
+	<bigprize month="1" loginday="1" goods="100011,200" />
+	<bigprize month="1" loginday="2" goods="1213201,1" />
+	<bigprize month="1" loginday="3" goods="9059702,1" totalRewards="112101,5" />
+	<bigprize month="1" loginday="4" goods="9020101,300" />
+	<bigprize month="1" loginday="5" goods="435401,1" messages="北向祁山，荡寇平魏！" />
+	<bigprize month="1" loginday="6" goods="100201,5" />
+	<bigprize month="1" loginday="7" goods="11519001,1" totalRewards="112101,5" doubleVipLevel="6" />
+	<bigprize month="1" loginday="8" goods="100011,200" />
+	<bigprize month="1" loginday="9" goods="111801,20" />
+	<bigprize month="1" loginday="10" goods="9059902,1" />
+	<bigprize month="1" loginday="11" goods="9020101,300" />
+	<bigprize month="1" loginday="12" goods="435401,1" />
+	<bigprize month="1" loginday="13" goods="100301,5" />
+	<bigprize month="1" loginday="14" goods="11519001,1" doubleVipLevel="6" />
+	<bigprize month="1" loginday="15" goods="100011,200" totalRewards="11519001,5" />
+	<bigprize month="1" loginday="16" goods="1213201,1" />
+	<bigprize month="1" loginday="17" goods="9058802,1" />
+	<bigprize month="1" loginday="18" goods="9020101,300" />
+	<bigprize month="1" loginday="19" goods="435401,1" messages="一月空城，以虚胜实！" />
+	<bigprize month="1" loginday="20" goods="100102,3" />
+	<bigprize month="1" loginday="21" goods="11519001,1" doubleVipLevel="6" />
+	<bigprize month="1" loginday="22" goods="100011,200" />
+	<bigprize month="1" loginday="23" goods="111801,20" />
+	<bigprize month="1" loginday="24" goods="9060002,1" />
+	<bigprize month="1" loginday="25" goods="9020101,300" totalRewards="8100201,1" />
+	<bigprize month="1" loginday="26" goods="11337901,1" />
+	<bigprize month="1" loginday="27" goods="100401,5" />
+	<bigprize month="1" loginday="28" goods="11519001,1" doubleVipLevel="6" />
+	<bigprize month="1" loginday="29" goods="100011,200" />
+	<bigprize month="1" loginday="30" goods="1213201,1" />
+	<bigprize month="1" loginday="31" goods="11378101,1" />
+	<bigprize month="2" loginday="1" goods="100011,200" />
+	<bigprize month="2" loginday="2" goods="1213201,1" />
+	<bigprize month="2" loginday="3" goods="9052802,1" totalRewards="112101,5" />
+	<bigprize month="2" loginday="4" goods="9020101,300" />
+	<bigprize month="2" loginday="5" goods="435401,1" messages="炽夺昭权，高平陵之变！" />
+	<bigprize month="2" loginday="6" goods="100201,5" />
+	<bigprize month="2" loginday="7" goods="11524201,1" totalRewards="112101,5" doubleVipLevel="6" />
+	<bigprize month="2" loginday="8" goods="100011,200" />
+	<bigprize month="2" loginday="9" goods="111801,20" />
+	<bigprize month="2" loginday="10" goods="9058202,1" />
+	<bigprize month="2" loginday="11" goods="9020101,300" />
+	<bigprize month="2" loginday="12" goods="435401,1" />
+	<bigprize month="2" loginday="13" goods="100301,5" />
+	<bigprize month="2" loginday="14" goods="11524201,1" doubleVipLevel="6" />
+	<bigprize month="2" loginday="15" goods="100011,200" totalRewards="11524201,5" />
+	<bigprize month="2" loginday="16" goods="1213201,1" messages="三顾茅庐，卧龙涉世！" />
+	<bigprize month="2" loginday="17" goods="9052902,1" />
+	<bigprize month="2" loginday="18" goods="9020101,300" />
+	<bigprize month="2" loginday="19" goods="435401,1" />
+	<bigprize month="2" loginday="20" goods="100102,3" />
+	<bigprize month="2" loginday="21" goods="11524201,1" doubleVipLevel="6" />
+	<bigprize month="2" loginday="22" goods="100011,200" />
+	<bigprize month="2" loginday="23" goods="111801,20" messages="二出祁山，卧龙向北！" />
+	<bigprize month="2" loginday="24" goods="9054902,1" />
+	<bigprize month="2" loginday="25" goods="9020101,300" totalRewards="8100201,1" />
+	<bigprize month="2" loginday="26" goods="11337901,1" messages="汉室难复，青龙定晋！" />
+	<bigprize month="2" loginday="27" goods="100401,5" />
+	<bigprize month="2" loginday="28" goods="11524201,1" doubleVipLevel="6" />
+	<bigprize month="2" loginday="29" goods="11378101,1" />
+	<bigprize month="3" loginday="1" goods="100011,200" />
+	<bigprize month="3" loginday="2" goods="1213201,1" />
+	<bigprize month="3" loginday="3" goods="9062402,1" totalRewards="112101,5" />
+	<bigprize month="3" loginday="4" goods="9020101,300" />
+	<bigprize month="3" loginday="5" goods="435401,1" />
+	<bigprize month="3" loginday="6" goods="100201,5" />
+	<bigprize month="3" loginday="7" goods="11527401,1" totalRewards="112101,5" doubleVipLevel="6" />
+	<bigprize month="3" loginday="8" goods="100011,200" />
+	<bigprize month="3" loginday="9" goods="111801,20" />
+	<bigprize month="3" loginday="10" goods="9060402,1" />
+	<bigprize month="3" loginday="11" goods="9020101,300" />
+	<bigprize month="3" loginday="12" goods="435401,1" />
+	<bigprize month="3" loginday="13" goods="100301,5" />
+	<bigprize month="3" loginday="14" goods="11527401,1" doubleVipLevel="6" />
+	<bigprize month="3" loginday="15" goods="100011,200" totalRewards="11527401,5" />
+	<bigprize month="3" loginday="16" goods="1213201,1" />
+	<bigprize month="3" loginday="17" goods="947013,1" />
+	<bigprize month="3" loginday="18" goods="9020101,300" />
+	<bigprize month="3" loginday="19" goods="435401,1" />
+	<bigprize month="3" loginday="20" goods="100102,3" />
+	<bigprize month="3" loginday="21" goods="11527401,1" doubleVipLevel="6" />
+	<bigprize month="3" loginday="22" goods="100011,200" />
+	<bigprize month="3" loginday="23" goods="111801,20" />
+	<bigprize month="3" loginday="24" goods="9701002,1" />
+	<bigprize month="3" loginday="25" goods="9020101,300" totalRewards="8100201,1" />
+	<bigprize month="3" loginday="26" goods="11337901,1" />
+	<bigprize month="3" loginday="27" goods="100401,5" />
+	<bigprize month="3" loginday="28" goods="11527401,1" doubleVipLevel="6" />
+	<bigprize month="3" loginday="29" goods="100011,200" />
+	<bigprize month="3" loginday="30" goods="1213201,1" />
+	<bigprize month="3" loginday="31" goods="11378101,1" />
+	<bigprize month="4" loginday="1" goods="100011,200" />
+	<bigprize month="4" loginday="2" goods="1213201,1" />
+	<bigprize month="4" loginday="3" goods="9060202,1" totalRewards="112101,5" />
+	<bigprize month="4" loginday="4" goods="9020101,300" />
+	<bigprize month="4" loginday="5" goods="435401,1" />
+	<bigprize month="4" loginday="6" goods="100201,5" />
+	<bigprize month="4" loginday="7" goods="11530601,1" totalRewards="112101,5" doubleVipLevel="6" />
+	<bigprize month="4" loginday="8" goods="100011,200" />
+	<bigprize month="4" loginday="9" goods="111801,20" />
+	<bigprize month="4" loginday="10" goods="9050211,1" />
+	<bigprize month="4" loginday="11" goods="9020101,300" />
+	<bigprize month="4" loginday="12" goods="435401,1" />
+	<bigprize month="4" loginday="13" goods="100301,5" />
+	<bigprize month="4" loginday="14" goods="11530601,1" doubleVipLevel="6" />
+	<bigprize month="4" loginday="15" goods="100011,200" totalRewards="11530601,5" />
+	<bigprize month="4" loginday="16" goods="1213201,1" />
+	<bigprize month="4" loginday="17" goods="9058702,1" />
+	<bigprize month="4" loginday="18" goods="9020101,300" />
+	<bigprize month="4" loginday="19" goods="435401,1" />
+	<bigprize month="4" loginday="20" goods="100102,3" />
+	<bigprize month="4" loginday="21" goods="11530601,1" doubleVipLevel="6" />
+	<bigprize month="4" loginday="22" goods="100011,200" />
+	<bigprize month="4" loginday="23" goods="111801,20" />
+	<bigprize month="4" loginday="24" goods="9058802,1" />
+	<bigprize month="4" loginday="25" goods="9020101,300" totalRewards="8100201,1" />
+	<bigprize month="4" loginday="26" goods="11337901,1" />
+	<bigprize month="4" loginday="27" goods="100401,5" />
+	<bigprize month="4" loginday="28" goods="11530601,1" doubleVipLevel="6" />
+	<bigprize month="4" loginday="29" goods="100011,200" />
+	<bigprize month="4" loginday="30" goods="11378101,1" />
+	<bigprize month="5" loginday="1" goods="100011,200" />
+	<bigprize month="5" loginday="2" goods="1213201,1" />
+	<bigprize month="5" loginday="3" goods="9058602,1" totalRewards="112101,5" />
+	<bigprize month="5" loginday="4" goods="9020101,300" />
+	<bigprize month="5" loginday="5" goods="435401,1" />
+	<bigprize month="5" loginday="6" goods="100201,5" />
+	<bigprize month="5" loginday="7" goods="11534001,1" totalRewards="112101,5" doubleVipLevel="6" />
+	<bigprize month="5" loginday="8" goods="100011,200" />
+	<bigprize month="5" loginday="9" goods="111801,20" />
+	<bigprize month="5" loginday="10" goods="9051411,1" />
+	<bigprize month="5" loginday="11" goods="9020101,300" />
+	<bigprize month="5" loginday="12" goods="435401,1" />
+	<bigprize month="5" loginday="13" goods="100301,5" />
+	<bigprize month="5" loginday="14" goods="11534001,1" doubleVipLevel="6" />
+	<bigprize month="5" loginday="15" goods="100011,200" totalRewards="11534001,5" />
+	<bigprize month="5" loginday="16" goods="1213201,1" />
+	<bigprize month="5" loginday="17" goods="9061102,1" />
+	<bigprize month="5" loginday="18" goods="9020101,300" />
+	<bigprize month="5" loginday="19" goods="435401,1" />
+	<bigprize month="5" loginday="20" goods="100102,3" />
+	<bigprize month="5" loginday="21" goods="11534001,1" doubleVipLevel="6" />
+	<bigprize month="5" loginday="22" goods="100011,200" />
+	<bigprize month="5" loginday="23" goods="111801,20" />
+	<bigprize month="5" loginday="24" goods="9050111,1" />
+	<bigprize month="5" loginday="25" goods="9020101,300" totalRewards="8100201,1" />
+	<bigprize month="5" loginday="26" goods="11337901,1" />
+	<bigprize month="5" loginday="27" goods="100401,5" />
+	<bigprize month="5" loginday="28" goods="11534001,1" doubleVipLevel="6" />
+	<bigprize month="5" loginday="29" goods="100011,200" />
+	<bigprize month="5" loginday="30" goods="1213201,1" />
+	<bigprize month="5" loginday="31" goods="11378101,1" />
+	<bigprize month="6" loginday="1" goods="100011,200" />
+	<bigprize month="6" loginday="2" goods="1213201,1" />
+	<bigprize month="6" loginday="3" goods="9063302,1" totalRewards="112101,5" />
+	<bigprize month="6" loginday="4" goods="9020101,300" />
+	<bigprize month="6" loginday="5" goods="435401,1" />
+	<bigprize month="6" loginday="6" goods="100201,5" />
+	<bigprize month="6" loginday="7" goods="11489001,1" totalRewards="112101,5" doubleVipLevel="6" />
+	<bigprize month="6" loginday="8" goods="100011,200" />
+	<bigprize month="6" loginday="9" goods="111801,20" />
+	<bigprize month="6" loginday="10" goods="9062102,1" />
+	<bigprize month="6" loginday="11" goods="9020101,300" />
+	<bigprize month="6" loginday="12" goods="435401,1" />
+	<bigprize month="6" loginday="13" goods="100301,5" />
+	<bigprize month="6" loginday="14" goods="11489001,1" doubleVipLevel="6" />
+	<bigprize month="6" loginday="15" goods="100011,200" totalRewards="11489001,5" />
+	<bigprize month="6" loginday="16" goods="1213201,1" />
+	<bigprize month="6" loginday="17" goods="9050211,1" />
+	<bigprize month="6" loginday="18" goods="9020101,300" />
+	<bigprize month="6" loginday="19" goods="435401,1" />
+	<bigprize month="6" loginday="20" goods="100102,3" />
+	<bigprize month="6" loginday="21" goods="11489001,1" doubleVipLevel="6" />
+	<bigprize month="6" loginday="22" goods="100011,200" />
+	<bigprize month="6" loginday="23" goods="111801,20" />
+	<bigprize month="6" loginday="24" goods="9058702,1" />
+	<bigprize month="6" loginday="25" goods="9020101,300" totalRewards="8100201,1" />
+	<bigprize month="6" loginday="26" goods="11337901,1" />
+	<bigprize month="6" loginday="27" goods="100401,5" />
+	<bigprize month="6" loginday="28" goods="11489001,1" doubleVipLevel="6" />
+	<bigprize month="6" loginday="29" goods="100011,200" />
+	<bigprize month="6" loginday="30" goods="11378101,1" />
+	<bigprize month="7" loginday="1" goods="100011,200" />
+	<bigprize month="7" loginday="2" goods="1213201,1" />
+	<bigprize month="7" loginday="3" goods="9060602,1" totalRewards="112101,5" />
+	<bigprize month="7" loginday="4" goods="9020101,300" />
+	<bigprize month="7" loginday="5" goods="435401,1" />
+	<bigprize month="7" loginday="6" goods="100201,5" />
+	<bigprize month="7" loginday="7" goods="11494101,1" totalRewards="112101,5" doubleVipLevel="6" />
+	<bigprize month="7" loginday="8" goods="100011,200" />
+	<bigprize month="7" loginday="9" goods="111801,20" />
+	<bigprize month="7" loginday="10" goods="9057102,1" />
+	<bigprize month="7" loginday="11" goods="9020101,300" />
+	<bigprize month="7" loginday="12" goods="435401,1" />
+	<bigprize month="7" loginday="13" goods="100301,5" />
+	<bigprize month="7" loginday="14" goods="11494101,1" doubleVipLevel="6" />
+	<bigprize month="7" loginday="15" goods="100011,200" totalRewards="11494101,5" />
+	<bigprize month="7" loginday="16" goods="1213201,1" />
+	<bigprize month="7" loginday="17" goods="9053302,1" />
+	<bigprize month="7" loginday="18" goods="9020101,300" />
+	<bigprize month="7" loginday="19" goods="435401,1" />
+	<bigprize month="7" loginday="20" goods="100102,3" />
+	<bigprize month="7" loginday="21" goods="11494101,1" doubleVipLevel="6" />
+	<bigprize month="7" loginday="22" goods="100011,200" />
+	<bigprize month="7" loginday="23" goods="111801,20" />
+	<bigprize month="7" loginday="24" goods="9061002,1" />
+	<bigprize month="7" loginday="25" goods="9020101,300" totalRewards="8100201,1" />
+	<bigprize month="7" loginday="26" goods="11337901,1" />
+	<bigprize month="7" loginday="27" goods="100401,5" />
+	<bigprize month="7" loginday="28" goods="11494101,1" doubleVipLevel="6" />
+	<bigprize month="7" loginday="29" goods="100011,200" />
+	<bigprize month="7" loginday="30" goods="1213201,1" />
+	<bigprize month="7" loginday="31" goods="11378101,1" />
+	<bigprize month="8" loginday="1" goods="100011,200" />
+	<bigprize month="8" loginday="2" goods="1213201,1" />
+	<bigprize month="8" loginday="3" goods="9065202,1" totalRewards="112101,5" />
+	<bigprize month="8" loginday="4" goods="9020101,300" />
+	<bigprize month="8" loginday="5" goods="435401,1" />
+	<bigprize month="8" loginday="6" goods="100201,5" />
+	<bigprize month="8" loginday="7" goods="11498401,1" totalRewards="112101,5" doubleVipLevel="6" />
+	<bigprize month="8" loginday="8" goods="100011,200" />
+	<bigprize month="8" loginday="9" goods="111801,20" />
+	<bigprize month="8" loginday="10" goods="9063802,1" />
+	<bigprize month="8" loginday="11" goods="9020101,300" />
+	<bigprize month="8" loginday="12" goods="435401,1" />
+	<bigprize month="8" loginday="13" goods="100301,5" />
+	<bigprize month="8" loginday="14" goods="11498401,1" doubleVipLevel="6" />
+	<bigprize month="8" loginday="15" goods="100011,200" totalRewards="11498401,5" />
+	<bigprize month="8" loginday="16" goods="1213201,1" />
+	<bigprize month="8" loginday="17" goods="9064202,1" />
+	<bigprize month="8" loginday="18" goods="9020101,300" />
+	<bigprize month="8" loginday="19" goods="435401,1" />
+	<bigprize month="8" loginday="20" goods="100102,3" />
+	<bigprize month="8" loginday="21" goods="11498401,1" doubleVipLevel="6" />
+	<bigprize month="8" loginday="22" goods="100011,200" />
+	<bigprize month="8" loginday="23" goods="111801,20" />
+	<bigprize month="8" loginday="24" goods="9062002,1" />
+	<bigprize month="8" loginday="25" goods="9020101,300" totalRewards="8100201,1" />
+	<bigprize month="8" loginday="26" goods="11337901,1" />
+	<bigprize month="8" loginday="27" goods="100401,5" />
+	<bigprize month="8" loginday="28" goods="11498401,1" doubleVipLevel="6" />
+	<bigprize month="8" loginday="29" goods="100011,200" />
+	<bigprize month="8" loginday="30" goods="1213201,1" />
+	<bigprize month="8" loginday="31" goods="11378101,1" />
+	<bigprize month="9" loginday="1" goods="100011,200" />
+	<bigprize month="9" loginday="2" goods="1213201,1" />
+	<bigprize month="9" loginday="3" goods="9060302,1" totalRewards="112101,5" />
+	<bigprize month="9" loginday="4" goods="9020101,300" />
+	<bigprize month="9" loginday="5" goods="435401,1" />
+	<bigprize month="9" loginday="6" goods="100201,5" />
+	<bigprize month="9" loginday="7" goods="11503301,1" totalRewards="112101,5" doubleVipLevel="6" />
+	<bigprize month="9" loginday="8" goods="100011,200" />
+	<bigprize month="9" loginday="9" goods="111801,20" />
+	<bigprize month="9" loginday="10" goods="9063602,1" />
+	<bigprize month="9" loginday="11" goods="9020101,300" />
+	<bigprize month="9" loginday="12" goods="435401,1" />
+	<bigprize month="9" loginday="13" goods="100301,5" />
+	<bigprize month="9" loginday="14" goods="11503301,1" doubleVipLevel="6" />
+	<bigprize month="9" loginday="15" goods="100011,200" totalRewards="11503301,5" />
+	<bigprize month="9" loginday="16" goods="1213201,1" />
+	<bigprize month="9" loginday="17" goods="9062902,1" />
+	<bigprize month="9" loginday="18" goods="9020101,300" />
+	<bigprize month="9" loginday="19" goods="435401,1" />
+	<bigprize month="9" loginday="20" goods="100102,3" />
+	<bigprize month="9" loginday="21" goods="11503301,1" doubleVipLevel="6" />
+	<bigprize month="9" loginday="22" goods="100011,200" />
+	<bigprize month="9" loginday="23" goods="111801,20" />
+	<bigprize month="9" loginday="24" goods="9059102,1" />
+	<bigprize month="9" loginday="25" goods="9020101,300" totalRewards="8100201,1" />
+	<bigprize month="9" loginday="26" goods="11337901,1" />
+	<bigprize month="9" loginday="27" goods="100401,5" />
+	<bigprize month="9" loginday="28" goods="11503301,1" doubleVipLevel="6" />
+	<bigprize month="9" loginday="29" goods="100011,200" />
+	<bigprize month="9" loginday="30" goods="11378101,1" />
+	<bigprize month="10" loginday="1" goods="100011,200" />
+	<bigprize month="10" loginday="2" goods="1213201,1" />
+	<bigprize month="10" loginday="3" goods="9049711,1" totalRewards="112101,5" />
+	<bigprize month="10" loginday="4" goods="9020101,300" />
+	<bigprize month="10" loginday="5" goods="435401,1" />
+	<bigprize month="10" loginday="6" goods="100201,5" />
+	<bigprize month="10" loginday="7" goods="11507501,1" totalRewards="112101,5" doubleVipLevel="6" />
+	<bigprize month="10" loginday="8" goods="100011,200" />
+	<bigprize month="10" loginday="9" goods="111801,20" />
+	<bigprize month="10" loginday="10" goods="9053802,1" />
+	<bigprize month="10" loginday="11" goods="9020101,300" />
+	<bigprize month="10" loginday="12" goods="435401,1" />
+	<bigprize month="10" loginday="13" goods="100301,5" />
+	<bigprize month="10" loginday="14" goods="11507501,1" doubleVipLevel="6" />
+	<bigprize month="10" loginday="15" goods="100011,200" totalRewards="11507501,5" />
+	<bigprize month="10" loginday="16" goods="1213201,1" />
+	<bigprize month="10" loginday="17" goods="9055202,1" />
+	<bigprize month="10" loginday="18" goods="9020101,300" />
+	<bigprize month="10" loginday="19" goods="435401,1" />
+	<bigprize month="10" loginday="20" goods="100102,3" />
+	<bigprize month="10" loginday="21" goods="11507501,1" doubleVipLevel="6" />
+	<bigprize month="10" loginday="22" goods="100011,200" />
+	<bigprize month="10" loginday="23" goods="111801,20" />
+	<bigprize month="10" loginday="24" goods="911811,1" />
+	<bigprize month="10" loginday="25" goods="9020101,300" totalRewards="8100201,1" />
+	<bigprize month="10" loginday="26" goods="11337901,1" />
+	<bigprize month="10" loginday="27" goods="100401,5" />
+	<bigprize month="10" loginday="28" goods="11507501,1" doubleVipLevel="6" />
+	<bigprize month="10" loginday="29" goods="100011,200" />
+	<bigprize month="10" loginday="30" goods="1213201,1" />
+	<bigprize month="10" loginday="31" goods="11378101,1" />
+	<bigprize month="11" loginday="1" goods="100011,200" />
+	<bigprize month="11" loginday="2" goods="1213201,1" />
+	<bigprize month="11" loginday="3" goods="9058802,1" totalRewards="112101,5" />
+	<bigprize month="11" loginday="4" goods="9020101,300" />
+	<bigprize month="11" loginday="5" goods="435401,1" />
+	<bigprize month="11" loginday="6" goods="100201,5" />
+	<bigprize month="11" loginday="7" goods="11511301,1" totalRewards="112101,5" doubleVipLevel="6" />
+	<bigprize month="11" loginday="8" goods="100011,200" />
+	<bigprize month="11" loginday="9" goods="111801,20" />
+	<bigprize month="11" loginday="10" goods="9053802,1" />
+	<bigprize month="11" loginday="11" goods="9020101,300" />
+	<bigprize month="11" loginday="12" goods="435401,1" />
+	<bigprize month="11" loginday="13" goods="100301,5" />
+	<bigprize month="11" loginday="14" goods="11511301,1" doubleVipLevel="6" />
+	<bigprize month="11" loginday="15" goods="100011,200" totalRewards="11511301,5" />
+	<bigprize month="11" loginday="16" goods="1213201,1" />
+	<bigprize month="11" loginday="17" goods="9058002,1" />
+	<bigprize month="11" loginday="18" goods="9020101,300" />
+	<bigprize month="11" loginday="19" goods="435401,1" />
+	<bigprize month="11" loginday="20" goods="100102,3" />
+	<bigprize month="11" loginday="21" goods="11511301,1" doubleVipLevel="6" />
+	<bigprize month="11" loginday="22" goods="100011,200" />
+	<bigprize month="11" loginday="23" goods="111801,20" />
+	<bigprize month="11" loginday="24" goods="9057802,1" />
+	<bigprize month="11" loginday="25" goods="9020101,300" totalRewards="8100201,1" />
+	<bigprize month="11" loginday="26" goods="11337901,1" />
+	<bigprize month="11" loginday="27" goods="100401,5" />
+	<bigprize month="11" loginday="28" goods="11511301,1" doubleVipLevel="6" />
+	<bigprize month="11" loginday="29" goods="100011,200" />
+	<bigprize month="11" loginday="30" goods="11378101,1" />
+	<bigprize month="12" loginday="1" goods="100011,200" />
+	<bigprize month="12" loginday="2" goods="1213201,1" />
+	<bigprize month="12" loginday="3" goods="9060002,1" totalRewards="112101,5" />
+	<bigprize month="12" loginday="4" goods="9020101,300" />
+	<bigprize month="12" loginday="5" goods="435401,1" />
+	<bigprize month="12" loginday="6" goods="100201,5" />
+	<bigprize month="12" loginday="7" goods="11515401,1" totalRewards="112101,5" doubleVipLevel="6" />
+	<bigprize month="12" loginday="8" goods="100011,200" />
+	<bigprize month="12" loginday="9" goods="111801,20" />
+	<bigprize month="12" loginday="10" goods="9057802,1" />
+	<bigprize month="12" loginday="11" goods="9020101,300" />
+	<bigprize month="12" loginday="12" goods="435401,1" />
+	<bigprize month="12" loginday="13" goods="100301,5" />
+	<bigprize month="12" loginday="14" goods="11515401,1" doubleVipLevel="6" />
+	<bigprize month="12" loginday="15" goods="100011,200" totalRewards="11515401,5" />
+	<bigprize month="12" loginday="16" goods="1213201,1" />
+	<bigprize month="12" loginday="17" goods="9056302,1" />
+	<bigprize month="12" loginday="18" goods="9020101,300" />
+	<bigprize month="12" loginday="19" goods="435401,1" />
+	<bigprize month="12" loginday="20" goods="100102,3" />
+	<bigprize month="12" loginday="21" goods="11515401,1" doubleVipLevel="6" />
+	<bigprize month="12" loginday="22" goods="100011,200" />
+	<bigprize month="12" loginday="23" goods="111801,20" />
+	<bigprize month="12" loginday="24" goods="9053802,1" />
+	<bigprize month="12" loginday="25" goods="9020101,300" totalRewards="8100201,1" />
+	<bigprize month="12" loginday="26" goods="11337901,1" />
+	<bigprize month="12" loginday="27" goods="100401,5" />
+	<bigprize month="12" loginday="28" goods="11515401,1" doubleVipLevel="6" />
+	<bigprize month="12" loginday="29" goods="100011,200" />
+	<bigprize month="12" loginday="30" goods="1213201,1" />
+	<bigprize month="12" loginday="31" goods="11378101,1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			reCheckNum	-	固定消耗补签卡的天数
+			reCheckBaseCost	-	固定消耗补签卡的天数补签时消耗的补签卡数量
+			reCheckStep	-	超过reCheckNum后，每次补签增加的补签卡数量
+			reCheckMaxCost	-	上面的经过reCheckStep增加后的最大值，即补签卡数量最多不能超过reCheckMaxCost
+		-->
+	<loginpatchcost reCheckNum="5" reCheckBaseCost="1" reCheckStep="1" reCheckMaxCost="11" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ID	-	序号
+			model	-	所属活动
+			activeID	-	活动参数
+				-	活动名称
+			pv_short	-	视频-剪辑版
+			duration_mo	-	活动界面开启时间
+			character	-	武将
+			pv_long	-	视频-完整版
+			time	-	下载时间
+			duration_ch	-	武将界面开启时间
+		-->
+</root>

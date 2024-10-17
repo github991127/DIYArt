@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) 
+张红涛: 20110728
+-->
+<!--
+[说明:CommonConfig]
+1.BaseGeneralSlotCount						初始的养成武将个数(这个数值与下面可以购买的最大位置之和不能超过65000)
+2.defaultEnergy								默认活力值 
+-->
+<!--
+[说明:DefaultGeneral] 默认送给玩家的武将
+1.DefaultGeneral->GeneralItem->GeneralId	武将ID
+2.DefaultGeneral->GeneralItem->Energy		默认活力值
+3.DefaultGeneral->GeneralItem->Level		默认等级
+4.DefaultGeneral->GeneralItem->SpellList	默认技能,格式:技能ID,技能等级;技能ID,技能等级...... 如:1,1;2,1
+-->
+<!--
+[说明:BuyGeneralSlot]
+1.BuyGeneralSlot->BuySoltItem->BuySoltCount  购买额外的养成武将个数,必须从1开始递增 不能超过65000
+2.BuyGeneralSlot->BuySoltItem->PriceTongQian 购买的铜钱价格
+3.BuyGeneralSlot->BuySoltItem->PriceYuanBao  购买的元宝价格
+-->
+<!--
+[说明:EnergyLimit]
+1.EnergyLimit->EnergyLimitItem->level		武将等级
+2.EnergyLimit->EnergyLimitItem->Energy		对应的基础活力值上限
+-->
+<!--
+[说明:GeneralSpell] 所有的技能
+1.Spell->Id							ID(Id相同 Level不同,表示同一个技能的不同等级 不能超过65000)
+2.Spell->Level						等级(最多250)
+3.Spell->Name						名称
+4.Spell->Desc						描述
+5.Spell->LearnReqGeneralLevel		学习技能需要的最低武将等级
+6.Spell->LearnCostEnergy			学习技能需要花费的武将活力值
+7.Spell->EquipCostItem				携带技能进入副本时的物品消耗 格式:物品ID,物品数目;物品ID,物品数目;... 如:112332,10;123131;11
+-->
+<!--
+[说明:AllInstance]	所有的副本
+1.[InstanceItem] 副本 有多个
+	InstanceItem->InstanceID						副本ID 最高65000
+	InstanceItem->InstanceName					副本名称
+	InstanceItem->TryCount						失败尝试次数 0是不限制 最高65000
+	InstanceItem->InstanceDesc					描述
+	InstanceItem->UnlockCostTongQian			解锁需要的铜钱
+	InstanceItem->UnlockReqCompleteInstance 	解锁需要完成的副本 格式:副本ID,完成的次数;副本ID,完成的次数;.. 如:1,2;2,1
+	InstanceItem->EnterReqGeneralLevel 			进入需要的武将等级
+
+2.InstanceItem->FinishAward 通关奖励 只能有一个
+	FinishAward->Award->TongQian	铜钱奖励
+	FinishAward->Award->EnergyValue 活力值奖励
+	FinishAward->Award->Exp 		经验奖励
+	
+	FinishAward->Award->AwardItem				物品奖励(可以有多个)
+	FinishAward->Award->AwardItem->ItemId 		奖励物品ID
+	FinishAward->Award->AwardItem->Count  		奖励物品个数
+	FinishAward->Award->AwardItem->Probability  奖励物品概率 0-1000
+	
+3.InstanceItem->RoundItem	副本关卡 可以有多个 
+	RoundItem->SubID		关卡ID 关卡SubID必须从1开始递增 最多65000
+	RoundItem->Name			关卡名称
+	RoundItem->Desc			关卡描述
+
+	RoundItem->General				关卡BOSS(可以有多个, 个数必须大于0小于8)
+	RoundItem->General->Index		武将所在的位置[1,7]
+	RoundItem->General->GerneralId	武将ID
+	RoundItem->General->GeneralName 武将名称
+	RoundItem->General->AddHp		相对武将基础HP变化量
+	RoundItem->General->SpellList	武将有的技能列表(这个技能ID不是GeneralSpell) 格式:技能ID;技能ID;.. 例如:1;2;3
+	
+	RoundItem->General->KillAward	奖励配置同InstanceItem->FinishAward
+	
+	RoundItem->FinishRoundAward		过关奖励 配置同InstanceItem->FinishAward	
+-->
+<GameInstance>
+	<!--武将存放相关 BaseSlotCount + BuyGeneralSlot->BuySoltCount(最大值)<= 65000-->
+	<CommonConfig BaseGeneralSlotCount="30" defaultEnergy="100"/>
+	<!--默认的武将-->
+	<DefaultGeneral>
+		<GeneralItem GeneralId="141" Energy="700" Level="1" SpellList=""/>
+		<GeneralItem GeneralId="2" Energy="500" Level="10" SpellList="1,1;2,1"/>
+		<GeneralItem GeneralId="15" Energy="30000" Level="50" SpellList="1,3;4,1;3,1"/>
+		<GeneralItem GeneralId="19" Energy="3000000" Level="100" SpellList="1,2;2,1;3,1;4,1;5,1"/>
+	</DefaultGeneral>
+	<!--可以购买的武将养成位置-->
+	<BuyGeneralSlot>
+		<BuySoltItem BuySoltCount="1" PriceTongQian="10" PriceYuanBao="10"/>
+		<BuySoltItem BuySoltCount="2" PriceTongQian="10" PriceYuanBao="20"/>
+		<BuySoltItem BuySoltCount="3" PriceTongQian="10" PriceYuanBao="30"/>
+		<BuySoltItem BuySoltCount="4" PriceTongQian="10" PriceYuanBao="40"/>
+		<BuySoltItem BuySoltCount="5" PriceTongQian="10" PriceYuanBao="50"/>
+	</BuyGeneralSlot>
+	<!--基础活力值上限-->
+	<EnergyLimit>
+		<EnergyLimitItem level="1" Energy="100"/>
+		<EnergyLimitItem level="2" Energy="200"/>
+		<EnergyLimitItem level="3" Energy="300"/>
+		<EnergyLimitItem level="4" Energy="400"/>
+		<EnergyLimitItem level="5" Energy="500"/>
+		<EnergyLimitItem level="6" Energy="600"/>
+		<EnergyLimitItem level="7" Energy="700"/>
+		<EnergyLimitItem level="8" Energy="800"/>
+		<EnergyLimitItem level="9" Energy="900"/>
+		<EnergyLimitItem level="10" Energy="1000"/>
+		<EnergyLimitItem level="11" Energy="1100"/>
+		<EnergyLimitItem level="12" Energy="1200"/>
+		<EnergyLimitItem level="20" Energy="2000"/>
+		<EnergyLimitItem level="30" Energy="3000"/>
+		<EnergyLimitItem level="40" Energy="4000"/>
+		<EnergyLimitItem level="50" Energy="5000"/>
+		<EnergyLimitItem level="60" Energy="6000"/>
+		<EnergyLimitItem level="70" Energy="7000"/>
+		<EnergyLimitItem level="80" Energy="8000"/>
+		<EnergyLimitItem level="90" Energy="9000"/>
+		<EnergyLimitItem level="100" Energy="10000"/>
+		<EnergyLimitItem level="110" Energy="11000"/>
+		<EnergyLimitItem level="120" Energy="12000"/>
+		<EnergyLimitItem level="130" Energy="13000"/>
+		<EnergyLimitItem level="140" Energy="14000"/>
+		<EnergyLimitItem level="150" Energy="15000"/>
+	</EnergyLimit>
+	<!--武将技能-->
+	<GeneralSpell>
+		<Spell Id="1" Level="1" Name="进攻距离+1" Desc="在计算与其他玩家的距离时-1，效果同装备一匹-1马，可与武将技能和装备叠加效果" LearnReqGeneralLevel="0" LearnCostEnergy="25" EquipCostItem="">
+			<!--技能效果-->
+			<Effect EffectType="1" value="1" param1="1" param2="1"/>
+		</Spell>
+		<Spell Id="1" Level="2" Name="进攻距离+2" Desc="在计算与其他玩家的距离时-1，效果同装备一匹-1马，可与武将技能和装备叠加效果" LearnReqGeneralLevel="0" LearnCostEnergy="25" EquipCostItem="">
+			<!--技能效果-->
+			<Effect EffectType="1" value="1" param1="1" param2="1"/>
+		</Spell>
+		<Spell Id="1" Level="3" Name="进攻距离+3" Desc="在计算与其他玩家的距离时-1，效果同装备一匹-1马，可与武将技能和装备叠加效果" LearnReqGeneralLevel="0" LearnCostEnergy="25" EquipCostItem="">
+			<!--技能效果-->
+			<Effect EffectType="1" value="1" param1="1" param2="1"/>
+		</Spell>
+		<Spell Id="2" Level="1" Name="防御距离+1" Desc="其他玩家计算与你的距离时+1，效果同装备一匹+1马，可与武将技能和装备叠加效果" LearnReqGeneralLevel="1" LearnCostEnergy="110" EquipCostItem="">
+			<!--技能效果-->
+			<Effect EffectType="1" value="1" param1="1" param2="1"/>
+		</Spell>
+		<Spell Id="3" Level="1" Name="每回合摸牌+1" Desc="在摸牌阶段额外摸1张牌，可与武将技能效果叠加" LearnReqGeneralLevel="3" LearnCostEnergy="90" EquipCostItem="">
+			<!--技能效果-->
+			<Effect EffectType="1" value="1" param1="1" param2="1"/>
+		</Spell>
+		<Spell Id="4" Level="1" Name="杀的伤害+1" Desc="使用杀造成的伤害+1，可与其他伤害加成效果叠加" LearnReqGeneralLevel="10" LearnCostEnergy="100" EquipCostItem="">
+			<!--技能效果-->
+			<Effect EffectType="1" value="1" param1="1" param2="1"/>
+		</Spell>
+		<Spell Id="5" Level="1" Name="决斗伤害+1" Desc="使用决斗造成的伤害+1，可与其他伤害加成效果叠加" LearnReqGeneralLevel="7" LearnCostEnergy="50" EquipCostItem="">
+			<!--技能效果-->
+			<Effect EffectType="1" value="1" param1="1" param2="1"/>
+		</Spell>
+		<Spell Id="6" Level="1" Name="体力上限+1" Desc="武将体力上限增加1" LearnReqGeneralLevel="12" LearnCostEnergy="70" EquipCostItem="">
+			<!--技能效果-->
+			<Effect EffectType="1" value="1" param1="1" param2="1"/>
+		</Spell>
+		<Spell Id="7" Level="1" Name="桃回复体力+1" Desc="对自己使用桃时额外回复一点体力" LearnReqGeneralLevel="15" LearnCostEnergy="100" EquipCostItem="">
+			<!--技能效果-->
+			<Effect EffectType="1" value="1" param1="1" param2="1"/>
+		</Spell>
+		<Spell Id="8" Level="1" Name="手牌上限+1" Desc="手牌上限增加1" LearnReqGeneralLevel="5" LearnCostEnergy="35" EquipCostItem="">
+			<!--技能效果-->
+			<Effect EffectType="1" value="1" param1="1" param2="1"/>
+		</Spell>
+		<Spell Id="9" Level="1" Name="击杀摸牌+1" Desc="每当击杀敌方武将时，额外摸1张牌" LearnReqGeneralLevel="4" LearnCostEnergy="30" EquipCostItem="">
+			<!--技能效果-->
+			<Effect EffectType="1" value="1" param1="1" param2="1"/>
+		</Spell>
+		<Spell Id="10" Level="1" Name="起始手牌+1" Desc="每次开局时起始手牌多1张" LearnReqGeneralLevel="3" LearnCostEnergy="25" EquipCostItem="">
+			<!--技能效果-->
+			<Effect EffectType="1" value="1" param1="1" param2="1"/>
+		</Spell>
+		<Spell Id="11" Level="1" Name="每轮出杀数+1" Desc="每轮可额外使用一张杀" LearnReqGeneralLevel="9" LearnCostEnergy="50" EquipCostItem="">
+			<!--技能效果-->
+			<Effect EffectType="1" value="1" param1="1" param2="1"/>
+		</Spell>
+	</GeneralSpell>
+	<AllInstance>
+		<InstanceItem InstanceID="1" InstanceName="测试副本" TryCount="10" InstanceDesc="测试副本1" UnlockCostTongQian="0" UnlockReqCompleteInstance="" EnterReqGeneralLevel="[min-0][max-100]">
+			<!--通关奖励-->
+			<FinishAward>
+				<Award TongQian="10" EnergyValue="10" Exp="10">
+					<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+				</Award>
+			</FinishAward>
+			<!--关卡信息-->
+			<RoundItem SubID="1" Name="" Desc="">
+				<!--武将-->
+				<General Index="1" GerneralId="141" GeneralName="士兵1" AddHp="-1" SpellList="1;2;3;4">
+					<!--杀死武将掉落-->
+					<KillAward>
+						<Award TongQian="10" EnergyValue="10" Exp="10">
+							<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+						</Award>
+					</KillAward>
+				</General>
+				<General Index="2" GerneralId="142" GeneralName="士兵1" AddHp="-1" SpellList="1;2;3;4">
+					<!--杀死武将掉落-->
+					<KillAward>
+						<Award TongQian="10" EnergyValue="10" Exp="10">
+							<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+						</Award>
+					</KillAward>
+				</General>
+				<General Index="3" GerneralId="143" GeneralName="士兵1" AddHp="-1" SpellList="1;2;3;4">
+					<!--杀死武将掉落-->
+					<KillAward>
+						<Award TongQian="10" EnergyValue="10" Exp="10">
+							<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+						</Award>
+					</KillAward>
+				</General>
+				<!--过关奖励-->
+				<FinishRoundAward>
+					<Award TongQian="10" EnergyValue="10" Exp="10">
+						<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+					</Award>
+				</FinishRoundAward>
+			</RoundItem>
+			<RoundItem SubID="2" Name="" Desc="">
+				<!--武将-->
+				<General Index="1" GerneralId="141" GeneralName="士兵1" AddHp="-1" SpellList="1;2;3;4">
+					<!--杀死武将掉落-->
+					<KillAward>
+						<Award TongQian="10" EnergyValue="10" Exp="10">
+							<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+						</Award>
+					</KillAward>
+				</General>
+				<General Index="2" GerneralId="142" GeneralName="士兵1" AddHp="-1" SpellList="1;2;3;4">
+					<!--杀死武将掉落-->
+					<KillAward>
+						<Award TongQian="10" EnergyValue="10" Exp="10">
+							<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+						</Award>
+					</KillAward>
+				</General>
+				<General Index="3" GerneralId="143" GeneralName="士兵1" AddHp="-1" SpellList="1;2;3;4">
+					<!--杀死武将掉落-->
+					<KillAward>
+						<Award TongQian="10" EnergyValue="10" Exp="10">
+							<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+						</Award>
+					</KillAward>
+				</General>
+				<!--过关奖励-->
+				<FinishRoundAward>
+					<Award TongQian="10" EnergyValue="10" Exp="10">
+						<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+					</Award>
+				</FinishRoundAward>
+			</RoundItem>
+		</InstanceItem>
+		<InstanceItem InstanceID="2" InstanceName="测试副本2" TryCount="10" InstanceDesc="测试副本2" UnlockCostTongQian="0" UnlockReqCompleteInstance="" EnterReqGeneralLevel="[min-0][max-100]">
+			<!--通关奖励-->
+			<FinishAward>
+				<Award TongQian="10" EnergyValue="10" Exp="10">
+					<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+				</Award>
+			</FinishAward>
+			<!--关卡信息-->
+			<RoundItem SubID="1" Name="" Desc="">
+				<!--武将-->
+				<General Index="1" GerneralId="141" GeneralName="士兵1" AddHp="-1" SpellList="1;2;3;4">
+					<!--杀死武将掉落-->
+					<KillAward>
+						<Award TongQian="10" EnergyValue="10" Exp="10">
+							<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+						</Award>
+					</KillAward>
+				</General>
+				<General Index="2" GerneralId="142" GeneralName="士兵1" AddHp="-1" SpellList="1;2;3;4">
+					<!--杀死武将掉落-->
+					<KillAward>
+						<Award TongQian="10" EnergyValue="10" Exp="10">
+							<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+						</Award>
+					</KillAward>
+				</General>
+				<General Index="3" GerneralId="143" GeneralName="士兵1" AddHp="-1" SpellList="1;2;3;4">
+					<!--杀死武将掉落-->
+					<KillAward>
+						<Award TongQian="10" EnergyValue="10" Exp="10">
+							<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+						</Award>
+					</KillAward>
+				</General>
+				<!--过关奖励-->
+				<FinishRoundAward>
+					<Award TongQian="10" EnergyValue="10" Exp="10">
+						<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+					</Award>
+				</FinishRoundAward>
+			</RoundItem>
+			<RoundItem SubID="2" Name="" Desc="">
+				<!--武将-->
+				<General Index="1" GerneralId="141" GeneralName="士兵1" AddHp="-1" SpellList="1;2;3;4">
+					<!--杀死武将掉落-->
+					<KillAward>
+						<Award TongQian="10" EnergyValue="10" Exp="10">
+							<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+						</Award>
+					</KillAward>
+				</General>
+				<General Index="2" GerneralId="142" GeneralName="士兵1" AddHp="-1" SpellList="1;2;3;4">
+					<!--杀死武将掉落-->
+					<KillAward>
+						<Award TongQian="10" EnergyValue="10" Exp="10">
+							<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+						</Award>
+					</KillAward>
+				</General>
+				<General Index="3" GerneralId="143" GeneralName="士兵1" AddHp="-1" SpellList="1;2;3;4">
+					<!--杀死武将掉落-->
+					<KillAward>
+						<Award TongQian="10" EnergyValue="10" Exp="10">
+							<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+						</Award>
+					</KillAward>
+				</General>
+				<!--过关奖励-->
+				<FinishRoundAward>
+					<Award TongQian="10" EnergyValue="10" Exp="10">
+						<AwardItem ItemId="100104" Count="10" Probability="1000"/>
+					</Award>
+				</FinishRoundAward>
+			</RoundItem>
+		</InstanceItem>
+	</AllInstance>
+</GameInstance>

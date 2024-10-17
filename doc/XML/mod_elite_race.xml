@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	赛事id
+			channel_id	-	渠道id
+			name	-	比赛名称
+			optionRewardList4	-	精英赛排名奖励展示
+			startTime	-	比赛创建时间
+			startTime2	-	报名锁定时间
+			Publicity2	-	邀请结束时间
+			Publicity3	-	比赛开始时间
+			endTime	-	结束时间
+			ShowTime	-	展示时间，超过则不显示
+			signupGoods	-	报名道具-只能是实体道具，不能是货币（元宝购买）
+			maxNum	-	最大报名人数
+			model	-	比赛的模式
+			section	-	模式section
+			ErrorTip	-	门票不足提示
+			ResourceBG	-	U3D赛事入口背景
+			modeldec	-	模式说明
+			Mode_tips1	-	模式上方文字说明
+			Mode_tips2	-	模式下方文字说明
+			barrage	-	每十秒弹幕上限
+			gift	-	每十秒送礼上限
+		-->
+	<scale id="20" name="精英赛" startTime="20240608T000000" startTime2="20240708T000000" Publicity2="20240710T000000" Publicity3="20240712T000000" endTime="20240728T230000" signupGoods="8230301" maxNum="16" model="163" section="3">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			turnid	-	对应轮次
+			turnnum	-	对应序号（左侧从上到下为1-N，然后右侧从上到下由N+1开始）
+			time	-	进行时间，比赛准备结束后N小时；N分钟；N秒后开始
+			allrace	-	总局数（5局三胜，7局四胜）
+			forceTime	-	每局比赛强制开启间隔
+			livestream	-	是否直播（1=是）
+			timelate	-	直播延时
+			-->
+		<course turnid="1" turnnum="1" time="20240714T180000" allrace="5" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="1" turnnum="2" time="20240714T200000" allrace="5" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="1" turnnum="3" time="20240716T180000" allrace="5" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="1" turnnum="4" time="20240716T200000" allrace="5" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="1" turnnum="5" time="20240718T180000" allrace="5" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="1" turnnum="6" time="20240718T200000" allrace="5" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="1" turnnum="7" time="20240720T180000" allrace="5" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="1" turnnum="8" time="20240720T200000" allrace="5" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="2" turnnum="1" time="20240722T180000" allrace="7" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="2" turnnum="2" time="20240722T200000" allrace="7" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="2" turnnum="3" time="20240724T180000" allrace="7" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="2" turnnum="4" time="20240724T200000" allrace="7" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="3" turnnum="1" time="20240726T180000" allrace="7" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="3" turnnum="2" time="20240726T200000" allrace="7" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="4" turnnum="1" time="20240728T200000" allrace="9" forceTime="300" livestream="1" timelate="300" />
+	</scale>
+	<scale id="21" name="精英赛" startTime="20240608T000000" startTime2="20240708T000000" Publicity2="20240710T000000" Publicity3="20240712T000000" endTime="20240728T230000" signupGoods="8230301" maxNum="16" model="163" section="3">
+		<course turnid="1" turnnum="1" time="20240714T180000" allrace="5" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="1" turnnum="2" time="20240714T200000" allrace="5" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="1" turnnum="3" time="20240716T180000" allrace="5" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="1" turnnum="4" time="20240716T200000" allrace="5" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="1" turnnum="5" time="20240718T180000" allrace="5" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="1" turnnum="6" time="20240718T200000" allrace="5" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="1" turnnum="7" time="20240720T180000" allrace="5" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="1" turnnum="8" time="20240720T200000" allrace="5" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="2" turnnum="1" time="20240722T180000" allrace="7" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="2" turnnum="2" time="20240722T200000" allrace="7" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="2" turnnum="3" time="20240724T180000" allrace="7" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="2" turnnum="4" time="20240724T200000" allrace="7" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="3" turnnum="1" time="20240726T180000" allrace="7" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="3" turnnum="2" time="20240726T200000" allrace="7" forceTime="300" livestream="1" timelate="300" />
+		<course turnid="4" turnnum="1" time="20240728T200000" allrace="9" forceTime="300" livestream="1" timelate="300" />
+	</scale>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			scaleId	-	奖励id
+			rank	-	排名下限，大于等于该名时的奖励（配置0表示比赛开始后没有产生牌局，给在线玩家发的奖励）
+			goods	-	奖励（最后不能填分号）
+				-	
+				-	
+				-
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			open	-	直播流开关（1=开，0=关）
+			maxagreement	-	每帧发送协议上限
+			phototime	-	快照时间/s
+			extravideo	-	视频流额外保留时长
+		-->
+	<scalelive open="1" maxagreement="20" phototime="60" extravideo="120" />
+</root>

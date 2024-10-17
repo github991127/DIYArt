@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			startTime	-	活动开始时间
+			endTime	-	活动结算 时间
+			startrank	-	剑阁排行榜开始时间
+			endrank	-	剑阁排行榜结算时间
+			daytime	-	每日开启结束时间
+			maxTime	-	每局最大时间
+			link	-	废弃
+			activityValueCondition	-	购买体力
+			dec	-	玩法说明
+			dec	-	玩法说明
+			Bwait	-	B类时间整体冷却期（小时）
+			GetPoint	-	首次通关武将贡献倍率
+		-->
+	<Common startTime="20240711T000000" endTime="20240724T235959" maxTime="3600" activityValueCondition="9905,7902301;9910,7902401;9915,7902501;9999,7902601" Bwait="72" GetPoint="150" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			eventId	-	事件id
+			eventBg	-	事件专属背景,填写背景ID
+			name	-	事件名称
+			pcdesc	-	PC特殊说明
+			showTitle	-	展示标题
+			show	-	特殊表现国家
+0=没有特殊表现
+1=蜀国
+2=魏国
+3=双方
+			weight	-	触发权重
+			weiExSkill	-	魏国事件技
+对玩家
+			shuExSkill	-	蜀国事件技
+对玩家
+			priority	-	触发优先级，同优先级时再按照权重触发
+			eventLevel	-	事件级别  越小越高
+			condType	-	条件类别，0=天数，1=分数比
+			profferGet	-	贡献加成
+			profferTime	-	触发后持续时间
+（小时）
+			condComp	-	比值关系， 0  相等 1   不等，2  小于，3 大于，4  小于等于， 5  大于等于。例如4，表示魏国分：蜀国分<=condParam1:condParam2
+			condParam1	-	魏国分比值;condType=0时这里填天数
+			condParam2	-	蜀国分比值
+			duration	-	触发间隔,天
+			pic	-	事件角色图片
+				-	角色备注
+			weiGeneral	-	魏国事件将
+			shuGeneral	-	蜀国事件将
+			weiGeneralSkill	-	魏国事件将，额外技能
+			shuGeneralSkill	-	蜀国事件将，额外技能
+			eventdes	-	事件描述
+			des1	-	魏国效果描述
+			des2	-	蜀国效果描述
+			des3	-	是否仅对玩家生效显示
+				-	
+				-	
+				-	
+				-	
+				-	
+				-
+		-->
+	<Event eventId="1" name="风云突变" show="3" weight="1" weiExSkill="3174" shuExSkill="3394" priority="1" eventLevel="1" condType="0" profferGet="50" profferTime="24" condComp="0" condParam1="1" condParam2="1" duration="0" />
+	<Event eventId="2" name="对峙剑阁" show="3" weight="1" weiExSkill="932" shuExSkill="944" priority="1" eventLevel="1" condType="0" profferGet="50" profferTime="24" condComp="0" condParam1="2" condParam2="1" duration="0" />
+	<Event eventId="3" name="偷渡阴平" show="3" weight="1" weiExSkill="1600" shuExSkill="765" priority="1" eventLevel="1" condType="0" profferGet="50" profferTime="24" condComp="0" condParam1="10" condParam2="1" duration="0" />
+	<Event eventId="4" name="绝地反击" show="1" weight="2" weiExSkill="872" shuExSkill="1152" priority="1" eventLevel="2" condType="1" profferGet="100" profferTime="72" condComp="5" condParam1="4" condParam2="2" duration="3" />
+	<Event eventId="5" name="短兵相接" show="2" weight="2" weiExSkill="39" shuExSkill="979" priority="1" eventLevel="2" condType="1" profferGet="100" profferTime="72" condComp="4" condParam1="2" condParam2="4" duration="3" />
+	<Event eventId="6" name="固守城邦" show="0" weight="5" weiExSkill="752" shuExSkill="31" priority="1" eventLevel="3" condType="2" profferGet="0" profferTime="0" condComp="1" condParam1="9999" condParam2="1" duration="3" shuGeneral="4342;4362;4382" shuGeneralSkill="1603;1603;1603" />
+	<Event eventId="7" name="两军相持" show="0" weight="5" weiExSkill="984" shuExSkill="33" priority="1" eventLevel="3" condType="2" profferGet="0" profferTime="0" condComp="1" condParam1="9999" condParam2="1" duration="3" shuGeneral="4346;4366;4386" shuGeneralSkill="1601;1601;1601" />
+	<Event eventId="8" name="出其不意" show="0" weight="5" weiExSkill="802" shuExSkill="37" priority="1" eventLevel="3" condType="2" profferGet="0" profferTime="0" condComp="1" condParam1="9999" condParam2="1" duration="3" shuGeneral="4347;4367;4387" shuGeneralSkill="1602;1602;1602" />
+	<Event eventId="9" name="百步九折" show="0" weight="5" weiExSkill="1005" shuExSkill="986" priority="1" eventLevel="3" condType="2" profferGet="0" profferTime="0" condComp="1" condParam1="9999" condParam2="1" duration="3" weiGeneral="4352;4372;4392" weiGeneralSkill="1605;1605;1605" />
+	<Event eventId="10" name="地崩山摧" show="0" weight="5" weiExSkill="49" shuExSkill="3091" priority="1" eventLevel="3" condType="2" profferGet="0" profferTime="0" condComp="1" condParam1="9999" condParam2="1" duration="3" weiGeneral="4356;4376;4396" weiGeneralSkill="1619;1619;1619" />
+	<Event eventId="11" name="势如破竹" show="0" weight="5" weiExSkill="923" shuExSkill="939" priority="1" eventLevel="3" condType="2" profferGet="0" profferTime="0" condComp="4" condParam1="9999" condParam2="1" duration="14" weiGeneral="4357;4377;4397" weiGeneralSkill="1606;1606;1606" />
+	<Event eventId="12" name="逐日不悔" show="0" weight="10" weiExSkill="3186" shuExSkill="301" priority="1" eventLevel="1" condType="0" profferGet="0" profferTime="0" condComp="1" condParam1="9999" condParam2="1" duration="0" weiGeneral="4428;4429;4430" shuGeneral="4431;4432;4433" weiGeneralSkill="14034;14034;14034" shuGeneralSkill="14031;14031;14031" />
+	<Event eventId="13" name="万夫莫开" show="1" weight="2" weiExSkill="295" shuExSkill="1624" priority="2" eventLevel="2" condType="1" profferGet="100" profferTime="24" condComp="5" condParam1="4" condParam2="3" duration="0" />
+	<Event eventId="14" name="兵骄将傲" show="1" weight="2" weiExSkill="221" shuExSkill="871" priority="2" eventLevel="2" condType="1" profferGet="100" profferTime="24" condComp="5" condParam1="4" condParam2="3" duration="3" />
+	<Event eventId="15" name="攻其不备" show="2" weight="2" weiExSkill="44" shuExSkill="59" priority="2" eventLevel="2" condType="1" profferGet="100" profferTime="24" condComp="4" condParam1="3" condParam2="4" duration="3" />
+	<Event eventId="16" name="虎视眈眈" show="2" weight="2" weiExSkill="130" shuExSkill="800" priority="2" eventLevel="2" condType="1" profferGet="100" profferTime="24" condComp="4" condParam1="3" condParam2="4" duration="3" />
+	<Event eventId="17" name="截粮断辎" show="0" weight="5" weiExSkill="930" shuExSkill="925" priority="1" eventLevel="3" condType="2" profferGet="0" profferTime="0" condComp="1" condParam1="9999" condParam2="1" duration="3" />
+	<Event eventId="18" name="侧翼迂回" show="0" weight="5" weiExSkill="941" shuExSkill="854" priority="1" eventLevel="3" condType="2" profferGet="0" profferTime="0" condComp="1" condParam1="9999" condParam2="1" duration="3" />
+	<Event eventId="19" name="志犹不悔" show="0" weight="10" weiExSkill="273" shuExSkill="818" priority="1" eventLevel="3" condType="2" profferGet="0" profferTime="0" condComp="1" condParam1="9999" condParam2="1" duration="3" weiGeneral="4704;4704;4704" shuGeneral="4705;4705;4705" weiGeneralSkill="1627;1627;1627" shuGeneralSkill="1630;1630;1630" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	难度    
+0 - 普通  1 - 进阶  2 - 困难
+			firstTurnRole	-	先手座位
+			bossRankCfg	-	敌方英灵等阶权重
+			UsbossRankCfg	-	我方英灵等阶权重
+			monsterRankCfg	-	敌方器械等阶权重
+			UsmonsterRankCfg	-	我方器械等阶权重
+			passRewards	-	通关宝箱的奖励
+			winScore	-	胜利获得贡献
+从左到右依次为
+杀0个、1个、2个、3个、4个敌方
+			loseScore	-	战败获得贡献
+			desc	-	难度描述
+			unlocktips	-	解锁条件
+			leveltips	-	难度奖励描述
+		-->
+	<Difficulty id="0" firstTurnRole="0" bossRankCfg="0,2;1,0;2,0;3,0;4,0" UsbossRankCfg="0,2;1,0;2,0;3,0;4,0" monsterRankCfg="0,1;1,0;2,0;3,0;4,0" UsmonsterRankCfg="0,2;1,0;2,0;3,0;4,0" passRewards="8196301,1" winScore="2,4,6,8,10" loseScore="1" />
+	<Difficulty id="1" firstTurnRole="0" bossRankCfg="0,0;1,2;2,3;3,3;4,0" UsbossRankCfg="0,2;1,0;2,0;3,0;4,0" monsterRankCfg="0,2;1,1;2,0;3,0;4,0" UsmonsterRankCfg="0,2;1,0;2,0;3,0;4,0" passRewards="8196401,1" winScore="4,7,10,13,16" loseScore="2" />
+	<Difficulty id="2" firstTurnRole="0" bossRankCfg="0,0;1,0;2,2;3,3;4,3" UsbossRankCfg="0,2;1,0;2,0;3,0;4,0" monsterRankCfg="0,0;1,0;2,1;3,0;4,0" UsmonsterRankCfg="0,2;1,0;2,0;3,0;4,0" passRewards="8196501,1" winScore="6,10,14,18,22" loseScore="3" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			grace	-	积分奖励，按结算关系顺序填
+			glory	-	贡献奖励
+		-->
+	<Calc grace="0,8,20,22,24,26,30" glory="0,1,4,5,6,8,10" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			country	-	国家
+			difficulty	-	对应难度
+			subFigure	-	1   英灵 2 器械
+			idList	-	选将列表填武将id-新的几个没有配
+				-	
+				-	
+				-	
+				-	
+				-	
+				-	
+				-	
+				-	
+				-
+		-->
+	<RobotGeneralList country="1" difficulty="0" subFigure="1" idList="4352,4353,4354,4355,4356,4357,4428,4704" />
+	<RobotGeneralList country="1" difficulty="0" subFigure="2" idList="4358,4359,4360,4361" />
+	<RobotGeneralList country="2" difficulty="0" subFigure="1" idList="4342,4343,4344,4345,4346,4347,4431,4705" />
+	<RobotGeneralList country="2" difficulty="0" subFigure="2" idList="4348,4349,4350,4351" />
+	<RobotGeneralList country="1" difficulty="1" subFigure="1" idList="4372,4373,4374,4375,4376,4377,4429,4704" />
+	<RobotGeneralList country="1" difficulty="1" subFigure="2" idList="4378,4379,4380,4381" />
+	<RobotGeneralList country="2" difficulty="1" subFigure="1" idList="4362,4363,4364,4365,4366,4367,4432,4705" />
+	<RobotGeneralList country="2" difficulty="1" subFigure="2" idList="4368,4369,4370,4371" />
+	<RobotGeneralList country="1" difficulty="2" subFigure="1" idList="4392,4393,4394,4395,4396,4397,4430,4704" />
+	<RobotGeneralList country="1" difficulty="2" subFigure="2" idList="4398,4399,4400,4401" />
+	<RobotGeneralList country="2" difficulty="2" subFigure="1" idList="4382,4383,4384,4385,4386,4387,4431,4705" />
+	<RobotGeneralList country="2" difficulty="2" subFigure="2" idList="4388,4389,4390,4391" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	等阶
+（整个页签废弃，现在都走hd_all_active表）
+			addHp	-	额外体力
+			addFirstCard	-	添加初始手牌数
+			exSkills	-	额外技能ID
+			desc	-	描述
+		-->
+	<GeneralRankPriv rank="0" addHp="0" addFirstCard="0" desc="无" />
+	<GeneralRankPriv rank="1" addHp="1" addFirstCard="0" exSkills="1359" desc="开局随机使用装备牌" />
+	<GeneralRankPriv rank="2" addHp="1" addFirstCard="1" exSkills="1359;1356" desc="开局随机使用装备牌；出杀次数+1" />
+	<GeneralRankPriv rank="3" addHp="2" addFirstCard="2" exSkills="1359;1356;1357" desc="开局随机使用装备牌；出杀次数+1；摸牌数+1" />
+	<GeneralRankPriv rank="4" addHp="2" addFirstCard="2" exSkills="1359;1356;1357;1355" desc="开局随机使用装备牌；出杀次数+1；摸牌数+1；获得技能【涅槃】回3摸3复原武将牌" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	BOSS等阶
+（整个页签废弃，现在都走hd_all_active表）
+			addHp	-	额外体力
+			addFirstCard	-	初始卡牌
+			exSkills	-	额外的技能ID
+			desc	-	我方描述
+			desc2	-	敌方描述
+		-->
+	<BossRankPriv rank="0" addHp="1" addFirstCard="0" desc="无" desc2="无" />
+	<BossRankPriv rank="1" addHp="2" addFirstCard="1" exSkills="1359" desc="开局随机使用装备牌" desc2="开局随机使用装备牌" />
+	<BossRankPriv rank="2" addHp="2" addFirstCard="1" exSkills="1359;1356" desc="开局随机使用装备牌；出杀次数+1" desc2="开局随机使用装备牌；出杀次数+2" />
+	<BossRankPriv rank="3" addHp="3" addFirstCard="2" exSkills="1359;1356;1357" desc="开局随机使用装备牌；出杀次数+1；摸牌数+1" desc2="开局随机使用装备牌；出杀次数+2；摸牌数+2" />
+	<BossRankPriv rank="4" addHp="3" addFirstCard="2" exSkills="1359;1356;1357" desc="开局随机使用装备牌；出杀次数+1；摸牌数+1" desc2="开局随机使用装备牌；出杀次数+2；摸牌数+2" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	等阶
+（整个页签废弃，现在都走hd_all_active表）
+			addHp	-	额外体力
+			addFirstCard	-	添加初始手牌数
+			exSkills	-	附加技能
+			desc	-	描述
+		-->
+	<ToolRankPriv rank="0" addHp="1" addFirstCard="0" desc="无" />
+	<ToolRankPriv rank="1" addHp="1" addFirstCard="1" exSkills="1359" desc="开局随机使用装备牌" />
+	<ToolRankPriv rank="2" addHp="2" addFirstCard="1" exSkills="1359;1356" desc="开局随机使用装备牌；出杀次数+1" />
+	<ToolRankPriv rank="3" addHp="2" addFirstCard="2" exSkills="1359;1356;1357" desc="开局随机使用装备牌；出杀次数+1；摸牌数+1" />
+	<ToolRankPriv rank="4" addHp="2" addFirstCard="2" exSkills="1359;1356;1357" desc="开局随机使用装备牌；出杀次数+1；摸牌数+1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	特定ID
+			requireScore	-	所需积分
+			requireGoodsBaseId	-	所需道具
+			goodslist	-	对应奖励
+			good	-	特殊奖励外发光
+		-->
+	<Reward Id="1" requireScore="100" requireGoodsBaseId="0" goodslist="1184701,10;" />
+	<Reward Id="2" requireScore="100" requireGoodsBaseId="7910901" goodslist="7033701,1;" />
+	<Reward Id="3" requireScore="300" requireGoodsBaseId="0" goodslist="1184701,10;" />
+	<Reward Id="4" requireScore="300" requireGoodsBaseId="7910901" goodslist="1184701,100;" />
+	<Reward Id="5" requireScore="500" requireGoodsBaseId="0" goodslist="1184701,10;" />
+	<Reward Id="6" requireScore="500" requireGoodsBaseId="7910901" goodslist="1184701,100;" />
+	<Reward Id="7" requireScore="700" requireGoodsBaseId="0" goodslist="1184701,10;" />
+	<Reward Id="8" requireScore="700" requireGoodsBaseId="7910901" goodslist="1184701,100;" />
+	<Reward Id="9" requireScore="900" requireGoodsBaseId="0" goodslist="1184701,10;" />
+	<Reward Id="10" requireScore="900" requireGoodsBaseId="7910901" goodslist="1184701,100;" />
+	<Reward Id="11" requireScore="1100" requireGoodsBaseId="0" goodslist="1184701,10;" />
+	<Reward Id="12" requireScore="1100" requireGoodsBaseId="7910901" goodslist="1184701,100;" />
+	<Reward Id="13" requireScore="1300" requireGoodsBaseId="0" goodslist="1184701,10;" />
+	<Reward Id="14" requireScore="1300" requireGoodsBaseId="7910901" goodslist="1184701,100;" />
+	<Reward Id="15" requireScore="1500" requireGoodsBaseId="0" goodslist="1184701,10;" />
+	<Reward Id="16" requireScore="1500" requireGoodsBaseId="7910901" goodslist="1184701,100;" />
+	<Reward Id="17" requireScore="1800" requireGoodsBaseId="0" goodslist="1184701,10;" />
+	<Reward Id="18" requireScore="1800" requireGoodsBaseId="7910901" goodslist="1184701,100;" />
+	<Reward Id="19" requireScore="2100" requireGoodsBaseId="0" goodslist="1184701,10;" />
+	<Reward Id="20" requireScore="2100" requireGoodsBaseId="7910901" goodslist="1184701,100;" />
+	<Reward Id="21" requireScore="2400" requireGoodsBaseId="0" goodslist="1184701,15;" />
+	<Reward Id="22" requireScore="2400" requireGoodsBaseId="7910901" goodslist="1184701,150;" />
+	<Reward Id="23" requireScore="2700" requireGoodsBaseId="0" goodslist="1184701,15;" />
+	<Reward Id="24" requireScore="2700" requireGoodsBaseId="7910901" goodslist="1184701,150;" />
+	<Reward Id="25" requireScore="3000" requireGoodsBaseId="0" goodslist="1184701,15;" />
+	<Reward Id="26" requireScore="3000" requireGoodsBaseId="7910901" goodslist="1184701,150;" />
+	<Reward Id="27" requireScore="3300" requireGoodsBaseId="0" goodslist="1184701,15;" />
+	<Reward Id="28" requireScore="3300" requireGoodsBaseId="7910901" goodslist="1184701,150;" />
+	<Reward Id="29" requireScore="3600" requireGoodsBaseId="0" goodslist="1184701,15;" />
+	<Reward Id="30" requireScore="3600" requireGoodsBaseId="7910901" goodslist="1184701,150;" />
+	<Reward Id="31" requireScore="3900" requireGoodsBaseId="0" goodslist="1184701,15;" />
+	<Reward Id="32" requireScore="3900" requireGoodsBaseId="7910901" goodslist="1184701,150;" />
+	<Reward Id="33" requireScore="4200" requireGoodsBaseId="0" goodslist="1184701,15;" />
+	<Reward Id="34" requireScore="4200" requireGoodsBaseId="7910901" goodslist="1184701,150;" />
+	<Reward Id="35" requireScore="4500" requireGoodsBaseId="0" goodslist="1184701,15;" />
+	<Reward Id="36" requireScore="4500" requireGoodsBaseId="7910901" goodslist="1184701,150;" />
+	<Reward Id="37" requireScore="4800" requireGoodsBaseId="0" goodslist="1184701,15;" />
+	<Reward Id="38" requireScore="4800" requireGoodsBaseId="7910901" goodslist="1184701,150;" />
+	<Reward Id="39" requireScore="5100" requireGoodsBaseId="0" goodslist="1184701,15;" />
+	<Reward Id="40" requireScore="5100" requireGoodsBaseId="7910901" goodslist="1184701,150;" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank1	-	排名
+			rank2	-	排名下限
+			itmes	-	奖励-实际上是手动发给php来发邮件的
+			name	-	奖励名字-php发邮件用
+			icon	-	显示宝箱icon123档次，1最好
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	年兽id
+			reward	-	道具奖励
+			grace	-	积分奖励
+			glory	-	贡献奖励
+		-->
+	<BossReward id="4116" reward="11373301,1" grace="0;8;30" glory="0;8;20" />
+	<BossReward id="4117" reward="11373401,1" grace="0;8;35" glory="0;8;25" />
+	<BossReward id="4118" reward="11373501,1" grace="0;8;40" glory="0;8;40" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			star	-	玩家平均等阶
+			bossAppearCfg	-	每个敌方ai对应年兽出现概率
+		-->
+	<BossAppear star="0" bossAppearCfg="4116,16;4117,10;4118,4" />
+	<BossAppear star="1" bossAppearCfg="4116,13;4117,10;4118,7" />
+	<BossAppear star="2" bossAppearCfg="4116,10;4117,10;4118,10" />
+	<BossAppear star="3" bossAppearCfg="4116,7;4117,10;4118,13" />
+	<BossAppear star="4" bossAppearCfg="4116,4;4117,10;4118,16" />
+</Root>

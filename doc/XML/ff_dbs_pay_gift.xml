@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<novice_gift>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			gift_id	-	礼包id
+				-	说明
+			lv_min	-	开启等级下限
+			lv_max	-	开启等级上限
+			vip_lv	-	开启vip等级要求
+			time_limit	-	时限
+			goods_id	-	礼包奖励id
+			sorting	-	礼包排序
+			group_id	-	互斥礼包组
+			priority	-	互斥优先级
+			need_gift_id	-	要求前置购买礼包ID
+			resource	-	配图资源
+			time_need	-	激活截止时间
+			name	-	礼包名字-最多 7个字，pc在图片上，移动是文字
+			dic	-	右上角描述
+			-->
+		<gift gift_id="101" lv_min="201" lv_max="202" vip_lv="0" time_limit="10" goods_id="1918701" group_id="1" priority="9" />
+		<gift gift_id="109" lv_min="201" lv_max="202" vip_lv="0" time_limit="259200" goods_id="1917901" group_id="2" priority="8" />
+		<gift gift_id="108" lv_min="201" lv_max="202" vip_lv="0" time_limit="864000" goods_id="1918601" group_id="3" priority="7" />
+		<gift gift_id="107" lv_min="201" lv_max="202" vip_lv="0" time_limit="604800" goods_id="1918001" group_id="4" priority="6" />
+		<gift gift_id="106" lv_min="201" lv_max="202" vip_lv="0" time_limit="604800" goods_id="1918101" group_id="5" priority="5" />
+		<gift gift_id="105" lv_min="201" lv_max="202" vip_lv="0" time_limit="604800" goods_id="1918201" group_id="6" priority="4" />
+		<gift gift_id="104" lv_min="201" lv_max="202" vip_lv="0" time_limit="604800" goods_id="1918301" group_id="7" priority="3" />
+		<gift gift_id="103" lv_min="201" lv_max="202" vip_lv="0" time_limit="604800" goods_id="1918401" group_id="8" priority="2" />
+		<gift gift_id="102" lv_min="201" lv_max="202" vip_lv="0" time_limit="604800" goods_id="1918501" group_id="9" priority="1" />
+	</novice_gift>
+	<activities>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	活动id
+			kind	-	逻辑类别
+			sorting	-	排序
+			name	-	名字
+			time_b	-	开启时间
+			time_o	-	结束时间
+			bottom_kind	-	按钮类别
+			ui_id	-	前往界面编号
+			link	-	前往链接
+			goods_id	-	购买道具id
+			frame	-	活动底框级别
+			describe	-	描述
+			describe2	-	详细描述
+			gift_des	-	奖励描述
+			icon	-	活动icon，填数字就行，不用填icon_
+			-->
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	广告图id
+			platform	-	渠道限制：不填表示不限制，填yoka;1112pc 表示只有这两个渠道可以用
+			pic_id	-	资源图
+			time_b	-	开启时间
+			time_o	-	结束时间
+			bottom_kind	-	按钮类别
+			ui_id	-	前往界面编号
+			link	-	前往链接
+			goods_id	-	购买道具id
+			-->
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+		<advertising />
+	</activities>
+	<paywindow>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	弹窗id
+			name	-	名字
+			priority	-	优先级
+			time	-	间隔
+			lv_min	-	等级下限
+			lv_max	-	等级上限
+				-	条件说明
+			-->
+	</paywindow>
+	<day_gift>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			gift_id	-	右上角描述
+			item	-	对应道具id
+			original	-	礼包原价
+			name	-	礼包的名字
+			dec1	-	礼包描述1
+			dec2	-	礼包描述2
+			must	-	必得道具
+			pro	-	概率道具
+			-->
+	</day_gift>
+	<card>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ID	-	特权卡ID
+			level	-	等级限制
+			type	-	特权卡类型
+1=月卡
+2=周卡
+			last_time	-	周期
+单位：天数
+			left_time	-	结束倒计时
+单位：天
+			price_s	-	购买类型
+			reward_m	-	立即获得
+			instruction	-	Tip说明
+			duration	-	时间
+			resName	-	背景资源名
+				-	备注
+				-
+			-->
+		<card_content ID="12981101" level="16" type="1" last_time="30" left_time="7" price_s="2" reward_m="100016,3000" instruction="1、购买后30天内，需每天领取月卡福利，第二日过期后无法补领&lt;br/&gt;&#10;2、累计领取奖励达到一定天数，可获得额外大奖&lt;br/&gt;&#10;3、累计奖励天数月卡到期时清零" duration="20230223T052959,20990111T235959" resName="monthBg.png" />
+		<card_content ID="12981201" level="16" type="2" last_time="7" left_time="3" price_s="1" instruction="1、购买后7天内，每天可领取周卡福利&lt;br/&gt;&#10;2、周卡奖励需要当日领取，第二日过期后无法补领&lt;br/&gt;&#10;3、购买周卡不计入首充与消费充值奖励" duration="20230223T052959,20990111T235959" resName="weekBg.png" />
+		<card_content ID="12981501" level="16" type="3" last_time="30" left_time="7" price_s="1" reward_m="100016,3000" instruction="1、购买后30天内，需每天领取月卡福利，第二日过期后无法补领&lt;br/&gt;&#10;2、累计领取奖励达到一定天数，可获得额外大奖&lt;br/&gt;&#10;3、累计奖励天数月卡到期时清零" duration="20240515T100000,20990111T235959" resName="monthBg_1.png" />
+	</card>
+	<card_gift>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ID	-	奖励ID
+			type	-	奖励类型
+			reward_n	-	普通奖励
+goodsID,数量
+			reward_spe	-	特殊奖励
+goodsID,数量
+			day_count	-	累计天数
+				-	备注
+				-
+			-->
+		<gift_content ID="1" type="1" reward_n="100016,100" />
+		<gift_content ID="2" type="1" reward_n="100016,100" />
+		<gift_content ID="3" type="1" reward_n="100016,100" />
+		<gift_content ID="4" type="1" reward_n="100016,100" />
+		<gift_content ID="5" type="1" reward_n="100016,100" />
+		<gift_content ID="6" type="1" reward_n="100016,100" />
+		<gift_content ID="7" type="1" reward_n="100016,100" />
+		<gift_content ID="8" type="1" reward_n="100016,100" />
+		<gift_content ID="9" type="1" reward_n="100016,100" />
+		<gift_content ID="10" type="1" reward_n="100016,100" />
+		<gift_content ID="11" type="1" reward_n="100016,100" />
+		<gift_content ID="12" type="1" reward_n="100016,100" />
+		<gift_content ID="13" type="1" reward_n="100016,100" />
+		<gift_content ID="14" type="1" reward_n="100016,100" />
+		<gift_content ID="15" type="1" reward_n="100016,100" />
+		<gift_content ID="16" type="1" reward_n="100016,100" />
+		<gift_content ID="17" type="1" reward_n="100016,100" />
+		<gift_content ID="18" type="1" reward_n="100016,100" />
+		<gift_content ID="19" type="1" reward_n="100016,100" />
+		<gift_content ID="20" type="1" reward_n="100016,100" />
+		<gift_content ID="21" type="1" reward_n="100016,100" />
+		<gift_content ID="22" type="1" reward_n="100016,100" />
+		<gift_content ID="23" type="1" reward_n="100016,100" />
+		<gift_content ID="24" type="1" reward_n="100016,100" />
+		<gift_content ID="25" type="1" reward_n="100016,100" />
+		<gift_content ID="26" type="1" reward_n="100016,100" />
+		<gift_content ID="27" type="1" reward_n="100016,100" />
+		<gift_content ID="28" type="1" reward_n="100016,100" />
+		<gift_content ID="29" type="1" reward_n="100016,100" />
+		<gift_content ID="30" type="1" reward_n="100016,100" />
+		<gift_content ID="31" type="1" reward_spe="8100201,5" day_count="3" />
+		<gift_content ID="32" type="1" reward_spe="435501,1" day_count="7" />
+		<gift_content ID="33" type="1" reward_spe="1213401,1" day_count="15" />
+		<gift_content ID="34" type="1" reward_spe="1143001,1" day_count="25" />
+		<gift_content ID="1" type="2" reward_n="100016,1200" reward_spe="8100201,1" />
+		<gift_content ID="2" type="2" reward_n="100016,200" />
+		<gift_content ID="3" type="2" reward_n="100016,200" />
+		<gift_content ID="4" type="2" reward_n="100016,200" />
+		<gift_content ID="5" type="2" reward_n="100016,200" />
+		<gift_content ID="6" type="2" reward_n="100016,200" />
+		<gift_content ID="7" type="2" reward_n="100016,1500" reward_spe="435401,3" />
+		<gift_content ID="1" type="3" reward_n="100016,200" />
+		<gift_content ID="2" type="3" reward_n="100016,200" />
+		<gift_content ID="3" type="3" reward_n="100016,200" />
+		<gift_content ID="4" type="3" reward_n="100016,200" />
+		<gift_content ID="5" type="3" reward_n="100016,200" />
+		<gift_content ID="6" type="3" reward_n="100016,200" />
+		<gift_content ID="7" type="3" reward_n="100016,200" />
+		<gift_content ID="8" type="3" reward_n="100016,200" />
+		<gift_content ID="9" type="3" reward_n="100016,200" />
+		<gift_content ID="10" type="3" reward_n="100016,200" />
+		<gift_content ID="11" type="3" reward_n="100016,200" />
+		<gift_content ID="12" type="3" reward_n="100016,200" />
+		<gift_content ID="13" type="3" reward_n="100016,200" />
+		<gift_content ID="14" type="3" reward_n="100016,200" />
+		<gift_content ID="15" type="3" reward_n="100016,200" />
+		<gift_content ID="16" type="3" reward_n="100016,200" />
+		<gift_content ID="17" type="3" reward_n="100016,200" />
+		<gift_content ID="18" type="3" reward_n="100016,200" />
+		<gift_content ID="19" type="3" reward_n="100016,200" />
+		<gift_content ID="20" type="3" reward_n="100016,200" />
+		<gift_content ID="21" type="3" reward_n="100016,200" />
+		<gift_content ID="22" type="3" reward_n="100016,200" />
+		<gift_content ID="23" type="3" reward_n="100016,200" />
+		<gift_content ID="24" type="3" reward_n="100016,200" />
+		<gift_content ID="25" type="3" reward_n="100016,200" />
+		<gift_content ID="26" type="3" reward_n="100016,200" />
+		<gift_content ID="27" type="3" reward_n="100016,200" />
+		<gift_content ID="28" type="3" reward_n="100016,200" />
+		<gift_content ID="29" type="3" reward_n="100016,200" />
+		<gift_content ID="30" type="3" reward_n="100016,200" />
+		<gift_content ID="31" type="3" reward_spe="8100201,5" day_count="3" />
+		<gift_content ID="32" type="3" reward_spe="435501,1" day_count="7" />
+		<gift_content ID="33" type="3" reward_spe="1213401,1" day_count="15" />
+		<gift_content ID="34" type="3" reward_spe="1143001,1" day_count="25" />
+	</card_gift>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ID	-	累充档位
+			type	-	累充任务
+			character	-	界面中的武将图
+			charactername	-	武将名称
+			x	-	小于X值显示提示气泡
+				-	备注
+				-	
+				-	
+				-	
+				-
+		-->
+	<paygift ID="1" type="46703" />
+	<paygift ID="2" type="82000" />
+	<paygift ID="3" type="82001" />
+	<paygift ID="4" type="82002" />
+	<paygift ID="5" type="82003" />
+	<paygift ID="6" type="82004" />
+	<paygift ID="7" type="82005" />
+	<paygift ID="8" type="82006" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ID	-	活动期数
+			GoodsID	-	活动激活道具
+			Tab	-	所属页签
+			Name	-	活动期数
+			duration	-	时间
+			duration2	-	购买截至时间
+			resName	-	背景资源名
+			Price	-	直购价格（RMB）
+			Des1	-	活动规则
+			Des2	-	活动描述
+			Des3	-	大奖描述
+				-	备注
+		-->
+	<SignIn ID="1" GoodsID="12981301" duration="20230223T052959,20230311T235959" duration2="20230223T052959,20230311T235959" Price="1">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Days	-	签到天数
+			Reward	-	签到奖励
+			Count	-	奖励数量
+			-->
+		<Rewards Days="1" Reward="1213201" Count="1" />
+		<Rewards Days="2" Reward="435401" Count="1" />
+		<Rewards Days="3" Reward="8100201" Count="1" />
+		<Rewards Days="4" Reward="100401" Count="1" />
+		<Rewards Days="5" Reward="8100401" Count="1" />
+		<Rewards Days="6" Reward="1143001" Count="1" />
+		<Rewards Days="7" Reward="11503101" Count="1" />
+	</SignIn>
+	<SignIn ID="6" GoodsID="12981401" duration="20240712T190000,20240727T235959" duration2="20240712T190000,20240721T235958" Price="1">
+		<Rewards Days="1" Reward="1142901" Count="1" />
+		<Rewards Days="2" Reward="13500101" Count="1" />
+		<Rewards Days="3" Reward="435401" Count="1" />
+		<Rewards Days="4" Reward="112301" Count="2" />
+		<Rewards Days="5" Reward="13500101" Count="1" />
+		<Rewards Days="6" Reward="8100201" Count="1" />
+		<Rewards Days="7" Reward="2260701" Count="1" />
+	</SignIn>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ID	-	活动期数
+			Tab	-	所属页签
+			Name	-	活动期数
+			duration	-	时间
+			resName	-	背景资源名
+			Des1	-	活动规则
+			SpDay	-	突出展示日期
+				-	备注
+		-->
+	<SignInFixedDay ID="1" duration="20240223T052959,20240624T235959">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Date	-	签到日期
+			Reward	-	签到奖励
+			Count	-	奖励数量
+			-->
+		<Rewards2 Date="20240530" Reward="1213201" Count="1" />
+		<Rewards2 Date="20240619" Reward="435401" Count="1" />
+		<Rewards2 Date="20240620" Reward="8100201" Count="1" />
+		<Rewards2 Date="20240621" Reward="100401" Count="1" />
+		<Rewards2 Date="20240622" Reward="8100401" Count="1" />
+		<Rewards2 Date="20240623" Reward="1143001" Count="1" />
+		<Rewards2 Date="20240624" Reward="11503101" Count="1" />
+	</SignInFixedDay>
+</root>

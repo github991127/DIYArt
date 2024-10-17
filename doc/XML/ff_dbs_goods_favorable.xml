@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+	baseId			物品的唯一id
+	startTime		限时特惠的开始时间
+	endTime			限时特惠的结束时间
+	yuanbao			元宝价格
+	tongqian		银两价格			yuanbao 和 tongqian 是可选的，但必须填一个..
+	mark      		有这个字段表示删除这条特惠信息。
+					发布出去的优惠信息在endTime 小于当前时间 后可以删除。
+					否则必须使用mark标志来删除.
+					银两武将需配在礼包内 TypeID=26
+					
+-->
+<root>
+	 <Item baseId="904301" name="曹丕" startTime="20190425T000000" endTime="20190429T235959" yuanbao="600"/>
+	 <Item baseId="904901" name="鲁肃" startTime="20190425T000000" endTime="20190429T235959" yuanbao="1500"/>
+	 <Item baseId="905001" name="张郃" startTime="20190425T000000" endTime="20190429T235959" yuanbao="1600"/>
+	 <Item baseId="905501" name="张昭张纮" startTime="20190425T000000" endTime="20190429T235959" yuanbao="1800"/>
+	 <Item baseId="915301" name="陈宫" startTime="20190425T000000" endTime="20190429T235959" yuanbao="1600"/>
+	 <Item baseId="916101" name="张春华" startTime="20190425T000000" endTime="20190429T235959" yuanbao="1600"/>
+	 <Item baseId="915901" name="徐庶" startTime="20190425T000000" endTime="20190429T235959" yuanbao="500"/>
+	 <Item baseId="916301" name="王异" startTime="20190425T000000" endTime="20190429T235959" yuanbao="1800"/>
+	 <Item baseId="916801" name="步练师" startTime="20190425T000000" endTime="20190429T235959" yuanbao="1800"/>
+	 <Item baseId="916401" name="荀攸" startTime="20190425T000000" endTime="20190429T235959" yuanbao="1850"/>
+	 <Item baseId="917401" name="曹冲" startTime="20190425T000000" endTime="20190429T235959" yuanbao="2200"/>
+	 <Item baseId="917701" name="关平" startTime="20190425T000000" endTime="20190429T235959" yuanbao="2000"/>
+	 <Item baseId="917901" name="刘封" startTime="20190425T000000" endTime="20190429T235959" yuanbao="2000"/>
+	 <Item baseId="917601" name="满宠" startTime="20190425T000000" endTime="20190429T235959" yuanbao="2200"/>
+	 <Item baseId="917801" name="简雍" startTime="20190425T000000" endTime="20190429T235959" yuanbao="2300"/>
+	 <Item baseId="918101" name="虞翻" startTime="20190425T000000" endTime="20190429T235959" yuanbao="2100"/>
+	 <Item baseId="918401" name="李儒" startTime="20190425T000000" endTime="20190429T235959" yuanbao="2200"/>
+	 <Item baseId="911401" name="曹洪" startTime="20190425T000000" endTime="20190429T235959" yuanbao="1600"/>
+
+</root>

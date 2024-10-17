@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	login_from_req 统计的loginfrom
+	max_day			多少天之后发邮件奖励				(天)
+	max_read_day	服务器向前追溯多少天查询发奖数据	(天)
+	timeout_day		新兵数据在redis中发奖后的过期时间	(天)
+	timeout_error_day	发奖未全部完成的过期时间		(天)		
+	<ScoreRule>
+	score			每触发一次加的分数
+	max_score		每天上限
+	space_second	在线时长多少时间统计一次..
+	</ScoreRule>
+	<Robot>
+	</Robot>
+	<Mail>
+		title 邮件标题
+		content	邮件内容	$RANK$ 程序替换为排名  $GIFTSNAME$ 替换为 reward中配置的name
+		fromacc	发件人
+		keeptime	邮件保存时间 (秒)
+	</Mail>
+--> 
+
+<Config open="1" begin_time="0" end_time="20231205T235959" login_from_req="1052,1053,1054,0" max_day="7" timeout_day = "30" max_read_day="10" timeout_error_day = "100">
+	
+	<ScoreRule RoleCreateTimeBegin="20160802T000000" RoleCreateTimeEnd="0">
+		<LevelUp key = "1" score="10" max_level="40"/>
+		<OpenGeneral key = "2" score="20"/>
+		<WinGame  key = "5" score="20" max_score="100"/>
+		<Online  key = "6" score="2" max_score="20" space_second="600"/>
+	</ScoreRule>
+
+
+
+	<Reward>
+		<Item rank="[min-0][max-10]" reward="1216301,1" name="新手排行金宝箱"/>
+		<Item rank="[min-11][max-50]" reward="1216401,1" name="新手排行银宝箱"/>
+		<Item rank="[min-51][max-100]" reward="1216501,1" name="新手排行铜宝箱"/>
+		<Item rank="[min-101][max-200]" reward="1216601,1" name="新手排行木宝箱"/>
+		<Item rank="[min-201][max-500]" reward="1216701,1" name="排名宝箱（200-500）"/>
+		<Item rank="[min-501][max-1000]" reward="1216801,1" name="排名宝箱（501-1000）"/>
+		<Item rank="[min-1001][max-10000000]" reward="1216901,1" name="排名宝箱1000名以上"/>
+	</Reward>
+	
+	<Robot>
+		<Item score="100" count="50"/>
+		<Item score="150" count="50"/>
+		<Item score="200" count="50"/>
+		<Item score="250" count="50"/>
+		<Item score="300" count="50"/>
+		<Item score="350" count="50"/>
+		<Item score="400" count="50"/>
+		<Item score="450" count="50"/>
+		<Item score="500" count="50"/>
+		<Item score="550" count="50"/>
+		<Item score="600" count="50"/>
+		<Item score="650" count="50"/>
+		<Item score="700" count="50"/>
+		<Item score="750" count="50"/>
+		<Item score="800" count="50"/>
+		<Item score="850" count="50"/>
+		<Item score="900" count="50"/>
+		<Item score="950" count="50"/>
+		<Item score="1000" count="50"/>
+	</Robot>
+	<!--邮件内容配置 $RANK$ 程序替换为排名  $GIFTSNAME$ 替换为 reward中配置的name  keeptime 邮件保存时间-->
+	<Mail title="新手排行奖励发放" content="恭喜您在新手排行榜中获得了$RANK$名的成绩，排名奖励为$GIFTSNAME$。您可以继续体验各种模式的玩法，同时完成篇章获得大量奖励！" fromacc="" keeptime="864000"/>
+</Config>

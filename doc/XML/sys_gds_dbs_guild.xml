@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<GuildMailCfg>
+	  <KickMailMsg title="离开公会通知" content="您已被$KICK$请出公会$GUILD$"/>
+	  <DismissMailMsg title="离开公会通知" content="由于公会解散，您已离开公会$GUILD$"/>
+	</GuildMailCfg>
+	<field_desc>
+		<说明>GuildCreateCondition 创建公会条件</说明>
+		<CreaterLevel>创建人最小等级</CreaterLevel>
+		<TongQian>消耗铜钱(作废，现只扣道具)</TongQian>
+		<ItemId>需要道具id103601</ItemId>
+	</field_desc>
+	<GuildCreateCondition>
+		<CreaterLevel>50</CreaterLevel>
+		<TongQian>500000</TongQian>
+		<ItemId>103601</ItemId>
+		<JoinLevel>25</JoinLevel>
+		<ActivityJundianOnece>1</ActivityJundianOnece> 
+		<ActivityJundianMax>120</ActivityJundianMax> 
+		<ActivityChatOnece>2</ActivityChatOnece> 
+		<ActivityChatMax>20</ActivityChatMax> 
+		<ActivityLeiguOnece>5</ActivityLeiguOnece> 
+		<ActivityLeiguMax>50</ActivityLeiguMax>
+		<ActivityQuestOnece>10</ActivityQuestOnece>
+		<ActivityQuestMax>30</ActivityQuestMax> 
+		<IsNewOpen>1</IsNewOpen> 		
+	</GuildCreateCondition>
+		
+	<field_desc>
+		<说明>GuildHonor 公会贡献值配置</说明>
+		<AddHonorGameCntByDay>成员每天加荣誉值的游戏场次</AddHonorGameCntByDay>
+    		<NewMemDonateDelayHonor>新成员捐献延时，给公会加荣誉延时，单位小时</NewMemDonateDelayHonor>
+	</field_desc>
+	<GuildHonor>
+		<AddHonorGameCntByDay>0</AddHonorGameCntByDay>
+    		<NewMemDonateDelayHonor>24</NewMemDonateDelayHonor>
+	</GuildHonor>
+
+  <field_desc>
+    <说明>GuildDonate 公会捐献配置</说明>
+    <goodsId>物品id</goodsId>
+    <honor1>第一次捐献获得的荣誉值</honor1>
+    <guildMoney1>第一次捐献获得的资金</guildMoney1>
+    <honorThresholdTimes>荣誉值达到阈值的捐献次数</honorThresholdTimes>
+    <guildMoneyThreshold>资金阈值</guildMoneyThreshold>
+	<max_time>银两最大击鼓次数</max_time>
+  </field_desc>
+  <GuildDonate>
+    <Item goodsId="950101" honor1="12" guildMoney1="1" max_time="3" honorThresholdTimes="4" guildMoneyThreshold="1" />
+    <Item goodsId="950201" honor1="30" guildMoney1="6" max_time="99999" honorThresholdTimes="4" guildMoneyThreshold="1" />
+    <Item goodsId="950301" honor1="300" guildMoney1="60" max_time="99999" honorThresholdTimes="4" guildMoneyThreshold="1" />
+  </GuildDonate>
+
+  <field_desc>
+    <说明>GuildDismiss 公会解散配置</说明>
+    <AutoStartCheckDays>从创建到开始检查自动解散的时间间隔</AutoStartCheckDays>
+    <AutoLessMemberCnt>少于这个成员个数开始自动解散</AutoLessMemberCnt>
+    <AutoLessGuildMoney>或者公会资金少于这个开始自动解散</AutoLessGuildMoney>
+    <AutoDismissDelayDays>自动解散缓冲天数</AutoDismissDelayDays>
+    <ManualDismissDelayDays>手动解散缓冲天数</ManualDismissDelayDays>
+  </field_desc>
+  <GuildDismiss>
+    <AutoStartCheckDays>60</AutoStartCheckDays>
+    <AutoLessMemberCnt>5</AutoLessMemberCnt>
+    <AutoLessGuildMoney>0</AutoLessGuildMoney>
+    <AutoDismissDelayDays>14</AutoDismissDelayDays>
+    <ManualDismissDelayDays>4</ManualDismissDelayDays>
+  </GuildDismiss>
+
+  <field_desc>
+    <说明>GuildDonatePrize 公会上周捐献领奖配置</说明>
+    <lastWeekMinGMoney>上周公会获得的捐献资金</lastWeekMinGMoney>
+    <pos>上周玩家捐献名次</pos>
+    <goodsId>奖励宝箱id</goodsId>
+  </field_desc>
+  <GuildDonatePrize>
+    <Item lastWeekMinGMoney="1">
+      <Rank pos="1" goodsId="431301" />
+      <Rank pos="2" goodsId="431401" />
+      <Rank pos="3" goodsId="431501" />
+    </Item>
+    <Item lastWeekMinGMoney="100">
+      <Rank pos="1" goodsId="431601" />
+      <Rank pos="2" goodsId="431701" />
+      <Rank pos="3" goodsId="431801" />
+    </Item>
+    <Item lastWeekMinGMoney="200">
+      <Rank pos="1" goodsId="431901" />
+      <Rank pos="2" goodsId="432001" />
+      <Rank pos="3" goodsId="432101" />
+    </Item>
+    <Item lastWeekMinGMoney="300">
+      <Rank pos="1" goodsId="432201" />
+      <Rank pos="2" goodsId="432301" />
+      <Rank pos="3" goodsId="432401" />
+    </Item>
+    <Item lastWeekMinGMoney="500">
+      <Rank pos="1" goodsId="432501" />
+      <Rank pos="2" goodsId="432601" />
+      <Rank pos="3" goodsId="432701" />
+    </Item>
+    <Item lastWeekMinGMoney="800">
+      <Rank pos="1" goodsId="432801" />
+      <Rank pos="2" goodsId="432901" />
+      <Rank pos="3" goodsId="433001" />
+    </Item>
+  </GuildDonatePrize>
+	
+	<field_desc>
+		<说明>GuildLevelCfg 公会不同等级配置</说明>
+		<level>公会等级 必须从低到高配置</level>
+		<needHonor>需要荣誉值</needHonor>
+		<needMoney>需要扣除的银两</needMoney>
+		<needMemberCnt>需要达到的成员人数</needMemberCnt>
+		<maxMemberCount>最大人数</maxMemberCount>
+		<GuildHonorMaxByDay>公会每日荣誉值上限</GuildHonorMaxByDay>
+		<MemberHonorMaxByDay>成员每日荣誉值上限</MemberHonorMaxByDay>
+		<shopItems>公会商店物品配置</shopItems>
+	</field_desc>
+	<GuildLevelCfg>
+		<Guild level="1" needHonor="6600" needMoney="180" needMemberCnt="1" maxMemberCount="20" GuildHonorMaxByDay="999999" MemberHonorMaxByDay="999999" shopItems="" JoinLimitPerMonth="240"/>
+		<Guild level="2" needHonor="6270" needMoney="180" needMemberCnt="1" maxMemberCount="35" GuildHonorMaxByDay="999999" MemberHonorMaxByDay="999999" shopItems="" JoinLimitPerMonth="240"/>
+		<Guild level="3" needHonor="24640" needMoney="735" needMemberCnt="1" maxMemberCount="50" GuildHonorMaxByDay="999999" MemberHonorMaxByDay="999999" shopItems="" JoinLimitPerMonth="240"/>
+		<Guild level="4" needHonor="72600" needMoney="2250" needMemberCnt="1" maxMemberCount="70" GuildHonorMaxByDay="999999" MemberHonorMaxByDay="999999" shopItems="" JoinLimitPerMonth="240"/>
+		<Guild level="5" needHonor="171600" needMoney="5460" needMemberCnt="1" maxMemberCount="90" GuildHonorMaxByDay="999999" MemberHonorMaxByDay="999999" shopItems="" JoinLimitPerMonth="240"/>
+		<Guild level="6" needHonor="420750" needMoney="13770" needMemberCnt="1" maxMemberCount="110" GuildHonorMaxByDay="999999" MemberHonorMaxByDay="999999" shopItems="" JoinLimitPerMonth="240"/>
+		<Guild level="7" needHonor="732600" needMoney="24420" needMemberCnt="1" maxMemberCount="135" GuildHonorMaxByDay="999999" MemberHonorMaxByDay="999999" shopItems="" JoinLimitPerMonth="240"/>
+		<Guild level="8" needHonor="1153460" needMoney="39690" needMemberCnt="1" maxMemberCount="160" GuildHonorMaxByDay="999999" MemberHonorMaxByDay="999999" shopItems="" JoinLimitPerMonth="240"/>
+		<Guild level="9" needHonor="1691360" needMoney="59520" needMemberCnt="1" maxMemberCount="185" GuildHonorMaxByDay="999999" MemberHonorMaxByDay="999999" shopItems="" JoinLimitPerMonth="240"/>
+		<Guild level="10" needHonor="2171180" needMoney="78810" needMemberCnt="1" maxMemberCount="200" GuildHonorMaxByDay="999999" MemberHonorMaxByDay="999999" shopItems="" JoinLimitPerMonth="240"/>
+		<Guild level="11" needHonor="4818000" needMoney="180000" needMemberCnt="1" maxMemberCount="220" GuildHonorMaxByDay="999999" MemberHonorMaxByDay="999999" shopItems="" JoinLimitPerMonth="240"/>
+		<Guild level="12" needHonor="7771500" needMoney="297000" needMemberCnt="1" maxMemberCount="240" GuildHonorMaxByDay="999999" MemberHonorMaxByDay="999999" shopItems="" JoinLimitPerMonth="240"/>
+	</GuildLevelCfg>
+	
+	<GuildFlags>
+		<!--type,1:旗面2:旗号-->
+		<!--need item需要填对应ID，-->
+		<!--VIP改成对应的数字-->
+		<flag id='1' type='1' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='6' type='1' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='9' type='1' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='20' type='1' needItem='440101' vip='4' des='会长vip4专属旗面' name='' index='0'/>
+		<flag id='23' type='1' needItem='440101' vip='7' des='会长vip7专属旗面' name='' index='0'/>
+		<flag id='2' type='1' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='5' type='1' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='13' type='1' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='18' type='1' needItem='440101' vip='4' des='会长vip4专属旗面' name='' index='0'/>
+		<flag id='21' type='1' needItem='440101' vip='7' des='会长vip7专属旗面' name='' index='0'/>
+		<flag id='3' type='1' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='16' type='1' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='14' type='1' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='19' type='1' needItem='440101' vip='4' des='会长vip4专属旗面' name='' index='0'/>
+		<flag id='22' type='1' needItem='440101' vip='7' des='会长vip7专属旗面' name='' index='0'/>
+		<flag id='4' type='1' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='17' type='1' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='15' type='1' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='7' type='1' needItem='440101' vip='4' des='会长vip4专属旗面' name='' index='0'/>
+		<flag id='10' type='1' needItem='440101' vip='7' des='会长vip7专属旗面' name='' index='0'/>
+		<flag id='8' type='1' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='11' type='1' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='12' type='1' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='24' type='1' needItem='440101' vip='0' des='' name='' index='0'/>
+		
+		<!--type,1:旗面2:旗号-->
+		<flag id='1001' type='2' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='1002' type='2' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='1003' type='2' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='1004' type='2' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='1005' type='2' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='1006' type='2' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='1009' type='2' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='1013' type='2' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='1014' type='2' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='1015' type='2' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='1017' type='2' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='1016' type='2' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='1022' type='2' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='1023' type='2' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='1024' type='2' needItem='440101' vip='0' des='' name='' index='0'/>
+		<flag id='1011' type='2' needItem='440101' vip='4' des='会长vip4专属旗号' name='' index='0'/>
+		<flag id='1018' type='2' needItem='440101' vip='4' des='会长vip4专属旗号' name='' index='0'/>
+		<flag id='1019' type='2' needItem='440101' vip='4' des='会长vip4专属旗号' name='' index='0'/>
+		<flag id='1020' type='2' needItem='440101' vip='4' des='会长vip4专属旗号' name='' index='0'/>
+		<flag id='1021' type='2' needItem='440101' vip='4' des='会长vip4专属旗号' name='' index='0'/>
+		<flag id='1007' type='2' needItem='440101' vip='7' des='会长vip7专属旗号' name='' index='0'/>
+		<flag id='1008' type='2' needItem='440101' vip='7' des='会长vip7专属旗号' name='' index='0'/>
+		<flag id='1010' type='2' needItem='440101' vip='7' des='会长vip7专属旗号' name='' index='0'/>
+		<flag id='1012' type='2' needItem='440101' vip='7' des='会长vip7专属旗号' name='' index='0'/>				
+	</GuildFlags>	
+	<field_desc>
+    <说明>GuildJobCfg 公会职位权限配置(2014.02.19新加)</说明>
+    <Job_id>职位id(注意：职位id不可变；id数值越小职位越高(除了3普通成员)); 1会长;2副会长;3普通成员;4...</Job_id>
+    <Job_name>职位默认名称</Job_name>
+    <Job_openLv>开放等级</Job_openLv>
+    <Job_defaultOpen>默认是否开启; 1开启; 2未开启</Job_defaultOpen>
+    <Authority_id>权限id(权限id不可变); 1修改公告,2修改宣言,3招募成员,4发布招募,5处理申请,6踢出公会,7职位任免,8职位编辑,9公会建设,10解散公会,11弹劾会长</Authority_id>
+    <Authority_defaultOpen>默认权限; 1有权限;0无权限</Authority_defaultOpen>
+    <Authority_modify>权限是否可以修改; 1可修改;0不可修改</Authority_modify>
+    <Level_lv>公会等级</Level_lv>
+    <Level_count>职位个数;没设置的默认职位个数为0,普通成员无限制</Level_count>
+  </field_desc>
+  <GuildJobCfg>
+    <Job id='1' name='会长' openLv='1' defaultOpen='1'>
+      <Authority id='1' defaultOpen='1' modify='0'/>
+      <Authority id='2' defaultOpen='1' modify='0'/>
+      <Authority id='3' defaultOpen='1' modify='0'/>
+      <Authority id='4' defaultOpen='1' modify='0'/>
+      <Authority id='5' defaultOpen='1' modify='0'/>
+      <Authority id='6' defaultOpen='1' modify='0'/>
+      <Authority id='7' defaultOpen='1' modify='0'/>
+      <Authority id='8' defaultOpen='1' modify='0'/>
+      <Authority id='9' defaultOpen='1' modify='0'/>
+      <Authority id='10' defaultOpen='1' modify='0'/>
+      <Authority id='11' defaultOpen='0' modify='0'/>
+      <Level lv='1' count='1'/>
+      <Level lv='2' count='1'/>
+      <Level lv='3' count='1'/>
+      <Level lv='4' count='1'/>
+      <Level lv='5' count='1'/>
+      <Level lv='6' count='1'/>
+      <Level lv='7' count='1'/>
+      <Level lv='8' count='1'/>
+      <Level lv='9' count='1'/>
+      <Level lv='10' count='1'/>
+      <Level lv='11' count='1'/>
+      <Level lv='12' count='1'/>
+    </Job>
+    <Job id='2' name='副会长' openLv='1' defaultOpen='1'>
+      <Authority id='1' defaultOpen='1' modify='1'/>
+      <Authority id='2' defaultOpen='1' modify='1'/>
+      <Authority id='3' defaultOpen='1' modify='1'/>
+      <Authority id='4' defaultOpen='1' modify='1'/>
+      <Authority id='5' defaultOpen='1' modify='1'/>
+      <Authority id='6' defaultOpen='1' modify='1'/>
+      <Authority id='7' defaultOpen='1' modify='1'/>
+      <Authority id='8' defaultOpen='0' modify='0'/>
+      <Authority id='9' defaultOpen='1' modify='1'/>
+      <Authority id='10' defaultOpen='0' modify='0'/>
+      <Authority id='11' defaultOpen='1' modify='0'/>
+      <Level lv='1' count='2'/>
+      <Level lv='2' count='2'/>
+      <Level lv='3' count='2'/>
+      <Level lv='4' count='2'/>
+      <Level lv='5' count='2'/>
+      <Level lv='6' count='3'/>
+      <Level lv='7' count='3'/>
+      <Level lv='8' count='3'/>
+      <Level lv='9' count='3'/>
+      <Level lv='10' count='3'/>
+      <Level lv='11' count='3'/>
+      <Level lv='12' count='4'/>
+    </Job>
+    <Job id='3' name='成员' openLv='1' defaultOpen='1'>
+      <Authority id='1' defaultOpen='0' modify='0'/>
+      <Authority id='2' defaultOpen='0' modify='0'/>
+      <Authority id='3' defaultOpen='0' modify='0'/>
+      <Authority id='4' defaultOpen='0' modify='0'/>
+      <Authority id='5' defaultOpen='0' modify='0'/>
+      <Authority id='6' defaultOpen='0' modify='0'/>
+      <Authority id='7' defaultOpen='0' modify='0'/>
+      <Authority id='8' defaultOpen='0' modify='0'/>
+      <Authority id='9' defaultOpen='0' modify='0'/>
+      <Authority id='10' defaultOpen='0' modify='0'/>
+      <Authority id='11' defaultOpen='1' modify='0'/>
+      <Level lv='1' count='-1'/>
+      <Level lv='2' count='-1'/>
+      <Level lv='3' count='-1'/>
+      <Level lv='4' count='-1'/>
+      <Level lv='5' count='-1'/>
+      <Level lv='6' count='-1'/>
+      <Level lv='7' count='-1'/>
+      <Level lv='8' count='-1'/>
+      <Level lv='9' count='-1'/>
+      <Level lv='10' count='-1'/>
+      <Level lv='11' count='-1'/>
+      <Level lv='12' count='-1'/>
+    </Job>
+    <Job id='4' name='新职位1' openLv='7' defaultOpen='0'>
+      <Authority id='1' defaultOpen='0' modify='1'/>
+      <Authority id='2' defaultOpen='0' modify='1'/>
+      <Authority id='3' defaultOpen='0' modify='1'/>
+      <Authority id='4' defaultOpen='0' modify='1'/>
+      <Authority id='5' defaultOpen='0' modify='1'/>
+      <Authority id='6' defaultOpen='0' modify='1'/>
+      <Authority id='7' defaultOpen='0' modify='1'/>
+      <Authority id='8' defaultOpen='0' modify='0'/>
+      <Authority id='9' defaultOpen='0' modify='0'/>
+      <Authority id='10' defaultOpen='0' modify='0'/>
+      <Authority id='11' defaultOpen='1' modify='0'/>
+      <Level lv='7' count='3'/>
+      <Level lv='8' count='4'/>
+      <Level lv='9' count='5'/>
+      <Level lv='10' count='6'/>
+      <Level lv='11' count='7'/>
+      <Level lv='12' count='8'/>
+    </Job>
+     <Job id='5' name='新职位2' openLv='6' defaultOpen='0'>
+      <Authority id='1' defaultOpen='0' modify='1'/>
+      <Authority id='2' defaultOpen='0' modify='1'/>
+      <Authority id='3' defaultOpen='0' modify='1'/>
+      <Authority id='4' defaultOpen='0' modify='1'/>
+      <Authority id='5' defaultOpen='0' modify='1'/>
+      <Authority id='6' defaultOpen='0' modify='0'/>
+      <Authority id='7' defaultOpen='0' modify='1'/>
+      <Authority id='8' defaultOpen='0' modify='0'/>
+      <Authority id='9' defaultOpen='0' modify='0'/>
+      <Authority id='10' defaultOpen='0' modify='0'/>
+      <Authority id='11' defaultOpen='1' modify='0'/>
+      <Level lv='6' count='4'/>
+      <Level lv='7' count='6'/>
+      <Level lv='8' count='8'/>
+      <Level lv='9' count='11'/>
+      <Level lv='10' count='15'/>
+      <Level lv='11' count='18'/>
+      <Level lv='12' count='20'/>
+    </Job>
+	<Job id='6' name='新职位3' openLv='5' defaultOpen='0'>
+      <Authority id='1' defaultOpen='0' modify='1'/>
+      <Authority id='2' defaultOpen='0' modify='1'/>
+      <Authority id='3' defaultOpen='0' modify='1'/>
+      <Authority id='4' defaultOpen='0' modify='1'/>
+      <Authority id='5' defaultOpen='0' modify='1'/>
+      <Authority id='6' defaultOpen='0' modify='0'/>
+      <Authority id='7' defaultOpen='0' modify='1'/>
+      <Authority id='8' defaultOpen='0' modify='0'/>
+      <Authority id='9' defaultOpen='0' modify='0'/>
+      <Authority id='10' defaultOpen='0' modify='0'/>
+      <Authority id='11' defaultOpen='1' modify='0'/>
+      <Level lv='5' count='6'/>
+      <Level lv='6' count='8'/>
+      <Level lv='7' count='11'/>
+      <Level lv='8' count='15'/>
+      <Level lv='9' count='20'/>
+      <Level lv='10' count='25'/>
+      <Level lv='11' count='30'/>
+      <Level lv='12' count='35'/>
+    </Job>
+    <Job id='7' name='新职位4' openLv='4' defaultOpen='0'>
+      <Authority id='1' defaultOpen='0' modify='1'/>
+      <Authority id='2' defaultOpen='0' modify='1'/>
+      <Authority id='3' defaultOpen='0' modify='1'/>
+      <Authority id='4' defaultOpen='0' modify='1'/>
+      <Authority id='5' defaultOpen='0' modify='1'/>
+      <Authority id='6' defaultOpen='0' modify='0'/>
+      <Authority id='7' defaultOpen='0' modify='1'/>
+      <Authority id='8' defaultOpen='0' modify='0'/>
+      <Authority id='9' defaultOpen='0' modify='0'/>
+      <Authority id='10' defaultOpen='0' modify='0'/>
+      <Authority id='11' defaultOpen='1' modify='0'/>
+      <Level lv='4' count='10'/>
+      <Level lv='5' count='13'/>
+      <Level lv='6' count='16'/>
+      <Level lv='7' count='22'/>
+      <Level lv='8' count='30'/>
+      <Level lv='9' count='40'/>
+      <Level lv='10' count='50'/>
+      <Level lv='11' count='60'/>
+      <Level lv='12' count='70'/>
+    </Job>
+  </GuildJobCfg>
+  <field_desc>
+    <说明>GuildExCfg 公会配置</说明>
+    <KickUserLastGloryElapseDays>踢人配置 被踢的人最后贡献荣誉值超过15天就不扣公会资金</KickUserLastGloryElapseDays>
+  </field_desc>
+  <GuildExCfg>
+    <KickUserLastGloryElapseDays>15</KickUserLastGloryElapseDays>
+  </GuildExCfg>
+ 	<!--
+		screening	-	筛选器组
+				-	说明
+			add	-	使用的筛选器组，可配置多组，用分号隔开
+前1组取不到推荐，则用后1组
+1=会长是VIP
+2=会长活跃度≥x
+3=公会成员空位≥x
+4=公会可申请
+5=x≤公会创建时间≤y天
+6=公会会长累计充值额度≥x
+7=公会活跃人数(活跃度≥x)≥y人
+8=前一局公会争霸积分≥xxx
+			Screening2	-	筛选器2参数：会长活跃度≥x
+			Screening3	-	筛选器3参数：公会成员空位≥x
+			Screening5	-	筛选器5参数：公会创建时间≤x天
+			Screening6	-	筛选器6参数：公会会长累计充值额度≥x
+			Screening7	-	筛选器7参数：公会活跃人数(活跃度≥x)≥y人
+			Screening8	-	筛选器8参数：前一局公会争霸积分≥xxx
+		-->
+  <GuildScreening>		
+	<Screening screening="1" add="1,2,3,4,5,6,7;1,2,3,4,5,7;2,3,4,7;2,3,4,7" Screening2="690" Screening3="7" Screening5="0,60" Screening6="50" Screening7="500,3" />
+	<Screening screening="2" add="1,2,3,4,5,6,7;1,2,3,4,5,7;2,3,4,5,7;2,3,4,7" Screening2="690" Screening3="15" Screening5="61,360" Screening6="100" Screening7="500,15" />
+	<Screening screening="3" add="1,2,3,4,5,6,7,8;1,2,3,4,5,7,8;2,3,4,5,8,7;2,3,4,8,7" Screening2="690" Screening3="35" Screening5="361,99999" Screening6="100" Screening7="500,25" Screening8="1000" />
+  </GuildScreening>			
+	
+	<!--
+		screening	-	玩家等级区间
+			type1	-	类型1公会数量
+			type2	-	类型2公会数量
+			type3	-	类型3公会数量
+		-->
+  <GuildTypeNum>			
+	<GuildTypeNum screening="1,80" type1="10" type2="10" type3="0" />
+	<GuildTypeNum screening="81,120" type1="10" type2="5" type3="5" />
+	<GuildTypeNum screening="121,180" type1="5" type2="10" type3="5" />
+	<GuildTypeNum screening="181,200" type1="0" type2="10" type3="10" /> 
+  </GuildTypeNum>	
+ 
+  <GuildPrivilege>
+ 	<GenneralShare Times="3" />
+	<StarProtect Task="" NeedTimes="" honor="200" /> 公会贡献值激活掉星保护
+ </GuildPrivilege>	
+</Root>

@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			maxTime	-	一局游戏的最长时间 秒
+			reviveCondition	-	复活道具个数配置
+			activityValueCondition	-	体力越买越贵的配置
+			maxRound	-	一共有多少轮
+			maxZhuanLunTurn	-	超过此轮数则替换为地藏王
+			maxGeneralStarUpgrade	-	每天的武将等阶升级游戏局数
+			taskList	-	祭祖任务id
+			eliteTokenId	-	精英令道具id
+		-->
+	<Common maxTime="3600" reviveCondition="3,1;6,2;9,3;999,5" activityValueCondition="5,942601;10,942701;15,942801;9999,942901" maxRound="4" maxZhuanLunTurn="50" maxGeneralStarUpgrade="2" taskList="28476" eliteTokenId="7901001" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	怪物组必须从1开始并且连续
+			bossRankCfg	-	boss武将等阶概率
+		-->
+	<Group id="1" bossRankCfg="0,60;1,40;2,0;3,0;4,0">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			system_robot_seats	-	机器人位置
+			-->
+		<SeatConfig system_robot_seats="3;4">
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			seat	-	座位号
+			desc	-	座位
+			auto_sel	-	是否自动选将
+			group	-	1-暖方 玩家组 2-冷方 boss组
+			show_figure	-	
+			figure	-	4 boss 2玩家  3 boss小弟
+			remove_spell	-	是否移除玩家技能
+			deal_general_count	-	选将的初始选将格子
+			generals	-	为空时从默认选将中随机，否则从列表中随机
+				-->
+			<Seat seat="0" desc="一号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="6" />
+			<Seat seat="1" desc="二号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="6" />
+			<Seat seat="2" desc="三号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="6" />
+			<Seat seat="3" desc="四号位" auto_sel="1" group="2" show_figure="1" figure="4" remove_spell="0" deal_general_count="1" generals="4500,99" />
+			<Seat seat="4" desc="五号位" auto_sel="1" group="2" show_figure="1" figure="3" remove_spell="0" deal_general_count="1" generals="4510,99" />
+		</SeatConfig>
+	</Group>
+	<Group id="2" bossRankCfg="0,50;1,30;2,20;3,0;4,0">
+		<SeatConfig system_robot_seats="3;4">
+			<Seat seat="0" desc="一号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="6" />
+			<Seat seat="1" desc="二号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="6" />
+			<Seat seat="2" desc="三号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="6" />
+			<Seat seat="3" desc="四号位" auto_sel="1" group="2" show_figure="1" figure="4" remove_spell="0" deal_general_count="1" generals="4501,25;4502,25;4503,25;4504,25" />
+			<Seat seat="4" desc="五号位" auto_sel="1" group="2" show_figure="1" figure="3" remove_spell="0" deal_general_count="1" generals="4510,99" />
+		</SeatConfig>
+	</Group>
+	<Group id="3" bossRankCfg="0,0;1,60;2,30;3,10;4,0">
+		<SeatConfig system_robot_seats="3;4">
+			<Seat seat="0" desc="一号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="6" />
+			<Seat seat="1" desc="二号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="6" />
+			<Seat seat="2" desc="三号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="6" />
+			<Seat seat="3" desc="四号位" auto_sel="1" group="2" show_figure="1" figure="4" remove_spell="0" deal_general_count="1" generals="4505,25;4506,25;4507,25;4508,25" />
+			<Seat seat="4" desc="五号位" auto_sel="1" group="2" show_figure="1" figure="3" remove_spell="0" deal_general_count="1" generals="4510,99" />
+		</SeatConfig>
+	</Group>
+	<Group id="4" bossRankCfg="0,0;1,35;2,40;3,20;4,5">
+		<SeatConfig system_robot_seats="3;4">
+			<Seat seat="0" desc="一号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="6" />
+			<Seat seat="1" desc="二号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="6" />
+			<Seat seat="2" desc="三号位" auto_sel="0" group="1" show_figure="1" figure="2" remove_spell="0" deal_general_count="6" />
+			<Seat seat="3" desc="四号位" auto_sel="1" group="2" show_figure="1" figure="4" remove_spell="0" deal_general_count="1" generals="4509,99" />
+			<Seat seat="4" desc="五号位" auto_sel="1" group="2" show_figure="1" figure="3" remove_spell="0" deal_general_count="1" />
+		</SeatConfig>
+	</Group>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	等阶
+			addFirstCard	-	加手牌
+			desc	-	描述
+			addHp	-	加体力
+			skillSlot	-	加杀
+			exSkills	-	加技能
+		-->
+	<GeneralRankPriv rank="0" />
+	<GeneralRankPriv rank="1" addFirstCard="1" desc="开局随机使用一张装备" />
+	<GeneralRankPriv rank="2" addFirstCard="1" desc="出牌阶段出杀次数+1" addHp="1" skillSlot="1" />
+	<GeneralRankPriv rank="3" addFirstCard="2" desc="摸牌阶段摸牌数+1" addHp="1" skillSlot="1" />
+	<GeneralRankPriv rank="4" addFirstCard="2" desc="获得技能复活" addHp="2" skillSlot="1" exSkills="1333" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	等阶
+			addFirstCard	-	加手牌
+			desc	-	描述
+			addHp	-	加体力
+			skillSlot	-	加杀
+			exSkills	-	加技能
+		-->
+	<BossRankPriv rank="0" addFirstCard="0" addHp="0" />
+	<BossRankPriv rank="1" addFirstCard="0" desc="登场时随机使用一张装备牌" addHp="0" />
+	<BossRankPriv rank="2" addFirstCard="1" desc="出牌阶段出杀次数+1，你的回合开始时额外获得1张杀" addHp="1" skillSlot="1" />
+	<BossRankPriv rank="3" addFirstCard="1" desc="摸牌阶段摸牌数+1，你的手牌上限始终+1" addHp="1" skillSlot="1" />
+	<BossRankPriv rank="4" addFirstCard="2" desc="登场时视为使用一张南蛮入侵，且该南蛮入侵造成伤害+1（优先级高于登场技能）" addHp="2" skillSlot="1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	领奖奖励的id
+			requireScore	-	需求的分数
+			requireGoodsBaseId	-	需求的道具
+			goodslist	-	奖品
+		-->
+	<Reward Id="1" requireScore="100" requireGoodsBaseId="0" goodslist="111701,1;" />
+	<Reward Id="2" requireScore="100" requireGoodsBaseId="7901001" goodslist="6101009,1;" />
+	<Reward Id="4" requireScore="200" requireGoodsBaseId="0" goodslist="7901101,1;" />
+	<Reward Id="3" requireScore="200" requireGoodsBaseId="7901001" goodslist="111801,100;" />
+	<Reward Id="5" requireScore="300" requireGoodsBaseId="0" goodslist="1143101,1;" />
+	<Reward Id="6" requireScore="300" requireGoodsBaseId="7901001" goodslist="1143101,1;" />
+	<Reward Id="7" requireScore="400" requireGoodsBaseId="0" goodslist="111801,50;" />
+	<Reward Id="8" requireScore="400" requireGoodsBaseId="7901001" goodslist="111801,50;" />
+	<Reward Id="9" requireScore="500" requireGoodsBaseId="0" goodslist="4073609,1;" />
+	<Reward Id="10" requireScore="500" requireGoodsBaseId="7901001" goodslist="4073709,1;" />
+	<Reward Id="11" requireScore="600" requireGoodsBaseId="0" goodslist="100011,100;" />
+	<Reward Id="12" requireScore="600" requireGoodsBaseId="7901001" goodslist="100011,100;" />
+	<Reward Id="13" requireScore="700" requireGoodsBaseId="0" goodslist="435401,1;" />
+	<Reward Id="14" requireScore="700" requireGoodsBaseId="7901001" goodslist="435401,1;" />
+	<Reward Id="15" requireScore="800" requireGoodsBaseId="0" goodslist="942601,1;" />
+	<Reward Id="16" requireScore="800" requireGoodsBaseId="7901001" goodslist="7901101,1;" />
+	<Reward Id="17" requireScore="900" requireGoodsBaseId="0" goodslist="111801,50;" />
+	<Reward Id="18" requireScore="900" requireGoodsBaseId="7901001" goodslist="111801,50;" />
+	<Reward Id="19" requireScore="1000" requireGoodsBaseId="0" goodslist="1219901,1;" />
+	<Reward Id="20" requireScore="1000" requireGoodsBaseId="7901001" goodslist="11346701,1;" />
+	<Reward Id="21" requireScore="1100" requireGoodsBaseId="0" goodslist="1142901,1;" />
+	<Reward Id="22" requireScore="1100" requireGoodsBaseId="7901001" goodslist="1142901,1;" />
+	<Reward Id="23" requireScore="1200" requireGoodsBaseId="0" goodslist="111801,50;" />
+	<Reward Id="24" requireScore="1200" requireGoodsBaseId="7901001" goodslist="111801,50;" />
+	<Reward Id="25" requireScore="1300" requireGoodsBaseId="0" goodslist="1143101,1;" />
+	<Reward Id="26" requireScore="1300" requireGoodsBaseId="7901001" goodslist="1143101,1;" />
+	<Reward Id="27" requireScore="1400" requireGoodsBaseId="0" goodslist="7901101,1;" />
+	<Reward Id="28" requireScore="1400" requireGoodsBaseId="7901001" goodslist="1142901,1;" />
+	<Reward Id="29" requireScore="1500" requireGoodsBaseId="0" goodslist="3256609,1;" />
+	<Reward Id="30" requireScore="1500" requireGoodsBaseId="7901001" goodslist="3256709,1;" />
+	<Reward Id="31" requireScore="1600" requireGoodsBaseId="0" goodslist="111801,100;" />
+	<Reward Id="32" requireScore="1600" requireGoodsBaseId="7901001" goodslist="111801,100;" />
+	<Reward Id="33" requireScore="1700" requireGoodsBaseId="0" goodslist="100011,100;" />
+	<Reward Id="34" requireScore="1700" requireGoodsBaseId="7901001" goodslist="100011,100;" />
+	<Reward Id="35" requireScore="1800" requireGoodsBaseId="0" goodslist="435401,1;" />
+	<Reward Id="36" requireScore="1800" requireGoodsBaseId="7901001" goodslist="435401,1;" />
+	<Reward Id="37" requireScore="1900" requireGoodsBaseId="0" goodslist="1142901,1;" />
+	<Reward Id="38" requireScore="1900" requireGoodsBaseId="7901001" goodslist="1142901,1;" />
+	<Reward Id="39" requireScore="2000" requireGoodsBaseId="0" goodslist="435401,1;" />
+	<Reward Id="40" requireScore="2000" requireGoodsBaseId="7901001" goodslist="435601,1;" />
+	<Reward Id="41" requireScore="2100" requireGoodsBaseId="0" goodslist="1213201,1;" />
+	<Reward Id="42" requireScore="2100" requireGoodsBaseId="7901001" goodslist="7901101,1;" />
+	<Reward Id="43" requireScore="2200" requireGoodsBaseId="0" goodslist="112301,1;" />
+	<Reward Id="44" requireScore="2200" requireGoodsBaseId="7901001" goodslist="112301,1;" />
+	<Reward Id="45" requireScore="2300" requireGoodsBaseId="0" goodslist="111801,100;" />
+	<Reward Id="46" requireScore="2300" requireGoodsBaseId="7901001" goodslist="111801,100;" />
+	<Reward Id="47" requireScore="2400" requireGoodsBaseId="0" goodslist="5096009,1;" />
+	<Reward Id="48" requireScore="2400" requireGoodsBaseId="7901001" goodslist="5096109,1;" />
+	<Reward Id="49" requireScore="2500" requireGoodsBaseId="0" goodslist="100006,51121;" />
+	<Reward Id="50" requireScore="2500" requireGoodsBaseId="7901001" goodslist="1213301,1;" />
+	<Reward Id="51" requireScore="2600" requireGoodsBaseId="0" goodslist="111801,50;" />
+	<Reward Id="52" requireScore="2600" requireGoodsBaseId="7901001" goodslist="111801,50;" />
+	<Reward Id="53" requireScore="2700" requireGoodsBaseId="0" goodslist="100011,100;" />
+	<Reward Id="54" requireScore="2700" requireGoodsBaseId="7901001" goodslist="100011,100;" />
+	<Reward Id="55" requireScore="2800" requireGoodsBaseId="0" goodslist="435501,1;" />
+	<Reward Id="56" requireScore="2800" requireGoodsBaseId="7901001" goodslist="435501,1;" />
+	<Reward Id="57" requireScore="2900" requireGoodsBaseId="0" goodslist="111801,100;" />
+	<Reward Id="58" requireScore="2900" requireGoodsBaseId="7901001" goodslist="111801,100;" />
+	<Reward Id="59" requireScore="3000" requireGoodsBaseId="0" goodslist="1220001,1;" />
+	<Reward Id="60" requireScore="3000" requireGoodsBaseId="7901001" goodslist="112501,1;" />
+</Root>

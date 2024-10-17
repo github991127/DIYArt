@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			roundId	-	数据id-只能配置一期，id递增
+			startTime	-	开始时间
+			endTime	-	结束时间
+			startTime2	-	商店兑换开始时间
+			endTime2	-	商店兑换结束时间
+			exchange	-	抽奖需要的物品,个数
+			itemPack	-	道具不足时购买礼包
+			resetitem	-	重置大奖物品id（有配置物品则表示可以重置，仅在使用ui类型=2时生效）
+			overflowCount	-	大奖到底次数
+			freeDuration	-	免费抽奖间隔
+			dropClassId	-	掉落库的classid
+			totalaward	-	累抽奖励任务配置（填quest对应累抽任务，分隔）
+			baseGoods	-	需要替换的道具id   只能配置100030-100039 中的3个 需要在掉落配置中配置对应的item
+			pos	-	大奖POS ID，对应DROP表
+			ui	-	使用ui，1=占星，2=神箭
+			res	-	插画资源（配置图片名称，PC与移动命名要一致）
+			Shopres	-	秘宝商店背景图配置
+			itemId	-	兑换消耗的道具id
+			marketfreeGoods	-	每日免费的道具id
+			des	-	描述文字
+			list	-	概率公示链接
+			des2	-	规则说明
+		-->
+	<Common roundId="61" startTime="20240908T235801" endTime="20240914T235959" startTime2="20240909T000000" endTime2="20240914T235959" exchange="8222101,5" overflowCount="20" freeDuration="86400" dropClassId="55002" baseGoods="100030,100031,100032" ui="2" Shopres="shenjian20221015_shop" itemId="21300301" marketfreeGoods="0" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rewardId	-	大奖唯一标识id
+			itemId	-	可以被玩家放在替换组中的id
+			total	-	奖励物品数量
+			count	-	可以掉落的次数
+			ratio	-	权重-放到所有奖品中后一起计算概率
+			light	-	奖励外发光0不发光 1弱光 2强光
+			broadcast	-	是否公示
+		-->
+	<Depository rewardId="1" itemId="21297301" total="20" count="999" ratio="1868" broadcast="0" />
+	<Depository rewardId="2" itemId="21297301" total="30" count="20" ratio="1370" broadcast="0" />
+	<Depository rewardId="3" itemId="21297301" total="40" count="10" ratio="934" broadcast="0" />
+	<Depository rewardId="4" itemId="21297301" total="50" count="5" ratio="523" broadcast="0" />
+	<Depository rewardId="5" itemId="21297301" total="60" count="3" ratio="199" broadcast="0" />
+	<Depository rewardId="6" itemId="21297301" total="80" count="2" ratio="131" broadcast="0" />
+	<Depository rewardId="7" itemId="21297301" total="100" count="1" ratio="75" broadcast="0" />
+	<Depository rewardId="8" itemId="112301" total="5" count="8" ratio="1689" broadcast="0" />
+	<Depository rewardId="9" itemId="435401" total="5" count="6" ratio="1046" broadcast="0" />
+	<Depository rewardId="10" itemId="8100201" total="1" count="5" ratio="1417" broadcast="0" />
+	<Depository rewardId="11" itemId="112601" total="1" count="1" ratio="42" broadcast="0" />
+	<Depository rewardId="12" itemId="100016" total="6666" count="1" ratio="22" broadcast="1" />
+	<Depository rewardId="13" itemId="100016" total="9999" count="1" ratio="10" broadcast="1" />
+	<Depository rewardId="14" itemId="1143001" total="1" count="999" ratio="198" broadcast="0" />
+	<Depository rewardId="15" itemId="1114301" total="1" count="4" ratio="108" broadcast="0" />
+	<Depository rewardId="16" itemId="1111801" total="1" count="4" ratio="162" broadcast="0" />
+	<Depository rewardId="17" itemId="8100401" total="1" count="999" ratio="206" broadcast="0" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			itemId	-	可以被玩家放在替换组中的id
+			total	-	奖励物品数量
+			light	-	奖励外发光0不发光 1弱光 
+			pos	-	小奖POS ID，对应DROP表
+		-->
+	<Incentives itemId="21278301" />
+	<Incentives itemId="111801" />
+	<Incentives itemId="21278301" />
+	<Incentives itemId="1142901" />
+	<Incentives itemId="21278301" />
+	<Incentives itemId="8100201" />
+	<Incentives itemId="21278301" />
+	<Incentives itemId="435401" />
+	<Incentives itemId="21278301" />
+	<Incentives itemId="112301" />
+	<Incentives itemId="21278301" />
+	<Incentives itemId="435401" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			itemId	-	特惠礼包道具id
+			PriceShow	-	礼包原价（显示用，配1以上数字，没配则不显示）（多个地方配置保证原价一致）
+		-->
+	<Oddspacks itemId="2268201" PriceShow="400" />
+	<Oddspacks itemId="2268301" PriceShow="6000" />
+	<Oddspacks itemId="2268401" PriceShow="10000" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	商品ID（不可配置重复商品ID）
+			counts	-	道具数量（配置多个数量时要注意不要与限购冲突（倍数要=限购数））
+				-	商品名称
+			exchangecount	-	兑换消耗道具数量
+			quality	-	品质
+			discount	-	折扣（默认10，折扣填1-10内数字）
+			timeRange	-	开放时间
+			sorting	-	排序
+		-->
+	<ShopGoods Id="9051201" counts="1" exchangecount="1000" timeRange="1;20240908T000001,20240914T235958" />
+	<ShopGoods Id="9059801" counts="1" exchangecount="800" timeRange="1;20240908T000001,20240914T235958" />
+	<ShopGoods Id="9053301" counts="1" exchangecount="800" timeRange="1;20240908T000001,20240914T235958" />
+	<ShopGoods Id="935601" counts="1" exchangecount="750" timeRange="1;20240908T000001,20240914T235958" />
+	<ShopGoods Id="9051401" counts="1" exchangecount="500" timeRange="1;20240908T000001,20240914T235958" />
+	<ShopGoods Id="9043801" counts="1" exchangecount="500" timeRange="1;20240908T000001,20240914T235958" />
+	<ShopGoods Id="9059201" counts="1" exchangecount="400" timeRange="1;20240908T000001,20240914T235958" />
+	<ShopGoods Id="2034701" counts="1" exchangecount="120" timeRange="1;20240908T000001,20240914T235958" />
+	<ShopGoods Id="2252101" counts="1" exchangecount="110" timeRange="1;20240908T000001,20240914T235958" />
+	<ShopGoods Id="2034801" counts="1" exchangecount="80" timeRange="1;20240908T000001,20240914T235958" />
+	<ShopGoods Id="2034901" counts="1" exchangecount="20" timeRange="1;20240908T000001,20240914T235958" />
+	<ShopGoods Id="2252001" counts="1" exchangecount="9" timeRange="1;20240908T000001,20240914T235958" />
+	<ShopGoods Id="2035201" counts="1" exchangecount="10" timeRange="1;20240908T000001,20240914T235958" />
+	<ShopGoods Id="2035301" counts="1" exchangecount="5" timeRange="1;20240908T000001,20240914T235958" />
+	<ShopGoods Id="11423001" counts="1" exchangecount="5" timeRange="1;20240819T000001,20240823T235958" />
+	<ShopGoods Id="11435801" counts="1" exchangecount="5" timeRange="1;20240908T000001,20240914T235958" />
+</root>

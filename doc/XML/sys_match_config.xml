@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2010 rel. 3 (http://www.altova.com) by MESMERiZE (MSM) -->
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<MatchList>
+		<field_desc>
+			<说明>一个比赛的配置</说明>
+			<id>比赛id,不能重复,从1开始</id>
+			<name>比赛名称</name>
+			<state>比赛状态设置,二进制配置(不用配置,默认0)</state>
+			<type>比赛类型,如区域比赛,全国比赛,赞助赛(20110426目前无定义,不用配置,默认0)</type>
+			<gameZone>比赛游戏区域</gameZone>
+			<label>标签</label>
+			<userCntRange>玩家范围,如"1000,2000"</userCntRange>
+			<specialConditionIds>特殊报名条件id,可多个,如"1,2,3"</specialConditionIds>
+			<conditionIds>普通报名条件id,可多个,如"7,9"</conditionIds>
+			<prizeIds>比赛奖励id,</prizeIds>
+			<ruleId>比赛规则id</ruleId>
+			<signUpDate>报名时间范围,如"20110411T080000,20110423T230000"</signUpDate>
+			<gameDate>游戏时间范围,如"20110411T080000,20110423T230000"</gameDate>
+			<prizeDate>奖励时间范围,如"20110411T080000,20110423T230000"</prizeDate>
+			<delayDays>比赛奖励结束后,延长显示时间</delayDays>
+			<restartInterval>(不用配置,默认0)</restartInterval>
+			<picture>client用,比赛图片</picture>
+			<describe>描述</describe>
+			<GameTime>
+				<说明>游戏具体时间配置</说明>
+				<dateRange>日期星期范围,如"20110420,20110430,6,7",前两个是日期范围在gameDate范围内,后面可以加星期几,星期由0~6表示,0代表星期天.</dateRange>
+				<timeRange>时间范围,如"133000,233000",小时分秒</timeRange>
+			</GameTime>
+		</field_desc>
+		<Match id="1" name="勇者选拔赛(1v1)" state="0" type="1" gameZone="1" label="0" userCntRange="100,50000" specialConditionIds="1" conditionIds="2" prizeIds="1,2" ruleId="1" signUpDate="20110501T080000,20110620T230000" gameDate="20110504T090000,20110630T230000" prizeDate="20110531T080000,20110702T230000" delayDays="10" restartInterval="0" picture="111" describe="这场勇士与勇士之间的战斗！ 只有面对惨淡的人生,正视淋漓的鲜血。你才有机会夺冠！" awardDescribe="三国杀勇者称号/非买三国秀" limitDescribe="资格:等级5级以上/武勋1000">
+			<GameTime>
+				<Item dateRange="20110504,20110630,1,2,3,4,5" timeRange="093000,233000"/>
+			</GameTime>
+		</Match>
+		<Match id="2" name="8人局测试比赛(只有8人了)" state="0" type="1" gameZone="1" label="0" userCntRange="0,20000" specialConditionIds="1" conditionIds="2" prizeIds="1,2" ruleId="4" signUpDate="20110501T080000,20110620T230000" gameDate="20110504T090000,20110630T230000" prizeDate="20110531T080000,20110702T230000" delayDays="10" restartInterval="0" picture="111" describe="To be or not to be,that is a question." awardDescribe="生存/毁灭" limitDescribe="资格:历轮回/悟佛道">
+			<GameTime>
+				<Item dateRange="20110504,20110630,1,2,3,4,5" timeRange="093000,233000"/>
+			</GameTime>
+		</Match>
+		<Match id="3" name="8人局测试比赛(8人)" state="0" type="1" gameZone="1" label="0" userCntRange="100,50000" specialConditionIds="1" conditionIds="2" prizeIds="1,2" ruleId="4" signUpDate="20110513T140000,20110613T150000" gameDate="20110513T143000,20110613T160000" prizeDate="20110513T160000,20110613T220000" delayDays="10" restartInterval="0" picture="111" describe="实力 运气 执着 ，在这刀光剑影、杀声嚷天的世界里&#x0A;究竟什么是你驰聘沙场、功成名就的依靠呢? 在这里 一切都将云开月明." awardDescribe="成功之道/人生之悟" limitDescribe="资格:已经成功/渴望成功">
+			<GameTime>
+				<Item dateRange="20110513,20110613" timeRange="093000,233000"/>
+			</GameTime>
+		</Match>
+		<Match id="4" name="王者之战(3V3)" state="0" type="1" gameZone="1" label="0" userCntRange="100,50000" specialConditionIds="1" conditionIds="2" prizeIds="1,2" ruleId="5" signUpDate="20110513T140000,20110613T150000" gameDate="20110513T143000,20110613T160000" prizeDate="20110513T160000,20110613T220000" delayDays="10" restartInterval="0" picture="111" describe="3V3王者之战&#x0A;你的队伍 你做主!" awardDescribe="优秀的团队/奋斗的友情" limitDescribe="资格:等级5级以上/武勋1000">
+			<GameTime>
+				<Item dateRange="20110513,20110613" timeRange="093000,233000"/>
+			</GameTime>
+		</Match>
+	</MatchList>
+	<Config>
+		<ConditionList>
+			<field_desc>
+				<说明>比赛报名条件,下面的条件配置中,0为无效值或者不填写</说明>
+				<id>条件id,唯一,从1开始</id>
+				<level>角色等级,如"0,20"</level>
+				<glory8>文功</glory8>
+				<glory3v3>武勋</glory3v3>
+				<glory1v1>勇武</glory1v1>
+				<perWin8>8人局胜率</perWin8>
+				<perWin1v1>3v3胜率</perWin1v1>
+				<perWin3v3>1v1胜率</perWin3v3>
+				<perWin>总胜率</perWin>
+				<perRunAway>所有比赛逃跑率</perRunAway>
+				<city>城市</city>
+				<sex>性别</sex>
+				<birthdayRange>生日范围,如"19800101,20000101"</birthdayRange>
+				<vip>是否会员</vip>
+				<DelItem>
+					<说明>需要扣出的物品</说明>
+					<itemTypeId>物品类型id</itemTypeId>
+					<count>物品个数</count>
+					<param1>参数,根据具体物品而定</param1>
+				</DelItem>
+				<HaveItem>需要拥有的物品,item中的属性说明与delItem同</HaveItem>
+			</field_desc>
+			<Condition id="1" level="5,100" glory8="100" glory3v3="0" glory1v1="0" perWin8="0" perWin1v1="0" perWin3v3="0" perWin="0" perRunAway="0" city="0" sex="0" birthdayRange="0" vip="1">
+				<DelItem>
+					<Item itemTypeId="" count="" param1="" desc=""/>
+				</DelItem>
+				<HaveItem>
+					<Item itemTypeId="" count="" param1="" desc=""/>
+				</HaveItem>
+			</Condition>
+			<Condition id="2" level="0" glory8="0" glory3v3="0" glory1v1="0" perWin8="0" perWin1v1="0" perWin3v3="0" perWin="0" perRunAway="0" city="0" sex="0" birthdayRange="0" vip="0">
+				<delItem>
+					<Item itemTypeId="100001" count="100000" param1="0" desc="铜钱"/>
+					<Item itemTypeId="100301" count="20" param1="0" desc="手气卡"/>
+				</delItem>
+				<haveItem>
+					<Item itemTypeId="100201" count="5" param1="0" desc="点将卡"/>
+				</haveItem>
+			</Condition>
+		</ConditionList>
+		<RuleList>
+			<ScoreRule>
+				<field_desc>
+					<说明>积分赛规则列表, rule为一个规则</说明>
+					<ruleId>规则id,唯一,不同规则间也不能重复,从1开始</ruleId>
+					<gamePattern>游戏类型,1为8人标准,2为标准3v3,3为标准1v1</gamePattern>
+					<maxMatchCntPerUser>最大游戏数</maxMatchCntPerUser>
+					<maxMatchCntPerDayOfUser>每日最大游戏数</maxMatchCntPerDayOfUser>
+					<maxRunAwayTimesPerDay>每日最多逃跑次数</maxRunAwayTimesPerDay>
+					<runAwayPunishTime>逃惩罚时间,单位秒</runAwayPunishTime>
+				</field_desc>
+				<Rule ruleId="1" gamePattern="3" maxMatchCntPerUser="40" maxMatchCntPerDayOfUser="15" maxRunAwayTimesPerDay="3" runAwayPunishTime="600"/>
+				<Rule ruleId="3" gamePattern="3" maxMatchCntPerUser="3" maxMatchCntPerDayOfUser="3" maxRunAwayTimesPerDay="3" runAwayPunishTime="600"/>
+				<Rule ruleId="4" gamePattern="1" maxMatchCntPerUser="40" maxMatchCntPerDayOfUser="15" maxRunAwayTimesPerDay="3" runAwayPunishTime="600"/>
+				<Rule ruleId="5" gamePattern="2" maxMatchCntPerUser="40" maxMatchCntPerDayOfUser="15" maxRunAwayTimesPerDay="3" runAwayPunishTime="600"/>
+			</ScoreRule>
+			<ChallengeRule>
+				<field_desc>
+					<说明>挑战赛规则列表,rule为一个规则</说明>
+					<ruleId>规则id,唯一,不同规则间也不能重复,从1开始</ruleId>
+					<challengeCnt>最大挑战次数,0为不设置上限</challengeCnt>
+				</field_desc>
+				<Rule ruleId="2" gamePattern="3" challengeCnt="3"/>
+			</ChallengeRule>
+		</RuleList>
+		<PrizeList>
+			<NormalPrize>
+				<field_desc>
+					<说明>通用奖励方式</说明>
+					<prizeId>奖励id,唯一,不同奖励类型也不能重复,从1开始</prizeId>
+					<prizeType>奖励类型,现有 1完赛 2报名</prizeType>
+					<Item>
+						<说明>奖励物品</说明>
+						<itemTypeId>物品类型id,(实物奖励时物品id为0)</itemTypeId>
+						<count>物品个数</count>
+						<param1>备用参数,根据具体奖励物品而定.(默认0)</param1>
+						<desc>奖励描述</desc>
+					</Item>
+				</field_desc>
+				<Prize prizeId="1" prizeType="1">
+					<Item itemTypeId="200201" count="1" param1="0" desc="诏令天下*1"/>
+				</Prize>
+			</NormalPrize>
+			<RankPrize>
+				<field_desc>
+					<说明>排名奖励</说明>
+					<prizeId>奖励id,唯一,不同奖励类型也不能重复,从1开始</prizeId>
+					<prizeType>奖励类型 3排名</prizeType>
+					<Rank>
+						<说明>排名</说明>
+						<rankRange>排名范围,如"11,15"</rankRange>
+						<Item>奖励物品,见通用奖励方式说明</Item>
+					</Rank>
+				</field_desc>
+				<Prize prizeId="2" prizeType="3">
+					<Rank rankRange="1">
+						<Item itemTypeId="100107" count="1" param1="0" desc="会员卡7天"/>
+						<Item itemTypeId="100001" count="2000" param1="0" desc="铜钱"/>
+						<Item itemTypeId="100301" count="20" param1="0" desc="手气卡"/>
+						<Item itemTypeId="100201" count="20" param1="0" desc="点将卡"/>
+					</Rank>
+					<Rank rankRange="2">
+						<Item itemTypeId="100001" count="1000" param1="0" desc="铜钱"/>
+						<Item itemTypeId="100301" count="10" param1="0" desc="手气卡"/>
+						<Item itemTypeId="100201" count="5" param1="0" desc="点将卡"/>
+					</Rank>
+					<Rank rankRange="3">
+						<Item itemTypeId="100001" count="500" param1="0" desc="铜钱"/>
+						<Item itemTypeId="300001" count="1" param1="0" desc="iphone"/>
+						<Item itemTypeId="300002" count="5" param1="0" desc="哇哈哈"/>
+					</Rank>
+					<Rank rankRange="4,100">
+						<Item itemTypeId="100001" count="200" param1="0" desc="铜钱"/>
+					</Rank>
+				</Prize>
+			</RankPrize>
+			<LuckyPrize>
+				<field_desc>
+					<说明>幸运奖励</说明>
+					<prizeId>奖励id,唯一,不同奖励类型也不能重复,从1开始</prizeId>
+					<prizeType>奖励类型 4幸运</prizeType>
+					<luckyPercent>报名人数的百分之多少中奖</luckyPercent>
+					<Item>奖励物品,见通用奖励方式说明</Item>
+				</field_desc>
+				<Prize prizeId="3" prizeType="4" luckyPercent="10">
+					<Item itemTypeId="100607" count="1" param1="0" desc="多多益善7天"/>
+				</Prize>
+			</LuckyPrize>
+		</PrizeList>
+	</Config>
+</Root>

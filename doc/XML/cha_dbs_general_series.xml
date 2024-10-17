@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		series	-	小灯id
+			generalList	-	包含英雄id
+			seriesCount	-	需要开通英雄数量
+			seriesCount2	-	一阶点亮需要的英雄数量
+			sort	-	排序
+			fix	-	将灯修正
+			picId	-	资源
+			dic	-	名字
+			anim	-	PC小将灯特效
+未配置则不显示激活特效
+			anim2	-	PC小将灯特效（弱化版）
+未配置则不显示激活特效
+			abbr	-	U3D-缩写
+			ps	-	备注-无用
+			gentryList	-	其他同族武将
+			seriesShow	-	将灯说明（配了点击才展示）
+		-->
+	<GeneralSeries series="8" generalList="61,27,28,29,30,210,211,212" seriesCount="0" dic="风扩展包" ps="2. 神话：风" />
+	<GeneralSeries series="9" generalList="34,35,36,37,38,39,40,41" seriesCount="0" dic="火扩展包" ps="2. 神话：火" />
+	<GeneralSeries series="10" generalList="42,43,44,45,46,47,48,49" seriesCount="0" dic="林扩展包" ps="2. 神话：林" />
+	<GeneralSeries series="11" generalList="50,51,52,53,54,55,56,57" seriesCount="0" dic="山扩展包" ps="2. 神话：山" />
+	<GeneralSeries series="12" generalList="362,400,401,402,403,404,406,407" seriesCount="0" dic="阴扩展包" ps="2. 神话：阴" />
+	<GeneralSeries series="13" generalList="100,408,409,410,411,413,414,415" seriesCount="0" dic="雷扩展包" ps="2. 神话：雷" />
+	<GeneralSeries series="14" generalList="201,202,203,204,205,206,207,208,220,221,224,225,226,227" seriesCount="8" seriesCount2="0" dic="神扩展包" ps="2. 神话：神" />
+	<GeneralSeries series="15" generalList="151,152,153,155,156,157,158,160,161,185,186" seriesCount="0" dic="一将成名1" ps="3. 一将：将1" />
+	<GeneralSeries series="16" generalList="162,164,166,167,168,169,170,171,172,173,187,188" seriesCount="0" dic="一将成名2" ps="3. 一将：将2" />
+	<GeneralSeries series="17" generalList="174,175,176,177,178,179,180,181,182,183,184" seriesCount="0" dic="一将成名3" ps="3. 一将：将3" />
+	<GeneralSeries series="18" generalList="321,322,323,324,325,326,327,328,329,330,331" seriesCount="0" dic="一将成名4" ps="3. 一将：将4" />
+	<GeneralSeries series="19" generalList="332,333,334,335,336,337,338,339,340,341,342" seriesCount="0" dic="一将成名5" ps="3. 一将：将5" />
+	<GeneralSeries series="20" generalList="380,381,382,383,384,385,386,387" seriesCount="0" dic="一将成名6" ps="3. 一将：将6" />
+	<GeneralSeries series="21" generalList="388,389,390,391,392,393,394,395" seriesCount="0" dic="一将成名7" ps="3. 一将：将7" />
+	<GeneralSeries series="22" generalList="2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2030,2031,2032,2033,2034,2035,2036,2037,2038,2039,2040,2041,2042,2043,2044,2045,2046,2047,2048,2049,2050,2051,2052,2053,2054,2055,2056,2057,2058,2059,2083,2084,2085,2086,2087,2088,2089,2090,2091,2095,2096" seriesCount="0" dic="国战基础包" ps="国战基础包" />
+	<GeneralSeries series="24" generalList="350" seriesCount="0" dic="限定武将包" ps="6. 限定" />
+	<GeneralSeries series="25" generalList="351,353,417,425,349,426,430,469,475,478,491,518,509,568" seriesCount="0" dic="祈福武将包" ps="7. 祈福" gentryList=" " />
+	<GeneralSeries series="26" generalList="2065,2073,2061,2075,2063,2074,2060,2068" seriesCount="0" dic="阵扩展包" ps="阵包" />
+	<GeneralSeries series="27" generalList="2062,2069,2064,2070,2066,2071,2067,2072" seriesCount="0" dic="势扩展包" ps="势包" />
+	<GeneralSeries series="28" generalList="2076,2077,2078,2079,2082,2092,2094,2097" seriesCount="0" dic="变扩展包" ps="变包" />
+	<GeneralSeries series="29" generalList="2080,2081,2093,2098,2099,2100,2101,2102" seriesCount="0" dic="权扩展包" ps="权包" />
+	<GeneralSeries series="30" generalList="26,448,449,453,456,457" seriesCount="0" dic="界限风包" ps="界限突破风包" />
+	<GeneralSeries series="31" generalList="450,455,454,462,463,515,526,550" seriesCount="0" dic="界限火包" ps="界限突破火包" />
+	<GeneralSeries series="32" generalList="470,458,479,484,485,492,496" seriesCount="0" dic="界限林包" ps="界限突破林包" />
+	<GeneralSeries series="33" generalList="447,451,452,471,480,486,505,563" seriesCount="0" dic="界限山包" ps="界限突破山包" />
+	<GeneralSeries series="36" generalList="7003,7007,7010,7011,7012,7015" seriesCount="0" dic="理扩展包" ps="理扩展包" />
+	<GeneralSeries series="37" generalList="7002,7001,7000,7008,7009,551" seriesCount="0" dic="备扩展包" ps="理扩展包" />
+	<GeneralSeries series="38" generalList="7004,7005,7006,7013,358" seriesCount="0" dic="果扩展包" ps="理扩展包" />
+	<GeneralSeries series="39" generalList="7014,7018,7019,7020" seriesCount="0" dic="戒扩展包" ps="戒扩展包" />
+	<GeneralSeries series="40" generalList="7016,7017" seriesCount="0" dic="约扩展包" ps="约扩展包" />
+	<GeneralSeries series="41" generalList="137,73,122,131,135,344,378,438,354,439,487,498,504,507,500,502,554,619,596,635,639,652,653,662,672" seriesCount="0" dic="天极扩展包" ps="天极扩展包" />
+	<GeneralSeries series="42" generalList="104,113,130,345,372,72,123,128,360,363,369,371,375,376,428,432,433,459,460,465,467,472,473,483,352,435,488,495,497,355,503,519,520,540,544,535,542,552,553,537,606,624,591,590,649,651,665,666,670,675,679" seriesCount="0" dic="四弼扩展包" ps="四弼扩展包" />
+	<GeneralSeries series="43" generalList="347,418,423,424,140,431,127,129,348,419,437,477,482,490,494,514,531,570,583,584,585,607,612,579,576,571,561,638,655,660,668,669" seriesCount="0" dic="天柱扩展包" ps="天柱扩展包" />
+	<GeneralSeries series="44" generalList="74,367,436,115,117,124,346,366,466,499,508,632,594,577,569,562,654,656,657,667,678" seriesCount="0" dic="女史扩展包" ps="女史扩展包" />
+	<GeneralSeries series="45" generalList="119,416,373,343,377,427,464,481,516,539,592,572" seriesCount="0" dic="少微扩展包" ps="少微扩展包" />
+	<GeneralSeries series="46" generalList="118,420,421,422,101,114,116,121,125,126,136,364,368,370,374,379,461,468,476,434,356,489,493,511,512,513,521,517,533,532,541,545,527,558,560,534,557,611,631,598,581,580,560,636,637,650" seriesCount="0" dic="虎贲扩展包" ps="虎贲扩展包" />
+	<GeneralSeries series="47" generalList="365,501,536,559,578,559" seriesCount="0" dic="列肆扩展包" ps="列肆扩展包" />
+	<GeneralSeries series="48" generalList="522,523,524,525,573" seriesCount="0" dic="颍川荀氏" ps="颍川荀氏" gentryList="35,164,460,515" />
+	<GeneralSeries series="49" generalList="528,529,549,589,582" seriesCount="0" dic="陈留吴氏" ps="陈留吴氏" gentryList="324" />
+	<GeneralSeries series="50" generalList="546,547" seriesCount="0" dic="颍川韩氏" ps="颍川韩氏" gentryList="546547651" />
+	<GeneralSeries series="51" generalList="548,566,630,567" seriesCount="0" dic="颍川钟氏" ps="颍川钟氏" gentryList="173334" />
+	<GeneralSeries series="52" generalList="105,106,110,111,112,139,103,510,429,107,108,109,357,506,474,361,543,633,661,664" seriesCount="0" dic="SP武将包" ps="SP武将" />
+	<GeneralSeries series="53" generalList="555,556,574,608,595,575,564,565,647" seriesCount="0" dic="太原王氏" ps="太原王氏" gentryList="372" />
+	<GeneralSeries series="54" generalList="2,3,5,6" seriesCount="0" dic="蜀汉虎将" ps="蜀汉虎将" />
+	<GeneralSeries series="55" generalList="1,8,15,215" seriesCount="0" dic="贤君明主" ps="贤君明主" />
+	<GeneralSeries series="56" generalList="9,10,11,17,18,19,23,214" seriesCount="0" dic="勇冠三军" ps="勇冠三军" />
+	<GeneralSeries series="57" generalList="4,12,14,16,20,22" seriesCount="0" dic="帷幄千里" ps="帷幄千里" />
+	<GeneralSeries series="58" generalList="7,13,21,24,25" seriesCount="0" dic="巾帼红颜" ps="巾帼红颜" />
+	<GeneralSeries series="59" generalList="300,301,302,303" seriesCount="0" dic="界·蜀汉虎将" ps="界·蜀汉虎将" />
+	<GeneralSeries series="60" generalList="299,311,442" seriesCount="0" dic="界·贤君明主" ps="界·贤君明主" />
+	<GeneralSeries series="61" generalList="305,306,307,313,314,315,319,446,317,320" seriesCount="0" dic="界·勇冠三军" ps="界·勇冠三军" />
+	<GeneralSeries series="62" generalList="440,308,310,312,316,318,304" seriesCount="0" dic="界·帷幄千里" ps="界·帷幄千里" />
+	<GeneralSeries series="63" generalList="441,443,444,445,309" seriesCount="0" dic="界·巾帼红颜" ps="界·巾帼红颜" />
+	<GeneralSeries series="64" generalList="586,635,663,677" seriesCount="0" dic="谋定天下" ps="谋定天下" />
+	<GeneralSeries series="65" generalList="593,605,618,645" seriesCount="0" dic="武动乾坤" ps="武动乾坤" />
+	<GeneralSeries series="66" generalList="617,622,659" seriesCount="0" dic="计出万全" ps="计出万全" />
+	<GeneralSeries series="67" generalList="643" seriesCount="0" dic="施仁布德" ps="施仁布德" />
+	<GeneralSeries series="68" generalList="601,602,609,623,597,644,648" seriesCount="0" dic="奋武扬威" ps="奋武扬威" />
+	<GeneralSeries series="69" generalList="587,588,610,629,625,604,640" seriesCount="0" dic="界·一将成名1" ps="界·一将成名1" />
+	<GeneralSeries series="70" generalList="599,620,621,626,641,676" seriesCount="0" dic="界·一将成名2" ps="界·一将成名2" />
+	<GeneralSeries series="71" generalList="600,628,603,642,658,671,680" seriesCount="0" dic="界·一将成名3" ps="界·一将成名3" />
+	<GeneralSeries series="72" generalList="627" seriesCount="0" dic="界·一将成名4" ps="界·一将成名4" />
+	<GeneralSeries series="73" generalList="1" seriesCount="0" dic="界·一将成名5" ps="界·一将成名5" />
+	<GeneralSeries series="74" generalList="1" seriesCount="0" dic="界·一将成名6" ps="界·一将成名6" />
+	<GeneralSeries series="75" generalList="1" seriesCount="0" dic="界·一将成名7" ps="界·一将成名7" />
+	<GeneralSeries series="76" generalList="646,673,674" seriesCount="0" dic="达权通变" ps="达权通变" />
+	<!--
+		id	-	大灯id
+			seriesList	-	小灯id
+			seriesList2	-	一阶点亮需要的小灯id（风火林山灯需求）
+			sort	-	排序
+			sortMain1	-	排序
+			sortMain2	-	排序
+			fix	-	将灯修正
+			picId	-	资源
+			anim	-	PC大将灯特效）
+			anim2	-	PC大将灯特效（弱化版）
+			dic	-	id说明
+			dic2	-	id说明2
+			abbr	-	U3D-缩写
+			abbr2	-	U3D-缩写2
+				-
+		-->
+	<Collection id="1" seriesList="54,55,56,57,58" dic="标准" />
+	<Collection id="2" seriesList="8,9,10,11,12,13,14" seriesList2="8,9,10,11" dic="神话再临" dic2="风火林山" />
+	<Collection id="3" seriesList="15,16,17,18,19,20,21" dic="一将成名" />
+	<Collection id="4" seriesList="22,26,27,28,29" dic="国战" />
+	<Collection id="5" seriesList="59,60,61,62,63,30,31,32,33" dic="界限突破" />
+	<Collection id="6" seriesList="41,42,43,44,45,46,47" dic="璀璨星河" />
+	<Collection id="7" seriesList="25" dic="祈福" />
+	<Collection id="8" seriesList="36,37,38,39,40" dic="文德武备" />
+	<Collection id="9" seriesList="24" dic="限定" />
+	<Collection id="10" seriesList="48,49,50,51,53" dic="门阀士族" />
+	<Collection id="11" seriesList="52" dic="SP" />
+	<Collection id="12" seriesList="64,65,66,67,68,76" dic="谋扩展包" />
+	<Collection id="13" seriesList="69,70,71,72,73,74,75" dic="界一将成名" />
+</root>

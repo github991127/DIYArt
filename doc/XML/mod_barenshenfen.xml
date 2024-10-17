@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			dealChrId	-	分将id
+			breakScore	-	违规加扣信誉分系数
+			maxTime	-	最大牌局时间
+			des	-	玩法说明文字
+			des_m	-	移动端玩法说明文字
+			roomName	-	房间名称
+			rewardcard	-	击杀反贼奖励
+			neijianNum	-	近X场中内奸次数最少的玩家，成为内奸
+			teamIdentityRatio	-	有X%的概率 房间中所有队伍的组合 是固定的身份组合
+			loseRatio1	-	（废弃）失败系数1
+万分制
+			loseRatio2	-	（废弃）失败系数2
+整数
+			IdentityRatio	-	1个玩家7个AI时成为反贼的概率，A%；玩家不会成为内奸
+		-->
+	<Common dealChrId="3" breakScore="15000" maxTime="3600" roomName="八人匹配" rewardcard="3" neijianNum="20" teamIdentityRatio="70" loseRatio1="2000" loseRatio2="5" IdentityRatio="70" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			teamPowerArgH	-	组队战力个人战力较大者参数A
+			teamPowerArgL	-	组队战力个人战力较大者参数B
+			teamPowerArgBase	-	组队战力个人战力较大者参数C
+			LevA	-	组队等级个人等级较大者参数A
+			LevB	-	组队等级个人等级较大者参数B
+			LevC	-	组队等级个人等级较大者参数C
+			proficiencyA	-	组队段位个人熟练度较大者参数A
+			proficiencyB	-	组队段位个人熟练度较大者参数B
+			proficiencyC	-	组队段位个人熟练度较大者参数C
+			officialA	-	组队官阶个人官阶较大者参数A
+			officialB	-	组队官阶个人官阶较大者参数B
+			officialC	-	组队官阶个人官阶较大者参数C
+			keepSeconds	-	匹配最大等待时间
+			keepSecondsMin	-	匹配最小等待时间
+			matchRecordLimit	-	匹配记录参数，次数，x时间x场x次不能一起
+			matchRecordTime	-	匹配记录参数，时间，x时间x场x次不能一起
+			matchRecordMax	-	匹配记录参数，场数，x时间x场x次不能一起
+			makeTimeout	-	超时对列 创建AI牌局数
+			makeTeams	-	队伍匹配每秒处理数
+			makeSingles	-	单人匹配每秒处理数
+		-->
+	<matchvalue teamPowerArgH="7000" teamPowerArgL="3000" teamPowerArgBase="8000" LevA="7000" LevB="3000" LevC="8000" proficiencyA="7000" proficiencyB="3000" proficiencyC="8000" officialA="7000" officialB="3000" officialC="8000" keepSeconds="2" keepSecondsMin="0" matchRecordLimit="3" matchRecordTime="10000" matchRecordMax="10" makeTimeout="20" makeTeams="50" makeSingles="100" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			proficiencyLevel	-	熟练度
+			powerDiff	-	战力差值/万分比
+			levDiffFri	-	等级差
+			proficiencyDiff	-	熟练度差
+			officerDiff	-	官阶差
+			timeountAi	-	超时匹配AI时间
+差人的时候补AI，单位秒，AI敌人
+			ai	-	ai强度
+1最强，3最弱
+			lossCount	-	连败X场后匹配AI
+				-	AI场成为反贼的概率
+		-->
+	<proficiencyLevel proficiencyLevel="0" powerDiff="1000" levDiffFri="20" proficiencyDiff="3" officerDiff="10" timeountAi="40" ai="2" lossCount="2" />
+	<proficiencyLevel proficiencyLevel="1" powerDiff="1000" levDiffFri="20" proficiencyDiff="3" officerDiff="10" timeountAi="40" ai="2" lossCount="2" />
+	<proficiencyLevel proficiencyLevel="2" powerDiff="1000" levDiffFri="20" proficiencyDiff="3" officerDiff="10" timeountAi="40" ai="2" lossCount="2" />
+	<proficiencyLevel proficiencyLevel="3" powerDiff="1000" levDiffFri="20" proficiencyDiff="3" officerDiff="10" timeountAi="40" ai="1" lossCount="2" />
+	<proficiencyLevel proficiencyLevel="4" powerDiff="1000" levDiffFri="20" proficiencyDiff="3" officerDiff="10" timeountAi="40" ai="1" lossCount="2" />
+	<proficiencyLevel proficiencyLevel="5" powerDiff="1000" levDiffFri="20" proficiencyDiff="3" officerDiff="10" timeountAi="40" ai="1" lossCount="2" />
+	<proficiencyLevel proficiencyLevel="6" powerDiff="1000" levDiffFri="30" proficiencyDiff="3" officerDiff="10" timeountAi="40" ai="1" lossCount="3" />
+	<proficiencyLevel proficiencyLevel="7" powerDiff="1000" levDiffFri="30" proficiencyDiff="3" officerDiff="10" timeountAi="40" ai="1" lossCount="3" />
+	<proficiencyLevel proficiencyLevel="8" powerDiff="1000" levDiffFri="30" proficiencyDiff="3" officerDiff="10" timeountAi="40" ai="1" lossCount="3" />
+	<proficiencyLevel proficiencyLevel="9" powerDiff="1000" levDiffFri="40" proficiencyDiff="3" officerDiff="10" timeountAi="40" ai="1" lossCount="3" />
+	<proficiencyLevel proficiencyLevel="10" powerDiff="1000" levDiffFri="40" proficiencyDiff="3" officerDiff="10" timeountAi="40" ai="1" lossCount="3" />
+	<proficiencyLevel proficiencyLevel="11" powerDiff="1000" levDiffFri="40" proficiencyDiff="3" officerDiff="10" timeountAi="40" ai="1" lossCount="3" />
+	<proficiencyLevel proficiencyLevel="12" powerDiff="1000" levDiffFri="40" proficiencyDiff="3" officerDiff="10" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="13" powerDiff="1000" levDiffFri="40" proficiencyDiff="3" officerDiff="10" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="14" powerDiff="1000" levDiffFri="40" proficiencyDiff="3" officerDiff="10" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="15" powerDiff="1000" levDiffFri="100" proficiencyDiff="5" officerDiff="15" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="16" powerDiff="1000" levDiffFri="100" proficiencyDiff="5" officerDiff="15" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="17" powerDiff="1000" levDiffFri="100" proficiencyDiff="5" officerDiff="15" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="18" powerDiff="1000" levDiffFri="100" proficiencyDiff="5" officerDiff="15" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="19" powerDiff="1000" levDiffFri="100" proficiencyDiff="7" officerDiff="15" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="20" powerDiff="1000" levDiffFri="100" proficiencyDiff="8" officerDiff="15" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="21" powerDiff="1000" levDiffFri="100" proficiencyDiff="10" officerDiff="15" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="22" powerDiff="1000" levDiffFri="100" proficiencyDiff="10" officerDiff="15" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="23" powerDiff="1000" levDiffFri="100" proficiencyDiff="10" officerDiff="15" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="24" powerDiff="1000" levDiffFri="100" proficiencyDiff="10" officerDiff="15" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="25" powerDiff="1000" levDiffFri="100" proficiencyDiff="999" officerDiff="20" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="26" powerDiff="1000" levDiffFri="100" proficiencyDiff="999" officerDiff="20" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="27" powerDiff="1000" levDiffFri="100" proficiencyDiff="999" officerDiff="20" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="28" powerDiff="1000" levDiffFri="100" proficiencyDiff="999" officerDiff="20" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="29" powerDiff="1000" levDiffFri="100" proficiencyDiff="999" officerDiff="20" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="30" powerDiff="1000" levDiffFri="100" proficiencyDiff="999" officerDiff="20" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="31" powerDiff="1000" levDiffFri="100" proficiencyDiff="999" officerDiff="20" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="32" powerDiff="1000" levDiffFri="100" proficiencyDiff="999" officerDiff="20" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="33" powerDiff="1000" levDiffFri="100" proficiencyDiff="999" officerDiff="20" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="34" powerDiff="1000" levDiffFri="100" proficiencyDiff="999" officerDiff="20" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="35" powerDiff="1000" levDiffFri="100" proficiencyDiff="999" officerDiff="20" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="36" powerDiff="1000" levDiffFri="100" proficiencyDiff="999" officerDiff="20" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="37" powerDiff="1000" levDiffFri="100" proficiencyDiff="999" officerDiff="20" timeountAi="40" ai="1" lossCount="99" />
+	<proficiencyLevel proficiencyLevel="38" powerDiff="1000" levDiffFri="100" proficiencyDiff="999" officerDiff="20" timeountAi="40" ai="1" lossCount="99" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			group	-	组id
+1=新手组
+2=活跃组
+3=核心组
+			lv	-	等级
+小于等于此等级
+			proficiency	-	熟练度区间
+小于等于此熟练度等级
+				-	匹配队列，最多8个
+			seconds	-	队列时间
+每个时间独立都是从0开始计算
+				-	
+			powerDiff	-	战力差值/万分比
+			levDiffFri	-	等级差
+			proficiencyLevel	-	熟练度差
+			officerDiff	-	官阶差
+			reputation	-	当前信誉分需要大于等于X才可以匹配到
+				-	近半年信誉分扣减值需要少于X才可以匹配到
+			ip	-	是否限IP
+			emyRepeatLimit	-	是否不受限同局玩家限制
+1=受限制
+0=不受限制
+			Match0team	-	1队匹配6个散人的时间
+1=可以，0 = 不可以
+			Match1team	-	2队匹配4个散人的时间
+1=可以，0 = 不可以
+			Match2team	-	6个7个人匹配AI的时间
+1=可以，0 = 不可以
+			Match3team	-	2个3个人匹配AI的时间
+1=可以，0 = 不可以
+			checkLimit	-	是否匹配限制玩家
+				-
+		-->
+	<match group="1" lv="60" proficiency="99" seconds="3" powerDiff="1000" levDiffFri="0" proficiencyLevel="0" officerDiff="0" reputation="100" ip="1" emyRepeatLimit="0" Match0team="0" Match1team="0" Match2team="0" Match3team="0" checkLimit="0" />
+	<match group="1" lv="60" proficiency="99" seconds="6" powerDiff="1500" levDiffFri="5" proficiencyLevel="3" officerDiff="0" reputation="95" ip="1" emyRepeatLimit="0" Match0team="0" Match1team="0" Match2team="0" Match3team="0" checkLimit="0" />
+	<match group="1" lv="60" proficiency="99" seconds="10" powerDiff="2000" levDiffFri="10" proficiencyLevel="4" officerDiff="2" reputation="95" ip="1" emyRepeatLimit="0" Match0team="1" Match1team="0" Match2team="1" Match3team="0" checkLimit="0" />
+	<match group="1" lv="60" proficiency="99" seconds="25" powerDiff="3000" levDiffFri="20" proficiencyLevel="5" officerDiff="5" reputation="85" ip="1" emyRepeatLimit="0" Match0team="1" Match1team="1" Match2team="1" Match3team="1" checkLimit="0" />
+	<match group="1" lv="60" proficiency="99" seconds="30" powerDiff="9999" levDiffFri="99" proficiencyLevel="19" officerDiff="19" reputation="0" ip="1" emyRepeatLimit="0" Match0team="1" Match1team="1" Match2team="1" Match3team="1" checkLimit="0" />
+	<match group="1" lv="60" proficiency="99" seconds="35" powerDiff="9999" levDiffFri="999" proficiencyLevel="99" officerDiff="99" reputation="0" ip="0" emyRepeatLimit="0" Match0team="1" Match1team="1" Match2team="1" Match3team="1" checkLimit="0" />
+	<match group="2" lv="200" proficiency="15" seconds="3" powerDiff="1000" levDiffFri="0" proficiencyLevel="0" officerDiff="0" reputation="95" ip="1" emyRepeatLimit="0" Match0team="0" Match1team="0" Match2team="0" Match3team="0" checkLimit="0" />
+	<match group="2" lv="200" proficiency="15" seconds="6" powerDiff="1500" levDiffFri="5" proficiencyLevel="3" officerDiff="0" reputation="90" ip="1" emyRepeatLimit="0" Match0team="0" Match1team="0" Match2team="0" Match3team="0" checkLimit="0" />
+	<match group="2" lv="200" proficiency="15" seconds="10" powerDiff="2000" levDiffFri="10" proficiencyLevel="4" officerDiff="2" reputation="85" ip="1" emyRepeatLimit="0" Match0team="1" Match1team="0" Match2team="1" Match3team="0" checkLimit="0" />
+	<match group="2" lv="200" proficiency="15" seconds="25" powerDiff="3000" levDiffFri="20" proficiencyLevel="5" officerDiff="5" reputation="80" ip="1" emyRepeatLimit="0" Match0team="1" Match1team="1" Match2team="1" Match3team="1" checkLimit="0" />
+	<match group="2" lv="200" proficiency="15" seconds="30" powerDiff="9999" levDiffFri="99" proficiencyLevel="19" officerDiff="19" reputation="0" ip="1" emyRepeatLimit="0" Match0team="1" Match1team="1" Match2team="1" Match3team="1" checkLimit="0" />
+	<match group="2" lv="200" proficiency="15" seconds="35" powerDiff="9999" levDiffFri="999" proficiencyLevel="99" officerDiff="99" reputation="0" ip="0" emyRepeatLimit="0" Match0team="1" Match1team="1" Match2team="1" Match3team="1" checkLimit="0" />
+	<match group="3" lv="200" proficiency="99" seconds="3" powerDiff="1000" levDiffFri="0" proficiencyLevel="0" officerDiff="0" reputation="95" ip="1" emyRepeatLimit="0" Match0team="0" Match1team="0" Match2team="0" Match3team="0" checkLimit="0" />
+	<match group="3" lv="200" proficiency="99" seconds="6" powerDiff="1500" levDiffFri="5" proficiencyLevel="3" officerDiff="0" reputation="95" ip="1" emyRepeatLimit="0" Match0team="0" Match1team="0" Match2team="0" Match3team="0" checkLimit="0" />
+	<match group="3" lv="200" proficiency="99" seconds="10" powerDiff="2000" levDiffFri="10" proficiencyLevel="4" officerDiff="2" reputation="90" ip="1" emyRepeatLimit="0" Match0team="1" Match1team="0" Match2team="1" Match3team="0" checkLimit="0" />
+	<match group="3" lv="200" proficiency="99" seconds="25" powerDiff="3000" levDiffFri="20" proficiencyLevel="5" officerDiff="5" reputation="85" ip="1" emyRepeatLimit="0" Match0team="1" Match1team="1" Match2team="1" Match3team="1" checkLimit="0" />
+	<match group="3" lv="200" proficiency="99" seconds="30" powerDiff="9999" levDiffFri="99" proficiencyLevel="19" officerDiff="19" reputation="0" ip="1" emyRepeatLimit="0" Match0team="1" Match1team="1" Match2team="1" Match3team="1" checkLimit="0" />
+	<match group="3" lv="200" proficiency="99" seconds="35" powerDiff="9999" levDiffFri="999" proficiencyLevel="99" officerDiff="99" reputation="0" ip="0" emyRepeatLimit="0" Match0team="1" Match1team="1" Match2team="1" Match3team="1" checkLimit="0" />
+	<!--
+		KeyName	-	字段名字
+			DescribeName	-	备注1
+			Key	-	主键值
+			Value	-	对应队列值
+				-
+		-->
+	<MatchPowerKeyValue KeyName="ProficiencyPower" DescribeName="熟练度，基础战斗力" Key="0" Value="5000" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="1" Value="5000" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="2" Value="5000" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="3" Value="5500" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="4" Value="5665" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="5" Value="5835" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="6" Value="6050" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="7" Value="6230" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="8" Value="6400" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="9" Value="6655" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="10" Value="6855" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="11" Value="7060" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="12" Value="7320" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="13" Value="7540" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="14" Value="7760" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="15" Value="8050" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="16" Value="8300" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="17" Value="8550" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="18" Value="8850" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="19" Value="9120" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="20" Value="9400" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="21" Value="9750" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="22" Value="10040" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="23" Value="10340" />
+	<MatchPowerKeyValue KeyName="ProficiencyPower" Key="24" Value="10725" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" DescribeName="官阶,官阶加成（万分比）" Key="0" Value="10000" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="1" Value="10000" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="2" Value="10000" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="3" Value="10000" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="4" Value="10000" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="5" Value="10000" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="6" Value="10100" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="7" Value="10100" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="8" Value="10200" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="9" Value="10300" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="10" Value="10400" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="11" Value="10500" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="12" Value="10600" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="13" Value="10700" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="14" Value="10900" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="15" Value="11000" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="16" Value="11100" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="17" Value="11200" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="18" Value="11400" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="19" Value="11500" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="20" Value="11600" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="21" Value="11700" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="22" Value="11800" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="23" Value="11900" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="24" Value="11900" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="25" Value="12000" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="26" Value="12000" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="27" Value="12100" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="28" Value="12100" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="29" Value="12100" />
+	<MatchPowerKeyValue KeyName="OfficialRatio" Key="225" Value="12100" />
+	<MatchPowerKeyValue KeyName="WinRate" DescribeName="百场胜率,加成（万分比）" Key="0" Value="2000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="1000" Value="3000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="2000" Value="4000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="3000" Value="5000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="4000" Value="6000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="4500" Value="7000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="4800" Value="8000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="4850" Value="9000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="4900" Value="9500" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="5000" Value="9700" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="5100" Value="9900" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="5150" Value="10000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="5200" Value="10000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="5300" Value="10500" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="5500" Value="10600" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="6000" Value="10800" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="7000" Value="11000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="8000" Value="11000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="9000" Value="11000" />
+	<MatchPowerKeyValue KeyName="WinRate" Key="10000" Value="11000" />
+	<MatchPowerKeyValue KeyName="LoseScoreRate" DescribeName="失败分，加成万分比" Key="-100000" Value="10000" />
+	<MatchPowerKeyValue KeyName="LoseScoreRate" Key="0" Value="10000" />
+	<MatchPowerKeyValue KeyName="LoseScoreRate" Key="100000" Value="10000" />
+	<MatchPowerKeyValue KeyName="LoseScoreRate" Key="200000" Value="10000" />
+	<MatchPowerKeyValue KeyName="LoseScoreRate" Key="300000" Value="10000" />
+	<MatchPowerKeyValue KeyName="LoseScoreRate" Key="400000" Value="10000" />
+	<MatchPowerKeyValue KeyName="LoseScoreRate" Key="500000" Value="10000" />
+	<MatchPowerKeyValue KeyName="LoseScoreRate" Key="600000" Value="10000" />
+	<MatchPowerKeyValue KeyName="LoseScoreRate" Key="700000" Value="10000" />
+	<MatchPowerKeyValue KeyName="LoseScoreRate" Key="800000" Value="10000" />
+	<MatchPowerKeyValue KeyName="LoseScoreRate" Key="900000" Value="10000" />
+	<MatchPowerKeyValue KeyName="WinStreak" DescribeName="连胜值,连胜加成（万分比）" Key="1" Value="10000" />
+	<MatchPowerKeyValue KeyName="WinStreak" Key="4" Value="10300" />
+	<MatchPowerKeyValue KeyName="WinStreak" Key="6" Value="10500" />
+	<MatchPowerKeyValue KeyName="WinStreak" Key="7" Value="10700" />
+	<MatchPowerKeyValue KeyName="WinStreak" Key="8" Value="10900" />
+	<MatchPowerKeyValue KeyName="WinStreak" Key="9" Value="11000" />
+	<MatchPowerKeyValue KeyName="LoseStreak" DescribeName="连败值,连败加成（万分比）" Key="1" Value="10000" />
+	<MatchPowerKeyValue KeyName="LoseStreak" Key="3" Value="10000" />
+	<MatchPowerKeyValue KeyName="LoseStreak" Key="5" Value="10000" />
+	<MatchPowerKeyValue KeyName="LoseStreak" Key="7" Value="10000" />
+	<MatchPowerKeyValue KeyName="LoseStreak" Key="9" Value="10000" />
+	<MatchPowerKeyValue KeyName="LevelRate" DescribeName="等级,加成（万分比）" Key="0" Value="10000" />
+	<MatchPowerKeyValue KeyName="LevelRate" Key="10" Value="10000" />
+	<MatchPowerKeyValue KeyName="LevelRate" Key="20" Value="10000" />
+	<MatchPowerKeyValue KeyName="LevelRate" Key="30" Value="10000" />
+	<MatchPowerKeyValue KeyName="LevelRate" Key="60" Value="10000" />
+	<MatchPowerKeyValue KeyName="LevelRate" Key="100" Value="10000" />
+	<MatchPowerKeyValue KeyName="LevelRate" Key="150" Value="10000" />
+	<MatchPowerKeyValue KeyName="LevelRate" Key="200" Value="10000" />
+	<MatchPowerKeyValue KeyName="VIPRate" DescribeName="VIP等级，加成（万分比）" Key="1" Value="10000" />
+	<MatchPowerKeyValue KeyName="VIPRate" Key="2" Value="10000" />
+	<MatchPowerKeyValue KeyName="VIPRate" Key="3" Value="10000" />
+	<MatchPowerKeyValue KeyName="VIPRate" Key="4" Value="10000" />
+	<MatchPowerKeyValue KeyName="VIPRate" Key="5" Value="10000" />
+	<MatchPowerKeyValue KeyName="VIPRate" Key="6" Value="10000" />
+	<MatchPowerKeyValue KeyName="VIPRate" Key="7" Value="10000" />
+	<MatchPowerKeyValue KeyName="VIPRate" Key="8" Value="10000" />
+	<MatchPowerKeyValue KeyName="VIPRate" Key="9" Value="10000" />
+	<MatchPowerKeyValue KeyName="VIPRate" Key="10" Value="10000" />
+	<MatchPowerKeyValue KeyName="Level" DescribeName="等级,rank(暂时不用来计算）" Key="30" Value="1" />
+	<MatchPowerKeyValue KeyName="Level" Key="50" Value="2" />
+	<MatchPowerKeyValue KeyName="Level" Key="60" Value="3" />
+	<MatchPowerKeyValue KeyName="Level" Key="80" Value="5" />
+	<MatchPowerKeyValue KeyName="Level" Key="100" Value="7" />
+	<MatchPowerKeyValue KeyName="Level" Key="120" Value="9" />
+	<MatchPowerKeyValue KeyName="Level" Key="140" Value="11" />
+	<MatchPowerKeyValue KeyName="Level" Key="160" Value="13" />
+	<MatchPowerKeyValue KeyName="Level" Key="170" Value="15" />
+	<MatchPowerKeyValue KeyName="Level" Key="180" Value="17" />
+	<MatchPowerKeyValue KeyName="Score" DescribeName="积分,rank(暂时不用来计算)" Key="0" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="1000" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="2000" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="5000" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="8000" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="12000" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="16000" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="20000" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="25000" Value="1" />
+	<MatchPowerKeyValue KeyName="Score" Key="30000" Value="1" />
+	<MatchPowerKeyValue KeyName="Official" DescribeName="官阶,rank(暂时不用来计算" Key="0" Value="1" />
+	<MatchPowerKeyValue KeyName="Official" Key="6" Value="2" />
+	<MatchPowerKeyValue KeyName="Official" Key="8" Value="3" />
+	<MatchPowerKeyValue KeyName="Official" Key="10" Value="5" />
+	<MatchPowerKeyValue KeyName="Official" Key="12" Value="7" />
+	<MatchPowerKeyValue KeyName="Official" Key="14" Value="10" />
+	<MatchPowerKeyValue KeyName="Official" Key="16" Value="12" />
+	<MatchPowerKeyValue KeyName="Official" Key="18" Value="15" />
+	<MatchPowerKeyValue KeyName="Official" Key="20" Value="17" />
+	<MatchPowerKeyValue KeyName="Official" Key="24" Value="20" />
+	<MatchPowerKeyValue KeyName="Official" Key="27" Value="22" />
+</root>

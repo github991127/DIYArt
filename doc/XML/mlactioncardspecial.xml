@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MLActionMap>
+    <mlaction id="136" spell="0" fromzone="5" />
+	<mlaction id="137" spell="90" fromzone="6" />
+	<mlaction id="138" spell="200" fromzone="6" />
+	<mlaction id="139" spell="88" fromzone="6" />
+	<mlaction id="140" spell="21" fromzone="6" />
+	<mlaction id="141" spell="16" fromzone="6" />
+	<mlaction id="142" spell="28" fromzone="6" />
+	<mlaction id="143" spell="23" fromzone="6" />
+	<mlaction id="144" spell="86" fromzone="6" />
+	<mlaction id="145" spell="15" fromzone="7" />
+	<mlaction id="146" spell="20" fromzone="6" />
+	<mlaction id="147" spell="25" fromzone="6" />
+	<mlaction id="148" spell="89" fromzone="6" />
+	<mlaction id="149" spell="18" fromzone="6" />
+	<mlaction id="150" spell="22" fromzone="6" />
+	<mlaction id="151" spell="17" fromzone="6" />
+	<mlaction id="152" spell="201" fromzone="6" />
+	<mlaction id="153" spell="26" fromzone="6" />
+	<mlaction id="154" spell="19" fromzone="6" />
+	<mlaction id="155" spell="24" fromzone="6" />
+	<mlaction id="156" spell="87" fromzone="6" />
+	<mlaction id="157" spell="30" fromzone="6" />
+	<mlaction id="158" spell="27" fromzone="6" />
+	<mlaction id="159" spell="29" fromzone="6" />
+	<mlaction id="160" spell="84" fromzone="7" />
+	<mlaction id="161" spell="11" fromzone="7" />
+	<mlaction id="162" spell="0" fromzone="0" />
+</MLActionMap>

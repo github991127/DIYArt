@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<parameter>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			need_item	-	个人创建比赛的基础参赛券数量
+			need_level	-	创建比赛要求等级
+			score_initial	-	国战模式初始积分0
+			score_min	-	国战模式淘汰积分
+			time_start	-	自建赛开放时间
+			time_over	-	自建赛结束时间
+			time_turn_max	-	一场比赛的最长时间跨度
+			reward_num	-	奖励最多发放前N名
+			item_id	-	代金券id
+			time_turn_need1	-	第一轮比赛时间至少要在报名截止时间N时间以后
+			min_person	-	比赛淘汰后人数不足N人则结束
+			day	-	解散后信息保留时间
+			describe	-	赛制说明
+			describe_h5	-	赛制说明-laya版本
+			describe_pad	-	赛制说明-pad端
+			text1	-	步骤说明1
+			text2	-	步骤说明2
+			text3	-	步骤说明3
+			text4	-	步骤说明4
+			text5	-	步骤说明5
+			rank_time	-	比赛排行榜的刷新间隔
+			-->
+		<content need_item="1" need_level="50" score_initial="1000" score_min="200" time_start="20190628T000000" time_over="20391231T235959" time_turn_max="1296000" reward_num="10" item_id="7900101" time_turn_need1="60" min_person="2" day="604800" rank_time="600" />
+	</parameter>
+	<competition>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			scale_id	-	比赛规模I
+			name	-	规模名字
+			pattern	-	模式限定
+			official	-	（可为空）要求：填1等于官方赛才有
+			num_min	-	最少要求报名人数
+			time_turn	-	每轮之间最短间隔时间
+			num_max	-	最多可报名人数
+			turn_min	-	最小轮数
+			turn_max	-	最多轮数
+			tickets_id	-	官方赛门票对应的道具id
+			time_gift	-	发奖时间
+			deduction	-	每轮不参加比赛扣除积分
+			label	-	每天人数文字显示
+			broadcast_need	-	广播要求发奖消耗的代金券数量
+				-	备注
+				-	
+				-	
+				-	
+				-	
+				-	
+				-	备份-间隔
+			-->
+		<scale scale_id="1" pattern="112;114" num_min="8" time_turn="3600" num_max="50" turn_min="2" turn_max="3" tickets_id="7900201;7900301" time_gift="3600" deduction="100" broadcast_need="5" />
+		<scale scale_id="2" pattern="112;114" num_min="25" time_turn="3600" num_max="100" turn_min="4" turn_max="7" tickets_id="7900201;7900301" time_gift="3600" deduction="100" broadcast_need="25" />
+		<scale scale_id="3" pattern="112;114" num_min="50" time_turn="3600" num_max="150" turn_min="7" turn_max="13" tickets_id="7900201;7900301" time_gift="3600" deduction="100" broadcast_need="100" />
+		<scale scale_id="4" pattern="112;114" official="1" num_min="100" time_turn="3600" num_max="200" turn_min="8" turn_max="14" tickets_id="7900201;7900301" time_gift="3600" deduction="100" broadcast_need="0" />
+		<scale scale_id="5" pattern="112;114" official="1" num_min="200" time_turn="3600" num_max="400" turn_min="9" turn_max="15" tickets_id="7900201;7900301" time_gift="3600" deduction="100" broadcast_need="0" />
+		<scale scale_id="6" pattern="112;114" official="1" num_min="300" time_turn="3600" num_max="600" turn_min="10" turn_max="16" tickets_id="7900201;7900301" time_gift="3600" deduction="100" broadcast_need="0" />
+		<scale scale_id="7" pattern="112;114" official="1" num_min="500" time_turn="3600" num_max="1000" turn_min="12" turn_max="20" tickets_id="7900201;7900301" time_gift="3600" deduction="100" broadcast_need="0" />
+	</competition>
+	<mail>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	邮件ID
+				-	说明
+			name	-	标题
+			content	-	内容
+			content_more	-	拓展内容
+			time	-	有效期
+			goods	-	附带道具
+				-	说 明：$MATCHNAME$表示比赛名字、$NUM$表示对应的名次、$PLAYERNAME$替换成对应的玩家名、$INTEGRATION$为对应的积分、$INVITATOR$为邀请人。个人名次结束通知，有奖励的用1003，没奖励的用1004. $MATCH_ID$为比赛ID
+				-	
+				-	
+				-	
+				-	
+				-
+			-->
+		<content id="1001" name="比赛取消通知" time="1296000">
+			<content>
+				<![CDATA[很遗憾，您创建的$MATCHNAME$因报名人数不足被取消，请在附件中查收您创建比赛消耗的道具。]]>
+			</content>
+		</content>
+		<content id="1002" name="比赛取消通知" time="1296000">
+			<content>
+				<![CDATA[很遗憾，您参加的$MATCHNAME$因报名人数不足被取消，如果有消耗报名道具可在附件中领取。]]>
+			</content>
+		</content>
+		<content id="1004" name="比赛结束通知" time="1296000">
+			<content>
+				<![CDATA[恭喜您在$MATCHNAME$中获得了第$NUM$名，请在附件中查收您的奖励。比赛结果如下:<a href='event: sbm_final_rank'><u><b>【详细查看】</b></u></a>\n]]>
+			</content>
+		</content>
+		<content id="1003" name="比赛结束通知" time="1296000">
+			<content>
+				<![CDATA[恭喜您在$MATCHNAME$中获得了第$NUM$名。比赛结果如下:<a href='event: sbm_final_rank'><u><b>【详细查看】</b></u></a> ]]>
+			</content>
+		</content>
+		<content id="1005" name="比赛结束通知" time="1296000">
+			<content>
+				<![CDATA[您创建的$MATCHNAME$比赛已结束，比赛结果如下<a href='event: sbm_final_rank'><u><b>【详细查看】</b></u></a>（如有未发放的奖励请在附件领取）。<br/>]]>
+			</content>
+			<content_more>
+				<![CDATA[第$NUM$名：$PLAYERNAME$  $INTEGRATION$积分  $PRIZE$元宝<br/>]]>
+			</content_more>
+		</content>
+		<content id="1006" name="比赛邀请邮件" time="1296000">
+			<content>
+				<![CDATA[小伙伴$INVITATOR$诚邀您参加$MATCHNAME$比赛，请戳按钮加入吧。<br/>    <a href='event: check_sbm$MATCH_ID$'><u><b>【查看邀请】</b></u></a>]]>
+			</content>
+		</content>
+		<content id="1007" name="取消报名通知" time="1296000">
+			<content>
+				<![CDATA[您取消了$MATCHNAME$的报名，退还的报名道具可在附件中领取。]]>
+			</content>
+		</content>
+		<content id="1008" name="邀请失败" time="1296000">
+			<content>
+				<![CDATA[由于未知原因，以下玩家邀请失败：]]>
+			</content>
+			<content_more>
+				<![CDATA[[$PLAYERNAME$]]]>
+			</content_more>
+		</content>
+	</mail>
+	<integration>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	排名
+			person8	-	8人局
+			person7	-	7人局
+			person6	-	6人局
+			person5	-	5人局
+			person4	-	4人局
+			person2	-	4人局
+			-->
+		<content rank="1" person8="80" person7="75" person6="68" person5="61" person4="47" person2="47" />
+		<content rank="2" person8="56" person7="52" person6="43" person5="32" person4="23" person2="-47" />
+		<content rank="3" person8="34" person7="31" person6="27" person5="3" person4="-24" person2="0" />
+		<content rank="4" person8="17" person7="12" person6="-8" person5="-29" person4="-46" person2="0" />
+		<content rank="5" person8="4" person7="-21" person6="-43" person5="-67" person4="0" person2="0" />
+		<content rank="6" person8="-28" person7="-59" person6="-80" person5="0" person4="0" person2="0" />
+		<content rank="7" person8="-63" person7="-90" person6="0" person5="0" person4="0" person2="0" />
+		<content rank="8" person8="-100" person7="0" person6="0" person5="0" person4="0" person2="0" />
+	</integration>
+	<competition_mode>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			pattern	-	模式
+			match_max	-	匹配最大人数
+			match_min	-	匹配最小人数
+			broadcast	-	广播模式，最多填三个场
+			-->
+		<content pattern="112" match_max="8" match_min="2" broadcast="22;28" />
+		<content pattern="114" match_max="8" match_min="2" broadcast="22;28" />
+	</competition_mode>
+	<integration2>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			role	-	角色1表示主忠 2反贼 3表示内奸
+			rank	-	排名
+			person8	-	8人局
+			person7	-	7人局
+			person6	-	6人局
+			person5	-	5人局
+			person4	-	4人局
+			person2	-	2人局
+			-->
+		<content role="1" rank="1" person8="100" person7="75" person6="70" person5="45" person4="25" person2="25" />
+		<content role="1" rank="2" person8="71" person7="43" person6="38" person5="18" person4="13" person2="13" />
+		<content role="1" rank="3" person8="42" person7="14" person6="17" person5="-8" person4="-14" person2="-14" />
+		<content role="1" rank="4" person8="6" person7="3" person6="-7" person5="-15" person4="-24" person2="-24" />
+		<content role="1" rank="5" person8="-22" person7="-18" person6="-38" person5="-40" person4="0" person2="0" />
+		<content role="1" rank="6" person8="-41" person7="-42" person6="-80" person5="0" person4="0" person2="0" />
+		<content role="1" rank="7" person8="-66" person7="-75" person6="0" person5="0" person4="0" person2="0" />
+		<content role="1" rank="8" person8="-90" person7="0" person6="0" person5="0" person4="0" person2="0" />
+		<content role="2" rank="1" person8="80" person7="85" person6="60" person5="50" person4="35" person2="35" />
+		<content role="2" rank="2" person8="56" person7="57" person6="37" person5="29" person4="16" person2="16" />
+		<content role="2" rank="3" person8="34" person7="33" person6="23" person5="8" person4="-17" person2="-17" />
+		<content role="2" rank="4" person8="17" person7="0" person6="-1" person5="-25" person4="-34" person2="-34" />
+		<content role="2" rank="5" person8="4" person7="-29" person6="-44" person5="-62" person4="0" person2="0" />
+		<content role="2" rank="6" person8="-28" person7="-46" person6="-75" person5="0" person4="0" person2="0" />
+		<content role="2" rank="7" person8="-63" person7="-100" person6="0" person5="0" person4="0" person2="0" />
+		<content role="2" rank="8" person8="-100" person7="0" person6="0" person5="0" person4="0" person2="0" />
+		<content role="3" rank="1" person8="380" person7="285" person6="220" person5="125" person4="55" person2="55" />
+		<content role="3" rank="2" person8="11" person7="-7" person6="-2" person5="-7" person4="-2" person2="-2" />
+		<content role="3" rank="3" person8="-8" person7="-26" person6="-18" person5="-28" person4="-24" person2="-24" />
+		<content role="3" rank="4" person8="-34" person7="-36" person6="-37" person5="-35" person4="-29" person2="-29" />
+		<content role="3" rank="5" person8="-57" person7="-48" person6="-63" person5="-55" person4="0" person2="0" />
+		<content role="3" rank="6" person8="-76" person7="-73" person6="-100" person5="0" person4="0" person2="0" />
+		<content role="3" rank="7" person8="-96" person7="-95" person6="0" person5="0" person4="0" person2="0" />
+		<content role="3" rank="8" person8="-120" person7="0" person6="0" person5="0" person4="0" person2="0" />
+	</integration2>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			cfg	-	等级限制（等级,参赛券；等级,参赛券...）GM不受限制
+		-->
+	<leveltoreward cfg="50,5;75,10;100,15;125,20;150,30;175,40;200,50" />
+</root>

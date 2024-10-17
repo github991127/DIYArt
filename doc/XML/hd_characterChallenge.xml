@@ -1,0 +1,2032 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ChallengeGoods	-	挑战消耗道具id
+			DailyRenew	-	每日恢复道具数量
+			MaxRenew	-	自然恢复道具上限
+			MaxDrop	-	突破道具掉落上限
+			Extype	-	关卡卡组extype
+			RefreshTimes	-	每日刷新最大次数
+			roomName	-	模式名称
+			roomName2	-	模式名称2
+			GameMaxTime	-	最大牌局时间
+			BreakItemId	-	突破通用道具
+			RunawayMinTime	-	逃跑最小时间
+			RunawayPunishTime	-	逃跑处罚时间
+			CharacterReturn	-	重复武将次卡替换
+			PlayCardTime	-	玩家出手时间
+			tagLv	-	显示即将突破标签的等级
+		-->
+	<Common ChallengeGoods="951401" DailyRenew="3" MaxRenew="10" MaxDrop="10000" Extype="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50" RefreshTimes="3" roomName="五虎试炼" roomName2="每日试炼" GameMaxTime="900" RunawayMinTime="60" RunawayPunishTime="60" CharacterReturn="100301,1" PlayCardTime="60" tagLv="1;80" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ID	-	id
+			PreComplete	-	前置解锁条件
+			CompleteRewards	-	通关奖励
+			Character	-	试炼武将
+			CompleteDetail	-	关卡配置
+				-	备注
+			Reduce	-	PC武将背景图使用缩小样式
+			tagX	-	关卡进度差X可突破时显示即将突破标签
+		-->
+	<BaseComplete ID="1" CompleteRewards="21246501,1" Character="301" CompleteDetail="1,2,3,4" />
+	<BaseComplete ID="2" PreComplete="1" CompleteRewards="21246801,1" Character="26" CompleteDetail="5,6,7,8,9,10,11,12,13" />
+	<BaseComplete ID="3" PreComplete="2" CompleteRewards="21246701,1" Character="303" CompleteDetail="14,15,16,17,18,19,20,21,22,23,24,25,26,27" />
+	<BaseComplete ID="4" PreComplete="3" CompleteRewards="21246601,1" Character="302" CompleteDetail="30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48" />
+	<BaseComplete ID="5" PreComplete="3" CompleteRewards="21246401,1" Character="300" CompleteDetail="51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ID	-	id
+			Loction	-	对应刷新格子
+			Officer	-	触发官阶等级
+				-	
+			Recommend_new	-	推荐武将-新手线 权重
+			Recommend_zong	-	推荐武将-综合线 权重
+			Recommend_fight	-	推荐武将-对局线 权重
+			Screening	-	使用筛选器
+		-->
+	<Refresh ID="1001" Loction="1" Officer="7" Recommend_new="100" Recommend_zong="1" Recommend_fight="1" Screening="3" />
+	<Refresh ID="1002" Loction="1" Officer="13" Recommend_new="100" Recommend_zong="1" Recommend_fight="1" Screening="3" />
+	<Refresh ID="1003" Loction="1" Officer="20" Recommend_new="100" Recommend_zong="1" Recommend_fight="1" Screening="3" />
+	<Refresh ID="1004" Loction="1" Officer="27" Recommend_new="100" Recommend_zong="1" Recommend_fight="1" Screening="3" />
+	<Refresh ID="1005" Loction="1" Officer="38" Recommend_new="100" Recommend_zong="1" Recommend_fight="1" Screening="3" />
+	<Refresh ID="2001" Loction="2" Officer="7" Recommend_new="100" Recommend_zong="1" Recommend_fight="1" Screening="4" />
+	<Refresh ID="2002" Loction="2" Officer="11" Recommend_new="80" Recommend_zong="6" Recommend_fight="14" Screening="4" />
+	<Refresh ID="2003" Loction="2" Officer="19" Recommend_new="60" Recommend_zong="12" Recommend_fight="28" Screening="4" />
+	<Refresh ID="2004" Loction="2" Officer="27" Recommend_new="50" Recommend_zong="15" Recommend_fight="35" Screening="4" />
+	<Refresh ID="2005" Loction="2" Officer="38" Recommend_new="50" Recommend_zong="15" Recommend_fight="35" Screening="4" />
+	<Refresh ID="3001" Loction="3" Officer="7" Recommend_new="100" Recommend_zong="1" Recommend_fight="1" Screening="5" />
+	<Refresh ID="3002" Loction="3" Officer="11" Recommend_new="50" Recommend_zong="15" Recommend_fight="35" Screening="5" />
+	<Refresh ID="3003" Loction="3" Officer="19" Recommend_new="40" Recommend_zong="18" Recommend_fight="42" Screening="5" />
+	<Refresh ID="3004" Loction="3" Officer="27" Recommend_new="30" Recommend_zong="21" Recommend_fight="49" Screening="5" />
+	<Refresh ID="3005" Loction="3" Officer="38" Recommend_new="20" Recommend_zong="24" Recommend_fight="56" Screening="5" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ID	-	id
+			Character	-	试炼武将
+				-	武将名称
+			CompleteRewards	-	通关奖励
+			CompleteRewards2	-	奖励上限后掉落道具
+			CompleteRandom	-	随机关卡配置
+			Locaotion_m	-	武将U3D背景图偏移坐标
+			Reduce	-	PC武将背景图使用缩小样式
+				-	备注
+		-->
+	<OtherComplete ID="1" Character="34" CompleteRewards="903408,2" CompleteRewards2="903408,2" CompleteRandom="100,1000,2000" />
+	<OtherComplete ID="2" Character="35" CompleteRewards="903509,2" CompleteRewards2="903509,2" CompleteRandom="101,1001,2001" />
+	<OtherComplete ID="3" Character="36" CompleteRewards="903609,2" CompleteRewards2="903609,2" CompleteRandom="102,1002,2002" />
+	<OtherComplete ID="4" Character="37" CompleteRewards="903709,2" CompleteRewards2="903709,2" CompleteRandom="103,1003,2003" />
+	<OtherComplete ID="5" Character="38" CompleteRewards="903809,2" CompleteRewards2="903809,2" CompleteRandom="104,1004,2004" />
+	<OtherComplete ID="6" Character="39" CompleteRewards="903909,2" CompleteRewards2="903909,2" CompleteRandom="105,1005,2005" />
+	<OtherComplete ID="7" Character="40" CompleteRewards="904009,2" CompleteRewards2="904009,2" CompleteRandom="106,1006,2006" />
+	<OtherComplete ID="8" Character="41" CompleteRewards="904109,2" CompleteRewards2="904109,2" CompleteRandom="107,1007,2007" />
+	<OtherComplete ID="9" Character="42" CompleteRewards="904209,2" CompleteRewards2="904209,2" CompleteRandom="108,1008,2008" />
+	<OtherComplete ID="10" Character="43" CompleteRewards="904309,2" CompleteRewards2="904309,2" CompleteRandom="109,1009,2009" />
+	<OtherComplete ID="11" Character="44" CompleteRewards="904409,2" CompleteRewards2="904409,2" CompleteRandom="110,1010,2010" />
+	<OtherComplete ID="12" Character="45" CompleteRewards="904509,2" CompleteRewards2="904509,2" CompleteRandom="111,1011,2011" />
+	<OtherComplete ID="13" Character="46" CompleteRewards="904609,2" CompleteRewards2="904609,2" CompleteRandom="112,1012,2012" />
+	<OtherComplete ID="14" Character="47" CompleteRewards="904709,2" CompleteRewards2="904709,2" CompleteRandom="113,1013,2013" />
+	<OtherComplete ID="15" Character="48" CompleteRewards="904809,2" CompleteRewards2="904809,2" CompleteRandom="114,1014,2014" />
+	<OtherComplete ID="16" Character="49" CompleteRewards="904909,2" CompleteRewards2="904909,2" CompleteRandom="115,1015,2015" />
+	<OtherComplete ID="17" Character="50" CompleteRewards="905009,2" CompleteRewards2="905009,2" CompleteRandom="116,1016,2016" />
+	<OtherComplete ID="18" Character="51" CompleteRewards="905109,2" CompleteRewards2="905109,2" CompleteRandom="117,1017,2017" />
+	<OtherComplete ID="19" Character="52" CompleteRewards="905209,2" CompleteRewards2="905209,2" CompleteRandom="118,1018,2018" />
+	<OtherComplete ID="20" Character="53" CompleteRewards="905309,2" CompleteRewards2="905309,2" CompleteRandom="119,1019,2019" />
+	<OtherComplete ID="21" Character="54" CompleteRewards="905409,2" CompleteRewards2="905409,2" CompleteRandom="120,1020,2020" />
+	<OtherComplete ID="22" Character="55" CompleteRewards="905509,2" CompleteRewards2="905509,2" CompleteRandom="121,1021,2021" />
+	<OtherComplete ID="23" Character="56" CompleteRewards="905609,2" CompleteRewards2="905609,2" CompleteRandom="122,1022,2022" />
+	<OtherComplete ID="24" Character="57" CompleteRewards="905709,2" CompleteRewards2="905709,2" CompleteRandom="123,1023,2023" />
+	<OtherComplete ID="25" Character="72" CompleteRewards="907209,2" CompleteRewards2="907209,2" CompleteRandom="124,1024,2024" />
+	<OtherComplete ID="26" Character="73" CompleteRewards="907309,2" CompleteRewards2="907309,2" CompleteRandom="125,1025,2025" />
+	<OtherComplete ID="27" Character="100" CompleteRewards="910009,2" CompleteRewards2="910009,2" CompleteRandom="126,1026,2026" />
+	<OtherComplete ID="28" Character="101" CompleteRewards="910109,2" CompleteRewards2="910109,2" CompleteRandom="127,1027,2027" />
+	<OtherComplete ID="29" Character="103" CompleteRewards="910309,2" CompleteRewards2="910309,2" CompleteRandom="128,1028,2028" />
+	<OtherComplete ID="30" Character="104" CompleteRewards="910409,2" CompleteRewards2="910409,2" CompleteRandom="129,1029,2029" />
+	<OtherComplete ID="31" Character="105" CompleteRewards="910509,2" CompleteRewards2="910509,2" CompleteRandom="130,1030,2030" />
+	<OtherComplete ID="32" Character="106" CompleteRewards="910609,2" CompleteRewards2="910609,2" CompleteRandom="131,1031,2031" />
+	<OtherComplete ID="33" Character="107" CompleteRewards="910709,2" CompleteRewards2="910709,2" CompleteRandom="132,1032,2032" />
+	<OtherComplete ID="34" Character="108" CompleteRewards="910809,2" CompleteRewards2="910809,2" CompleteRandom="133,1033,2033" />
+	<OtherComplete ID="35" Character="109" CompleteRewards="910909,2" CompleteRewards2="910909,2" CompleteRandom="134,1034,2034" />
+	<OtherComplete ID="36" Character="110" CompleteRewards="911009,2" CompleteRewards2="911009,2" CompleteRandom="135,1035,2035" />
+	<OtherComplete ID="37" Character="111" CompleteRewards="911109,2" CompleteRewards2="911109,2" CompleteRandom="136,1036,2036" />
+	<OtherComplete ID="38" Character="112" CompleteRewards="911209,2" CompleteRewards2="911209,2" CompleteRandom="137,1037,2037" />
+	<OtherComplete ID="39" Character="113" CompleteRewards="911309,2" CompleteRewards2="911309,2" CompleteRandom="138,1038,2038" />
+	<OtherComplete ID="40" Character="114" CompleteRewards="911409,2" CompleteRewards2="911409,2" CompleteRandom="139,1039,2039" />
+	<OtherComplete ID="41" Character="115" CompleteRewards="911509,2" CompleteRewards2="911509,2" CompleteRandom="140,1040,2040" />
+	<OtherComplete ID="42" Character="116" CompleteRewards="911609,2" CompleteRewards2="911609,2" CompleteRandom="141,1041,2041" />
+	<OtherComplete ID="43" Character="117" CompleteRewards="911709,2" CompleteRewards2="911709,2" CompleteRandom="142,1042,2042" />
+	<OtherComplete ID="44" Character="118" CompleteRewards="911809,2" CompleteRewards2="911809,2" CompleteRandom="143,1043,2043" />
+	<OtherComplete ID="45" Character="119" CompleteRewards="911909,2" CompleteRewards2="911909,2" CompleteRandom="144,1044,2044" />
+	<OtherComplete ID="46" Character="121" CompleteRewards="912109,2" CompleteRewards2="912109,2" CompleteRandom="145,1045,2045" />
+	<OtherComplete ID="47" Character="122" CompleteRewards="912209,2" CompleteRewards2="912209,2" CompleteRandom="146,1046,2046" />
+	<OtherComplete ID="48" Character="123" CompleteRewards="912309,2" CompleteRewards2="912309,2" CompleteRandom="147,1047,2047" />
+	<OtherComplete ID="49" Character="124" CompleteRewards="912409,2" CompleteRewards2="912409,2" CompleteRandom="148,1048,2048" />
+	<OtherComplete ID="50" Character="125" CompleteRewards="912509,2" CompleteRewards2="912509,2" CompleteRandom="149,1049,2049" />
+	<OtherComplete ID="51" Character="126" CompleteRewards="970609,2" CompleteRewards2="970609,2" CompleteRandom="150,1050,2050" />
+	<OtherComplete ID="52" Character="127" CompleteRewards="970509,2" CompleteRewards2="970509,2" CompleteRandom="151,1051,2051" />
+	<OtherComplete ID="53" Character="128" CompleteRewards="912809,2" CompleteRewards2="912809,2" CompleteRandom="152,1052,2052" />
+	<OtherComplete ID="54" Character="129" CompleteRewards="912909,2" CompleteRewards2="912909,2" CompleteRandom="153,1053,2053" />
+	<OtherComplete ID="55" Character="130" CompleteRewards="913009,2" CompleteRewards2="913009,2" CompleteRandom="154,1054,2054" />
+	<OtherComplete ID="56" Character="131" CompleteRewards="913109,2" CompleteRewards2="913109,2" CompleteRandom="155,1055,2055" />
+	<OtherComplete ID="57" Character="135" CompleteRewards="913509,2" CompleteRewards2="913509,2" CompleteRandom="156,1056,2056" />
+	<OtherComplete ID="58" Character="136" CompleteRewards="913609,2" CompleteRewards2="913609,2" CompleteRandom="157,1057,2057" />
+	<OtherComplete ID="59" Character="137" CompleteRewards="913709,2" CompleteRewards2="913709,2" CompleteRandom="158,1058,2058" />
+	<OtherComplete ID="60" Character="139" CompleteRewards="913909,2" CompleteRewards2="913909,2" CompleteRandom="159,1059,2059" />
+	<OtherComplete ID="61" Character="151" CompleteRewards="915109,2" CompleteRewards2="915109,2" CompleteRandom="160,1060,2060" />
+	<OtherComplete ID="62" Character="152" CompleteRewards="915209,2" CompleteRewards2="915209,2" CompleteRandom="161,1061,2061" />
+	<OtherComplete ID="63" Character="153" CompleteRewards="915309,2" CompleteRewards2="915309,2" CompleteRandom="162,1062,2062" />
+	<OtherComplete ID="64" Character="155" CompleteRewards="915509,2" CompleteRewards2="915509,2" CompleteRandom="163,1063,2063" />
+	<OtherComplete ID="65" Character="156" CompleteRewards="915609,2" CompleteRewards2="915609,2" CompleteRandom="164,1064,2064" />
+	<OtherComplete ID="66" Character="157" CompleteRewards="915709,2" CompleteRewards2="915709,2" CompleteRandom="165,1065,2065" />
+	<OtherComplete ID="67" Character="158" CompleteRewards="915809,2" CompleteRewards2="915809,2" CompleteRandom="166,1066,2066" />
+	<OtherComplete ID="68" Character="160" CompleteRewards="916009,2" CompleteRewards2="916009,2" CompleteRandom="167,1067,2067" />
+	<OtherComplete ID="69" Character="161" CompleteRewards="916109,2" CompleteRewards2="916109,2" CompleteRandom="168,1068,2068" />
+	<OtherComplete ID="70" Character="162" CompleteRewards="916209,2" CompleteRewards2="916209,2" CompleteRandom="169,1069,2069" />
+	<OtherComplete ID="71" Character="164" CompleteRewards="916409,2" CompleteRewards2="916409,2" CompleteRandom="170,1070,2070" />
+	<OtherComplete ID="72" Character="166" CompleteRewards="916609,2" CompleteRewards2="916609,2" CompleteRandom="171,1071,2071" />
+	<OtherComplete ID="73" Character="167" CompleteRewards="918909,2" CompleteRewards2="918909,2" CompleteRandom="172,1072,2072" />
+	<OtherComplete ID="74" Character="168" CompleteRewards="916809,2" CompleteRewards2="916809,2" CompleteRandom="173,1073,2073" />
+	<OtherComplete ID="75" Character="169" CompleteRewards="916909,2" CompleteRewards2="916909,2" CompleteRandom="174,1074,2074" />
+	<OtherComplete ID="76" Character="170" CompleteRewards="917009,2" CompleteRewards2="917009,2" CompleteRandom="175,1075,2075" />
+	<OtherComplete ID="77" Character="171" CompleteRewards="917109,2" CompleteRewards2="917109,2" CompleteRandom="176,1076,2076" />
+	<OtherComplete ID="78" Character="172" CompleteRewards="917209,2" CompleteRewards2="917209,2" CompleteRandom="177,1077,2077" />
+	<OtherComplete ID="79" Character="173" CompleteRewards="917309,2" CompleteRewards2="917309,2" CompleteRandom="178,1078,2078" />
+	<OtherComplete ID="80" Character="174" CompleteRewards="917409,2" CompleteRewards2="917409,2" CompleteRandom="179,1079,2079" />
+	<OtherComplete ID="81" Character="175" CompleteRewards="917509,2" CompleteRewards2="917509,2" CompleteRandom="180,1080,2080" />
+	<OtherComplete ID="82" Character="176" CompleteRewards="917609,2" CompleteRewards2="917609,2" CompleteRandom="181,1081,2081" />
+	<OtherComplete ID="83" Character="177" CompleteRewards="917709,2" CompleteRewards2="917709,2" CompleteRandom="182,1082,2082" />
+	<OtherComplete ID="84" Character="178" CompleteRewards="917809,2" CompleteRewards2="917809,2" CompleteRandom="183,1083,2083" />
+	<OtherComplete ID="85" Character="179" CompleteRewards="917909,2" CompleteRewards2="917909,2" CompleteRandom="184,1084,2084" />
+	<OtherComplete ID="86" Character="180" CompleteRewards="918009,2" CompleteRewards2="918009,2" CompleteRandom="185,1085,2085" />
+	<OtherComplete ID="87" Character="181" CompleteRewards="918109,2" CompleteRewards2="918109,2" CompleteRandom="186,1086,2086" />
+	<OtherComplete ID="88" Character="182" CompleteRewards="918209,2" CompleteRewards2="918209,2" CompleteRandom="187,1087,2087" />
+	<OtherComplete ID="89" Character="183" CompleteRewards="918309,2" CompleteRewards2="918309,2" CompleteRandom="188,1088,2088" />
+	<OtherComplete ID="90" Character="184" CompleteRewards="918409,2" CompleteRewards2="918409,2" CompleteRandom="189,1089,2089" />
+	<OtherComplete ID="91" Character="185" CompleteRewards="915409,2" CompleteRewards2="915409,2" CompleteRandom="190,1090,2090" />
+	<OtherComplete ID="92" Character="186" CompleteRewards="915909,2" CompleteRewards2="915909,2" CompleteRandom="191,1091,2091" />
+	<OtherComplete ID="93" Character="187" CompleteRewards="916309,2" CompleteRewards2="916309,2" CompleteRandom="192,1092,2092" />
+	<OtherComplete ID="94" Character="188" CompleteRewards="916509,2" CompleteRewards2="916509,2" CompleteRandom="193,1093,2093" />
+	<OtherComplete ID="95" Character="201" CompleteRewards="9098709,2" CompleteRewards2="9098709,2" CompleteRandom="194,1094,2094,3001,3002,3003" />
+	<OtherComplete ID="96" Character="202" CompleteRewards="9054609,2" CompleteRewards2="9054609,2" CompleteRandom="195,1095,2095,3004,3005" />
+	<OtherComplete ID="97" Character="203" CompleteRewards="9056009,2" CompleteRewards2="9056009,2" CompleteRandom="196,1096,2096,3006,3007" />
+	<OtherComplete ID="98" Character="204" CompleteRewards="9056109,2" CompleteRewards2="9056109,2" CompleteRandom="197,1097,2097,3008,3009,3010" />
+	<OtherComplete ID="99" Character="205" CompleteRewards="9056209,2" CompleteRewards2="9056209,2" CompleteRandom="198,1098,2098,3011,3012,3013" />
+	<OtherComplete ID="100" Character="206" CompleteRewards="9056309,2" CompleteRewards2="9056309,2" CompleteRandom="199,1099,2099" />
+	<OtherComplete ID="101" Character="207" CompleteRewards="9056409,2" CompleteRewards2="9056409,2" CompleteRandom="200,1100,2100" />
+	<OtherComplete ID="102" Character="208" CompleteRewards="9056509,2" CompleteRewards2="9056509,2" CompleteRandom="201,1101,2101" />
+	<OtherComplete ID="103" Character="210" CompleteRewards="921009,2" CompleteRewards2="921009,2" CompleteRandom="202,1102,2102" />
+	<OtherComplete ID="104" Character="211" CompleteRewards="921109,2" CompleteRewards2="921109,2" CompleteRandom="203,1103,2103" />
+	<OtherComplete ID="105" Character="212" CompleteRewards="921209,2" CompleteRewards2="921209,2" CompleteRandom="204,1104,2104" />
+	<OtherComplete ID="106" Character="214" CompleteRewards="921409,2" CompleteRewards2="921409,2" CompleteRandom="205,1105,2105" />
+	<OtherComplete ID="107" Character="215" CompleteRewards="921509,2" CompleteRewards2="921509,2" CompleteRandom="206,1106,2106" />
+	<OtherComplete ID="108" Character="220" CompleteRewards="9056609,2" CompleteRewards2="9056609,2" CompleteRandom="207,1107,2107" />
+	<OtherComplete ID="109" Character="221" CompleteRewards="9056709,2" CompleteRewards2="9056709,2" CompleteRandom="208,1108,2108" />
+	<OtherComplete ID="110" Character="224" CompleteRewards="9056909,2" CompleteRewards2="9056909,2" CompleteRandom="209,1109,2109" />
+	<OtherComplete ID="111" Character="225" CompleteRewards="9056809,2" CompleteRewards2="9056809,2" CompleteRandom="210,1110,2110" />
+	<OtherComplete ID="112" Character="299" CompleteRewards="929909,2" CompleteRewards2="929909,2" CompleteRandom="211,1111,2111" />
+	<OtherComplete ID="113" Character="300" CompleteRewards="930009,2" CompleteRewards2="930009,2" CompleteRandom="212,1112,2112" />
+	<OtherComplete ID="114" Character="301" CompleteRewards="930109,2" CompleteRewards2="930109,2" CompleteRandom="213,1113,2113" />
+	<OtherComplete ID="115" Character="302" CompleteRewards="930209,2" CompleteRewards2="930209,2" CompleteRandom="214,1114,2114" />
+	<OtherComplete ID="116" Character="303" CompleteRewards="930309,2" CompleteRewards2="930309,2" CompleteRandom="215,1115,2115" />
+	<OtherComplete ID="117" Character="304" CompleteRewards="930409,2" CompleteRewards2="930409,2" CompleteRandom="216,1116,2116" />
+	<OtherComplete ID="118" Character="305" CompleteRewards="930509,2" CompleteRewards2="930509,2" CompleteRandom="217,1117,2117" />
+	<OtherComplete ID="119" Character="306" CompleteRewards="930609,2" CompleteRewards2="930609,2" CompleteRandom="218,1118,2118" />
+	<OtherComplete ID="120" Character="307" CompleteRewards="930709,2" CompleteRewards2="930709,2" CompleteRandom="219,1119,2119" />
+	<OtherComplete ID="121" Character="308" CompleteRewards="930809,2" CompleteRewards2="930809,2" CompleteRandom="220,1120,2120" />
+	<OtherComplete ID="122" Character="309" CompleteRewards="930909,2" CompleteRewards2="930909,2" CompleteRandom="221,1121,2121" />
+	<OtherComplete ID="123" Character="310" CompleteRewards="931009,2" CompleteRewards2="931009,2" CompleteRandom="222,1122,2122" />
+	<OtherComplete ID="124" Character="311" CompleteRewards="931109,2" CompleteRewards2="931109,2" CompleteRandom="223,1123,2123" />
+	<OtherComplete ID="125" Character="312" CompleteRewards="931209,2" CompleteRewards2="931209,2" CompleteRandom="224,1124,2124" />
+	<OtherComplete ID="126" Character="313" CompleteRewards="931309,2" CompleteRewards2="931309,2" CompleteRandom="225,1125,2125" />
+	<OtherComplete ID="127" Character="314" CompleteRewards="931409,2" CompleteRewards2="931409,2" CompleteRandom="226,1126,2126" />
+	<OtherComplete ID="128" Character="315" CompleteRewards="931509,2" CompleteRewards2="931509,2" CompleteRandom="227,1127,2127" />
+	<OtherComplete ID="129" Character="316" CompleteRewards="931609,2" CompleteRewards2="931609,2" CompleteRandom="228,1128,2128" />
+	<OtherComplete ID="130" Character="317" CompleteRewards="931709,2" CompleteRewards2="931709,2" CompleteRandom="229,1129,2129" />
+	<OtherComplete ID="131" Character="318" CompleteRewards="931809,2" CompleteRewards2="931809,2" CompleteRandom="230,1130,2130" />
+	<OtherComplete ID="132" Character="319" CompleteRewards="931909,2" CompleteRewards2="931909,2" CompleteRandom="231,1131,2131" />
+	<OtherComplete ID="133" Character="320" CompleteRewards="932009,2" CompleteRewards2="932009,2" CompleteRandom="232,1132,2132" />
+	<OtherComplete ID="134" Character="321" CompleteRewards="932109,2" CompleteRewards2="932109,2" CompleteRandom="233,1133,2133" />
+	<OtherComplete ID="135" Character="322" CompleteRewards="932209,2" CompleteRewards2="932209,2" CompleteRandom="234,1134,2134" />
+	<OtherComplete ID="136" Character="323" CompleteRewards="932309,2" CompleteRewards2="932309,2" CompleteRandom="235,1135,2135" />
+	<OtherComplete ID="137" Character="324" CompleteRewards="932409,2" CompleteRewards2="932409,2" CompleteRandom="236,1136,2136" />
+	<OtherComplete ID="138" Character="325" CompleteRewards="932509,2" CompleteRewards2="932509,2" CompleteRandom="237,1137,2137" />
+	<OtherComplete ID="139" Character="326" CompleteRewards="932609,2" CompleteRewards2="932609,2" CompleteRandom="238,1138,2138" />
+	<OtherComplete ID="140" Character="327" CompleteRewards="932709,2" CompleteRewards2="932709,2" CompleteRandom="239,1139,2139" />
+	<OtherComplete ID="141" Character="328" CompleteRewards="932809,2" CompleteRewards2="932809,2" CompleteRandom="240,1140,2140" />
+	<OtherComplete ID="142" Character="329" CompleteRewards="932909,2" CompleteRewards2="932909,2" CompleteRandom="241,1141,2141" />
+	<OtherComplete ID="143" Character="330" CompleteRewards="933009,2" CompleteRewards2="933009,2" CompleteRandom="242,1142,2142" />
+	<OtherComplete ID="144" Character="331" CompleteRewards="933109,2" CompleteRewards2="933109,2" CompleteRandom="243,1143,2143" />
+	<OtherComplete ID="145" Character="332" CompleteRewards="933209,2" CompleteRewards2="933209,2" CompleteRandom="244,1144,2144" />
+	<OtherComplete ID="146" Character="333" CompleteRewards="933309,2" CompleteRewards2="933309,2" CompleteRandom="245,1145,2145" />
+	<OtherComplete ID="147" Character="334" CompleteRewards="933409,2" CompleteRewards2="933409,2" CompleteRandom="246,1146,2146" />
+	<OtherComplete ID="148" Character="335" CompleteRewards="933509,2" CompleteRewards2="933509,2" CompleteRandom="247,1147,2147" />
+	<OtherComplete ID="149" Character="336" CompleteRewards="933609,2" CompleteRewards2="933609,2" CompleteRandom="248,1148,2148" />
+	<OtherComplete ID="150" Character="337" CompleteRewards="933709,2" CompleteRewards2="933709,2" CompleteRandom="249,1149,2149" />
+	<OtherComplete ID="151" Character="338" CompleteRewards="933809,2" CompleteRewards2="933809,2" CompleteRandom="250,1150,2150" />
+	<OtherComplete ID="152" Character="339" CompleteRewards="933909,2" CompleteRewards2="933909,2" CompleteRandom="251,1151,2151" />
+	<OtherComplete ID="153" Character="340" CompleteRewards="934009,2" CompleteRewards2="934009,2" CompleteRandom="252,1152,2152" />
+	<OtherComplete ID="154" Character="341" CompleteRewards="934109,2" CompleteRewards2="934109,2" CompleteRandom="253,1153,2153" />
+	<OtherComplete ID="155" Character="342" CompleteRewards="934209,2" CompleteRewards2="934209,2" CompleteRandom="254,1154,2154" />
+	<OtherComplete ID="156" Character="343" CompleteRewards="934309,2" CompleteRewards2="934309,2" CompleteRandom="255,1155,2155" />
+	<OtherComplete ID="157" Character="344" CompleteRewards="934409,2" CompleteRewards2="934409,2" CompleteRandom="256,1156,2156" />
+	<OtherComplete ID="158" Character="345" CompleteRewards="934509,2" CompleteRewards2="934509,2" CompleteRandom="257,1157,2157" />
+	<OtherComplete ID="159" Character="346" CompleteRewards="934609,2" CompleteRewards2="934609,2" CompleteRandom="258,1158,2158" />
+	<OtherComplete ID="160" Character="347" CompleteRewards="934709,2" CompleteRewards2="934709,2" CompleteRandom="259,1159,2159" />
+	<OtherComplete ID="161" Character="348" CompleteRewards="934809,2" CompleteRewards2="934809,2" CompleteRandom="260,1160,2160" />
+	<OtherComplete ID="162" Character="349" CompleteRewards="934909,2" CompleteRewards2="934909,2" CompleteRandom="261,1161,2161" />
+	<OtherComplete ID="163" Character="350" CompleteRewards="935009,2" CompleteRewards2="935009,2" CompleteRandom="262,1162,2162" />
+	<OtherComplete ID="164" Character="351" CompleteRewards="935109,2" CompleteRewards2="935109,2" CompleteRandom="263,1163,2163" />
+	<OtherComplete ID="165" Character="352" CompleteRewards="935209,2" CompleteRewards2="935209,2" CompleteRandom="264,1164,2164" />
+	<OtherComplete ID="166" Character="353" CompleteRewards="935309,2" CompleteRewards2="935309,2" CompleteRandom="265,1165,2165" />
+	<OtherComplete ID="167" Character="354" CompleteRewards="935409,2" CompleteRewards2="935409,2" CompleteRandom="266,1166,2166" />
+	<OtherComplete ID="168" Character="356" CompleteRewards="935609,2" CompleteRewards2="935609,2" CompleteRandom="267,1167,2167" />
+	<OtherComplete ID="169" Character="357" CompleteRewards="935709,2" CompleteRewards2="935709,2" CompleteRandom="268,1168,2168" />
+	<OtherComplete ID="170" Character="360" CompleteRewards="936009,2" CompleteRewards2="936009,2" CompleteRandom="269,1169,2169" />
+	<OtherComplete ID="171" Character="361" CompleteRewards="936109,2" CompleteRewards2="936109,2" CompleteRandom="270,1170,2170" />
+	<OtherComplete ID="172" Character="362" CompleteRewards="936209,2" CompleteRewards2="936209,2" CompleteRandom="271,1171,2171" />
+	<OtherComplete ID="173" Character="363" CompleteRewards="936309,2" CompleteRewards2="936309,2" CompleteRandom="272,1172,2172" />
+	<OtherComplete ID="174" Character="364" CompleteRewards="936409,2" CompleteRewards2="936409,2" CompleteRandom="273,1173,2173" />
+	<OtherComplete ID="175" Character="365" CompleteRewards="936509,2" CompleteRewards2="936509,2" CompleteRandom="274,1174,2174" />
+	<OtherComplete ID="176" Character="366" CompleteRewards="936609,2" CompleteRewards2="936609,2" CompleteRandom="275,1175,2175" />
+	<OtherComplete ID="177" Character="367" CompleteRewards="936709,2" CompleteRewards2="936709,2" CompleteRandom="276,1176,2176" />
+	<OtherComplete ID="178" Character="368" CompleteRewards="936809,2" CompleteRewards2="936809,2" CompleteRandom="277,1177,2177" />
+	<OtherComplete ID="179" Character="369" CompleteRewards="936909,2" CompleteRewards2="936909,2" CompleteRandom="278,1178,2178" />
+	<OtherComplete ID="180" Character="370" CompleteRewards="937009,2" CompleteRewards2="937009,2" CompleteRandom="279,1179,2179" />
+	<OtherComplete ID="181" Character="371" CompleteRewards="937109,2" CompleteRewards2="937109,2" CompleteRandom="280,1180,2180" />
+	<OtherComplete ID="182" Character="372" CompleteRewards="937209,2" CompleteRewards2="937209,2" CompleteRandom="281,1181,2181" />
+	<OtherComplete ID="183" Character="373" CompleteRewards="937309,2" CompleteRewards2="937309,2" CompleteRandom="282,1182,2182" />
+	<OtherComplete ID="184" Character="374" CompleteRewards="937409,2" CompleteRewards2="937409,2" CompleteRandom="283,1183,2183" />
+	<OtherComplete ID="185" Character="375" CompleteRewards="937509,2" CompleteRewards2="937509,2" CompleteRandom="284,1184,2184" />
+	<OtherComplete ID="186" Character="376" CompleteRewards="937609,2" CompleteRewards2="937609,2" CompleteRandom="285,1185,2185" />
+	<OtherComplete ID="187" Character="377" CompleteRewards="937709,2" CompleteRewards2="937709,2" CompleteRandom="286,1186,2186" />
+	<OtherComplete ID="188" Character="378" CompleteRewards="937809,2" CompleteRewards2="937809,2" CompleteRandom="287,1187,2187" />
+	<OtherComplete ID="189" Character="379" CompleteRewards="937909,2" CompleteRewards2="937909,2" CompleteRandom="288,1188,2188" />
+	<OtherComplete ID="190" Character="380" CompleteRewards="938009,2" CompleteRewards2="938009,2" CompleteRandom="289,1189,2189" />
+	<OtherComplete ID="191" Character="381" CompleteRewards="938109,2" CompleteRewards2="938109,2" CompleteRandom="290,1190,2190" />
+	<OtherComplete ID="192" Character="382" CompleteRewards="938209,2" CompleteRewards2="938209,2" CompleteRandom="291,1191,2191" />
+	<OtherComplete ID="193" Character="383" CompleteRewards="938309,2" CompleteRewards2="938309,2" CompleteRandom="292,1192,2192" />
+	<OtherComplete ID="194" Character="384" CompleteRewards="938409,2" CompleteRewards2="938409,2" CompleteRandom="293,1193,2193" />
+	<OtherComplete ID="195" Character="385" CompleteRewards="938509,2" CompleteRewards2="938509,2" CompleteRandom="294,1194,2194" />
+	<OtherComplete ID="196" Character="386" CompleteRewards="938609,2" CompleteRewards2="938609,2" CompleteRandom="295,1195,2195" />
+	<OtherComplete ID="197" Character="387" CompleteRewards="938709,2" CompleteRewards2="938709,2" CompleteRandom="296,1196,2196" />
+	<OtherComplete ID="198" Character="388" CompleteRewards="938809,2" CompleteRewards2="938809,2" CompleteRandom="297,1197,2197" />
+	<OtherComplete ID="199" Character="389" CompleteRewards="938909,2" CompleteRewards2="938909,2" CompleteRandom="298,1198,2198" />
+	<OtherComplete ID="200" Character="390" CompleteRewards="939009,2" CompleteRewards2="939009,2" CompleteRandom="299,1199,2199" />
+	<OtherComplete ID="201" Character="391" CompleteRewards="939109,2" CompleteRewards2="939109,2" CompleteRandom="300,1200,2200" />
+	<OtherComplete ID="202" Character="392" CompleteRewards="939209,2" CompleteRewards2="939209,2" CompleteRandom="301,1201,2201" />
+	<OtherComplete ID="203" Character="393" CompleteRewards="939309,2" CompleteRewards2="939309,2" CompleteRandom="302,1202,2202" />
+	<OtherComplete ID="204" Character="394" CompleteRewards="939409,2" CompleteRewards2="939409,2" CompleteRandom="303,1203,2203" />
+	<OtherComplete ID="205" Character="395" CompleteRewards="939509,2" CompleteRewards2="939509,2" CompleteRandom="304,1204,2204" />
+	<OtherComplete ID="206" Character="400" CompleteRewards="9040009,2" CompleteRewards2="9040009,2" CompleteRandom="305,1205,2205" />
+	<OtherComplete ID="207" Character="401" CompleteRewards="9040109,2" CompleteRewards2="9040109,2" CompleteRandom="306,1206,2206" />
+	<OtherComplete ID="208" Character="402" CompleteRewards="9040209,2" CompleteRewards2="9040209,2" CompleteRandom="307,1207,2207" />
+	<OtherComplete ID="209" Character="403" CompleteRewards="9040309,2" CompleteRewards2="9040309,2" CompleteRandom="308,1208,2208" />
+	<OtherComplete ID="210" Character="404" CompleteRewards="9040409,2" CompleteRewards2="9040409,2" CompleteRandom="309,1209,2209" />
+	<OtherComplete ID="211" Character="406" CompleteRewards="9040609,2" CompleteRewards2="9040609,2" CompleteRandom="310,1210,2210" />
+	<OtherComplete ID="212" Character="407" CompleteRewards="9040709,2" CompleteRewards2="9040709,2" CompleteRandom="311,1211,2211" />
+	<OtherComplete ID="213" Character="408" CompleteRewards="9040809,2" CompleteRewards2="9040809,2" CompleteRandom="312,1212,2212" />
+	<OtherComplete ID="214" Character="409" CompleteRewards="9040909,2" CompleteRewards2="9040909,2" CompleteRandom="313,1213,2213" />
+	<OtherComplete ID="215" Character="410" CompleteRewards="9041009,2" CompleteRewards2="9041009,2" CompleteRandom="314,1214,2214" />
+	<OtherComplete ID="216" Character="411" CompleteRewards="9041109,2" CompleteRewards2="9041109,2" CompleteRandom="315,1215,2215" />
+	<OtherComplete ID="217" Character="413" CompleteRewards="9041309,2" CompleteRewards2="9041309,2" CompleteRandom="316,1216,2216" />
+	<OtherComplete ID="218" Character="414" CompleteRewards="9041409,2" CompleteRewards2="9041409,2" CompleteRandom="317,1217,2217" />
+	<OtherComplete ID="219" Character="415" CompleteRewards="9041509,2" CompleteRewards2="9041509,2" CompleteRandom="318,1218,2218" />
+	<OtherComplete ID="220" Character="416" CompleteRewards="941609,2" CompleteRewards2="941609,2" CompleteRandom="319,1219,2219" />
+	<OtherComplete ID="221" Character="417" CompleteRewards="941709,2" CompleteRewards2="941709,2" CompleteRandom="320,1220,2220" />
+	<OtherComplete ID="222" Character="418" CompleteRewards="9041809,2" CompleteRewards2="9041809,2" CompleteRandom="321,1221,2221" />
+	<OtherComplete ID="223" Character="419" CompleteRewards="9041909,2" CompleteRewards2="9041909,2" CompleteRandom="322,1222,2222" />
+	<OtherComplete ID="224" Character="420" CompleteRewards="9042009,2" CompleteRewards2="9042009,2" CompleteRandom="323,1223,2223" />
+	<OtherComplete ID="225" Character="421" CompleteRewards="9042109,2" CompleteRewards2="9042109,2" CompleteRandom="324,1224,2224" />
+	<OtherComplete ID="226" Character="422" CompleteRewards="9042209,2" CompleteRewards2="9042209,2" CompleteRandom="325,1225,2225" />
+	<OtherComplete ID="227" Character="423" CompleteRewards="9042309,2" CompleteRewards2="9042309,2" CompleteRandom="326,1226,2226" />
+	<OtherComplete ID="228" Character="424" CompleteRewards="9042409,2" CompleteRewards2="9042409,2" CompleteRandom="327,1227,2227" />
+	<OtherComplete ID="229" Character="425" CompleteRewards="9042509,2" CompleteRewards2="9042509,2" CompleteRandom="328,1228,2228" />
+	<OtherComplete ID="230" Character="426" CompleteRewards="9042609,2" CompleteRewards2="9042609,2" CompleteRandom="329,1229,2229" />
+	<OtherComplete ID="231" Character="427" CompleteRewards="9042709,2" CompleteRewards2="9042709,2" CompleteRandom="330,1230,2230" />
+	<OtherComplete ID="232" Character="428" CompleteRewards="9042809,2" CompleteRewards2="9042809,2" CompleteRandom="331,1231,2231" />
+	<OtherComplete ID="233" Character="429" CompleteRewards="9042909,2" CompleteRewards2="9042909,2" CompleteRandom="332,1232,2232" />
+	<OtherComplete ID="234" Character="430" CompleteRewards="9043009,2" CompleteRewards2="9043009,2" CompleteRandom="333,1233,2233" />
+	<OtherComplete ID="235" Character="431" CompleteRewards="9043109,2" CompleteRewards2="9043109,2" CompleteRandom="334,1234,2234" />
+	<OtherComplete ID="236" Character="432" CompleteRewards="9043209,2" CompleteRewards2="9043209,2" CompleteRandom="335,1235,2235" />
+	<OtherComplete ID="237" Character="433" CompleteRewards="9043309,2" CompleteRewards2="9043309,2" CompleteRandom="336,1236,2236" />
+	<OtherComplete ID="238" Character="434" CompleteRewards="9043409,2" CompleteRewards2="9043409,2" CompleteRandom="337,1237,2237" />
+	<OtherComplete ID="239" Character="435" CompleteRewards="9043509,2" CompleteRewards2="9043509,2" CompleteRandom="338,1238,2238" />
+	<OtherComplete ID="240" Character="436" CompleteRewards="9043609,2" CompleteRewards2="9043609,2" CompleteRandom="339,1239,2239" />
+	<OtherComplete ID="241" Character="437" CompleteRewards="9043709,2" CompleteRewards2="9043709,2" CompleteRandom="340,1240,2240" />
+	<OtherComplete ID="242" Character="438" CompleteRewards="9043809,2" CompleteRewards2="9043809,2" CompleteRandom="341,1241,2241" />
+	<OtherComplete ID="243" Character="439" CompleteRewards="9043909,2" CompleteRewards2="9043909,2" CompleteRandom="342,1242,2242" />
+	<OtherComplete ID="244" Character="440" CompleteRewards="944009,2" CompleteRewards2="944009,2" CompleteRandom="343,1243,2243" />
+	<OtherComplete ID="245" Character="441" CompleteRewards="944109,2" CompleteRewards2="944109,2" CompleteRandom="344,1244,2244" />
+	<OtherComplete ID="246" Character="442" CompleteRewards="944209,2" CompleteRewards2="944209,2" CompleteRandom="345,1245,2245" />
+	<OtherComplete ID="247" Character="443" CompleteRewards="944309,2" CompleteRewards2="944309,2" CompleteRandom="346,1246,2246" />
+	<OtherComplete ID="248" Character="444" CompleteRewards="944409,2" CompleteRewards2="944409,2" CompleteRandom="347,1247,2247" />
+	<OtherComplete ID="249" Character="445" CompleteRewards="944509,2" CompleteRewards2="944509,2" CompleteRandom="348,1248,2248" />
+	<OtherComplete ID="250" Character="446" CompleteRewards="944609,2" CompleteRewards2="944609,2" CompleteRandom="349,1249,2249" />
+	<OtherComplete ID="251" Character="447" CompleteRewards="944709,2" CompleteRewards2="944709,2" CompleteRandom="350,1250,2250" />
+	<OtherComplete ID="252" Character="448" CompleteRewards="944809,2" CompleteRewards2="944809,2" CompleteRandom="351,1251,2251" />
+	<OtherComplete ID="253" Character="449" CompleteRewards="944909,2" CompleteRewards2="944909,2" CompleteRandom="352,1252,2252" />
+	<OtherComplete ID="254" Character="450" CompleteRewards="945009,2" CompleteRewards2="945009,2" CompleteRandom="353,1253,2253" />
+	<OtherComplete ID="255" Character="451" CompleteRewards="945109,2" CompleteRewards2="945109,2" CompleteRandom="354,1254,2254" />
+	<OtherComplete ID="256" Character="452" CompleteRewards="945209,2" CompleteRewards2="945209,2" CompleteRandom="355,1255,2255" />
+	<OtherComplete ID="257" Character="26" CompleteRewards="9054709,2" CompleteRewards2="9054709,2" CompleteRandom="356,1256,2256" />
+	<OtherComplete ID="258" Character="453" CompleteRewards="945309,2" CompleteRewards2="945309,2" CompleteRandom="357,1257,2257" />
+	<OtherComplete ID="259" Character="454" CompleteRewards="945409,2" CompleteRewards2="945409,2" CompleteRandom="358,1258,2258" />
+	<OtherComplete ID="260" Character="455" CompleteRewards="945509,2" CompleteRewards2="945509,2" CompleteRandom="359,1259,2259" />
+	<OtherComplete ID="261" Character="456" CompleteRewards="945609,2" CompleteRewards2="945609,2" CompleteRandom="360,1260,2260" />
+	<OtherComplete ID="262" Character="457" CompleteRewards="945709,2" CompleteRewards2="945709,2" CompleteRandom="361,1261,2261" />
+	<OtherComplete ID="263" Character="458" CompleteRewards="945809,2" CompleteRewards2="945809,2" CompleteRandom="362,1262,2262" />
+	<OtherComplete ID="264" Character="459" CompleteRewards="9045909,2" CompleteRewards2="9045909,2" CompleteRandom="363,1263,2263" />
+	<OtherComplete ID="265" Character="460" CompleteRewards="9046009,2" CompleteRewards2="9046009,2" CompleteRandom="364,1264,2264" />
+	<OtherComplete ID="266" Character="461" CompleteRewards="9046109,2" CompleteRewards2="9046109,2" CompleteRandom="365,1265,2265" />
+	<OtherComplete ID="267" Character="462" CompleteRewards="946209,2" CompleteRewards2="946209,2" CompleteRandom="366,1266,2266" />
+	<OtherComplete ID="268" Character="463" CompleteRewards="946309,2" CompleteRewards2="946309,2" CompleteRandom="367,1267,2267" />
+	<OtherComplete ID="269" Character="464" CompleteRewards="9046409,2" CompleteRewards2="9046409,2" CompleteRandom="368,1268,2268" />
+	<OtherComplete ID="270" Character="465" CompleteRewards="9046509,2" CompleteRewards2="9046509,2" CompleteRandom="369,1269,2269" />
+	<OtherComplete ID="271" Character="466" CompleteRewards="9046609,2" CompleteRewards2="9046609,2" CompleteRandom="370,1270,2270" />
+	<OtherComplete ID="272" Character="467" CompleteRewards="9046709,2" CompleteRewards2="9046709,2" CompleteRandom="371,1271,2271" />
+	<OtherComplete ID="273" Character="468" CompleteRewards="9046809,2" CompleteRewards2="9046809,2" CompleteRandom="372,1272,2272" />
+	<OtherComplete ID="274" Character="469" CompleteRewards="9046909,2" CompleteRewards2="9046909,2" CompleteRandom="373,1273,2273" />
+	<OtherComplete ID="275" Character="470" CompleteRewards="947009,2" CompleteRewards2="947009,2" CompleteRandom="374,1274,2274" />
+	<OtherComplete ID="276" Character="471" CompleteRewards="947109,2" CompleteRewards2="947109,2" CompleteRandom="375,1275,2275" />
+	<OtherComplete ID="277" Character="472" CompleteRewards="9047209,2" CompleteRewards2="9047209,2" CompleteRandom="376,1276,2276" />
+	<OtherComplete ID="278" Character="473" CompleteRewards="9047309,2" CompleteRewards2="9047309,2" CompleteRandom="377,1277,2277" />
+	<OtherComplete ID="279" Character="474" CompleteRewards="9047409,2" CompleteRewards2="9047409,2" CompleteRandom="378,1278,2278" />
+	<OtherComplete ID="280" Character="475" CompleteRewards="9047509,2" CompleteRewards2="9047509,2" CompleteRandom="379,1279,2279" />
+	<OtherComplete ID="281" Character="476" CompleteRewards="9047609,2" CompleteRewards2="9047609,2" CompleteRandom="380,1280,2280" />
+	<OtherComplete ID="282" Character="477" CompleteRewards="9047709,2" CompleteRewards2="9047709,2" CompleteRandom="381,1281,2281" />
+	<OtherComplete ID="283" Character="478" CompleteRewards="9047809,2" CompleteRewards2="9047809,2" CompleteRandom="382,1282,2282" />
+	<OtherComplete ID="284" Character="479" CompleteRewards="947909,2" CompleteRewards2="947909,2" CompleteRandom="383,1283,2283" />
+	<OtherComplete ID="285" Character="480" CompleteRewards="948009,2" CompleteRewards2="948009,2" CompleteRandom="384,1284,2284" />
+	<OtherComplete ID="286" Character="481" CompleteRewards="9048109,2" CompleteRewards2="9048109,2" CompleteRandom="385,1285,2285" />
+	<OtherComplete ID="287" Character="482" CompleteRewards="9048209,2" CompleteRewards2="9048209,2" CompleteRandom="386,1286,2286" />
+	<OtherComplete ID="288" Character="483" CompleteRewards="9048309,2" CompleteRewards2="9048309,2" CompleteRandom="387,1287,2287" />
+	<OtherComplete ID="289" Character="484" CompleteRewards="948409,2" CompleteRewards2="948409,2" CompleteRandom="388,1288,2288" />
+	<OtherComplete ID="290" Character="485" CompleteRewards="948509,2" CompleteRewards2="948509,2" CompleteRandom="389,1289,2289" />
+	<OtherComplete ID="291" Character="487" CompleteRewards="9048509,2" CompleteRewards2="9048509,2" CompleteRandom="390,1290,2290" />
+	<OtherComplete ID="292" Character="488" CompleteRewards="9048609,2" CompleteRewards2="9048609,2" CompleteRandom="391,1291,2291" />
+	<OtherComplete ID="293" Character="489" CompleteRewards="9048709,2" CompleteRewards2="9048709,2" CompleteRandom="392,1292,2292" />
+	<OtherComplete ID="294" Character="490" CompleteRewards="9048809,2" CompleteRewards2="9048809,2" CompleteRandom="393,1293,2293" />
+	<OtherComplete ID="295" Character="491" CompleteRewards="9048909,2" CompleteRewards2="9048909,2" CompleteRandom="394,1294,2294" />
+	<OtherComplete ID="296" Character="492" CompleteRewards="949209,2" CompleteRewards2="949209,2" CompleteRandom="395,1295,2295" />
+	<OtherComplete ID="297" Character="7000" CompleteRewards="9700009,2" CompleteRewards2="9700009,2" CompleteRandom="396,1296,2296" />
+	<OtherComplete ID="298" Character="7001" CompleteRewards="9700109,2" CompleteRewards2="9700109,2" CompleteRandom="397,1297,2297" />
+	<OtherComplete ID="299" Character="7002" CompleteRewards="9700209,2" CompleteRewards2="9700209,2" CompleteRandom="398,1298,2298" />
+	<OtherComplete ID="300" Character="7003" CompleteRewards="9700309,2" CompleteRewards2="9700309,2" CompleteRandom="399,1299,2299" />
+	<OtherComplete ID="301" Character="7004" CompleteRewards="9700409,2" CompleteRewards2="9700409,2" CompleteRandom="400,1300,2300" />
+	<OtherComplete ID="302" Character="7005" CompleteRewards="9700509,2" CompleteRewards2="9700509,2" CompleteRandom="401,1301,2301" />
+	<OtherComplete ID="303" Character="7006" CompleteRewards="9700609,2" CompleteRewards2="9700609,2" CompleteRandom="402,1302,2302" />
+	<OtherComplete ID="304" Character="7007" CompleteRewards="9700709,2" CompleteRewards2="9700709,2" CompleteRandom="403,1303,2303" />
+	<OtherComplete ID="305" Character="7008" CompleteRewards="9700809,2" CompleteRewards2="9700809,2" CompleteRandom="404,1304,2304" />
+	<OtherComplete ID="306" Character="7009" CompleteRewards="9700909,2" CompleteRewards2="9700909,2" CompleteRandom="405,1305,2305" />
+	<OtherComplete ID="307" Character="7010" CompleteRewards="9701009,2" CompleteRewards2="9701009,2" CompleteRandom="406,1306,2306" />
+	<OtherComplete ID="308" Character="7011" CompleteRewards="9701109,2" CompleteRewards2="9701109,2" CompleteRandom="407,1307,2307" />
+	<OtherComplete ID="309" Character="7012" CompleteRewards="9701209,2" CompleteRewards2="9701209,2" CompleteRandom="408,1308,2308" />
+	<OtherComplete ID="310" Character="7013" CompleteRewards="9701309,2" CompleteRewards2="9701309,2" CompleteRandom="409,1309,2309" />
+	<OtherComplete ID="311" Character="7014" CompleteRewards="9701409,2" CompleteRewards2="9701409,2" CompleteRandom="410,1310,2310" />
+	<OtherComplete ID="312" Character="7015" CompleteRewards="9701509,2" CompleteRewards2="9701509,2" CompleteRandom="411,1311,2311" />
+	<OtherComplete ID="313" Character="7016" CompleteRewards="9701609,2" CompleteRewards2="9701609,2" CompleteRandom="412,1312,2312" />
+	<OtherComplete ID="314" Character="7017" CompleteRewards="9701709,2" CompleteRewards2="9701709,2" CompleteRandom="413,1313,2313" />
+	<OtherComplete ID="315" Character="7018" CompleteRewards="9701809,2" CompleteRewards2="9701809,2" CompleteRandom="414,1314,2314" />
+	<OtherComplete ID="316" Character="358" CompleteRewards="935809,2" CompleteRewards2="935809,2" CompleteRandom="415,1315,2315" />
+	<OtherComplete ID="317" Character="493" CompleteRewards="9049309,2" CompleteRewards2="9049309,2" CompleteRandom="416,1316,2316" />
+	<OtherComplete ID="318" Character="494" CompleteRewards="9049409,2" CompleteRewards2="9049409,2" CompleteRandom="417,1317,2317" />
+	<OtherComplete ID="319" Character="495" CompleteRewards="9049509,2" CompleteRewards2="9049509,2" CompleteRandom="418,1318,2318" />
+	<OtherComplete ID="320" Character="496" CompleteRewards="949609,2" CompleteRewards2="949609,2" CompleteRandom="419,1319,2319" />
+	<OtherComplete ID="321" Character="497" CompleteRewards="9049709,2" CompleteRewards2="9049709,2" CompleteRandom="420,1320,2320" />
+	<OtherComplete ID="322" Character="498" CompleteRewards="9049809,2" CompleteRewards2="9049809,2" CompleteRandom="421,1321,2321" />
+	<OtherComplete ID="323" Character="7019" CompleteRewards="9701909,2" CompleteRewards2="9701909,2" CompleteRandom="422,1322,2322" />
+	<OtherComplete ID="324" Character="486" CompleteRewards="948609,2" CompleteRewards2="948609,2" CompleteRandom="423,1323,2323" />
+	<OtherComplete ID="325" Character="499" CompleteRewards="9049909,2" CompleteRewards2="9049909,2" CompleteRandom="424,1324,2324" />
+	<OtherComplete ID="326" Character="500" CompleteRewards="9050009,2" CompleteRewards2="9050009,2" CompleteRandom="425,1325,2325" />
+	<OtherComplete ID="327" Character="501" CompleteRewards="9050109,2" CompleteRewards2="9050109,2" CompleteRandom="426,1326,2326" />
+	<OtherComplete ID="328" Character="502" CompleteRewards="9050209,2" CompleteRewards2="9050209,2" CompleteRandom="427,1327,2327" />
+	<OtherComplete ID="329" Character="503" CompleteRewards="9050309,2" CompleteRewards2="9050309,2" CompleteRandom="428,1328,2328" />
+	<OtherComplete ID="330" Character="504" CompleteRewards="9050409,2" CompleteRewards2="9050409,2" CompleteRandom="429,1329,2329" />
+	<OtherComplete ID="331" Character="7020" CompleteRewards="9702009,2" CompleteRewards2="9702009,2" CompleteRandom="430,1330,2330" />
+	<OtherComplete ID="332" Character="505" CompleteRewards="9050509,2" CompleteRewards2="9050509,2" CompleteRandom="431,1331,2331" />
+	<OtherComplete ID="333" Character="506" CompleteRewards="9050609,2" CompleteRewards2="9050609,2" CompleteRandom="432,1332,2332" />
+	<OtherComplete ID="334" Character="507" CompleteRewards="9050709,2" CompleteRewards2="9050709,2" CompleteRandom="433,1333,2333" />
+	<OtherComplete ID="335" Character="508" CompleteRewards="9050809,2" CompleteRewards2="9050809,2" CompleteRandom="434,1334,2334" />
+	<OtherComplete ID="336" Character="509" CompleteRewards="9050909,2" CompleteRewards2="9050909,2" CompleteRandom="435,1335,2335" />
+	<OtherComplete ID="337" Character="510" CompleteRewards="9051009,2" CompleteRewards2="9051009,2" CompleteRandom="436,1336,2336" />
+	<OtherComplete ID="338" Character="511" CompleteRewards="9051109,2" CompleteRewards2="9051109,2" CompleteRandom="437,1337,2337" />
+	<OtherComplete ID="339" Character="512" CompleteRewards="9051209,2" CompleteRewards2="9051209,2" CompleteRandom="438,1338,2338" />
+	<OtherComplete ID="340" Character="513" CompleteRewards="9051309,2" CompleteRewards2="9051309,2" CompleteRandom="439,1339,2339" />
+	<OtherComplete ID="341" Character="514" CompleteRewards="9051409,2" CompleteRewards2="9051409,2" CompleteRandom="440,1340,2340" />
+	<OtherComplete ID="342" Character="515" CompleteRewards="9051509,2" CompleteRewards2="9051509,2" CompleteRandom="441,1341,2341" />
+	<OtherComplete ID="344" Character="516" CompleteRewards="9051609,2" CompleteRewards2="9051609,2" CompleteRandom="443,1343,2343" />
+	<OtherComplete ID="345" Character="517" CompleteRewards="9051709,2" CompleteRewards2="9051709,2" CompleteRandom="444,1344,2344" />
+	<OtherComplete ID="346" Character="518" CompleteRewards="9051809,2" CompleteRewards2="9051809,2" CompleteRandom="445,1345,2345" />
+	<OtherComplete ID="347" Character="519" CompleteRewards="9051909,2" CompleteRewards2="9051909,2" CompleteRandom="446,1346,2346" />
+	<OtherComplete ID="348" Character="520" CompleteRewards="9052009,2" CompleteRewards2="9052009,2" CompleteRandom="447,1347,2347" />
+	<OtherComplete ID="349" Character="521" CompleteRewards="9052109,2" CompleteRewards2="9052109,2" CompleteRandom="448,1348,2348" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ID	-	关卡id
+			Name	-	关卡名称
+			Character	-	使用武将id
+				-	备注名称
+			CharacterList	-	随机武将列表
+			RandomNum	-	随机武将数量
+			FreeList	-	免费武将列表
+			RandomNum2	-	从已拥有武将随机
+			MaxHp	-	最大血量
+			InitialHP	-	初始血量
+			CardNum	-	初始手牌数量
+			CardID	-	初始手牌id
+			TopCard	-	牌堆顶卡牌顺序
+			Teammate	-	友方武将信息组
+				-	备注名称
+			Enemy	-	敌方武将信息组1
+				-	备注名称
+			Enemy2	-	敌方武将信息组2
+				-	备注名称
+			SeatPlain	-	座位顺序
+		-->
+	<Complete ID="1" Character="301" MaxHp="4" InitialHP="4" CardNum="5" CardID="85" Teammate="1002" Enemy="23" />
+	<Complete ID="2" Character="301" MaxHp="4" InitialHP="4" CardNum="5" CardID="85" Teammate="302" Enemy="15" Enemy2="19" />
+	<Complete ID="3" Character="301" MaxHp="4" InitialHP="4" CardNum="5" CardID="85" Teammate="421" Enemy="28" Enemy2="50" />
+	<Complete ID="4" Character="3" CardNum="5" CardID="85" Teammate="2001" Enemy="301" />
+	<Complete ID="5" Character="26" CardNum="5" CardID="85" Enemy="2" />
+	<Complete ID="6" CharacterList="61,301,26" RandomNum="3" FreeList="61,301,26" CardNum="5" CardID="85" Teammate="1027" Enemy="300" />
+	<Complete ID="7" CharacterList="61,301,26" RandomNum="3" FreeList="61,301,26" CardNum="5" CardID="85" Teammate="36" Enemy="381" Enemy2="185" />
+	<Complete ID="8" CharacterList="61,301,23,26" RandomNum="4" FreeList="61,301,23,26" CardNum="5" CardID="85" Teammate="400" Enemy="50" Enemy2="322" />
+	<Complete ID="9" CharacterList="61,301,23,26" RandomNum="4" FreeList="61,301,23,26" CardNum="5" CardID="85" Teammate="400" Enemy="322" />
+	<Complete ID="10" CharacterList="61,301,23,26" RandomNum="4" FreeList="61,301,23,26" CardNum="5" CardID="85" Teammate="302" Enemy="50" Enemy2="42" />
+	<Complete ID="11" CharacterList="61,301,23,24,26" RandomNum="5" FreeList="61,301,23,24,26" CardNum="5" CardID="85" Teammate="188" Enemy="180" Enemy2="155" />
+	<Complete ID="12" CharacterList="61,301,23,24,26" RandomNum="5" FreeList="61,301,23,24,26" CardNum="5" CardID="85" Teammate="185" Enemy="28" Enemy2="114" />
+	<Complete ID="13" Character="61" CardNum="5" CardID="85" Teammate="1002" Enemy="26" />
+	<Complete ID="14" Character="303" CardNum="5" CardID="14,85" Teammate="585" Enemy="418" />
+	<Complete ID="15" CharacterList="52,252,5,19,303" RandomNum="5" FreeList="52,252,5,19,303" CardNum="4" Teammate="585" Enemy="160" Enemy2="1015" />
+	<Complete ID="16" CharacterList="52,301,20,303" RandomNum="5" FreeList="52,301,20,303" CardNum="4" Teammate="514" Enemy="311" Enemy2="50" />
+	<Complete ID="17" CharacterList="52,252,7,21,303" RandomNum="5" FreeList="52,252,7,21,303" CardNum="4" Enemy="364" />
+	<Complete ID="18" CharacterList="52,252,8,39,303" RandomNum="5" FreeList="52,252,8,39,303" CardNum="4" Teammate="514" Enemy="311" Enemy2="114" />
+	<Complete ID="19" CharacterList="52,252,9,23,303" RandomNum="5" FreeList="52,252,9,23,303" CardNum="4" Teammate="301" Enemy="311" Enemy2="19" />
+	<Complete ID="20" CharacterList="52,301,10,24,303" RandomNum="5" FreeList="52,301,10,24,303" CardNum="5" CardID="32,85" Teammate="484" Enemy="585" Enemy2="514" />
+	<Complete ID="21" CharacterList="52,252,11,25,303" RandomNum="5" FreeList="52,252,11,25,303" CardNum="4" Teammate="39" Enemy="28" Enemy2="160" />
+	<Complete ID="22" CharacterList="52,301,12,252,303" RandomNum="5" FreeList="52,301,12,252,303" CardNum="4" Teammate="343" Enemy="50" Enemy2="28" />
+	<Complete ID="23" CharacterList="52,303,12,252,303" RandomNum="5" FreeList="52,303,12,252,303" CardNum="5" Teammate="167" Enemy="3" Enemy2="1001" />
+	<Complete ID="24" CharacterList="52,301,14,28,303" RandomNum="5" FreeList="52,301,14,28,303" CardNum="4" Teammate="1001" Enemy="381" Enemy2="185" />
+	<Complete ID="25" CharacterList="52,301,15,29,303" RandomNum="5" FreeList="52,301,15,29,303" CardNum="4" Teammate="301" Enemy="311" Enemy2="28" />
+	<Complete ID="26" CharacterList="52,252,152,30,303" RandomNum="5" FreeList="52,252,152,30,303" CardNum="4" Teammate="301" Enemy="333" Enemy2="114" />
+	<Complete ID="27" Character="6" CardNum="4" CardID="85" Teammate="2027" Enemy="303" />
+	<Complete ID="30" Character="302" CardNum="4" CardID="85" Teammate="320" Enemy="41" Enemy2="40" />
+	<Complete ID="31" CharacterList="5,303,19,34,302" RandomNum="5" FreeList="302" CardNum="4" Teammate="299" Enemy="41" Enemy2="374" />
+	<Complete ID="32" CharacterList="5,301,20,35,302" RandomNum="5" FreeList="302" CardNum="4" Enemy="325" />
+	<Complete ID="33" CharacterList="5,26,21,36,302" RandomNum="5" FreeList="302" CardNum="4" Teammate="299" Enemy="311" Enemy2="19" />
+	<Complete ID="34" CharacterList="5,301,39,37,302" RandomNum="5" FreeList="302" CardNum="4" Teammate="1" Enemy="50" Enemy2="461" />
+	<Complete ID="35" CharacterList="5,26,24,39,302" RandomNum="5" FreeList="302" CardNum="4" Teammate="440" Enemy="1029" Enemy2="317" />
+	<Complete ID="36" CharacterList="5,26,24,39,302" RandomNum="5" FreeList="302" CardNum="4" Teammate="301" Enemy="311" Enemy2="50" />
+	<Complete ID="37" CharacterList="5,303,25,40,302" RandomNum="5" FreeList="302" CardNum="4" Teammate="440" Enemy="311" Enemy2="42" />
+	<Complete ID="38" CharacterList="5,301,26,41,302" RandomNum="5" FreeList="302" CardNum="4" Teammate="308" Enemy="42" Enemy2="1029" />
+	<Complete ID="39" CharacterList="5,26,27,42,302" RandomNum="5" FreeList="302" CardNum="4" Teammate="299" Enemy="308" Enemy2="169" />
+	<Complete ID="40" CharacterList="5,303,28,43,302" RandomNum="5" FreeList="302" CardNum="4" Teammate="301" Enemy="324" />
+	<Complete ID="41" CharacterList="5,301,29,44,302" RandomNum="5" FreeList="302" CardNum="4" Teammate="26" Enemy="28" Enemy2="50" />
+	<Complete ID="42" CharacterList="5,26,30,52,302" RandomNum="5" FreeList="302" CardNum="4" Teammate="26" Enemy="42" Enemy2="401" />
+	<Complete ID="43" CharacterList="5,303,34,46,302" RandomNum="5" FreeList="302" CardNum="5" CardID="85" Teammate="440" Enemy="15" Enemy2="1029" />
+	<Complete ID="44" CharacterList="5,301,35,47,302" RandomNum="5" FreeList="302" CardNum="4" Teammate="299" Enemy="310" Enemy2="182" />
+	<Complete ID="45" CharacterList="5,26,36,48,302" RandomNum="5" FreeList="302" CardNum="4" Teammate="440" Enemy="46" Enemy2="47" />
+	<Complete ID="46" CharacterList="5,303,37,49,302" RandomNum="5" FreeList="302" CardNum="4" Enemy="52" />
+	<Complete ID="47" CharacterList="5,301,38,50,302" RandomNum="5" FreeList="302" CardNum="4" Teammate="456" Enemy="321" Enemy2="508" />
+	<Complete ID="48" Character="5" CardNum="4" CardID="85" Teammate="2001" Enemy="302" />
+	<Complete ID="51" Character="300" CardNum="4" Enemy="171" />
+	<Complete ID="52" CharacterList="2,303,34,299,300" RandomNum="5" FreeList="300" CardNum="4" Teammate="301" Enemy="319" />
+	<Complete ID="53" CharacterList="2,26,35,300" RandomNum="4" FreeList="300" CardNum="4" Teammate="301" Enemy="319" Enemy2="18" />
+	<Complete ID="54" CharacterList="2,301,36,302,300" RandomNum="5" FreeList="300" CardNum="6" CardID="14,32,85" Enemy="19" Enemy2="42" />
+	<Complete ID="55" CharacterList="2,302,37,303,300" RandomNum="5" FreeList="300" CardNum="4" Enemy="40" />
+	<Complete ID="56" CharacterList="2,301,38,304,300" RandomNum="5" FreeList="300" CardNum="4" Teammate="18" Enemy="313" Enemy2="39" />
+	<Complete ID="57" CharacterList="2,26,39,305,300" RandomNum="5" FreeList="300" CardNum="4" Teammate="301" Enemy="311" Enemy2="28" />
+	<Complete ID="58" CharacterList="2,303,40,307,300" RandomNum="5" FreeList="300" CardNum="4" Enemy="26" />
+	<Complete ID="59" CharacterList="2,302,41,306,300" RandomNum="5" FreeList="300" CardNum="4" Teammate="299" Enemy="26" Enemy2="27" />
+	<Complete ID="60" CharacterList="2,301,42,308,300" RandomNum="5" FreeList="300" CardNum="5" CardID="85" Teammate="302" Enemy="15" Enemy2="29" />
+	<Complete ID="61" CharacterList="2,26,43,309,300" RandomNum="5" FreeList="300" CardNum="5" CardID="85" Teammate="440" Enemy="8" Enemy2="49" />
+	<Complete ID="62" CharacterList="2,303,44,310,300" RandomNum="5" FreeList="300" CardNum="4" Teammate="26" Enemy="111" Enemy2="28" />
+	<Complete ID="63" CharacterList="2,302,52,314,300" RandomNum="5" FreeList="300" CardNum="4" Teammate="177" Enemy="160" Enemy2="39" />
+	<Complete ID="64" CharacterList="2,301,46,312,300" RandomNum="5" FreeList="300" CardNum="4" Teammate="177" Enemy="42" Enemy2="311" />
+	<Complete ID="65" CharacterList="2,301,47,313,300" RandomNum="5" FreeList="300" CardNum="6" CardID="14,32,85" Enemy="8" Enemy2="10" />
+	<Complete ID="66" Character="2" CardNum="4" Teammate="2001" Enemy="300" />
+	<Complete ID="100" RandomNum2="8" CardNum="4" Teammate="35" Enemy="34" Enemy2="53" />
+	<Complete ID="101" RandomNum2="8" CardNum="4" Teammate="36" Enemy="35" Enemy2="53" />
+	<Complete ID="102" RandomNum2="8" CardNum="4" Teammate="37" Enemy="36" Enemy2="53" />
+	<Complete ID="103" RandomNum2="8" CardNum="4" Teammate="38" Enemy="37" Enemy2="53" />
+	<Complete ID="104" RandomNum2="8" CardNum="4" Teammate="39" Enemy="38" Enemy2="53" />
+	<Complete ID="105" RandomNum2="8" CardNum="4" Teammate="40" Enemy="39" Enemy2="53" />
+	<Complete ID="106" RandomNum2="8" CardNum="4" Teammate="41" Enemy="40" Enemy2="53" />
+	<Complete ID="107" RandomNum2="8" CardNum="4" Teammate="42" Enemy="41" Enemy2="53" />
+	<Complete ID="108" RandomNum2="8" CardNum="4" Teammate="43" Enemy="42" Enemy2="53" />
+	<Complete ID="109" RandomNum2="8" CardNum="4" Teammate="44" Enemy="43" Enemy2="53" />
+	<Complete ID="110" RandomNum2="8" CardNum="4" Teammate="45" Enemy="44" Enemy2="53" />
+	<Complete ID="111" RandomNum2="8" CardNum="4" Teammate="46" Enemy="45" Enemy2="53" />
+	<Complete ID="112" RandomNum2="8" CardNum="4" Teammate="47" Enemy="46" Enemy2="53" />
+	<Complete ID="113" RandomNum2="8" CardNum="4" Teammate="48" Enemy="47" Enemy2="53" />
+	<Complete ID="114" RandomNum2="8" CardNum="4" Teammate="49" Enemy="48" Enemy2="53" />
+	<Complete ID="115" RandomNum2="8" CardNum="4" Teammate="50" Enemy="49" Enemy2="53" />
+	<Complete ID="116" RandomNum2="8" CardNum="4" Teammate="51" Enemy="50" Enemy2="53" />
+	<Complete ID="117" RandomNum2="8" CardNum="4" Teammate="52" Enemy="51" Enemy2="53" />
+	<Complete ID="118" RandomNum2="8" CardNum="4" Teammate="54" Enemy="52" Enemy2="53" />
+	<Complete ID="119" RandomNum2="8" CardNum="4" Teammate="54" Enemy="53" Enemy2="52" />
+	<Complete ID="120" RandomNum2="8" CardNum="4" Teammate="55" Enemy="54" Enemy2="53" />
+	<Complete ID="121" RandomNum2="8" CardNum="4" Teammate="56" Enemy="55" Enemy2="53" />
+	<Complete ID="122" RandomNum2="8" CardNum="4" Teammate="57" Enemy="56" Enemy2="53" />
+	<Complete ID="123" RandomNum2="8" CardNum="4" Teammate="52" Enemy="57" Enemy2="53" />
+	<Complete ID="124" RandomNum2="8" CardNum="4" Teammate="73" Enemy="72" Enemy2="53" />
+	<Complete ID="125" RandomNum2="8" CardNum="4" Teammate="72" Enemy="73" Enemy2="53" />
+	<Complete ID="126" RandomNum2="8" CardNum="4" Teammate="101" Enemy="100" Enemy2="53" />
+	<Complete ID="127" RandomNum2="8" CardNum="4" Teammate="105" Enemy="101" Enemy2="53" />
+	<Complete ID="128" RandomNum2="8" CardNum="4" Teammate="104" Enemy="103" Enemy2="53" />
+	<Complete ID="129" RandomNum2="8" CardNum="4" Teammate="105" Enemy="104" Enemy2="53" />
+	<Complete ID="130" RandomNum2="8" CardNum="4" Teammate="106" Enemy="105" Enemy2="53" />
+	<Complete ID="131" RandomNum2="8" CardNum="4" Teammate="107" Enemy="106" Enemy2="53" />
+	<Complete ID="132" RandomNum2="8" CardNum="4" Teammate="108" Enemy="107" Enemy2="53" />
+	<Complete ID="133" RandomNum2="8" CardNum="4" Teammate="109" Enemy="108" Enemy2="53" />
+	<Complete ID="134" RandomNum2="8" CardNum="4" Teammate="110" Enemy="109" Enemy2="53" />
+	<Complete ID="135" RandomNum2="8" CardNum="4" Teammate="111" Enemy="110" Enemy2="53" />
+	<Complete ID="136" RandomNum2="8" CardNum="4" Teammate="112" Enemy="111" Enemy2="53" />
+	<Complete ID="137" RandomNum2="8" CardNum="4" Teammate="113" Enemy="112" Enemy2="53" />
+	<Complete ID="138" RandomNum2="8" CardNum="4" Teammate="114" Enemy="113" Enemy2="53" />
+	<Complete ID="139" RandomNum2="8" CardNum="4" Teammate="115" Enemy="114" Enemy2="53" />
+	<Complete ID="140" RandomNum2="8" CardNum="4" Teammate="116" Enemy="115" Enemy2="53" />
+	<Complete ID="141" RandomNum2="8" CardNum="4" Teammate="117" Enemy="116" Enemy2="53" />
+	<Complete ID="142" RandomNum2="8" CardNum="4" Teammate="118" Enemy="117" Enemy2="53" />
+	<Complete ID="143" RandomNum2="8" CardNum="4" Teammate="119" Enemy="118" Enemy2="53" />
+	<Complete ID="144" RandomNum2="8" CardNum="4" Teammate="118" Enemy="119" Enemy2="53" />
+	<Complete ID="145" RandomNum2="8" CardNum="4" Teammate="122" Enemy="121" Enemy2="53" />
+	<Complete ID="146" RandomNum2="8" CardNum="4" Teammate="123" Enemy="122" Enemy2="53" />
+	<Complete ID="147" RandomNum2="8" CardNum="4" Teammate="124" Enemy="123" Enemy2="53" />
+	<Complete ID="148" RandomNum2="8" CardNum="4" Teammate="125" Enemy="124" Enemy2="53" />
+	<Complete ID="149" RandomNum2="8" CardNum="4" Teammate="126" Enemy="125" Enemy2="53" />
+	<Complete ID="150" RandomNum2="8" CardNum="4" Teammate="127" Enemy="126" Enemy2="53" />
+	<Complete ID="151" RandomNum2="8" CardNum="4" Teammate="128" Enemy="127" Enemy2="53" />
+	<Complete ID="152" RandomNum2="8" CardNum="4" Teammate="129" Enemy="128" Enemy2="53" />
+	<Complete ID="153" RandomNum2="8" CardNum="4" Teammate="130" Enemy="129" Enemy2="53" />
+	<Complete ID="154" RandomNum2="8" CardNum="4" Teammate="131" Enemy="130" Enemy2="53" />
+	<Complete ID="155" RandomNum2="8" CardNum="4" Teammate="126" Enemy="131" Enemy2="53" />
+	<Complete ID="156" RandomNum2="8" CardNum="4" Teammate="136" Enemy="135" Enemy2="53" />
+	<Complete ID="157" RandomNum2="8" CardNum="4" Teammate="137" Enemy="136" Enemy2="53" />
+	<Complete ID="158" RandomNum2="8" CardNum="4" Teammate="116" Enemy="137" Enemy2="53" />
+	<Complete ID="159" RandomNum2="8" CardNum="4" Teammate="115" Enemy="139" Enemy2="53" />
+	<Complete ID="160" RandomNum2="8" CardNum="4" Teammate="152" Enemy="151" Enemy2="53" />
+	<Complete ID="161" RandomNum2="8" CardNum="4" Teammate="153" Enemy="152" Enemy2="53" />
+	<Complete ID="162" RandomNum2="8" CardNum="4" Teammate="114" Enemy="153" Enemy2="53" />
+	<Complete ID="163" RandomNum2="8" CardNum="4" Teammate="156" Enemy="155" Enemy2="53" />
+	<Complete ID="164" RandomNum2="8" CardNum="4" Teammate="157" Enemy="156" Enemy2="53" />
+	<Complete ID="165" RandomNum2="8" CardNum="4" Teammate="158" Enemy="157" Enemy2="53" />
+	<Complete ID="166" RandomNum2="8" CardNum="4" Teammate="153" Enemy="158" Enemy2="53" />
+	<Complete ID="167" RandomNum2="8" CardNum="4" Teammate="161" Enemy="160" Enemy2="53" />
+	<Complete ID="168" RandomNum2="8" CardNum="4" Teammate="162" Enemy="161" Enemy2="53" />
+	<Complete ID="169" RandomNum2="8" CardNum="4" Teammate="128" Enemy="162" Enemy2="53" />
+	<Complete ID="170" RandomNum2="8" CardNum="4" Teammate="170" Enemy="164" Enemy2="53" />
+	<Complete ID="171" RandomNum2="8" CardNum="4" Teammate="167" Enemy="166" Enemy2="53" />
+	<Complete ID="172" RandomNum2="8" CardNum="4" Teammate="168" Enemy="167" Enemy2="53" />
+	<Complete ID="173" RandomNum2="8" CardNum="4" Teammate="169" Enemy="168" Enemy2="53" />
+	<Complete ID="174" RandomNum2="8" CardNum="4" Teammate="170" Enemy="169" Enemy2="53" />
+	<Complete ID="175" RandomNum2="8" CardNum="4" Teammate="171" Enemy="170" Enemy2="53" />
+	<Complete ID="176" RandomNum2="8" CardNum="4" Teammate="172" Enemy="171" Enemy2="53" />
+	<Complete ID="177" RandomNum2="8" CardNum="4" Teammate="173" Enemy="172" Enemy2="53" />
+	<Complete ID="178" RandomNum2="8" CardNum="4" Teammate="174" Enemy="173" Enemy2="53" />
+	<Complete ID="179" RandomNum2="8" CardNum="4" Teammate="175" Enemy="174" Enemy2="53" />
+	<Complete ID="180" RandomNum2="8" CardNum="4" Teammate="176" Enemy="175" Enemy2="53" />
+	<Complete ID="181" RandomNum2="8" CardNum="4" Teammate="177" Enemy="176" Enemy2="53" />
+	<Complete ID="182" RandomNum2="8" CardNum="4" Teammate="178" Enemy="177" Enemy2="53" />
+	<Complete ID="183" RandomNum2="8" CardNum="4" Teammate="179" Enemy="178" Enemy2="53" />
+	<Complete ID="184" RandomNum2="8" CardNum="4" Teammate="180" Enemy="179" Enemy2="53" />
+	<Complete ID="185" RandomNum2="8" CardNum="4" Teammate="181" Enemy="180" Enemy2="53" />
+	<Complete ID="186" RandomNum2="8" CardNum="4" Teammate="182" Enemy="181" Enemy2="53" />
+	<Complete ID="187" RandomNum2="8" CardNum="4" Teammate="183" Enemy="182" Enemy2="53" />
+	<Complete ID="188" RandomNum2="8" CardNum="4" Teammate="184" Enemy="183" Enemy2="53" />
+	<Complete ID="189" RandomNum2="8" CardNum="4" Teammate="185" Enemy="184" Enemy2="53" />
+	<Complete ID="190" RandomNum2="8" CardNum="4" Teammate="186" Enemy="185" Enemy2="53" />
+	<Complete ID="191" RandomNum2="8" CardNum="4" Teammate="187" Enemy="186" Enemy2="53" />
+	<Complete ID="192" RandomNum2="8" CardNum="4" Teammate="188" Enemy="187" Enemy2="53" />
+	<Complete ID="193" RandomNum2="8" CardNum="4" Teammate="186" Enemy="188" Enemy2="53" />
+	<Complete ID="194" RandomNum2="8" CardNum="5" Teammate="202" Enemy="201" Enemy2="53" />
+	<Complete ID="195" RandomNum2="8" CardNum="5" Teammate="203" Enemy="202" Enemy2="53" />
+	<Complete ID="196" RandomNum2="8" CardNum="5" Teammate="204" Enemy="203" Enemy2="53" />
+	<Complete ID="197" RandomNum2="8" CardNum="4" Teammate="205" Enemy="204" Enemy2="53" />
+	<Complete ID="198" RandomNum2="8" CardNum="4" Teammate="206" Enemy="205" Enemy2="53" />
+	<Complete ID="199" RandomNum2="8" CardNum="5" Teammate="207" Enemy="206" Enemy2="53" />
+	<Complete ID="200" RandomNum2="8" CardNum="5" Teammate="208" Enemy="207" Enemy2="53" />
+	<Complete ID="201" RandomNum2="8" CardNum="4" Teammate="187" Enemy="208" Enemy2="53" />
+	<Complete ID="202" RandomNum2="8" CardNum="4" Teammate="211" Enemy="210" Enemy2="53" />
+	<Complete ID="203" RandomNum2="8" CardNum="4" Teammate="212" Enemy="211" Enemy2="53" />
+	<Complete ID="204" RandomNum2="8" CardNum="4" Teammate="188" Enemy="212" Enemy2="53" />
+	<Complete ID="205" RandomNum2="8" CardNum="4" Teammate="215" Enemy="214" Enemy2="53" />
+	<Complete ID="206" RandomNum2="8" CardNum="5" Teammate="206" Enemy="215" Enemy2="53" />
+	<Complete ID="207" RandomNum2="8" CardNum="5" Teammate="221" Enemy="220" Enemy2="53" />
+	<Complete ID="208" RandomNum2="8" CardNum="5" Teammate="207" Enemy="221" Enemy2="53" />
+	<Complete ID="209" RandomNum2="8" CardNum="5" Teammate="225" Enemy="224" Enemy2="53" />
+	<Complete ID="210" RandomNum2="8" CardNum="4" Teammate="184" Enemy="225" Enemy2="53" />
+	<Complete ID="211" RandomNum2="8" CardNum="4" Teammate="300" Enemy="299" Enemy2="53" />
+	<Complete ID="212" RandomNum2="8" CardNum="4" Teammate="301" Enemy="300" Enemy2="53" />
+	<Complete ID="213" RandomNum2="8" CardNum="4" Teammate="302" Enemy="301" Enemy2="53" />
+	<Complete ID="214" RandomNum2="8" CardNum="4" Teammate="303" Enemy="302" Enemy2="53" />
+	<Complete ID="215" RandomNum2="8" CardNum="4" Teammate="304" Enemy="303" Enemy2="53" />
+	<Complete ID="216" RandomNum2="8" CardNum="4" Teammate="305" Enemy="304" Enemy2="53" />
+	<Complete ID="217" RandomNum2="8" CardNum="4" Teammate="306" Enemy="305" Enemy2="53" />
+	<Complete ID="218" RandomNum2="8" CardNum="4" Teammate="307" Enemy="306" Enemy2="53" />
+	<Complete ID="219" RandomNum2="8" CardNum="4" Teammate="308" Enemy="307" Enemy2="53" />
+	<Complete ID="220" RandomNum2="8" CardNum="4" Teammate="309" Enemy="308" Enemy2="53" />
+	<Complete ID="221" RandomNum2="8" CardNum="4" Teammate="310" Enemy="309" Enemy2="53" />
+	<Complete ID="222" RandomNum2="8" CardNum="4" Teammate="311" Enemy="310" Enemy2="53" />
+	<Complete ID="223" RandomNum2="8" CardNum="4" Teammate="312" Enemy="311" Enemy2="53" />
+	<Complete ID="224" RandomNum2="8" CardNum="4" Teammate="313" Enemy="312" Enemy2="53" />
+	<Complete ID="225" RandomNum2="8" CardNum="4" Teammate="314" Enemy="313" Enemy2="53" />
+	<Complete ID="226" RandomNum2="8" CardNum="4" Teammate="315" Enemy="314" Enemy2="53" />
+	<Complete ID="227" RandomNum2="8" CardNum="4" Teammate="316" Enemy="315" Enemy2="53" />
+	<Complete ID="228" RandomNum2="8" CardNum="4" Teammate="317" Enemy="316" Enemy2="53" />
+	<Complete ID="229" RandomNum2="8" CardNum="4" Teammate="318" Enemy="317" Enemy2="53" />
+	<Complete ID="230" RandomNum2="8" CardNum="4" Teammate="319" Enemy="318" Enemy2="53" />
+	<Complete ID="231" RandomNum2="8" CardNum="4" Teammate="320" Enemy="319" Enemy2="53" />
+	<Complete ID="232" RandomNum2="8" CardNum="4" Teammate="321" Enemy="320" Enemy2="53" />
+	<Complete ID="233" RandomNum2="8" CardNum="4" Teammate="322" Enemy="321" Enemy2="53" />
+	<Complete ID="234" RandomNum2="8" CardNum="4" Teammate="323" Enemy="322" Enemy2="53" />
+	<Complete ID="235" RandomNum2="8" CardNum="4" Teammate="324" Enemy="323" Enemy2="53" />
+	<Complete ID="236" RandomNum2="8" CardNum="4" Teammate="325" Enemy="324" Enemy2="53" />
+	<Complete ID="237" RandomNum2="8" CardNum="4" Teammate="326" Enemy="325" Enemy2="53" />
+	<Complete ID="238" RandomNum2="8" CardNum="4" Teammate="327" Enemy="326" Enemy2="53" />
+	<Complete ID="239" RandomNum2="8" CardNum="4" Teammate="328" Enemy="327" Enemy2="53" />
+	<Complete ID="240" RandomNum2="8" CardNum="4" Teammate="329" Enemy="328" Enemy2="53" />
+	<Complete ID="241" RandomNum2="8" CardNum="4" Teammate="330" Enemy="329" Enemy2="53" />
+	<Complete ID="242" RandomNum2="8" CardNum="4" Teammate="331" Enemy="330" Enemy2="53" />
+	<Complete ID="243" RandomNum2="8" CardNum="4" Teammate="332" Enemy="331" Enemy2="53" />
+	<Complete ID="244" RandomNum2="8" CardNum="4" Teammate="333" Enemy="332" Enemy2="53" />
+	<Complete ID="245" RandomNum2="8" CardNum="4" Teammate="334" Enemy="333" Enemy2="53" />
+	<Complete ID="246" RandomNum2="8" CardNum="4" Teammate="335" Enemy="334" Enemy2="53" />
+	<Complete ID="247" RandomNum2="8" CardNum="4" Teammate="336" Enemy="335" Enemy2="53" />
+	<Complete ID="248" RandomNum2="8" CardNum="4" Teammate="337" Enemy="336" Enemy2="53" />
+	<Complete ID="249" RandomNum2="8" CardNum="4" Teammate="338" Enemy="337" Enemy2="53" />
+	<Complete ID="250" RandomNum2="8" CardNum="4" Teammate="339" Enemy="338" Enemy2="53" />
+	<Complete ID="251" RandomNum2="8" CardNum="4" Teammate="340" Enemy="339" Enemy2="53" />
+	<Complete ID="252" RandomNum2="8" CardNum="4" Teammate="341" Enemy="340" Enemy2="53" />
+	<Complete ID="253" RandomNum2="8" CardNum="4" Teammate="342" Enemy="341" Enemy2="53" />
+	<Complete ID="254" RandomNum2="8" CardNum="4" Teammate="343" Enemy="342" Enemy2="53" />
+	<Complete ID="255" RandomNum2="8" CardNum="4" Teammate="344" Enemy="343" Enemy2="53" />
+	<Complete ID="256" RandomNum2="8" CardNum="4" Teammate="345" Enemy="344" Enemy2="53" />
+	<Complete ID="257" RandomNum2="8" CardNum="4" Teammate="346" Enemy="345" Enemy2="53" />
+	<Complete ID="258" RandomNum2="8" CardNum="4" Teammate="347" Enemy="346" Enemy2="53" />
+	<Complete ID="259" RandomNum2="8" CardNum="4" Teammate="348" Enemy="347" Enemy2="53" />
+	<Complete ID="260" RandomNum2="8" CardNum="4" Teammate="349" Enemy="348" Enemy2="53" />
+	<Complete ID="261" RandomNum2="8" CardNum="4" Teammate="350" Enemy="349" Enemy2="53" />
+	<Complete ID="262" RandomNum2="8" CardNum="4" Teammate="351" Enemy="350" Enemy2="53" />
+	<Complete ID="263" RandomNum2="8" CardNum="4" Teammate="352" Enemy="351" Enemy2="53" />
+	<Complete ID="264" RandomNum2="8" CardNum="4" Teammate="353" Enemy="352" Enemy2="53" />
+	<Complete ID="265" RandomNum2="8" CardNum="4" Teammate="354" Enemy="353" Enemy2="53" />
+	<Complete ID="266" RandomNum2="8" CardNum="4" Teammate="346" Enemy="354" Enemy2="53" />
+	<Complete ID="267" RandomNum2="8" CardNum="4" Teammate="357" Enemy="356" Enemy2="53" />
+	<Complete ID="268" RandomNum2="8" CardNum="4" Teammate="358" Enemy="357" Enemy2="53" />
+	<Complete ID="269" RandomNum2="8" CardNum="4" Teammate="361" Enemy="360" Enemy2="53" />
+	<Complete ID="270" RandomNum2="8" CardNum="4" Teammate="362" Enemy="361" Enemy2="53" />
+	<Complete ID="271" RandomNum2="8" CardNum="4" Teammate="363" Enemy="362" Enemy2="53" />
+	<Complete ID="272" RandomNum2="8" CardNum="4" Teammate="364" Enemy="363" Enemy2="53" />
+	<Complete ID="273" RandomNum2="8" CardNum="4" Teammate="365" Enemy="364" Enemy2="53" />
+	<Complete ID="274" RandomNum2="8" CardNum="4" Teammate="366" Enemy="365" Enemy2="53" />
+	<Complete ID="275" RandomNum2="8" CardNum="4" Teammate="367" Enemy="366" Enemy2="53" />
+	<Complete ID="276" RandomNum2="8" CardNum="4" Teammate="368" Enemy="367" Enemy2="53" />
+	<Complete ID="277" RandomNum2="8" CardNum="4" Teammate="369" Enemy="368" Enemy2="53" />
+	<Complete ID="278" RandomNum2="8" CardNum="4" Teammate="370" Enemy="369" Enemy2="53" />
+	<Complete ID="279" RandomNum2="8" CardNum="4" Teammate="371" Enemy="370" Enemy2="53" />
+	<Complete ID="280" RandomNum2="8" CardNum="4" Teammate="372" Enemy="371" Enemy2="53" />
+	<Complete ID="281" RandomNum2="8" CardNum="4" Teammate="373" Enemy="372" Enemy2="53" />
+	<Complete ID="282" RandomNum2="8" CardNum="4" Teammate="374" Enemy="373" Enemy2="53" />
+	<Complete ID="283" RandomNum2="8" CardNum="4" Teammate="375" Enemy="374" Enemy2="53" />
+	<Complete ID="284" RandomNum2="8" CardNum="4" Teammate="376" Enemy="375" Enemy2="53" />
+	<Complete ID="285" RandomNum2="8" CardNum="4" Teammate="377" Enemy="376" Enemy2="53" />
+	<Complete ID="286" RandomNum2="8" CardNum="4" Teammate="378" Enemy="377" Enemy2="53" />
+	<Complete ID="287" RandomNum2="8" CardNum="4" Teammate="379" Enemy="378" Enemy2="53" />
+	<Complete ID="288" RandomNum2="8" CardNum="4" Teammate="380" Enemy="379" Enemy2="53" />
+	<Complete ID="289" RandomNum2="8" CardNum="4" Teammate="381" Enemy="380" Enemy2="53" />
+	<Complete ID="290" RandomNum2="8" CardNum="4" Teammate="382" Enemy="381" Enemy2="53" />
+	<Complete ID="291" RandomNum2="8" CardNum="4" Teammate="383" Enemy="382" Enemy2="53" />
+	<Complete ID="292" RandomNum2="8" CardNum="4" Teammate="384" Enemy="383" Enemy2="53" />
+	<Complete ID="293" RandomNum2="8" CardNum="4" Teammate="385" Enemy="384" Enemy2="53" />
+	<Complete ID="294" RandomNum2="8" CardNum="4" Teammate="386" Enemy="385" Enemy2="53" />
+	<Complete ID="295" RandomNum2="8" CardNum="4" Teammate="387" Enemy="386" Enemy2="53" />
+	<Complete ID="296" RandomNum2="8" CardNum="4" Teammate="388" Enemy="387" Enemy2="53" />
+	<Complete ID="297" RandomNum2="8" CardNum="4" Teammate="389" Enemy="388" Enemy2="53" />
+	<Complete ID="298" RandomNum2="8" CardNum="4" Teammate="390" Enemy="389" Enemy2="53" />
+	<Complete ID="299" RandomNum2="8" CardNum="4" Teammate="391" Enemy="390" Enemy2="53" />
+	<Complete ID="300" RandomNum2="8" CardNum="4" Teammate="392" Enemy="391" Enemy2="53" />
+	<Complete ID="301" RandomNum2="8" CardNum="4" Teammate="393" Enemy="392" Enemy2="53" />
+	<Complete ID="302" RandomNum2="8" CardNum="4" Teammate="394" Enemy="393" Enemy2="53" />
+	<Complete ID="303" RandomNum2="8" CardNum="4" Teammate="395" Enemy="394" Enemy2="53" />
+	<Complete ID="304" RandomNum2="8" CardNum="4" Teammate="389" Enemy="395" Enemy2="53" />
+	<Complete ID="305" RandomNum2="8" CardNum="4" Teammate="401" Enemy="400" Enemy2="53" />
+	<Complete ID="306" RandomNum2="8" CardNum="4" Teammate="402" Enemy="401" Enemy2="53" />
+	<Complete ID="307" RandomNum2="8" CardNum="4" Teammate="403" Enemy="402" Enemy2="53" />
+	<Complete ID="308" RandomNum2="8" CardNum="4" Teammate="404" Enemy="403" Enemy2="53" />
+	<Complete ID="309" RandomNum2="8" CardNum="4" Teammate="401" Enemy="404" Enemy2="53" />
+	<Complete ID="310" RandomNum2="8" CardNum="4" Teammate="407" Enemy="406" Enemy2="53" />
+	<Complete ID="311" RandomNum2="8" CardNum="4" Teammate="408" Enemy="407" Enemy2="53" />
+	<Complete ID="312" RandomNum2="8" CardNum="4" Teammate="409" Enemy="408" Enemy2="53" />
+	<Complete ID="313" RandomNum2="8" CardNum="4" Teammate="410" Enemy="409" Enemy2="53" />
+	<Complete ID="314" RandomNum2="8" CardNum="4" Teammate="411" Enemy="410" Enemy2="53" />
+	<Complete ID="315" RandomNum2="8" CardNum="4" Teammate="409" Enemy="411" Enemy2="53" />
+	<Complete ID="316" RandomNum2="8" CardNum="4" Teammate="414" Enemy="413" Enemy2="53" />
+	<Complete ID="317" RandomNum2="8" CardNum="4" Teammate="415" Enemy="414" Enemy2="53" />
+	<Complete ID="318" RandomNum2="8" CardNum="4" Teammate="416" Enemy="415" Enemy2="53" />
+	<Complete ID="319" RandomNum2="8" CardNum="4" Teammate="417" Enemy="416" Enemy2="53" />
+	<Complete ID="320" RandomNum2="8" CardNum="4" Teammate="418" Enemy="417" Enemy2="53" />
+	<Complete ID="321" RandomNum2="8" CardNum="4" Teammate="419" Enemy="418" Enemy2="53" />
+	<Complete ID="322" RandomNum2="8" CardNum="4" Teammate="420" Enemy="419" Enemy2="53" />
+	<Complete ID="323" RandomNum2="8" CardNum="4" Teammate="421" Enemy="420" Enemy2="53" />
+	<Complete ID="324" RandomNum2="8" CardNum="4" Teammate="422" Enemy="421" Enemy2="53" />
+	<Complete ID="325" RandomNum2="8" CardNum="4" Teammate="423" Enemy="422" Enemy2="53" />
+	<Complete ID="326" RandomNum2="8" CardNum="4" Teammate="424" Enemy="423" Enemy2="53" />
+	<Complete ID="327" RandomNum2="8" CardNum="4" Teammate="425" Enemy="424" Enemy2="53" />
+	<Complete ID="328" RandomNum2="8" CardNum="4" Teammate="426" Enemy="425" Enemy2="53" />
+	<Complete ID="329" RandomNum2="8" CardNum="4" Teammate="427" Enemy="426" Enemy2="53" />
+	<Complete ID="330" RandomNum2="8" CardNum="4" Teammate="428" Enemy="427" Enemy2="53" />
+	<Complete ID="331" RandomNum2="8" CardNum="4" Teammate="429" Enemy="428" Enemy2="53" />
+	<Complete ID="332" RandomNum2="8" CardNum="4" Teammate="430" Enemy="429" Enemy2="53" />
+	<Complete ID="333" RandomNum2="8" CardNum="4" Teammate="431" Enemy="430" Enemy2="53" />
+	<Complete ID="334" RandomNum2="8" CardNum="4" Teammate="432" Enemy="431" Enemy2="53" />
+	<Complete ID="335" RandomNum2="8" CardNum="4" Teammate="433" Enemy="432" Enemy2="53" />
+	<Complete ID="336" RandomNum2="8" CardNum="4" Teammate="434" Enemy="433" Enemy2="53" />
+	<Complete ID="337" RandomNum2="8" CardNum="4" Teammate="435" Enemy="434" Enemy2="53" />
+	<Complete ID="338" RandomNum2="8" CardNum="4" Teammate="436" Enemy="435" Enemy2="53" />
+	<Complete ID="339" RandomNum2="8" CardNum="4" Teammate="437" Enemy="436" Enemy2="53" />
+	<Complete ID="340" RandomNum2="8" CardNum="4" Teammate="438" Enemy="437" Enemy2="53" />
+	<Complete ID="341" RandomNum2="8" CardNum="4" Teammate="439" Enemy="438" Enemy2="53" />
+	<Complete ID="342" RandomNum2="8" CardNum="4" Teammate="440" Enemy="439" Enemy2="53" />
+	<Complete ID="343" RandomNum2="8" CardNum="4" Teammate="441" Enemy="440" Enemy2="53" />
+	<Complete ID="344" RandomNum2="8" CardNum="4" Teammate="442" Enemy="441" Enemy2="53" />
+	<Complete ID="345" RandomNum2="8" CardNum="4" Teammate="443" Enemy="442" Enemy2="53" />
+	<Complete ID="346" RandomNum2="8" CardNum="4" Teammate="444" Enemy="443" Enemy2="53" />
+	<Complete ID="347" RandomNum2="8" CardNum="4" Teammate="445" Enemy="444" Enemy2="53" />
+	<Complete ID="348" RandomNum2="8" CardNum="4" Teammate="446" Enemy="445" Enemy2="53" />
+	<Complete ID="349" RandomNum2="8" CardNum="4" Teammate="447" Enemy="446" Enemy2="53" />
+	<Complete ID="350" RandomNum2="8" CardNum="4" Teammate="448" Enemy="447" Enemy2="53" />
+	<Complete ID="351" RandomNum2="8" CardNum="4" Teammate="449" Enemy="448" Enemy2="53" />
+	<Complete ID="352" RandomNum2="8" CardNum="4" Teammate="450" Enemy="449" Enemy2="53" />
+	<Complete ID="353" RandomNum2="8" CardNum="4" Teammate="448" Enemy="450" Enemy2="53" />
+	<Complete ID="354" RandomNum2="8" CardNum="4" Teammate="452" Enemy="451" Enemy2="463" />
+	<Complete ID="355" RandomNum2="8" CardNum="4" Teammate="453" Enemy="452" Enemy2="53" />
+	<Complete ID="356" RandomNum2="8" CardNum="4" Teammate="27" Enemy="26" Enemy2="53" />
+	<Complete ID="357" RandomNum2="8" CardNum="4" Teammate="454" Enemy="453" Enemy2="53" />
+	<Complete ID="358" RandomNum2="8" CardNum="4" Teammate="455" Enemy="454" Enemy2="53" />
+	<Complete ID="359" RandomNum2="8" CardNum="4" Teammate="456" Enemy="455" Enemy2="53" />
+	<Complete ID="360" RandomNum2="8" CardNum="4" Teammate="457" Enemy="456" Enemy2="53" />
+	<Complete ID="361" RandomNum2="8" CardNum="4" Teammate="458" Enemy="457" Enemy2="53" />
+	<Complete ID="362" RandomNum2="8" CardNum="4" Teammate="459" Enemy="458" Enemy2="53" />
+	<Complete ID="363" RandomNum2="8" CardNum="4" Teammate="460" Enemy="459" Enemy2="53" />
+	<Complete ID="364" RandomNum2="8" CardNum="4" Teammate="461" Enemy="460" Enemy2="53" />
+	<Complete ID="365" RandomNum2="8" CardNum="4" Teammate="462" Enemy="461" Enemy2="53" />
+	<Complete ID="366" RandomNum2="8" CardNum="4" Teammate="463" Enemy="462" Enemy2="53" />
+	<Complete ID="367" RandomNum2="8" CardNum="4" Teammate="464" Enemy="463" Enemy2="53" />
+	<Complete ID="368" RandomNum2="8" CardNum="4" Teammate="465" Enemy="464" Enemy2="53" />
+	<Complete ID="369" RandomNum2="8" CardNum="4" Teammate="466" Enemy="465" Enemy2="53" />
+	<Complete ID="370" RandomNum2="8" CardNum="4" Teammate="467" Enemy="466" Enemy2="53" />
+	<Complete ID="371" RandomNum2="8" CardNum="4" Teammate="468" Enemy="467" Enemy2="53" />
+	<Complete ID="372" RandomNum2="8" CardNum="4" Teammate="469" Enemy="468" Enemy2="53" />
+	<Complete ID="373" RandomNum2="8" CardNum="4" Teammate="470" Enemy="469" Enemy2="53" />
+	<Complete ID="374" RandomNum2="8" CardNum="4" Teammate="471" Enemy="470" Enemy2="53" />
+	<Complete ID="375" RandomNum2="8" CardNum="4" Teammate="472" Enemy="471" Enemy2="53" />
+	<Complete ID="376" RandomNum2="8" CardNum="4" Teammate="473" Enemy="472" Enemy2="53" />
+	<Complete ID="377" RandomNum2="8" CardNum="4" Teammate="474" Enemy="473" Enemy2="53" />
+	<Complete ID="378" RandomNum2="8" CardNum="4" Teammate="475" Enemy="474" Enemy2="53" />
+	<Complete ID="379" RandomNum2="8" CardNum="4" Teammate="476" Enemy="475" Enemy2="53" />
+	<Complete ID="380" RandomNum2="8" CardNum="4" Teammate="477" Enemy="476" Enemy2="53" />
+	<Complete ID="381" RandomNum2="8" CardNum="4" Teammate="478" Enemy="477" Enemy2="53" />
+	<Complete ID="382" RandomNum2="8" CardNum="4" Teammate="479" Enemy="478" Enemy2="53" />
+	<Complete ID="383" RandomNum2="8" CardNum="4" Teammate="480" Enemy="479" Enemy2="53" />
+	<Complete ID="384" RandomNum2="8" CardNum="4" Teammate="481" Enemy="480" Enemy2="53" />
+	<Complete ID="385" RandomNum2="8" CardNum="4" Teammate="482" Enemy="481" Enemy2="53" />
+	<Complete ID="386" RandomNum2="8" CardNum="4" Teammate="483" Enemy="482" Enemy2="53" />
+	<Complete ID="387" RandomNum2="8" CardNum="4" Teammate="484" Enemy="483" Enemy2="53" />
+	<Complete ID="388" RandomNum2="8" CardNum="4" Teammate="485" Enemy="484" Enemy2="53" />
+	<Complete ID="389" RandomNum2="8" CardNum="4" Teammate="486" Enemy="485" Enemy2="53" />
+	<Complete ID="390" RandomNum2="8" CardNum="4" Teammate="488" Enemy="487" Enemy2="53" />
+	<Complete ID="391" RandomNum2="8" CardNum="4" Teammate="489" Enemy="488" Enemy2="53" />
+	<Complete ID="392" RandomNum2="8" CardNum="4" Teammate="490" Enemy="489" Enemy2="53" />
+	<Complete ID="393" RandomNum2="8" CardNum="4" Teammate="491" Enemy="490" Enemy2="53" />
+	<Complete ID="394" RandomNum2="8" CardNum="4" Teammate="492" Enemy="491" Enemy2="53" />
+	<Complete ID="395" RandomNum2="8" CardNum="4" Teammate="493" Enemy="492" Enemy2="53" />
+	<Complete ID="396" RandomNum2="8" CardNum="4" Teammate="7001" Enemy="7000" Enemy2="53" />
+	<Complete ID="397" RandomNum2="8" CardNum="4" Teammate="7002" Enemy="7001" Enemy2="53" />
+	<Complete ID="398" RandomNum2="8" CardNum="4" Teammate="7003" Enemy="7002" Enemy2="53" />
+	<Complete ID="399" RandomNum2="8" CardNum="4" Teammate="7004" Enemy="7003" Enemy2="53" />
+	<Complete ID="400" RandomNum2="8" CardNum="4" Teammate="7005" Enemy="7004" Enemy2="53" />
+	<Complete ID="401" RandomNum2="8" CardNum="4" Teammate="7006" Enemy="7005" Enemy2="53" />
+	<Complete ID="402" RandomNum2="8" CardNum="4" Teammate="7007" Enemy="7006" Enemy2="53" />
+	<Complete ID="403" RandomNum2="8" CardNum="4" Teammate="7008" Enemy="7007" Enemy2="53" />
+	<Complete ID="404" RandomNum2="8" CardNum="4" Teammate="7009" Enemy="7008" Enemy2="53" />
+	<Complete ID="405" RandomNum2="8" CardNum="4" Teammate="7010" Enemy="7009" Enemy2="53" />
+	<Complete ID="406" RandomNum2="8" CardNum="4" Teammate="7011" Enemy="7010" Enemy2="53" />
+	<Complete ID="407" RandomNum2="8" CardNum="4" Teammate="7012" Enemy="7011" Enemy2="53" />
+	<Complete ID="408" RandomNum2="8" CardNum="4" Teammate="7013" Enemy="7012" Enemy2="53" />
+	<Complete ID="409" RandomNum2="8" CardNum="4" Teammate="7014" Enemy="7013" Enemy2="53" />
+	<Complete ID="410" RandomNum2="8" CardNum="4" Teammate="7015" Enemy="7014" Enemy2="53" />
+	<Complete ID="411" RandomNum2="8" CardNum="4" Teammate="7016" Enemy="7015" Enemy2="53" />
+	<Complete ID="412" RandomNum2="8" CardNum="4" Teammate="7017" Enemy="7016" Enemy2="53" />
+	<Complete ID="413" RandomNum2="8" CardNum="4" Teammate="7018" Enemy="7017" Enemy2="53" />
+	<Complete ID="414" RandomNum2="8" CardNum="4" Teammate="7019" Enemy="7018" Enemy2="53" />
+	<Complete ID="415" RandomNum2="8" CardNum="4" Teammate="493" Enemy="358" Enemy2="53" />
+	<Complete ID="416" RandomNum2="8" CardNum="4" Teammate="494" Enemy="493" Enemy2="53" />
+	<Complete ID="417" RandomNum2="8" CardNum="4" Teammate="495" Enemy="494" Enemy2="53" />
+	<Complete ID="418" RandomNum2="8" CardNum="4" Teammate="496" Enemy="495" Enemy2="53" />
+	<Complete ID="419" RandomNum2="8" CardNum="4" Teammate="497" Enemy="496" Enemy2="53" />
+	<Complete ID="420" RandomNum2="8" CardNum="4" Teammate="498" Enemy="497" Enemy2="53" />
+	<Complete ID="421" RandomNum2="8" CardNum="4" Teammate="499" Enemy="498" Enemy2="53" />
+	<Complete ID="422" RandomNum2="8" CardNum="4" Teammate="7020" Enemy="7019" Enemy2="53" />
+	<Complete ID="423" RandomNum2="8" CardNum="4" Teammate="487" Enemy="486" Enemy2="53" />
+	<Complete ID="424" RandomNum2="8" CardNum="4" Teammate="500" Enemy="499" Enemy2="53" />
+	<Complete ID="425" RandomNum2="8" CardNum="4" Teammate="501" Enemy="500" Enemy2="53" />
+	<Complete ID="426" RandomNum2="8" CardNum="4" Teammate="502" Enemy="501" Enemy2="53" />
+	<Complete ID="427" RandomNum2="8" CardNum="4" Teammate="503" Enemy="502" Enemy2="53" />
+	<Complete ID="428" RandomNum2="8" CardNum="4" Teammate="504" Enemy="503" Enemy2="53" />
+	<Complete ID="429" RandomNum2="8" CardNum="4" Teammate="505" Enemy="504" Enemy2="53" />
+	<Complete ID="430" RandomNum2="8" CardNum="4" Teammate="7021" Enemy="7020" Enemy2="53" />
+	<Complete ID="431" RandomNum2="8" CardNum="4" Teammate="506" Enemy="505" Enemy2="53" />
+	<Complete ID="432" RandomNum2="8" CardNum="4" Teammate="507" Enemy="506" Enemy2="53" />
+	<Complete ID="433" RandomNum2="8" CardNum="4" Teammate="508" Enemy="507" Enemy2="53" />
+	<Complete ID="434" RandomNum2="8" CardNum="4" Teammate="509" Enemy="508" Enemy2="53" />
+	<Complete ID="435" RandomNum2="8" CardNum="4" Teammate="510" Enemy="509" Enemy2="53" />
+	<Complete ID="436" RandomNum2="8" CardNum="4" Teammate="511" Enemy="510" Enemy2="53" />
+	<Complete ID="437" RandomNum2="8" CardNum="4" Teammate="512" Enemy="511" Enemy2="53" />
+	<Complete ID="438" RandomNum2="8" CardNum="4" Teammate="513" Enemy="512" Enemy2="53" />
+	<Complete ID="439" RandomNum2="8" CardNum="4" Teammate="514" Enemy="513" Enemy2="53" />
+	<Complete ID="440" RandomNum2="8" CardNum="4" Teammate="515" Enemy="514" Enemy2="53" />
+	<Complete ID="441" RandomNum2="8" CardNum="4" Teammate="516" Enemy="515" Enemy2="53" />
+	<Complete ID="442" RandomNum2="8" CardNum="4" Teammate="7020" Enemy="516" Enemy2="53" />
+	<Complete ID="443" RandomNum2="8" CardNum="4" Teammate="517" Enemy="516" Enemy2="53" />
+	<Complete ID="444" RandomNum2="8" CardNum="4" Teammate="518" Enemy="517" Enemy2="53" />
+	<Complete ID="445" RandomNum2="8" CardNum="4" Teammate="519" Enemy="518" Enemy2="53" />
+	<Complete ID="446" RandomNum2="8" CardNum="4" Teammate="520" Enemy="519" Enemy2="53" />
+	<Complete ID="447" RandomNum2="8" CardNum="4" Teammate="521" Enemy="520" Enemy2="53" />
+	<Complete ID="448" RandomNum2="8" CardNum="4" Teammate="520" Enemy="521" Enemy2="53" />
+	<Complete ID="1000" RandomNum2="8" CardNum="4" Teammate="36" Enemy="34" Enemy2="1" />
+	<Complete ID="1001" RandomNum2="8" CardNum="4" Teammate="37" Enemy="35" Enemy2="1" />
+	<Complete ID="1002" RandomNum2="8" CardNum="4" Teammate="38" Enemy="36" Enemy2="1" />
+	<Complete ID="1003" RandomNum2="8" CardNum="4" Teammate="39" Enemy="37" Enemy2="1" />
+	<Complete ID="1004" RandomNum2="8" CardNum="4" Teammate="40" Enemy="38" Enemy2="1" />
+	<Complete ID="1005" RandomNum2="8" CardNum="4" Teammate="41" Enemy="39" Enemy2="1" />
+	<Complete ID="1006" RandomNum2="8" CardNum="4" Teammate="42" Enemy="40" Enemy2="1" />
+	<Complete ID="1007" RandomNum2="8" CardNum="4" Teammate="43" Enemy="41" Enemy2="1" />
+	<Complete ID="1008" RandomNum2="8" CardNum="4" Teammate="44" Enemy="42" Enemy2="1" />
+	<Complete ID="1009" RandomNum2="8" CardNum="4" Teammate="45" Enemy="43" Enemy2="1" />
+	<Complete ID="1010" RandomNum2="8" CardNum="4" Teammate="46" Enemy="44" Enemy2="1" />
+	<Complete ID="1011" RandomNum2="8" CardNum="4" Teammate="47" Enemy="45" Enemy2="1" />
+	<Complete ID="1012" RandomNum2="8" CardNum="4" Teammate="48" Enemy="46" Enemy2="1" />
+	<Complete ID="1013" RandomNum2="8" CardNum="4" Teammate="49" Enemy="47" Enemy2="1" />
+	<Complete ID="1014" RandomNum2="8" CardNum="4" Teammate="50" Enemy="48" Enemy2="1" />
+	<Complete ID="1015" RandomNum2="8" CardNum="4" Teammate="51" Enemy="49" Enemy2="1" />
+	<Complete ID="1016" RandomNum2="8" CardNum="4" Teammate="52" Enemy="50" Enemy2="1" />
+	<Complete ID="1017" RandomNum2="8" CardNum="4" Teammate="53" Enemy="51" Enemy2="1" />
+	<Complete ID="1018" RandomNum2="8" CardNum="4" Teammate="54" Enemy="52" Enemy2="1" />
+	<Complete ID="1019" RandomNum2="8" CardNum="4" Teammate="55" Enemy="53" Enemy2="1" />
+	<Complete ID="1020" RandomNum2="8" CardNum="4" Teammate="56" Enemy="54" Enemy2="1" />
+	<Complete ID="1021" RandomNum2="8" CardNum="4" Teammate="57" Enemy="55" Enemy2="1" />
+	<Complete ID="1022" RandomNum2="8" CardNum="4" Teammate="57" Enemy="56" Enemy2="1" />
+	<Complete ID="1023" RandomNum2="8" CardNum="4" Teammate="53" Enemy="57" Enemy2="1" />
+	<Complete ID="1024" RandomNum2="8" CardNum="4" Teammate="50" Enemy="72" Enemy2="1" />
+	<Complete ID="1025" RandomNum2="8" CardNum="4" Teammate="48" Enemy="73" Enemy2="1" />
+	<Complete ID="1026" RandomNum2="8" CardNum="4" Teammate="49" Enemy="100" Enemy2="1" />
+	<Complete ID="1027" RandomNum2="8" CardNum="4" Teammate="103" Enemy="101" Enemy2="1" />
+	<Complete ID="1028" RandomNum2="8" CardNum="4" Teammate="105" Enemy="103" Enemy2="1" />
+	<Complete ID="1029" RandomNum2="8" CardNum="4" Teammate="106" Enemy="104" Enemy2="1" />
+	<Complete ID="1030" RandomNum2="8" CardNum="4" Teammate="107" Enemy="105" Enemy2="1" />
+	<Complete ID="1031" RandomNum2="8" CardNum="4" Teammate="108" Enemy="106" Enemy2="1" />
+	<Complete ID="1032" RandomNum2="8" CardNum="4" Teammate="109" Enemy="107" Enemy2="1" />
+	<Complete ID="1033" RandomNum2="8" CardNum="4" Teammate="110" Enemy="108" Enemy2="1" />
+	<Complete ID="1034" RandomNum2="8" CardNum="4" Teammate="111" Enemy="109" Enemy2="1" />
+	<Complete ID="1035" RandomNum2="8" CardNum="4" Teammate="112" Enemy="110" Enemy2="1" />
+	<Complete ID="1036" RandomNum2="8" CardNum="4" Teammate="113" Enemy="111" Enemy2="1" />
+	<Complete ID="1037" RandomNum2="8" CardNum="4" Teammate="114" Enemy="112" Enemy2="1" />
+	<Complete ID="1038" RandomNum2="8" CardNum="4" Teammate="115" Enemy="113" Enemy2="1" />
+	<Complete ID="1039" RandomNum2="8" CardNum="4" Teammate="116" Enemy="114" Enemy2="1" />
+	<Complete ID="1040" RandomNum2="8" CardNum="4" Teammate="117" Enemy="115" Enemy2="1" />
+	<Complete ID="1041" RandomNum2="8" CardNum="4" Teammate="118" Enemy="116" Enemy2="1" />
+	<Complete ID="1042" RandomNum2="8" CardNum="4" Teammate="119" Enemy="117" Enemy2="1" />
+	<Complete ID="1043" RandomNum2="8" CardNum="4" Teammate="123" Enemy="118" Enemy2="1" />
+	<Complete ID="1044" RandomNum2="8" CardNum="4" Teammate="121" Enemy="119" Enemy2="1" />
+	<Complete ID="1045" RandomNum2="8" CardNum="4" Teammate="123" Enemy="121" Enemy2="1" />
+	<Complete ID="1046" RandomNum2="8" CardNum="4" Teammate="124" Enemy="122" Enemy2="1" />
+	<Complete ID="1047" RandomNum2="8" CardNum="4" Teammate="125" Enemy="123" Enemy2="1" />
+	<Complete ID="1048" RandomNum2="8" CardNum="4" Teammate="126" Enemy="124" Enemy2="1" />
+	<Complete ID="1049" RandomNum2="8" CardNum="4" Teammate="127" Enemy="125" Enemy2="1" />
+	<Complete ID="1050" RandomNum2="8" CardNum="4" Teammate="128" Enemy="126" Enemy2="1" />
+	<Complete ID="1051" RandomNum2="8" CardNum="4" Teammate="129" Enemy="127" Enemy2="1" />
+	<Complete ID="1052" RandomNum2="8" CardNum="4" Teammate="130" Enemy="128" Enemy2="1" />
+	<Complete ID="1053" RandomNum2="8" CardNum="4" Teammate="131" Enemy="129" Enemy2="1" />
+	<Complete ID="1054" RandomNum2="8" CardNum="4" Teammate="125" Enemy="130" Enemy2="1" />
+	<Complete ID="1055" RandomNum2="8" CardNum="4" Teammate="127" Enemy="131" Enemy2="1" />
+	<Complete ID="1056" RandomNum2="8" CardNum="4" Teammate="137" Enemy="135" Enemy2="1" />
+	<Complete ID="1057" RandomNum2="8" CardNum="4" Teammate="116" Enemy="136" Enemy2="1" />
+	<Complete ID="1058" RandomNum2="8" CardNum="4" Teammate="139" Enemy="137" Enemy2="1" />
+	<Complete ID="1059" RandomNum2="8" CardNum="4" Teammate="155" Enemy="139" Enemy2="1" />
+	<Complete ID="1060" RandomNum2="8" CardNum="4" Teammate="153" Enemy="151" Enemy2="1" />
+	<Complete ID="1061" RandomNum2="8" CardNum="4" Teammate="157" Enemy="152" Enemy2="1" />
+	<Complete ID="1062" RandomNum2="8" CardNum="4" Teammate="155" Enemy="153" Enemy2="1" />
+	<Complete ID="1063" RandomNum2="8" CardNum="4" Teammate="157" Enemy="155" Enemy2="1" />
+	<Complete ID="1064" RandomNum2="8" CardNum="4" Teammate="158" Enemy="156" Enemy2="1" />
+	<Complete ID="1065" RandomNum2="8" CardNum="4" Teammate="164" Enemy="157" Enemy2="1" />
+	<Complete ID="1066" RandomNum2="8" CardNum="4" Teammate="160" Enemy="158" Enemy2="1" />
+	<Complete ID="1067" RandomNum2="8" CardNum="4" Teammate="162" Enemy="160" Enemy2="1" />
+	<Complete ID="1068" RandomNum2="8" CardNum="4" Teammate="168" Enemy="161" Enemy2="1" />
+	<Complete ID="1069" RandomNum2="8" CardNum="4" Teammate="164" Enemy="162" Enemy2="1" />
+	<Complete ID="1070" RandomNum2="8" CardNum="4" Teammate="166" Enemy="164" Enemy2="1" />
+	<Complete ID="1071" RandomNum2="8" CardNum="4" Teammate="168" Enemy="166" Enemy2="1" />
+	<Complete ID="1072" RandomNum2="8" CardNum="4" Teammate="169" Enemy="167" Enemy2="1" />
+	<Complete ID="1073" RandomNum2="8" CardNum="4" Teammate="170" Enemy="168" Enemy2="1" />
+	<Complete ID="1074" RandomNum2="8" CardNum="4" Teammate="171" Enemy="169" Enemy2="1" />
+	<Complete ID="1075" RandomNum2="8" CardNum="4" Teammate="172" Enemy="170" Enemy2="1" />
+	<Complete ID="1076" RandomNum2="8" CardNum="4" Teammate="173" Enemy="171" Enemy2="1" />
+	<Complete ID="1077" RandomNum2="8" CardNum="4" Teammate="174" Enemy="172" Enemy2="1" />
+	<Complete ID="1078" RandomNum2="8" CardNum="4" Teammate="175" Enemy="173" Enemy2="1" />
+	<Complete ID="1079" RandomNum2="8" CardNum="4" Teammate="176" Enemy="174" Enemy2="1" />
+	<Complete ID="1080" RandomNum2="8" CardNum="4" Teammate="177" Enemy="175" Enemy2="1" />
+	<Complete ID="1081" RandomNum2="8" CardNum="4" Teammate="178" Enemy="176" Enemy2="1" />
+	<Complete ID="1082" RandomNum2="8" CardNum="4" Teammate="179" Enemy="177" Enemy2="1" />
+	<Complete ID="1083" RandomNum2="8" CardNum="4" Teammate="180" Enemy="178" Enemy2="1" />
+	<Complete ID="1084" RandomNum2="8" CardNum="4" Teammate="181" Enemy="179" Enemy2="1" />
+	<Complete ID="1085" RandomNum2="8" CardNum="4" Teammate="182" Enemy="180" Enemy2="1" />
+	<Complete ID="1086" RandomNum2="8" CardNum="4" Teammate="183" Enemy="181" Enemy2="1" />
+	<Complete ID="1087" RandomNum2="8" CardNum="4" Teammate="184" Enemy="182" Enemy2="1" />
+	<Complete ID="1088" RandomNum2="8" CardNum="4" Teammate="185" Enemy="183" Enemy2="1" />
+	<Complete ID="1089" RandomNum2="8" CardNum="4" Teammate="186" Enemy="184" Enemy2="1" />
+	<Complete ID="1090" RandomNum2="8" CardNum="4" Teammate="187" Enemy="185" Enemy2="1" />
+	<Complete ID="1091" RandomNum2="8" CardNum="4" Teammate="188" Enemy="186" Enemy2="1" />
+	<Complete ID="1092" RandomNum2="8" CardNum="4" Teammate="181" Enemy="187" Enemy2="1" />
+	<Complete ID="1093" RandomNum2="8" CardNum="4" Teammate="179" Enemy="188" Enemy2="1" />
+	<Complete ID="1094" RandomNum2="8" CardNum="5" Teammate="203" Enemy="201" Enemy2="1" />
+	<Complete ID="1095" RandomNum2="8" CardNum="5" Teammate="204" Enemy="202" Enemy2="1" />
+	<Complete ID="1096" RandomNum2="8" CardNum="4" Teammate="205" Enemy="203" Enemy2="1" />
+	<Complete ID="1097" RandomNum2="8" CardNum="4" Teammate="206" Enemy="204" Enemy2="1" />
+	<Complete ID="1098" RandomNum2="8" CardNum="4" Teammate="207" Enemy="205" Enemy2="1" />
+	<Complete ID="1099" RandomNum2="8" CardNum="4" Teammate="208" Enemy="206" Enemy2="1" />
+	<Complete ID="1100" RandomNum2="8" CardNum="5" Teammate="204" Enemy="207" Enemy2="1" />
+	<Complete ID="1101" RandomNum2="8" CardNum="4" Teammate="202" Enemy="208" Enemy2="1" />
+	<Complete ID="1102" RandomNum2="8" CardNum="4" Teammate="203" Enemy="210" Enemy2="1" />
+	<Complete ID="1103" RandomNum2="8" CardNum="4" Teammate="187" Enemy="211" Enemy2="1" />
+	<Complete ID="1104" RandomNum2="8" CardNum="4" Teammate="214" Enemy="212" Enemy2="1" />
+	<Complete ID="1105" RandomNum2="8" CardNum="4" Teammate="183" Enemy="214" Enemy2="1" />
+	<Complete ID="1106" RandomNum2="8" CardNum="4" Teammate="184" Enemy="215" Enemy2="1" />
+	<Complete ID="1107" RandomNum2="8" CardNum="5" Teammate="205" Enemy="220" Enemy2="1" />
+	<Complete ID="1108" RandomNum2="8" CardNum="5" Teammate="206" Enemy="221" Enemy2="1" />
+	<Complete ID="1109" RandomNum2="8" CardNum="5" Teammate="207" Enemy="224" Enemy2="1" />
+	<Complete ID="1110" RandomNum2="8" CardNum="4" Teammate="208" Enemy="225" Enemy2="1" />
+	<Complete ID="1111" RandomNum2="8" CardNum="4" Teammate="301" Enemy="299" Enemy2="1" />
+	<Complete ID="1112" RandomNum2="8" CardNum="4" Teammate="302" Enemy="300" Enemy2="1" />
+	<Complete ID="1113" RandomNum2="8" CardNum="4" Teammate="303" Enemy="301" Enemy2="1" />
+	<Complete ID="1114" RandomNum2="8" CardNum="4" Teammate="304" Enemy="302" Enemy2="1" />
+	<Complete ID="1115" RandomNum2="8" CardNum="4" Teammate="305" Enemy="303" Enemy2="1" />
+	<Complete ID="1116" RandomNum2="8" CardNum="4" Teammate="306" Enemy="304" Enemy2="1" />
+	<Complete ID="1117" RandomNum2="8" CardNum="4" Teammate="307" Enemy="305" Enemy2="1" />
+	<Complete ID="1118" RandomNum2="8" CardNum="4" Teammate="308" Enemy="306" Enemy2="1" />
+	<Complete ID="1119" RandomNum2="8" CardNum="4" Teammate="309" Enemy="307" Enemy2="1" />
+	<Complete ID="1120" RandomNum2="8" CardNum="4" Teammate="310" Enemy="308" Enemy2="1" />
+	<Complete ID="1121" RandomNum2="8" CardNum="4" Teammate="311" Enemy="309" Enemy2="1" />
+	<Complete ID="1122" RandomNum2="8" CardNum="4" Teammate="312" Enemy="310" Enemy2="1" />
+	<Complete ID="1123" RandomNum2="8" CardNum="4" Teammate="313" Enemy="311" Enemy2="1" />
+	<Complete ID="1124" RandomNum2="8" CardNum="4" Teammate="314" Enemy="312" Enemy2="1" />
+	<Complete ID="1125" RandomNum2="8" CardNum="4" Teammate="315" Enemy="313" Enemy2="1" />
+	<Complete ID="1126" RandomNum2="8" CardNum="4" Teammate="316" Enemy="314" Enemy2="1" />
+	<Complete ID="1127" RandomNum2="8" CardNum="4" Teammate="317" Enemy="315" Enemy2="1" />
+	<Complete ID="1128" RandomNum2="8" CardNum="4" Teammate="318" Enemy="316" Enemy2="1" />
+	<Complete ID="1129" RandomNum2="8" CardNum="4" Teammate="319" Enemy="317" Enemy2="1" />
+	<Complete ID="1130" RandomNum2="8" CardNum="4" Teammate="320" Enemy="318" Enemy2="1" />
+	<Complete ID="1131" RandomNum2="8" CardNum="4" Teammate="321" Enemy="319" Enemy2="1" />
+	<Complete ID="1132" RandomNum2="8" CardNum="4" Teammate="322" Enemy="320" Enemy2="1" />
+	<Complete ID="1133" RandomNum2="8" CardNum="4" Teammate="323" Enemy="321" Enemy2="1" />
+	<Complete ID="1134" RandomNum2="8" CardNum="4" Teammate="324" Enemy="322" Enemy2="1" />
+	<Complete ID="1135" RandomNum2="8" CardNum="4" Teammate="325" Enemy="323" Enemy2="1" />
+	<Complete ID="1136" RandomNum2="8" CardNum="4" Teammate="326" Enemy="324" Enemy2="1" />
+	<Complete ID="1137" RandomNum2="8" CardNum="4" Teammate="327" Enemy="325" Enemy2="1" />
+	<Complete ID="1138" RandomNum2="8" CardNum="4" Teammate="328" Enemy="326" Enemy2="1" />
+	<Complete ID="1139" RandomNum2="8" CardNum="4" Teammate="329" Enemy="327" Enemy2="1" />
+	<Complete ID="1140" RandomNum2="8" CardNum="4" Teammate="330" Enemy="328" Enemy2="1" />
+	<Complete ID="1141" RandomNum2="8" CardNum="4" Teammate="331" Enemy="329" Enemy2="1" />
+	<Complete ID="1142" RandomNum2="8" CardNum="4" Teammate="332" Enemy="330" Enemy2="1" />
+	<Complete ID="1143" RandomNum2="8" CardNum="4" Teammate="333" Enemy="331" Enemy2="1" />
+	<Complete ID="1144" RandomNum2="8" CardNum="4" Teammate="334" Enemy="332" Enemy2="1" />
+	<Complete ID="1145" RandomNum2="8" CardNum="4" Teammate="335" Enemy="333" Enemy2="1" />
+	<Complete ID="1146" RandomNum2="8" CardNum="4" Teammate="336" Enemy="334" Enemy2="1" />
+	<Complete ID="1147" RandomNum2="8" CardNum="4" Teammate="337" Enemy="335" Enemy2="1" />
+	<Complete ID="1148" RandomNum2="8" CardNum="4" Teammate="338" Enemy="336" Enemy2="1" />
+	<Complete ID="1149" RandomNum2="8" CardNum="4" Teammate="339" Enemy="337" Enemy2="1" />
+	<Complete ID="1150" RandomNum2="8" CardNum="4" Teammate="340" Enemy="338" Enemy2="1" />
+	<Complete ID="1151" RandomNum2="8" CardNum="4" Teammate="341" Enemy="339" Enemy2="1" />
+	<Complete ID="1152" RandomNum2="8" CardNum="4" Teammate="342" Enemy="340" Enemy2="1" />
+	<Complete ID="1153" RandomNum2="8" CardNum="4" Teammate="343" Enemy="341" Enemy2="1" />
+	<Complete ID="1154" RandomNum2="8" CardNum="4" Teammate="344" Enemy="342" Enemy2="1" />
+	<Complete ID="1155" RandomNum2="8" CardNum="4" Teammate="345" Enemy="343" Enemy2="1" />
+	<Complete ID="1156" RandomNum2="8" CardNum="4" Teammate="346" Enemy="344" Enemy2="1" />
+	<Complete ID="1157" RandomNum2="8" CardNum="4" Teammate="347" Enemy="345" Enemy2="1" />
+	<Complete ID="1158" RandomNum2="8" CardNum="4" Teammate="348" Enemy="346" Enemy2="1" />
+	<Complete ID="1159" RandomNum2="8" CardNum="4" Teammate="349" Enemy="347" Enemy2="1" />
+	<Complete ID="1160" RandomNum2="8" CardNum="4" Teammate="350" Enemy="348" Enemy2="1" />
+	<Complete ID="1161" RandomNum2="8" CardNum="4" Teammate="351" Enemy="349" Enemy2="1" />
+	<Complete ID="1162" RandomNum2="8" CardNum="4" Teammate="352" Enemy="350" Enemy2="1" />
+	<Complete ID="1163" RandomNum2="8" CardNum="4" Teammate="353" Enemy="351" Enemy2="1" />
+	<Complete ID="1164" RandomNum2="8" CardNum="4" Teammate="354" Enemy="352" Enemy2="1" />
+	<Complete ID="1165" RandomNum2="8" CardNum="4" Teammate="352" Enemy="353" Enemy2="1" />
+	<Complete ID="1166" RandomNum2="8" CardNum="4" Teammate="356" Enemy="354" Enemy2="1" />
+	<Complete ID="1167" RandomNum2="8" CardNum="4" Teammate="358" Enemy="356" Enemy2="1" />
+	<Complete ID="1168" RandomNum2="8" CardNum="4" Teammate="356" Enemy="357" Enemy2="1" />
+	<Complete ID="1169" RandomNum2="8" CardNum="4" Teammate="362" Enemy="360" Enemy2="1" />
+	<Complete ID="1170" RandomNum2="8" CardNum="4" Teammate="363" Enemy="361" Enemy2="1" />
+	<Complete ID="1171" RandomNum2="8" CardNum="4" Teammate="364" Enemy="362" Enemy2="1" />
+	<Complete ID="1172" RandomNum2="8" CardNum="4" Teammate="365" Enemy="363" Enemy2="1" />
+	<Complete ID="1173" RandomNum2="8" CardNum="4" Teammate="366" Enemy="364" Enemy2="1" />
+	<Complete ID="1174" RandomNum2="8" CardNum="4" Teammate="367" Enemy="365" Enemy2="1" />
+	<Complete ID="1175" RandomNum2="8" CardNum="4" Teammate="368" Enemy="366" Enemy2="1" />
+	<Complete ID="1176" RandomNum2="8" CardNum="4" Teammate="369" Enemy="367" Enemy2="1" />
+	<Complete ID="1177" RandomNum2="8" CardNum="4" Teammate="370" Enemy="368" Enemy2="1" />
+	<Complete ID="1178" RandomNum2="8" CardNum="4" Teammate="371" Enemy="369" Enemy2="1" />
+	<Complete ID="1179" RandomNum2="8" CardNum="4" Teammate="372" Enemy="370" Enemy2="1" />
+	<Complete ID="1180" RandomNum2="8" CardNum="4" Teammate="373" Enemy="371" Enemy2="1" />
+	<Complete ID="1181" RandomNum2="8" CardNum="4" Teammate="374" Enemy="372" Enemy2="1" />
+	<Complete ID="1182" RandomNum2="8" CardNum="4" Teammate="375" Enemy="373" Enemy2="1" />
+	<Complete ID="1183" RandomNum2="8" CardNum="4" Teammate="376" Enemy="374" Enemy2="1" />
+	<Complete ID="1184" RandomNum2="8" CardNum="4" Teammate="377" Enemy="375" Enemy2="1" />
+	<Complete ID="1185" RandomNum2="8" CardNum="4" Teammate="378" Enemy="376" Enemy2="1" />
+	<Complete ID="1186" RandomNum2="8" CardNum="4" Teammate="379" Enemy="377" Enemy2="1" />
+	<Complete ID="1187" RandomNum2="8" CardNum="4" Teammate="380" Enemy="378" Enemy2="1" />
+	<Complete ID="1188" RandomNum2="8" CardNum="4" Teammate="381" Enemy="379" Enemy2="1" />
+	<Complete ID="1189" RandomNum2="8" CardNum="4" Teammate="382" Enemy="380" Enemy2="1" />
+	<Complete ID="1190" RandomNum2="8" CardNum="4" Teammate="383" Enemy="381" Enemy2="1" />
+	<Complete ID="1191" RandomNum2="8" CardNum="4" Teammate="384" Enemy="382" Enemy2="1" />
+	<Complete ID="1192" RandomNum2="8" CardNum="4" Teammate="385" Enemy="383" Enemy2="1" />
+	<Complete ID="1193" RandomNum2="8" CardNum="4" Teammate="386" Enemy="384" Enemy2="1" />
+	<Complete ID="1194" RandomNum2="8" CardNum="4" Teammate="387" Enemy="385" Enemy2="1" />
+	<Complete ID="1195" RandomNum2="8" CardNum="4" Teammate="388" Enemy="386" Enemy2="1" />
+	<Complete ID="1196" RandomNum2="8" CardNum="4" Teammate="389" Enemy="387" Enemy2="1" />
+	<Complete ID="1197" RandomNum2="8" CardNum="4" Teammate="390" Enemy="388" Enemy2="1" />
+	<Complete ID="1198" RandomNum2="8" CardNum="4" Teammate="391" Enemy="389" Enemy2="1" />
+	<Complete ID="1199" RandomNum2="8" CardNum="4" Teammate="392" Enemy="390" Enemy2="1" />
+	<Complete ID="1200" RandomNum2="8" CardNum="4" Teammate="393" Enemy="391" Enemy2="1" />
+	<Complete ID="1201" RandomNum2="8" CardNum="4" Teammate="394" Enemy="392" Enemy2="1" />
+	<Complete ID="1202" RandomNum2="8" CardNum="4" Teammate="395" Enemy="393" Enemy2="1" />
+	<Complete ID="1203" RandomNum2="8" CardNum="4" Teammate="388" Enemy="394" Enemy2="1" />
+	<Complete ID="1204" RandomNum2="8" CardNum="4" Teammate="391" Enemy="395" Enemy2="1" />
+	<Complete ID="1205" RandomNum2="8" CardNum="4" Teammate="402" Enemy="400" Enemy2="1" />
+	<Complete ID="1206" RandomNum2="8" CardNum="4" Teammate="403" Enemy="401" Enemy2="1" />
+	<Complete ID="1207" RandomNum2="8" CardNum="4" Teammate="404" Enemy="402" Enemy2="1" />
+	<Complete ID="1208" RandomNum2="8" CardNum="4" Teammate="403" Enemy="403" Enemy2="1" />
+	<Complete ID="1209" RandomNum2="8" CardNum="4" Teammate="406" Enemy="404" Enemy2="1" />
+	<Complete ID="1210" RandomNum2="8" CardNum="4" Teammate="408" Enemy="406" Enemy2="1" />
+	<Complete ID="1211" RandomNum2="8" CardNum="4" Teammate="409" Enemy="407" Enemy2="1" />
+	<Complete ID="1212" RandomNum2="8" CardNum="4" Teammate="410" Enemy="408" Enemy2="1" />
+	<Complete ID="1213" RandomNum2="8" CardNum="4" Teammate="411" Enemy="409" Enemy2="1" />
+	<Complete ID="1214" RandomNum2="8" CardNum="4" Teammate="411" Enemy="410" Enemy2="1" />
+	<Complete ID="1215" RandomNum2="8" CardNum="4" Teammate="413" Enemy="411" Enemy2="1" />
+	<Complete ID="1216" RandomNum2="8" CardNum="4" Teammate="415" Enemy="413" Enemy2="1" />
+	<Complete ID="1217" RandomNum2="8" CardNum="4" Teammate="416" Enemy="414" Enemy2="1" />
+	<Complete ID="1218" RandomNum2="8" CardNum="4" Teammate="417" Enemy="415" Enemy2="1" />
+	<Complete ID="1219" RandomNum2="8" CardNum="4" Teammate="418" Enemy="416" Enemy2="1" />
+	<Complete ID="1220" RandomNum2="8" CardNum="4" Teammate="419" Enemy="417" Enemy2="1" />
+	<Complete ID="1221" RandomNum2="8" CardNum="4" Teammate="420" Enemy="418" Enemy2="1" />
+	<Complete ID="1222" RandomNum2="8" CardNum="4" Teammate="421" Enemy="419" Enemy2="1" />
+	<Complete ID="1223" RandomNum2="8" CardNum="4" Teammate="422" Enemy="420" Enemy2="1" />
+	<Complete ID="1224" RandomNum2="8" CardNum="4" Teammate="423" Enemy="421" Enemy2="1" />
+	<Complete ID="1225" RandomNum2="8" CardNum="4" Teammate="424" Enemy="422" Enemy2="1" />
+	<Complete ID="1226" RandomNum2="8" CardNum="4" Teammate="425" Enemy="423" Enemy2="1" />
+	<Complete ID="1227" RandomNum2="8" CardNum="4" Teammate="426" Enemy="424" Enemy2="1" />
+	<Complete ID="1228" RandomNum2="8" CardNum="4" Teammate="427" Enemy="425" Enemy2="1" />
+	<Complete ID="1229" RandomNum2="8" CardNum="4" Teammate="428" Enemy="426" Enemy2="1" />
+	<Complete ID="1230" RandomNum2="8" CardNum="4" Teammate="429" Enemy="427" Enemy2="1" />
+	<Complete ID="1231" RandomNum2="8" CardNum="4" Teammate="430" Enemy="428" Enemy2="1" />
+	<Complete ID="1232" RandomNum2="8" CardNum="4" Teammate="431" Enemy="429" Enemy2="1" />
+	<Complete ID="1233" RandomNum2="8" CardNum="4" Teammate="432" Enemy="430" Enemy2="1" />
+	<Complete ID="1234" RandomNum2="8" CardNum="4" Teammate="433" Enemy="431" Enemy2="1" />
+	<Complete ID="1235" RandomNum2="8" CardNum="4" Teammate="434" Enemy="432" Enemy2="1" />
+	<Complete ID="1236" RandomNum2="8" CardNum="4" Teammate="435" Enemy="433" Enemy2="1" />
+	<Complete ID="1237" RandomNum2="8" CardNum="4" Teammate="436" Enemy="434" Enemy2="1" />
+	<Complete ID="1238" RandomNum2="8" CardNum="4" Teammate="437" Enemy="435" Enemy2="1" />
+	<Complete ID="1239" RandomNum2="8" CardNum="4" Teammate="438" Enemy="436" Enemy2="1" />
+	<Complete ID="1240" RandomNum2="8" CardNum="4" Teammate="439" Enemy="437" Enemy2="1" />
+	<Complete ID="1241" RandomNum2="8" CardNum="4" Teammate="440" Enemy="438" Enemy2="1" />
+	<Complete ID="1242" RandomNum2="8" CardNum="4" Teammate="441" Enemy="439" Enemy2="1" />
+	<Complete ID="1243" RandomNum2="8" CardNum="4" Teammate="442" Enemy="440" Enemy2="1" />
+	<Complete ID="1244" RandomNum2="8" CardNum="4" Teammate="443" Enemy="441" Enemy2="1" />
+	<Complete ID="1245" RandomNum2="8" CardNum="4" Teammate="444" Enemy="442" Enemy2="1" />
+	<Complete ID="1246" RandomNum2="8" CardNum="4" Teammate="445" Enemy="443" Enemy2="1" />
+	<Complete ID="1247" RandomNum2="8" CardNum="4" Teammate="446" Enemy="444" Enemy2="1" />
+	<Complete ID="1248" RandomNum2="8" CardNum="4" Teammate="447" Enemy="445" Enemy2="1" />
+	<Complete ID="1249" RandomNum2="8" CardNum="4" Teammate="448" Enemy="446" Enemy2="1" />
+	<Complete ID="1250" RandomNum2="8" CardNum="4" Teammate="449" Enemy="447" Enemy2="1" />
+	<Complete ID="1251" RandomNum2="8" CardNum="4" Teammate="450" Enemy="448" Enemy2="1" />
+	<Complete ID="1252" RandomNum2="8" CardNum="4" Teammate="451" Enemy="449" Enemy2="1" />
+	<Complete ID="1253" RandomNum2="8" CardNum="4" Teammate="452" Enemy="450" Enemy2="1" />
+	<Complete ID="1254" RandomNum2="8" CardNum="4" Teammate="453" Enemy="451" Enemy2="1" />
+	<Complete ID="1255" RandomNum2="8" CardNum="4" Teammate="454" Enemy="452" Enemy2="1" />
+	<Complete ID="1256" RandomNum2="8" CardNum="4" Teammate="28" Enemy="26" Enemy2="1" />
+	<Complete ID="1257" RandomNum2="8" CardNum="4" Teammate="455" Enemy="453" Enemy2="1" />
+	<Complete ID="1258" RandomNum2="8" CardNum="4" Teammate="456" Enemy="454" Enemy2="1" />
+	<Complete ID="1259" RandomNum2="8" CardNum="4" Teammate="457" Enemy="455" Enemy2="1" />
+	<Complete ID="1260" RandomNum2="8" CardNum="4" Teammate="458" Enemy="456" Enemy2="1" />
+	<Complete ID="1261" RandomNum2="8" CardNum="4" Teammate="459" Enemy="457" Enemy2="1" />
+	<Complete ID="1262" RandomNum2="8" CardNum="4" Teammate="460" Enemy="458" Enemy2="1" />
+	<Complete ID="1263" RandomNum2="8" CardNum="4" Teammate="461" Enemy="459" Enemy2="1" />
+	<Complete ID="1264" RandomNum2="8" CardNum="4" Teammate="462" Enemy="460" Enemy2="1" />
+	<Complete ID="1265" RandomNum2="8" CardNum="4" Teammate="463" Enemy="461" Enemy2="1" />
+	<Complete ID="1266" RandomNum2="8" CardNum="4" Teammate="464" Enemy="462" Enemy2="1" />
+	<Complete ID="1267" RandomNum2="8" CardNum="4" Teammate="465" Enemy="463" Enemy2="1" />
+	<Complete ID="1268" RandomNum2="8" CardNum="4" Teammate="466" Enemy="464" Enemy2="1" />
+	<Complete ID="1269" RandomNum2="8" CardNum="4" Teammate="467" Enemy="465" Enemy2="1" />
+	<Complete ID="1270" RandomNum2="8" CardNum="4" Teammate="468" Enemy="466" Enemy2="1" />
+	<Complete ID="1271" RandomNum2="8" CardNum="4" Teammate="469" Enemy="467" Enemy2="1" />
+	<Complete ID="1272" RandomNum2="8" CardNum="4" Teammate="470" Enemy="468" Enemy2="1" />
+	<Complete ID="1273" RandomNum2="8" CardNum="4" Teammate="471" Enemy="469" Enemy2="1" />
+	<Complete ID="1274" RandomNum2="8" CardNum="4" Teammate="472" Enemy="470" Enemy2="1" />
+	<Complete ID="1275" RandomNum2="8" CardNum="4" Teammate="473" Enemy="471" Enemy2="1" />
+	<Complete ID="1276" RandomNum2="8" CardNum="4" Teammate="474" Enemy="472" Enemy2="1" />
+	<Complete ID="1277" RandomNum2="8" CardNum="4" Teammate="475" Enemy="473" Enemy2="1" />
+	<Complete ID="1278" RandomNum2="8" CardNum="4" Teammate="476" Enemy="474" Enemy2="1" />
+	<Complete ID="1279" RandomNum2="8" CardNum="4" Teammate="477" Enemy="475" Enemy2="1" />
+	<Complete ID="1280" RandomNum2="8" CardNum="4" Teammate="478" Enemy="476" Enemy2="1" />
+	<Complete ID="1281" RandomNum2="8" CardNum="4" Teammate="479" Enemy="477" Enemy2="1" />
+	<Complete ID="1282" RandomNum2="8" CardNum="4" Teammate="480" Enemy="478" Enemy2="1" />
+	<Complete ID="1283" RandomNum2="8" CardNum="4" Teammate="481" Enemy="479" Enemy2="1" />
+	<Complete ID="1284" RandomNum2="8" CardNum="4" Teammate="482" Enemy="480" Enemy2="1" />
+	<Complete ID="1285" RandomNum2="8" CardNum="4" Teammate="483" Enemy="481" Enemy2="1" />
+	<Complete ID="1286" RandomNum2="8" CardNum="4" Teammate="484" Enemy="482" Enemy2="1" />
+	<Complete ID="1287" RandomNum2="8" CardNum="4" Teammate="485" Enemy="483" Enemy2="1" />
+	<Complete ID="1288" RandomNum2="8" CardNum="4" Teammate="486" Enemy="484" Enemy2="1" />
+	<Complete ID="1289" RandomNum2="8" CardNum="4" Teammate="487" Enemy="485" Enemy2="1" />
+	<Complete ID="1290" RandomNum2="8" CardNum="4" Teammate="489" Enemy="487" Enemy2="1" />
+	<Complete ID="1291" RandomNum2="8" CardNum="4" Teammate="490" Enemy="488" Enemy2="1" />
+	<Complete ID="1292" RandomNum2="8" CardNum="4" Teammate="491" Enemy="489" Enemy2="1" />
+	<Complete ID="1293" RandomNum2="8" CardNum="4" Teammate="492" Enemy="490" Enemy2="1" />
+	<Complete ID="1294" RandomNum2="8" CardNum="4" Teammate="493" Enemy="491" Enemy2="1" />
+	<Complete ID="1295" RandomNum2="8" CardNum="4" Teammate="494" Enemy="492" Enemy2="1" />
+	<Complete ID="1296" RandomNum2="8" CardNum="4" Teammate="7002" Enemy="7000" Enemy2="1" />
+	<Complete ID="1297" RandomNum2="8" CardNum="4" Teammate="7003" Enemy="7001" Enemy2="1" />
+	<Complete ID="1298" RandomNum2="8" CardNum="4" Teammate="7004" Enemy="7002" Enemy2="1" />
+	<Complete ID="1299" RandomNum2="8" CardNum="4" Teammate="7005" Enemy="7003" Enemy2="1" />
+	<Complete ID="1300" RandomNum2="8" CardNum="4" Teammate="7006" Enemy="7004" Enemy2="1" />
+	<Complete ID="1301" RandomNum2="8" CardNum="4" Teammate="7007" Enemy="7005" Enemy2="1" />
+	<Complete ID="1302" RandomNum2="8" CardNum="4" Teammate="7008" Enemy="7006" Enemy2="1" />
+	<Complete ID="1303" RandomNum2="8" CardNum="4" Teammate="7009" Enemy="7007" Enemy2="1" />
+	<Complete ID="1304" RandomNum2="8" CardNum="4" Teammate="7010" Enemy="7008" Enemy2="1" />
+	<Complete ID="1305" RandomNum2="8" CardNum="4" Teammate="7011" Enemy="7009" Enemy2="1" />
+	<Complete ID="1306" RandomNum2="8" CardNum="4" Teammate="7012" Enemy="7010" Enemy2="1" />
+	<Complete ID="1307" RandomNum2="8" CardNum="4" Teammate="7013" Enemy="7011" Enemy2="1" />
+	<Complete ID="1308" RandomNum2="8" CardNum="4" Teammate="7014" Enemy="7012" Enemy2="1" />
+	<Complete ID="1309" RandomNum2="8" CardNum="4" Teammate="7015" Enemy="7013" Enemy2="1" />
+	<Complete ID="1310" RandomNum2="8" CardNum="4" Teammate="7016" Enemy="7014" Enemy2="1" />
+	<Complete ID="1311" RandomNum2="8" CardNum="4" Teammate="7017" Enemy="7015" Enemy2="1" />
+	<Complete ID="1312" RandomNum2="8" CardNum="4" Teammate="7018" Enemy="7016" Enemy2="1" />
+	<Complete ID="1313" RandomNum2="8" CardNum="4" Teammate="7019" Enemy="7017" Enemy2="1" />
+	<Complete ID="1314" RandomNum2="8" CardNum="4" Teammate="7020" Enemy="7018" Enemy2="1" />
+	<Complete ID="1315" RandomNum2="8" CardNum="4" Teammate="360" Enemy="358" Enemy2="1" />
+	<Complete ID="1316" RandomNum2="8" CardNum="4" Teammate="495" Enemy="493" Enemy2="1" />
+	<Complete ID="1317" RandomNum2="8" CardNum="4" Teammate="496" Enemy="494" Enemy2="1" />
+	<Complete ID="1318" RandomNum2="8" CardNum="4" Teammate="497" Enemy="495" Enemy2="1" />
+	<Complete ID="1319" RandomNum2="8" CardNum="4" Teammate="498" Enemy="496" Enemy2="1" />
+	<Complete ID="1320" RandomNum2="8" CardNum="4" Teammate="499" Enemy="497" Enemy2="1" />
+	<Complete ID="1321" RandomNum2="8" CardNum="4" Teammate="500" Enemy="498" Enemy2="1" />
+	<Complete ID="1322" RandomNum2="8" CardNum="4" Teammate="498" Enemy="7019" Enemy2="1" />
+	<Complete ID="1323" RandomNum2="8" CardNum="4" Teammate="488" Enemy="486" Enemy2="1" />
+	<Complete ID="1324" RandomNum2="8" CardNum="4" Teammate="501" Enemy="499" Enemy2="1" />
+	<Complete ID="1325" RandomNum2="8" CardNum="4" Teammate="502" Enemy="500" Enemy2="1" />
+	<Complete ID="1326" RandomNum2="8" CardNum="4" Teammate="503" Enemy="501" Enemy2="1" />
+	<Complete ID="1327" RandomNum2="8" CardNum="4" Teammate="504" Enemy="502" Enemy2="1" />
+	<Complete ID="1328" RandomNum2="8" CardNum="4" Teammate="505" Enemy="503" Enemy2="1" />
+	<Complete ID="1329" RandomNum2="8" CardNum="4" Teammate="506" Enemy="504" Enemy2="1" />
+	<Complete ID="1330" RandomNum2="8" CardNum="4" Teammate="7014" Enemy="7020" Enemy2="1" />
+	<Complete ID="1331" RandomNum2="8" CardNum="4" Teammate="507" Enemy="505" Enemy2="1" />
+	<Complete ID="1332" RandomNum2="8" CardNum="4" Teammate="508" Enemy="506" Enemy2="1" />
+	<Complete ID="1333" RandomNum2="8" CardNum="4" Teammate="509" Enemy="507" Enemy2="1" />
+	<Complete ID="1334" RandomNum2="8" CardNum="4" Teammate="510" Enemy="508" Enemy2="1" />
+	<Complete ID="1335" RandomNum2="8" CardNum="4" Teammate="511" Enemy="509" Enemy2="1" />
+	<Complete ID="1336" RandomNum2="8" CardNum="4" Teammate="512" Enemy="510" Enemy2="1" />
+	<Complete ID="1337" RandomNum2="8" CardNum="4" Teammate="513" Enemy="511" Enemy2="1" />
+	<Complete ID="1338" RandomNum2="8" CardNum="4" Teammate="514" Enemy="512" Enemy2="1" />
+	<Complete ID="1339" RandomNum2="8" CardNum="4" Teammate="515" Enemy="513" Enemy2="1" />
+	<Complete ID="1340" RandomNum2="8" CardNum="4" Teammate="516" Enemy="514" Enemy2="1" />
+	<Complete ID="1341" RandomNum2="8" CardNum="4" Teammate="517" Enemy="515" Enemy2="1" />
+	<Complete ID="1342" RandomNum2="8" CardNum="4" Teammate="7016" Enemy="512" Enemy2="1" />
+	<Complete ID="1343" RandomNum2="8" CardNum="4" Teammate="518" Enemy="516" Enemy2="1" />
+	<Complete ID="1344" RandomNum2="8" CardNum="4" Teammate="519" Enemy="517" Enemy2="1" />
+	<Complete ID="1345" RandomNum2="8" CardNum="4" Teammate="520" Enemy="518" Enemy2="1" />
+	<Complete ID="1346" RandomNum2="8" CardNum="4" Teammate="521" Enemy="519" Enemy2="1" />
+	<Complete ID="1347" RandomNum2="8" CardNum="4" Teammate="513" Enemy="520" Enemy2="1" />
+	<Complete ID="1348" RandomNum2="8" CardNum="4" Teammate="514" Enemy="521" Enemy2="1" />
+	<Complete ID="2000" RandomNum2="8" CardNum="4" Teammate="36" Enemy="34" Enemy2="35" />
+	<Complete ID="2001" RandomNum2="8" CardNum="4" Teammate="37" Enemy="35" Enemy2="34" />
+	<Complete ID="2002" RandomNum2="8" CardNum="4" Teammate="38" Enemy="36" Enemy2="35" />
+	<Complete ID="2003" RandomNum2="8" CardNum="4" Teammate="39" Enemy="37" Enemy2="35" />
+	<Complete ID="2004" RandomNum2="8" CardNum="4" Teammate="40" Enemy="38" Enemy2="35" />
+	<Complete ID="2005" RandomNum2="8" CardNum="4" Teammate="41" Enemy="39" Enemy2="35" />
+	<Complete ID="2006" RandomNum2="8" CardNum="4" Teammate="42" Enemy="40" Enemy2="35" />
+	<Complete ID="2007" RandomNum2="8" CardNum="4" Teammate="43" Enemy="41" Enemy2="35" />
+	<Complete ID="2008" RandomNum2="8" CardNum="4" Teammate="44" Enemy="42" Enemy2="35" />
+	<Complete ID="2009" RandomNum2="8" CardNum="4" Teammate="45" Enemy="43" Enemy2="35" />
+	<Complete ID="2010" RandomNum2="8" CardNum="4" Teammate="46" Enemy="44" Enemy2="35" />
+	<Complete ID="2011" RandomNum2="8" CardNum="4" Teammate="47" Enemy="45" Enemy2="35" />
+	<Complete ID="2012" RandomNum2="8" CardNum="4" Teammate="48" Enemy="46" Enemy2="35" />
+	<Complete ID="2013" RandomNum2="8" CardNum="4" Teammate="49" Enemy="47" Enemy2="35" />
+	<Complete ID="2014" RandomNum2="8" CardNum="4" Teammate="50" Enemy="48" Enemy2="35" />
+	<Complete ID="2015" RandomNum2="8" CardNum="4" Teammate="51" Enemy="49" Enemy2="35" />
+	<Complete ID="2016" RandomNum2="8" CardNum="4" Teammate="52" Enemy="50" Enemy2="35" />
+	<Complete ID="2017" RandomNum2="8" CardNum="4" Teammate="53" Enemy="51" Enemy2="35" />
+	<Complete ID="2018" RandomNum2="8" CardNum="4" Teammate="54" Enemy="52" Enemy2="35" />
+	<Complete ID="2019" RandomNum2="8" CardNum="4" Teammate="55" Enemy="53" Enemy2="35" />
+	<Complete ID="2020" RandomNum2="8" CardNum="4" Teammate="56" Enemy="54" Enemy2="35" />
+	<Complete ID="2021" RandomNum2="8" CardNum="4" Teammate="57" Enemy="55" Enemy2="35" />
+	<Complete ID="2022" RandomNum2="8" CardNum="4" Teammate="53" Enemy="56" Enemy2="35" />
+	<Complete ID="2023" RandomNum2="8" CardNum="4" Teammate="50" Enemy="57" Enemy2="35" />
+	<Complete ID="2024" RandomNum2="8" CardNum="4" Teammate="48" Enemy="72" Enemy2="35" />
+	<Complete ID="2025" RandomNum2="8" CardNum="4" Teammate="49" Enemy="73" Enemy2="35" />
+	<Complete ID="2026" RandomNum2="8" CardNum="4" Teammate="50" Enemy="100" Enemy2="35" />
+	<Complete ID="2027" RandomNum2="8" CardNum="4" Teammate="103" Enemy="101" Enemy2="35" />
+	<Complete ID="2028" RandomNum2="8" CardNum="4" Teammate="105" Enemy="103" Enemy2="35" />
+	<Complete ID="2029" RandomNum2="8" CardNum="4" Teammate="106" Enemy="104" Enemy2="35" />
+	<Complete ID="2030" RandomNum2="8" CardNum="4" Teammate="107" Enemy="105" Enemy2="35" />
+	<Complete ID="2031" RandomNum2="8" CardNum="4" Teammate="108" Enemy="106" Enemy2="35" />
+	<Complete ID="2032" RandomNum2="8" CardNum="4" Teammate="109" Enemy="107" Enemy2="35" />
+	<Complete ID="2033" RandomNum2="8" CardNum="4" Teammate="110" Enemy="108" Enemy2="35" />
+	<Complete ID="2034" RandomNum2="8" CardNum="4" Teammate="111" Enemy="109" Enemy2="35" />
+	<Complete ID="2035" RandomNum2="8" CardNum="4" Teammate="112" Enemy="110" Enemy2="35" />
+	<Complete ID="2036" RandomNum2="8" CardNum="4" Teammate="113" Enemy="111" Enemy2="35" />
+	<Complete ID="2037" RandomNum2="8" CardNum="4" Teammate="114" Enemy="112" Enemy2="35" />
+	<Complete ID="2038" RandomNum2="8" CardNum="4" Teammate="115" Enemy="113" Enemy2="35" />
+	<Complete ID="2039" RandomNum2="8" CardNum="4" Teammate="116" Enemy="114" Enemy2="35" />
+	<Complete ID="2040" RandomNum2="8" CardNum="4" Teammate="117" Enemy="115" Enemy2="35" />
+	<Complete ID="2041" RandomNum2="8" CardNum="4" Teammate="118" Enemy="116" Enemy2="35" />
+	<Complete ID="2042" RandomNum2="8" CardNum="4" Teammate="123" Enemy="117" Enemy2="35" />
+	<Complete ID="2043" RandomNum2="8" CardNum="4" Teammate="123" Enemy="118" Enemy2="35" />
+	<Complete ID="2044" RandomNum2="8" CardNum="4" Teammate="121" Enemy="119" Enemy2="35" />
+	<Complete ID="2045" RandomNum2="8" CardNum="4" Teammate="123" Enemy="121" Enemy2="35" />
+	<Complete ID="2046" RandomNum2="8" CardNum="4" Teammate="124" Enemy="122" Enemy2="35" />
+	<Complete ID="2047" RandomNum2="8" CardNum="4" Teammate="125" Enemy="123" Enemy2="35" />
+	<Complete ID="2048" RandomNum2="8" CardNum="4" Teammate="126" Enemy="124" Enemy2="35" />
+	<Complete ID="2049" RandomNum2="8" CardNum="4" Teammate="127" Enemy="125" Enemy2="35" />
+	<Complete ID="2050" RandomNum2="8" CardNum="4" Teammate="128" Enemy="126" Enemy2="35" />
+	<Complete ID="2051" RandomNum2="8" CardNum="4" Teammate="129" Enemy="127" Enemy2="35" />
+	<Complete ID="2052" RandomNum2="8" CardNum="4" Teammate="130" Enemy="128" Enemy2="35" />
+	<Complete ID="2053" RandomNum2="8" CardNum="4" Teammate="125" Enemy="129" Enemy2="35" />
+	<Complete ID="2054" RandomNum2="8" CardNum="4" Teammate="127" Enemy="130" Enemy2="35" />
+	<Complete ID="2055" RandomNum2="8" CardNum="4" Teammate="128" Enemy="131" Enemy2="35" />
+	<Complete ID="2056" RandomNum2="8" CardNum="4" Teammate="116" Enemy="135" Enemy2="35" />
+	<Complete ID="2057" RandomNum2="8" CardNum="4" Teammate="114" Enemy="136" Enemy2="35" />
+	<Complete ID="2058" RandomNum2="8" CardNum="4" Teammate="155" Enemy="137" Enemy2="35" />
+	<Complete ID="2059" RandomNum2="8" CardNum="4" Teammate="123" Enemy="139" Enemy2="35" />
+	<Complete ID="2060" RandomNum2="8" CardNum="4" Teammate="157" Enemy="151" Enemy2="35" />
+	<Complete ID="2061" RandomNum2="8" CardNum="4" Teammate="157" Enemy="152" Enemy2="35" />
+	<Complete ID="2062" RandomNum2="8" CardNum="4" Teammate="155" Enemy="153" Enemy2="35" />
+	<Complete ID="2063" RandomNum2="8" CardNum="4" Teammate="157" Enemy="155" Enemy2="35" />
+	<Complete ID="2064" RandomNum2="8" CardNum="4" Teammate="164" Enemy="156" Enemy2="35" />
+	<Complete ID="2065" RandomNum2="8" CardNum="4" Teammate="126" Enemy="157" Enemy2="35" />
+	<Complete ID="2066" RandomNum2="8" CardNum="4" Teammate="160" Enemy="158" Enemy2="35" />
+	<Complete ID="2067" RandomNum2="8" CardNum="4" Teammate="168" Enemy="160" Enemy2="35" />
+	<Complete ID="2068" RandomNum2="8" CardNum="4" Teammate="155" Enemy="161" Enemy2="35" />
+	<Complete ID="2069" RandomNum2="8" CardNum="4" Teammate="164" Enemy="162" Enemy2="35" />
+	<Complete ID="2070" RandomNum2="8" CardNum="4" Teammate="166" Enemy="164" Enemy2="35" />
+	<Complete ID="2071" RandomNum2="8" CardNum="4" Teammate="168" Enemy="166" Enemy2="35" />
+	<Complete ID="2072" RandomNum2="8" CardNum="4" Teammate="169" Enemy="167" Enemy2="35" />
+	<Complete ID="2073" RandomNum2="8" CardNum="4" Teammate="170" Enemy="168" Enemy2="35" />
+	<Complete ID="2074" RandomNum2="8" CardNum="4" Teammate="171" Enemy="169" Enemy2="35" />
+	<Complete ID="2075" RandomNum2="8" CardNum="4" Teammate="172" Enemy="170" Enemy2="35" />
+	<Complete ID="2076" RandomNum2="8" CardNum="4" Teammate="173" Enemy="171" Enemy2="35" />
+	<Complete ID="2077" RandomNum2="8" CardNum="4" Teammate="174" Enemy="172" Enemy2="35" />
+	<Complete ID="2078" RandomNum2="8" CardNum="4" Teammate="175" Enemy="173" Enemy2="35" />
+	<Complete ID="2079" RandomNum2="8" CardNum="4" Teammate="176" Enemy="174" Enemy2="35" />
+	<Complete ID="2080" RandomNum2="8" CardNum="4" Teammate="177" Enemy="175" Enemy2="35" />
+	<Complete ID="2081" RandomNum2="8" CardNum="4" Teammate="178" Enemy="176" Enemy2="35" />
+	<Complete ID="2082" RandomNum2="8" CardNum="4" Teammate="179" Enemy="177" Enemy2="35" />
+	<Complete ID="2083" RandomNum2="8" CardNum="4" Teammate="180" Enemy="178" Enemy2="35" />
+	<Complete ID="2084" RandomNum2="8" CardNum="4" Teammate="181" Enemy="179" Enemy2="35" />
+	<Complete ID="2085" RandomNum2="8" CardNum="4" Teammate="182" Enemy="180" Enemy2="35" />
+	<Complete ID="2086" RandomNum2="8" CardNum="4" Teammate="183" Enemy="181" Enemy2="35" />
+	<Complete ID="2087" RandomNum2="8" CardNum="4" Teammate="184" Enemy="182" Enemy2="35" />
+	<Complete ID="2088" RandomNum2="8" CardNum="4" Teammate="185" Enemy="183" Enemy2="35" />
+	<Complete ID="2089" RandomNum2="8" CardNum="4" Teammate="186" Enemy="184" Enemy2="35" />
+	<Complete ID="2090" RandomNum2="8" CardNum="4" Teammate="187" Enemy="185" Enemy2="35" />
+	<Complete ID="2091" RandomNum2="8" CardNum="4" Teammate="181" Enemy="186" Enemy2="35" />
+	<Complete ID="2092" RandomNum2="8" CardNum="4" Teammate="179" Enemy="187" Enemy2="35" />
+	<Complete ID="2093" RandomNum2="8" CardNum="4" Teammate="181" Enemy="188" Enemy2="35" />
+	<Complete ID="2094" RandomNum2="8" CardNum="5" Teammate="203" Enemy="201" Enemy2="35" />
+	<Complete ID="2095" RandomNum2="8" CardNum="5" Teammate="204" Enemy="202" Enemy2="35" />
+	<Complete ID="2096" RandomNum2="8" CardNum="5" Teammate="205" Enemy="203" Enemy2="35" />
+	<Complete ID="2097" RandomNum2="8" CardNum="4" Teammate="206" Enemy="204" Enemy2="35" />
+	<Complete ID="2098" RandomNum2="8" CardNum="4" Teammate="207" Enemy="205" Enemy2="35" />
+	<Complete ID="2099" RandomNum2="8" CardNum="5" Teammate="204" Enemy="206" Enemy2="35" />
+	<Complete ID="2100" RandomNum2="8" CardNum="4" Teammate="202" Enemy="207" Enemy2="35" />
+	<Complete ID="2101" RandomNum2="8" CardNum="4" Teammate="203" Enemy="208" Enemy2="35" />
+	<Complete ID="2102" RandomNum2="8" CardNum="4" Teammate="187" Enemy="210" Enemy2="35" />
+	<Complete ID="2103" RandomNum2="8" CardNum="4" Teammate="301" Enemy="211" Enemy2="35" />
+	<Complete ID="2104" RandomNum2="8" CardNum="4" Teammate="183" Enemy="212" Enemy2="35" />
+	<Complete ID="2105" RandomNum2="8" CardNum="4" Teammate="184" Enemy="214" Enemy2="35" />
+	<Complete ID="2106" RandomNum2="8" CardNum="4" Teammate="205" Enemy="215" Enemy2="35" />
+	<Complete ID="2107" RandomNum2="8" CardNum="5" Teammate="206" Enemy="220" Enemy2="35" />
+	<Complete ID="2108" RandomNum2="8" CardNum="5" Teammate="207" Enemy="221" Enemy2="35" />
+	<Complete ID="2109" RandomNum2="8" CardNum="5" Teammate="208" Enemy="224" Enemy2="35" />
+	<Complete ID="2110" RandomNum2="8" CardNum="4" Teammate="224" Enemy="225" Enemy2="35" />
+	<Complete ID="2111" RandomNum2="8" CardNum="4" Teammate="301" Enemy="299" Enemy2="35" />
+	<Complete ID="2112" RandomNum2="8" CardNum="4" Teammate="302" Enemy="300" Enemy2="35" />
+	<Complete ID="2113" RandomNum2="8" CardNum="4" Teammate="303" Enemy="301" Enemy2="35" />
+	<Complete ID="2114" RandomNum2="8" CardNum="4" Teammate="304" Enemy="302" Enemy2="35" />
+	<Complete ID="2115" RandomNum2="8" CardNum="4" Teammate="305" Enemy="303" Enemy2="35" />
+	<Complete ID="2116" RandomNum2="8" CardNum="4" Teammate="306" Enemy="304" Enemy2="35" />
+	<Complete ID="2117" RandomNum2="8" CardNum="4" Teammate="307" Enemy="305" Enemy2="35" />
+	<Complete ID="2118" RandomNum2="8" CardNum="4" Teammate="308" Enemy="306" Enemy2="35" />
+	<Complete ID="2119" RandomNum2="8" CardNum="4" Teammate="309" Enemy="307" Enemy2="35" />
+	<Complete ID="2120" RandomNum2="8" CardNum="4" Teammate="310" Enemy="308" Enemy2="35" />
+	<Complete ID="2121" RandomNum2="8" CardNum="4" Teammate="311" Enemy="309" Enemy2="35" />
+	<Complete ID="2122" RandomNum2="8" CardNum="4" Teammate="312" Enemy="310" Enemy2="35" />
+	<Complete ID="2123" RandomNum2="8" CardNum="4" Teammate="313" Enemy="311" Enemy2="35" />
+	<Complete ID="2124" RandomNum2="8" CardNum="4" Teammate="314" Enemy="312" Enemy2="35" />
+	<Complete ID="2125" RandomNum2="8" CardNum="4" Teammate="315" Enemy="313" Enemy2="35" />
+	<Complete ID="2126" RandomNum2="8" CardNum="4" Teammate="316" Enemy="314" Enemy2="35" />
+	<Complete ID="2127" RandomNum2="8" CardNum="4" Teammate="317" Enemy="315" Enemy2="35" />
+	<Complete ID="2128" RandomNum2="8" CardNum="4" Teammate="318" Enemy="316" Enemy2="35" />
+	<Complete ID="2129" RandomNum2="8" CardNum="4" Teammate="319" Enemy="317" Enemy2="35" />
+	<Complete ID="2130" RandomNum2="8" CardNum="4" Teammate="320" Enemy="318" Enemy2="35" />
+	<Complete ID="2131" RandomNum2="8" CardNum="4" Teammate="321" Enemy="319" Enemy2="35" />
+	<Complete ID="2132" RandomNum2="8" CardNum="4" Teammate="322" Enemy="320" Enemy2="35" />
+	<Complete ID="2133" RandomNum2="8" CardNum="4" Teammate="323" Enemy="321" Enemy2="35" />
+	<Complete ID="2134" RandomNum2="8" CardNum="4" Teammate="324" Enemy="322" Enemy2="35" />
+	<Complete ID="2135" RandomNum2="8" CardNum="4" Teammate="325" Enemy="323" Enemy2="35" />
+	<Complete ID="2136" RandomNum2="8" CardNum="4" Teammate="326" Enemy="324" Enemy2="35" />
+	<Complete ID="2137" RandomNum2="8" CardNum="4" Teammate="327" Enemy="325" Enemy2="35" />
+	<Complete ID="2138" RandomNum2="8" CardNum="4" Teammate="328" Enemy="326" Enemy2="35" />
+	<Complete ID="2139" RandomNum2="8" CardNum="4" Teammate="329" Enemy="327" Enemy2="35" />
+	<Complete ID="2140" RandomNum2="8" CardNum="4" Teammate="330" Enemy="328" Enemy2="35" />
+	<Complete ID="2141" RandomNum2="8" CardNum="4" Teammate="331" Enemy="329" Enemy2="35" />
+	<Complete ID="2142" RandomNum2="8" CardNum="4" Teammate="332" Enemy="330" Enemy2="35" />
+	<Complete ID="2143" RandomNum2="8" CardNum="4" Teammate="333" Enemy="331" Enemy2="35" />
+	<Complete ID="2144" RandomNum2="8" CardNum="4" Teammate="334" Enemy="332" Enemy2="35" />
+	<Complete ID="2145" RandomNum2="8" CardNum="4" Teammate="335" Enemy="333" Enemy2="35" />
+	<Complete ID="2146" RandomNum2="8" CardNum="4" Teammate="336" Enemy="334" Enemy2="35" />
+	<Complete ID="2147" RandomNum2="8" CardNum="4" Teammate="337" Enemy="335" Enemy2="35" />
+	<Complete ID="2148" RandomNum2="8" CardNum="4" Teammate="338" Enemy="336" Enemy2="35" />
+	<Complete ID="2149" RandomNum2="8" CardNum="4" Teammate="339" Enemy="337" Enemy2="35" />
+	<Complete ID="2150" RandomNum2="8" CardNum="4" Teammate="340" Enemy="338" Enemy2="35" />
+	<Complete ID="2151" RandomNum2="8" CardNum="4" Teammate="341" Enemy="339" Enemy2="35" />
+	<Complete ID="2152" RandomNum2="8" CardNum="4" Teammate="342" Enemy="340" Enemy2="35" />
+	<Complete ID="2153" RandomNum2="8" CardNum="4" Teammate="343" Enemy="341" Enemy2="35" />
+	<Complete ID="2154" RandomNum2="8" CardNum="4" Teammate="344" Enemy="342" Enemy2="35" />
+	<Complete ID="2155" RandomNum2="8" CardNum="4" Teammate="345" Enemy="343" Enemy2="35" />
+	<Complete ID="2156" RandomNum2="8" CardNum="4" Teammate="346" Enemy="344" Enemy2="35" />
+	<Complete ID="2157" RandomNum2="8" CardNum="4" Teammate="347" Enemy="345" Enemy2="35" />
+	<Complete ID="2158" RandomNum2="8" CardNum="4" Teammate="348" Enemy="346" Enemy2="35" />
+	<Complete ID="2159" RandomNum2="8" CardNum="4" Teammate="349" Enemy="347" Enemy2="35" />
+	<Complete ID="2160" RandomNum2="8" CardNum="4" Teammate="350" Enemy="348" Enemy2="35" />
+	<Complete ID="2161" RandomNum2="8" CardNum="4" Teammate="351" Enemy="349" Enemy2="35" />
+	<Complete ID="2162" RandomNum2="8" CardNum="4" Teammate="352" Enemy="350" Enemy2="35" />
+	<Complete ID="2163" RandomNum2="8" CardNum="4" Teammate="353" Enemy="351" Enemy2="35" />
+	<Complete ID="2164" RandomNum2="8" CardNum="4" Teammate="344" Enemy="352" Enemy2="35" />
+	<Complete ID="2165" RandomNum2="8" CardNum="4" Teammate="352" Enemy="353" Enemy2="35" />
+	<Complete ID="2166" RandomNum2="8" CardNum="4" Teammate="356" Enemy="354" Enemy2="35" />
+	<Complete ID="2167" RandomNum2="8" CardNum="4" Teammate="352" Enemy="356" Enemy2="35" />
+	<Complete ID="2168" RandomNum2="8" CardNum="4" Teammate="353" Enemy="357" Enemy2="35" />
+	<Complete ID="2169" RandomNum2="8" CardNum="4" Teammate="362" Enemy="360" Enemy2="35" />
+	<Complete ID="2170" RandomNum2="8" CardNum="4" Teammate="363" Enemy="361" Enemy2="35" />
+	<Complete ID="2171" RandomNum2="8" CardNum="4" Teammate="364" Enemy="362" Enemy2="35" />
+	<Complete ID="2172" RandomNum2="8" CardNum="4" Teammate="365" Enemy="363" Enemy2="35" />
+	<Complete ID="2173" RandomNum2="8" CardNum="4" Teammate="366" Enemy="364" Enemy2="35" />
+	<Complete ID="2174" RandomNum2="8" CardNum="4" Teammate="367" Enemy="365" Enemy2="35" />
+	<Complete ID="2175" RandomNum2="8" CardNum="4" Teammate="368" Enemy="366" Enemy2="35" />
+	<Complete ID="2176" RandomNum2="8" CardNum="4" Teammate="369" Enemy="367" Enemy2="35" />
+	<Complete ID="2177" RandomNum2="8" CardNum="4" Teammate="370" Enemy="368" Enemy2="35" />
+	<Complete ID="2178" RandomNum2="8" CardNum="4" Teammate="371" Enemy="369" Enemy2="35" />
+	<Complete ID="2179" RandomNum2="8" CardNum="4" Teammate="372" Enemy="370" Enemy2="35" />
+	<Complete ID="2180" RandomNum2="8" CardNum="4" Teammate="373" Enemy="371" Enemy2="35" />
+	<Complete ID="2181" RandomNum2="8" CardNum="4" Teammate="374" Enemy="372" Enemy2="35" />
+	<Complete ID="2182" RandomNum2="8" CardNum="4" Teammate="375" Enemy="373" Enemy2="35" />
+	<Complete ID="2183" RandomNum2="8" CardNum="4" Teammate="376" Enemy="374" Enemy2="35" />
+	<Complete ID="2184" RandomNum2="8" CardNum="4" Teammate="377" Enemy="375" Enemy2="35" />
+	<Complete ID="2185" RandomNum2="8" CardNum="4" Teammate="378" Enemy="376" Enemy2="35" />
+	<Complete ID="2186" RandomNum2="8" CardNum="4" Teammate="379" Enemy="377" Enemy2="35" />
+	<Complete ID="2187" RandomNum2="8" CardNum="4" Teammate="380" Enemy="378" Enemy2="35" />
+	<Complete ID="2188" RandomNum2="8" CardNum="4" Teammate="381" Enemy="379" Enemy2="35" />
+	<Complete ID="2189" RandomNum2="8" CardNum="4" Teammate="382" Enemy="380" Enemy2="35" />
+	<Complete ID="2190" RandomNum2="8" CardNum="4" Teammate="383" Enemy="381" Enemy2="35" />
+	<Complete ID="2191" RandomNum2="8" CardNum="4" Teammate="384" Enemy="382" Enemy2="35" />
+	<Complete ID="2192" RandomNum2="8" CardNum="4" Teammate="385" Enemy="383" Enemy2="35" />
+	<Complete ID="2193" RandomNum2="8" CardNum="4" Teammate="386" Enemy="384" Enemy2="35" />
+	<Complete ID="2194" RandomNum2="8" CardNum="4" Teammate="387" Enemy="385" Enemy2="35" />
+	<Complete ID="2195" RandomNum2="8" CardNum="4" Teammate="388" Enemy="386" Enemy2="35" />
+	<Complete ID="2196" RandomNum2="8" CardNum="4" Teammate="389" Enemy="387" Enemy2="35" />
+	<Complete ID="2197" RandomNum2="8" CardNum="4" Teammate="390" Enemy="388" Enemy2="35" />
+	<Complete ID="2198" RandomNum2="8" CardNum="4" Teammate="391" Enemy="389" Enemy2="35" />
+	<Complete ID="2199" RandomNum2="8" CardNum="4" Teammate="392" Enemy="390" Enemy2="35" />
+	<Complete ID="2200" RandomNum2="8" CardNum="4" Teammate="393" Enemy="391" Enemy2="35" />
+	<Complete ID="2201" RandomNum2="8" CardNum="4" Teammate="394" Enemy="392" Enemy2="35" />
+	<Complete ID="2202" RandomNum2="8" CardNum="4" Teammate="388" Enemy="393" Enemy2="35" />
+	<Complete ID="2203" RandomNum2="8" CardNum="4" Teammate="391" Enemy="394" Enemy2="35" />
+	<Complete ID="2204" RandomNum2="8" CardNum="4" Teammate="393" Enemy="395" Enemy2="35" />
+	<Complete ID="2205" RandomNum2="8" CardNum="4" Teammate="402" Enemy="400" Enemy2="35" />
+	<Complete ID="2206" RandomNum2="8" CardNum="4" Teammate="403" Enemy="401" Enemy2="35" />
+	<Complete ID="2207" RandomNum2="8" CardNum="4" Teammate="388" Enemy="402" Enemy2="35" />
+	<Complete ID="2208" RandomNum2="8" CardNum="4" Teammate="401" Enemy="403" Enemy2="35" />
+	<Complete ID="2209" RandomNum2="8" CardNum="4" Teammate="406" Enemy="404" Enemy2="35" />
+	<Complete ID="2210" RandomNum2="8" CardNum="4" Teammate="408" Enemy="406" Enemy2="35" />
+	<Complete ID="2211" RandomNum2="8" CardNum="4" Teammate="409" Enemy="407" Enemy2="35" />
+	<Complete ID="2212" RandomNum2="8" CardNum="4" Teammate="410" Enemy="408" Enemy2="35" />
+	<Complete ID="2213" RandomNum2="8" CardNum="4" Teammate="393" Enemy="409" Enemy2="35" />
+	<Complete ID="2214" RandomNum2="8" CardNum="4" Teammate="408" Enemy="410" Enemy2="35" />
+	<Complete ID="2215" RandomNum2="8" CardNum="4" Teammate="413" Enemy="411" Enemy2="35" />
+	<Complete ID="2216" RandomNum2="8" CardNum="4" Teammate="415" Enemy="413" Enemy2="35" />
+	<Complete ID="2217" RandomNum2="8" CardNum="4" Teammate="416" Enemy="414" Enemy2="35" />
+	<Complete ID="2218" RandomNum2="8" CardNum="4" Teammate="417" Enemy="415" Enemy2="35" />
+	<Complete ID="2219" RandomNum2="8" CardNum="4" Teammate="418" Enemy="416" Enemy2="35" />
+	<Complete ID="2220" RandomNum2="8" CardNum="4" Teammate="419" Enemy="417" Enemy2="35" />
+	<Complete ID="2221" RandomNum2="8" CardNum="4" Teammate="420" Enemy="418" Enemy2="35" />
+	<Complete ID="2222" RandomNum2="8" CardNum="4" Teammate="421" Enemy="419" Enemy2="35" />
+	<Complete ID="2223" RandomNum2="8" CardNum="4" Teammate="422" Enemy="420" Enemy2="35" />
+	<Complete ID="2224" RandomNum2="8" CardNum="4" Teammate="423" Enemy="421" Enemy2="35" />
+	<Complete ID="2225" RandomNum2="8" CardNum="4" Teammate="424" Enemy="422" Enemy2="35" />
+	<Complete ID="2226" RandomNum2="8" CardNum="4" Teammate="425" Enemy="423" Enemy2="35" />
+	<Complete ID="2227" RandomNum2="8" CardNum="4" Teammate="426" Enemy="424" Enemy2="35" />
+	<Complete ID="2228" RandomNum2="8" CardNum="4" Teammate="427" Enemy="425" Enemy2="35" />
+	<Complete ID="2229" RandomNum2="8" CardNum="4" Teammate="428" Enemy="426" Enemy2="35" />
+	<Complete ID="2230" RandomNum2="8" CardNum="4" Teammate="429" Enemy="427" Enemy2="35" />
+	<Complete ID="2231" RandomNum2="8" CardNum="4" Teammate="430" Enemy="428" Enemy2="35" />
+	<Complete ID="2232" RandomNum2="8" CardNum="4" Teammate="431" Enemy="429" Enemy2="35" />
+	<Complete ID="2233" RandomNum2="8" CardNum="4" Teammate="432" Enemy="430" Enemy2="35" />
+	<Complete ID="2234" RandomNum2="8" CardNum="4" Teammate="433" Enemy="431" Enemy2="35" />
+	<Complete ID="2235" RandomNum2="8" CardNum="4" Teammate="434" Enemy="432" Enemy2="35" />
+	<Complete ID="2236" RandomNum2="8" CardNum="4" Teammate="435" Enemy="433" Enemy2="35" />
+	<Complete ID="2237" RandomNum2="8" CardNum="4" Teammate="436" Enemy="434" Enemy2="35" />
+	<Complete ID="2238" RandomNum2="8" CardNum="4" Teammate="437" Enemy="435" Enemy2="35" />
+	<Complete ID="2239" RandomNum2="8" CardNum="4" Teammate="438" Enemy="436" Enemy2="35" />
+	<Complete ID="2240" RandomNum2="8" CardNum="4" Teammate="439" Enemy="437" Enemy2="35" />
+	<Complete ID="2241" RandomNum2="8" CardNum="4" Teammate="440" Enemy="438" Enemy2="35" />
+	<Complete ID="2242" RandomNum2="8" CardNum="4" Teammate="441" Enemy="439" Enemy2="35" />
+	<Complete ID="2243" RandomNum2="8" CardNum="4" Teammate="442" Enemy="440" Enemy2="35" />
+	<Complete ID="2244" RandomNum2="8" CardNum="4" Teammate="443" Enemy="441" Enemy2="35" />
+	<Complete ID="2245" RandomNum2="8" CardNum="4" Teammate="444" Enemy="442" Enemy2="35" />
+	<Complete ID="2246" RandomNum2="8" CardNum="4" Teammate="445" Enemy="443" Enemy2="35" />
+	<Complete ID="2247" RandomNum2="8" CardNum="4" Teammate="446" Enemy="444" Enemy2="35" />
+	<Complete ID="2248" RandomNum2="8" CardNum="4" Teammate="447" Enemy="445" Enemy2="35" />
+	<Complete ID="2249" RandomNum2="8" CardNum="4" Teammate="448" Enemy="446" Enemy2="35" />
+	<Complete ID="2250" RandomNum2="8" CardNum="4" Teammate="449" Enemy="447" Enemy2="35" />
+	<Complete ID="2251" RandomNum2="8" CardNum="4" Teammate="450" Enemy="448" Enemy2="35" />
+	<Complete ID="2252" RandomNum2="8" CardNum="4" Teammate="451" Enemy="449" Enemy2="35" />
+	<Complete ID="2253" RandomNum2="8" CardNum="4" Teammate="452" Enemy="450" Enemy2="35" />
+	<Complete ID="2254" RandomNum2="8" CardNum="4" Teammate="453" Enemy="451" Enemy2="35" />
+	<Complete ID="2255" RandomNum2="8" CardNum="4" Teammate="454" Enemy="452" Enemy2="35" />
+	<Complete ID="2256" RandomNum2="8" CardNum="4" Teammate="28" Enemy="26" Enemy2="35" />
+	<Complete ID="2257" RandomNum2="8" CardNum="4" Teammate="455" Enemy="453" Enemy2="35" />
+	<Complete ID="2258" RandomNum2="8" CardNum="4" Teammate="456" Enemy="454" Enemy2="35" />
+	<Complete ID="2259" RandomNum2="8" CardNum="4" Teammate="457" Enemy="455" Enemy2="35" />
+	<Complete ID="2260" RandomNum2="8" CardNum="4" Teammate="458" Enemy="456" Enemy2="35" />
+	<Complete ID="2261" RandomNum2="8" CardNum="4" Teammate="459" Enemy="457" Enemy2="35" />
+	<Complete ID="2262" RandomNum2="8" CardNum="4" Teammate="460" Enemy="458" Enemy2="35" />
+	<Complete ID="2263" RandomNum2="8" CardNum="4" Teammate="461" Enemy="459" Enemy2="35" />
+	<Complete ID="2264" RandomNum2="8" CardNum="4" Teammate="462" Enemy="460" Enemy2="35" />
+	<Complete ID="2265" RandomNum2="8" CardNum="4" Teammate="463" Enemy="461" Enemy2="35" />
+	<Complete ID="2266" RandomNum2="8" CardNum="4" Teammate="464" Enemy="462" Enemy2="35" />
+	<Complete ID="2267" RandomNum2="8" CardNum="4" Teammate="465" Enemy="463" Enemy2="35" />
+	<Complete ID="2268" RandomNum2="8" CardNum="4" Teammate="466" Enemy="464" Enemy2="35" />
+	<Complete ID="2269" RandomNum2="8" CardNum="4" Teammate="467" Enemy="465" Enemy2="35" />
+	<Complete ID="2270" RandomNum2="8" CardNum="4" Teammate="468" Enemy="466" Enemy2="35" />
+	<Complete ID="2271" RandomNum2="8" CardNum="4" Teammate="469" Enemy="467" Enemy2="35" />
+	<Complete ID="2272" RandomNum2="8" CardNum="4" Teammate="470" Enemy="468" Enemy2="35" />
+	<Complete ID="2273" RandomNum2="8" CardNum="4" Teammate="471" Enemy="469" Enemy2="35" />
+	<Complete ID="2274" RandomNum2="8" CardNum="4" Teammate="472" Enemy="470" Enemy2="35" />
+	<Complete ID="2275" RandomNum2="8" CardNum="4" Teammate="473" Enemy="471" Enemy2="35" />
+	<Complete ID="2276" RandomNum2="8" CardNum="4" Teammate="474" Enemy="472" Enemy2="35" />
+	<Complete ID="2277" RandomNum2="8" CardNum="4" Teammate="475" Enemy="473" Enemy2="35" />
+	<Complete ID="2278" RandomNum2="8" CardNum="4" Teammate="476" Enemy="474" Enemy2="35" />
+	<Complete ID="2279" RandomNum2="8" CardNum="4" Teammate="477" Enemy="475" Enemy2="35" />
+	<Complete ID="2280" RandomNum2="8" CardNum="4" Teammate="478" Enemy="476" Enemy2="35" />
+	<Complete ID="2281" RandomNum2="8" CardNum="4" Teammate="479" Enemy="477" Enemy2="35" />
+	<Complete ID="2282" RandomNum2="8" CardNum="4" Teammate="480" Enemy="478" Enemy2="35" />
+	<Complete ID="2283" RandomNum2="8" CardNum="4" Teammate="481" Enemy="479" Enemy2="35" />
+	<Complete ID="2284" RandomNum2="8" CardNum="4" Teammate="482" Enemy="480" Enemy2="35" />
+	<Complete ID="2285" RandomNum2="8" CardNum="4" Teammate="483" Enemy="481" Enemy2="35" />
+	<Complete ID="2286" RandomNum2="8" CardNum="4" Teammate="484" Enemy="482" Enemy2="35" />
+	<Complete ID="2287" RandomNum2="8" CardNum="4" Teammate="485" Enemy="483" Enemy2="35" />
+	<Complete ID="2288" RandomNum2="8" CardNum="4" Teammate="486" Enemy="484" Enemy2="35" />
+	<Complete ID="2289" RandomNum2="8" CardNum="4" Teammate="487" Enemy="485" Enemy2="35" />
+	<Complete ID="2290" RandomNum2="8" CardNum="4" Teammate="489" Enemy="487" Enemy2="35" />
+	<Complete ID="2291" RandomNum2="8" CardNum="4" Teammate="490" Enemy="488" Enemy2="35" />
+	<Complete ID="2292" RandomNum2="8" CardNum="4" Teammate="491" Enemy="489" Enemy2="35" />
+	<Complete ID="2293" RandomNum2="8" CardNum="4" Teammate="492" Enemy="490" Enemy2="35" />
+	<Complete ID="2294" RandomNum2="8" CardNum="4" Teammate="493" Enemy="491" Enemy2="35" />
+	<Complete ID="2295" RandomNum2="8" CardNum="4" Teammate="494" Enemy="492" Enemy2="35" />
+	<Complete ID="2296" RandomNum2="8" CardNum="4" Teammate="7002" Enemy="7000" Enemy2="35" />
+	<Complete ID="2297" RandomNum2="8" CardNum="4" Teammate="7003" Enemy="7001" Enemy2="35" />
+	<Complete ID="2298" RandomNum2="8" CardNum="4" Teammate="7004" Enemy="7002" Enemy2="35" />
+	<Complete ID="2299" RandomNum2="8" CardNum="4" Teammate="7005" Enemy="7003" Enemy2="35" />
+	<Complete ID="2300" RandomNum2="8" CardNum="4" Teammate="7006" Enemy="7004" Enemy2="35" />
+	<Complete ID="2301" RandomNum2="8" CardNum="4" Teammate="7007" Enemy="7005" Enemy2="35" />
+	<Complete ID="2302" RandomNum2="8" CardNum="4" Teammate="7008" Enemy="7006" Enemy2="35" />
+	<Complete ID="2303" RandomNum2="8" CardNum="4" Teammate="7009" Enemy="7007" Enemy2="35" />
+	<Complete ID="2304" RandomNum2="8" CardNum="4" Teammate="7010" Enemy="7008" Enemy2="35" />
+	<Complete ID="2305" RandomNum2="8" CardNum="4" Teammate="7011" Enemy="7009" Enemy2="35" />
+	<Complete ID="2306" RandomNum2="8" CardNum="4" Teammate="7012" Enemy="7010" Enemy2="35" />
+	<Complete ID="2307" RandomNum2="8" CardNum="4" Teammate="7013" Enemy="7011" Enemy2="35" />
+	<Complete ID="2308" RandomNum2="8" CardNum="4" Teammate="7014" Enemy="7012" Enemy2="35" />
+	<Complete ID="2309" RandomNum2="8" CardNum="4" Teammate="7015" Enemy="7013" Enemy2="35" />
+	<Complete ID="2310" RandomNum2="8" CardNum="4" Teammate="7016" Enemy="7014" Enemy2="35" />
+	<Complete ID="2311" RandomNum2="8" CardNum="4" Teammate="7017" Enemy="7015" Enemy2="35" />
+	<Complete ID="2312" RandomNum2="8" CardNum="4" Teammate="7018" Enemy="7016" Enemy2="35" />
+	<Complete ID="2313" RandomNum2="8" CardNum="4" Teammate="7019" Enemy="7017" Enemy2="35" />
+	<Complete ID="2314" RandomNum2="8" CardNum="4" Teammate="7020" Enemy="7018" Enemy2="35" />
+	<Complete ID="2315" RandomNum2="8" CardNum="4" Teammate="360" Enemy="358" Enemy2="35" />
+	<Complete ID="2316" RandomNum2="8" CardNum="4" Teammate="495" Enemy="493" Enemy2="35" />
+	<Complete ID="2317" RandomNum2="8" CardNum="4" Teammate="496" Enemy="494" Enemy2="35" />
+	<Complete ID="2318" RandomNum2="8" CardNum="4" Teammate="497" Enemy="495" Enemy2="35" />
+	<Complete ID="2319" RandomNum2="8" CardNum="4" Teammate="498" Enemy="496" Enemy2="35" />
+	<Complete ID="2320" RandomNum2="8" CardNum="4" Teammate="499" Enemy="497" Enemy2="35" />
+	<Complete ID="2321" RandomNum2="8" CardNum="4" Teammate="500" Enemy="498" Enemy2="35" />
+	<Complete ID="2322" RandomNum2="8" CardNum="4" Teammate="498" Enemy="7019" Enemy2="35" />
+	<Complete ID="2323" RandomNum2="8" CardNum="4" Teammate="488" Enemy="486" Enemy2="35" />
+	<Complete ID="2324" RandomNum2="8" CardNum="4" Teammate="501" Enemy="499" Enemy2="35" />
+	<Complete ID="2325" RandomNum2="8" CardNum="4" Teammate="502" Enemy="500" Enemy2="35" />
+	<Complete ID="2326" RandomNum2="8" CardNum="4" Teammate="503" Enemy="501" Enemy2="35" />
+	<Complete ID="2327" RandomNum2="8" CardNum="4" Teammate="504" Enemy="502" Enemy2="35" />
+	<Complete ID="2328" RandomNum2="8" CardNum="4" Teammate="505" Enemy="503" Enemy2="35" />
+	<Complete ID="2329" RandomNum2="8" CardNum="4" Teammate="7014" Enemy="504" Enemy2="35" />
+	<Complete ID="2330" RandomNum2="8" CardNum="4" Teammate="7011" Enemy="7020" Enemy2="35" />
+	<Complete ID="2331" RandomNum2="8" CardNum="4" Teammate="507" Enemy="505" Enemy2="35" />
+	<Complete ID="2332" RandomNum2="8" CardNum="4" Teammate="508" Enemy="506" Enemy2="35" />
+	<Complete ID="2333" RandomNum2="8" CardNum="4" Teammate="509" Enemy="507" Enemy2="35" />
+	<Complete ID="2334" RandomNum2="8" CardNum="4" Teammate="510" Enemy="508" Enemy2="35" />
+	<Complete ID="2335" RandomNum2="8" CardNum="4" Teammate="511" Enemy="509" Enemy2="35" />
+	<Complete ID="2336" RandomNum2="8" CardNum="4" Teammate="512" Enemy="510" Enemy2="35" />
+	<Complete ID="2337" RandomNum2="8" CardNum="4" Teammate="513" Enemy="511" Enemy2="35" />
+	<Complete ID="2338" RandomNum2="8" CardNum="4" Teammate="514" Enemy="512" Enemy2="35" />
+	<Complete ID="2339" RandomNum2="8" CardNum="4" Teammate="515" Enemy="513" Enemy2="35" />
+	<Complete ID="2340" RandomNum2="8" CardNum="4" Teammate="516" Enemy="514" Enemy2="35" />
+	<Complete ID="2341" RandomNum2="8" CardNum="4" Teammate="7016" Enemy="515" Enemy2="503" />
+	<Complete ID="2342" RandomNum2="8" CardNum="4" Teammate="7020" Enemy="520" Enemy2="35" />
+	<Complete ID="2343" RandomNum2="8" CardNum="4" Teammate="518" Enemy="516" Enemy2="35" />
+	<Complete ID="2344" RandomNum2="8" CardNum="4" Teammate="519" Enemy="517" Enemy2="35" />
+	<Complete ID="2345" RandomNum2="8" CardNum="4" Teammate="520" Enemy="518" Enemy2="35" />
+	<Complete ID="2346" RandomNum2="8" CardNum="4" Teammate="513" Enemy="519" Enemy2="35" />
+	<Complete ID="2347" RandomNum2="8" CardNum="4" Teammate="514" Enemy="520" Enemy2="35" />
+	<Complete ID="2348" RandomNum2="8" CardNum="4" Teammate="520" Enemy="521" Enemy2="35" />
+	<Complete ID="3001" RandomNum2="8" CardNum="4" Teammate="201" Enemy="202" Enemy2="226" />
+	<Complete ID="3002" RandomNum2="8" CardNum="4" Teammate="201" Enemy="446" Enemy2="40" />
+	<Complete ID="3003" RandomNum2="8" CardNum="4" Teammate="201" Enemy="225" Enemy2="206" />
+	<Complete ID="3004" RandomNum2="8" CardNum="4" Teammate="202" Enemy="201" Enemy2="220" />
+	<Complete ID="3005" RandomNum2="8" CardNum="4" Teammate="202" Enemy="205" Enemy2="208" />
+	<Complete ID="3006" RandomNum2="8" CardNum="4" Teammate="203" Enemy="220" Enemy2="204" />
+	<Complete ID="3007" RandomNum2="8" CardNum="4" Teammate="203" Enemy="205" Enemy2="208" />
+	<Complete ID="3008" RandomNum2="8" CardNum="4" Teammate="204" Enemy="205" Enemy2="208" />
+	<Complete ID="3009" RandomNum2="8" CardNum="4" Teammate="204" Enemy="203" Enemy2="226" />
+	<Complete ID="3010" RandomNum2="8" CardNum="4" Teammate="204" Enemy="492" Enemy2="479" />
+	<Complete ID="3011" RandomNum2="8" CardNum="4" Teammate="205" Enemy="204" Enemy2="220" />
+	<Complete ID="3012" RandomNum2="8" CardNum="4" Teammate="205" Enemy="203" Enemy2="226" />
+	<Complete ID="3013" RandomNum2="8" CardNum="4" Teammate="205" Enemy="330" Enemy2="450" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ID	-	信息组id
+				-	备注
+			Character	-	武将id
+			MaxHp	-	最大血量
+			InitialHP	-	初始血量
+			CardNum	-	初始手牌数量
+			CardID	-	初始手牌id
+			AILevel	-	AI等级
+		-->
+	<BaseCharacter ID="1" Character="1" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="2" Character="2" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="3" Character="3" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="4" Character="4" MaxHp="3" InitialHP="3" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="5" Character="5" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="6" Character="6" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="7" Character="7" MaxHp="3" InitialHP="3" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="8" Character="8" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="9" Character="9" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="10" Character="10" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="11" Character="11" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="12" Character="12" MaxHp="3" InitialHP="3" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="13" Character="13" MaxHp="3" InitialHP="3" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="14" Character="14" MaxHp="3" InitialHP="3" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="15" Character="15" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="16" Character="16" MaxHp="3" InitialHP="3" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="17" Character="17" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="18" Character="18" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="19" Character="19" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="20" Character="20" MaxHp="3" InitialHP="3" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="21" Character="21" MaxHp="3" InitialHP="3" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="22" Character="22" MaxHp="3" InitialHP="3" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="23" Character="23" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="24" Character="24" MaxHp="3" InitialHP="3" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="25" Character="25" MaxHp="3" InitialHP="3" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="27" Character="27" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="28" Character="28" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="29" Character="29" MaxHp="4" InitialHP="4" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="30" Character="30" MaxHp="3" InitialHP="3" CardNum="4" AILevel="2" />
+	<BaseCharacter ID="34" Character="34" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="35" Character="35" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="36" Character="36" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="37" Character="37" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="38" Character="38" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="39" Character="39" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="40" Character="40" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="41" Character="41" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="42" Character="42" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="43" Character="43" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="44" Character="44" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="45" Character="45" MaxHp="8" InitialHP="8" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="46" Character="46" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="47" Character="47" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="48" Character="48" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="49" Character="49" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="50" Character="50" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="51" Character="51" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="52" Character="52" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="53" Character="53" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="54" Character="54" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="55" Character="55" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="56" Character="56" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="57" Character="57" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="61" Character="61" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="72" Character="72" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="73" Character="73" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="100" Character="100" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="101" Character="101" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="103" Character="103" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="104" Character="104" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="105" Character="105" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="106" Character="106" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="107" Character="107" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="108" Character="108" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="109" Character="109" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="110" Character="110" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="111" Character="111" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="112" Character="112" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="113" Character="113" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="114" Character="114" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="115" Character="115" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="116" Character="116" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="117" Character="117" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="118" Character="118" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="119" Character="119" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="121" Character="121" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="122" Character="122" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="123" Character="123" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="124" Character="124" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="125" Character="125" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="126" Character="126" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="127" Character="127" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="128" Character="128" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="129" Character="129" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="130" Character="130" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="131" Character="131" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="135" Character="135" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="136" Character="136" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="137" Character="137" MaxHp="5" InitialHP="5" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="139" Character="139" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="151" Character="151" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="152" Character="152" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="153" Character="153" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="155" Character="155" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="156" Character="156" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="157" Character="157" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="158" Character="158" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="160" Character="160" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="161" Character="161" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="162" Character="162" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="164" Character="164" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="166" Character="166" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="167" Character="167" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="168" Character="168" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="169" Character="169" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="170" Character="170" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="171" Character="171" MaxHp="6" InitialHP="6" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="172" Character="172" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="173" Character="173" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="174" Character="174" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="175" Character="175" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="176" Character="176" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="177" Character="177" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="178" Character="178" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="179" Character="179" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="180" Character="180" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="181" Character="181" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="182" Character="182" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="183" Character="183" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="184" Character="184" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="185" Character="185" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="186" Character="186" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="187" Character="187" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="188" Character="188" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="201" Character="201" MaxHp="5" InitialHP="5" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="202" Character="202" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="203" Character="203" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="204" Character="204" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="205" Character="205" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="206" Character="206" MaxHp="5" InitialHP="5" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="207" Character="207" MaxHp="2" InitialHP="2" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="208" Character="208" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="210" Character="210" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="211" Character="211" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="212" Character="212" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="214" Character="214" MaxHp="6" InitialHP="6" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="215" Character="215" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="220" Character="220" MaxHp="6" InitialHP="6" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="221" Character="221" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="224" Character="224" MaxHp="6" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="225" Character="225" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="226" Character="226" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="299" Character="299" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="300" Character="300" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="301" Character="301" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="302" Character="302" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="303" Character="303" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="304" Character="304" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="305" Character="305" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="306" Character="306" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="307" Character="307" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="308" Character="308" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="309" Character="309" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="310" Character="310" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="311" Character="311" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="312" Character="312" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="313" Character="313" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="314" Character="314" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="315" Character="315" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="316" Character="316" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="317" Character="317" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="318" Character="318" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="319" Character="319" MaxHp="5" InitialHP="5" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="320" Character="320" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="321" Character="321" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="322" Character="322" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="323" Character="323" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="324" Character="324" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="325" Character="325" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="326" Character="326" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="327" Character="327" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="328" Character="328" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="329" Character="329" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="330" Character="330" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="331" Character="331" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="332" Character="332" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="333" Character="333" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="334" Character="334" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="335" Character="335" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="336" Character="336" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="337" Character="337" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="338" Character="338" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="339" Character="339" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="340" Character="340" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="341" Character="341" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="342" Character="342" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="343" Character="343" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="344" Character="344" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="345" Character="345" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="346" Character="346" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="347" Character="347" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="348" Character="348" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="349" Character="349" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="350" Character="350" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="351" Character="351" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="352" Character="352" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="353" Character="353" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="354" Character="354" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="356" Character="356" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="357" Character="357" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="360" Character="360" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="361" Character="361" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="362" Character="362" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="363" Character="363" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="364" Character="364" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="365" Character="365" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="366" Character="366" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="367" Character="367" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="368" Character="368" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="369" Character="369" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="370" Character="370" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="371" Character="371" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="372" Character="372" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="373" Character="373" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="374" Character="374" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="375" Character="375" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="376" Character="376" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="377" Character="377" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="378" Character="378" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="379" Character="379" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="380" Character="380" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="381" Character="381" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="382" Character="382" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="383" Character="383" MaxHp="2" InitialHP="2" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="384" Character="384" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="385" Character="385" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="386" Character="386" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="387" Character="387" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="388" Character="388" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="389" Character="389" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="390" Character="390" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="391" Character="391" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="392" Character="392" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="393" Character="393" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="394" Character="394" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="395" Character="395" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="400" Character="400" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="401" Character="401" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="402" Character="402" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="403" Character="403" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="404" Character="404" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="406" Character="406" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="407" Character="407" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="408" Character="408" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="409" Character="409" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="410" Character="410" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="411" Character="411" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="413" Character="413" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="414" Character="414" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="415" Character="415" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="416" Character="416" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="417" Character="417" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="418" Character="418" MaxHp="6" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="419" Character="419" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="420" Character="420" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="421" Character="421" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="422" Character="422" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="423" Character="423" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="424" Character="424" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="425" Character="425" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="426" Character="426" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="427" Character="427" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="428" Character="428" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="429" Character="429" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="430" Character="430" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="431" Character="431" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="432" Character="432" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="433" Character="433" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="434" Character="434" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="435" Character="435" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="436" Character="436" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="437" Character="437" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="438" Character="438" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="439" Character="439" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="440" Character="440" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="441" Character="441" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="442" Character="442" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="443" Character="443" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="444" Character="444" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="445" Character="445" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="446" Character="446" MaxHp="6" InitialHP="6" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="447" Character="447" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="448" Character="448" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="449" Character="449" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="450" Character="450" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="451" Character="451" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="452" Character="452" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="26" Character="26" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="453" Character="453" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="454" Character="454" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="455" Character="455" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="456" Character="456" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="457" Character="457" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="458" Character="458" MaxHp="4" InitialHP="5" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="459" Character="459" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="460" Character="460" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="461" Character="461" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="462" Character="462" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="463" Character="463" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="464" Character="464" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="465" Character="465" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="466" Character="466" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="467" Character="467" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="468" Character="468" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="469" Character="469" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="470" Character="470" MaxHp="8" InitialHP="8" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="471" Character="471" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="472" Character="472" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="473" Character="473" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="474" Character="474" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="475" Character="475" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="476" Character="476" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="477" Character="477" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="478" Character="478" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="479" Character="479" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="480" Character="480" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="481" Character="481" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="482" Character="482" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="483" Character="483" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="484" Character="484" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="485" Character="485" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="487" Character="487" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="488" Character="488" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="489" Character="489" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="490" Character="490" MaxHp="8" InitialHP="8" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="491" Character="491" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="492" Character="492" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7000" Character="7000" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7001" Character="7001" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7002" Character="7002" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7003" Character="7003" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7004" Character="7004" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7005" Character="7005" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7006" Character="7006" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7007" Character="7007" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7008" Character="7008" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7009" Character="7009" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7010" Character="7010" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7011" Character="7011" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7012" Character="7012" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7013" Character="7013" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7014" Character="7014" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7015" Character="7015" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7016" Character="7016" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7017" Character="7017" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7018" Character="7018" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="358" Character="358" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="493" Character="493" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="494" Character="494" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="495" Character="495" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="496" Character="496" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="497" Character="497" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="498" Character="498" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7019" Character="7019" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="486" Character="486" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="499" Character="499" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="500" Character="500" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="501" Character="501" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="502" Character="502" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="503" Character="503" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="504" Character="504" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7020" Character="7020" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="505" Character="505" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="506" Character="506" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="507" Character="507" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="508" Character="508" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="509" Character="509" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="510" Character="510" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="511" Character="511" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="512" Character="512" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="513" Character="513" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="514" Character="514" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="515" Character="515" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="7021" Character="7021" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="516" Character="516" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="517" Character="517" MaxHp="5" InitialHP="5" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="518" Character="518" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="519" Character="519" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="520" Character="520" MaxHp="4" InitialHP="6" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="521" Character="521" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="585" Character="585" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1001" Character="1" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1002" Character="2" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1003" Character="3" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1004" Character="4" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1005" Character="5" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1006" Character="6" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1007" Character="7" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1008" Character="8" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1009" Character="9" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1010" Character="10" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1011" Character="11" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1012" Character="12" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1013" Character="13" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1014" Character="14" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1015" Character="15" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1016" Character="16" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1017" Character="17" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1018" Character="18" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1019" Character="19" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1020" Character="20" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1021" Character="21" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1022" Character="22" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1023" Character="23" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1024" Character="24" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1025" Character="25" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1027" Character="27" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1028" Character="28" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1029" Character="29" MaxHp="4" InitialHP="4" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="1030" Character="30" MaxHp="3" InitialHP="3" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="2001" Character="1" MaxHp="4" InitialHP="2" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="2002" Character="2" MaxHp="4" InitialHP="2" CardNum="4" AILevel="1" />
+	<BaseCharacter ID="2027" Character="27" MaxHp="4" InitialHP="2" CardNum="4" AILevel="1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	武将id
+			BreakId	-	突破后武将id
+			BreakItems	-	突破消耗道具
+			EarnItemId	-	突破后获得道具
+			BreakSpell1	-	突破技能1类型
+0=新，1=攻击，2=防御，3=爆发，4=控制，5=辅助
+			BreakSpell2	-	突破技能2类型
+			BreakSpell3	-	突破技能3类型
+			BreakSpell4	-	突破技能4类型
+			BreakSpell5	-	突破技能5类型
+			BreakSpell6	-	突破技能6类型
+			BreakItemsPrice	-	突破原价
+				-	武将名称
+		-->
+	<GeneralBreak Id="2" BreakId="300" BreakItems="21246401,1" EarnItemId="930001" />
+	<GeneralBreak Id="3" BreakId="301" BreakItems="21246501,1" EarnItemId="930101" />
+	<GeneralBreak Id="5" BreakId="302" BreakItems="21246601,1" EarnItemId="930201" />
+	<GeneralBreak Id="6" BreakId="303" BreakItems="21246701,1" EarnItemId="930301" />
+	<GeneralBreak Id="61" BreakId="26" BreakItems="21246801,1" EarnItemId="892601" />
+	<GeneralBreak Id="1" BreakId="299" BreakItems="100011,6888" EarnItemId="929901" />
+	<GeneralBreak Id="9" BreakId="305" BreakItems="100011,6098" EarnItemId="930501" />
+	<GeneralBreak Id="10" BreakId="306" BreakItems="100011,8400" EarnItemId="930601" />
+	<GeneralBreak Id="11" BreakId="307" BreakItems="100011,8598" EarnItemId="930701" />
+	<GeneralBreak Id="12" BreakId="308" BreakItems="100011,8098" EarnItemId="930801" />
+	<GeneralBreak Id="13" BreakId="309" BreakItems="100011,8500" EarnItemId="930901" />
+	<GeneralBreak Id="14" BreakId="310" BreakItems="100011,8600" EarnItemId="931001" />
+	<GeneralBreak Id="15" BreakId="311" BreakItems="100011,8800" EarnItemId="931101" />
+	<GeneralBreak Id="16" BreakId="312" BreakItems="100011,7598" EarnItemId="931201" />
+	<GeneralBreak Id="17" BreakId="313" BreakItems="100011,8600" EarnItemId="931301" />
+	<GeneralBreak Id="18" BreakId="314" BreakItems="100011,7288" EarnItemId="931401" />
+	<GeneralBreak Id="19" BreakId="315" BreakItems="100011,7598" EarnItemId="931501" />
+	<GeneralBreak Id="20" BreakId="316" BreakItems="100011,6098" EarnItemId="931601" />
+	<GeneralBreak Id="22" BreakId="318" BreakItems="100011,7800" EarnItemId="931801" />
+	<GeneralBreak Id="7" BreakId="441" BreakItems="100011,10000" EarnItemId="944101" />
+	<GeneralBreak Id="21" BreakId="444" BreakItems="100011,10000" EarnItemId="944401" />
+	<GeneralBreak Id="24" BreakId="445" BreakItems="100011,10000" EarnItemId="944501" />
+	<GeneralBreak Id="214" BreakId="446" BreakItems="100011,10000" EarnItemId="944601" />
+</root>

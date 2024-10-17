@@ -1,0 +1,822 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Root>
+	<LabelModel>
+		<!--
+			id	-	玩法id
+			gameMode	-	 
+战斗模式id：
+game_model_none  = 0,
+ game_model_shenfen = 1, //身份局
+ game_model_3V3  = 2, //3V3
+ game_model_1V1  = 3, //1V1
+ game_model_1V3  = 4, //1V3
+ game_model_guo_zhan = 5, //国战
+ game_model_new_1v1 = 6, //新1V1
+ game_model_happy = 7, //欢乐
+ game_model_boss_1v3 = 8, //打年兽模式
+ game_model_xue_zhan = 9, //血战到底
+ game_model_boss_fight = 10,//BOSS闯关模式
+ game_model_zhan_yi = 11,//战役模式,指的是pevpe模式
+ game_model_mobile_happy1v1 = 12, //手机1v1元宝模式
+ game_model_mobile_training = 13,
+ game_model_paiwei = 14, //排位4v4
+ game_model_zhong_dan = 15, //忠胆英杰
+ game_model=16 //无尽之战
+ game_model=17 //神之试炼
+ game_model=18 //同舟共济
+ game_model=19 //神武再世>
+			tableFilter	-	未知
+ em_table_filter_none,
+ em_table_filter_shenfen = 1,
+ em_table_filter_1v1,
+ em_table_filter_3v3,
+ em_table_filter_instance,
+ em_table_filter_Happy23,
+ em_table_filter_match,>
+			defaultSeatMode	-	座位模式： 
+em_game_seatmodel_none = 0, //
+ em_game_model_random = 1, //随机模式
+ em_game_model_fix,   //固定的模式
+ em_game_model_grouprandom, //小队模式，对有些游戏模式有效
+ em_game_model_wz_fix,  //王战模式(3v3)>
+			name	-	服务端命名
+			checkEscape	-	是否加入逃跑惩罚，1表示有，否则为空
+			ReturnUse	-	对局完成后恢复的信誉值(除以100）
+			GroupChat	-	模式阵营聊天
+			FreeDuration	-	全免开启时间
+			invitecode	-	是否需要激活码才能进入
+			GmPause	-	Gm权限允许暂停该模式
+			-->
+		<Item id="1" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_figure8_1n" checkEscape="1" ReturnUse="30" />
+		<Item id="2" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_figure8_2n" ReturnUse="30" />
+		<Item id="3" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_figure7_1n" ReturnUse="30" />
+		<Item id="4" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_figure6_1n" checkEscape="1" ReturnUse="30" />
+		<Item id="5" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_figure5_1n" checkEscape="1" ReturnUse="30" />
+		<Item id="6" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_figure5_1n_simple" ReturnUse="30" />
+		<Item id="7" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_figure9_2n" ReturnUse="30" />
+		<Item id="8" gameMode="2" tableFilter="3" defaultSeatMode="2" name="lm_ath_3v3_select" ReturnUse="30" />
+		<Item id="9" gameMode="3" tableFilter="2" defaultSeatMode="2" name="lm_ath_1v1_select" checkEscape="1" ReturnUse="30" />
+		<Item id="10" gameMode="14" tableFilter="1" defaultSeatMode="1" name="lm_paiwei" ReturnUse="30" />
+		<Item id="11" gameMode="3" tableFilter="2" defaultSeatMode="2" name="lm_ath_1v1_simple" ReturnUse="30" />
+		<Item id="12" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_gaoxiao_match8" ReturnUse="30" />
+		<Item id="13" gameMode="1" tableFilter="1" defaultSeatMode="1" name="导师月英" ReturnUse="0" />
+		<Item id="14" gameMode="2" tableFilter="3" defaultSeatMode="2" name="lm_happy3v3_chaos" ReturnUse="30" />
+		<Item id="15" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_figure_8_junzheng" checkEscape="1" ReturnUse="30" />
+		<Item id="16" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_figure_5_junzheng" checkEscape="1" ReturnUse="30" />
+		<Item id="17" gameMode="4" tableFilter="1" defaultSeatMode="2" name="lm_ath_1v3" ReturnUse="30" />
+		<Item id="18" gameMode="1" tableFilter="4" defaultSeatMode="2" name="lm_instance_1v3" ReturnUse="30" />
+		<Item id="19" gameMode="15" tableFilter="1" defaultSeatMode="1" name="lm_zhong_dan_8ren" checkEscape="1" ReturnUse="30" />
+		<Item id="20" gameMode="2" tableFilter="3" defaultSeatMode="2" name="lm_ath_3v3_select_tongqian" ReturnUse="30" />
+		<Item id="21" gameMode="2" tableFilter="3" defaultSeatMode="2" name="lm_ath_3v3_simple_tongqian" ReturnUse="30" />
+		<Item id="22" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_figure_shenhuazailin" checkEscape="1" ReturnUse="30" />
+		<Item id="23" gameMode="2" tableFilter="3" defaultSeatMode="2" name="lm_ath_new_3v3" checkEscape="1" ReturnUse="30" />
+		<Item id="24" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_training_figure5_1n_s" ReturnUse="30" />
+		<Item id="25" gameMode="3" tableFilter="2" defaultSeatMode="2" name="lm_ttrank_1v1" ReturnUse="30" />
+		<Item id="26" gameMode="2" tableFilter="3" defaultSeatMode="2" name="lm_ttrank_3v3" ReturnUse="30" />
+		<Item id="27" gameMode="14" tableFilter="1" defaultSeatMode="1" name="lm_ttrank_paiwei" ReturnUse="30" />
+		<Item id="28" gameMode="5" tableFilter="1" defaultSeatMode="1" name="lm_guozhan_first" checkEscape="1" ReturnUse="30" />
+		<Item id="29" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_teach_training" ReturnUse="30" />
+		<Item id="30" gameMode="6" tableFilter="2" defaultSeatMode="2" name="lm_new_1v1_2013" checkEscape="1" ReturnUse="30" />
+		<Item id="31" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_figure2" checkEscape="1" ReturnUse="30" />
+		<Item id="32" gameMode="7" tableFilter="5" defaultSeatMode="3" name="lm_happy3v3_msf" ReturnUse="15" />
+		<Item id="33" gameMode="7" tableFilter="5" defaultSeatMode="2" name="lm_happy2v2_msf" checkEscape="1" ReturnUse="15" />
+		<Item id="34" gameMode="6" tableFilter="2" defaultSeatMode="2" name="lm_ttrank_new_1v1" ReturnUse="30" />
+		<Item id="35" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_figure6_ai_robot" ReturnUse="30" />
+		<Item id="36" gameMode="8" tableFilter="1" defaultSeatMode="2" name="lm_boss_1v3" ReturnUse="30" />
+		<Item id="37" gameMode="9" tableFilter="1" defaultSeatMode="2" name="lm_xue_zhan" checkEscape="1" ReturnUse="30" />
+		<Item id="38" gameMode="10" tableFilter="1" defaultSeatMode="2" name="lm_kill_monsters" checkEscape="1" ReturnUse="30" />
+		<Item id="39" gameMode="11" tableFilter="1" defaultSeatMode="2" name="lm_zhan_yi" ReturnUse="30" />
+		<Item id="40" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_wz_shenfen" ReturnUse="30" />
+		<Item id="41" gameMode="2" tableFilter="3" defaultSeatMode="4" name="lm_wz_3v3" ReturnUse="30" />
+		<Item id="42" gameMode="6" tableFilter="2" defaultSeatMode="2" name="lm_wz_1v1" ReturnUse="30" />
+		<Item id="43" gameMode="9" tableFilter="1" defaultSeatMode="2" name="lm_wz_xuezhan" ReturnUse="30" />
+		<Item id="44" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_duo_liang" ReturnUse="30" />
+		<Item id="45" gameMode="2" tableFilter="3" defaultSeatMode="2" name="lm_2ren_3v3" checkEscape="1" ReturnUse="30" />
+		<Item id="46" gameMode="1" tableFilter="1" defaultSeatMode="2" name="lm_chapter_teaching" ReturnUse="30" />
+		<Item id="47" gameMode="16" tableFilter="6" defaultSeatMode="2" name="无尽之战" ReturnUse="30" />
+		<Item id="48" gameMode="7" tableFilter="5" defaultSeatMode="2" name="乱斗同姓之争" ReturnUse="15" />
+		<Item id="49" gameMode="0" tableFilter="0" defaultSeatMode="2" name="lm_teach" ReturnUse="30" />
+		<Item id="50" gameMode="0" tableFilter="6" defaultSeatMode="1" name="lm_match" ReturnUse="30" />
+		<Item id="51" gameMode="1" tableFilter="1" defaultSeatMode="1" name="乱斗毒战三国" ReturnUse="30" />
+		<Item id="52" gameMode="1" tableFilter="1" defaultSeatMode="1" name="乱斗天降神兵" ReturnUse="30" />
+		<Item id="53" gameMode="1" tableFilter="1" defaultSeatMode="1" name="乱斗幸运666" ReturnUse="30" />
+		<Item id="54" gameMode="1" tableFilter="1" defaultSeatMode="1" name="乱斗八个左慈" ReturnUse="30" />
+		<Item id="55" gameMode="1" tableFilter="1" defaultSeatMode="1" name="乱斗铜雀夺袍" ReturnUse="30" />
+		<Item id="56" gameMode="7" tableFilter="5" defaultSeatMode="2" name="乱斗白衣渡江" ReturnUse="15" />
+		<Item id="57" gameMode="1" tableFilter="1" defaultSeatMode="1" name="乱斗兵精粮足" ReturnUse="30" />
+		<Item id="58" gameMode="1" tableFilter="1" defaultSeatMode="1" name="乱斗特殊身份" ReturnUse="30" />
+		<Item id="59" gameMode="7" tableFilter="5" defaultSeatMode="2" name="乱斗家族之争" ReturnUse="15" />
+		<Item id="61" gameMode="14" tableFilter="1" defaultSeatMode="1" name="lm_ttrank_lian_xi" checkEscape="1" ReturnUse="30" />
+		<Item id="70" gameMode="6" tableFilter="2" defaultSeatMode="2" name="lm_1v1_chaos" ReturnUse="30" />
+		<Item id="71" gameMode="14" tableFilter="1" defaultSeatMode="1" name="lm_4v4_chaos" ReturnUse="30" />
+		<Item id="72" gameMode="2" tableFilter="3" defaultSeatMode="2" name="lm_tssj_chaos" ReturnUse="30" />
+		<Item id="73" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_YWC_figure" ReturnUse="30" />
+		<Item id="74" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_YWC_figure_junzheng" ReturnUse="30" />
+		<Item id="80" gameMode="14" tableFilter="1" defaultSeatMode="1" name="王战排位" ReturnUse="30" />
+		<Item id="75" gameMode="14" tableFilter="1" defaultSeatMode="1" name="lm_ttrank_paiwei" ReturnUse="30" />
+		<Item id="76" gameMode="2" tableFilter="3" defaultSeatMode="2" name="lm_2ren_3v3_paiwei" checkEscape="1" ReturnUse="30" />
+		<Item id="77" gameMode="7" tableFilter="5" defaultSeatMode="2" name="lm_公会争霸战-欢乐" checkEscape="1" ReturnUse="15" />
+		<Item id="78" gameMode="4" tableFilter="1" defaultSeatMode="2" name="新虎牢关" ReturnUse="30" />
+		<Item id="84" gameMode="7" tableFilter="5" defaultSeatMode="2" name="lm_happy2v2_msf演武" ReturnUse="15" />
+		<Item id="85" gameMode="5" tableFilter="1" defaultSeatMode="1" name="lm_guozhan_first演武" ReturnUse="30" />
+		<Item id="86" gameMode="8" tableFilter="1" defaultSeatMode="1" name="年兽" checkEscape="1" ReturnUse="30" />
+		<Item id="87" gameMode="17" tableFilter="1" defaultSeatMode="2" name="神之试炼" ReturnUse="30" />
+		<Item id="88" gameMode="18" tableFilter="1" defaultSeatMode="1" name="同舟共济" ReturnUse="30" />
+		<Item id="81" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_figure_8_junzheng22" ReturnUse="30" />
+		<Item id="82" gameMode="5" tableFilter="1" defaultSeatMode="1" name="lm_guozhan_first22" ReturnUse="30" />
+		<Item id="83" gameMode="7" tableFilter="5" defaultSeatMode="2" name="lm_happy2v2_msf22" ReturnUse="15" />
+		<Item id="89" gameMode="2" tableFilter="3" defaultSeatMode="2" name="王战统率" ReturnUse="30" />
+		<Item id="90" gameMode="5" tableFilter="1" defaultSeatMode="1" name="国战势备篇" checkEscape="1" ReturnUse="30" />
+		<Item id="91" gameMode="19" tableFilter="1" defaultSeatMode="2" name="神武再世" checkEscape="1" ReturnUse="30" />
+		<Item id="92" gameMode="7" tableFilter="5" defaultSeatMode="2" name="欢乐AI" ReturnUse="15" />
+		<Item id="93" gameMode="1" tableFilter="1" defaultSeatMode="1" name="篇章用的6人标准场" ReturnUse="0" />
+		<Item id="94" gameMode="1" tableFilter="1" defaultSeatMode="1" name="篇章用的8人军争场" ReturnUse="0" />
+		<Item id="95" gameMode="5" tableFilter="1" defaultSeatMode="1" name="篇章用的国战" ReturnUse="0" />
+		<Item id="96" gameMode="7" tableFilter="5" defaultSeatMode="2" name="篇章用的欢乐成双" ReturnUse="0" />
+		<Item id="97" gameMode="14" tableFilter="1" defaultSeatMode="1" name="社区比赛专区" ReturnUse="0" />
+		<Item id="98" gameMode="20" tableFilter="1" defaultSeatMode="1" name="诸侯伐董" ReturnUse="30" />
+		<Item id="99" gameMode="21" tableFilter="1" defaultSeatMode="1" name="官渡之战" ReturnUse="30" />
+		<Item id="100" gameMode="1" tableFilter="1" defaultSeatMode="1" name="祭天祀地" checkEscape="1" ReturnUse="30" />
+		<Item id="101" gameMode="5" tableFilter="1" defaultSeatMode="1" name="国战线下" ReturnUse="30" />
+		<Item id="102" gameMode="7" tableFilter="5" defaultSeatMode="2" name="lm_pad_happy_2v2" ReturnUse="15" />
+		<Item id="103" gameMode="1" tableFilter="1" defaultSeatMode="1" name="高校身份局" ReturnUse="30" />
+		<Item id="104" gameMode="5" tableFilter="1" defaultSeatMode="1" name="高校国战局" ReturnUse="30" />
+		<Item id="106" gameMode="22" tableFilter="1" defaultSeatMode="1" name="lm_qian_li_dan_ji" ReturnUse="30" />
+		<Item id="107" gameMode="5" tableFilter="1" defaultSeatMode="1" name="4399国战" ReturnUse="30" />
+		<Item id="108" gameMode="14" tableFilter="1" defaultSeatMode="1" name="4399排位" ReturnUse="30" />
+		<Item id="109" gameMode="1" tableFilter="1" defaultSeatMode="1" name="4399身份" ReturnUse="30" />
+		<Item id="111" gameMode="23" tableFilter="1" defaultSeatMode="1" name="龙舟会战" ReturnUse="30" />
+		<Item id="112" gameMode="5" tableFilter="1" defaultSeatMode="1" name="赛事大厅国战" checkEscape="1" ReturnUse="30" />
+		<Item id="113" gameMode="7" tableFilter="5" defaultSeatMode="2" name="欢乐排位" ReturnUse="15" />
+		<Item id="114" gameMode="1" tableFilter="1" defaultSeatMode="1" name="赛事大厅身份" checkEscape="1" ReturnUse="30" />
+		<Item id="115" gameMode="24" tableFilter="1" defaultSeatMode="1" name="合纵抗秦" ReturnUse="30" />
+		<Item id="117" gameMode="25" tableFilter="1" defaultSeatMode="1" name="斗地主" ReturnUse="30" />
+		<Item id="118" gameMode="25" tableFilter="1" defaultSeatMode="1" name="斗地主" ReturnUse="30" />
+		<Item id="119" gameMode="25" tableFilter="1" defaultSeatMode="1" name="斗地主" ReturnUse="0" />
+		<Item id="120" gameMode="7" tableFilter="5" defaultSeatMode="1" name="欢乐新手" ReturnUse="15" />
+		<Item id="121" gameMode="7" tableFilter="5" defaultSeatMode="1" name="欢乐新手" ReturnUse="15" />
+		<Item id="122" gameMode="7" tableFilter="5" defaultSeatMode="1" name="欢乐新手" ReturnUse="15" />
+		<Item id="123" gameMode="26" tableFilter="5" defaultSeatMode="2" name="SCL比赛场" ReturnUse="0" GmPause="1" />
+		<Item id="124" gameMode="27" tableFilter="1" defaultSeatMode="1" name="奇门八阵" ReturnUse="30" />
+		<Item id="125" gameMode="1" tableFilter="1" defaultSeatMode="1" name="六人身份" ReturnUse="30" />
+		<Item id="126" gameMode="1" tableFilter="1" defaultSeatMode="1" name="六人身份" ReturnUse="30" />
+		<Item id="127" gameMode="7" tableFilter="5" defaultSeatMode="1" name="欢乐比赛" ReturnUse="15" GroupChat="1" />
+		<Item id="128" gameMode="26" tableFilter="5" defaultSeatMode="2" name="校园行" ReturnUse="30" />
+		<Item id="129" gameMode="1" tableFilter="1" defaultSeatMode="1" name="身份比赛" ReturnUse="30" />
+		<Item id="130" gameMode="5" tableFilter="1" defaultSeatMode="1" name="国战比赛" ReturnUse="30" />
+		<Item id="131" gameMode="25" tableFilter="1" defaultSeatMode="1" name="智斗比赛" ReturnUse="30" />
+		<Item id="116" gameMode="8" tableFilter="1" defaultSeatMode="2" name="lm_boss_1v3" ReturnUse="30" />
+		<Item id="132" gameMode="7" tableFilter="5" defaultSeatMode="2" name="新欢乐排位" ReturnUse="15" GroupChat="1" FreeDuration="20230818T165959,20230821T235959" />
+		<Item id="133" gameMode="7" tableFilter="5" defaultSeatMode="2" name="排位演武" ReturnUse="15" />
+		<Item id="134" gameMode="26" tableFilter="5" defaultSeatMode="2" name="全民欢乐电竞" ReturnUse="30" />
+		<Item id="135" gameMode="1" tableFilter="1" defaultSeatMode="1" name="全民身份电竞" ReturnUse="30" />
+		<Item id="136" gameMode="28" tableFilter="1" defaultSeatMode="1" name="主公杀" ReturnUse="30" />
+		<Item id="139" gameMode="29" tableFilter="5" defaultSeatMode="1" name="欢乐积分赛" ReturnUse="15" GroupChat="1" />
+		<Item id="140" gameMode="1" tableFilter="1" defaultSeatMode="1" name="活动1V1" ReturnUse="30" />
+		<Item id="141" gameMode="1" tableFilter="1" defaultSeatMode="2" name="五人身份匹配" checkEscape="1" ReturnUse="30" />
+		<Item id="142" gameMode="1" tableFilter="1" defaultSeatMode="2" name="五人身份标准明身份" ReturnUse="30" />
+		<Item id="143" gameMode="7" tableFilter="5" defaultSeatMode="1" name="新欢乐排位" ReturnUse="15" />
+		<Item id="144" gameMode="31" tableFilter="5" defaultSeatMode="2" name="活动场3V3" checkEscape="1" ReturnUse="30" GroupChat="1" />
+		<Item id="145" gameMode="31" tableFilter="5" defaultSeatMode="2" name="3V3房间" checkEscape="1" ReturnUse="30" />
+		<Item id="147" gameMode="32" tableFilter="1" defaultSeatMode="1" name="武将试炼" ReturnUse="15" />
+		<Item id="148" gameMode="33" tableFilter="1" defaultSeatMode="1" name="斗地主" checkEscape="1" ReturnUse="15" GroupChat="1" />
+		<Item id="151" gameMode="34" tableFilter="1" defaultSeatMode="1" name="LOG玩法" ReturnUse="30" />
+		<Item id="149" gameMode="33" tableFilter="1" defaultSeatMode="1" name="斗地主" checkEscape="1" ReturnUse="15" GroupChat="1" />
+		<Item id="152" gameMode="29" tableFilter="5" defaultSeatMode="1" name="积分赛练习" GroupChat="1" />
+		<Item id="153" gameMode="26" tableFilter="5" defaultSeatMode="2" name="scl练习" invitecode="1" />
+		<Item id="154" gameMode="33" tableFilter="5" defaultSeatMode="1" name="斗地主练习" invitecode="1" />
+		<Item id="155" gameMode="35" tableFilter="2" defaultSeatMode="1" name="构筑1V1" ReturnUse="15" />
+		<Item id="156" gameMode="1" tableFilter="1" defaultSeatMode="1" name="lm_figure_8_junzheng" checkEscape="1" ReturnUse="30" />
+		<Item id="157" gameMode="36" tableFilter="5" defaultSeatMode="1" name="战队斗地主" />
+		<Item id="158" gameMode="39" tableFilter="1" defaultSeatMode="0" name="卧龙工坊" ReturnUse="10" GroupChat="1" />
+		<Item id="159" gameMode="35" tableFilter="2" defaultSeatMode="1" name="个人挑战1V1" />
+		<Item id="160" gameMode="37" tableFilter="2" defaultSeatMode="1" name="单骑无双" />
+		<Item id="161" gameMode="33" tableFilter="5" defaultSeatMode="1" name="斗地主练习" invitecode="1" />
+		<Item id="162" gameMode="33" tableFilter="5" defaultSeatMode="1" name="斗地主" invitecode="1" />
+		<Item id="163" gameMode="26" tableFilter="5" defaultSeatMode="2" name="淘汰赛" ReturnUse="30" />
+		<Item id="164" gameMode="34" tableFilter="1" defaultSeatMode="1" name="LOG玩法入侵" ReturnUse="30" />
+		<Item id="165" gameMode="38" tableFilter="2" defaultSeatMode="1" name="单骑无双王中王" />
+	</LabelModel>
+	<modes>
+		<!--
+			Model	-	模式ID
+			ModelDesc	-	模式名称0
+			NewModelGrade	-	一级模式
+			NewModelClass	-	所示大类场
+			m_NewModelGrade	-	移动一级模式
+			m_NewModelGrade	-	移动一级模式
+			m_NewModelClass	-	移动所示大类场
+			m_NewModelClass	-	移动所示大类场
+				-	辅助
+				-	备注
+			skinChoice	-	控制开局时是否展示皮肤选择弹窗
+1=不显示
+0或不填=显示
+			ModelDesc2	-	模式简称
+			Section	-	模式频道id
+			SectionDesc	-	模式频道名称
+			rank	-	显示排序
+			ToShowDate	-	模式显示时间
+			u3dToShowDate	-	u3d模式显示时间
+			EtrLevelMin	-	条件-等级限制
+			m_EtrLevelMin	-	移动端等级限制
+			openGen	-	开启将灯
+
+			openOff	-	开启官阶
+			openshuliandu	-	开启熟练度等级
+			opentaopao	-	开启逃跑率%
+			OpenGeneralCountReq	-	条件-需要武将数
+			generalLimts	-	条件-进入武将限制
+			OnlyEnterWithSuperItem	-	条件-准入道具
+			SpellList	-	包含的锦囊类型
+			vip	-	条件-vip等级
+			LookOnOptions	-	是否允许旁观-仅限好友入口进入
+			dianjiang	-	是否可点将
+1=可点
+0 或不填 =不可点
+			defaultdianjiang	-	默认是否点将
+0=或不填表示默认不点
+1=默认点将
+			banGoods	-	是否可禁道具
+1=可禁
+0 或不填 =不可禁
+			defaultbanGoods	-	默认是否禁道具
+0=或不填表示默认不禁
+1=默认禁
+			expandCard	-	支持的卡牌拓展
+			expandGeneral	-	支持的武将拓展
+			PlayCardDesc	-	卡牌说明
+移动端二级界面
+			yanWuModel	-	对应演武场
+；前是 演武场的modelid和section
+；后是其对应的extype
+			usingGoods	-	允许使用的道具
+			replaceTimes	-	最大换将次数
+			TableUserCntMin	-	开始游戏最少人数
+			TableUserCntMax	-	本局最多人数
+			UseRobotFlag	-	允许添加机器人类型
+			battle_time	-	创建房间时的默认出手时间
+			battle_wuxiekeji	-	局内:无懈可击时间
+			battle_tao	-	局内:求桃时间
+			battle_qipai	-	局内:弃牌时间
+			battle_guanxing	-	局内:观星时间
+			ModelBelongDesc	-	模式右侧的文字说明
+			Mode_tips	-	h5-模式页签tips文字
+			Mode_tips1	-	H5移动-模式页签描述文字
+			Mode_tips3	-	U3D-模式页签描述文字
+|为标题，&换行
+			Mode_tips2	-	H5移动-界面下方模式简介
+			Mode_tips2	-	u3d移动-界面下方模式简介
+			openTips	-	H5移动-进入武将限制描述
+			gameExNew	-	模式武将扩展
+3.24开发 代替原有的gameExMin和Max
+			gameExMin	-	扩展包区间
+			gameExMax	-	扩展包区间
+			PlayCard_ExType	-	可使用卡牌
+			GeneralCard_ExType	-	可使用武将扩展包
+			Set_lv	-	设置-是否有等级下限
+			Set_escape	-	设置-是否有逃跑率
+			Set_Pattern	-	设置-模式选择
+			Set_SelType	-	设置选将模式（0标准选将，1随机选将）
+			Set_neijian	-	设置-是否有双内奸
+			surrender	-	是否可以投降
+			surrender_time	-	投降时间限制
+			KeyCardOpen	-	模式支持手牌构筑
+			BanGenerals	-	客户端禁将（除开服务端的禁将外还需要额外禁止的)
+			GeneralOpen	-	武将白名单（scl全选模式必须配这里）
+			GeneralFree	-	免费武将（转到通用禁将新配置中）
+			aiTimeHalfMax	-	托管奖励减半时间
+			aiTimeMax	-	托管奖励全无的时间
+			TrusteeAiManual	-	是否支持小杀助手,1=支持
+			RelatedModel	-	相关联模式ID
+			activityValueCondition	-	虎牢关体力越卖越贵
+			ResourceID	-	入口素材ID
+			GeneralList	-	将池
+			wallPapperUseId	-	初始时默认背景图
+			DeckAvailable	-	SCL牌堆顶的牌，1可见，其他不可见
+			BanNum	-	BP模式：ban将数
+			PickNum	-	BP模式：选将数
+			AllBp	-	BP模式：全局BP开关
+			BPExtraTime	-	BP额外时间
+			ExtraTime	-	出牌额外时间
+			lvdiff	-	快速开始熟练度差异绝对值小于等于值分段
+			autoSearch	-	是否开启自动撮合 ，填1支持，仅仅支持pvp房间模式
+			lvai	-	超过xx秒时，自动撮合直接创ai牌局
+			fastlv	-	新手模式4和120玩家<=xx级时快速开始立即成ai房
+			EndPage	-	是否弹出战绩界面
+			SkillAutoSkip	-	是否支持无牌自动跳过询问,1=支持
+			AiAuto	-	不出牌进入托管状态后是否进行AI托管
+			openDesc	-	U3D模式开放说明
+			people	-	是否显示模式人数
+配置不填不显示
+1=显示，0不显示
+			huodongchang	-	U3D显示的活动场
+1=显示，0或不填都不显示，填时间则在时间内开放
+			huodongchang	-	U3D显示的活动场
+1=显示，0或不填都不显示，填时间则在时间内开放
+			ModelAssign	-	额外模式支持（1=排位，2=BP模式）
+			minGenNum	-	最少剩余禁将数量
+			noSupportH5app	-	老移动端不可进入
+			noSupportPC	-	PC不可进入
+			recommendlv	-	推荐标签显示等级区间
+不配置表示不推荐
+			priority	-	推荐标签显示优先级
+不配置表示不推荐
+			daytime	-	每日推荐时间
+多个时间段用分号隔开
+			openDesc2	-	推荐文本
+			showTeamcard	-	展示队友手牌
+			modelGeneralFree	-	模式将池是否免费（1=免费）
+			aiDianjiang	-	模式支持给AI及他人点将
+			Gmcard	-	GM获取牌权限
+			OBView	-	1=开启OB视角录像 2=仅GM可看
+			rateOpen	-	胜率排序显示开关
+			goTo	-	练习模式跳转（model,section)
+			SuggestOpen	-	阵容推荐显示开关
+			showtext	-	活动场推荐页签文本
+			minVersion	-	最小准入版本
+			showGeneral	-	显示，和模式自定义将池关联
+			lockcard	-	模式支持锁定手牌数及锁定时消耗手气卡数量
+			movecardshow	-	模式操作手牌展示开关
+			spOff	-	不允许sp拓展
+			limitGeneralTimes	-	武将限制次数的模式
+			limitTimes	-	公共时间参数：总时间；最小值；每次缩减时间
+			runAwayPunish	-	逃跑当前模式禁赛时间
+			RecordReplayData	-	是否保存录像 1=保持，0或不配 不保存
+			-->
+		<content Model="141" ModelDesc="五人匹配" Section="2" SectionDesc="五人匹配" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108;101001" gameExNew="43,2,3;1,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,44,46" RecordReplayData="1" />
+		<content Model="141" ModelDesc="明身份场" Section="3" SectionDesc="明身份场" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108;101001" gameExNew="43,1" RecordReplayData="1" />
+		<content Model="141" ModelDesc="明身份场" Section="5" SectionDesc="明身份场" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108;101001" gameExNew="43,2,3;1,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,44,46" RecordReplayData="1" />
+		<content Model="141" ModelDesc="五人匹配" Section="4" SectionDesc="五人匹配" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108;101001" gameExNew="43,1" RecordReplayData="1" />
+		<content Model="142" ModelDesc="五人匹配演武" Section="3" SectionDesc="五人匹配演武" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108;101001" gameExNew="43,2,3;1,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,44,46" RecordReplayData="1" />
+		<content Model="156" ModelDesc="八人匹配" Section="3" SectionDesc="八人匹配" openGen="2:1" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108;101001" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,43,44,46,50,51,52" RecordReplayData="1" />
+		<content Model="28" ModelDesc="国战" Section="4" SectionDesc="国战" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" SpellList="8,4,5,6,9,10,12,13,85,14,7,2020,2021,2022" vip="3" usingGoods="103401;100301;100321;450101;450131;100331;103431;390108" gameExNew="21,22" limitGeneralTimes="1" RecordReplayData="1" />
+		<content Model="22" ModelDesc="八人至尊" Section="6" SectionDesc="八人至尊" openshuliandu="10" opentaopao="10" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,43,44,46,50,51,52" RecordReplayData="1" />
+		<content Model="22" ModelDesc="八人军争" Section="3" SectionDesc="八人军争" openGen="1:8" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,43,44,46,50,51,52" RecordReplayData="1" />
+		<content Model="74" ModelDesc="身份演武" Section="4" SectionDesc="身份演武" OpenGeneralCountReq="15" SpellList="4,5,6,8,9,10,11,12,13,15,84,85,6000,6003,6004,6005" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108;101001" gameExNew="1,4;2,3,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,43,44,46,50,47,51,52" KeyCardOpen="1" RecordReplayData="1" />
+		<content Model="84" ModelDesc="欢乐" Section="3" SectionDesc="欢乐" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" SpellList="4,5,6,8,9,10,11,12,13,15,84,85,6000,6003,6004,6005" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108;101001" gameExNew="1,4;2,3,5,6,7,8,9,10,11,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,43,44,46,50,47,51,52" KeyCardOpen="1" RecordReplayData="1" />
+		<content Model="85" ModelDesc="国战演武" Section="3" SectionDesc="国战演武" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" SpellList="8,4,5,6,9,10,12,13,85,2020,2021,2022,6000,6003,6004,6005" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108;101001" gameExNew="21;22,48,49" KeyCardOpen="1" limitGeneralTimes="1" RecordReplayData="1" />
+		<content Model="4" ModelDesc="六人标准" Section="3" SectionDesc="六人标准" openGen="1:8" vip="3" usingGoods="390108" gameExNew="1,43" RecordReplayData="1" />
+		<content Model="1" ModelDesc="八人标准" Section="3" SectionDesc="八人标准" OpenGeneralCountReq="15" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108" gameExNew="1,2,4,43" RecordReplayData="1" />
+		<content Model="33" ModelDesc="欢乐" Section="3" SectionDesc="欢乐" openGen="1:8" vip="3" usingGoods="100301;100401;120101;120201;100321;100421;100391;100491;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;103431;390108" gameExNew="1,2,3,4,5,6,7,9,10,11,19,20,25,26,29,30,31,33,34,35,40,43,44,46,50,51,52" RecordReplayData="1" />
+		<content Model="45" ModelDesc="统率" Section="3" SectionDesc="统率" vip="3" usingGoods="103201;103401;390108" gameExNew="18" RecordReplayData="1" />
+		<content Model="30" ModelDesc="新1V1" Section="3" SectionDesc="新1V1" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="270108;103201;103401;450101;450131;103431;390108" gameExNew="23,24" RecordReplayData="1" />
+		<content Model="61" ModelDesc="4V4演武" Section="3" SectionDesc="4V4演武" vip="3" gameExNew="1,4,5,6,7,8,9,10,11,14,15,16,17,20,25,26,29,30,31,33,34,35,44,43,2,3" RecordReplayData="1" />
+		<content Model="22" ModelDesc="身份老友房" Section="11" SectionDesc="身份老友" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108" gameExNew="1;2,3,4,5,6,7,10,11,20,25,26,29,30,31,33,43" Gmcard="1" RecordReplayData="1" />
+		<content Model="28" ModelDesc="国战老友房" Section="11" SectionDesc="国战老友" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" SpellList="8,4,5,6,9,10,12,13,85,14,7,2020,2021,2022" vip="3" usingGoods="103401;100301;100321;450101;450131;100331;103431;390108" gameExNew="21,22" showTeamcard="1" RecordReplayData="1" />
+		<content Model="33" ModelDesc="欢乐老友房" Section="11" SectionDesc="欢乐老友" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" SpellList="4,5,6,8,9,10,11,12,13,15,84,85,6000,6003,6004,6005" vip="3" usingGoods="100301;100401;120101;120201;100321;100421;100391;100491;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;103431;390108" gameExNew="1;2,3,4,5,6,7,10,11,20,25,26,29,30,31,33,43" RecordReplayData="1" />
+		<content Model="24" ModelDesc="武将练习" Section="2" SectionDesc="初级" vip="1" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,43,44,46,50,51,52" RecordReplayData="1" />
+		<content Model="49" ModelDesc="新手教学" Section="2" SectionDesc="初级" RecordReplayData="1" />
+		<content Model="19" ModelDesc="忠胆英杰" Section="3" SectionDesc="自由" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;100501;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;103401;450101;450131;100231;100331;100431;180031;100531;103431" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,19,20,25,26,29,30,43,44,46,50" RecordReplayData="1" />
+		<content Model="38" ModelDesc="十殿阎罗" Section="3" SectionDesc="十殿阎罗" openGen="2:1" vip="3" usingGoods="100301;100401;100391;100491;100501;270108;120101;120201;100321;100421;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;450101;450131;100331;100431;100531;103431;390108;390101;390103;390107;390105;390197" gameExNew="1,2,3,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,43,44,46,50,51,52" RecordReplayData="1" />
+		<content Model="39" ModelDesc="剑阁决战" Section="3" SectionDesc="剑阁决战" openGen="2:1" SpellList="4,5,6,8,9,10,11,12,13,15,84,85,6000,6003,6004,6005" vip="3" usingGoods="100301;100401;100291;100391;100491;100501;270108;120201;100321;100421;120301;120401;120501;120601;103401;450101;450131;100331;100431;100531;103431;390108;390101;390103;390107;390108;390105" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,43,44,46,50,51,52" RecordReplayData="1" />
+		<content Model="47" ModelDesc="长坂坡" Section="3" SectionDesc="自由" vip="1" usingGoods="100201;100401;100291;100491;100501;180001;270108;120101;120201;100221;100421;180021;103401;450101;450131;100231;100431;180031;100531;103431;101001" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,43,44,46,50" runAwayPunish="1" RecordReplayData="1" />
+		<content Model="78" ModelDesc="虎牢关" Section="4" SectionDesc="虎牢关" openGen="2:1" vip="3" usingGoods="1410501;390101;390103;390108;390107;390105;450101" gameExNew="1,2,3,4,5,6,7,8,9,10,11,13,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50,40" RecordReplayData="1" />
+		<content Model="86" ModelDesc="年兽2019" Section="3" SectionDesc="自由" openGen="2:1" vip="3" usingGoods="100301;100401;100391;100491;270108;100321;100421;103401;450101;450131;100331;100431;390108" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,43,44,46" runAwayPunish="1" RecordReplayData="1" />
+		<content Model="88" ModelDesc="龙舟争渡" Section="2" SectionDesc="欢乐成双" openGen="2:1" vip="3" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,43,44,46,50" runAwayPunish="1" RecordReplayData="1" />
+		<content Model="91" ModelDesc="神武再世" Section="3" SectionDesc="神武再世" openGen="2:1" vip="3" usingGoods="111701;390101;390101;390103;390107;390108;390105;120101;120201;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;121301;121401;100401;100421;100431;100491;100501;270108;103401;450101;450131;100531;103431" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,43,44,46,50,51,52" limitGeneralTimes="1" RecordReplayData="1" />
+		<content Model="92" ModelDesc="小杀挑战赛" Section="3" SectionDesc="欢乐成双" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="100301;100401;120101;120201;100321;100421;100391;100491;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;103431;390108" gameExNew="1,2,3,4,5,6,7,9,10,11,19,20,25,26,29,30,31,33,34,43,44,46,50" movecardshow="1" limitGeneralTimes="1" RecordReplayData="1" />
+		<content Model="98" ModelDesc="诸侯伐董" Section="3" SectionDesc="自由" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,43,44,46,50" limitGeneralTimes="1" RecordReplayData="1" />
+		<content Model="99" ModelDesc="官渡之战" Section="3" SectionDesc="自由" openGen="2:1" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="100301;100321" gameExNew="47" runAwayPunish="1" RecordReplayData="1" />
+		<content Model="100" ModelDesc="祭天祀地" Section="3" SectionDesc="自由" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;100501;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;103401;450101;450131;100231;100331;100431;180031;100531;103431" RecordReplayData="1" />
+		<content Model="106" ModelDesc="千里单骑" Section="1" SectionDesc="千里单骑" openGen="2:1" SpellList="4,5,6,8,9,10,11,12,13,15,84,85,6000,6003,6004,6005" vip="3" usingGoods="100201;100401;100291;100491;100501;180001;270108;120101;120201;100221;100421;180021;103401;450101;450131;100231;100431;180031;100531;103431;101001" gameExNew="1,2,3,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,43,44,46,50" movecardshow="1" RecordReplayData="1" />
+		<content Model="106" ModelDesc="千里单骑" Section="2" SectionDesc="千里单骑" openGen="2:1" SpellList="4,5,6,8,9,10,11,12,13,15,84,85,6000,6003,6004,6005" vip="3" usingGoods="100201;100401;100291;100491;100501;180001;270108;120101;120201;100221;100421;180021;103401;450101;450131;100231;100431;180031;100531;103431;101001" gameExNew="1,2,3,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,43,44,46,50" RecordReplayData="1" />
+		<content Model="106" ModelDesc="千里单骑" Section="3" SectionDesc="千里单骑" openGen="2:1" SpellList="4,5,6,8,9,10,11,12,13,15,84,85,6000,6003,6004,6005" vip="3" usingGoods="100201;100401;100291;100491;100501;180001;270108;120101;120201;100221;100421;180021;103401;450101;450131;100231;100431;180031;100531;103431;101001" gameExNew="1,2,3,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,43,44,46,50" limitGeneralTimes="1" RecordReplayData="1" />
+		<content Model="111" ModelDesc="龙舟会战" Section="3" SectionDesc="龙舟会战" openGen="2:1" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="100301;100401;100291;100391;100491;100501;270108;120201;100321;100421;120301;120401;120501;120601;103401;450101;450131;100331;100431;100531;103431;390108;390101;390103;390107;390108;390105" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,43,44,46,50,51,52" RecordReplayData="1" />
+		<content Model="116" ModelDesc="年兽大作战" Section="3" SectionDesc="年兽" openGen="2:1" vip="3" usingGoods="100301;100401;100391;100491;100501;270108;120101;120201;100321;100421;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;450101;450131;100331;100431;100531;103431;390108;390101;390103;390107;390105;390197" gameExNew="1,2,3,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,43,44,46,50,51,52" RecordReplayData="1" />
+		<content Model="117" ModelDesc="智斗三国" Section="3" SectionDesc="基础场" openGen="2:1" vip="3" usingGoods="100301;100291;100391;100501;270108;120201;100321;120301;120401;120501;120601;103401;450101;450131;100331;100531;103431;390108;390101;390103;390107;390108;390105" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,43,44,46,50,51,52" RecordReplayData="1" />
+		<content Model="118" ModelDesc="智斗三国" Section="3" SectionDesc="高级场" openGen="2:1" vip="3" usingGoods="100301;100291;100391;100501;270108;120201;100321;120301;120401;120501;120601;103401;450101;450131;100331;100531;103431;390108;390101;390103;390107;390108;390105" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,43,44,46,50,51,52" RecordReplayData="1" />
+		<content Model="119" ModelDesc="智斗三国" Section="3" SectionDesc="练兵场" openGen="2:1" vip="3" usingGoods="100301;100291;100391;100501;270108;120201;100321;120301;120401;120501;120601;103401;450101;450131;100331;100531;103431;390108;390101;390103;390107;390108;390105" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,43,44,46,50,51,52" RecordReplayData="1" />
+		<content Model="124" ModelDesc="奇门八阵" Section="3" SectionDesc="奇门八阵" openGen="2:1" SpellList="4,5,6,8,9,10,11,12,13,15,84,85,6000,6003,6004,6005" vip="3" usingGoods="100301;100401;100291;100391;100491;100501;270108;120201;100321;100421;120301;120401;120501;120601;103401;450101;450131;100331;100431;100531;103431;390108;390101;390103;390107;390108;390105" gameExNew="43,2,3,1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,44,46" RecordReplayData="1" />
+		<content Model="136" ModelDesc="主公杀" Section="3" SectionDesc="基础场" openGen="2:1" vip="3" usingGoods="100301;100401;100391;100491;120101;120201;100321;100421;100331;100431" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50,40" limitGeneralTimes="1" RecordReplayData="1" />
+		<content Model="140" ModelDesc="1v1面杀练习场" Section="4" SectionDesc="练习场" openGen="2:1" SpellList="4,5,6,8,9,10,11,12,13,15,84,85,6000,6003,6004,6005" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108;101001" gameExNew="43,2,3;1,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,44,46" RecordReplayData="1" />
+		<content Model="144" ModelDesc="欢乐33" Section="2" SectionDesc="欢乐33" openGen="2:1" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108;101001" gameExNew="1;2,3,4,5,6,7,10,11,20,25,26,29,30,31,33,43" RecordReplayData="1" />
+		<content Model="147" ModelDesc="界将突破" Section="2" SectionDesc="界将突破" usingGoods="100301;100401;100391;100491;120101;120201;100321;100421;100331;100431" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50" RecordReplayData="1" />
+		<content Model="147" ModelDesc="武将试炼" Section="3" SectionDesc="武将试炼" usingGoods="100301;100401;100391;100491;120101;120201;100321;100421;100331;100431" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50,40" RecordReplayData="1" />
+		<content Model="148" ModelDesc="斗地主" Section="3" SectionDesc="基础场" openGen="2:1" vip="3" usingGoods="100301;100401;100391;100491;120101;120201;100321;100421;100331;100431" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50,40,51,52" lockcard="2,4" RecordReplayData="1" />
+		<content Model="149" ModelDesc="斗地主" Section="3" SectionDesc="高级场" openGen="2:1" vip="3" usingGoods="100301;100401;100391;100491;120101;120201;100321;100421;100331;100431" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50,40,51,52" RecordReplayData="1" />
+		<content Model="151" ModelDesc="山河图" Section="3" SectionDesc="山河图" SpellList="4,5,6,8,9,10,11,12,13,15,84,85,6000,6003,6004,6005" vip="3" usingGoods="100301;100401;100291;100391;100491;100501;270108;120201;100321;100421;120301;120401;120501;120601;103401;450101;450131;100331;100431;100531;103431;390108;390101;390103;390107;390108;390105" gameExNew="43,2,3,1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,44,46,50,51,52" RecordReplayData="1" />
+		<content Model="164" ModelDesc="山河图" Section="3" SectionDesc="山河图" SpellList="4,5,6,8,9,10,11,12,13,15,84,85,6000,6003,6004,6005" vip="3" usingGoods="100301;100401;100291;100391;100491;100501;270108;120201;100321;100421;120301;120401;120501;120601;103401;450101;450131;100331;100431;100531;103431;390108;390101;390103;390107;390108;390105" gameExNew="43,2,3,1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,44,46,50,51,52" RecordReplayData="1" />
+		<content Model="158" ModelDesc="卧龙工坊" Section="3" SectionDesc="卧龙工坊" vip="0" usingGoods="100301;100401;100291;100391;100491;100501;270108;120201;100321;100421;120301;120401;120501;120601;103401;450101;450131;100331;100431;100531;103431;390108;390101;390103;390107;390108;390105" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,43,44,46,50,51,52" RecordReplayData="1" />
+		<content Model="160" ModelDesc="单骑无双" Section="2" SectionDesc="竞技场" openGen="2:1" vip="3" usingGoods="100301;100401;100391;100491;120101;120201;100321;100421;100331;100431" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50,40,51,52" spOff="1" RecordReplayData="1" />
+		<content Model="160" ModelDesc="单骑无双" Section="3" SectionDesc="练习场" openGen="2:1" vip="3" usingGoods="100301;100401;100391;100491;120101;120201;100321;100421;100331;100431" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50,40,51,52" spOff="1" RecordReplayData="1" />
+		<content Model="165" ModelDesc="单骑无双" Section="2" SectionDesc="练习场" openGen="2:1" vip="3" usingGoods="100301;100401;100391;100491;120101;120201;100321;100421;100331;100431" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50,40,51,52" spOff="1" RecordReplayData="1" />
+		<content Model="161" ModelDesc="斗地主练习" Section="3" SectionDesc="斗地主特训" openGen="2:1" vip="3" usingGoods="100301;100401;100391;100491;120101;120201;100321;100421;100331;100431" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50,40,51,52" RecordReplayData="1" />
+		<content Model="162" ModelDesc="斗地主" Section="3" SectionDesc="基础场" openGen="2:1" vip="3" usingGoods="100301;100401;100391;100491;120101;120201;100321;100421;100331;100431" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50,40,51,52" RecordReplayData="1" />
+		<content Model="10" ModelDesc="高校联赛" Section="3" SectionDesc="4V4" OnlyEnterWithSuperItem="155908" vip="1" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,43,44,46,50" RecordReplayData="1" />
+		<content Model="55" ModelDesc="WCA周预赛" Section="0" SectionDesc="0" RecordReplayData="1" />
+		<content Model="80" ModelDesc="王战排位" Section="3" SectionDesc="王战排位" OnlyEnterWithSuperItem="155908" vip="1" usingGoods="390101;390103;390107;390108;390105" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50" RecordReplayData="1" />
+		<content Model="89" ModelDesc="王战统率" Section="3" SectionDesc="王战统率" OnlyEnterWithSuperItem="155908" vip="1" usingGoods="390101;390103;390107;390108;390105" gameExNew="18" RecordReplayData="1" />
+		<content Model="90" ModelDesc="国战势备篇" Section="4" SectionDesc="国战势备篇" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="103401;100301;100321;450101;450131;100331;103431" gameExNew="21,22,32" RecordReplayData="1" />
+		<content Model="97" ModelDesc="社区比赛专区" Section="3" SectionDesc="社区比赛专区" OnlyEnterWithSuperItem="155407;155408" vip="1" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,43,44,46,50" RecordReplayData="1" />
+		<content Model="101" ModelDesc="大润发比赛" Section="4" SectionDesc="国战" OnlyEnterWithSuperItem="155908" vip="3" gameExNew="21,22" RecordReplayData="1" />
+		<content Model="103" ModelDesc="高校联赛" Section="3" SectionDesc="身份" OnlyEnterWithSuperItem="155908" vip="3" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50" RecordReplayData="1" />
+		<content Model="107" ModelDesc="4399国战" Section="4" SectionDesc="国战" OnlyEnterWithSuperItem="155908" vip="3" gameExNew="21,22" RecordReplayData="1" />
+		<content Model="108" ModelDesc="4399排位" Section="3" SectionDesc="4399排位" OnlyEnterWithSuperItem="155908" vip="1" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50" RecordReplayData="1" />
+		<content Model="109" ModelDesc="4399身份" Section="3" SectionDesc="身份" OnlyEnterWithSuperItem="155908" vip="3" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,44,43,46" RecordReplayData="1" />
+		<content Model="123" ModelDesc="SCL比赛" Section="3" SectionDesc="SCL欢乐" OnlyEnterWithSuperItem="155908" vip="1" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;100231;100331;100431;180031;100531;101001" gameExNew="1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,44,46,43,40,50,2,3" RecordReplayData="1" />
+		<content Model="123" ModelDesc="SCL比赛" Section="4" SectionDesc="SCL欢乐" vip="1" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;100231;100331;100431;180031;100531;101001" gameExNew="1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,44,46,43,40,50,2,3" BPExtraTime="60" ExtraTime="20" RecordReplayData="1" />
+		<content Model="128" ModelDesc="校园行" Section="3" SectionDesc="校园行" OnlyEnterWithSuperItem="155908" vip="1" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108;101001" gameExNew="1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,44,46,47" RecordReplayData="1" />
+		<content Model="134" ModelDesc="王战精英赛" Section="3" SectionDesc="王战精英赛" OnlyEnterWithSuperItem="155908" vip="1" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;100231;100331;100431;180031;100531;101001" gameExNew="1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,44,46,43,40,2,3" RecordReplayData="1" />
+		<content Model="134" ModelDesc="王战精英赛" Section="4" SectionDesc="王战精英赛" OnlyEnterWithSuperItem="155908" vip="1" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;100231;100331;100431;180031;100531;101001" gameExNew="1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,44,46,43,40,50,2,3" BPExtraTime="60" ExtraTime="60" RecordReplayData="1" />
+		<content Model="135" ModelDesc="身份大师赛" Section="3" SectionDesc="全民身份电竞" OnlyEnterWithSuperItem="156008" vip="1" usingGoods="450101;450131;390108" gameExNew="1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,44,46,43,40,2,3" RecordReplayData="1" />
+		<content Model="157" ModelDesc="战队斗地主" Section="3" SectionDesc="战队斗地主" vip="1" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;100231;100331;100431;180031;100531;101001" replaceTimes="2" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50,40,51,52" ExtraTime="20" RecordReplayData="1" />
+		<content Model="163" ModelDesc="精英淘汰赛" Section="3" SectionDesc="精英淘汰赛" OnlyEnterWithSuperItem="155908" vip="1" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;100231;100331;100431;180031;100531;101001" gameExNew="1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,44,46,43,40,50,2,3" BPExtraTime="60" ExtraTime="60" RecordReplayData="1" />
+		<content Model="121" ModelDesc="欢乐新手" Section="3" SectionDesc="欢乐排位" vip="3" gameExNew="1,43" RecordReplayData="1" />
+		<content Model="122" ModelDesc="欢乐新手" Section="3" SectionDesc="欢乐排位" vip="3" usingGoods="390101;390103;390107;390108;390105" gameExNew="1,43" RecordReplayData="1" />
+		<content Model="76" ModelDesc="统率排位" Section="2" SectionDesc="统率三军" vip="3" usingGoods="270108;103201;103401;103431" gameExNew="18" RecordReplayData="1" />
+		<content Model="113" ModelDesc="欢乐排位" Section="2" SectionDesc="欢乐排位" vip="1" usingGoods="390101;390103;390107;390108;390105" gameExNew="1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,44,46,43,2,3,40" RecordReplayData="1" />
+		<content Model="132" ModelDesc="排位赛" Section="3" SectionDesc="欢乐排位" vip="1" usingGoods="390101;390103;390107;390108;390105" gameExNew="1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,44,46,43,2,3,40,50,51,52" showTeamcard="1" RecordReplayData="1" />
+		<content Model="133" ModelDesc="排位演武" Section="3" SectionDesc="排位演武" vip="1" usingGoods="390101;390103;390107;390108;390105" gameExNew="1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,44,46,43,2,3,40,50" showTeamcard="1" RecordReplayData="1" />
+		<content Model="143" ModelDesc="排位赛" Section="3" SectionDesc="欢乐排位" vip="1" usingGoods="390101;390103;390107;390108;390105" gameExNew="1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,44,46,43,2,3,40,50" RecordReplayData="1" />
+		<content Model="152" ModelDesc="王战特训" Section="3" SectionDesc="王战特训" vip="1" gameExNew="1,2,3,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,50,46,40" RecordReplayData="1" />
+		<content Model="152" ModelDesc="王战特训" Section="4" SectionDesc="王战特训" vip="1" gameExNew="1,2,3,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,50,46,40" RecordReplayData="1" />
+		<content Model="152" ModelDesc="王战特训" Section="5" SectionDesc="王战特训" vip="1" gameExNew="1,2,3,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,50,46,40" RecordReplayData="1" />
+		<content Model="153" ModelDesc="SCL特训" Section="3" SectionDesc="SCL特训" vip="1" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;100231;100331;100431;180031;100531;101001" gameExNew="1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,44,46,43,40,50,2,3" RecordReplayData="1" />
+		<content Model="153" ModelDesc="SCL特训" Section="4" SectionDesc="SCL特训" vip="1" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;100231;100331;100431;180031;100531;101001" gameExNew="1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,44,46,43,40,50,2,3" RecordReplayData="1" />
+		<content Model="154" ModelDesc="斗地主特训" Section="3" SectionDesc="斗地主特训" vip="1" usingGoods="121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;100231;100331;100431;180031;100531;101001" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50,40" showTeamcard="1" RecordReplayData="1" />
+		<content Model="5" ModelDesc="怀旧" Section="3" SectionDesc="五人标准" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;100501;180001;270108;120101;120201;100221;100321;100421;180021;103401;450101;450131;100231;100331;100431;180031;100531;103431" gameExNew="1,2,4,43" RecordReplayData="1" />
+		<content Model="9" ModelDesc="怀旧1V1" Section="3" SectionDesc="怀旧1V1" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="103201;103401;270108;450101;450131;390108" gameExNew="1,2,3,4,43" showTeamcard="1" RecordReplayData="1" />
+		<content Model="15" ModelDesc="怀旧" Section="3" SectionDesc="神话再临" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108" gameExNew="1,2,3,4,5,6,7,43" showTeamcard="1" RecordReplayData="1" />
+		<content Model="16" ModelDesc="怀旧" Section="3" SectionDesc="五人军争" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,43,44,46,50" showTeamcard="1" RecordReplayData="1" />
+		<content Model="22" ModelDesc="应变身份" Section="5" SectionDesc="应变身份" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" SpellList="4,5,6,8,9,10,11,12,13,15,84,85,6000,6003,6004,6005" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108" gameExNew="1,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,44,46,47,50,51,52" showTeamcard="1" RecordReplayData="1" />
+		<content Model="27" ModelDesc="天梯排位赛" Section="2" SectionDesc="初级" vip="1" gameExNew="1,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,44,46,43,2,3" showTeamcard="1" RecordReplayData="1" />
+		<content Model="28" ModelDesc="应变国战" Section="5" SectionDesc="应变国战" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" SpellList="8,4,5,6,9,10,12,13,85,14,7,2020,2021,2022" vip="3" usingGoods="103401;100301;100321;450101;450131;100331;103431;390108" gameExNew="21,48,49" showTeamcard="1" RecordReplayData="1" />
+		<content Model="31" ModelDesc="新手1v1场" Section="2" SectionDesc="新手1v1场" vip="1" gameExNew="1,43" showTeamcard="1" RecordReplayData="1" />
+		<content Model="33" ModelDesc="应变欢乐" Section="4" SectionDesc="应变欢乐" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" SpellList="4,5,6,8,9,10,11,12,13,15,84,85,6000,6003,6004,6005" vip="3" usingGoods="100301;100401;120101;120201;100321;100421;100391;100491;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;103431;390108" gameExNew="1,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,44,46,47,51,52" showTeamcard="1" movecardshow="1" RecordReplayData="1" />
+		<content Model="34" ModelDesc="天梯新1v1场" Section="2" SectionDesc="天梯新1v1场" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="1" usingGoods="270108" gameExNew="23,24" showTeamcard="1" movecardshow="1" RecordReplayData="1" />
+		<content Model="46" ModelDesc="新手游戏教学" Section="2" SectionDesc="初级" vip="1" gameExNew="1,43" RecordReplayData="1" />
+		<content Model="46" ModelDesc="新手游戏教学" Section="3" SectionDesc="初级" vip="1" gameExNew="1,43" RecordReplayData="1" />
+		<content Model="46" ModelDesc="新手游戏教学" Section="4" SectionDesc="初级" vip="1" gameExNew="1,43" RecordReplayData="1" />
+		<content Model="46" ModelDesc="新手游戏教学" Section="5" SectionDesc="初级" vip="1" gameExNew="1,43" showTeamcard="1" RecordReplayData="1" />
+		<content Model="46" ModelDesc="新手游戏教学" Section="6" SectionDesc="初级" vip="1" gameExNew="1,43" showTeamcard="1" RecordReplayData="1" />
+		<content Model="48" ModelDesc="同姓之争" Section="3" SectionDesc="自由" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" gameExNew="1,2,3,4,5,6,7,8,9,10,11,19,20,25,26,29,30,31,33,43,44,46,50" RecordReplayData="1" />
+		<content Model="51" ModelDesc="毒战三国杀" Section="3" SectionDesc="自由" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="1" gameExNew="1,2,3,4,5,6,7,8,9,10,11,19,20,25,26,29,30,31,33,43,44,46,50" RecordReplayData="1" />
+		<content Model="53" ModelDesc="66幸运大转盘" Section="3" SectionDesc="自由" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" gameExNew="1,2,3,4,5,6,7,8,9,10,11,19,20,25,26,29,30,31,33,43,44,46,50" RecordReplayData="1" />
+		<content Model="55" ModelDesc="铜雀夺袍" Section="3" SectionDesc="0" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="1" gameExNew="1,2,3,4,5,6,7,8,9,10,11,19,20,25,26,29,30,31,33,43,44,46,50" RecordReplayData="1" />
+		<content Model="56" ModelDesc="白衣渡江" Section="0" SectionDesc="0" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" gameExNew="1,2,3,4,5,6,7,8,9,10,11,19,20,25,26,29,30,31,33,43,44,46,50" RecordReplayData="1" />
+		<content Model="57" ModelDesc="兵精粮足" Section="0" SectionDesc="0" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" gameExNew="1,2,3,4,5,6,7,8,9,10,11,19,20,25,26,29,30,31,33,43,44,46,50" showTeamcard="2" RecordReplayData="1" />
+		<content Model="58" ModelDesc="特殊身份" Section="0" SectionDesc="0" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" gameExNew="1,2,3,4,5,6,7,8,9,10,11,19,20,25,26,29,30,31,33,43,44,46,50" showTeamcard="1" RecordReplayData="1" />
+		<content Model="59" ModelDesc="家族之争" Section="0" SectionDesc="0" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" gameExNew="1,2,3,4,5,6,7,8,9,10,11,19,20,25,26,29,30,31,33,43,44,46,50" showTeamcard="1" RecordReplayData="1" />
+		<content Model="70" ModelDesc="深入敌后" Section="3" SectionDesc="自由" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" gameExNew="23,24" showTeamcard="1" movecardshow="1" RecordReplayData="1" />
+		<content Model="73" ModelDesc="标准" Section="3" SectionDesc="标准" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108;101001" gameExNew="1,2,4,43" showTeamcard="1" movecardshow="1" RecordReplayData="1" />
+		<content Model="74" ModelDesc="军争" Section="3" SectionDesc="军争" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108;101001" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,43,44,46,50,47,51,52" RecordReplayData="1" />
+		<content Model="75" ModelDesc="公会排位赛" Section="2" SectionDesc="比赛场" vip="1" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,43,44,46,50,51,52" RecordReplayData="1" />
+		<content Model="77" ModelDesc="公会争霸战欢乐" Section="2" SectionDesc="欢乐成双" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="100301;100401;120101;120201;100321;100421;120301;120401;120501;120601;103401;100501;100502;100503;100511;100513;450101;450131;103431" gameExNew="1,2,3,4,5,6,7,9,10,11,19,20,25,26,29,30,31,33,34,35,40,43,44,46,50,51,52" showTeamcard="1" RecordReplayData="1" />
+		<content Model="81" ModelDesc="应变回归" Section="3" SectionDesc="自由" SpellList="4,5,6,8,9,10,11,12,13,15,84,85,6000,6003,6004,6005" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108" gameExNew="1,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,47,44,46,50" showTeamcard="1" RecordReplayData="1" />
+		<content Model="82" ModelDesc="国战回归" Section="3" SectionDesc="国战" vip="3" usingGoods="103401;100301;100321;450101;450131;100331;103431;390108" gameExNew="21,48,49" RecordReplayData="1" />
+		<content Model="83" ModelDesc="欢乐回归" Section="3" SectionDesc="欢乐成双" SpellList="4,5,6,8,9,10,11,12,13,15,84,85,6000,6003,6004,6005" vip="3" usingGoods="100301;100401;120101;120201;100321;100421;100391;100491;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;103431;390108" gameExNew="1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,40,44,46,47,50" RecordReplayData="1" />
+		<content Model="87" ModelDesc="神之试练" Section="2" SectionDesc="神之试炼" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" gameExNew="1,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,47,44,46,50,51,52" showTeamcard="1" RecordReplayData="1" />
+		<content Model="93" ModelDesc="篇章-宛城之战" Section="3" SectionDesc="自由" vip="1" showTeamcard="1" RecordReplayData="1" />
+		<content Model="94" ModelDesc="篇章-赤壁之战" Section="3" SectionDesc="自由" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;100501;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;103401;450101;450131;100231;100331;100431;180031;100531;103431" showTeamcard="1" RecordReplayData="1" />
+		<content Model="95" ModelDesc="篇章-樊城之战" Section="3" SectionDesc="国战" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="103401;100301;100321;450101;450131;100331;103431" showTeamcard="1" RecordReplayData="1" />
+		<content Model="96" ModelDesc="篇章-世子之争" Section="3" SectionDesc="欢乐成双" generalLimts="0;1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,212" vip="3" usingGoods="100301;100401;120101;120201;100321;100421;120301;120401;120501;120601;103401;100501;100502;100503;100511;100513;450101;450131;103431" showTeamcard="1" RecordReplayData="1" />
+		<content Model="104" ModelDesc="高校联赛" Section="3" SectionDesc="国战" OnlyEnterWithSuperItem="155908" vip="3" gameExNew="21,22" showTeamcard="1" lockcard="3" spOff="1" limitTimes="60;8;1" RecordReplayData="1" />
+		<content Model="112" ModelDesc="赛事大厅国战" Section="3" SectionDesc="赛事大厅" gameExNew="21,22" showTeamcard="1" spOff="1" RecordReplayData="1" />
+		<content Model="114" ModelDesc="赛事大厅身份" Section="3" SectionDesc="赛事大厅" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,43,44,46,50" RecordReplayData="1" />
+		<content Model="120" ModelDesc="欢乐新手" Section="3" SectionDesc="欢乐新手" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108;101001" gameExNew="1,43" RecordReplayData="1" />
+		<content Model="125" ModelDesc="六人新手" Section="3" SectionDesc="六人新手" vip="3" usingGoods="390108" gameExNew="1,43" showTeamcard="1" Gmcard="0" RecordReplayData="1" />
+		<content Model="126" ModelDesc="六人新手" Section="3" SectionDesc="六人新手" vip="3" usingGoods="390108" gameExNew="1,43" showTeamcard="1" Gmcard="1" RecordReplayData="1" />
+		<content Model="127" ModelDesc="欢乐比赛" Section="3" SectionDesc="欢乐比赛" vip="1" gameExNew="1,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,44,46,47,50" showTeamcard="1" Gmcard="1" RecordReplayData="1" />
+		<content Model="127" ModelDesc="欢乐比赛" Section="4" SectionDesc="欢乐比赛军争" vip="1" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50" showTeamcard="1" Gmcard="1" RecordReplayData="1" />
+		<content Model="129" ModelDesc="身份比赛" Section="3" SectionDesc="身份比赛应变" vip="1" gameExNew="1,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,47,43,44,46,50" showTeamcard="1" Gmcard="1" RecordReplayData="1" />
+		<content Model="129" ModelDesc="身份比赛" Section="4" SectionDesc="身份比赛军争" vip="1" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50" showTeamcard="1" Gmcard="1" RecordReplayData="1" />
+		<content Model="130" ModelDesc="国战比赛" Section="3" SectionDesc="国战比赛应变" vip="1" gameExNew="21,48,49" RecordReplayData="1" />
+		<content Model="130" ModelDesc="国战比赛" Section="4" SectionDesc="国战比赛军争" vip="1" gameExNew="21,22" RecordReplayData="1" />
+		<content Model="131" ModelDesc="智斗比赛" Section="3" SectionDesc="智斗比赛" vip="1" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,27,29,30,31,33,34,35,40,43,44,46,50,51,52" showTeamcard="1" movecardshow="1" RecordReplayData="1" />
+		<content Model="139" ModelDesc="王战海选赛" Section="3" SectionDesc="欢乐积分赛" vip="1" gameExNew="1,2,3,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,50,46,40,51,52" BPExtraTime="60" ExtraTime="60" RecordReplayData="1" />
+		<content Model="139" ModelDesc="欢乐积分赛" Section="4" SectionDesc="欢乐积分赛" vip="1" gameExNew="1,2,3,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,50,46,40,51,52" RecordReplayData="1" />
+		<content Model="139" ModelDesc="欢乐积分赛" Section="5" SectionDesc="欢乐积分赛" vip="1" gameExNew="1,2,3,4,5,6,7,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,50,46,40,51,52" showTeamcard="1" spOff="1" runAwayPunish="600,1200,2400,7200" RecordReplayData="1" />
+		<content Model="145" ModelDesc="33老友房" Section="11" SectionDesc="33老友房" vip="3" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108;101001" gameExNew="1;2,3,4,5,6,7,10,11,20,25,26,29,30,31,33,43" showTeamcard="1" spOff="1" RecordReplayData="1" />
+		<content Model="155" ModelDesc="构筑1V1" Section="2" SectionDesc="构筑1V1" vip="1" usingGoods="100401;100491;100421;100431" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50,40,51,52" showTeamcard="1" spOff="1" RecordReplayData="1" />
+		<content Model="155" ModelDesc="1V1练习场" Section="3" SectionDesc="1v1练习场" vip="1" usingGoods="100201;100301;100401;100291;100391;100491;180001;270108;120101;120201;100221;100321;100421;180021;120301;120401;120501;120601;120701;120801;120901;121001;121101;121201;122601;122701;122901;103401;100501;100502;100503;100511;100513;100517;450101;450131;100231;100331;100431;180031;100531;390108" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50,40,51,52" KeyCardOpen="1" showTeamcard="1" lockcard="3" spOff="1" RecordReplayData="1" />
+		<content Model="159" ModelDesc="个人挑战1V1" Section="2" SectionDesc="个人挑战" vip="1" usingGoods="100401;100491;100421;100431;100301" gameExNew="1,2,3,4,5,6,7,8,9,10,11,14,15,16,17,19,20,25,26,29,30,31,33,34,35,43,44,46,50,40,51,52" showTeamcard="1" movecardshow="1" RecordReplayData="1" />
+	</modes>
+	<!--
+		id	-	关将方案（10000以上表示不支持关将）
+				-	备注
+			Name	-	页签
+			GeneralList	-	对应武将
+		-->
+	<ModelGeneralCustomize id="1" Name="标准版" GeneralList="23,15,17,20,14,9" />
+	<ModelGeneralCustomize id="2" Name="神话再临" GeneralList="224,225,220,221,202,203,206,39,100,48,52,28,34,35,51,44,402" />
+	<ModelGeneralCustomize id="3" Name="界限突破" GeneralList="319,462,484,480,316,311,313,471,526,515,305,308,310" />
+	<ModelGeneralCustomize id="4" Name="璀璨星河" GeneralList="516,519,116,499,557,466,570,130,554,422,468,502,598,569" />
+	<ModelGeneralCustomize id="5" Name="其他" GeneralList="600,158,460,586,491,349,568,426,7019,105,350,381,325,175,182,173,181" />
+	<!--
+		id	-	关将方案（10000以上表示不支持关将）
+				-	备注
+				-	一键禁将使用的胜率数据源id
+				-	一键禁将使用的使用率战绩ID列表
+			ClassifyCustomize	-	自定义将池
+			gamemodel	-	对应模式
+model,section;
+			Extype	-	拓展包
+			GeneralList	-	若为独立将池ID需要配置将池列表
+			BFGeneralList	-	模式标风武将
+			MinGeneralOpen	-	最少启用武将
+			CantCloseList	-	不可关闭武将id
+			InheritModel	-	继承原关将ModelID
+			BanGeneral	-	Extype中不显示在该将池列表的武将ID
+			DataOpen	-	赛事数据开关 1=打开
+		-->
+	<ModelGeneral id="1" gamemodel="22,3;22,6;22,5;74,3;74,4;156,3" Extype="1,4,5,6,7,8,14,15,16,17,34,35,10,11,20,25,29,30,31,33,26,9,44,46,40,50" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="48" InheritModel="1" />
+	<ModelGeneral id="2" gamemodel="136,3" GeneralList="166,44,40,18,158,24,314,7019,505,408,369,497,305,510,300,488,503,168,504,329,464,303,352,113,392,485,467,205,457,179,443,312,453,487,498,323,501,406,492,418,344,7007,495,7014,224,127,128,477,401,137,313,358,155,431,307,484,414,463,153,462,350,480,124,330,26,316,49,365,186,111,221,483,437,389,55,7003,370,357,445,479,35,426,123,108,50,185,436,331,157,458,419,379,476,410,460,151,100,301,54,167,119,57,39,469,308,346,448,324,349,126,34,373,20,304,423,184,183,203,371,441,471,315,202,116,361,7018,115,103,333,328,428,220,48,409,326,310,427,25,131,38,161,16,311,362,30,440,444,43,439,107,376,442,215,52,474,348,46,319,342,175,106,446,374,299,451,188,332,450,433,7,506,47,21,4,452,347,335,317,53,12,28,6,403,9,214,5,17,19,14,8,41,338,15,3,212,2,1,23,11,478,475,481,416,415,201,507,500,435,432,327,364,180,411,421,121,320,434,170,162,382,7015,152,508,404,422,181,386,385,7000,7001,7002,7009,7013,7016,7017,7005,7006,368,164,156,110,187,139,363,176,438,499,73,455,129,378,7004,7008,430,345,425,491,351,353,417,511,512,513,514,515,518,519,520,521,7020,526,502,517,529,226,522,516,531,533,536,525,227,509,540,61,356,354,546,542,528,524,494,493,489,486,482,473,472,468" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="60" InheritModel="28" />
+	<ModelGeneral id="3" gamemodel="33,3;33,4;84,3" Extype="1,4,5,6,7,8,14,15,16,17,34,35,10,11,20,25,29,30,31,33,26,9,44,46,40,50" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="28" InheritModel="7" BanGeneral="56,31,100,215,106,74,110,363,386,355,95,96,201,202,203,204,205,206,207,208,220,221,222,223,224,225" />
+	<ModelGeneral id="4" gamemodel="85,3;28,4;28,5" Extype="21,49" BFGeneralList="2000,2001,2002,2003,2004,2005,2006,2007,2010,2015,2016,2017,2018,2019,2020,2021,2022,2030,2031,2032,2033,2034,2035,2036,2037,2041,2045,2046,2047,2052" MinGeneralOpen="32" InheritModel="5" />
+	<ModelGeneral id="5" gamemodel="76,2;45,3" Extype="18" BFGeneralList="1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014,105,1016,1017,1018,1019,1020,1021,1022,1023,1024,1027,1028,1029,1032,1033,1036,1051,1063" MinGeneralOpen="12" InheritModel="2" />
+	<ModelGeneral id="6" gamemodel="30,3" Extype="23" BFGeneralList="3001,3002,3003,3004,3005,3006,3007,3008,3009,3010,3012,3013,3014,3015,3016,3017,3018,3019,3024,3025,3026,3027,3028,3029,3030,3031,3035,3036,3037,3034" MinGeneralOpen="10" InheritModel="6" />
+	<ModelGeneral id="7" gamemodel="141,2;142,3" GeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,73,101,103,105,106,107,108,109,111,112,122,124,126,127,128,129,139,151,152,153,155,156,157,158,160,161,162,164,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,210,211,212,214,215,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,361,369,378,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,462,463,470,471,479,480,484,485,486,492,496,505,515,526,61" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="36" InheritModel="30" />
+	<ModelGeneral id="8" gamemodel="148,3;149,3" Extype="1,4,5,6,7,8,14,15,16,17,34,35,10,11,20,25,29,30,31,33,26,9,44,46,40,50" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="72" BanGeneral="13,22,29,30,36,37,42,43,45,50,51,56,57,100,106,110,117,125,135,173,174,186,201,204,210,211,215,304,309,318,363,386,449,454,455,459,466,470,471,490,496,505,74,140,355" />
+	<ModelGeneral id="9" gamemodel="151,3" GeneralList="6,5,2,23,303,302,300,38,463,369,381,401,116,529,410,533,488,528,349,543,319,61,156,212,448,107,158,307,446,500,227,556,516,517,207,325,27,456,220,221,37,454,475,548,574,502,519,544,344,126,512,417,499,506,36,455,429,361" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="30" />
+	<ModelGeneral id="10" gamemodel="151,3" GeneralList="505,384,54,73,452,542,549,224,514,507,524,344,417,573,580,516,430,425,464,506,153,11,394,537,520,472,482,473,539,509,527,307,310,14,72,329,361,446,23,319,8,9,39,48,126,305,182,328,340,308,368,445,458,463,457,560,484,118,494,414,420,442,570,555,487,548,478,500,563,426,351,491,462,581" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="30" />
+	<ModelGeneral id="16" ClassifyCustomize="1,2,3,4,5" gamemodel="151,3" GeneralList="527,158,317,315,392,207,553,430,353,592,594,19,593,7019,23,15,17,20,28,34,160,39,35,105,364,48,51,111,316,311,162,319,187,175,313,173,112,321,164,323,122,129,139,174,176,466,471,462,104,526,484,489,486,574,575,404,422,413,498,467,556,566,113,512,515,570,130,554,497,519,544,426,350,361" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="30" />
+	<ModelGeneral id="10000" gamemodel="1,3" Extype="1,4" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="24" />
+	<ModelGeneral id="10001" gamemodel="144,2" Extype="1,4,5,6,7,10,11,20,25,26,29,30,31,33" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="36" />
+	<ModelGeneral id="10002" gamemodel="152,3;152,4;152,5" GeneralList="442,467,410,416,375,431,443,339,448,408,477,415,414,332,122,447,128,471,466,457,379,388,113,468,22,419,463,458,109,29,300,476,451,328,307,459,453,334,326,319,299,313,301,316,369,130,49,309,378,365,156,314,302,462,440,210,179,26,323,139,401,73,474,404,350,454,393,429,108,168,343,103,392,318,177,445,361,444,116,126,167,427,473,472,311,450,18,376,187,42,390,50,119,374,52,345,455,176,407,111,312,422,184,479,164,53,424,305,441,174,421,389,1,153,330,377,460,173,35,117,175,24,51,137,185,452,20,335,362,367,34,470,8,39,315,341,118,115,131,303,135,391,112,433,348,413,420,409,411,308,381,25,186,155,212,423,321,465,54,371,21,27,325,140,170,181,364,310,428,121,342,449,37,7,373,382,172,57,43,38,432,30,124,380,336,368,338,360,41,158,182,346,188,161,162,304,320,4,72,400,152,306,48,13,47,366,55,317,340,337,16,211,178,446,114,28,123,107,183,45,136,157,125,329,160,36,40,9,166,12,384,44,372,333,151,129,385,331,104,394,105,23,322,46,383,395,370,15,11,403,14,461,169,347,17,3,327,6,180,101,2,127,171,5,19,214,10" />
+	<ModelGeneral id="10003" gamemodel="153,3;153,4" GeneralList="442,467,410,416,375,431,443,339,448,408,477,415,414,332,122,447,128,471,466,457,379,388,113,468,22,419,463,458,109,29,300,476,451,328,307,459,453,334,326,319,299,313,301,316,369,130,49,309,378,365,156,314,302,462,440,210,179,26,323,139,401,73,474,404,350,454,393,429,108,168,343,103,392,318,177,445,361,444,116,126,167,427,473,472,311,450,18,376,187,42,390,50,119,374,52,345,455,176,407,111,312,422,184,479,164,53,424,305,441,174,421,389,1,153,330,377,460,173,35,117,175,24,51,137,185,452,20,335,362,367,34,470,8,39,315,341,118,115,131,303,135,391,112,433,348,413,420,409,411,308,381,25,186,155,212,423,321,465,54,371,21,27,325,140,170,181,364,310,428,121,342,449,37,7,373,382,172,57,43,38,432,30,124,380,336,368,338,360,41,158,182,346,188,161,162,304,320,4,72,400,152,306,48,13,47,366,55,317,340,337,16,211,178,446,114,28,123,107,183,45,136,157,125,329,160,36,40,9,166,12,384,44,372,333,151,129,385,331,104,394,105,23,322,46,383,395,370,15,11,403,14,461,169,347,17,3,327,6,180,101,2,127,171,5,19,214,10" />
+	<ModelGeneral id="10004" gamemodel="154,3" Extype="1,4,5,6,7,8,14,15,16,17,34,35,10,11,20,25,29,30,31,33,26,9,44,46,40,50" BanGeneral="13,22,29,30,36,37,42,43,45,50,51,56,57,100,106,110,117,125,135,173,174,186,201,204,210,211,215,304,309,318,363,386,449,454,455,459,466,470,471,490,496,505,74,140,355" />
+	<ModelGeneral id="10005" gamemodel="123,4" GeneralList="442,300,444,550,362,156,604,7013,369,580,365,499,437,593,555,107,301,310,463,563,401,154,588,7014,540,130,467,560,527,602,566,108,314,313,448,458,410,175,597,2087,495,431,558,503,542,623,573,361,445,443,480,414,326,2089,113,507,127,504,532,574,506,302,299,471,406,328,551,374,598,60,508,118,529,112,315,441,452,402,393,7003,521,552,73,570,379,139,316,307,451,408,330,1084,537,466,517,535,502,429,303,440,526,100,334,2088,592,513,434,536,541,306,311,484,411,339,7007,378,554,624,559,581,319,446,462,335,7019,5000,607,498,533" />
+	<ModelGeneral id="10006" gamemodel="155,2" Extype="1,4,5,6,7,8,14,15,16,17,34,35,10,11,20,25,29,30,31,33,26,9,44,46,40,50" GeneralList="448,456,311,324,484,450,406,26,7014,7005,316,306,174,302,109,7002,108,307,319,301,344,118,470,471,300,312,107,374,446,313,207,361,458,431,464,548,415,442,441,418,440,480,476,187,112" />
+	<ModelGeneral id="10007" gamemodel="134,3;134,4" GeneralList="27,35,55,212,400,408,362,401,402,410,414,26,299,300,301,302,303,305,307,308,310,311,312,314,315,316,317,319,440,441,442,443,444,445,451,452,453,458,462,463,471,479,480,484,485,306,103,107,108,112,139,429,361,357,350,73,118,124,365,369,434,378,495,533,536,517,374,358,7004,7019,7002,203,206,202,151,153,155,161,164,168,170,173,174,175,176,177,179,184,185,323,326,328,330,334,335,336,339,342,393,187" />
+	<!--
+		series	-	id编号
+			type	-	类型
+1=卡牌
+2=武将
+				-	备注
+			name	-	PC名称（界面中显示）
+			m_name	-	移动名称
+			extype	-	对应包的位数
+			prevCard	-	前置卡牌堆(id 编号）
+			prevGeneral	-	前置武将堆(id 编号）
+			homeName	-	选此项时对应的房间名
+			necessary	-	是否必选
+			picId	-	PC将灯资源
+			m_picId	-	移动将灯资源
+			guideLevel	-	提示等级
+			guideGeneral	-	提示将池等级
+			order	-	排序（废弃）
+		-->
+	<!--
+		NewModelGrade	-	一级模式
+			text	-	一级模式下文字
+			text	-	一级模式下文字
+			GameModeLevel	-	等级限制
+			GameModeLevel	-	等级限制
+			time	-	显示时间
+			time	-	显示时间
+			daytime	-	每日推荐时间
+多个时间段用分号隔开
+			text2	-	推荐文本
+			text2	-	推荐文本
+		-->
+	<!--
+		rectype	-	类型
+			modelid	-	模式id
+			name	-	模式名字
+			type	-	推荐类型
+			section	-	模式频道
+			levmin	-	推荐等级下限
+			levmax	-	推荐等级上限
+			imgid	-	推荐图片
+			desc	-	推荐文字（不要超过10个字）
+			time	-	推荐持续时间
+			extralev	-	额外触发等级
+			priority	-	触发优先级
+			daytime	-	每日推荐时间
+多个时间段用分号隔开
+			timeLimit	-	生效时间
+不配置表示不限制
+配置了则只在此时间段显示
+		-->
+	<!--
+		id	-	战绩id
+			modelid1	-	对应的模式id（用于战绩）
+			modelid	-	对应的模式id，用于取胜率，去掉演武场
+			modelidRecom	-	对局推荐武将需要的模式
+			ignoreModel	-	不计入战斗力计算和百场胜率展示的模式id
+			leisureNoWin	-	仅排位休闲时间不计算胜率
+1=不计算，0=计算
+			name1	-	小模式名字
+			Record	-	战绩记录最大场数
+不配置表示不记录
+			RecordTime	-	战绩最大保存时长（默认180天）
+			tab	-	战绩大类
+			tab	-	战绩大类
+			name	-	大类名称
+			rank	-	PC子页签显示优先级
+			rank	-	U3D子页签显示优先级
+			recordDetail	-	战绩需要记录对局所有武将和身份信息
+		-->
+	<winRate id="1" modelid1="1,3" modelid="1,3" modelidRecom="1,3" Record="100" tab="2" />
+	<winRate id="2" modelid1="4,3" modelid="4,3" modelidRecom="4,3" />
+	<winRate id="3" modelid1="22,3" modelid="22,3" modelidRecom="22,3" Record="100" tab="2" />
+	<winRate id="4" modelid1="22,5" modelid="22,5" modelidRecom="22,5" />
+	<winRate id="5" modelid1="22,6" modelid="22,6" modelidRecom="22,6" Record="100" tab="2" />
+	<winRate id="6" modelid1="22,11" modelid="22,11" modelidRecom="22,11" Record="0" />
+	<winRate id="7" modelid1="28,4" modelid="28,4" modelidRecom="28,4" Record="100" tab="3" />
+	<winRate id="8" modelid1="28,5" modelid="28,5" modelidRecom="28,5" />
+	<winRate id="9" modelid1="28,11" modelid="28,11" modelidRecom="28,11" />
+	<winRate id="10" modelid1="30,3" modelid="30,3" modelidRecom="30,3" Record="100" tab="5" />
+	<winRate id="11" modelid1="33,3" modelid="33,3" modelidRecom="33,3" Record="100" tab="4" />
+	<winRate id="12" modelid1="33,4" modelid="33,4" modelidRecom="33,4" />
+	<winRate id="13" modelid1="33,11" modelid="33,11" modelidRecom="33,11" />
+	<winRate id="14" modelid1="45,3" modelid="45,3" modelidRecom="45,3" Record="100" tab="6" />
+	<winRate id="15" modelid1="61,3" modelid="61,3" modelidRecom="61,3" Record="100" tab="8" />
+	<winRate id="16" modelid1="74,4" modelid="74,4" modelidRecom="74,4" Record="0" />
+	<winRate id="17" modelid1="84,3" modelid="84,3" modelidRecom="84,3" Record="0" />
+	<winRate id="18" modelid1="85,3" modelid="85,3" modelidRecom="85,3" Record="0" />
+	<winRate id="19" modelid1="76,2" modelid="76,2" modelidRecom="76,2" Record="0" />
+	<winRate id="20" modelid1="113,2" modelid="113,2" modelidRecom="113,2" Record="0" />
+	<winRate id="21" modelid1="117,3;118,3;119,3" modelid="117,3;118,3;119,3" modelidRecom="117,3;118,3;119,3" Record="100" />
+	<winRate id="22" modelid1="121,3" modelid="121,3" modelidRecom="121,3" Record="0" />
+	<winRate id="23" modelid1="122,3" modelid="122,3" modelidRecom="122,3" Record="0" />
+	<winRate id="24" modelid1="125,3" modelid="125,3" modelidRecom="125,3" Record="0" />
+	<winRate id="25" modelid1="126,3" modelid="126,3" modelidRecom="126,3" Record="0" />
+	<winRate id="26" modelid1="132,3;133,3" modelid="132,3" modelidRecom="132,3" Record="100" tab="1" />
+	<winRate id="27" modelid1="136,3" modelid="136,3" modelidRecom="136,3" Record="100" />
+	<winRate id="28" modelid1="140,4" modelid="140,4" modelidRecom="140,4" Record="0" />
+	<winRate id="29" modelid1="141,2;141,3;141,5;141,4;142,3" modelid="141,2;141,3;141,5;141,4" modelidRecom="141,2;141,3;141,5;141,4" Record="100" tab="2" />
+	<winRate id="30" modelid1="143,3" modelid="143,3" modelidRecom="143,3" leisureNoWin="1" Record="0" />
+	<winRate id="31" modelid1="144,2" modelid="144,2" modelidRecom="144,2" Record="0" />
+	<winRate id="32" modelid1="145,11" modelid="145,11" modelidRecom="145,11" Record="0" />
+	<winRate id="33" modelid1="147,1" modelid="147,1" modelidRecom="147,1" Record="0" />
+	<winRate id="34" modelid1="147,2" modelid="147,2" modelidRecom="147,2" Record="0" />
+	<winRate id="35" modelid1="148,3;149,3;161,3" modelid="148,3;149,3;161,3" modelidRecom="148,3;149,3;161,3" ignoreModel="161,3" Record="100" tab="9" />
+	<winRate id="36" modelid1="139,3;139,4;127,3;127,4;129,3;129,4;130,3;130,4;131,3" modelid="139,3;139,4;127,3;127,4;129,3;129,4;130,3;130,4;131,3" modelidRecom="139,3;139,4;127,3;127,4;129,3;129,4;130,3;130,4;131,3" Record="100" RecordTime="720" tab="10" />
+	<winRate id="37" modelid1="151,3;164,3" modelid="151,3;164,3" Record="100" tab="11" />
+	<winRate id="38" modelid1="152,3" modelid="152,3" Record="100" recordDetail="1" />
+	<winRate id="39" modelid1="153,3;153,4" modelid="153,3;153,4" Record="100" recordDetail="1" />
+	<winRate id="40" modelid1="154,3" modelid="154,3" Record="100" recordDetail="1" />
+	<winRate id="41" modelid1="123,3;123,4" modelid="123,3;123,4" Record="100" RecordTime="720" recordDetail="1" />
+	<winRate id="42" modelid1="156,3" modelid="156,3" Record="100" tab="2" />
+	<winRate id="43" modelid1="159,2" modelid="159,2" Record="300" recordDetail="1" />
+	<winRate id="44" modelid1="160,2" modelid="160,2" Record="300" tab="12" recordDetail="1" />
+	<winRate id="45" modelid1="165,3" modelid="165,3" Record="100" tab="12" />
+	<!--
+		modelid	-	模式id
+			section	-	模式section
+			title1	-	推荐主题
+			title2	-	推荐标题
+			content	-	推荐内容
+			General1	-	武将1
+			General2	-	武将2
+			General3	-	武将3
+			General4	-	武将4
+		-->
+	<GenSuggest modelid="153" section="3" title1="SCL推荐" title2="SCL冠军组合" content="决赛第五局阵容" General1="1" General2="2" General3="101" General4="102" />
+	<GenSuggest modelid="153" section="3" title1="主播推荐" title2="先手强力组合" content="决赛第五局阵容" General1="3" General2="4" General3="101" General4="102" />
+	<GenSuggest modelid="153" section="3" title1="SCL推荐" title2="后手强力组合" content="决赛第五局阵容" General1="7" General2="8" />
+	<GenSuggest modelid="153" section="3" title1="主播推荐" title2="SCL冠军组合" content="决赛第五局阵容" General1="9" General2="10" General3="101" General4="102" />
+	<GenSuggest modelid="153" section="3" title1="SCL推荐" title2="先手强力组合" content="决赛第五局阵容" General1="11" General2="12" General3="101" General4="102" />
+	<GenSuggest modelid="153" section="3" title1="主播推荐" title2="后手强力组合" content="决赛第五局阵容" General1="13" General2="14" />
+	<GenSuggest modelid="153" section="4" title1="SCL推荐" title2="SCL冠军组合" content="决赛第五局阵容" General1="1" General2="2" General3="101" General4="102" />
+	<GenSuggest modelid="153" section="4" title1="主播推荐" title2="先手强力组合" content="决赛第五局阵容" General1="3" General2="4" General3="101" General4="102" />
+	<GenSuggest modelid="153" section="4" title1="SCL推荐" title2="后手强力组合" content="决赛第五局阵容" General1="7" General2="8" />
+	<GenSuggest modelid="153" section="4" title1="主播推荐" title2="SCL冠军组合" content="决赛第五局阵容" General1="9" General2="10" General3="101" General4="102" />
+	<GenSuggest modelid="153" section="4" title1="SCL推荐" title2="先手强力组合" content="决赛第五局阵容" General1="11" General2="12" General3="101" General4="102" />
+	<GenSuggest modelid="153" section="4" title1="主播推荐" title2="后手强力组合" content="决赛第五局阵容" General1="13" General2="14" General3="101" />
+	<GenSuggest modelid="154" section="3" title1="SCL推荐" title2="SCL冠军组合" content="决赛第五局阵容" General1="1" General2="2" General3="101" />
+	<GenSuggest modelid="154" section="3" title1="主播推荐" title2="先手强力组合" content="决赛第五局阵容" General1="3" General2="4" General3="101" />
+	<GenSuggest modelid="154" section="3" title1="SCL推荐" title2="后手强力组合" content="决赛第五局阵容" General1="7" />
+	<GenSuggest modelid="154" section="3" title1="主播推荐" title2="SCL冠军组合" content="决赛第五局阵容" General2="10" General3="101" />
+	<GenSuggest modelid="154" section="3" title1="SCL推荐" title2="先手强力组合" content="决赛第五局阵容" General2="12" General3="101" />
+	<GenSuggest modelid="154" section="3" title1="主播推荐" title2="后手强力组合" content="决赛第五局阵容" General2="14" General3="101" />
+	<!--
+		ModelID	-	模式ID
+			Diff	-	对应难度
+			NeedRank	-	需要阶数
+			NeedNum	-	需要个数
+		-->
+	<!--
+		id	-	关将方案（10000以上表示不支持关将）
+			jinjiangmoshiname	-	禁将方案模式名
+			paixu	-	设置界面方案名称排序
+				-	备注
+			xianshikaiguan	-	禁将界面模式显示开关
+			guanlianid	-	禁将数据源关联id
+				-	一键禁将使用的胜率数据源id
+				-	一键禁将使用的使用率战绩ID列表
+			ClassifyCustomize	-	自定义将池
+			gamemodel	-	对应模式
+model,section;
+			Extype	-	拓展包
+			GeneralList	-	若为独立将池ID需要配置将池列表
+			BFGeneralList	-	模式标风武将
+			MinGeneralOpen	-	最少启用武将
+			CantCloseList	-	不可关闭武将id
+			InheritModel	-	继承原关将ModelID
+			BanGeneral	-	Extype中不显示在该将池列表的武将ID
+			DataOpen	-	赛事数据开关 1=打开
+			GeneralFree	-	免费武将
+			GeneralList1	-	独立将池，定期增加新将
+		-->
+	<TongYongJinJiang id="1" jinjiangmoshiname="八人身份" paixu="1" xianshikaiguan="1" gamemodel="22,3;22,6;22,5;74,3;74,4;156,3" Extype="1,4,5,6,7,8,14,15,16,17,34,35,10,11,20,25,29,30,31,33,26,9,44,46,40,50,51,52" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="48" InheritModel="1" />
+	<TongYongJinJiang id="2" gamemodel="136,3" GeneralList="166,44,40,18,158,24,314,7019,505,408,369,497,305,510,300,488,503,168,504,329,464,303,352,113,392,485,467,205,457,179,443,312,453,487,498,323,501,406,492,418,344,7007,495,7014,224,127,128,477,401,137,313,358,155,431,307,484,414,463,153,462,350,480,124,330,26,316,49,365,186,111,221,483,437,389,55,7003,370,357,445,479,35,426,123,108,50,185,436,331,157,458,419,379,476,410,460,151,100,301,54,167,119,57,39,469,308,346,448,324,349,126,34,373,20,304,423,184,183,203,371,441,471,315,202,116,361,7018,115,103,333,328,428,220,48,409,326,310,427,25,131,38,161,16,311,362,30,440,444,43,439,107,376,442,215,52,474,348,46,319,342,175,106,446,374,299,451,188,332,450,433,7,506,47,21,4,452,347,335,317,53,12,28,6,403,9,214,5,17,19,14,8,41,338,15,3,212,2,1,23,11,478,475,481,416,415,201,507,500,435,432,327,364,180,411,421,121,320,434,170,162,382,7015,152,508,404,422,181,386,385,7000,7001,7002,7009,7013,7016,7017,7005,7006,368,164,156,110,187,139,363,176,438,499,73,455,129,378,7004,7008,430,345,425,491,351,353,417,511,512,513,514,515,518,519,520,521,7020,526,502,517,529,226,522,516,531,533,536,525,227,509,540,61,356,354,546,542,528,524,494,493,489,486,482,473,472,468" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="60" InheritModel="28" />
+	<TongYongJinJiang id="3" jinjiangmoshiname="欢乐" paixu="6" xianshikaiguan="1" gamemodel="33,3;33,4;84,3" Extype="1,4,5,6,7,8,14,15,16,17,34,35,10,11,20,25,29,30,31,33,26,9,44,46,40,50,52,51" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="28" InheritModel="7" BanGeneral="56,31,100,215,106,74,110,363,386,355,95,96,201,202,203,204,205,206,207,208,220,221,222,223,224,225" />
+	<TongYongJinJiang id="4" jinjiangmoshiname="国战" paixu="3" gamemodel="9999,1" Extype="21,49" BFGeneralList="2000,2001,2002,2003,2004,2005,2006,2007,2008,2010,2015,2016,2017,2018,2019,2020,2021,2022,2030,2031,2032,2033,2034,2035,2036,2037,2041,2045,2046,2047,2052" MinGeneralOpen="32" InheritModel="5" />
+	<TongYongJinJiang id="5" jinjiangmoshiname="统率" paixu="8" xianshikaiguan="1" gamemodel="76,2;45,3" Extype="18" BFGeneralList="1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014,105,1016,1017,1018,1019,1020,1021,1022,1023,1024,1027,1028,1029,1032,1033,1036,1051,1063" MinGeneralOpen="12" InheritModel="2" />
+	<TongYongJinJiang id="6" jinjiangmoshiname="1v1" paixu="5" xianshikaiguan="1" gamemodel="30,3" Extype="23" BFGeneralList="3001,3002,3003,3004,3005,3006,3007,3008,3009,3010,3012,3013,3014,3015,3016,3017,3018,3019,3024,3025,3026,3027,3028,3029,3030,3031,3035,3036,3037,3034" MinGeneralOpen="10" InheritModel="6" />
+	<TongYongJinJiang id="7" jinjiangmoshiname="五人匹配" paixu="7" xianshikaiguan="1" gamemodel="141,2;142,3" GeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,73,101,103,105,106,107,108,109,111,112,122,124,126,127,128,129,139,151,152,153,155,156,157,158,160,161,162,164,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,210,211,212,214,215,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,361,369,378,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,462,463,470,471,479,480,484,485,486,492,496,505,515,526,61" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="36" InheritModel="30" />
+	<TongYongJinJiang id="8" jinjiangmoshiname="斗地主" paixu="2" xianshikaiguan="1" gamemodel="148,3;149,3;161,3" Extype="1,4,5,6,7,8,14,15,16,17,34,35,10,11,20,25,29,30,31,33,26,9,44,46,40,50,51,52" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="72" CantCloseList="127,156,187,207,221,300,301,319,324,339,374,393,410,108,122,446,224,587,7006,480,26,307" BanGeneral="13,22,29,30,36,37,42,43,45,50,51,56,57,100,106,110,117,125,135,173,174,186,201,204,210,211,215,304,309,318,363,386,449,454,455,459,466,470,471,490,496,505,74,140,355" />
+	<TongYongJinJiang id="9" jinjiangmoshiname="山河图" gamemodel="151,3" GeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,73,101,103,105,106,107,108,109,111,112,122,124,126,127,128,129,139,151,152,153,155,156,157,158,160,161,162,164,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,210,211,212,214,215,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,361,369,378,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,462,463,470,471,479,480,484,485,486,492,496,505,515,526,61" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="30" GeneralList1="20230927T180000;1,2,39" />
+	<TongYongJinJiang id="10" jinjiangmoshiname="山河图" guanlianid="9" gamemodel="151,3" GeneralList="361,39,48,319,462,484,8,463,126,305,182,328,340,308,368,445,458,457,118,494,414,420,442,487,563,351,527,307,310,225,220,221,202,203,206,625,502,509,430,518" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="30" />
+	<TongYongJinJiang id="16" jinjiangmoshiname="山河图" paixu="4" xianshikaiguan="1" guanlianid="9" gamemodel="151,3" GeneralList="161,303,384,452,410,493,556,524,539,509,604,624,623,527,158,317,315,392,207,553,430,353,592,594,19,174,187,498,446,487,506,507,520,300,529,420,463,38,607,593,582,602,548,224,225,220,221,202,203,206,7019,23,39,100,48,319,462,484,516,523,519,491,6,52,116,381,600,480,499,586,325,349,557,568,15,17,20,28,34,35,105,51,316,311,175,313,466,471,526,515,570,130,554,422,426,350,14,9,44,182,305,308,310,180,181,468,402,502,598,587,569,361" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="30" />
+	<TongYongJinJiang id="17" jinjiangmoshiname="单挑竞技场" paixu="9" xianshikaiguan="1" gamemodel="160,2;160,3;165,3" Extype="1,4,5,6,7,8,14,15,16,17,34,35,10,11,20,25,29,30,31,33,26,9,44,46,40,50,51,52" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="72" BanGeneral="35,38,39,40,41,44,46,47,48,55,72,101,104,105,107,114,115,121,122,124,126,127,129,131,136,137,151,152,157,160,162,164,166,168,171,175,177,178,179,180,181,182,184,185,202,203,205,206,220,225,317,320,321,322,323,325,326,327,329,330,331,333,334,335,336,337,338,339,340,341,342,345,346,349,350,352,354,356,358,360,365,366,367,368,369,370,371,372,376,377,378,380,381,382,383,384,385,387,389,390,391,394,395,400,401,402,403,407,408,409,411,416,421,422,423,424,425,427,428,429,432,433,434,435,436,438,439,450,453,458,460,461,464,465,467,472,473,474,479,482,483,486,489,491,492,494,504,507,509,510,512,514,516,517,522,525,529,531,532,534,535,537,538,540,542,543,545,546,547,549,553,554,555,557,559,560,563,569,571,574,575,577,579,580,581,582,592,596,597,599,600,604,607,610,611,619,623,627,630,631,632,643,7000,7001,7002,7003,7006,7007,7008,7010,7012,7015,7018,7020,13,22,29,30,36,37,42,43,45,50,51,56,57,100,106,110,117,125,135,173,174,186,201,204,210,211,215,304,309,318,363,386,449,454,455,459,466,470,471,490,496,505,74,140,355,73,103,111,112,119,172,176,332,347,348,351,375,404,413,53,451,493,501,503,49,485,113,153,170,183,169,306" GeneralFree="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,31,32,33,210,211,212,214,215" />
+	<TongYongJinJiang id="18" jinjiangmoshiname="山河图" paixu="4" xianshikaiguan="1" guanlianid="9" gamemodel="151,3" GeneralList="7019,156,185,186,36,35,37,48,316,361,312,175,304,164,323,379,176,184,393,326,7006,440,455,503,427,104,600,429,484,563,404,221,113,130,203,202,495,475,568,624" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="30" />
+	<TongYongJinJiang id="10000" gamemodel="1,3" Extype="1,4" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="24" />
+	<TongYongJinJiang id="10001" gamemodel="144,2" Extype="1,4,5,6,7,10,11,20,25,26,29,30,31,33" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" MinGeneralOpen="36" />
+	<TongYongJinJiang id="10002" gamemodel="152,3;152,4;152,5" GeneralList="21,24,25,41,401,406,410,414,156,164,177,185,323,326,328,339,392,393,26,299,300,301,302,303,306,307,310,311,313,314,315,316,319,440,441,442,445,446,448,451,452,458,463,471,480,485,515,526,587,588,597,599,600,604,586,593,602,623,202,203,206,103,107,108,112,361,506,510,543,113,118,122,365,369,374,378,379,431,466,467,476,502,507,517,521,534,541,551,558,569,578,607,624,7000,7004,7010,7020,573,426,518" />
+	<TongYongJinJiang id="10003" gamemodel="153,3;153,4" GeneralList="299,300,307,316,319,503,401,402,326,328,365,468,408,472,42,536,506,7019,7004,533,8,184,315,445,444,26,27,28,35,53,362,314,153,185,164,179,330,334,335,369,393,404,419,203,112,108,73,429,336,187,212,529,434,342,358,303,305,308,310,311,441,103,39,46,206,50,51,400,170,177,341,382,389,38,376,55,155,186,181,52" />
+	<TongYongJinJiang id="10004" gamemodel="154,3" Extype="1,4,5,6,7,8,14,15,16,17,34,35,10,11,20,25,29,30,31,33,26,9,44,46,40,50" BanGeneral="13,22,29,30,36,37,42,43,45,50,51,56,57,100,106,110,117,125,135,173,174,186,201,204,210,211,215,304,309,318,363,386,449,454,455,459,466,470,471,490,496,505,74,140,355" />
+	<TongYongJinJiang id="10005" gamemodel="123,3;123,4" GeneralList="299,300,307,316,319,503,401,402,326,328,365,468,408,472,42,536,506,7019,7004,533,8,184,315,445,444,26,27,28,35,53,362,314,153,185,164,179,330,334,335,369,393,404,419,203,112,108,73,429,336,187,212,529,434,342,358,303,305,308,310,311,441,103,39,46,206,50,51,400,170,177,341,382,389,38,376,55,155,186,181,52" />
+	<TongYongJinJiang id="10006" gamemodel="155,2" Extype="1,4,5,6,7,8,14,15,16,17,34,35,10,11,20,25,29,30,31,33,26,9,44,46,40,50" GeneralList="448,456,311,324,484,450,406,26,7014,7005,316,306,174,302,109,7002,108,307,319,301,344,118,470,471,300,312,107,374,446,313,207,361,458,431,464,548,415,442,441,418,440,480,476,187,112,587" />
+	<TongYongJinJiang id="10007" gamemodel="134,3;134,4;163,3" GeneralList="27,35,55,212,400,408,362,401,402,410,414,26,299,300,301,302,303,305,307,308,310,311,312,314,315,316,317,319,440,441,442,443,444,445,451,452,453,458,462,463,471,479,480,484,485,306,103,107,108,112,139,429,361,357,350,73,118,124,365,369,434,378,495,533,536,517,374,358,7004,7019,7002,203,206,202,151,153,155,161,164,168,170,173,174,175,176,177,179,184,185,323,326,328,330,334,335,336,339,342,393,187" />
+	<TongYongJinJiang id="10008" gamemodel="157,3" GeneralList="227,207,220,202,221,224,226,415,406,404,402,408,411,393,324,334,187,156,339,332,387,550,301,300,307,442,463,480,485,26,302,453,451,462,448,457,316,446,319,306,456,452,515,458,526,313,587,597,7003,7005,7006,7007,7017,7016,7014,551,7013,7019,7015,498,431,374,517,375,500,516,127,418,536,467,554,544,494,581,553,569,464,434,560,365,501,533,511,578,122,344,502,552,130,519,521,118,513,488,477,123,481,514,437,116,541,497,128,379,438,586,556,555,573,548,523,528,566,524,475,478,568,509,518,351,469,353,430,426,417,491,425,357,543,510,108,506" BanGeneral="13,22,29,30,36,37,42,43,45,50,51,56,57,100,106,110,117,125,135,173,174,186,201,204,210,211,215,304,309,318,363,386,449,454,455,459,466,470,471,490,496,505,74,140,355" />
+	<TongYongJinJiang id="10009" gamemodel="155,3" Extype="1,4,5,6,7,8,14,15,16,17,34,35,10,11,20,25,29,30,31,33,26,9,44,46,40,50,52,51" BFGeneralList="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,61,27,28,29,30,210,211,212,214,215" BanGeneral="13,22,29,30,36,37,42,43,45,50,51,56,57,100,106,110,117,125,135,173,174,186,201,204,210,211,215,304,309,318,363,386,449,454,455,459,466,470,471,490,496,505,74,140,355" />
+	<TongYongJinJiang id="10010" jinjiangmoshiname="国战" paixu="3" gamemodel="85,3;28,4;28,5" Extype="21,49" BFGeneralList="2000,2001,2002,2003,2004,2005,2006,2007,2008,2010,2015,2016,2017,2018,2019,2020,2021,2022,2030,2031,2032,2033,2034,2035,2036,2037,2041,2045,2046,2047,2052" MinGeneralOpen="32" InheritModel="5" />
+	<!--
+		mianfei	-	免费方案的数量
+			jundian	-	军典收费方案的数量
+			chehuishijian	-	撤回按钮停止时间
+			guanjiangbaohu	-	老关将的登录保护开关
+			AlternateInherit	-	默认继承顺序
+			tishimiaoshu	-	禁将设置界面提示描述
+			InheritSchemeMinNum	-	继承禁将的最小方案数量
+			kaiqidengji2	-	方案二开启等级
+			kaiqidengji3	-	方案三开启等级
+			kaiqidengji4	-	方案四开启等级
+			kaiqishijian	-	开启等级生效时间
+		-->
+	<Lishishuju mianfei="4" jundian="1" chehuishijian="20240606T000000" guanjiangbaohu="0" AlternateInherit="1,8,3,4,7" tishimiaoshu="八人身份包括八人身份和军争至尊。" InheritSchemeMinNum="2" kaiqidengji2="30" kaiqidengji3="40" kaiqidengji4="40" kaiqishijian="20240508T055959" />
+	<!--
+		id	-	关将方案（10000以上表示不支持关将）
+				-	备注
+			Name	-	页签
+			GeneralSeriesBig	-	大将灯，多个,隔开
+			GeneralSeriesLittle	-	小将灯，多个,隔开
+		-->
+	<GeneralTab id="1" Name="标准版" GeneralSeriesBig="1" />
+	<GeneralTab id="1" Name="风林火山" GeneralSeriesLittle="8,9,10,11,12,13" />
+	<GeneralTab id="1" Name="一将成名" GeneralSeriesBig="3" />
+	<GeneralTab id="1" Name="界限突破" GeneralSeriesBig="5,13" />
+	<GeneralTab id="1" Name="谋扩展包" GeneralSeriesBig="12" />
+	<GeneralTab id="1" Name="神将" GeneralSeriesLittle="14" />
+	<GeneralTab id="1" Name="其他" GeneralSeriesBig="6,7,8,9,10,11" />
+	<!--
+		modelid	-	模式id
+			section	-	子模式
+			time	-	生效时间
+			method	-	玩法id
+				-	备注
+			name	-	标题
+			desc1	-	pc大厅简略描述（6个字内）
+			desc2	-	房间和牌局内简略描述
+			desc	-	模式入口处描述
+			tips	-	问号内的tips
+		-->
+	<LimitModel modelid="22" section="5" time="20221212T100000,20321201T100000" method="1" />
+	<LimitModel modelid="22" section="3" time="20221212T100000,20321201T100000" method="1" />
+	<LimitModel modelid="156" section="3" time="20221212T100000,20321201T100000" method="1" />
+	<LimitModel modelid="28" section="4" time="20221212T100000,20321201T100000" method="3" />
+	<LimitModel modelid="28" section="11" time="20221212T100000,20321201T100000" method="3" />
+	<LimitModel modelid="22" section="6" time="20221212T100000,20321201T100000" method="6,7" />
+	<LimitModel modelid="22" section="6" time="20221212T100000,20321201T100000" method="8" />
+	<LimitModel modelid="28" section="4" time="20221212T100000,20321201T100000" method="2" />
+	<LimitModel modelid="148" section="3" time="20221212T100000,20321201T100000" method="9" />
+	<!--
+		methodid	-	唯一ID
+			methodType	-	玩法类型id
+				-	备注
+			value1	-	参数1
+玩法1额外技能：0=技能所有人可见，不配默认是0，1=自己可见
+玩法3幸运数字：幸运数字技能Id，可配多个，从中随机1个
+			value2	-	参数2
+
+
+
+			value3	-	参数3
+			value4	-	参数4
+			value5	-	参数5
+			SenceSpell	-	场景技能（所有人）不需要持有即可生效
+			AllFigureSpellId	-	武将技能全身份生效
+			figure	-	生效身份id
+			spell1	-	生效技能1
+			spell2	-	生效技能2
+			spell3	-	生效技能3
+			AddCharacterCards	-	武将ID(配置多个用分号隔开）
+			guozhanmaxuse	-	国战限时武将每日次数上限(配置多个用分号隔开）
+默认0
+			MutexGroup	-	互斥武将
+		-->
+	<LimitMethod methodid="1" methodType="1" figure="1" spell1="12001" spell2="12032" />
+	<LimitMethod methodid="2" methodType="2" SenceSpell="12031" />
+	<LimitMethod methodid="3" methodType="3" AddCharacterCards="587" guozhanmaxuse="3" />
+	<LimitMethod methodid="4" methodType="4" />
+	<LimitMethod methodid="5" methodType="5" MutexGroup="2066,2049|2072,2073|2073,2074|2074,2075|2072,2074|2072,2075|2073,2075" />
+	<LimitMethod methodid="6" methodType="1" value1="0" figure="1" spell1="12033" />
+	<LimitMethod methodid="7" methodType="1" value1="1" figure="4" spell1="12034" />
+	<LimitMethod methodid="8" methodType="4" value1="13268;13267" />
+	<LimitMethod methodid="9" methodType="4" value1="13265" />
+</Root>

@@ -1,0 +1,541 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			lacktime	-	大司马显示条件之一：首次达到大将军N天后显示
+			lackGeneralNum	-	大司马显示条件之一：缺武将数(上限9）拓展上限到128
+			lackLevelNum	-	大司马显示条件：缺满阶武将数(上限9）拓展上限到128
+			lackjingSkinNum	-	大司马显示条件：缺静态皮肤数(上限9）
+			lackdongSkinNum	-	大司马显示条件：缺动态皮肤数(上限9）
+			lackTaskNum	-	大司马显示条件：缺任务数(上限9）
+			AIRange	-	伪装机器人官阶波动
+			AIRangeMin	-	伪装机器人最低官阶
+			AIRangeMax	-	伪装机器人最高官阶
+			effectsTime	-	普通官阶特效时间(毫秒）
+			dasimaeffectsTime	-	大司马官阶特效时间(毫秒）
+			numbers	-	这个时间后才显示当前等阶人数
+			ranknum	-	官阶内排行榜名次
+			unit	-	官阶人数显示单位
+			minPointRait	-	即将晋升最低帅点比例，≥
+			minPoint	-	即将晋升距离最低帅点，≤
+		-->
+	<Common lacktime="7" lackGeneralNum="20" lackLevelNum="20" lackjingSkinNum="9999" lackdongSkinNum="9999" lackTaskNum="9999" AIRange="3" AIRangeMin="1" AIRangeMax="35" effectsTime="1000" dasimaeffectsTime="10" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	官职id
+			smallName	-	官阶小段
+			officerid	-	官阶大段id
+			bigName	-	官阶大段
+			abbreviate	-	官阶简称
+			needPoint	-	升段要求：帅点
+			needGNum	-	升段要求：武将数量
+			officerReward	-	晋升奖励
+			generalReward	-	专属武将
+			skinReward	-	专属皮肤
+			weekReward	-	周薪奖励
+			jinpaiju	-	进牌局动画资源
+			jinpaijuDesc	-	进场动画名字
+			kaizhan	-	开战动画资源
+			kaizhaneffect	-	开战特效资源
+			kaizhanDesc	-	开战动画名字
+			background	-	官职背景图资源id
+			backgroundDesc	-	官阶背景图名字
+			cardReward	-	专属卡背
+			cardRewardDesc	-	专属卡背名字
+			zhiding	-	是否有房间置顶特权
+			zhidingDesc	-	置顶特权名字
+			banGeneral	-	可禁用标风数
+			banGeneralDesc	-	禁用武将名字
+			reportNum	-	举报次数
+			reportNumDesc	-	举报次数名字
+			reportEffect	-	举报效果
+			reportEffectDesc	-	举报效果名字
+			isShowChat	-	聊天中是否显示
+			notifyGuild	-	晋升时通知公会
+			notifySystem	-	晋升时通知系统
+			notifyBroadcast	-	晋升时通知跑马灯
+			officerdesc	-	官阶陈述台词
+			officerdescNum	-	陈述台词数量（对应配音文件数量）
+			promotiontype	-	晋升流程
+人出现动画；是否有诏书（没有配0）
+			promotionWord	-	晋升系统提示
+			numbersMax	-	每个段位显示的最大达到人数
+			numbersParameter	-	人数系数+固定值
+			reGeneralPoint	-	推荐武将分
+			reLevelPoint	-	推荐等阶分
+			reSkinPoint	-	推荐皮肤分
+			reSeriesPoint	-	推荐将灯分
+			reBookPoint	-	推荐收藏册分
+			reTaskPoint	-	推荐任务分
+			flagShow	-	对应旗帜
+			unknowngeneral	-	神秘武将（不配不显示，配数字几显示几个）
+			unknowngoods	-	神秘物品（不配不显示，配数字几显示几个）
+			WelfareTask	-	官阶福利任务，分隔
+		-->
+	<officer id="1" officerid="1" needPoint="0" needGNum="0" background="1" banGeneral="0" />
+	<officer id="2" officerid="1" needPoint="280" needGNum="0" officerReward="8100201,1;100011,200" background="1" banGeneral="0" />
+	<officer id="3" officerid="1" needPoint="700" needGNum="0" officerReward="8100201,1;100011,250" background="1" banGeneral="0" />
+	<officer id="4" officerid="1" needPoint="1000" needGNum="0" officerReward="8100201,1;100011,300" background="1" banGeneral="0" />
+	<officer id="5" officerid="1" needPoint="1300" needGNum="0" officerReward="8100201,1;100011,350" background="1" banGeneral="0" />
+	<officer id="6" officerid="1" needPoint="1600" needGNum="0" officerReward="8100201,1;100011,400" background="1" banGeneral="0" />
+	<officer id="7" officerid="2" needPoint="2800" needGNum="40" officerReward="8100201,3" background="1" banGeneral="3" />
+	<officer id="8" officerid="2" needPoint="3900" needGNum="40" officerReward="1213201,1;100011,500" background="1" banGeneral="3" />
+	<officer id="9" officerid="2" needPoint="5000" needGNum="40" officerReward="435401,1;100011,600" background="1" banGeneral="3" />
+	<officer id="10" officerid="2" needPoint="6200" needGNum="40" officerReward="8100201,2;100011,800" background="1" banGeneral="3" />
+	<officer id="11" officerid="3" needPoint="9100" needGNum="60" officerReward="8100201,3" background="1" banGeneral="6" />
+	<officer id="12" officerid="3" needPoint="10500" needGNum="60" officerReward="1213201,1;111801,100" background="1" banGeneral="6" />
+	<officer id="13" officerid="3" needPoint="12000" needGNum="60" officerReward="435401,1;111801,150" background="1" banGeneral="6" />
+	<officer id="14" officerid="3" needPoint="13000" needGNum="60" officerReward="8100201,2;111801,200" background="1" banGeneral="6" />
+	<officer id="15" officerid="4" needPoint="17000" needGNum="80" officerReward="8100201,3" jinpaiju="1" kaizhan="1" background="1" banGeneral="10" isShowChat="1" notifyGuild="1" promotionWord="晋升至偏将军（折冲将军）！" />
+	<officer id="16" officerid="4" needPoint="19000" needGNum="80" officerReward="1213201,1;111801,300" jinpaiju="1" kaizhan="1" background="1" banGeneral="10" isShowChat="1" notifyGuild="1" promotionWord="晋升至偏将军（虎威将军）！" />
+	<officer id="17" officerid="4" needPoint="21000" needGNum="80" officerReward="435401,1;111801,350" jinpaiju="1" kaizhan="1" background="1" banGeneral="10" isShowChat="1" notifyGuild="1" promotionWord="晋升至偏将军（征虏将军）！" />
+	<officer id="18" officerid="4" needPoint="23000" needGNum="80" officerReward="8100201,2;111801,400" jinpaiju="1" kaizhan="1" background="1" banGeneral="10" isShowChat="1" notifyGuild="1" promotionWord="晋升至偏将军（荡寇将军）！" />
+	<officer id="19" officerid="5" needPoint="30000" needGNum="120" officerReward="9701901,1" generalReward="7019" weekReward="100011,500;1213201,1" jinpaiju="2" kaizhan="2" background="2" banGeneral="13" reportNum="1" isShowChat="1" notifyGuild="1" promotionWord="功勋累身，晋升至将军（监军将军）！" />
+	<officer id="20" officerid="5" needPoint="34000" needGNum="120" officerReward="1213301,1" weekReward="100011,550;1213201,1" jinpaiju="2" kaizhan="2" background="2" banGeneral="13" reportNum="1" isShowChat="1" notifyGuild="1" promotionWord="功勋累身，晋升至将军（抚军将军）！" />
+	<officer id="21" officerid="5" needPoint="38000" needGNum="120" officerReward="435401,3" weekReward="100011,600;1213201,1" jinpaiju="2" kaizhan="2" background="2" banGeneral="13" reportNum="1" isShowChat="1" notifyGuild="1" promotionWord="功勋累身，晋升至将军（典军将军）！" />
+	<officer id="22" officerid="5" needPoint="42000" needGNum="120" officerReward="8100201,3" weekReward="100011,650;1213201,1" jinpaiju="2" kaizhan="2" background="2" banGeneral="13" reportNum="1" isShowChat="1" notifyGuild="1" promotionWord="功勋累身，晋升至将军（领军将军）！" />
+	<officer id="23" officerid="6" needPoint="55000" needGNum="160" officerReward="9050601,1" generalReward="506" weekReward="100011,700;1213201,1" jinpaiju="2" kaizhan="3" background="2" banGeneral="16" reportNum="1" isShowChat="1" notifyGuild="1" promotionWord="武盖三军，功绩卓著，晋升至上将军（后将军）！" />
+	<officer id="24" officerid="6" needPoint="60000" needGNum="160" officerReward="1213301,1" weekReward="100011,750;1213201,1" jinpaiju="2" kaizhan="3" background="2" banGeneral="16" reportNum="1" isShowChat="1" notifyGuild="1" promotionWord="武盖三军，功绩卓著，晋升至上将军（左将军）！" />
+	<officer id="25" officerid="6" needPoint="66000" needGNum="160" officerReward="435401,3" weekReward="100011,800;1213201,1" jinpaiju="2" kaizhan="3" background="2" banGeneral="16" reportNum="1" isShowChat="1" notifyGuild="1" promotionWord="武盖三军，功绩卓著，晋升至上将军（右将军）！" />
+	<officer id="26" officerid="6" needPoint="72000" needGNum="160" officerReward="8100201,3" weekReward="100011,850;1213201,1" jinpaiju="2" kaizhan="3" background="2" banGeneral="16" reportNum="1" isShowChat="1" notifyGuild="1" promotionWord="武盖三军，功绩卓著，晋升至上将军（前将军）！" />
+	<officer id="27" officerid="7" needPoint="90000" needGNum="200" officerReward="9050501,1" generalReward="505" weekReward="100011,900;1213201,1" jinpaiju="2" kaizhan="4" background="2" banGeneral="20" reportNum="1" isShowChat="1" notifyGuild="1" promotionWord="秉节持军，功劳尤著，晋升至国护军（护军）！" />
+	<officer id="28" officerid="7" needPoint="96000" needGNum="200" officerReward="1213301,1" weekReward="100011,950;1213201,1" jinpaiju="2" kaizhan="4" background="2" banGeneral="20" reportNum="1" isShowChat="1" notifyGuild="1" promotionWord="秉节持军，功劳尤著，晋升至国护军（左护军）！" />
+	<officer id="29" officerid="7" needPoint="102000" needGNum="200" officerReward="435401,3" weekReward="100011,1000;1213201,1" jinpaiju="2" kaizhan="4" background="2" banGeneral="20" reportNum="1" isShowChat="1" notifyGuild="1" promotionWord="秉节持军，功劳尤著，晋升至国护军（右护军）！" />
+	<officer id="30" officerid="7" needPoint="109000" needGNum="200" officerReward="8100201,3" weekReward="100011,1050;1213201,1" jinpaiju="2" kaizhan="4" background="2" banGeneral="20" reportNum="1" isShowChat="1" notifyGuild="1" promotionWord="秉节持军，功劳尤著，晋升至国护军（中护军）！" />
+	<officer id="31" officerid="8" needPoint="130000" needGNum="250" officerReward="922601,1" generalReward="226" weekReward="100011,1100;9020101,300;1213201,1" jinpaiju="3" kaizhan="5" background="3" banGeneral="25" reportNum="2" reportEffect="1" isShowChat="1" notifyGuild="1" promotionWord="尽忠辅国，功绩甚伟，晋升至国都护（都护）！" />
+	<officer id="32" officerid="8" needPoint="138000" needGNum="250" officerReward="1213301,1" weekReward="100011,1100;9020101,350;1213201,1" jinpaiju="3" kaizhan="5" background="3" banGeneral="25" reportNum="2" reportEffect="1" isShowChat="1" notifyGuild="1" promotionWord="尽忠辅国，功绩甚伟，晋升至国都护（左都护）！" />
+	<officer id="33" officerid="8" needPoint="146000" needGNum="250" officerReward="435401,3" weekReward="100011,1100;9020101,400;1213201,1" jinpaiju="3" kaizhan="5" background="3" banGeneral="25" reportNum="2" reportEffect="1" isShowChat="1" notifyGuild="1" promotionWord="尽忠辅国，功绩甚伟，晋升至国都护（右都护）！" />
+	<officer id="34" officerid="8" needPoint="155000" needGNum="250" officerReward="8100201,3" weekReward="100011,1100;9020101,450;1213201,1" jinpaiju="3" kaizhan="5" background="3" banGeneral="25" reportNum="2" reportEffect="1" isShowChat="1" notifyGuild="1" promotionWord="尽忠辅国，功绩甚伟，晋升至国都护（中都护）！" />
+	<officer id="35" officerid="9" needPoint="180000" needGNum="300" officerReward="6135509,1;7041501,1" skinReward="48002" weekReward="100011,1300;9020101,500;1213201,1" jinpaiju="3" kaizhan="6" background="3" banGeneral="30" reportNum="2" reportEffect="2" isShowChat="1" notifyGuild="1" notifySystem="1" promotionWord="武德大器，可堪卫将军，假黄钺，督诸州军事！" />
+	<officer id="36" officerid="9" needPoint="210000" needGNum="300" officerReward="1213401,1" weekReward="100011,1300;9020101,550;1213201,1" jinpaiju="3" kaizhan="7" background="3" banGeneral="30" reportNum="2" reportEffect="2" isShowChat="1" notifyGuild="1" notifySystem="1" promotionWord="统车万乘，督抚三军，拜为车骑将军，假黄钺，督诸州军事！" />
+	<officer id="37" officerid="9" needPoint="240000" needGNum="300" officerReward="1213401,1" weekReward="100011,1300;9020101,600;1213201,1" jinpaiju="3" kaizhan="8" background="3" banGeneral="30" reportNum="2" reportEffect="2" isShowChat="1" notifyGuild="1" notifySystem="1" promotionWord="驱敌万里，如霍再生，今拜为骠骑将军，假黄钺，督内外军事！" />
+	<officer id="38" officerid="10" needPoint="280000" needGNum="350" weekReward="100011,1500;9020101,800;1213201,1" jinpaiju="4" kaizhan="9" background="3" banGeneral="35" reportNum="3" reportEffect="3" isShowChat="1" notifyGuild="1" notifySystem="1" promotionWord="天降武曲，四海夷平，今拜为大将军，假黄钺，董督军国！" />
+	<officer id="255" officerid="255" weekReward="100011,1500;9020101,800;1213201,1" jinpaiju="5" kaizhan="10" background="3" banGeneral="35" reportNum="3" reportEffect="3" isShowChat="1" notifyGuild="1" notifySystem="1" notifyBroadcast="1" promotionWord="应天顺时，受兹明命，今晋大司马，赐剑履上殿，入朝不趋！" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	id
+			name	-	类型
+			word1	-	PC文案1
+			word2	-	PC文案2
+			m_word1	-	移动文案1
+			m_word2	-	移动文案2
+			jump	-	跳转界面
+		-->
+	<getpoint id="1" />
+	<getpoint id="2" />
+	<getpoint id="3" />
+	<getpoint id="4" />
+	<getpoint id="5" />
+	<getpoint id="6" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	等阶
+			point	-	帅点
+		-->
+	<dengjie id="1" point="10" />
+	<dengjie id="2" point="25" />
+	<dengjie id="3" point="50" />
+	<dengjie id="4" point="120" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	id
+			point	-	帅点
+			type	-	类型
+1=牌局
+2=收集强化
+3=活动
+4=社交
+			typeName	-	类型名字
+			lockLevel	-	解锁等级
+			officer	-	解锁官阶id
+			preTask	-	前置id
+			taskid	-	任务id
+				-	任务描述
+			jump	-	任务跳转
+			sort	-	任务排序
+			officerTime	-	计入大司马统计数量上限的时间
+不配置表示计入（对帅点大于0的配置生效）
+定期删除过期时间
+		-->
+	<task id="1" point="15" type="1" officer="1" taskid="63001" officerTime="20990625T100000" />
+	<task id="2" point="15" type="1" officer="2" preTask="1" taskid="63002" officerTime="20990625T100000" />
+	<task id="3" point="15" type="1" officer="3" preTask="2" taskid="63003" officerTime="20990625T100000" />
+	<task id="4" point="15" type="1" officer="4" preTask="3" taskid="63004" officerTime="20990625T100000" />
+	<task id="5" point="15" type="1" officer="5" preTask="4" taskid="63005" officerTime="20990625T100000" />
+	<task id="6" point="15" type="1" officer="6" preTask="5" taskid="63006" officerTime="20990625T100000" />
+	<task id="7" point="15" type="1" officer="7" preTask="6" taskid="63007" officerTime="20990625T100000" />
+	<task id="8" point="15" type="1" officer="8" preTask="7" taskid="63008" officerTime="20990625T100000" />
+	<task id="9" point="15" type="1" officer="9" preTask="8" taskid="63009" officerTime="20990625T100000" />
+	<task id="10" point="15" type="1" officer="10" preTask="9" taskid="63010" officerTime="20990625T100000" />
+	<task id="11" point="15" type="1" officer="11" preTask="10" taskid="63011" officerTime="20990625T100000" />
+	<task id="12" point="15" type="1" officer="12" preTask="11" taskid="63012" officerTime="20990625T100000" />
+	<task id="13" point="15" type="1" officer="13" preTask="12" taskid="63013" officerTime="20990625T100000" />
+	<task id="14" point="15" type="1" officer="14" preTask="13" taskid="63014" officerTime="20990625T100000" />
+	<task id="15" point="15" type="1" officer="15" preTask="14" taskid="63015" officerTime="20990625T100000" />
+	<task id="16" point="15" type="1" officer="16" preTask="15" taskid="63016" officerTime="20990625T100000" />
+	<task id="17" point="15" type="1" officer="17" preTask="16" taskid="63017" officerTime="20990625T100000" />
+	<task id="18" point="15" type="1" officer="18" preTask="17" taskid="63018" officerTime="20990625T100000" />
+	<task id="19" point="15" type="1" officer="19" preTask="18" taskid="63019" officerTime="20990625T100000" />
+	<task id="20" point="15" type="1" officer="20" preTask="19" taskid="63020" officerTime="20990625T100000" />
+	<task id="21" point="15" type="1" officer="21" preTask="20" taskid="63021" officerTime="20990625T100000" />
+	<task id="22" point="15" type="1" officer="22" preTask="21" taskid="63022" officerTime="20990625T100000" />
+	<task id="23" point="15" type="1" officer="23" preTask="22" taskid="63023" officerTime="20990625T100000" />
+	<task id="24" point="15" type="1" officer="24" preTask="23" taskid="63024" officerTime="20990625T100000" />
+	<task id="25" point="15" type="1" officer="25" preTask="24" taskid="63025" officerTime="20990625T100000" />
+	<task id="26" point="15" type="1" officer="26" preTask="25" taskid="63026" officerTime="20990625T100000" />
+	<task id="27" point="15" type="1" officer="27" preTask="26" taskid="63027" officerTime="20990625T100000" />
+	<task id="28" point="15" type="1" officer="28" preTask="27" taskid="63028" officerTime="20990625T100000" />
+	<task id="29" point="15" type="1" officer="29" preTask="28" taskid="63029" officerTime="20990625T100000" />
+	<task id="30" point="15" type="1" officer="30" preTask="29" taskid="63030" officerTime="20990625T100000" />
+	<task id="31" point="15" type="1" officer="31" preTask="30" taskid="63031" officerTime="20990625T100000" />
+	<task id="32" point="15" type="1" officer="32" preTask="31" taskid="63032" officerTime="20990625T100000" />
+	<task id="33" point="15" type="1" officer="33" preTask="32" taskid="63033" officerTime="20990625T100000" />
+	<task id="34" point="15" type="1" officer="34" preTask="33" taskid="63034" officerTime="20990625T100000" />
+	<task id="35" point="15" type="1" officer="35" preTask="34" taskid="63035" officerTime="20990625T100000" />
+	<task id="36" point="15" type="1" officer="36" preTask="35" taskid="63036" officerTime="20990625T100000" />
+	<task id="37" point="15" type="1" officer="37" preTask="36" taskid="63037" officerTime="20990625T100000" />
+	<task id="38" point="15" type="1" officer="38" preTask="37" taskid="63038" officerTime="20990625T100000" />
+	<task id="101" point="20" type="1" officer="2" taskid="63101" officerTime="20990625T100000" />
+	<task id="102" point="20" type="1" officer="6" preTask="101" taskid="63102" officerTime="20990625T100000" />
+	<task id="103" point="20" type="1" officer="10" preTask="102" taskid="63103" officerTime="20990625T100000" />
+	<task id="104" point="20" type="1" officer="14" preTask="103" taskid="63104" officerTime="20990625T100000" />
+	<task id="105" point="20" type="1" officer="18" preTask="104" taskid="63105" officerTime="20990625T100000" />
+	<task id="106" point="20" type="1" officer="22" preTask="105" taskid="63106" officerTime="20990625T100000" />
+	<task id="107" point="20" type="1" officer="26" preTask="106" taskid="63107" officerTime="20990625T100000" />
+	<task id="108" point="20" type="1" officer="30" preTask="107" taskid="63108" officerTime="20990625T100000" />
+	<task id="109" point="20" type="1" officer="34" preTask="108" taskid="63109" officerTime="20990625T100000" />
+	<task id="110" point="20" type="1" officer="37" preTask="109" taskid="63110" officerTime="20990625T100000" />
+	<task id="130" point="20" type="1" officer="3" taskid="63130" officerTime="20990625T100000" />
+	<task id="131" point="20" type="1" officer="7" preTask="130" taskid="63131" officerTime="20990625T100000" />
+	<task id="132" point="20" type="1" officer="11" preTask="131" taskid="63132" officerTime="20990625T100000" />
+	<task id="133" point="20" type="1" officer="15" preTask="132" taskid="63133" officerTime="20990625T100000" />
+	<task id="134" point="20" type="1" officer="19" preTask="133" taskid="63134" officerTime="20990625T100000" />
+	<task id="135" point="20" type="1" officer="23" preTask="134" taskid="63135" officerTime="20990625T100000" />
+	<task id="136" point="20" type="1" officer="27" preTask="135" taskid="63136" officerTime="20990625T100000" />
+	<task id="137" point="20" type="1" officer="31" preTask="136" taskid="63137" officerTime="20990625T100000" />
+	<task id="138" point="20" type="1" officer="33" preTask="137" taskid="63138" officerTime="20990625T100000" />
+	<task id="139" point="20" type="1" officer="36" preTask="138" taskid="63139" officerTime="20990625T100000" />
+	<task id="160" point="20" type="1" officer="4" taskid="63160" officerTime="20990625T100000" />
+	<task id="161" point="20" type="1" officer="12" preTask="160" taskid="63161" officerTime="20990625T100000" />
+	<task id="162" point="20" type="1" officer="20" preTask="161" taskid="63162" officerTime="20990625T100000" />
+	<task id="163" point="20" type="1" officer="28" preTask="162" taskid="63163" officerTime="20990625T100000" />
+	<task id="164" point="20" type="1" officer="36" preTask="163" taskid="63164" officerTime="20990625T100000" />
+	<task id="180" point="20" type="1" officer="8" taskid="63180" officerTime="20990625T100000" />
+	<task id="181" point="20" type="1" officer="16" preTask="180" taskid="63181" officerTime="20990625T100000" />
+	<task id="182" point="20" type="1" officer="24" preTask="181" taskid="63182" officerTime="20990625T100000" />
+	<task id="183" point="20" type="1" officer="32" preTask="182" taskid="63183" officerTime="20990625T100000" />
+	<task id="184" point="20" type="1" officer="38" preTask="183" taskid="63184" officerTime="20990625T100000" />
+	<task id="201" point="30" type="1" officer="2" taskid="63201" officerTime="20990625T100000" />
+	<task id="202" point="30" type="1" officer="5" preTask="201" taskid="63202" officerTime="20990625T100000" />
+	<task id="203" point="30" type="1" officer="9" preTask="202" taskid="63203" officerTime="20990625T100000" />
+	<task id="204" point="30" type="1" officer="13" preTask="203" taskid="63204" officerTime="20990625T100000" />
+	<task id="205" point="30" type="1" officer="17" preTask="204" taskid="63205" officerTime="20990625T100000" />
+	<task id="206" point="30" type="1" officer="21" preTask="205" taskid="63206" officerTime="20990625T100000" />
+	<task id="207" point="30" type="1" officer="25" preTask="206" taskid="63207" officerTime="20990625T100000" />
+	<task id="208" point="30" type="1" officer="29" preTask="207" taskid="63208" officerTime="20990625T100000" />
+	<task id="209" point="30" type="1" officer="33" preTask="208" taskid="63209" officerTime="20990625T100000" />
+	<task id="210" point="30" type="1" officer="36" preTask="209" taskid="63210" officerTime="20990625T100000" />
+	<task id="301" point="30" type="1" officer="1" taskid="63301" officerTime="20990625T100000" />
+	<task id="302" point="30" type="1" officer="10" preTask="301" taskid="63302" officerTime="20990625T100000" />
+	<task id="303" point="30" type="1" officer="19" preTask="302" taskid="63303" officerTime="20990625T100000" />
+	<task id="304" point="30" type="1" officer="28" preTask="303" taskid="63304" officerTime="20990625T100000" />
+	<task id="305" point="30" type="1" officer="36" preTask="304" taskid="63305" officerTime="20990625T100000" />
+	<task id="401" point="15" type="1" officer="1" taskid="63401" officerTime="20990625T100000" />
+	<task id="402" point="15" type="1" officer="5" preTask="401" taskid="63402" officerTime="20990625T100000" />
+	<task id="403" point="15" type="1" officer="9" preTask="402" taskid="63403" officerTime="20990625T100000" />
+	<task id="404" point="15" type="1" officer="13" preTask="403" taskid="63404" officerTime="20990625T100000" />
+	<task id="405" point="15" type="1" officer="17" preTask="404" taskid="63405" officerTime="20990625T100000" />
+	<task id="406" point="15" type="1" officer="21" preTask="405" taskid="63406" officerTime="20990625T100000" />
+	<task id="407" point="15" type="1" officer="25" preTask="406" taskid="63407" officerTime="20990625T100000" />
+	<task id="408" point="15" type="1" officer="29" preTask="407" taskid="63408" officerTime="20990625T100000" />
+	<task id="409" point="15" type="1" officer="33" preTask="408" taskid="63409" officerTime="20990625T100000" />
+	<task id="410" point="15" type="1" officer="36" preTask="409" taskid="63410" officerTime="20990625T100000" />
+	<task id="501" point="15" type="1" officer="1" taskid="63501" officerTime="20990625T100000" />
+	<task id="502" point="15" type="1" officer="5" preTask="501" taskid="63502" officerTime="20990625T100000" />
+	<task id="503" point="15" type="1" officer="9" preTask="502" taskid="63503" officerTime="20990625T100000" />
+	<task id="504" point="15" type="1" officer="13" preTask="503" taskid="63504" officerTime="20990625T100000" />
+	<task id="505" point="15" type="1" officer="17" preTask="504" taskid="63505" officerTime="20990625T100000" />
+	<task id="506" point="15" type="1" officer="21" preTask="505" taskid="63506" officerTime="20990625T100000" />
+	<task id="507" point="15" type="1" officer="25" preTask="506" taskid="63507" officerTime="20990625T100000" />
+	<task id="508" point="15" type="1" officer="29" preTask="507" taskid="63508" officerTime="20990625T100000" />
+	<task id="509" point="15" type="1" officer="33" preTask="508" taskid="63509" officerTime="20990625T100000" />
+	<task id="510" point="15" type="1" officer="37" preTask="509" taskid="63510" officerTime="20990625T100000" />
+	<task id="601" point="20" type="1" officer="1" taskid="63601" officerTime="20990625T100000" />
+	<task id="602" point="20" type="1" officer="2" preTask="601" taskid="63602" officerTime="20990625T100000" />
+	<task id="603" point="20" type="1" officer="3" preTask="602" taskid="63603" officerTime="20990625T100000" />
+	<task id="604" point="20" type="1" officer="4" preTask="603" taskid="63604" officerTime="20990625T100000" />
+	<task id="605" point="20" type="1" officer="5" preTask="604" taskid="63605" officerTime="20990625T100000" />
+	<task id="606" point="20" type="1" officer="6" preTask="605" taskid="63606" officerTime="20990625T100000" />
+	<task id="607" point="20" type="1" officer="7" preTask="606" taskid="63607" officerTime="20990625T100000" />
+	<task id="608" point="20" type="1" officer="8" preTask="607" taskid="63608" officerTime="20990625T100000" />
+	<task id="609" point="20" type="1" officer="9" preTask="608" taskid="63609" officerTime="20990625T100000" />
+	<task id="610" point="20" type="1" officer="10" preTask="609" taskid="63610" officerTime="20990625T100000" />
+	<task id="611" point="20" type="1" officer="11" preTask="610" taskid="63611" officerTime="20990625T100000" />
+	<task id="612" point="20" type="1" officer="12" preTask="611" taskid="63612" officerTime="20990625T100000" />
+	<task id="613" point="20" type="1" officer="13" preTask="612" taskid="63613" officerTime="20990625T100000" />
+	<task id="614" point="20" type="1" officer="14" preTask="613" taskid="63614" officerTime="20990625T100000" />
+	<task id="615" point="20" type="1" officer="15" preTask="614" taskid="63615" officerTime="20990625T100000" />
+	<task id="616" point="20" type="1" officer="16" preTask="615" taskid="63616" officerTime="20990625T100000" />
+	<task id="617" point="20" type="1" officer="17" preTask="616" taskid="63617" officerTime="20990625T100000" />
+	<task id="618" point="20" type="1" officer="18" preTask="617" taskid="63618" officerTime="20990625T100000" />
+	<task id="619" point="20" type="1" officer="19" preTask="618" taskid="63619" officerTime="20990625T100000" />
+	<task id="620" point="20" type="1" officer="20" preTask="619" taskid="63620" officerTime="20990625T100000" />
+	<task id="621" point="20" type="1" officer="21" preTask="620" taskid="63621" officerTime="20990625T100000" />
+	<task id="622" point="20" type="1" officer="22" preTask="621" taskid="63622" officerTime="20990625T100000" />
+	<task id="623" point="20" type="1" officer="23" preTask="622" taskid="63623" officerTime="20990625T100000" />
+	<task id="624" point="20" type="1" officer="24" preTask="623" taskid="63624" officerTime="20990625T100000" />
+	<task id="625" point="20" type="1" officer="25" preTask="624" taskid="63625" officerTime="20990625T100000" />
+	<task id="626" point="20" type="1" officer="26" preTask="625" taskid="63626" officerTime="20990625T100000" />
+	<task id="627" point="20" type="1" officer="27" preTask="626" taskid="63627" officerTime="20990625T100000" />
+	<task id="628" point="20" type="1" officer="28" preTask="627" taskid="63628" officerTime="20990625T100000" />
+	<task id="629" point="20" type="1" officer="29" preTask="628" taskid="63629" officerTime="20990625T100000" />
+	<task id="630" point="20" type="1" officer="30" preTask="629" taskid="63630" officerTime="20990625T100000" />
+	<task id="631" point="20" type="1" officer="31" preTask="630" taskid="63631" officerTime="20990625T100000" />
+	<task id="632" point="20" type="1" officer="32" preTask="631" taskid="63632" officerTime="20990625T100000" />
+	<task id="633" point="20" type="1" officer="33" preTask="632" taskid="63633" officerTime="20990625T100000" />
+	<task id="634" point="20" type="1" officer="34" preTask="633" taskid="63634" officerTime="20990625T100000" />
+	<task id="635" point="20" type="1" officer="35" preTask="634" taskid="63635" officerTime="20990625T100000" />
+	<task id="636" point="20" type="1" officer="36" preTask="635" taskid="63636" officerTime="20990625T100000" />
+	<task id="637" point="20" type="1" officer="37" preTask="636" taskid="63637" officerTime="20990625T100000" />
+	<task id="638" point="20" type="1" officer="38" preTask="637" taskid="63638" officerTime="20990625T100000" />
+	<task id="801" point="15" type="2" officer="3" taskid="63801" officerTime="20990625T100000" />
+	<task id="802" point="15" type="2" officer="7" preTask="801" taskid="63802" officerTime="20990625T100000" />
+	<task id="803" point="15" type="2" officer="11" preTask="802" taskid="63803" officerTime="20990625T100000" />
+	<task id="804" point="15" type="2" officer="15" preTask="803" taskid="63804" officerTime="20990625T100000" />
+	<task id="805" point="15" type="2" officer="19" preTask="804" taskid="63805" officerTime="20990625T100000" />
+	<task id="806" point="15" type="2" officer="23" preTask="805" taskid="63806" officerTime="20990625T100000" />
+	<task id="807" point="15" type="2" officer="27" preTask="806" taskid="63807" officerTime="20990625T100000" />
+	<task id="808" point="15" type="2" officer="31" preTask="807" taskid="63808" officerTime="20990625T100000" />
+	<task id="809" point="15" type="2" officer="35" preTask="808" taskid="63809" officerTime="20990625T100000" />
+	<task id="810" point="15" type="2" officer="38" preTask="809" taskid="63810" officerTime="20990625T100000" />
+	<task id="901" point="15" type="2" officer="6" taskid="63901" officerTime="20990625T100000" />
+	<task id="902" point="15" type="2" officer="12" preTask="901" taskid="63902" officerTime="20990625T100000" />
+	<task id="903" point="15" type="2" officer="20" preTask="902" taskid="63903" officerTime="20990625T100000" />
+	<task id="904" point="15" type="2" officer="28" preTask="903" taskid="63904" officerTime="20990625T100000" />
+	<task id="905" point="15" type="2" officer="36" preTask="904" taskid="63905" officerTime="20990625T100000" />
+	<task id="1001" point="15" type="2" officer="5" taskid="64001" officerTime="20990625T100000" />
+	<task id="1002" point="15" type="2" officer="9" preTask="1001" taskid="64002" officerTime="20990625T100000" />
+	<task id="1003" point="15" type="2" officer="13" preTask="1002" taskid="64003" officerTime="20990625T100000" />
+	<task id="1004" point="15" type="2" officer="17" preTask="1003" taskid="64004" officerTime="20990625T100000" />
+	<task id="1005" point="15" type="2" officer="21" preTask="1004" taskid="64005" officerTime="20990625T100000" />
+	<task id="1006" point="15" type="2" officer="25" preTask="1005" taskid="64006" officerTime="20990625T100000" />
+	<task id="1007" point="15" type="2" officer="29" preTask="1006" taskid="64007" officerTime="20990625T100000" />
+	<task id="1008" point="15" type="2" officer="33" preTask="1007" taskid="64008" officerTime="20990625T100000" />
+	<task id="1009" point="15" type="2" officer="35" preTask="1008" taskid="64009" officerTime="20990625T100000" />
+	<task id="1010" point="15" type="2" officer="37" preTask="1009" taskid="64010" officerTime="20990625T100000" />
+	<task id="1101" point="15" type="2" officer="3" taskid="64101" officerTime="20990625T100000" />
+	<task id="1102" point="15" type="2" officer="7" preTask="1101" taskid="64102" officerTime="20990625T100000" />
+	<task id="1103" point="15" type="2" officer="11" preTask="1102" taskid="64103" officerTime="20990625T100000" />
+	<task id="1104" point="15" type="2" officer="15" preTask="1103" taskid="64104" officerTime="20990625T100000" />
+	<task id="1105" point="15" type="2" officer="19" preTask="1104" taskid="64105" officerTime="20990625T100000" />
+	<task id="1106" point="15" type="2" officer="23" preTask="1105" taskid="64106" officerTime="20990625T100000" />
+	<task id="1107" point="15" type="2" officer="27" preTask="1106" taskid="64107" officerTime="20990625T100000" />
+	<task id="1108" point="15" type="2" officer="31" preTask="1107" taskid="64108" officerTime="20990625T100000" />
+	<task id="1109" point="15" type="2" officer="35" preTask="1108" taskid="64109" officerTime="20990625T100000" />
+	<task id="1110" point="15" type="2" officer="37" preTask="1109" taskid="64110" officerTime="20990625T100000" />
+	<task id="1201" point="15" type="2" officer="18" taskid="64201" officerTime="20990625T100000" />
+	<task id="1202" point="15" type="2" officer="20" preTask="1201" taskid="64202" officerTime="20990625T100000" />
+	<task id="1203" point="15" type="2" officer="22" preTask="1202" taskid="64203" officerTime="20990625T100000" />
+	<task id="1204" point="15" type="2" officer="24" preTask="1203" taskid="64204" officerTime="20990625T100000" />
+	<task id="1205" point="15" type="2" officer="26" preTask="1204" taskid="64205" officerTime="20990625T100000" />
+	<task id="1206" point="15" type="2" officer="28" preTask="1205" taskid="64206" officerTime="20990625T100000" />
+	<task id="1207" point="15" type="2" officer="30" preTask="1206" taskid="64207" officerTime="20990625T100000" />
+	<task id="1208" point="15" type="2" officer="32" preTask="1207" taskid="64208" officerTime="20990625T100000" />
+	<task id="1209" point="15" type="2" officer="34" preTask="1208" taskid="64209" officerTime="20990625T100000" />
+	<task id="1210" point="15" type="2" officer="36" preTask="1209" taskid="64210" officerTime="20990625T100000" />
+	<task id="1401" point="15" type="2" lockLevel="45" officer="5" taskid="64401" officerTime="20990625T100000" />
+	<task id="1402" point="15" type="2" lockLevel="45" officer="7" preTask="1401" taskid="64402" officerTime="20990625T100000" />
+	<task id="1403" point="15" type="2" lockLevel="45" officer="9" preTask="1402" taskid="64403" officerTime="20990625T100000" />
+	<task id="1404" point="15" type="2" lockLevel="45" officer="11" preTask="1403" taskid="64404" officerTime="20990625T100000" />
+	<task id="1405" point="15" type="2" lockLevel="45" officer="13" preTask="1404" taskid="64405" officerTime="20990625T100000" />
+	<task id="1406" point="15" type="2" lockLevel="45" officer="15" preTask="1405" taskid="64406" officerTime="20990625T100000" />
+	<task id="1407" point="15" type="2" lockLevel="45" officer="17" preTask="1406" taskid="64407" officerTime="20990625T100000" />
+	<task id="1408" point="15" type="2" lockLevel="45" officer="19" preTask="1407" taskid="64408" officerTime="20990625T100000" />
+	<task id="1409" point="15" type="2" lockLevel="45" officer="21" preTask="1408" taskid="64409" officerTime="20990625T100000" />
+	<task id="1410" point="15" type="2" lockLevel="45" officer="23" preTask="1409" taskid="64410" officerTime="20990625T100000" />
+	<task id="1411" point="15" type="2" lockLevel="45" officer="25" preTask="1410" taskid="64411" officerTime="20990625T100000" />
+	<task id="1412" point="15" type="2" lockLevel="45" officer="28" preTask="1411" taskid="64412" officerTime="20990625T100000" />
+	<task id="1413" point="15" type="2" lockLevel="45" officer="31" preTask="1412" taskid="64413" officerTime="20990625T100000" />
+	<task id="1414" point="15" type="2" lockLevel="45" officer="34" preTask="1413" taskid="64414" officerTime="20990625T100000" />
+	<task id="1415" point="15" type="2" lockLevel="45" officer="37" preTask="1414" taskid="64415" officerTime="20990625T100000" />
+	<task id="1501" point="20" type="2" officer="1" taskid="64501" officerTime="20990625T100000" />
+	<task id="1502" point="20" type="2" officer="2" preTask="1501" taskid="64502" officerTime="20990625T100000" />
+	<task id="1503" point="20" type="2" officer="3" preTask="1502" taskid="64503" officerTime="20990625T100000" />
+	<task id="1504" point="20" type="2" officer="4" preTask="1503" taskid="64504" officerTime="20990625T100000" />
+	<task id="1505" point="20" type="2" officer="5" preTask="1504" taskid="64505" officerTime="20990625T100000" />
+	<task id="1506" point="20" type="2" officer="6" preTask="1505" taskid="64506" officerTime="20990625T100000" />
+	<task id="1507" point="20" type="2" officer="7" preTask="1506" taskid="64507" officerTime="20990625T100000" />
+	<task id="1508" point="20" type="2" officer="8" preTask="1507" taskid="64508" officerTime="20990625T100000" />
+	<task id="1509" point="20" type="2" officer="9" preTask="1508" taskid="64509" officerTime="20990625T100000" />
+	<task id="1510" point="20" type="2" officer="10" preTask="1509" taskid="64510" officerTime="20990625T100000" />
+	<task id="1511" point="20" type="2" officer="11" preTask="1510" taskid="64511" officerTime="20990625T100000" />
+	<task id="1512" point="20" type="2" officer="12" preTask="1511" taskid="64512" officerTime="20990625T100000" />
+	<task id="1513" point="20" type="2" officer="13" preTask="1512" taskid="64513" officerTime="20990625T100000" />
+	<task id="1514" point="20" type="2" officer="14" preTask="1513" taskid="64514" officerTime="20990625T100000" />
+	<task id="1515" point="20" type="2" officer="15" preTask="1514" taskid="64515" officerTime="20990625T100000" />
+	<task id="1516" point="20" type="2" officer="16" preTask="1515" taskid="64516" officerTime="20990625T100000" />
+	<task id="1517" point="20" type="2" officer="17" preTask="1516" taskid="64517" officerTime="20990625T100000" />
+	<task id="1518" point="20" type="2" officer="18" preTask="1517" taskid="64518" officerTime="20990625T100000" />
+	<task id="1519" point="20" type="2" officer="19" preTask="1518" taskid="64519" officerTime="20990625T100000" />
+	<task id="1520" point="20" type="2" officer="20" preTask="1519" taskid="64520" officerTime="20990625T100000" />
+	<task id="1521" point="20" type="2" officer="21" preTask="1520" taskid="64521" officerTime="20990625T100000" />
+	<task id="1522" point="20" type="2" officer="22" preTask="1521" taskid="64522" officerTime="20990625T100000" />
+	<task id="1523" point="20" type="2" officer="23" preTask="1522" taskid="64523" officerTime="20990625T100000" />
+	<task id="1524" point="20" type="2" officer="24" preTask="1523" taskid="64524" officerTime="20990625T100000" />
+	<task id="1525" point="20" type="2" officer="25" preTask="1524" taskid="64525" officerTime="20990625T100000" />
+	<task id="1526" point="20" type="2" officer="26" preTask="1525" taskid="64526" officerTime="20990625T100000" />
+	<task id="1527" point="20" type="2" officer="27" preTask="1526" taskid="64527" officerTime="20990625T100000" />
+	<task id="1528" point="20" type="2" officer="28" preTask="1527" taskid="64528" officerTime="20990625T100000" />
+	<task id="1529" point="20" type="2" officer="29" preTask="1528" taskid="64529" officerTime="20990625T100000" />
+	<task id="1530" point="20" type="2" officer="30" preTask="1529" taskid="64530" officerTime="20990625T100000" />
+	<task id="1531" point="20" type="2" officer="31" preTask="1530" taskid="64531" officerTime="20990625T100000" />
+	<task id="1532" point="20" type="2" officer="32" preTask="1531" taskid="64532" officerTime="20990625T100000" />
+	<task id="1533" point="20" type="2" officer="33" preTask="1532" taskid="64533" officerTime="20990625T100000" />
+	<task id="1534" point="20" type="2" officer="34" preTask="1533" taskid="64534" officerTime="20990625T100000" />
+	<task id="1535" point="20" type="2" officer="35" preTask="1534" taskid="64535" officerTime="20990625T100000" />
+	<task id="1536" point="20" type="2" officer="36" preTask="1535" taskid="64536" officerTime="20990625T100000" />
+	<task id="1537" point="20" type="2" officer="37" preTask="1536" taskid="64537" officerTime="20990625T100000" />
+	<task id="1538" point="20" type="2" officer="38" preTask="1537" taskid="64538" officerTime="20990625T100000" />
+	<task id="1601" point="10" type="3" officer="1" taskid="64601" officerTime="20990625T100000" />
+	<task id="1602" point="10" type="3" officer="2" preTask="1601" taskid="64602" officerTime="20990625T100000" />
+	<task id="1603" point="10" type="3" officer="3" preTask="1602" taskid="64603" officerTime="20990625T100000" />
+	<task id="1604" point="10" type="3" officer="4" preTask="1603" taskid="64604" officerTime="20990625T100000" />
+	<task id="1605" point="10" type="3" officer="5" preTask="1604" taskid="64605" officerTime="20990625T100000" />
+	<task id="1606" point="10" type="3" officer="6" preTask="1605" taskid="64606" officerTime="20990625T100000" />
+	<task id="1607" point="10" type="3" officer="7" preTask="1606" taskid="64607" officerTime="20990625T100000" />
+	<task id="1608" point="10" type="3" officer="8" preTask="1607" taskid="64608" officerTime="20990625T100000" />
+	<task id="1609" point="10" type="3" officer="9" preTask="1608" taskid="64609" officerTime="20990625T100000" />
+	<task id="1610" point="10" type="3" officer="10" preTask="1609" taskid="64610" officerTime="20990625T100000" />
+	<task id="1611" point="10" type="3" officer="11" preTask="1610" taskid="64611" officerTime="20990625T100000" />
+	<task id="1612" point="10" type="3" officer="12" preTask="1611" taskid="64612" officerTime="20990625T100000" />
+	<task id="1613" point="10" type="3" officer="13" preTask="1612" taskid="64613" officerTime="20990625T100000" />
+	<task id="1614" point="10" type="3" officer="14" preTask="1613" taskid="64614" officerTime="20990625T100000" />
+	<task id="1615" point="10" type="3" officer="15" preTask="1614" taskid="64615" officerTime="20990625T100000" />
+	<task id="1616" point="10" type="3" officer="16" preTask="1615" taskid="64616" officerTime="20990625T100000" />
+	<task id="1617" point="10" type="3" officer="17" preTask="1616" taskid="64617" officerTime="20990625T100000" />
+	<task id="1618" point="10" type="3" officer="18" preTask="1617" taskid="64618" officerTime="20990625T100000" />
+	<task id="1619" point="10" type="3" officer="19" preTask="1618" taskid="64619" officerTime="20990625T100000" />
+	<task id="1620" point="10" type="3" officer="20" preTask="1619" taskid="64620" officerTime="20990625T100000" />
+	<task id="1621" point="10" type="3" officer="21" preTask="1620" taskid="64621" officerTime="20990625T100000" />
+	<task id="1622" point="10" type="3" officer="22" preTask="1621" taskid="64622" officerTime="20990625T100000" />
+	<task id="1623" point="10" type="3" officer="23" preTask="1622" taskid="64623" officerTime="20990625T100000" />
+	<task id="1624" point="10" type="3" officer="24" preTask="1623" taskid="64624" officerTime="20990625T100000" />
+	<task id="1625" point="10" type="3" officer="25" preTask="1624" taskid="64625" officerTime="20990625T100000" />
+	<task id="1626" point="10" type="3" officer="26" preTask="1625" taskid="64626" officerTime="20990625T100000" />
+	<task id="1627" point="10" type="3" officer="27" preTask="1626" taskid="64627" officerTime="20990625T100000" />
+	<task id="1628" point="10" type="3" officer="28" preTask="1627" taskid="64628" officerTime="20990625T100000" />
+	<task id="1629" point="10" type="3" officer="29" preTask="1628" taskid="64629" officerTime="20990625T100000" />
+	<task id="1630" point="10" type="3" officer="30" preTask="1629" taskid="64630" officerTime="20990625T100000" />
+	<task id="1631" point="10" type="3" officer="31" preTask="1630" taskid="64631" officerTime="20990625T100000" />
+	<task id="1632" point="10" type="3" officer="32" preTask="1631" taskid="64632" officerTime="20990625T100000" />
+	<task id="1633" point="10" type="3" officer="33" preTask="1632" taskid="64633" officerTime="20990625T100000" />
+	<task id="1634" point="10" type="3" officer="34" preTask="1633" taskid="64634" officerTime="20990625T100000" />
+	<task id="1635" point="10" type="3" officer="35" preTask="1634" taskid="64635" officerTime="20990625T100000" />
+	<task id="1636" point="10" type="3" officer="36" preTask="1635" taskid="64636" officerTime="20990625T100000" />
+	<task id="1637" point="10" type="3" officer="37" preTask="1636" taskid="64637" officerTime="20990625T100000" />
+	<task id="1638" point="10" type="3" officer="38" preTask="1637" taskid="64638" officerTime="20990625T100000" />
+	<task id="1701" point="10" type="3" officer="1" taskid="64701" officerTime="20990625T100000" />
+	<task id="1702" point="10" type="3" officer="2" preTask="1701" taskid="64702" officerTime="20990625T100000" />
+	<task id="1703" point="10" type="3" officer="3" preTask="1702" taskid="64703" officerTime="20990625T100000" />
+	<task id="1704" point="10" type="3" officer="4" preTask="1703" taskid="64704" officerTime="20990625T100000" />
+	<task id="1705" point="10" type="3" officer="5" preTask="1704" taskid="64705" officerTime="20990625T100000" />
+	<task id="1706" point="10" type="3" officer="6" preTask="1705" taskid="64706" officerTime="20990625T100000" />
+	<task id="1707" point="10" type="3" officer="7" preTask="1706" taskid="64707" officerTime="20990625T100000" />
+	<task id="1708" point="10" type="3" officer="8" preTask="1707" taskid="64708" officerTime="20990625T100000" />
+	<task id="1709" point="10" type="3" officer="9" preTask="1708" taskid="64709" officerTime="20990625T100000" />
+	<task id="1710" point="10" type="3" officer="10" preTask="1709" taskid="64710" officerTime="20990625T100000" />
+	<task id="1711" point="10" type="3" officer="11" preTask="1710" taskid="64711" officerTime="20990625T100000" />
+	<task id="1712" point="10" type="3" officer="12" preTask="1711" taskid="64712" officerTime="20990625T100000" />
+	<task id="1713" point="10" type="3" officer="13" preTask="1712" taskid="64713" officerTime="20990625T100000" />
+	<task id="1714" point="10" type="3" officer="14" preTask="1713" taskid="64714" officerTime="20990625T100000" />
+	<task id="1715" point="10" type="3" officer="15" preTask="1714" taskid="64715" officerTime="20990625T100000" />
+	<task id="1716" point="10" type="3" officer="16" preTask="1715" taskid="64716" officerTime="20990625T100000" />
+	<task id="1717" point="10" type="3" officer="17" preTask="1716" taskid="64717" officerTime="20990625T100000" />
+	<task id="1718" point="10" type="3" officer="18" preTask="1717" taskid="64718" officerTime="20990625T100000" />
+	<task id="1719" point="10" type="3" officer="19" preTask="1718" taskid="64719" officerTime="20990625T100000" />
+	<task id="1720" point="10" type="3" officer="20" preTask="1719" taskid="64720" officerTime="20990625T100000" />
+	<task id="1721" point="10" type="3" officer="21" preTask="1720" taskid="64721" officerTime="20990625T100000" />
+	<task id="1722" point="10" type="3" officer="22" preTask="1721" taskid="64722" officerTime="20990625T100000" />
+	<task id="1723" point="10" type="3" officer="23" preTask="1722" taskid="64723" officerTime="20990625T100000" />
+	<task id="1724" point="10" type="3" officer="24" preTask="1723" taskid="64724" officerTime="20990625T100000" />
+	<task id="1725" point="10" type="3" officer="25" preTask="1724" taskid="64725" officerTime="20990625T100000" />
+	<task id="1726" point="10" type="3" officer="26" preTask="1725" taskid="64726" officerTime="20990625T100000" />
+	<task id="1727" point="10" type="3" officer="27" preTask="1726" taskid="64727" officerTime="20990625T100000" />
+	<task id="1728" point="10" type="3" officer="28" preTask="1727" taskid="64728" officerTime="20990625T100000" />
+	<task id="1729" point="10" type="3" officer="29" preTask="1728" taskid="64729" officerTime="20990625T100000" />
+	<task id="1730" point="10" type="3" officer="30" preTask="1729" taskid="64730" officerTime="20990625T100000" />
+	<task id="1731" point="10" type="3" officer="31" preTask="1730" taskid="64731" officerTime="20990625T100000" />
+	<task id="1732" point="10" type="3" officer="32" preTask="1731" taskid="64732" officerTime="20990625T100000" />
+	<task id="1733" point="10" type="3" officer="33" preTask="1732" taskid="64733" officerTime="20990625T100000" />
+	<task id="1734" point="10" type="3" officer="34" preTask="1733" taskid="64734" officerTime="20990625T100000" />
+	<task id="1735" point="10" type="3" officer="35" preTask="1734" taskid="64735" officerTime="20990625T100000" />
+	<task id="1736" point="10" type="3" officer="36" preTask="1735" taskid="64736" officerTime="20990625T100000" />
+	<task id="1737" point="10" type="3" officer="37" preTask="1736" taskid="64737" officerTime="20990625T100000" />
+	<task id="1738" point="10" type="3" officer="38" preTask="1737" taskid="64738" officerTime="20990625T100000" />
+	<task id="1801" point="10" type="3" lockLevel="45" officer="5" taskid="64801" officerTime="20990625T100000" />
+	<task id="1802" point="10" type="3" lockLevel="45" officer="9" preTask="1801" taskid="64802" officerTime="20990625T100000" />
+	<task id="1803" point="10" type="3" lockLevel="45" officer="13" preTask="1802" taskid="64803" officerTime="20990625T100000" />
+	<task id="1804" point="10" type="3" lockLevel="45" officer="17" preTask="1803" taskid="64804" officerTime="20990625T100000" />
+	<task id="1805" point="10" type="3" lockLevel="45" officer="21" preTask="1804" taskid="64805" officerTime="20990625T100000" />
+	<task id="1806" point="10" type="3" lockLevel="45" officer="25" preTask="1805" taskid="64806" officerTime="20990625T100000" />
+	<task id="1807" point="10" type="3" lockLevel="45" officer="29" preTask="1806" taskid="64807" officerTime="20990625T100000" />
+	<task id="1808" point="10" type="3" lockLevel="45" officer="33" preTask="1807" taskid="64808" officerTime="20990625T100000" />
+	<task id="1809" point="10" type="3" lockLevel="45" officer="35" preTask="1808" taskid="64809" officerTime="20990625T100000" />
+	<task id="1810" point="10" type="3" lockLevel="45" officer="37" preTask="1809" taskid="64810" officerTime="20990625T100000" />
+	<task id="1901" point="15" type="3" officer="2" taskid="64901" officerTime="20990625T100000" />
+	<task id="1902" point="15" type="3" officer="4" preTask="1901" taskid="64902" officerTime="20990625T100000" />
+	<task id="1903" point="15" type="3" officer="6" preTask="1902" taskid="64903" officerTime="20990625T100000" />
+	<task id="1904" point="15" type="3" officer="8" preTask="1903" taskid="64904" officerTime="20990625T100000" />
+	<task id="1905" point="15" type="3" officer="10" preTask="1904" taskid="64905" officerTime="20990625T100000" />
+	<task id="1906" point="15" type="3" officer="12" preTask="1905" taskid="64906" officerTime="20990625T100000" />
+	<task id="1907" point="15" type="3" officer="14" preTask="1906" taskid="64907" officerTime="20990625T100000" />
+	<task id="1908" point="15" type="3" officer="16" preTask="1907" taskid="64908" officerTime="20990625T100000" />
+	<task id="1909" point="15" type="3" officer="18" preTask="1908" taskid="64909" officerTime="20990625T100000" />
+	<task id="1910" point="15" type="3" officer="20" preTask="1909" taskid="64910" officerTime="20990625T100000" />
+	<task id="1911" point="15" type="3" officer="22" preTask="1910" taskid="64911" officerTime="20990625T100000" />
+	<task id="1912" point="15" type="3" officer="24" preTask="1911" taskid="64912" officerTime="20990625T100000" />
+	<task id="1913" point="15" type="3" officer="26" preTask="1912" taskid="64913" officerTime="20990625T100000" />
+	<task id="1914" point="15" type="3" officer="28" preTask="1913" taskid="64914" officerTime="20990625T100000" />
+	<task id="1915" point="15" type="3" officer="30" preTask="1914" taskid="64915" officerTime="20990625T100000" />
+	<task id="2001" point="15" type="3" officer="15" taskid="65001" officerTime="20990625T100000" />
+	<task id="2002" point="15" type="3" officer="20" preTask="2001" taskid="65002" officerTime="20990625T100000" />
+	<task id="2003" point="15" type="3" officer="25" preTask="2002" taskid="65003" officerTime="20990625T100000" />
+	<task id="2004" point="15" type="3" officer="30" preTask="2003" taskid="65004" officerTime="20990625T100000" />
+	<task id="2005" point="15" type="3" officer="35" preTask="2004" taskid="65005" officerTime="20990625T100000" />
+	<task id="2101" point="10" type="4" officer="1" taskid="65101" officerTime="20990625T100000" />
+	<task id="2102" point="10" type="4" officer="10" preTask="2101" taskid="65102" officerTime="20990625T100000" />
+	<task id="2103" point="10" type="4" officer="19" preTask="2102" taskid="65103" officerTime="20990625T100000" />
+	<task id="2104" point="10" type="4" officer="28" preTask="2103" taskid="65104" officerTime="20990625T100000" />
+	<task id="2105" point="10" type="4" officer="36" preTask="2104" taskid="65105" officerTime="20990625T100000" />
+	<task id="2201" point="20" type="4" officer="1" taskid="65201" officerTime="20990625T100000" />
+	<task id="2202" point="20" type="4" officer="5" preTask="2201" taskid="65202" officerTime="20990625T100000" />
+	<task id="2203" point="20" type="4" officer="9" preTask="2202" taskid="65203" officerTime="20990625T100000" />
+	<task id="2204" point="20" type="4" officer="13" preTask="2203" taskid="65204" officerTime="20990625T100000" />
+	<task id="2205" point="20" type="4" officer="17" preTask="2204" taskid="65205" officerTime="20990625T100000" />
+	<task id="2206" point="20" type="4" officer="21" preTask="2205" taskid="65206" officerTime="20990625T100000" />
+	<task id="2207" point="20" type="4" officer="25" preTask="2206" taskid="65207" officerTime="20990625T100000" />
+	<task id="2208" point="20" type="4" officer="29" preTask="2207" taskid="65208" officerTime="20990625T100000" />
+	<task id="2209" point="20" type="4" officer="33" preTask="2208" taskid="65209" officerTime="20990625T100000" />
+	<task id="2210" point="20" type="4" officer="36" preTask="2209" taskid="65210" officerTime="20990625T100000" />
+	<task id="2301" point="20" type="4" officer="2" taskid="65301" officerTime="20990625T100000" />
+	<task id="2302" point="20" type="4" officer="4" preTask="2301" taskid="65302" officerTime="20990625T100000" />
+	<task id="2303" point="20" type="4" officer="6" preTask="2302" taskid="65303" officerTime="20990625T100000" />
+	<task id="2304" point="20" type="4" officer="8" preTask="2303" taskid="65304" officerTime="20990625T100000" />
+	<task id="2305" point="20" type="4" officer="10" preTask="2304" taskid="65305" officerTime="20990625T100000" />
+	<task id="2306" point="20" type="4" officer="12" preTask="2305" taskid="65306" officerTime="20990625T100000" />
+	<task id="2307" point="20" type="4" officer="14" preTask="2306" taskid="65307" officerTime="20990625T100000" />
+	<task id="2308" point="20" type="4" officer="16" preTask="2307" taskid="65308" officerTime="20990625T100000" />
+	<task id="2309" point="20" type="4" officer="18" preTask="2308" taskid="65309" officerTime="20990625T100000" />
+	<task id="2310" point="20" type="4" officer="20" preTask="2309" taskid="65310" officerTime="20990625T100000" />
+	<task id="2311" point="20" type="4" officer="22" preTask="2310" taskid="65311" officerTime="20990625T100000" />
+	<task id="2312" point="20" type="4" officer="24" preTask="2311" taskid="65312" officerTime="20990625T100000" />
+	<task id="2313" point="20" type="4" officer="26" preTask="2312" taskid="65313" officerTime="20990625T100000" />
+	<task id="2314" point="20" type="4" officer="28" preTask="2313" taskid="65314" officerTime="20990625T100000" />
+	<task id="2315" point="20" type="4" officer="30" preTask="2314" taskid="65315" officerTime="20990625T100000" />
+	<task id="2316" point="20" type="4" officer="32" preTask="2315" taskid="65316" officerTime="20990625T100000" />
+	<task id="2317" point="20" type="4" officer="34" preTask="2316" taskid="65317" officerTime="20990625T100000" />
+	<task id="2318" point="20" type="4" officer="36" preTask="2317" taskid="65318" officerTime="20990625T100000" />
+	<task id="2319" point="20" type="4" officer="37" preTask="2318" taskid="65319" officerTime="20990625T100000" />
+	<task id="2320" point="20" type="4" officer="38" preTask="2319" taskid="65320" officerTime="20990625T100000" />
+	<task id="2401" point="20" type="4" officer="1" taskid="65401" officerTime="20990625T100000" />
+</root>

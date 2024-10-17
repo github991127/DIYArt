@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <!--allowteamorsingle 0都允许但只会组队匹配组队个人匹配个人 1是只允许组队 2是只允许个人 3是组队个人都可以并且都可以互相匹配到
+   type - 找队友匹配逻辑
+   lineCnt - 匹配队列允许人数，只能1人=1，2人=2，3人=4，4人=8；如果1、2人都允许，则1+2=3
+   userCnt - 匹配进去的人数
+   m_max_team_member_count - 队伍中最大的人数
+   keepSeconds 进入匹配队列时间
+   keepSecondsMin 最小进入匹配队列时间
+   strictSeconds 严格匹配队列时间
+   looseSeconds 宽松匹配队列时间-->
+   
+  <AssignList>
+	<!--守卫剑阁-->
+    <Assign gameLabelModel="39" type="6" isArea="0" lineCnt="3" userCnt="2" runAwayPunish="600,1200,2400,7200" mpAi="1" m_max_team_member_count="2" allowTeamOrSingle="0" params="2">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="10" keepSecondsMin="1" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="1" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="1" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="1" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="100"/>
+        <Item lv="4" from="101" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="200" ip="0" ipSameCnt="1"/>
+      <LooseMP param1X="1" param2X="200" ip="0" ipSameCnt="1"/>
+    </Assign>
+	
+	<!--神武再世-->
+	<Assign gameLabelModel="91" isArea="0" type="11" lineCnt="1" userCnt="3" runAwayPunish="1800,3600,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200" m_max_team_member_count="3" mpAi="0" allowTeamOrSingle="3" params ="0,1200,2500,5000">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="6" keepSecondsMin="1" strictSeconds="120" looseSeconds="300"/>
+        <Item userCnt="100" keepSeconds="6" keepSecondsMin="1" strictSeconds="120" looseSeconds="300"/>
+        <Item userCnt="300" keepSeconds="6" keepSecondsMin="1" strictSeconds="120" looseSeconds="300"/>
+        <Item userCnt="500" keepSeconds="6" keepSecondsMin="1" strictSeconds="120" looseSeconds="300"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="140"/>
+        <Item lv="4" from="141" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="0" ip="0" ipSameCnt="0"/>
+      <LooseMP param1X="2" param2X="0" ip="0" ipSameCnt="0"/>
+    <Record time="259200" num="10" check="2"/>
+    <MatchArgs seconds="5" powerDiff="1000" levDiffFri="200" ip="0" emyRepeatLimit="0" checkMember="0" />
+    <MatchArgs seconds="20" powerDiff="3000" levDiffFri="200" ip="0" emyRepeatLimit="0" checkMember="0" />
+    <MatchArgs seconds="60" powerDiff="10000" levDiffFri="200" ip="0" emyRepeatLimit="0" checkMember="0" />
+    <MatchArgs seconds="120" powerDiff="30000" levDiffFri="200" ip="0" emyRepeatLimit="0" checkMember="0" />
+    <MatchArgs seconds="180" powerDiff="99999" levDiffFri="200" ip="0" emyRepeatLimit="0" checkMember="0" />
+    </Assign>
+	
+	
+	<!--斗地主-->
+	
+		<!--
+		userCnt表示队列人数 
+		keepSeconds 、eepSecondsMin、strictSeconds、looseSeconds，表示4个匹配时间段
+		ip， 1表示限制同ip，0表示不限制
+		ipSameCnt 表示同ip人数   -->
+		<Assign gameLabelModel="149" isArea="0" type="14" lineCnt="1" userCnt="3" runAwayPunish="600,1800,3600,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200" m_max_team_member_count="1" mpAi="0" allowTeamOrSingle="3" params ="0,1200,2500,5000">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="100" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="300" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="500" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="140"/>
+        <Item lv="4" from="141" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="0" ip="1" ipSameCnt="0"/>
+      <LooseMP param1X="2" param2X="0" ip="1" ipSameCnt="0"/>
+	  <Record time="259200" num="10" check="2"/>
+    </Assign>
+		<Assign gameLabelModel="148" isArea="0" type="14" lineCnt="1" userCnt="3" runAwayPunish="600,1800,3600" m_max_team_member_count="1" mpAi="0" allowTeamOrSingle="3" params ="0,1200,2500,5000">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="100" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="300" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="500" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="140"/>
+        <Item lv="4" from="141" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="0" ip="1" ipSameCnt="0"/>
+      <LooseMP param1X="2" param2X="0" ip="1" ipSameCnt="0"/>
+	  <Record time="259200" num="10" check="2"/>
+    </Assign>
+		<Assign gameLabelModel="161" isArea="0" type="14" lineCnt="1" userCnt="3" runAwayPunish="600,1800,3600" m_max_team_member_count="1" mpAi="0" allowTeamOrSingle="3" params ="0,1200,2500,5000">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="100" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="300" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="500" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="140"/>
+        <Item lv="4" from="141" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="0" ip="1" ipSameCnt="0"/>
+      <LooseMP param1X="2" param2X="0" ip="1" ipSameCnt="0"/>
+	  <Record time="259200" num="10" check="2"/>
+    </Assign>
+	<Assign gameLabelModel="117" isArea="0" type="7" lineCnt="1" userCnt="3" runAwayPunish="1800,3600,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200" m_max_team_member_count="1" mpAi="0" allowTeamOrSingle="3" params ="0,1200,2500,5000">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="6" keepSecondsMin="1" strictSeconds="120" looseSeconds="300"/>
+        <Item userCnt="100" keepSeconds="6" keepSecondsMin="1" strictSeconds="120" looseSeconds="300"/>
+        <Item userCnt="300" keepSeconds="6" keepSecondsMin="1" strictSeconds="120" looseSeconds="300"/>
+        <Item userCnt="500" keepSeconds="6" keepSecondsMin="1" strictSeconds="120" looseSeconds="300"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="140"/>
+        <Item lv="4" from="141" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="0" ip="1" ipSameCnt="0"/>
+      <LooseMP param1X="2" param2X="0" ip="1" ipSameCnt="0"/>
+	  <Record time="259200" num="10" check="2"/>
+    </Assign>
+     <Assign gameLabelModel="118" isArea="0" type="7" lineCnt="1" userCnt="3" runAwayPunish="1800,3600,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200" m_max_team_member_count="1" mpAi="0" allowTeamOrSingle="3" params ="0,4000,8000">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="6" keepSecondsMin="1" strictSeconds="120" looseSeconds="300"/>
+        <Item userCnt="100" keepSeconds="6" keepSecondsMin="1" strictSeconds="120" looseSeconds="300"/>
+        <Item userCnt="300" keepSeconds="6" keepSecondsMin="1" strictSeconds="120" looseSeconds="300"/>
+        <Item userCnt="500" keepSeconds="6" keepSecondsMin="1" strictSeconds="120" looseSeconds="300"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="140"/>
+        <Item lv="4" from="141" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="0" ip="1" ipSameCnt="0"/>
+      <LooseMP param1X="2" param2X="0" ip="1" ipSameCnt="0"/>
+	  <Record time="259200" num="6" check="1"/>	  
+    </Assign>
+		<Assign gameLabelModel="136" isArea="0" type="9" lineCnt="1" userCnt="5" runAwayPunish="1800,3600,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200" m_max_team_member_count="1" mpAi="0" allowTeamOrSingle="3" params ="0,1200,2500,5000">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="100" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="300" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="500" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="140"/>
+        <Item lv="4" from="141" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="0" ip="1" ipSameCnt="0"/>
+      <LooseMP param1X="2" param2X="0" ip="1" ipSameCnt="0"/>
+	  <Record time="259200" num="10" check="2"/>
+    </Assign>
+  <Assign gameLabelModel="139" isArea="0" type="10" lineCnt="1" userCnt="4" runAwayPunish="1800,3600,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200,7200" m_max_team_member_count="2" mpAi="0" allowTeamOrSingle="3" params ="0,1200,2500,5000">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="6" keepSecondsMin="1" strictSeconds="600" looseSeconds="600"/>
+        <Item userCnt="100" keepSeconds="6" keepSecondsMin="1" strictSeconds="600" looseSeconds="600"/>
+        <Item userCnt="300" keepSeconds="6" keepSecondsMin="1" strictSeconds="600" looseSeconds="600"/>
+        <Item userCnt="500" keepSeconds="6" keepSecondsMin="1" strictSeconds="600" looseSeconds="600"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="140"/>
+        <Item lv="4" from="141" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="0" ip="0" ipSameCnt="0"/>
+      <LooseMP param1X="2" param2X="0" ip="0" ipSameCnt="0"/>
+    <Record time="259200" num="10" check="2"/>
+      <MatchPower score="-99999" basePower="4000" />
+    <MatchPower score="0" basePower="4100" />
+    <MatchPower score="1000" basePower="2000" />
+    <MatchPower score="1130" basePower="2200" />
+    <MatchPower score="1260" basePower="2400" />
+    <MatchPower score="1390" basePower="2600" />
+    <MatchPower score="1520" basePower="2900" />
+    <MatchPower score="1650" basePower="3200" />
+    <MatchPower score="1780" basePower="3500" />
+    <MatchPower score="1910" basePower="3800" />
+    <MatchPower score="2040" basePower="4200" />
+    <MatchPower score="2170" basePower="4700" />
+    <MatchPower score="2300" basePower="5100" />
+    <MatchPower score="2430" basePower="5700" />
+    <MatchPower score="2560" basePower="6200" />
+    <MatchPower score="2690" basePower="6900" />
+    <MatchPower score="2820" basePower="7500" />
+    <MatchPower score="2950" basePower="8000" />
+    <MatchPower score="3080" basePower="8600" />
+    <MatchPower score="3210" basePower="9100" />
+    <MatchPower score="3340" basePower="9700" />
+    <MatchPower score="3470" basePower="10200" />	
+    <MatchArgs seconds="3" powerDiff="500" levDiffFri="120" ip="1" emyRepeatLimit="1" checkMember="1" rankDiff="5"/>
+    <MatchArgs seconds="10" powerDiff="800" levDiffFri="140" ip="1" emyRepeatLimit="1" checkMember="1" rankDiff="7"/>
+    <MatchArgs seconds="20" powerDiff="1000" levDiffFri="160" ip="1" emyRepeatLimit="1" checkMember="1" rankDiff="10"/>
+    <MatchArgs seconds="30" powerDiff="1500" levDiffFri="160" ip="1" emyRepeatLimit="1" checkMember="1" rankDiff="20"/>
+    <MatchArgs seconds="60" powerDiff="2000" levDiffFri="160" ip="1" emyRepeatLimit="1" checkMember="1" rankDiff="20"/>
+    <MatchArgs seconds="120" powerDiff="4000" levDiffFri="160" ip="1" emyRepeatLimit="1" checkMember="0" rankDiff="20"/>
+    <MatchArgs seconds="300" powerDiff="5000" levDiffFri="160" ip="1" emyRepeatLimit="1" checkMember="0" rankDiff="20"/>
+    <MatchArgs seconds="600" powerDiff="6000" levDiffFri="160" ip="1" emyRepeatLimit="0" checkMember="0" rankDiff="20"/>
+    </Assign>		
+	
+	<!--夺粮匹配规则-->
+    <Assign gameLabelModel="44" type="1" lineCnt="1" userCnt="6">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="40" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="100"/>
+        <Item lv="4" from="101" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="200" ip="1" ipSameCnt="0"/>
+      <LooseMP param1X="1" param2X="200" ip="1" ipSameCnt="0"/>
+    </Assign>
+	
+	<!--无尽之战 params="3,10,20"  匹配机器人的字段配置 3-3胜  10-整个队列的人数总值，20，进入宽松队列的时间。StrictMP，LooseMP 中 param1X 胜场差异数 param2X 负场差异数 ，大于配置值则不会被匹配到。-->	
+	<Assign gameLabelModel="47" isArea="0" type="3" lineCnt="1" userCnt="2" runAwayPunish="10,20,40,120" m_max_team_member_count="1" mpAi="1" allowTeamOrSingle="2" params="3,10,20">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="3" keepSecondsMin="1" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="100"/>
+        <Item lv="4" from="101" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="0" ip="0" ipSameCnt="1"/>
+      <LooseMP param1X="2" param2X="1" ip="0" ipSameCnt="1"/>
+    </Assign>
+	
+	
+	
+    <!--乱斗-黄月英-->
+    <Assign gameLabelModel="13" isArea="0" type="4" lineCnt="1" userCnt="8" runAwayPunish="1200,3600,7200,7200,7200" mpAi="0" allowTeamOrSingle="2" >
+      <MPTime>
+        <Item userCnt="0" keepSeconds="40" keepSecondsMin="40" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="201"/>
+      </Param1Lv>
+      <StrictMP param1X="100" param2X="50" ip="0" ipSameCnt="1"/>
+      <LooseMP param1X="100" param2X="200" ip="0" ipSameCnt="1"/>
+    </Assign>
+
+	<!--乱斗-毒战-->
+    <Assign gameLabelModel="51" isArea="0" type="4" lineCnt="1" userCnt="8" runAwayPunish="1200,3600,7200,7200,7200" mpAi="0" allowTeamOrSingle="2">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="40" keepSecondsMin="40" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="201"/>
+      </Param1Lv>
+      <StrictMP param1X="100" param2X="50" ip="0" ipSameCnt="1"/>
+      <LooseMP param1X="100" param2X="200" ip="0" ipSameCnt="1"/>
+    </Assign>
+    
+	<!--乱斗-铜雀夺袍-->
+    <Assign gameLabelModel="55" isArea="0" type="4" lineCnt="1" userCnt="8" runAwayPunish="1200,3600,7200,7200,7200" mpAi="0" allowTeamOrSingle="2" >
+      <MPTime>
+        <Item userCnt="0" keepSeconds="40" keepSecondsMin="40" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="201"/>
+      </Param1Lv>
+      <StrictMP param1X="100" param2X="50" ip="0" ipSameCnt="1"/>
+      <LooseMP param1X="100" param2X="200" ip="0" ipSameCnt="1"/>
+    </Assign>	
+	
+    <!--乱斗-同姓之争-->
+    <Assign gameLabelModel="48" isArea="0" type="4" lineCnt="3" userCnt="4" runAwayPunish="1200,3600,7200,7200,7200" m_max_team_member_count="2" mpAi="0" allowTeamOrSingle="3">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="40" keepSecondsMin="40" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="201"/>
+      </Param1Lv>
+      <StrictMP param1X="100" param2X="50" ip="0" ipSameCnt="1"/>
+      <LooseMP param1X="100" param2X="200" ip="0" ipSameCnt="1"/>
+    </Assign>
+
+	<!--乱斗-白衣渡江-->
+    <Assign gameLabelModel="56" isArea="0" type="4" lineCnt="3" userCnt="4" runAwayPunish="1200,3600,7200,7200,7200" m_max_team_member_count="2" mpAi="0"  allowTeamOrSingle="0">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="40" keepSecondsMin="40" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="201"/>
+      </Param1Lv>
+      <StrictMP param1X="100" param2X="50" ip="0" ipSameCnt="1"/>
+      <LooseMP param1X="100" param2X="200" ip="0" ipSameCnt="1"/>
+    </Assign>
+	
+    <!--乱斗-深入敌后-->
+    <Assign gameLabelModel="70" isArea="0" type="4" lineCnt="1" userCnt="2" runAwayPunish="1200,3600,7200,7200,7200" mpAi="0" allowTeamOrSingle="2">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="40" keepSecondsMin="40" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="201"/>
+      </Param1Lv>
+      <StrictMP param1X="100" param2X="50" ip="0" ipSameCnt="1"/>
+      <LooseMP param1X="100" param2X="200" ip="0" ipSameCnt="1"/>
+    </Assign>
+	 
+	 
+	    <!--乱斗-幸运666-->
+    <Assign gameLabelModel="53" isArea="0" type="4" lineCnt="1" userCnt="5" runAwayPunish="1200,3600,7200,7200,7200" mpAi="0" allowTeamOrSingle="2">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="40" keepSecondsMin="30" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="20" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="201"/>
+      </Param1Lv>
+      <StrictMP param1X="100" param2X="50" ip="0" ipSameCnt="1"/>
+      <LooseMP param1X="100" param2X="200" ip="0" ipSameCnt="1"/>
+    </Assign>
+	
+	    <!--乱斗-兵精粮足-->
+    <Assign gameLabelModel="57" isArea="0" type="4" lineCnt="1" userCnt="8" runAwayPunish="1200,3600,7200,7200,7200" mpAi="0" allowTeamOrSingle="2">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="40" keepSecondsMin="40" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="201"/>
+      </Param1Lv>
+      <StrictMP param1X="100" param2X="50" ip="0" ipSameCnt="1"/>
+      <LooseMP param1X="100" param2X="200" ip="0" ipSameCnt="1"/>
+    </Assign>
+	
+	
+		<!--乱斗-特殊身份-->
+    <Assign gameLabelModel="58" isArea="0" type="4" lineCnt="1" userCnt="8" runAwayPunish="1200,3600,7200,7200,7200" mpAi="0" allowTeamOrSingle="2">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="40" keepSecondsMin="40" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="201"/>
+      </Param1Lv>
+      <StrictMP param1X="100" param2X="50" ip="0" ipSameCnt="1"/>
+      <LooseMP param1X="100" param2X="200" ip="0" ipSameCnt="1"/>
+    </Assign>
+	
+	<!--乱斗-家族之争-->
+	<Assign gameLabelModel="59" isArea="0" type="4" lineCnt="3" userCnt="4" m_max_team_member_count="2" runAwayPunish="1200,3600,7200,7200,7200" mpAi="0" allowTeamOrSingle="3">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="40" keepSecondsMin="40" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="201"/>
+      </Param1Lv>
+      <StrictMP param1X="100" param2X="50" ip="0" ipSameCnt="1"/>
+      <LooseMP param1X="100" param2X="200" ip="0" ipSameCnt="1"/>
+    </Assign>
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--公会争霸-->
+	<Assign gameLabelModel="75" isArea="0" type="5" lineCnt="11" userCnt="8" m_max_team_member_count="4" runAwayPunish="180,1800,3600,3600,3600" >
+      <MPTime>
+        <Item userCnt="0" keepSeconds="15" keepSecondsMin="1" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="1" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="1" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="1" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="201"/>
+      </Param1Lv>
+      <StrictMP param1X="4" param2X="50" ip="0" ipSameCnt="1"/>
+      <LooseMP param1X="100" param2X="200" ip="0" ipSameCnt="1"/>
+    </Assign>
+	
+		<!--公会争霸欢乐成双-->
+	<Assign gameLabelModel="77" isArea="0" type="5" lineCnt="2" userCnt="4" m_max_team_member_count="2" mpAi="0" runAwayPunish="180,1800,3600,3600,3600" allowTeamOrSingle="1">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="15" keepSecondsMin="1" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="1" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="1" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="1" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="201"/>
+      </Param1Lv>
+      <StrictMP param1X="4" param2X="50" ip="0" ipSameCnt="1"/>
+      <LooseMP param1X="100" param2X="200" ip="0" ipSameCnt="1"/>
+    </Assign>	
+
+	<!--公会争霸神之试炼-->
+	<Assign gameLabelModel="87" isArea="0" type="5" lineCnt="4" userCnt="8" runAwayPunish="180,1800,3600,3600,3600" m_max_team_member_count="3" mpAi="2" allowTeamOrSingle="1" >
+      <MPTime>
+        <Item userCnt="0" keepSeconds="3" keepSecondsMin="1" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="1" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="1" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="1" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="201"/>
+      </Param1Lv>
+      <StrictMP param1X="4" param2X="50" ip="0" ipSameCnt="1"/>
+      <LooseMP param1X="100" param2X="200" ip="0" ipSameCnt="1"/>
+    </Assign>
+	
+	<!--忠胆英杰2.0-->	
+	<Assign gameLabelModel="19" isArea="0" type="4" lineCnt="1" userCnt="8" runAwayPunish="10,20,40,120" m_max_team_member_count="1" mpAi="0">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="3" keepSecondsMin="3" strictSeconds="20" looseSeconds="15"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30"  strictSeconds="15" looseSeconds="15"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20"  strictSeconds="10" looseSeconds="15"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10"  strictSeconds="5" looseSeconds="15"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="100"/>
+        <Item lv="4" from="101" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="4" param2X="0" ip="0" ipSameCnt="0"/>
+      <LooseMP param1X="0" param2X="0" ip="0" ipSameCnt="1"/>
+    </Assign>
+	
+	<!--虎牢关2.0-->
+	<Assign gameLabelModel="78" isArea="1" type="4" lineCnt="1" userCnt="4" runAwayPunish="0" m_max_team_member_count="1" mpAi="0">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="3" keepSecondsMin="3" strictSeconds="20" looseSeconds="60"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30"  strictSeconds="15" looseSeconds="60"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20"  strictSeconds="10" looseSeconds="60"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10"  strictSeconds="5" looseSeconds="60"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="100"/>
+        <Item lv="4" from="101" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="4" param2X="0" ip="0" ipSameCnt="0"/>
+      <LooseMP param1X="0" param2X="0" ip="0" ipSameCnt="1"/>
+    </Assign>
+  
+  <!--同舟共济-->
+  <Assign gameLabelModel="88" isArea="0" type="4" lineCnt="3" userCnt="8" runAwayPunish="10,20,40,120" m_max_team_member_count="2" mpAi="0" allowTeamOrSingle="3">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="3" keepSecondsMin="3" strictSeconds="20" looseSeconds="60"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30" strictSeconds="15" looseSeconds="60"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20"  strictSeconds="10" looseSeconds="60"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10"  strictSeconds="5" looseSeconds="60"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="100"/>
+        <Item lv="4" from="101" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="4" param2X="0" ip="0" ipSameCnt="0"/>
+      <LooseMP param1X="0" param2X="0" ip="0" ipSameCnt="1"/>
+    </Assign>
+	
+	 <!--官渡之战-->
+	<Assign gameLabelModel="99" isArea="0" type="4" lineCnt="15" userCnt="4" runAwayPunish="1,1,1,1" m_max_team_member_count="4" mpAi="0" allowTeamOrSingle="3">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="3" keepSecondsMin="1" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="100"/>
+        <Item lv="4" from="101" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="0" ip="0" ipSameCnt="1"/>
+      <LooseMP param1X="2" param2X="0" ip="0" ipSameCnt="1"/>
+    </Assign>
+	
+	<!--同舟共济2019-->
+	<Assign gameLabelModel="111" isArea="0" type="4" lineCnt="15" userCnt="2" runAwayPunish="600,1200,2400,7200,10800,14400,18000,21600,25200,28800,32400,36000,39600,43200" m_max_team_member_count="2" mpAi="0" allowTeamOrSingle="0" params="3,10,20">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="3" keepSecondsMin="1" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="100"/>
+        <Item lv="4" from="101" to="200"/>
+      </Param1Lv> 
+      <StrictMP param1X="0" param2X="0" ip="1" ipSameCnt="1"/>
+      <LooseMP param1X="2" param2X="0" ip="1" ipSameCnt="1"/>
+    </Assign>
+	<!--合纵抗秦-->
+	<Assign gameLabelModel="115" isArea="0" type="4" lineCnt="7" userCnt="3" runAwayPunish="1,1,1,1" m_max_team_member_count="3" mpAi="0" allowTeamOrSingle="3">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="3" keepSecondsMin="1" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="100"/>
+        <Item lv="4" from="101" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="0" ip="0" ipSameCnt="0"/>
+      <LooseMP param1X="2" param2X="0" ip="0" ipSameCnt="0"/>
+    </Assign>
+	<!--年兽2022-->
+	<Assign gameLabelModel="116" type="16" isArea="0" lineCnt="3" userCnt="2" runAwayPunish="1,1,1,1" m_max_team_member_count="2" mpAi="0" allowTeamOrSingle="3">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="6" keepSecondsMin="1" strictSeconds="120" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="6" keepSecondsMin="1" strictSeconds="120" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="6" keepSecondsMin="1" strictSeconds="120" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="6" keepSecondsMin="1" strictSeconds="120" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="100"/>
+        <Item lv="4" from="101" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="0" ip="0" ipSameCnt="0"/>
+      <LooseMP param1X="2" param2X="0" ip="0" ipSameCnt="0"/>
+      <MatchArgs seconds="5" powerDiff="500" levDiffFri="50" ip="0" emyRepeatLimit="0" checkMember="0" />
+      <MatchArgs seconds="10" powerDiff="1000" levDiffFri="100" ip="0" emyRepeatLimit="0" checkMember="0" />
+      <MatchArgs seconds="15" powerDiff="1500" levDiffFri="150" ip="0" emyRepeatLimit="0" checkMember="0" />
+      <MatchArgs seconds="30" powerDiff="2000" levDiffFri="200" ip="0" emyRepeatLimit="0" checkMember="0" />
+      <MatchArgs seconds="60" powerDiff="999999" levDiffFri="200" ip="0" emyRepeatLimit="0" checkMember="0" />	  
+    </Assign>	
+	
+	<!--抓鬼2020-->
+	<Assign gameLabelModel="38" isArea="0" type="4" lineCnt="7" userCnt="3" runAwayPunish="1,1,1,1" m_max_team_member_count="3" mpAi="0" allowTeamOrSingle="3">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="3" keepSecondsMin="1" strictSeconds="20" looseSeconds="180"/>
+        <Item userCnt="100" keepSeconds="30" keepSecondsMin="30" strictSeconds="15" looseSeconds="180"/>
+        <Item userCnt="300" keepSeconds="20" keepSecondsMin="20" strictSeconds="10" looseSeconds="180"/>
+        <Item userCnt="500" keepSeconds="10" keepSecondsMin="10" strictSeconds="5" looseSeconds="180"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="100"/>
+        <Item lv="4" from="101" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="0" ip="0" ipSameCnt="0"/>
+      <LooseMP param1X="2" param2X="0" ip="0" ipSameCnt="0"/>
+    </Assign>
+
+	<!--十殿阎罗2021-->
+	<Assign gameLabelModel="38" isArea="0" type="8" lineCnt="7" userCnt="3" runAwayPunish="600,1200,2400,7200" m_max_team_member_count="3" mpAi="0" allowTeamOrSingle="3">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="600"/>
+        <Item userCnt="100" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="600"/>
+        <Item userCnt="300" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="600"/>
+        <Item userCnt="500" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="600"/>
+      </MPTime>
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="100"/>
+        <Item lv="4" from="101" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="0" ip="0" ipSameCnt="0"/>
+      <LooseMP param1X="2" param2X="0" ip="0" ipSameCnt="0"/>
+    </Assign>
+
+<!--五人身份-->
+  <Assign gameLabelModel="141" isArea="0" type="12" lineCnt="1" userCnt="5" runAwayPunish="600,600,600" m_max_team_member_count="2" mpAi="0" allow_crete_room="1" allowTeamOrSingle="3" params ="0,1200,2500,5000">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="6" keepSecondsMin="1" strictSeconds="300" looseSeconds="300"/>
+        <Item userCnt="100" keepSeconds="6" keepSecondsMin="1" strictSeconds="300" looseSeconds="300"/>
+        <Item userCnt="300" keepSeconds="6" keepSecondsMin="1" strictSeconds="300" looseSeconds="300"/>
+        <Item userCnt="500" keepSeconds="6" keepSecondsMin="1" strictSeconds="300" looseSeconds="300"/>
+      </MPTime>
+
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="140"/>
+        <Item lv="4" from="141" to="200"/>
+      </Param1Lv>
+      <MatchArgs seconds="3" powerDiff="1000" levDiffFri="20" ip="1" emyRepeatLimit="0" checkMember="1" checkBlacklist="1" />
+      <MatchArgs seconds="6" powerDiff="1500" levDiffFri="25" ip="1" emyRepeatLimit="0" checkMember="1" checkBlacklist="1" />
+      <MatchArgs seconds="10" powerDiff="2000" levDiffFri="30" ip="1" emyRepeatLimit="0" checkMember="0" checkBlacklist="1" />
+      <MatchArgs seconds="25" powerDiff="3000" levDiffFri="40" ip="1" emyRepeatLimit="0" checkMember="0" checkBlacklist="1" openMixMatch = "1"/>
+      <MatchArgs seconds="30" powerDiff="9999" levDiffFri="99" ip="1" emyRepeatLimit="0" checkMember="0" checkBlacklist="1"  openMixMatch = "1"/>
+      <MatchArgs seconds="35" powerDiff="9999" levDiffFri="999" ip="1" emyRepeatLimit="0" checkMember="0" checkBlacklist="1"  openMixMatch = "1"/>
+      <StrictMP param1X="0" param2X="0" ip="1" ipSameCnt="0"/>
+      <LooseMP param1X="2" param2X="0" ip="1" ipSameCnt="0"/>
+    <Record time="259200" num="10" check="2"/>
+    </Assign>
+
+<!--3V3-->
+  <Assign gameLabelModel="144" isArea="0" type="13" lineCnt="1" userCnt="6" runAwayPunish="600,600,600" m_max_team_member_count="3" mpAi="0" allowTeamOrSingle="4" params ="0,1200,2500,5000">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="100" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="300" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="500" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+      </MPTime>
+
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="140"/>
+        <Item lv="4" from="141" to="200"/>
+      </Param1Lv>
+      <MatchArgs seconds="8" powerDiff="1500" levDiffFri="30" ip="1" emyRepeatLimit="0" checkMember="1" checkBlacklist="1" />
+      <MatchArgs seconds="12" powerDiff="2000" levDiffFri="40" ip="1" emyRepeatLimit="0" checkMember="1" checkBlacklist="1" />
+      <MatchArgs seconds="20" powerDiff="3000" levDiffFri="50" ip="1" emyRepeatLimit="0" checkMember="0" checkBlacklist="1" />
+      <MatchArgs seconds="40" powerDiff="4000" levDiffFri="70" ip="1" emyRepeatLimit="0" checkMember="0" checkBlacklist="1" openMixMatch = "1"/>
+      <MatchArgs seconds="60" powerDiff="9999" levDiffFri="80" ip="1" emyRepeatLimit="0" checkMember="0" checkBlacklist="1"  openMixMatch = "1"/>
+      <MatchArgs seconds="180" powerDiff="9999" levDiffFri="80" ip="1" emyRepeatLimit="0" checkMember="0" checkBlacklist="1"  openMixMatch = "1"/>
+      <StrictMP param1X="0" param2X="0" ip="1" ipSameCnt="0"/>
+      <LooseMP param1X="2" param2X="0" ip="1" ipSameCnt="0"/>
+    <Record time="259200" num="10" check="2"/>
+    </Assign>	
+	
+	
+<!--1V1 2023-->
+  <Assign gameLabelModel="155" isArea="0" type="15" lineCnt="1" userCnt="2" runAwayPunish="1,1,1" m_max_team_member_count="3" mpAi="0" allowTeamOrSingle="4" allow_crete_room="1" params ="0,1200,2500,5000">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="100" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="300" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+        <Item userCnt="500" keepSeconds="6" keepSecondsMin="1" strictSeconds="60" looseSeconds="300"/>
+      </MPTime>
+
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="140"/>
+        <Item lv="4" from="141" to="200"/>
+      </Param1Lv>
+      <MatchArgs seconds="5" powerDiff="1500" levDiffFri="30" officerDiff="255" levelRankDiff="10" officerRankDiff="10" ip="1" emyRepeatLimit="0" checkMember="1" checkBlacklist="1" />
+      <MatchArgs seconds="9" powerDiff="2000" levDiffFri="50" officerDiff="255" levelRankDiff="50" officerRankDiff="50" ip="1" emyRepeatLimit="0" checkMember="1" checkBlacklist="1" />
+      <MatchArgs seconds="12" powerDiff="3000" levDiffFri="70" officerDiff="255" levelRankDiff="255" officerRankDiff="255" ip="1" emyRepeatLimit="0" checkMember="0" checkBlacklist="1" />
+      <MatchArgs seconds="15" powerDiff="6000" levDiffFri="100" officerDiff="255" levelRankDiff="255" officerRankDiff="255" ip="1" emyRepeatLimit="0" checkMember="0" checkBlacklist="1" openMixMatch = "1"/>
+      <MatchArgs seconds="20" powerDiff="9999" levDiffFri="130" officerDiff="255" levelRankDiff="255" officerRankDiff="255" ip="1" emyRepeatLimit="0" checkMember="0" checkBlacklist="1"  openMixMatch = "1"/>
+      <MatchArgs seconds="30" powerDiff="9999" levDiffFri="160" officerDiff="255" levelRankDiff="255" officerRankDiff="255" ip="1" emyRepeatLimit="0" checkMember="0" checkBlacklist="1"  openMixMatch = "1"/>
+      <StrictMP param1X="0" param2X="0" ip="1" ipSameCnt="0"/>
+      <LooseMP param1X="2" param2X="0" ip="1" ipSameCnt="0"/>
+    <Record time="259200" num="10" check="2"/>
+    </Assign>	
+
+<!--八人身份匹配-->
+  <Assign gameLabelModel="156" isArea="0" type="17" lineCnt="1" userCnt="8" runAwayPunish="600,600,600" m_max_team_member_count="2" mpAi="0" allow_crete_room="0" allowTeamOrSingle="3" params ="0,1200,2500,5000">
+      <MPTime>
+        <Item userCnt="0" keepSeconds="6" keepSecondsMin="1" strictSeconds="300" looseSeconds="300"/>
+        <Item userCnt="100" keepSeconds="6" keepSecondsMin="1" strictSeconds="300" looseSeconds="300"/>
+        <Item userCnt="300" keepSeconds="6" keepSecondsMin="1" strictSeconds="300" looseSeconds="300"/>
+        <Item userCnt="500" keepSeconds="6" keepSecondsMin="1" strictSeconds="300" looseSeconds="300"/>
+      </MPTime>
+
+      <Param1Lv>
+        <Item lv="1" from="0" to="18"/>
+        <Item lv="2" from="19" to="81"/>
+        <Item lv="3" from="82" to="140"/>
+        <Item lv="4" from="141" to="200"/>
+      </Param1Lv>
+      <StrictMP param1X="0" param2X="0" ip="1" ipSameCnt="0"/>
+      <LooseMP param1X="2" param2X="0" ip="1" ipSameCnt="0"/>
+    <Record time="259200" num="10" check="2"/>
+    </Assign>
+
+    
+	</AssignList>
+</Root>

@@ -1,0 +1,580 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TaskAll>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	参数id
+			tab	-	活动类别：1=收集，2=限时活动，3=签到，4=导航类 5=集合类
+			sort	-	排序-数字越大排序越前
+			name	-	名字
+			name2	-	子标题
+			activitytype	-	活动类型 
+			type	-	页签位置类别
+			quest_id	-	关联的任务id;用;隔开
+			duration	-	开关 时间（不配置则一直显示，只对新面板（有activity类型的面板），和tab=3，4类型面板生效）
+			source	-	活动图片配置 
+			dailyreset	-	每日重置信息显示（用于每日重置活动客户端显示，1=每日重置 其他配置无效）
+			skipBackground	-	是否点击背景图跳转（1=跳转，0或者不配置=不跳转）
+			skipBatton	-	跳转按钮位置坐标（X,Y)
+			skipPage	-	跳转页面ID（pay_gift说明页签字段）
+		-->
+	<TaskNode id="3001" type="6005" quest_id="3003" />
+	<TaskNode id="3002" type="6005" quest_id="280" />
+	<TaskNode id="3003" quest_id="160646;160647;160648;160649;160650;160651;160652;160653;160654;160655;160656;160657;" duration="20240831T000000,20240914T235959" />
+	<TaskNode id="57" quest_id="82044;82045;82046;82047;" duration="20230701T000000,20230820T235959" />
+	<TaskNode id="1035" quest_id="82314;82315;82316;82317;82318;82319;82320;82248;82249;82250;82251;82252;82253;82254;82321;82322;82323;82324;82255;82256;82257;82258;82259;82260;82261;82262;82336;82337;82338;82339;82340;82341;82342;82343;82344;82345;82346;82403;82404;82405;" duration="20230701T000000,20230804T235959" />
+	<TaskNode id="1036" quest_id="80727;80728;80729;80730;80731;80732;80733;80734;80735" duration="20230303T000000,20230310T235959" />
+	<TaskNode id="1037" />
+	<TaskNode id="1038" />
+	<TaskNode id="3005" type="6002" quest_id="1012" />
+	<TaskNode id="3006" type="6002" />
+	<TaskNode id="1012" duration="20240302T000000,20240309T235959" />
+	<TaskNode id="1013" />
+	<TaskNode id="3007" type="6003" quest_id="1056;1057;4013" />
+	<TaskNode id="3008" type="6003" quest_id="276" />
+	<TaskNode id="1056" quest_id="160632;160633;160634;160635;" duration="20240824T000000,20240830T235959" />
+	<TaskNode id="1057" quest_id="160636;160637;160638;160639;160640;160641;160642;160643;160644;160645;" duration="20240824T000000,20240830T235959" />
+	<TaskNode id="4007" type="6003" quest_id="4009;4010" />
+	<TaskNode id="4008" type="6003" quest_id="279" />
+	<TaskNode id="4009" quest_id="160658;160659;160660;160661;" duration="20240831T000000,20240907T235959" />
+	<TaskNode id="4010" quest_id="160662;160663;160664;160665;160666;160667;160668;160669;160670;160671;" duration="20240831T000000,20240907T235959" />
+	<TaskNode id="4011" type="6003" quest_id="4013;4014" />
+	<TaskNode id="4012" type="6003" quest_id="224" />
+	<TaskNode id="4013" quest_id="1" duration="20240224T000000,20240301T235959" />
+	<TaskNode id="4014" duration="20240224T000000,20240301T235959" />
+	<TaskNode id="3009" type="6004" quest_id="1001;1002;1004" />
+	<TaskNode id="3010" type="6004" quest_id="1010;1006;1007;1009" />
+	<TaskNode id="3014" type="6004" quest_id="2009;2010;2012" />
+	<TaskNode id="3011" type="6004" quest_id="275" />
+	<TaskNode id="3012" type="6004" quest_id="277" />
+	<TaskNode id="3015" type="6004" quest_id="278" />
+	<TaskNode id="1001" type="39" quest_id="160672;160673;160674;160675;" duration="20240831T000000,20240907T235959" />
+	<TaskNode id="1002" type="39" quest_id="160676;160677;160678;" duration="20240831T000000,20240907T235959" />
+	<TaskNode id="1003" type="39" />
+	<TaskNode id="1004" type="39" quest_id="160679;160680;160681;160682;160683;160684;160685;160686;160687;160688;160689;160690;160691;160692;160693;" duration="20240831T000000,20240907T235959" />
+	<TaskNode id="1005" type="39" />
+	<TaskNode id="1006" type="39" quest_id="160615;160616;160617;160618;" duration="20240824T000000,20240830T235959" />
+	<TaskNode id="1007" type="39" quest_id="160619;160620;160621;" duration="20240824T000000,20240830T235959" />
+	<TaskNode id="1008" type="39" />
+	<TaskNode id="1009" type="39" quest_id="160622;160623;160624;160625;160626;160627;160628;160629;160630;160631;" duration="20240824T000000,20240830T235959" />
+	<TaskNode id="1010" type="39" duration="20240224T000000,20240301T235959" />
+	<TaskNode id="2009" type="39" quest_id="84309;84310;84311;84312;" duration="20240419T000000,20240425T235959" />
+	<TaskNode id="2010" type="39" quest_id="84313;84314;84315;" duration="20240419T000000,20240425T235959" />
+	<TaskNode id="2011" type="39" />
+	<TaskNode id="2012" type="39" quest_id="84297;84298;84299;84300;84301;84302;84303;84304;84305;84307;84308" duration="20240419T000000,20240425T235959" />
+	<TaskNode id="4066" type="6007" quest_id="4068;4069;4070" />
+	<TaskNode id="4067" type="6007" />
+	<TaskNode id="4068" quest_id="84420;" duration="20240430T000000,20240504T235959" />
+	<TaskNode id="4069" quest_id="84417;84418;84419;84446;84447;" duration="20240430T000000,20240509T235959" />
+	<TaskNode id="4070" quest_id="84421;" duration="20240505T000000,20240509T235959" />
+	<TaskNode id="49" type="1" quest_id="84566" />
+	<TaskNode id="50" type="1" quest_id="160446" />
+	<TaskNode id="51" type="1" quest_id="70072;80140;49516;70741;70435;41544;40626;16896;18034;16845;81113" />
+	<TaskNode id="52" type="1" />
+	<TaskNode id="53" type="1" />
+	<TaskNode id="66" type="1" />
+	<TaskNode id="64" type="1" />
+	<TaskNode id="54" type="1" quest_id="82435;82436;82437;82438;82439;82710;82711;82712;82713;82714" />
+	<TaskNode id="67" type="1" quest_id="82623" />
+	<TaskNode id="55" type="2002" quest_id="160177" />
+	<TaskNode id="58" type="4" quest_id="50242;50243;50244;50245;50246;50247;50248;50249;50250" />
+	<TaskNode id="59" type="4" quest_id="44316;44317;44318" />
+	<TaskNode id="60" type="4" quest_id="44319;44320;" />
+	<TaskNode id="61" type="4" quest_id="44321" />
+	<TaskNode id="62" type="4" quest_id="41841" />
+	<TaskNode id="63" type="4" quest_id="41062;41063;41064;41065;41066;41067;41068;41069;41070;41071;41072;41073;41074;41075;41076;41077" />
+	<TaskNode id="70" type="13" quest_id="22058" />
+	<TaskNode id="71" type="13" quest_id="22059;22060;22061;22062;22063;22064;22065;22066;22067;22068" />
+	<TaskNode id="72" type="13" quest_id="22069;22070;22071;22072;22073;22074;22075;22076" />
+	<TaskNode id="73" type="13" quest_id="22077;22078;22079;22080;22081;22082;22083;22084" />
+	<TaskNode id="74" type="13" quest_id="22085;22086;22087;22088;22089;22090;22091;22092" />
+	<TaskNode id="75" type="13" quest_id="22097" />
+	<TaskNode id="76" type="13" quest_id="22093;22094;22095;22096" />
+	<TaskNode id="101" type="2" quest_id="14836;14837;14838;14839;14840;14841;14842;14843;17202" />
+	<TaskNode id="102" type="2" quest_id="16235;16833" />
+	<TaskNode id="103" type="2" quest_id="23244;16567;16568;16569;16570;16571;16572;16843;16972;20934;40536" />
+	<TaskNode id="104" type="2" quest_id="16573;16574;16575;16576;16577;16578;17119;17120;17121;20935;20936;20937;20938;20939" />
+	<TaskNode id="11" type="30" quest_id="82086;82087" />
+	<TaskNode id="12" type="30" />
+	<TaskNode id="13" type="30" quest_id="47792;47780;47769;47765;47757;47785;47775;47770;47758;47781;47776;47761;47759;47782;47774;47767;47760;47783;47784;47771;47762;47790;47786;47778;47773;47763;47772;47788;47789;47779;47768;47764;47791;47848;47766;47777;" />
+	<TaskNode id="14" type="30" />
+	<TaskNode id="15" type="30" />
+	<TaskNode id="200" type="30" quest_id="45313" />
+	<TaskNode id="16" type="6001" quest_id="17;18" />
+	<TaskNode id="17" type="6001" quest_id="258" />
+	<TaskNode id="18" quest_id="84509;84510;84511;84512;84513;84514;84515;84516;" duration="20240616T000000,20240621T235959" />
+	<TaskNode id="19" type="31" quest_id="81247;81248;81249;81250;81251;81252" />
+	<TaskNode id="20" type="31" quest_id="81282;81283;81284;81285;81286;81287" />
+	<TaskNode id="21" type="31" quest_id="80272;80273;80274;80275;80276" />
+	<TaskNode id="22" type="31" quest_id="81247;81248;81249;81250;81251;81252" />
+	<TaskNode id="23" type="31" quest_id="81282;81283;81284;81285;81286;81287" />
+	<TaskNode id="24" type="31" quest_id="80272;80273;80274;80275;80276" />
+	<TaskNode id="25" type="31" />
+	<TaskNode id="26" type="31" quest_id="80363;80364;80365;80366;80367;80368;80369" />
+	<TaskNode id="27" type="31" quest_id="80370;80371;80372;80373;80374;80375;80376" />
+	<TaskNode id="28" type="32" quest_id="81744;81745" />
+	<TaskNode id="29" type="32" quest_id="81458;81459;81460;81461;81462;81463;81464;81465;81466;81467" />
+	<TaskNode id="30" type="32" quest_id="50518;50519;50520;50521;50522;50523;50524;50525;50526;50527;50528;50529;50530;" />
+	<TaskNode id="31" type="32" quest_id="44326;44327" />
+	<TaskNode id="32" type="32" quest_id="44360;44361;44362;44363" />
+	<TaskNode id="33" type="32" quest_id="44328;44329;44330;44331;44332;44333;44334;44335;44336;44337;44338;44339" />
+	<TaskNode id="34" type="32" quest_id="44340;44341;44342" />
+	<TaskNode id="35" type="32" quest_id="44343;44344;44345;44346;44347;44348" />
+	<TaskNode id="36" type="32" quest_id="44354;44355;44356;44357;44358;44359" />
+	<TaskNode id="37" type="32" quest_id="42048;42049;42050;42051;42052;42053;42054;" />
+	<TaskNode id="38" type="32" quest_id="42055;42056;42057;42058;" />
+	<TaskNode id="39" type="32" quest_id="42062;42063;42064;42065;" />
+	<TaskNode id="40" type="32" quest_id="42066;42067;42068;42069;42070;" />
+	<TaskNode id="41" type="31" quest_id="70626;70627;70628;70629;70630;70631;70632;70633;70634;70635;70636;70637;70638;70639" />
+	<TaskNode id="42" type="12" quest_id="52619;52620;52621;52622;52623;52624;52625;52626;52627;52628;52629;52630;52631;52632;52633;52634;52635;52636;" />
+	<TaskNode id="43" type="12" quest_id="44804;44805;44806;44807;44808;44809;44810;44811;44812;44813;44814;44815;44816;44817" />
+	<TaskNode id="44" type="12" quest_id="47201;47202;47203;47204;47205;47206;47207;47208;47209;47210;47211;47212;47213;47214;47215;47216;47217;" />
+	<TaskNode id="45" type="12" quest_id="46897;46898;46899;46900;46901;46902;" />
+	<TaskNode id="2003" type="39" quest_id="81083;81084;81085;81086" duration="20230422T000001,20230428T235959" />
+	<TaskNode id="2004" type="39" quest_id="81087;81088;81089" duration="20230422T000001,20230428T235959" />
+	<TaskNode id="2005" type="39" duration="20230211T000001,20230217T235959" />
+	<TaskNode id="2006" type="39" quest_id="81091;81092;81093;81094;81095;81096;81097;81098;81099;81100;81101" duration="20230422T000001,20230428T235959" />
+	<TaskNode id="2007" type="39" duration="20220808T000000,20220812T235959" />
+	<TaskNode id="1011" type="1001" quest_id="160695;160696;" duration="20240831T000000,20240907T235959" />
+	<TaskNode id="1014" type="1001" quest_id="160694;84600;84601;84602;84603;84604;84605" duration="20240831T000000,20240907T235959" />
+	<TaskNode id="1015" type="1001" />
+	<TaskNode id="1016" type="1001" />
+	<TaskNode id="1017" type="1001" />
+	<TaskNode id="1018" type="1002" quest_id="84518;84519;84520;84521;84522" />
+	<TaskNode id="1019" duration="20240209T000000,20240218T235959" />
+	<TaskNode id="1020" type="1002" quest_id="84552" />
+	<TaskNode id="1021" type="1002" quest_id="160439;160440;160441;160442;160443;160444;160445;160447;160448;160449;160450;160451;160452;160453" />
+	<TaskNode id="1022" type="1002" />
+	<TaskNode id="1023" type="1002" />
+	<TaskNode id="1024" type="1002" />
+	<TaskNode id="1025" type="1002" />
+	<TaskNode id="1026" type="1002" />
+	<TaskNode id="1027" type="1002" />
+	<TaskNode id="1028" type="1002" />
+	<TaskNode id="1029" type="1002" />
+	<TaskNode id="1031" type="1002" />
+	<TaskNode id="1032" type="1003" quest_id="160646;160647;160648" />
+	<TaskNode id="1033" type="1003" quest_id="160179;160180;160181;160182;160183;160184;84506;84507" duration="20240608T000000,20240615T235959" />
+	<TaskNode id="1034" type="1003" />
+	<TaskNode id="1088" />
+	<TaskNode id="1092" type="1003" />
+	<TaskNode id="1039" type="1004" quest_id="84574;84575;84576;84577;84578;84579;84580;84581;84582;" />
+	<TaskNode id="1139" type="1004" quest_id="160577;160578;160579;160580;160581;" />
+	<TaskNode id="1040" type="1004" />
+	<TaskNode id="1041" type="1004" />
+	<TaskNode id="1042" type="1005" quest_id="160697;160698;160699;160700;160701" />
+	<TaskNode id="1043" type="1005" quest_id="160702;160703;160704;160705;160706" />
+	<TaskNode id="1044" type="1006" quest_id="84573" />
+	<TaskNode id="1045" type="1006" quest_id="160582;160583;160584;160585;160586;160587;160588;" />
+	<TaskNode id="1046" type="1006" />
+	<TaskNode id="1047" type="1006" quest_id="83895;83896;83897;83898;83899;" duration="20240209T000000,20240223T235959" />
+	<TaskNode id="1048" type="6006" quest_id="1050" />
+	<TaskNode id="1049" type="6006" quest_id="237" />
+	<TaskNode id="1050" quest_id="84241;84242;84249;84243;84244;84245;84246;84247;84248;" duration="20240403T180000,20240509T235959" />
+	<TaskNode id="1051" />
+	<TaskNode id="1052" />
+	<TaskNode id="1053" />
+	<TaskNode id="1054" />
+	<TaskNode id="1055" />
+	<TaskNode id="2001" type="205" quest_id="49290;49291;49292;49293;49294;49295;49296;49297;49298" />
+	<TaskNode id="2002" type="205" quest_id="49300;49301;49302;49303;49304;49305;49306;49307;49308" />
+	<TaskNode id="3117" type="6008" quest_id="1060;1061" />
+	<TaskNode id="3118" type="6008" quest_id="248" />
+	<TaskNode id="1060" quest_id="150091;150092;150093;150094;" duration="20240517T000000,20240524T235959" />
+	<TaskNode id="1061" quest_id="150064;150065;150066;150067;150068;150069;150070;150071;150072;150073;" duration="20240517T000000,20240524T235959" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	活动参数ID（关联活动和收集界面页签）
+			activitytype	-	活动类型        1=每日充值 2=累计充值 3=每日消费 4=累计消费 5=节日返利
+			taskId	-	任务ID（填活动中对应的任务ID）
+			itemId1	-	一档外发光物品id，多个用,分隔 
+			itemId2	-	二档外发光物品id，多个用,分隔 
+			multiple	-	返利倍率（仅在每日充值页签有效）
+			value	-	奖励价值（仅在每日消费页签有效）
+			limitid	-	节日限定物品(仅在节日返利页签有效）
+		-->
+	<TaskMsg id="1001" />
+	<TaskMsg id="1001" />
+	<TaskMsg id="1001" />
+	<TaskMsg id="1001" />
+	<TaskMsg id="1003" />
+	<TaskMsg id="1003" />
+	<TaskMsg id="1003" />
+	<TaskMsg id="1003" />
+	<TaskMsg id="1004" />
+	<TaskMsg id="1004" />
+	<TaskMsg id="1005" />
+	<TaskMsg id="1005" />
+	<TaskMsg id="1005" />
+	<TaskMsg id="1006" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Packageid	-	礼包id（关联GOODS表中的物品ID）
+			Packagesort	-	礼包排序（越小越靠前）
+			PriceShow	-	礼包原价（界面上显示的礼包原价）
+			clearid	-	解锁条件（配置上级礼包ID,上级礼包购买完才显示该礼包，配置0或不配置则直接显示）
+			itemId1	-	一档外发光物品id（配置发光物品ID ,分隔） 
+			itemId2	-	二档外发光物品id（配置发光物品ID ,分隔）（2档更好）
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	id
+			taskGeneral	-	兑换的任务id及武将id
+			goods	-	两个礼包
+			time	-	出现时机（不要重合）
+			baoQuan	-	本期使用的宝券id
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	广告图id包括大厅和登录弹窗两种式样广告图
+			group	-	组别
+			platform	-	渠道限制：不填表示不限制，填yoka;1112pc 表示只有这两个渠道可以用
+			whereUsed	-	使用处
+			duration	-	时限
+			itemID	-	点击购买道具
+			pic_small	-	大厅小广告
+			pic	-	广告资源(大厅大广告与公告栏，图片名字保持一致）
+			name	-	公告栏名字（仅用于公告栏）
+			rim	-	是否有边框（1=有，其他=无）
+			toZhuTi	-	 前往界面（ID见bar_control表中说明）
+			link	-	打开链接
+			ticket	-	链接是否携带用户参数
+			url	-	pc链接,1=游戏内置浏览器打开，2=外部浏览器或新开网页打开
+			url_m	-	移动链接,1=游戏内置浏览器打开，2=外部浏览器或新开网页打开
+			url_n	-	内置url尺寸大小，PC;移动。如果不填则用默认尺寸
+			app_jump	-	（移动）是否点击背景图跳转（1-跳转，其他=不跳转）
+			app_location	-	（移动）前往按钮位置坐标（X，Y）
+			pc_jump	-	（PC）是否点击背景图跳转（1-跳转，其他=不跳转）
+			pc_location	-	（PC）前往按钮位置坐标（X，Y）
+			levelmax	-	等级条件上限
+			levelmin	-	等级条件下限
+			VIPmax	-	VIP上限
+			VIPmin	-	VIP下限
+			rankmax	-	官阶上限
+			rankmin	-	官阶下限
+			moneymax	-	历史充值额度上限
+			moneymin	-	历史充值额度下限
+			type	-	类型
+			parameter1	-	参数1
+			parameter2	-	参数2
+			parameter3	-	参数3
+			priority	-	基础优先值
+			see	-	每次展示减少优先值
+			click	-	每次点击减少优先值
+			show	-	是否在大厅展示
+		-->
+	<Lobbyad id="299" duration="20230218T000001,20290225T235959" type="3" priority="100" see="0" click="0" />
+	<Lobbyad id="239" platform="7;210000;110074;410054;410054;310052;310052" duration="20221208T000001,20230101T235959" type="2" parameter1="1" parameter2="60" parameter3="12981101" priority="50" see="0" click="0" />
+	<Lobbyad id="245" duration="20221219T000001,20221224T235959" type="2" parameter1="2" parameter3="12981201" priority="100" see="0" click="0" />
+	<Lobbyad id="246" duration="20211224T000001,20221231T235959" type="2" parameter1="7" parameter2="60" parameter3="11981301" priority="100" see="0" click="0" />
+	<Lobbyad id="247" duration="20221231T000001,20230107T235959" type="2" parameter2="60" parameter3="100105" priority="100" see="0" click="0" />
+	<Lobbyad id="248" duration="20230107T000001,20230114T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="249" duration="20230115T000001,20230121T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="250" duration="20230121T000001,20230129T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="251" duration="20230129T000001,20230204T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="252" duration="20230204T000001,20230211T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="253" duration="20230211T000001,20230218T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="254" duration="20230211T000001,20230218T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="255" duration="20230218T000001,20230225T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="256" duration="20230218T000001,20230225T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="257" duration="20230225T000001,20230303T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="258" duration="20230303T000001,20230311T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="259" duration="20230303T000001,20230311T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="260" duration="20230303T000001,20230311T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="261" duration="20230311T000001,20230318T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="262" duration="20230318T000001,20230325T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="263" duration="20230325T000001,20230331T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="264" duration="20230401T000001,20230408T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="265" duration="20230401T000001,20230408T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="266" duration="20230409T000001,20230414T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="267" duration="20230415T000001,20230421T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="268" duration="20230422T000001,20230428T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="269" duration="20230429T000001,20230506T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="270" duration="20230429T000001,20230506T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="271" duration="20230429T000001,20230506T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="272" duration="20230507T000001,20230512T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="273" duration="20230513T000001,20230519T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="274" duration="20230513T000001,20230519T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="275" duration="20230520T000001,20230526T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="276" duration="20230520T000001,20230526T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="277" duration="20230520T000001,20230526T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="278" duration="20230527T000001,20230602T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="279" duration="20230527T000001,20230602T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="280" duration="20230603T000001,20230609T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="281" duration="20230610T000001,20230616T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="282" platform="210000;110074;220003;220036;220037;220042;220043;220028;220107;220112;220016;220040;220109;220113;220120;410054;310052;320103;320104;320105;320106;320108;320109;320100;320102;320010;320003;320115;320107;320114;120117;110119;120121;310052;410054;210000;320103;320104;320105;320106;320108;320109;320100;320102;320010;320003;320115;320107;320114;320123;310211" duration="20230512T170001,20230518T235959" type="1" priority="60" see="0" click="0" />
+	<Lobbyad id="283" platform="210000;110074;110119;410054;310052;310211;312212;311214;310206;311215;312210" duration="20230711T000001,20230718T235959" type="1" priority="60" see="0" click="10" />
+	<Lobbyad id="284" platform="410054;310052;310211;310211;312212;312212;310206;311215;312210" duration="20221203T000001,20251231T000000" ticket="1" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="285" platform="210000;110074;410054;310052;310211;312212;311214;310206;311215;312210" duration="20230721T000001,20230726T220000" type="1" priority="50" see="0" click="0" />
+	<Lobbyad id="286" platform="410054;310052;310211;312212;311214;310206;311215;312210" duration="20230705T000001,20230721T080000" type="1" priority="50" see="2" click="5" />
+	<Lobbyad id="287" platform="7;210000;110074;410054;410054;310052;310052" duration="20230101T000001,20230105T000000" type="1" priority="50" see="0" click="10" />
+	<Lobbyad id="288" duration="20230114T000001,20230129T000000" type="1" priority="120" see="0" click="10" />
+	<Lobbyad id="289" platform="210000;110074;410054;310052;310211;312212;311214;310206;311215;312210" duration="20230809T170001,20230813T220000" type="1" priority="50" see="2" click="0" />
+	<Lobbyad id="290" platform="7;210000;110074;410054;310052" duration="20230121T000001,20230601T220000" type="1" priority="50" see="0" click="10" />
+	<Lobbyad id="291" platform="310052" duration="20230206T000001,20230331T000000" type="1" priority="200" see="0" click="0" />
+	<Lobbyad id="292" duration="20230224T000001,20230306T000000" ticket="1" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="293" platform="210000;110074;220003;220036;220037;220042;220043;220028;220107;220112;220016;220040;220109;220113;220120;410054;310052;320103;320104;320105;320106;320108;320109;320100;320102;320010;320003;320115;320107;320114;120117;110119;120121;310052;410054;210000;320103;320104;320105;320106;320108;320109;320100;320102;320010;320003;320115;320107;320114;320123;310211" duration="20230418T140001,20230505T000000" type="1" priority="80" see="0" click="0" />
+	<Lobbyad id="294" duration="20230401T120001,20230408T213000" type="1" priority="120" see="0" click="0" />
+	<Lobbyad id="295" platform="210000;110074;410054;310052;310211" duration="20230308T000001,20230320T000000" type="1" priority="20" see="0" click="0" />
+	<Lobbyad id="296" duration="20230728T150001,20230731T215959" ticket="1" type="1" priority="90" see="0" click="0" />
+	<Lobbyad id="297" duration="20230518T150001,20230526T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="298" platform="410054;310052;310211" duration="20230527T000301,20230529T235959" ticket="1" type="1" priority="110" see="0" click="5" />
+	<Lobbyad id="300" duration="20230617T000001,20230625T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="301" duration="20230617T000001,20230625T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="302" duration="20230617T000001,20230625T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="303" duration="20230617T000001,20230625T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="304" platform="210000;110074;110119;410054;310052;310211;312212;311214;310206;311215;312210" duration="20230818T120001,20230820T155959" type="1" priority="101" see="0" click="0" />
+	<Lobbyad id="305" duration="20230626T000001,20230630T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="306" duration="20230626T000001,20230630T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="307" duration="20230701T000001,20230707T235959" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="308" duration="20230701T000001,20230804T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="309" duration="20230708T000001,20230715T235959" type="1" priority="100" see="2" click="1" />
+	<Lobbyad id="310" duration="20230708T000001,20230715T235959" type="1" priority="100" see="2" click="1" />
+	<Lobbyad id="311" duration="20230708T000001,20230715T235959" type="1" priority="100" see="2" click="1" />
+	<Lobbyad id="312" duration="20230716T000001,20230721T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="313" duration="20230722T000001,20230728T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="314" duration="20230729T000001,20230804T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="315" duration="20230729T000001,20230804T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="316" duration="20230729T000001,20230804T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="317" duration="20230805T000001,20230811T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="318" duration="20230812T000001,20230927T235950" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="319" duration="20230819T000001,20230826T235959" type="1" priority="100" see="2" click="1" />
+	<Lobbyad id="320" duration="20230819T000001,20230826T235959" type="1" priority="100" see="2" click="1" />
+	<Lobbyad id="321" duration="20230819T000001,20230826T235959" type="1" priority="100" see="2" click="1" />
+	<Lobbyad id="322" duration="20230819T000001,20230826T235959" type="1" priority="100" see="2" click="1" />
+	<Lobbyad id="323" duration="20230817T120000,20230823T220000" type="1" priority="120" see="0" click="2" />
+	<Lobbyad id="324" duration="20230819T000001,20230821T225959" type="1" priority="120" see="0" click="2" />
+	<Lobbyad id="325" duration="20230827T000001,20230901T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="326" duration="20230902T000001,20230908T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="327" duration="20230909T000001,20230916T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="328" duration="20230909T000001,20230916T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="329" duration="20230909T000001,20230916T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="330" platform="210000;110074;410054;310052;310211;312212;311214;310206;311215;312210" duration="20230914T000001,20230917T220000" type="1" priority="50" see="2" click="0" />
+	<Lobbyad id="331" duration="20230917T000001,20230922T235959" type="1" priority="110" see="1" click="1" />
+	<Lobbyad id="332" platform="210000;110074;410054;310052;310211;312212;311214;310206;311215;312210" duration="20230922T000001,20230927T220000" type="1" priority="40" see="0" click="0" />
+	<Lobbyad id="333" duration="20230915T000001,20230917T220000" type="1" priority="50" see="0" click="0" />
+	<Lobbyad id="334" duration="20230923T000001,20230927T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="335" duration="20230923T000001,20230927T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="336" platform="210000;110074;410054;310052;310211;312212;311214;310206;311215;312210" duration="20230922T000001,20231008T220000" type="1" priority="50" see="1" click="1" />
+	<Lobbyad id="337" duration="20230928T000001,20231007T235959" type="1" priority="120" see="1" click="1" />
+	<Lobbyad id="338" duration="20230928T000001,20231007T235959" type="1" priority="120" see="3" click="3" />
+	<Lobbyad id="339" duration="20230928T000001,20231007T235959" type="1" priority="120" see="3" click="3" />
+	<Lobbyad id="340" duration="20240501T120000,20240501T220000" type="1" priority="160" see="1" click="1" />
+	<Lobbyad id="341" duration="20231008T000001,20231013T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="342" platform="210000;110074;410054;310052;310211;312212;311214;310206;311215;312210" duration="20230929T170001,20231007T215950" type="1" priority="100" see="2" click="2" />
+	<Lobbyad id="343" duration="20231014T000001,20231020T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="344" duration="20231014T000001,20231020T235959" type="1" priority="100" see="2" click="2" />
+	<Lobbyad id="345" duration="20231021T000001,20231027T235959" type="1" priority="120" see="1" click="1" />
+	<Lobbyad id="346" duration="20231021T000001,20231027T235959" type="1" priority="120" see="2" click="2" />
+	<Lobbyad id="347" duration="20231021T000001,20231027T235959" type="1" priority="120" see="3" click="3" />
+	<Lobbyad id="348" duration="20231020T184500,20231020T203000" type="1" priority="150" see="0" click="0" />
+	<Lobbyad id="349" duration="20231028T000001,20231103T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="350" duration="20231104T000001,20231110T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="351" platform="7;210000;110074;410054;310052" duration="20231102T000001,20231130T220000" type="1" priority="50" see="0" click="10" />
+	<Lobbyad id="352" duration="20231214T120000,20231220T220000" type="1" priority="95" see="0" click="0" />
+	<Lobbyad id="353" duration="20231110T200001,20231118T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="354" duration="20231111T000001,20231118T235959" type="1" priority="80" see="1" click="1" />
+	<Lobbyad id="355" duration="20231111T000001,20231118T235959" type="1" priority="80" see="3" click="3" />
+	<Lobbyad id="356" duration="20231111T000001,20231118T235959" type="1" priority="80" see="3" click="3" />
+	<Lobbyad id="357" duration="20231119T000001,20231124T235959" type="1" priority="110" see="1" click="1" />
+	<Lobbyad id="358" duration="20231119T000001,20231124T235959" type="1" priority="100" see="3" click="3" />
+	<Lobbyad id="359" duration="20231119T000001,20231124T235959" type="1" priority="100" see="3" click="3" />
+	<Lobbyad id="360" platform="410054;310052;310211;312212;311214;310206;311215;312210" duration="20231117T000001,20231120T225959" type="1" priority="150" see="3" click="3" />
+	<Lobbyad id="361" platform="210000;110074" duration="20231117T000001,20231120T225959" type="1" priority="150" see="3" click="3" />
+	<Lobbyad id="362" platform="210000;110074;410054;310052;310211;312212;311214;310206;311215;312210" duration="20231119T000001,20231125T225959" type="1" priority="50" see="3" click="3" />
+	<Lobbyad id="363" duration="20231125T000001,20231201T235959" type="1" priority="100" see="3" click="3" />
+	<Lobbyad id="364" duration="20231202T000001,20231208T235959" type="1" priority="110" see="1" click="1" />
+	<Lobbyad id="365" duration="20231202T000001,20231208T235959" type="1" priority="100" see="3" click="3" />
+	<Lobbyad id="366" duration="20240809T185000,20240809T203000" type="1" priority="160" see="0" click="0" />
+	<Lobbyad id="367" duration="20231209T000001,20231215T235959" type="1" priority="90" see="1" click="1" />
+	<Lobbyad id="368" duration="20231216T000001,20231223T235959" type="1" priority="130" see="1" click="1" />
+	<Lobbyad id="369" duration="20231216T000001,20231223T235959" type="1" priority="120" see="2" click="2" />
+	<Lobbyad id="370" duration="20231216T000001,20231223T235959" type="1" priority="100" see="3" click="3" />
+	<Lobbyad id="371" duration="20231216T000001,20231223T235959" type="1" priority="100" see="3" click="3" />
+	<Lobbyad id="372" duration="20231224T000001,20231229T235959" type="1" priority="130" see="1" click="1" />
+	<Lobbyad id="373" duration="20231224T000001,20231229T235959" type="1" priority="120" see="2" click="2" />
+	<Lobbyad id="374" duration="20231230T000001,20240106T235959" type="1" priority="130" see="1" click="1" />
+	<Lobbyad id="375" duration="20231230T000001,20240106T235959" type="1" priority="120" see="2" click="2" />
+	<Lobbyad id="376" duration="20231230T000001,20240106T235959" type="1" priority="120" see="2" click="2" />
+	<Lobbyad id="377" platform="410054;310052;310211;312212;311214;310206;311215;312210" duration="20231229T000001,20240107T225959" type="1" priority="100" see="10" click="10" />
+	<Lobbyad id="378" platform="210000;110074" duration="20231229T000001,20240107T225959" type="1" priority="100" see="10" click="10" />
+	<Lobbyad id="379" platform="210000;110074" duration="20231230T120001,20240105T175959" type="1" priority="120" see="10" click="10" />
+	<Lobbyad id="380" platform="7;210000;110074;410054;310052" duration="20231229T000001,20240107T225959" type="1" priority="50" see="0" click="10" />
+	<Lobbyad id="381" platform="7;210000;110074;410054;310052" duration="20231230T120001,20240105T175959" type="1" priority="120" see="10" click="10" />
+	<Lobbyad id="382" duration="20240107T000001,20240114T235959" type="1" priority="130" see="1" click="1" />
+	<Lobbyad id="383" duration="20240107T000001,20240114T235959" type="1" priority="120" see="2" click="2" />
+	<Lobbyad id="384" duration="20240115T000001,20240119T235959" type="1" priority="130" see="1" click="1" />
+	<Lobbyad id="385" duration="20240810T120000,20240816T220000" type="1" priority="100" see="0" click="0" />
+	<Lobbyad id="386" platform="7;210000;110074;410054;310052" duration="20240112T120000,20240117T180000" type="1" priority="50" see="2" click="2" />
+	<Lobbyad id="387" platform="7;210000;110074;410054;310052" duration="20240112T120000,20240117T180000" type="1" priority="50" see="2" click="2" />
+	<Lobbyad id="388" duration="20240120T000001,20240126T235959" type="1" priority="130" see="1" click="1" />
+	<Lobbyad id="389" duration="20240120T000001,20240126T235959" type="1" priority="120" see="2" click="2" />
+	<Lobbyad id="390" duration="20240120T000001,20240126T235959" type="1" priority="120" see="2" click="2" />
+	<Lobbyad id="391" platform="7;210000;110074;410054;310052" duration="20240117T120000,20240122T235959" type="1" priority="50" see="2" click="2" />
+	<Lobbyad id="392" duration="20240127T000001,20240202T235959" type="1" priority="120" see="2" click="2" />
+	<Lobbyad id="393" duration="20240127T000001,20240202T235959" type="1" priority="120" see="2" click="2" />
+	<Lobbyad id="394" duration="20240203T000001,20240218T235959" type="1" priority="120" see="2" click="2" />
+	<Lobbyad id="395" platform="7;210000;110074;410054;310052" duration="20240209T000001,20240215T220000" type="1" priority="50" see="2" click="2" />
+	<Lobbyad id="396" duration="20240209T000001,20240218T235959" type="1" priority="120" see="2" click="2" />
+	<Lobbyad id="397" duration="20240209T000001,20240218T235959" type="1" priority="110" see="1" click="1" />
+	<Lobbyad id="398" duration="20240219T000001,20240223T235959" type="1" priority="120" see="1" click="1" />
+	<Lobbyad id="399" duration="20240219T000001,20240223T235959" type="1" priority="100" see="2" click="2" />
+	<Lobbyad id="400" duration="20240205T000001,20300215T220000" type="1" priority="110" see="2" click="2" />
+	<Lobbyad id="401" platform="210000;110074;220003;220036;220037;220042;220043;220028;220107;220112;220016;220040;220109;220113;220120;410054;310052;320103;320104;320105;320106;320108;320109;320100;320102;320010;320003;320115;320107;320114;120117;110119;120121;310052;410054;210000;320103;320104;320105;320106;320108;320109;320100;320102;320010;320003;320115;320107;320114;320123;310211;220010" duration="20240205T000001,20300215T220000" type="1" priority="90" see="2" click="2" />
+	<Lobbyad id="402" platform="210000;110074;220003;220036;220037;220042;220043;220028;220107;220112;220016;220040;220109;220113;220120;410054;310052;320103;320104;320105;320106;320108;320109;320100;320102;320010;320003;320115;320107;320114;120117;110119;120121;310052;410054;210000;320103;320104;320105;320106;320108;320109;320100;320102;320010;320003;320115;320107;320114;320123;310211;220010" duration="20240205T000001,20300215T220000" type="2" parameter1="31" parameter3="12981101" priority="80" see="2" click="2" />
+	<Lobbyad id="403" duration="20240205T000001,20300215T220000" type="1" priority="100" see="2" click="2" />
+	<Lobbyad id="404" duration="20240224T000001,20240301T235959" type="1" priority="120" see="1" click="1" />
+	<Lobbyad id="405" duration="20240224T000001,20240301T235959" type="1" priority="100" see="2" click="2" />
+	<Lobbyad id="406" duration="20240302T000001,20240309T235959" type="1" priority="120" see="1" click="1" />
+	<Lobbyad id="407" duration="20240302T000001,20240309T235959" type="1" priority="110" see="1" click="1" />
+	<Lobbyad id="408" duration="20240302T000001,20240309T235959" type="1" priority="100" see="2" click="2" />
+	<Lobbyad id="409" platform="210000;110074;110119;410054;310052;310211;312212;311214;310206;311215;312210" duration="20240304T000001,20240310T235959" type="1" priority="60" see="0" click="10" />
+	<Lobbyad id="410" duration="20240310T000001,20240315T235959" type="1" priority="110" see="2" click="2" />
+	<Lobbyad id="411" duration="20240316T000001,20240322T235959" type="1" priority="110" see="2" click="2" />
+	<Lobbyad id="412" duration="20240323T000001,20240329T235959" type="1" priority="110" see="1" click="1" />
+	<Lobbyad id="413" duration="20240330T000001,20240403T235959" type="1" priority="110" see="1" click="1" />
+	<Lobbyad id="414" platform="7;210000;110074;410054;310052" duration="20240329T000001,20240408T220000" type="1" priority="50" see="2" click="2" />
+	<Lobbyad id="415" platform="320010;220010;320103;120116;220003;320105;320003;320106;320125;320107;320123;220037;220028;120117;220112;320115;220036;220043;320109;320102;120128;120121;320129;220016;320127;220107;720001;220120" duration="20240404T000001,20240509T235959" type="1" priority="40" see="2" click="2" />
+	<Lobbyad id="416" duration="20240404T000001,20240412T235959" type="1" priority="110" see="1" click="1" />
+	<Lobbyad id="417" duration="20240404T000001,20240412T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="418" duration="20240413T000001,20240418T235959" type="1" priority="110" see="1" click="1" />
+	<Lobbyad id="419" platform="210000;110074;110119;410054;310052;310211;312212;311214;310206;311215;312210" duration="20240418T000001,20240425T235959" type="1" priority="60" see="0" click="10" />
+	<Lobbyad id="420" duration="20240419T000001,20240425T235959" type="1" priority="110" see="1" click="1" />
+	<Lobbyad id="421" duration="20240419T000001,20240425T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="422" platform="210000;110074;110119;410054;310052;310211;312212;311214;310206;311215;312210" duration="20240419T000001,20240421T220000" type="1" priority="50" see="2" click="2" />
+	<Lobbyad id="423" duration="20240426T000001,20240429T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="424" platform="7;210000;110074;410054;310052" duration="20240424T000001,20240428T180000" type="1" priority="50" see="2" click="2" />
+	<Lobbyad id="425" platform="210000;110074;110119;410054;310052;310211;312212;311214;310206;311215;312210" duration="20240426T000001,20240501T235959" type="1" priority="60" see="0" click="10" />
+	<Lobbyad id="427" duration="20240430T000001,20240509T235959" type="1" priority="110" see="3" click="3" />
+	<Lobbyad id="428" duration="20240430T000001,20240509T235959" type="1" priority="110" see="3" click="1" />
+	<Lobbyad id="429" duration="20240430T000001,20240509T235959" type="1" priority="110" see="1" click="1" />
+	<Lobbyad id="430" duration="20240428T000001,20240429T235959" ticket="1" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="431" duration="20240428T000001,20240429T235959" ticket="1" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="432" platform="210000;410054;110074;310052;310211;311214;312212;310206;110119;312210;311215;110075;312222;311216;312221;310220" duration="20240502T000001,20240503T235959" type="1" priority="60" see="0" click="10" />
+	<Lobbyad id="433" platform="210000;410054;110074;310052;310211;311214;312212;310206;110119;312210;311215;110075;312222;311216;312221;310220" duration="20240504T000001,20240505T235959" type="1" priority="60" see="0" click="10" />
+	<Lobbyad id="434" duration="20240430T000001,20240509T235959" type="1" priority="110" see="1" click="3" />
+	<Lobbyad id="435" duration="20240510T000001,20240516T235959" type="1" priority="110" see="1" click="3" />
+	<Lobbyad id="436" duration="20240428T000001,20240429T235959" type="1" priority="120" see="2" click="3" />
+	<Lobbyad id="437" duration="20240517T000001,20240524T235959" type="1" priority="110" see="1" click="2" />
+	<Lobbyad id="438" duration="20240428T000001,20240429T235959" type="1" priority="110" see="1" click="2" />
+	<Lobbyad id="439" duration="20240517T000001,20240524T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="440" platform="210000;410054;110074;310052;310211;311214;312212;310206;110119;312210;311215;110075;312222;311216;312221;310220" duration="20240516T000001,20240519T180000" type="1" priority="50" see="2" click="2" />
+	<Lobbyad id="441" duration="20240525T000001,20240531T235959" type="1" priority="120" see="1" click="3" />
+	<Lobbyad id="442" duration="20240525T000001,20240531T235959" type="1" priority="110" see="2" click="3" />
+	<Lobbyad id="443" duration="20240601T000001,20240607T235959" type="1" priority="120" see="1" click="3" />
+	<Lobbyad id="444" platform="210000;410054;110074;310052;310211;311214;312212;310206;110119;312210;311215;110075;312222;311216;312221;310220" duration="20240531T000001,20240602T180000" type="1" priority="50" see="2" click="2" />
+	<Lobbyad id="445" duration="20240608T000001,20240615T235959" type="1" priority="120" see="2" click="3" />
+	<Lobbyad id="446" duration="20240608T000001,20240615T235959" type="1" priority="110" see="1" click="2" />
+	<Lobbyad id="447" duration="20240608T000001,20240615T235959" type="1" priority="110" see="1" click="2" />
+	<Lobbyad id="448" duration="20240608T000001,20240615T235959" type="1" priority="100" see="1" click="1" />
+	<Lobbyad id="449" platform="210000;410054;110074;310052;310211;311214;312212;310206;110119;312210;311215;110075;312222;311216;312221;310220" duration="20240607T000001,20240614T235959" type="1" priority="60" see="0" click="10" />
+	<Lobbyad id="450" duration="20240616T000001,20240621T235959" type="1" priority="120" see="2" click="3" />
+	<Lobbyad id="451" duration="20240616T000001,20240621T235959" type="1" priority="110" see="1" click="2" />
+	<Lobbyad id="452" platform="210000;410054;110074;310052;310211;311214;312212;310206;110119;312210;311215;110075;312222;311216;312221;310220" duration="20240614T000001,20240620T230000" type="1" priority="50" see="2" click="2" />
+	<Lobbyad id="453" duration="20240618T100000,20240624T235959" type="1" priority="60" see="1" click="2" />
+	<Lobbyad id="454" duration="20240622T000001,20240628T235959" type="1" priority="120" see="2" click="3" />
+	<Lobbyad id="455" duration="20240622T000001,20240628T235959" type="1" priority="110" see="1" click="2" />
+	<Lobbyad id="456" platform="110074;110075;110119;120117;120121;120128;210000;211401;211403;211405;211490;220003;220016;220028;220036;220037;220043;220112;220120;310052;310206;310211;310220;311214;311215;311216;311218;312210;312212;312222;320003;320102;320103;320105;320106;320107;320109;320115;320123;320125;320127;320129;410054;610219;720001;999803;999999" duration="20240621T000001,20240703T235959" type="1" priority="130" see="5" click="2" />
+	<Lobbyad id="457" platform="220010;320010;120116" duration="20240621T000001,20240703T235959" type="1" priority="130" see="5" click="2" />
+	<Lobbyad id="458" duration="20240629T000001,20240705T235959" type="1" priority="120" see="2" click="3" />
+	<Lobbyad id="459" duration="20240629T000001,20240705T235959" type="1" priority="110" see="1" click="2" />
+	<Lobbyad id="460" platform="110074;110075;110119;120117;120121;120128;210000;211401;211403;211405;211490;220003;220016;220028;220036;220037;220043;220112;220120;310052;310206;310211;310220;311214;311215;311216;311218;312210;312212;312222;320003;320102;320103;320106;320107;320109;320115;320123;320125;320127;320129;410054;610219;720001;999803;999999" duration="20240704T000001,20240710T235959" type="1" priority="120" see="5" click="2" />
+	<Lobbyad id="461" platform="220010;320010;120116;320105" duration="20240704T000001,20240710T235959" type="1" priority="120" see="5" click="2" />
+	<Lobbyad id="462" duration="20240706T000001,20240712T235959" type="1" priority="130" see="2" click="3" />
+	<Lobbyad id="463" duration="20240706T000001,20240712T235959" type="1" priority="110" see="1" click="2" />
+	<Lobbyad id="464" platform="210000;410054;110074;310052;310211;311214;312212;310206;110119;312210;311215;110075;312222;311216;312221;310220" duration="20240704T000001,20240714T235959" type="1" priority="120" see="2" click="2" />
+	<Lobbyad id="465" platform="210000;410054;110074;310052;310211;311214;312212;310206;110119;312210;311215;110075;312222;311216;312221;310220" duration="20240705T000001,20240714T235959" type="1" priority="60" see="2" click="5" />
+	<Lobbyad id="466" platform="210000;410054;110074;310052;310211;311214;312212;310206;110119;312210;311215;110075;312222;311216;312221;310220" duration="20240705T000001,20240712T235959" type="1" priority="50" see="2" click="2" />
+	<Lobbyad id="467" duration="20240713T000001,20240721T235959" type="1" priority="130" see="3" click="3" />
+	<Lobbyad id="468" duration="20240713T000001,20240721T235959" type="1" priority="120" see="2" click="2" />
+	<Lobbyad id="469" duration="20240713T000001,20240721T235959" type="1" priority="110" see="1" click="1" />
+	<Lobbyad id="470" platform="110074;110075;110119;120117;120121;120128;210000;211401;211403;211405;211490;220003;220016;220028;220036;220037;220043;220112;220120;310052;310206;310211;310220;311214;311215;311216;311218;312210;312212;312222;320003;320102;320103;320106;320107;320109;320115;320123;320125;320127;320129;410054;610219;720001;999803;999999" duration="20240710T000001,20240710T235959" type="1" priority="140" see="5" click="2" />
+	<Lobbyad id="471" platform="220010;320010;120116;320105" duration="20240710T000001,20240710T235959" type="1" priority="140" see="5" click="2" />
+	<Lobbyad id="472" platform="110074;110075;110119;120117;120121;120128;210000;211401;211403;211405;211490;220003;220016;220028;220036;220037;220043;220112;220120;310052;310206;310211;310220;311214;311215;311216;311218;312210;312212;312222;320003;320102;320103;320106;320107;320109;320115;320123;320125;320127;320129;410054;610219;720001;999803;999999" duration="20240711T000001,20240711T235959" type="1" priority="140" see="5" click="2" />
+	<Lobbyad id="473" platform="220010;320010;120116;320105" duration="20240711T000001,20240711T235959" type="1" priority="140" see="5" click="2" />
+	<Lobbyad id="474" platform="110074;110075;110119;120117;120121;120128;210000;211401;211403;211405;211490;220003;220016;220028;220036;220037;220043;220112;220120;310052;310206;310211;310220;311214;311215;311216;311218;312210;312212;312222;320003;320102;320103;320106;320107;320109;320115;320123;320125;320127;320129;410054;610219;720001;999803;999999" duration="20240712T000001,20240712T235959" type="1" priority="140" see="5" click="2" />
+	<Lobbyad id="475" platform="220010;320010;120116;320105" duration="20240712T000001,20240712T235959" type="1" priority="140" see="5" click="2" />
+	<Lobbyad id="476" duration="20240722T000001,20240726T235959" type="1" priority="130" see="3" click="3" />
+	<Lobbyad id="477" platform="210000;410054;110074;310052;310211;311214;312212;310206;110119;312210;311215;110075;312222;311216;312221;310220" duration="20240828T000001,20240831T160000" type="1" priority="140" see="0" click="5" />
+	<Lobbyad id="478" duration="20240727T000001,20240802T235959" type="1" priority="130" see="3" click="3" />
+	<Lobbyad id="479" duration="20240727T000001,20240802T235959" type="1" priority="110" see="1" click="2" />
+	<Lobbyad id="480" duration="20240803T000001,20240809T235959" type="1" priority="130" see="3" click="3" />
+	<Lobbyad id="481" duration="20240803T000001,20240809T235959" type="1" priority="110" see="1" click="2" />
+	<Lobbyad id="482" platform="410054;312212;312210;311223;311218;311216;311215;311214;310220;310211;310206;310052;210000;110119;110075;110074;999999" duration="20240801T000001,20240811T230000" type="1" priority="131" see="2" click="2" />
+	<Lobbyad id="483" platform="320003;220120;220112;220043;220037;220036;220028;220016;220003;120128;120121;120117;999999" duration="20240801T000001,20240811T230000" type="1" priority="131" see="2" click="2" />
+	<Lobbyad id="484" platform="410054;312212;312210;311223;311218;311216;311215;311214;310220;310211;310206;310052;210000;110119;110075;110074;320003;220120;220112;220043;220037;220036;220028;220016;220003;120128;120121;120117;999999" duration="20240807T000001,20240808T180000" type="1" priority="130" see="2" click="2" />
+	<Lobbyad id="485" duration="20240810T000001,20240818T235959" type="1" priority="130" see="2" click="3" />
+	<Lobbyad id="486" duration="20240810T000001,20240818T235959" type="1" priority="120" see="1" click="2" />
+	<Lobbyad id="487" duration="20240810T000001,20240818T235959" type="1" priority="120" see="1" click="2" />
+	<Lobbyad id="488" duration="20240810T000001,20240818T235959" type="1" priority="120" see="1" click="2" />
+	<Lobbyad id="489" duration="20240819T000001,20240823T235959" type="1" priority="120" see="1" click="2" />
+	<Lobbyad id="490" duration="20240824T000001,20240830T235959" type="1" priority="130" see="3" click="2" />
+	<Lobbyad id="491" duration="20240824T000001,20240830T235959" type="1" priority="110" see="1" click="2" />
+	<Lobbyad id="492" duration="20240831T000001,20240907T235959" type="1" priority="130" see="2" click="3" />
+	<Lobbyad id="493" duration="20240831T000001,20240907T235959" type="1" priority="120" see="1" click="2" />
+	<Lobbyad id="494" duration="20240831T000001,20240907T235959" type="1" priority="110" see="1" click="2" />
+	<Lobbyad id="495" duration="20240831T000001,20240907T235959" type="1" priority="110" see="1" click="2" />
+	<Lobbyad id="496" platform="210000;110074;310052;410054;999999" duration="20240903T100001,20240913T235959" type="1" priority="131" see="5" click="5" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	参数id
+			sort	-	排序-数字越大排序越前
+			name	-	名字
+			activitytype	-	活动类型        1=积分任务 2=获取积分任务
+			quest_id	-	关联的任务id;用;隔开
+			duration	-	活动任务时间（不配置则一直显示）
+			TaskId1	-	一档外发光任务ID
+			TaskId2	-	二档外发光任务ID，多个用,分隔
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank1	-	排名
+			rank2	-	排名下限
+			itmes	-	奖励-实际上是手动发给php来发邮件的
+			name	-	奖励名字-php发邮件用
+			icon	-	显示宝箱icon123档次，1最好
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	广告图组别id
+				-	备注栏
+			count	-	当前组最多展示数量
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			saveid	-	用来筛选的道具id
+			id	-	实际id
+				-	备注栏
+		-->
+	<PropID saveid="12981101" id="12981101" />
+	<PropID saveid="12981201" id="12981201" />
+	<PropID saveid="11981301" id="11981301" />
+	<PropID saveid="11981301" id="11981401" />
+	<PropID saveid="100105" id="100108" />
+	<PropID saveid="100105" id="100107" />
+	<PropID saveid="100105" id="100105" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			WinName	-	弹窗名称
+				-	名称备注
+			sort	-	弹窗展示顺序
+			PopupScene	-	位于场景
+			LevelLimit	-	等级限制
+			addWinName	-	当弹到这个界面的时候再加一个弹窗B
+			addWinNameConditionFunc	-	新增弹窗B能弹出的条件
+			ExcludeWinStr	-	互斥弹窗名
+			OverNeedMuti	-	排序队列展示完后，是否会进行弹出
+			NotFirstLogin	-	非首次登陆
+			ClosePopup	-	一键屏蔽弹出
+				-	
+			WinName	-	弹窗名称
+				-	名称备注
+			sort	-	弹窗展示顺序
+			PopupScene	-	位于场景
+			LevelLimit	-	等级限制
+			addWinName	-	当弹到这个界面的时候再加一个弹窗B
+			addWinNameConditionFunc	-	新增弹窗B能弹出的条件
+			OverNeedMuti	-	排序队列展示完后，是否会进行弹出
+			NotFirstLogin	-	非首次登陆
+			ClosePopup	-	一键屏蔽弹出
+		-->
+</TaskAll>

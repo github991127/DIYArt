@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<CardsShow>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	外观ID
+			type	-	类型
+1=卡背
+2=卡面
+			title	-	外观名称
+			texiao	-	特效资源前缀
+			time	-	外观有效期
+有效期内才可使用此卡牌外观
+不在有效期，界面中也不显示
+			unlock	-	解锁所需道具
+不配置默认解锁
+多个道具用分号隔开，拥有任一都解锁
+			sortindex	-	排序
+数字大的界面中显示在前
+			tips	-	解锁冒字提示
+			GetFromText	-	获取方式
+		-->
+	<CardsShow id="0" type="1" />
+	<CardsShow id="0" type="2" />
+	<CardsShow id="1" type="1" time="20240111T101111;20240311T101111" />
+	<CardsShow id="1" type="2" time="20240111T101111;20240311T101111" />
+	<CardsShow id="2" type="1" time="20240111T101111;20240311T101111" unlock="13100001;13100201" />
+	<CardsShow id="2" type="2" time="20240111T101111;20240311T101111" unlock="13100001;13100201" />
+</CardsShow>

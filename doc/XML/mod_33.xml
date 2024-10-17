@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			dealChrId	-	分将id
+			breakScore	-	违规加扣信誉分系数
+			maxTime	-	最大牌局时间
+			guideLevel	-	弱引导等级
+			sGeneralMinNum	-	S级武将最少数量
+			aGeneralMinNum	-	A级武将最少数量
+			des	-	玩法说明文字
+			des_m	-	移动端玩法说明文字
+			roomName	-	房间名称
+		-->
+	<Common dealChrId="1" breakScore="15000" maxTime="3600" sGeneralMinNum="15" aGeneralMinNum="25" roomName="欢乐33匹配" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			winComboMod	-	连胜战力修正系数a
+			winRageA	-	胜率基础值，超过才生效
+			winRageB	-	胜率战力修正系数B
+			winRageC	-	胜率战力修正系数C
+			strHeroA	-	强将比例基础值，超过才生效
+			strHeroB	-	强将比例修正系数B
+			strHeroC	-	强将比例修正系数C
+			teamPowerArgH	-	组队战力个人战力较大者参数A
+			teamPowerArgL	-	组队战力个人战力较大者参数B
+			teamPowerArgBase	-	组队战力个人战力较大者参数C
+			ttLevA	-	组队等级个人等级较大者参数A
+			ttLevB	-	组队等级个人等级较大者参数B
+			ttLevC	-	组队等级个人等级较大者参数C
+			levA	-	组队段位个人段位较大者参数A
+			levB	-	组队段位个人段位较大者参数B
+			levC	-	组队段位个人段位较大者参数C
+			keepSeconds	-	匹配最大等待时间
+			keepSecondsMin	-	匹配最小等待时间
+			matchRecordLimit	-	匹配记录参数，次数，x时间x场x次不能一起
+			matchRecordTime	-	匹配记录参数，时间，x时间x场x次不能一起
+			matchRecordMax	-	匹配记录参数，场数，x时间x场x次不能一起
+			makeTimeout	-	超时对列 创建AI牌局数
+			makeTeams	-	队伍匹配每秒处理数
+			makeSingles	-	单人匹配每秒处理数
+			tabTipsTime	-	匹配前快结束提示时间
+			protectMaxTime	-	保护匹配ai的超时时间（同样保护匹配ai的人过少）
+			streakWinClear	-	队伍中任一人连胜达到N场后整个队伍不会匹配AI
+		-->
+	<matchvalue winComboMod="100" winRageA="5500" winRageB="5500" winRageC="11000" strHeroA="1000" strHeroB="1000" strHeroC="10000" teamPowerArgH="7000" teamPowerArgL="3000" teamPowerArgBase="8000" ttLevA="7000" ttLevB="3000" ttLevC="8000" levA="7000" levB="3000" levC="8000" keepSeconds="5" keepSecondsMin="1" matchRecordLimit="2" matchRecordTime="3600" matchRecordMax="30" makeTimeout="20" makeTeams="50" makeSingles="100" protectMaxTime="30" streakWinClear="1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			proficiency	-	熟练度
+			lossCount	-	失败次数
+			timeOut	-	超时匹配
+1=启用
+0或不填不启用
+			levelAI	-	AI等级
+			maxProficiency	-	熟练度上限
+最大熟练度≥该值则不再生效
+			newLossCount	-	失败次数
+			newLevelAI	-	AI等级
+		-->
+	<MatchAiInfo proficiency="0" lossCount="2" timeOut="1" levelAI="1" maxProficiency="10" newLossCount="3" newLevelAI="2" />
+	<MatchAiInfo proficiency="4" lossCount="2" timeOut="1" levelAI="2" maxProficiency="16" newLossCount="3" newLevelAI="2" />
+	<MatchAiInfo proficiency="7" lossCount="2" timeOut="1" levelAI="2" maxProficiency="999" newLossCount="3" newLevelAI="2" />
+	<MatchAiInfo proficiency="10" lossCount="2" timeOut="1" levelAI="2" maxProficiency="999" newLossCount="3" newLevelAI="2" />
+	<MatchAiInfo proficiency="16" lossCount="2" timeOut="0" levelAI="2" maxProficiency="999" newLossCount="3" newLevelAI="2" />
+	<MatchAiInfo proficiency="100" lossCount="2" timeOut="0" levelAI="2" maxProficiency="999" newLossCount="3" newLevelAI="2" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			type	-	发将类型
+1=交集
+2=并集
+3=VIP增加格子
+			addNum	-	增加格子数
+			sGeneral	-	S
+			aGeneral	-	A
+			bGeneral	-	B
+		-->
+	<generalNum type="1" sGeneral="1" aGeneral="1" bGeneral="1" />
+	<generalNum type="2" sGeneral="1" aGeneral="2" bGeneral="2" />
+	<generalNum type="3" addNum="1" aGeneral="1" />
+	<generalNum type="3" addNum="2" aGeneral="1" bGeneral="1" />
+	<generalNum type="3" addNum="3" sGeneral="1" aGeneral="1" bGeneral="1" />
+	<generalNum type="3" addNum="4" sGeneral="1" aGeneral="2" bGeneral="1" />
+</root>

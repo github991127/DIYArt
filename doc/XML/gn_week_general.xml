@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			minLevel	-	最小等级
+≥等级才生效
+		-->
+	<GeneralCfg minLevel="30" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			group	-	组id
+			count	-	本周数量
+				-	规划
+		-->
+	<GeneralList group="1" count="3">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	武将id
+			weight	-	权重
+			group	-	组别-同组的不会重复出现
+				-	
+				-
+			-->
+		<General id="214" weight="100" group="1" />
+		<General id="215" weight="100" group="1" />
+		<General id="34" weight="100" group="1" />
+		<General id="35" weight="100" group="1" />
+		<General id="36" weight="100" group="1" />
+		<General id="37" weight="100" group="1" />
+		<General id="38" weight="100" group="1" />
+		<General id="39" weight="100" group="1" />
+		<General id="40" weight="100" group="1" />
+		<General id="41" weight="100" group="1" />
+		<General id="42" weight="100" group="1" />
+		<General id="43" weight="100" group="1" />
+		<General id="44" weight="100" group="1" />
+		<General id="45" weight="100" group="1" />
+		<General id="46" weight="100" group="1" />
+		<General id="47" weight="100" group="1" />
+		<General id="48" weight="100" />
+		<General id="49" weight="100" />
+		<General id="50" weight="100" />
+		<General id="51" weight="100" />
+		<General id="52" weight="100" />
+		<General id="53" weight="100" />
+		<General id="54" weight="100" />
+		<General id="55" weight="100" />
+		<General id="56" weight="100" />
+		<General id="57" weight="100" />
+		<General id="151" weight="100" />
+		<General id="152" weight="100" />
+		<General id="153" weight="100" />
+		<General id="155" weight="100" />
+		<General id="156" weight="100" />
+		<General id="157" weight="100" />
+		<General id="158" weight="100" />
+		<General id="160" weight="100" />
+		<General id="161" weight="100" />
+		<General id="185" weight="100" />
+		<General id="186" weight="100" />
+		<General id="162" weight="100" />
+		<General id="164" weight="100" />
+		<General id="166" weight="100" />
+		<General id="167" weight="100" />
+		<General id="168" weight="100" />
+		<General id="169" weight="100" />
+		<General id="170" weight="100" />
+		<General id="171" weight="100" />
+		<General id="172" weight="100" />
+		<General id="173" weight="100" />
+		<General id="187" weight="100" />
+		<General id="188" weight="100" />
+		<General id="174" weight="100" />
+		<General id="175" weight="100" />
+		<General id="176" weight="100" />
+		<General id="177" weight="100" />
+		<General id="178" weight="100" />
+		<General id="179" weight="100" />
+		<General id="180" weight="100" />
+		<General id="181" weight="100" />
+		<General id="182" weight="100" />
+		<General id="183" weight="100" />
+		<General id="184" weight="100" />
+		<General id="321" weight="100" />
+		<General id="322" weight="100" />
+		<General id="323" weight="100" />
+		<General id="324" weight="100" />
+		<General id="325" weight="100" />
+		<General id="326" weight="100" />
+		<General id="327" weight="100" />
+		<General id="328" weight="100" />
+		<General id="329" weight="100" />
+		<General id="330" weight="100" />
+		<General id="331" weight="100" />
+		<General id="299" weight="100" />
+		<General id="300" weight="100" />
+		<General id="301" weight="100" />
+		<General id="302" weight="100" />
+		<General id="303" weight="100" />
+		<General id="304" weight="100" />
+		<General id="305" weight="100" />
+		<General id="306" weight="100" />
+		<General id="307" weight="100" />
+		<General id="308" weight="100" />
+		<General id="309" weight="100" />
+		<General id="310" weight="100" />
+		<General id="311" weight="100" />
+		<General id="312" weight="100" />
+		<General id="313" weight="100" />
+		<General id="314" weight="100" />
+		<General id="315" weight="100" />
+		<General id="316" weight="100" />
+		<General id="317" weight="100" />
+		<General id="318" weight="100" />
+		<General id="319" weight="100" />
+		<General id="320" weight="100" />
+		<General id="440" weight="100" />
+		<General id="441" weight="100" />
+		<General id="444" weight="100" />
+		<General id="445" weight="100" />
+		<General id="446" weight="100" />
+	</GeneralList>
+	<GeneralList group="2" count="3">
+		<General id="332" weight="100" />
+		<General id="333" weight="100" />
+		<General id="334" weight="100" />
+		<General id="335" weight="100" />
+		<General id="336" weight="100" />
+		<General id="337" weight="100" />
+		<General id="338" weight="100" />
+		<General id="339" weight="100" />
+		<General id="340" weight="100" />
+		<General id="341" weight="100" />
+		<General id="342" weight="100" />
+		<General id="380" weight="100" />
+		<General id="381" weight="100" />
+		<General id="382" weight="100" />
+		<General id="383" weight="100" />
+		<General id="384" weight="100" />
+		<General id="385" weight="100" />
+		<General id="386" weight="100" />
+		<General id="387" weight="100" />
+		<General id="388" weight="100" />
+		<General id="389" weight="100" />
+		<General id="390" weight="100" />
+		<General id="391" weight="100" />
+		<General id="392" weight="100" />
+		<General id="393" weight="100" />
+		<General id="394" weight="100" />
+		<General id="395" weight="100" />
+		<General id="365" weight="100" />
+		<General id="7003" weight="100" />
+		<General id="7007" weight="100" />
+		<General id="7010" weight="100" />
+		<General id="7011" weight="100" />
+		<General id="7012" weight="100" />
+		<General id="7015" weight="100" />
+		<General id="7002" weight="100" />
+		<General id="7001" weight="100" />
+		<General id="7000" weight="100" />
+		<General id="7008" weight="100" />
+		<General id="7009" weight="100" />
+		<General id="7004" weight="100" />
+		<General id="7005" weight="100" />
+		<General id="7006" weight="100" />
+		<General id="7013" weight="100" />
+		<General id="7014" weight="100" />
+		<General id="362" weight="100" />
+		<General id="400" weight="100" />
+		<General id="401" weight="100" />
+		<General id="403" weight="100" />
+		<General id="100" weight="100" />
+		<General id="409" weight="100" />
+		<General id="448" weight="100" />
+		<General id="449" weight="100" />
+		<General id="73" weight="100" />
+		<General id="122" weight="100" />
+		<General id="131" weight="100" />
+		<General id="135" weight="100" />
+		<General id="378" weight="100" />
+		<General id="72" weight="100" />
+		<General id="123" weight="100" />
+		<General id="128" weight="100" />
+		<General id="360" weight="100" />
+		<General id="363" weight="100" />
+		<General id="369" weight="100" />
+		<General id="371" weight="100" />
+		<General id="375" weight="100" />
+		<General id="376" weight="100" />
+		<General id="428" weight="100" />
+		<General id="432" weight="100" />
+		<General id="433" weight="100" />
+		<General id="459" weight="100" />
+		<General id="127" weight="100" />
+		<General id="129" weight="100" />
+		<General id="348" weight="100" />
+		<General id="419" weight="100" />
+		<General id="115" weight="100" />
+		<General id="117" weight="100" />
+		<General id="124" weight="100" />
+		<General id="346" weight="100" />
+		<General id="366" weight="100" />
+		<General id="343" weight="100" />
+		<General id="377" weight="100" />
+		<General id="101" weight="100" />
+		<General id="114" weight="100" />
+		<General id="116" weight="100" />
+		<General id="121" weight="100" />
+		<General id="125" weight="100" />
+		<General id="126" weight="100" />
+		<General id="136" weight="100" />
+		<General id="364" weight="100" />
+		<General id="368" weight="100" />
+		<General id="370" weight="100" />
+		<General id="374" weight="100" />
+		<General id="379" weight="100" />
+		<General id="461" weight="100" />
+		<General id="434" weight="100" />
+	</GeneralList>
+	<GeneralList group="3" count="2">
+		<General id="402" weight="100" />
+		<General id="404" weight="100" />
+		<General id="406" weight="100" />
+		<General id="407" weight="100" />
+		<General id="408" weight="100" />
+		<General id="410" weight="100" />
+		<General id="411" weight="100" />
+		<General id="413" weight="100" />
+		<General id="414" weight="100" />
+		<General id="415" weight="100" />
+		<General id="442" weight="100" />
+		<General id="443" weight="100" />
+		<General id="453" weight="100" />
+		<General id="456" weight="100" />
+		<General id="457" weight="100" />
+		<General id="450" weight="100" />
+		<General id="455" weight="100" />
+		<General id="454" weight="100" />
+		<General id="462" weight="100" />
+		<General id="463" weight="100" />
+		<General id="470" weight="100" />
+		<General id="458" weight="100" />
+		<General id="479" weight="100" />
+		<General id="484" weight="100" />
+		<General id="451" weight="100" />
+		<General id="452" weight="100" />
+		<General id="471" weight="100" />
+		<General id="439" weight="100" />
+		<General id="465" weight="100" />
+		<General id="347" weight="100" />
+		<General id="423" weight="100" />
+		<General id="140" weight="100" />
+		<General id="466" weight="100" />
+		<General id="119" weight="100" />
+		<General id="427" weight="100" />
+		<General id="468" weight="100" />
+		<General id="476" weight="100" />
+		<General id="460" weight="100" />
+	</GeneralList>
+</root>

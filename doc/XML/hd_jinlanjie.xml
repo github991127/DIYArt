@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			time	-	活动时间
+			turnid	-	轮次id
+			model	-	模式
+			des	-	玩法说明文字
+			des_m	-	移动端玩法说明文字
+				-	
+				-	
+				-
+		-->
+	<common time="20240429T170000,20240509T235959" turnid="1" model="132,91,141,38,39" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	特权id
+id不能更改
+			open	-	开关
+			type	-	特权类型
+1=重要 2=普通
+			privilegePng	-	特权资源
+			sort	-	排序
+			privilegeType	-	特权底资源名称
+			name	-	特权名称
+			privilegeDes	-	特权的描述
+			program	-	参数
+				-	备注
+				-	
+				-	
+				-	
+				-	
+				-	
+				-	
+				-	
+				-	
+				-
+		-->
+	<privilege id="1" open="0" name="好友排位不掉星" program="3" />
+	<privilege id="2" open="0" name="好友武将共享" program="0" />
+	<privilege id="3" open="0" name="好友皮肤共享" program="0" />
+	<privilege id="4" open="0" name="周免武将翻倍" />
+	<privilege id="5" open="0" name="军典积分加成" program="20" />
+	<privilege id="6" open="0" name="0体力继续打" />
+	<privilege id="7" open="0" name="复活队友半价" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	功能id
+				-	备注
+			daymax	-	每日获取上限
+			open	-	开关
+			model	-	生效模式
+			pram	-	参数
+		-->
+	<zhongyi id="1" daymax="100" open="1" model="132,3;91,3;141,3;38,3;39,3" pram="10" />
+	<zhongyi id="2" daymax="100" open="1" pram="101,5;102,10;109,10" />
+	<zhongyi id="3" daymax="100" open="1" pram="20" />
+</root>

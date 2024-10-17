@@ -1,0 +1,1004 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	参数id（期数，唯一递增，不可重复）
+			itemid	-	抽奖需要的物品,个数
+			itemPack	-	道具不足时购买礼包
+			itemdiscount	-	翻牌折扣
+			purchasegoods	-	获取宝箱礼包id，用；分隔
+			page	-	所属h5_bar页签
+			itemId2	-	翻牌,组合奖励道具，及兑换消耗的道具id
+			freeDuration	-	免费抽奖间隔
+			background	-	背景图
+			duration	-	活动开关时间
+			duration2	-	商店开关时间
+			dropchance	-	掉落物品的概率，分母为10000
+			Firstdrop	-	首次翻牌组合id
+			dropClassId	-	单抽掉落库的classid
+			dropClassId2	-	五连抽掉落库的classid
+			dropshow	-	掉落展示
+			pic	-	大奖（名称命名与道具ID一致）
+			gift	-	免费礼包，活动期间免费领取一次，礼包id，道具ID；数量
+			showgoods1	-	高级外发光道具id，多个用,分隔
+			showgoods2	-	低级外发光道具id，多个用,分隔
+			des	-	规则说明
+		-->
+	<Common id="26" itemid="21273001,5" itemdiscount="8" itemId2="21273101" freeDuration="86400" duration="20231020T235801,20231027T235959" duration2="20231020T235801,20231027T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,1;8,2;" dropClassId2="0,1;60,3;" dropshow="3" gift="0,0">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			CardId	-	1=杀，2=闪，3=桃
+			rewarditemcounts	-	奖励道具数量
+			-->
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rewardId	-	组合ID
+			card1	-	杀数量
+			card2	-	闪数量
+			card3	-	桃数量
+				-	基础分（备注用
+			rewarditemcounts2	-	额外奖励道具数量
+			ratio	-	权重-放到所有奖品中后一起计算概率
+			ratioUP	-	权重-本次未出现时下次增加的概率
+			-->
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<Common id="27" itemid="21274001,5" itemdiscount="8" itemId2="21274101" freeDuration="86400" duration="20231027T235801,20231103T235959" duration2="20231027T235801,20231103T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,4;8,5;" dropClassId2="0,4;60,6;" dropshow="3" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<Common id="28" itemid="21274801,5" itemdiscount="8" itemId2="21274901" freeDuration="86400" duration="20231110T235801,20231118T235959" duration2="20231110T235801,20231118T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,4;8,5;" dropClassId2="0,4;60,6;" dropshow="3" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<Common id="29" itemid="21276501,5" itemdiscount="8" itemId2="21276601" freeDuration="86400" duration="20231201T235801,20231208T235959" duration2="20231201T235801,20231208T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,4;8,5;" dropClassId2="0,4;60,6;" dropshow="6" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<Common id="30" itemid="21277501,5" itemdiscount="8" itemId2="21277601" freeDuration="86400" duration="20231215T235801,20231223T235959" duration2="20231215T235801,20231223T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,4;8,5;" dropClassId2="0,4;60,6;" dropshow="6" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<Common id="31" itemid="21278901,5" itemdiscount="8" itemId2="21279001" freeDuration="86400" duration="20231229T235801,20240106T235959" duration2="20231229T235801,20240106T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,4;8,5;" dropClassId2="0,4;60,6;" dropshow="6" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="94" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="93" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="93" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="888" />
+	</Common>
+	<Common id="32" itemid="21280401,5" itemdiscount="8" itemId2="21280501" freeDuration="86400" duration="20240119T235801,20240126T235959" duration2="20240119T235801,20240126T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,4;8,5;" dropClassId2="0,4;60,6;" dropshow="6" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<Common id="33" itemid="21281701,5" itemdiscount="8" itemId2="21281801" freeDuration="86400" duration="20240208T235801,20240218T235959" duration2="20240208T235801,20240218T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,4;8,5;" dropClassId2="0,4;60,6;" dropshow="6" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<Common id="34" itemid="21283101,5" itemdiscount="8" itemId2="21283201" freeDuration="86400" duration="20240223T235801,20240301T235959" duration2="20240223T235801,20240301T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,4;8,5;" dropClassId2="0,4;60,6;" dropshow="6" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<Common id="35" itemid="21284101,5" itemdiscount="8" itemId2="21284201" freeDuration="86400" duration="20240301T235801,20240309T235959" duration2="20240301T235801,20240309T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,7;8,8;" dropClassId2="0,7;60,9;" dropshow="6" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="94" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="93" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="93" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="888" />
+	</Common>
+	<Common id="36" itemid="21286101,5" itemdiscount="8" itemId2="21286201" freeDuration="86400" duration="20240322T235801,20240329T235959" duration2="20240322T235801,20240329T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,7;8,8;" dropClassId2="0,7;60,9;" dropshow="9" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<Common id="37" itemid="21288701,5" itemdiscount="8" itemId2="21288801" freeDuration="86400" duration="20240418T235801,20240425T235959" duration2="20240418T235801,20240425T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,10;8,11;" dropClassId2="0,10;60,12;" dropshow="12" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<Common id="38" itemid="21289801,5" itemdiscount="8" itemId2="21289901" freeDuration="86400" duration="20240429T235801,20240509T235959" duration2="20240429T235801,20240509T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,13;8,14;" dropClassId2="0,13;60,15;" dropshow="15" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<Common id="39" itemid="21290901,5" itemdiscount="8" itemId2="21291001" freeDuration="86400" duration="20240516T235801,20240524T235959" duration2="20240516T235801,20240524T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,16;8,17;" dropClassId2="0,16;60,18;" dropshow="18" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<Common id="40" itemid="21292601,5" itemdiscount="8" itemId2="21292701" freeDuration="86400" duration="20240607T235801,20240615T235959" duration2="20240607T235801,20240615T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,19;8,20;" dropClassId2="0,19;60,21;" dropshow="21" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<Common id="41" itemid="21293501,5" itemdiscount="8" itemId2="21293601" freeDuration="86400" duration="20240621T235801,20240628T235959" duration2="20240621T235801,20240628T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,22;8,23;" dropClassId2="0,22;60,24;" dropshow="21" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<Common id="42" itemid="21295701,5" itemdiscount="8" itemId2="21295801" freeDuration="86400" duration="20240712T235801,20240721T235959" duration2="20240712T235801,20240721T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,25;8,26;" dropClassId2="0,25;60,27;" dropshow="27" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="94" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="93" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="888" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="93" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="288" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="888" />
+	</Common>
+	<Common id="43" itemid="21297001,5" itemdiscount="8" itemId2="21297101" freeDuration="86400" duration="20240726T235801,20240802T235959" duration2="20240726T235801,20240802T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,28;8,29;" dropClassId2="0,28;60,30;" dropshow="30" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<Common id="44" itemid="21297801,5" itemdiscount="8" itemId2="21297901" freeDuration="86400" duration="20240809T235801,20240818T235959" duration2="20240809T235801,20240818T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,31;8,32;" dropClassId2="0,31;60,33;" dropshow="33" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<Common id="45" itemid="21299601,5" itemdiscount="8" itemId2="21299701" freeDuration="86400" duration="20240830T235801,20240907T235959" duration2="20240830T235801,20240907T235959" dropchance="3000" Firstdrop="1,2,3,16,19" dropClassId="0,34;8,35;" dropClassId2="0,34;60,36;" dropshow="36" gift="0,0">
+		<BaseCard CardId="1" rewarditemcounts="2" />
+		<BaseCard CardId="2" rewarditemcounts="2" />
+		<BaseCard CardId="3" rewarditemcounts="2" />
+		<ComposeCard rewardId="1" card1="5" card2="0" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="2" card1="4" card2="0" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="3" card1="4" card2="1" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="4" card1="3" card2="0" card3="2" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="5" card1="3" card2="1" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="6" card1="3" card2="2" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="7" card1="2" card2="0" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="8" card1="2" card2="1" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="9" card1="2" card2="2" card3="1" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="10" card1="2" card2="3" card3="0" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="11" card1="1" card2="0" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="12" card1="1" card2="1" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="13" card1="1" card2="2" card3="2" rewarditemcounts2="0" ratio="0" />
+		<ComposeCard rewardId="14" card1="1" card2="3" card3="1" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="15" card1="1" card2="4" card3="0" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="16" card1="0" card2="0" card3="5" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="17" card1="0" card2="1" card3="4" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="18" card1="0" card2="2" card3="3" rewarditemcounts2="15" ratio="978" />
+		<ComposeCard rewardId="19" card1="0" card2="5" card3="0" rewarditemcounts2="130" ratio="33" />
+		<ComposeCard rewardId="20" card1="0" card2="4" card3="1" rewarditemcounts2="50" ratio="183" />
+		<ComposeCard rewardId="21" card1="0" card2="3" card3="2" rewarditemcounts2="15" ratio="978" />
+	</Common>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+				-	备注
+			Id	-	掉落id
+			ItemId	-	道具id
+			name	-	名字
+			Chance	-	权重
+			MinCount	-	最小数量
+			MaxCount	-	最大数量
+			NotifyType	-	获得这个道具通知模式，0不通知，1通知全区
+			DefaultItemId	-	重复返还道具
+			DefaultItemCnt	-	重复返还道具数量
+		-->
+	<Drop Id="1" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="1" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="1" ItemId="21281701" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="1" ItemId="21281701" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="1" ItemId="21281701" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="1" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="1" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="1" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="1" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="2" ItemId="9052201" Chance="10" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21276601" DefaultItemCnt="150" />
+	<Drop Id="2" ItemId="9052101" Chance="15" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21276601" DefaultItemCnt="150" />
+	<Drop Id="2" ItemId="9054701" Chance="30" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21276601" DefaultItemCnt="150" />
+	<Drop Id="2" ItemId="9054601" Chance="30" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21276601" DefaultItemCnt="150" />
+	<Drop Id="2" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="2" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="2" ItemId="21281701" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="2" ItemId="21281701" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="2" ItemId="21281701" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="2" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="2" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="2" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="2" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="3" ItemId="922701" Chance="5" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21276601" DefaultItemCnt="450" />
+	<Drop Id="3" ItemId="9050001" Chance="10" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21276601" DefaultItemCnt="300" />
+	<Drop Id="3" ItemId="9052201" Chance="10" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21276601" DefaultItemCnt="150" />
+	<Drop Id="3" ItemId="9052101" Chance="15" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21276601" DefaultItemCnt="150" />
+	<Drop Id="3" ItemId="9054701" Chance="30" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21276601" DefaultItemCnt="150" />
+	<Drop Id="3" ItemId="9054601" Chance="30" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21276601" DefaultItemCnt="150" />
+	<Drop Id="3" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="3" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="3" ItemId="21281701" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="3" ItemId="21281701" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="3" ItemId="21281701" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="3" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="3" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="3" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="3" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="4" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="4" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="4" ItemId="21283101" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="4" ItemId="21283101" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="4" ItemId="21283101" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="4" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="4" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="4" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="4" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="5" ItemId="9050001" Chance="20" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21283201" DefaultItemCnt="300" />
+	<Drop Id="5" ItemId="935401" Chance="15" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21283201" DefaultItemCnt="300" />
+	<Drop Id="5" ItemId="9053601" Chance="15" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21283201" DefaultItemCnt="150" />
+	<Drop Id="5" ItemId="9054701" Chance="30" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21283201" DefaultItemCnt="150" />
+	<Drop Id="5" ItemId="9054601" Chance="30" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21283201" DefaultItemCnt="150" />
+	<Drop Id="5" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="5" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="5" ItemId="21283101" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="5" ItemId="21283101" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="5" ItemId="21283101" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="5" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="5" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="5" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="5" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="6" ItemId="9054301" Chance="20" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21283201" DefaultItemCnt="450" />
+	<Drop Id="6" ItemId="9050001" Chance="20" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21283201" DefaultItemCnt="300" />
+	<Drop Id="6" ItemId="935401" Chance="20" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21283201" DefaultItemCnt="300" />
+	<Drop Id="6" ItemId="9053601" Chance="20" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21283201" DefaultItemCnt="150" />
+	<Drop Id="6" ItemId="9054701" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21283201" DefaultItemCnt="150" />
+	<Drop Id="6" ItemId="9054601" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21283201" DefaultItemCnt="150" />
+	<Drop Id="6" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="6" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="6" ItemId="21283101" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="6" ItemId="21283101" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="6" ItemId="21283101" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="6" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="6" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="6" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="6" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="7" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="7" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="7" ItemId="21286101" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="7" ItemId="21286101" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="7" ItemId="21286101" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="7" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="7" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="7" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="7" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="8" ItemId="9053601" Chance="15" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21286201" DefaultItemCnt="150" />
+	<Drop Id="8" ItemId="9055001" Chance="15" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21286201" DefaultItemCnt="150" />
+	<Drop Id="8" ItemId="9054701" Chance="30" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21286201" DefaultItemCnt="150" />
+	<Drop Id="8" ItemId="9054601" Chance="30" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21286201" DefaultItemCnt="150" />
+	<Drop Id="8" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="8" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="8" ItemId="21286101" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="8" ItemId="21286101" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="8" ItemId="21286101" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="8" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="8" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="8" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="8" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="9" ItemId="9052301" Chance="20" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21286201" DefaultItemCnt="300" />
+	<Drop Id="9" ItemId="9049701" Chance="30" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21286201" DefaultItemCnt="300" />
+	<Drop Id="9" ItemId="9053601" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21286201" DefaultItemCnt="150" />
+	<Drop Id="9" ItemId="9055001" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21286201" DefaultItemCnt="150" />
+	<Drop Id="9" ItemId="9054701" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21286201" DefaultItemCnt="150" />
+	<Drop Id="9" ItemId="9054601" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21286201" DefaultItemCnt="150" />
+	<Drop Id="9" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="9" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="9" ItemId="21286101" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="9" ItemId="21286101" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="9" ItemId="21286101" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="9" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="9" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="9" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="9" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="10" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="10" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="10" ItemId="21288701" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="10" ItemId="21288701" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="10" ItemId="21288701" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="10" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="10" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="10" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="10" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="11" ItemId="9052101" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21288801" DefaultItemCnt="150" />
+	<Drop Id="11" ItemId="9059801" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21288801" DefaultItemCnt="150" />
+	<Drop Id="11" ItemId="9054701" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21288801" DefaultItemCnt="150" />
+	<Drop Id="11" ItemId="9054601" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21288801" DefaultItemCnt="150" />
+	<Drop Id="11" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="11" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="11" ItemId="21288701" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="11" ItemId="21288701" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="11" ItemId="21288701" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="11" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="11" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="11" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="11" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="12" ItemId="9054401" Chance="20" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21288801" DefaultItemCnt="300" />
+	<Drop Id="12" ItemId="9049701" Chance="30" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21288801" DefaultItemCnt="300" />
+	<Drop Id="12" ItemId="9052101" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21288801" DefaultItemCnt="150" />
+	<Drop Id="12" ItemId="9059801" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21288801" DefaultItemCnt="150" />
+	<Drop Id="12" ItemId="9054701" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21288801" DefaultItemCnt="150" />
+	<Drop Id="12" ItemId="9054601" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21288801" DefaultItemCnt="150" />
+	<Drop Id="12" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="12" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="12" ItemId="21288701" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="12" ItemId="21288701" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="12" ItemId="21288701" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="12" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="12" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="12" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="12" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="13" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="13" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="13" ItemId="21290901" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="13" ItemId="21290901" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="13" ItemId="21290901" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="13" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="13" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="13" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="13" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="14" ItemId="935401" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="300" />
+	<Drop Id="14" ItemId="9052201" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="150" />
+	<Drop Id="14" ItemId="9054701" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="150" />
+	<Drop Id="14" ItemId="9054601" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="150" />
+	<Drop Id="14" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="14" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="14" ItemId="21290901" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="14" ItemId="21290901" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="14" ItemId="21290901" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="14" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="14" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="14" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="14" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="15" ItemId="9052801" Chance="20" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="450" />
+	<Drop Id="15" ItemId="9052301" Chance="30" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="300" />
+	<Drop Id="15" ItemId="935401" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="300" />
+	<Drop Id="15" ItemId="9052201" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="150" />
+	<Drop Id="15" ItemId="9054701" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="150" />
+	<Drop Id="15" ItemId="9054601" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="150" />
+	<Drop Id="15" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="15" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="15" ItemId="21290901" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="15" ItemId="21290901" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="15" ItemId="21290901" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="15" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="15" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="15" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="15" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="16" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="16" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="16" ItemId="21290901" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="16" ItemId="21290901" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="16" ItemId="21290901" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="16" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="16" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="16" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="16" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="17" ItemId="9053601" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="150" />
+	<Drop Id="17" ItemId="9052101" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="150" />
+	<Drop Id="17" ItemId="9054701" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="150" />
+	<Drop Id="17" ItemId="9054601" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="150" />
+	<Drop Id="17" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="17" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="17" ItemId="21290901" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="17" ItemId="21290901" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="17" ItemId="21290901" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="17" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="17" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="17" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="17" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="18" ItemId="9051701" Chance="20" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="300" />
+	<Drop Id="18" ItemId="9051901" Chance="30" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="300" />
+	<Drop Id="18" ItemId="9053601" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="150" />
+	<Drop Id="18" ItemId="9052101" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="150" />
+	<Drop Id="18" ItemId="9054701" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="150" />
+	<Drop Id="18" ItemId="9054601" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21291001" DefaultItemCnt="150" />
+	<Drop Id="18" ItemId="1213401" Chance="650" MinCount="1" MaxCount="1" />
+	<Drop Id="18" ItemId="1213301" Chance="3200" MinCount="1" MaxCount="1" />
+	<Drop Id="18" ItemId="21290901" Chance="1250" MinCount="5" MaxCount="5" />
+	<Drop Id="18" ItemId="21290901" Chance="12100" MinCount="2" MaxCount="2" />
+	<Drop Id="18" ItemId="21290901" Chance="32300" MinCount="1" MaxCount="1" />
+	<Drop Id="18" ItemId="1213201" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="18" ItemId="111801" Chance="12600" MinCount="100" MaxCount="100" />
+	<Drop Id="18" ItemId="12119999" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="18" ItemId="1150001" Chance="12600" MinCount="1" MaxCount="1" />
+	<Drop Id="19" ItemId="21292601" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="19" ItemId="21292601" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="19" ItemId="21292601" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="19" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="19" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="19" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="19" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="20" ItemId="9050001" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21292701" DefaultItemCnt="300" />
+	<Drop Id="20" ItemId="9052201" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21292701" DefaultItemCnt="150" />
+	<Drop Id="20" ItemId="9054701" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21292701" DefaultItemCnt="150" />
+	<Drop Id="20" ItemId="9054601" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21292701" DefaultItemCnt="150" />
+	<Drop Id="20" ItemId="112601" Chance="200" MinCount="1" MaxCount="1" />
+	<Drop Id="20" ItemId="21292601" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="20" ItemId="21292601" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="20" ItemId="21292601" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="20" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="20" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="20" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="20" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="21" ItemId="9051001" Chance="20" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21292701" DefaultItemCnt="450" />
+	<Drop Id="21" ItemId="9055901" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21292701" DefaultItemCnt="300" />
+	<Drop Id="21" ItemId="9050001" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21292701" DefaultItemCnt="300" />
+	<Drop Id="21" ItemId="9052201" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21292701" DefaultItemCnt="150" />
+	<Drop Id="21" ItemId="9054701" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21292701" DefaultItemCnt="150" />
+	<Drop Id="21" ItemId="9054601" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21292701" DefaultItemCnt="150" />
+	<Drop Id="21" ItemId="112601" Chance="200" MinCount="1" MaxCount="1" />
+	<Drop Id="21" ItemId="21292601" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="21" ItemId="21292601" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="21" ItemId="21292601" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="21" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="21" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="21" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="21" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="22" ItemId="21293501" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="22" ItemId="21293501" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="22" ItemId="21293501" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="22" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="22" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="22" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="22" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="23" ItemId="9052101" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21293601" DefaultItemCnt="150" />
+	<Drop Id="23" ItemId="9056301" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21293601" DefaultItemCnt="150" />
+	<Drop Id="23" ItemId="9054701" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21293601" DefaultItemCnt="150" />
+	<Drop Id="23" ItemId="9054601" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21293601" DefaultItemCnt="150" />
+	<Drop Id="23" ItemId="112601" Chance="200" MinCount="1" MaxCount="1" />
+	<Drop Id="23" ItemId="21293501" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="23" ItemId="21293501" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="23" ItemId="21293501" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="23" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="23" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="23" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="23" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="24" ItemId="9054301" Chance="20" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21293601" DefaultItemCnt="450" />
+	<Drop Id="24" ItemId="9049701" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21293601" DefaultItemCnt="300" />
+	<Drop Id="24" ItemId="9052101" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21293601" DefaultItemCnt="150" />
+	<Drop Id="24" ItemId="9056301" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21293601" DefaultItemCnt="150" />
+	<Drop Id="24" ItemId="9054701" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21293601" DefaultItemCnt="150" />
+	<Drop Id="24" ItemId="9054601" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21293601" DefaultItemCnt="150" />
+	<Drop Id="24" ItemId="112601" Chance="200" MinCount="1" MaxCount="1" />
+	<Drop Id="24" ItemId="21293501" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="24" ItemId="21293501" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="24" ItemId="21293501" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="24" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="24" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="24" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="24" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="25" ItemId="21295701" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="25" ItemId="21295701" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="25" ItemId="21295701" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="25" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="25" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="25" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="25" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="26" ItemId="9049701" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21295801" DefaultItemCnt="300" />
+	<Drop Id="26" ItemId="9053601" Chance="100" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21295801" DefaultItemCnt="150" />
+	<Drop Id="26" ItemId="9054701" Chance="100" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21295801" DefaultItemCnt="150" />
+	<Drop Id="26" ItemId="9054601" Chance="100" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21295801" DefaultItemCnt="150" />
+	<Drop Id="26" ItemId="112601" Chance="200" MinCount="1" MaxCount="1" />
+	<Drop Id="26" ItemId="21295701" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="26" ItemId="21295701" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="26" ItemId="21295701" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="26" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="26" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="26" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="26" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="27" ItemId="9051001" Chance="10" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21295801" DefaultItemCnt="450" />
+	<Drop Id="27" ItemId="9052801" Chance="10" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21295801" DefaultItemCnt="450" />
+	<Drop Id="27" ItemId="9054401" Chance="10" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21295801" DefaultItemCnt="300" />
+	<Drop Id="27" ItemId="9051901" Chance="50" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21295801" DefaultItemCnt="300" />
+	<Drop Id="27" ItemId="9052301" Chance="50" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21295801" DefaultItemCnt="300" />
+	<Drop Id="27" ItemId="9049701" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21295801" DefaultItemCnt="300" />
+	<Drop Id="27" ItemId="9053601" Chance="100" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21295801" DefaultItemCnt="150" />
+	<Drop Id="27" ItemId="9054701" Chance="100" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21295801" DefaultItemCnt="150" />
+	<Drop Id="27" ItemId="9054601" Chance="100" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21295801" DefaultItemCnt="150" />
+	<Drop Id="27" ItemId="112601" Chance="200" MinCount="1" MaxCount="1" />
+	<Drop Id="27" ItemId="21295701" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="27" ItemId="21295701" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="27" ItemId="21295701" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="27" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="27" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="27" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="27" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="28" ItemId="21297001" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="28" ItemId="21297001" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="28" ItemId="21297001" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="28" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="28" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="28" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="28" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="29" ItemId="9053601" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297101" DefaultItemCnt="150" />
+	<Drop Id="29" ItemId="9052201" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297101" DefaultItemCnt="150" />
+	<Drop Id="29" ItemId="9054701" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297101" DefaultItemCnt="150" />
+	<Drop Id="29" ItemId="9054601" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297101" DefaultItemCnt="150" />
+	<Drop Id="29" ItemId="112601" Chance="200" MinCount="1" MaxCount="1" />
+	<Drop Id="29" ItemId="21297001" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="29" ItemId="21297001" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="29" ItemId="21297001" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="29" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="29" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="29" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="29" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="30" ItemId="922701" Chance="30" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297101" DefaultItemCnt="450" />
+	<Drop Id="30" ItemId="9051701" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297101" DefaultItemCnt="300" />
+	<Drop Id="30" ItemId="9050201" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297101" DefaultItemCnt="300" />
+	<Drop Id="30" ItemId="9053601" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297101" DefaultItemCnt="150" />
+	<Drop Id="30" ItemId="9052201" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297101" DefaultItemCnt="150" />
+	<Drop Id="30" ItemId="9054701" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297101" DefaultItemCnt="150" />
+	<Drop Id="30" ItemId="9054601" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297101" DefaultItemCnt="150" />
+	<Drop Id="30" ItemId="112601" Chance="200" MinCount="1" MaxCount="1" />
+	<Drop Id="30" ItemId="21297001" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="30" ItemId="21297001" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="30" ItemId="21297001" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="30" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="30" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="30" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="30" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="31" ItemId="21297801" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="31" ItemId="21297801" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="31" ItemId="21297801" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="31" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="31" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="31" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="31" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="32" ItemId="9051101" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297901" DefaultItemCnt="150" />
+	<Drop Id="32" ItemId="9048801" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297901" DefaultItemCnt="150" />
+	<Drop Id="32" ItemId="9052201" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297901" DefaultItemCnt="150" />
+	<Drop Id="32" ItemId="9051401" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297901" DefaultItemCnt="150" />
+	<Drop Id="32" ItemId="112601" Chance="200" MinCount="1" MaxCount="1" />
+	<Drop Id="32" ItemId="21297801" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="32" ItemId="21297801" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="32" ItemId="21297801" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="32" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="32" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="32" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="32" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="33" ItemId="9057801" Chance="30" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297901" DefaultItemCnt="300" />
+	<Drop Id="33" ItemId="9051601" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297901" DefaultItemCnt="300" />
+	<Drop Id="33" ItemId="9051701" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297901" DefaultItemCnt="300" />
+	<Drop Id="33" ItemId="9051101" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297901" DefaultItemCnt="150" />
+	<Drop Id="33" ItemId="9048801" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297901" DefaultItemCnt="150" />
+	<Drop Id="33" ItemId="9052201" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297901" DefaultItemCnt="150" />
+	<Drop Id="33" ItemId="9051401" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21297901" DefaultItemCnt="150" />
+	<Drop Id="33" ItemId="112601" Chance="200" MinCount="1" MaxCount="1" />
+	<Drop Id="33" ItemId="21297801" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="33" ItemId="21297801" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="33" ItemId="21297801" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="33" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="33" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="33" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="33" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="34" ItemId="21299601" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="34" ItemId="21299601" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="34" ItemId="21299601" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="34" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="34" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="34" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="34" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="35" ItemId="9063801" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21299701" DefaultItemCnt="150" />
+	<Drop Id="35" ItemId="9053601" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21299701" DefaultItemCnt="150" />
+	<Drop Id="35" ItemId="9052101" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21299701" DefaultItemCnt="150" />
+	<Drop Id="35" ItemId="9054701" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21299701" DefaultItemCnt="150" />
+	<Drop Id="35" ItemId="9054601" Chance="70" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21299701" DefaultItemCnt="150" />
+	<Drop Id="35" ItemId="112601" Chance="200" MinCount="1" MaxCount="1" />
+	<Drop Id="35" ItemId="21299601" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="35" ItemId="21299601" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="35" ItemId="21299601" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="35" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="35" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="35" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="35" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="36" ItemId="9054401" Chance="20" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21299701" DefaultItemCnt="300" />
+	<Drop Id="36" ItemId="935401" Chance="30" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21299701" DefaultItemCnt="300" />
+	<Drop Id="36" ItemId="9063801" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21299701" DefaultItemCnt="150" />
+	<Drop Id="36" ItemId="9053601" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21299701" DefaultItemCnt="150" />
+	<Drop Id="36" ItemId="9052101" Chance="40" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21299701" DefaultItemCnt="150" />
+	<Drop Id="36" ItemId="9054701" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21299701" DefaultItemCnt="150" />
+	<Drop Id="36" ItemId="9054601" Chance="60" MinCount="1" MaxCount="1" NotifyType="1" DefaultItemId="21299701" DefaultItemCnt="150" />
+	<Drop Id="36" ItemId="112601" Chance="200" MinCount="1" MaxCount="1" />
+	<Drop Id="36" ItemId="21299601" Chance="1500" MinCount="5" MaxCount="5" />
+	<Drop Id="36" ItemId="21299601" Chance="14500" MinCount="2" MaxCount="2" />
+	<Drop Id="36" ItemId="21299601" Chance="35800" MinCount="1" MaxCount="1" />
+	<Drop Id="36" ItemId="112301" Chance="10500" MinCount="1" MaxCount="1" />
+	<Drop Id="36" ItemId="111801" Chance="12500" MinCount="100" MaxCount="100" />
+	<Drop Id="36" ItemId="12119999" Chance="12500" MinCount="1" MaxCount="1" />
+	<Drop Id="36" ItemId="1150001" Chance="12500" MinCount="1" MaxCount="1" />
+</root>

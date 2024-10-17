@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<SimulatorInfo>
+	<!--
+		目前是模拟一个2v2的特定场景的加载
+		id    -  座位号 （模拟的时候默认都是seat0 第一个出牌）
+		open   - 后面的武将信息是否处理定制的状态  0 不处理 1 处理
+		charid	 - charID  Simulator里的charid优先级更高，如果open为0的话，这个Simulator就不会处理。
+		maxhp   - 最大体力
+		curhp   - 当前体力
+		handcards   -  当前手牌
+		equipcards  -  当前装备区牌
+		judgecards  -  当前判定区牌 cardid 
+		judgespells -  当前判定区牌对应的spellid 和cardis一一对应,否则加载失败
+		tap   - 是否被连环
+		turnover   - 是否被翻面
+		markid     - 特定的状态id
+		markvalue   - 特定的状态值value  和markid 一一对应，否则加载失败
+		以后可以扩展 觉醒技能等特定技能变化, 技能使用次数的变化等
+	-->
+	<Simulator id="0" open="0" charid="1" maxhp="4" curhp="3" handcards="" equipcards="31;107;134;70" >
+		<!-- <judgecards cardid="92" spellid="11" /> -->
+	</Simulator>
+	<Simulator id="1" open="0" charid="2" maxhp="4" curhp="3" handcards="" equipcards="108;52;104" tap="0" turnover="0"  />
+	<Simulator id="2" open="0" charid="3" maxhp="4" curhp="3" handcards="" equipcards="5;13;67" tap="0" turnover="0"  />
+	<Simulator id="3" open="0" charid="5" maxhp="4" curhp="3" handcards="" equipcards="44;83" tap="0" turnover="0"  />
+	<!--
+		目前是模拟一个2v2的选将测试场景的加载
+		char_list - 武将id
+		level_list - 1 等级标记，目前只有1  
+		version_list - 1 版本标记 新的mlai
+		open_random - 1 是否开启随机武将 如果开启，从random_list 里选择
+	-->
+
+	<MlaiTestChar open="0" char_list="302,311,308,303,0,0,0,0"/>
+	<MlaiTestLevel level_list="1,1,1,1,0,0,0,0"/>
+	<MlaiTestVersion version_list="1,1,1,1,0,0,0,0"/>
+	<!-- MlaiTestRandom open_random="1" random_list="1,2,3,4,5,357,379,379,302,302" / -->
+	<MlaiTestRandom open_random="0" random_list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,27,28,29,30,210,212,34,35,39,51,54,103,107,108,112,118,131,153,158,161,164,175,177,185" />
+	<!-- MlaiTestRandom open_random="1" random_list="299,300,301,302,303,306,307,308,310,311,314,315,316,319,323,326,328,339,344,357,361,365,374,378,379,392,393" / -->
+	<!-- MlaiTestRandom open_random="1" random_list="406,408,410,411,414,415,430,431,441,442,443,445,448,450,451,452,458,462,463,466,480,484,485,498,500,523,526,527,532,552" / -->
+    <MlaiOpenCardlist open_card_list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,82,83,84,85,86,87,88,89,90,200,201,700" />
+	<MlaiOpenlist vernum="1" devnum="4" open_char_list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,27,28,29,30,210,212,34,35,39,51,54,103,107,108,112,118,131,153,158,161,164,175,177,185,299,300,301,302,303,306,307,308,310,311,314,315,316,319,323,326,328,339,344,357,361,365,374,378,379,392,393,406,408,410,411,414,415,430,431,440,441,442,443,445,448,450,451,452,458,462,463,466,480,484,485,498,500,523,526,527,532,534,552,7000,7001,7002,7004,7005" />
+</SimulatorInfo>

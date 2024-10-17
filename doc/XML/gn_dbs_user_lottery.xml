@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+enable		开关 1为启用
+starttime	开始统计时间
+endtime		结束统计时间
+
+<Lottery enable="1" starttime="20141224T000000" endtime="20151212T235959" >
+	1.登录增加次数
+	<Login> 
+		<Item type="Normal">1</Item>普通登录增加次数
+		<Item type="Vip" level="2">1</Item>会员等级大于level时额外增加次数	
+	</Login>
+	
+	2.在线增加次数
+	<Online>注意：hour单位是30分钟！！！！！hour="1"代表在线30分钟，以此类推
+		<Item hour="1">1</Item>
+		<Item hour="2">1</Item>
+		<Item hour="3">1</Item>
+	</Online>
+	
+	3.游戏增加次数
+	<Game limit="1" labelMode="28;33">游戏时间大于limit分钟 模式在labelMode中游戏一局，增加次数
+		<Item count="1">10</Item> 
+		<Item count="2">10</Item>
+	</Game>
+	
+	4.消费增加次数
+	<Buy yuanbaomin="499" yinliangmin="1">
+		<Item type="yuanbao" count="1">1</Item>每消费yuanbaomin元宝，增加1次，count是上限，不支持多条！！！！
+	</Buy>
+	
+	5.任务增加次数
+	<Task>
+		<Item taskId="15776" max_count="1">1</Item>完成指定id的任务，增加1次，max_count为通过该任务获得的次数上限
+		<Item taskId="15777" max_count="1">1</Item>
+	</Task>
+	
+	6.购买指定道具计数统计 item的num对应数据库中的count_1 count_2 count_3 count_4
+		注意：这个字段不受Lottery starttime和endtime控制，它有自己的时间控制
+	<BuyItem>
+		<Item num="1" goodId="103201"/>
+		<Item num="2" goodId="370108"/>
+		<Item num="3" goodId="370209"/>
+		<Item num="4" goodId="370209"/>
+	</BuyItem>
+</Lottery>
+-->
+
+<Root>
+	<Lottery enable="1" starttime="20170516T120000" endtime="20170721T235959">
+		<Login>
+			<Item type="Normal">1</Item>
+			<Item type="Vip" level="999">0</Item>
+		</Login>
+		<Buy yuanbaomin="1000" yinliangmin="0">
+			<Item type="yuanbao" count="100000">1</Item>
+		</Buy>
+	</Lottery>
+	<EventNotice open="1"><!--open="1"开启事件推送 open="0"关闭事件推送-->
+		<CommonCfg desc="每个事件的统计事件，如果不配置 这个事件不会推送 time的格式是：20130101T110000">
+			<Event id="1" desc="每日登陆" start_time="0" end_time="20261231T235958"/>
+			<Event id="2" desc="在线" start_time="0" end_time="20261231T235959"/>
+			<Event id="3" desc="游戏结果" start_time="0" end_time="20261231T235959"/>
+			<Event id="4" desc="完成任务" start_time="0" end_time="20261231T235958"/>
+			<Event id="5" desc="消费" start_time="0" end_time="20261231T235959"/>
+			<Event id="6" desc="购买道具" start_time="0" end_time="20261231T235959"/>
+			<Event id="7" desc="获得道具" start_time="0" end_time="20261231T235959"/>
+			<Event id="8" desc="消耗道具" start_time="0" end_time="20261231T235959"/>
+			<Event id="9" desc="vip等级变化" start_time="0" end_time="20261231T235959"/>
+			<Event id="10" desc="玩家等级变化" start_time="0" end_time="20261231T235959"/>
+		</CommonCfg>
+		
+		<!--在线时长，update_space表示的是推送间隔(单位:秒) 最小配置为60-->
+		<Online desc="每日在线 特殊规则" update_space="600"/>
+		
+		<!--游戏结果推送配置 
+			except_label表示不推送这些模式的游戏结果 例如 except_label="1;2;3"
+			min_game_time表示只有游戏时长>=min_game_time时，才会推送
+			escape_filter表示是否开启逃跑过滤，如果配置为escape_filter="1"，表示只推送没有逃跑的结果
+			-->
+		<Game desc="完成游戏特殊配置" min_game_time="0" escape_filter="1"/>
+		
+		<!--min_vip_level表示只有玩家的等级不小于配置的时候，才会推送-->
+		<Level min_level="0"/>
+		
+		<!--min_vip_level表示只有VIP的等级不小于配置的时候，才会推送-->
+		<Vip min_vip_level="0"/>
+
+		<BuyItem>
+			<!--ExceptItems表示不统计那些道具 Items表示统计那些道具,如果不配置Items，所有的道具都会被统计
+				ExceptItems和Items属性说明：
+					type="Type"时 list中表示的是道具的TypeID，用";"分割，例如 list="1;2;3"
+					type="Id"时 list中表示的是道具的ID，用";"分割，例如 list="1;2;3"
+			-->
+			<ExceptItems type="Type" list=""/>
+			<ExceptItems type="Id" list=""/>
+			<Items type="Id" list="2087001;2081601;2072301;2060601;2053101;2043201;2040701;1913601;1913501;1930601;1911901;8100401;1998701;2019001;2024501;2027601;2035501"/>
+			<Items type="Type" list=""/>
+		</BuyItem>
+		<GetItem>
+			<!--ExceptItems表示不统计那些道具 Items表示统计那些道具,如果不配置Items，所有的道具都会被统计
+				ExceptItems和Items属性说明：
+					type="Type"时 list中表示的是道具的TypeID，用";"分割，例如 list="1;2;3"
+					type="Id"时 list中表示的是道具的ID，用";"分割，例如 list="1;2;3"
+			-->
+			<ExceptItems type="Type" list=""/>
+			<ExceptItems type="Id" list=""/>
+			<Items type="Id" list="21223301;21216101;21217001;21214401;21212101;1208801;1207101;1206001;1202301;1201201;1199601;1198101;1195801;1194901;1194201;1190201;1193201;1170001;1174101;1175801;1179001;1182401;1183801;11402801;1187301;1188601;1191801"/>
+			<Items type="Type" list=""/>
+		</GetItem>
+		<ConsumeItem>
+			<!--ExceptItems表示不统计那些道具 Items表示统计那些道具,如果不配置Items，所有的道具都会被统计
+				ExceptItems和Items属性说明：
+					type="Type"时 list中表示的是道具的TypeID，用";"分割，例如 list="1;2;3"
+					type="Id"时 list中表示的是道具的ID，用";"分割，例如 list="1;2;3"
+			-->
+			<ExceptItems type="Type" list=""/>
+			<ExceptItems type="Id" list=""/>
+			<Items type="Id" list="11312401;435501;11402801"/>
+			<Items type="Type" list=""/>
+		</ConsumeItem>
+		<TaskReward>
+			<!--Tasks表示只统计那些任务,如果不配置Tasks，所有的任务都会被统计
+				属性说明：
+					list中表示的是任务的ID，用";"分割，例如 list="1;2;3"
+			-->
+			<Tasks list="19498;19499;19500;19501;19502;19503;19504;20202;20203;20204;20205;20206;20207;20208;20209;20210;20211;20212;20213;20214;20215;20216;20217;40216;40217;40218;40219;40220;40221;40222;40223;40224;40225;40226;40227;45150;45151;45152;45153;45154;45155;45156;45157;45158;45159;45160;45161;45626;46116;46883;46884;46885;46886;46887;46888;46889;46890;46891;46892;46893;46894;"/>
+	</TaskReward>
+	</EventNotice>
+</Root>

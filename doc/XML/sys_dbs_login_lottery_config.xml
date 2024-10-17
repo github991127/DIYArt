@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--BoxPosList
+	1. BoxPosList->BoxPos->Pos			掉落格子位置
+	2. BoxPosList->BoxPos->DropChance		掉落格子概率
+	3. BoxPosList->BoxPos->DropTempleteID	掉落对应物品组 为0时,AddCount>0表示另外赠送的抽奖次数
+-->
+<!--普通掉落配置 GroupId>0时,表示在同一个Group中最多只能掉落1个道具
+	1. DropClass->Id 掉落Id,唯一值
+	2. DropGroup->NoDropChance 不掉落物品的概率,对于GroupId=0时,没有任何意义
+	3. DropGroup->IsFilter 是否过滤
+	4. DropGroup->DropItem 节点,掉落物品
+		DropGroup->DropItem->ItemId 掉落物品ID
+		DropGroup->DropItem->Chance 掉落概率 当GroupId=0时,这个是相对于10000的比例
+		DropGroup->DropItem->MinCount 掉落最小个数
+		DropGroup->DropItem->MaxCount 掉落最大个数
+		<DropGroup GroupId="0" NoDropChance="10">
+			<DropItem ItemId="6" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="7" Chance="100" MinCount="1" MaxCount="1"/>
+		</DropGroup>
+注：
+1.物品掉落概率计算
+  对于GroupId=0,一个物品的掉落概率是 Chance/10000
+  对于GroupId>0, 一个物品的掉落概率是 Chance/(改组中所有物品的Chance之和 + 该组配置:NoDropChance)
+-->
+<Lottery>
+	<BoxPosList>
+		<BoxPos Pos="1" DropChance="50" DropClassID="1"/>
+		<BoxPos Pos="2" DropChance="60" DropClassID="0" AddCount="2"/>
+		<BoxPos Pos="3" DropChance="500" DropClassID="3"/>
+		<BoxPos Pos="4" DropChance="250" DropClassID="7"/>
+		<BoxPos Pos="5" DropChance="600" DropClassID="5"/>
+		<BoxPos Pos="6" DropChance="180" DropClassID="8"/>
+		<BoxPos Pos="7" DropChance="550" DropClassID="4"/>
+		<BoxPos Pos="8" DropChance="500" DropClassID="6"/>
+		<BoxPos Pos="9" DropChance="180" DropClassID="9"/>
+		<BoxPos Pos="10" DropChance="20" DropClassID="14"/>
+		<BoxPos Pos="11" DropChance="60" DropClassID="0" AddCount="2"/>
+		<BoxPos Pos="12" DropChance="120" DropClassID="12"/>
+		<BoxPos Pos="13" DropChance="500" DropClassID="16"/>
+		<BoxPos Pos="14" DropChance="180" DropClassID="10"/>
+		<BoxPos Pos="15" DropChance="100" DropClassID="18"/>
+		<BoxPos Pos="16" DropChance="150" DropClassID="13"/>
+		<BoxPos Pos="17" DropChance="100" DropClassID="17"/>
+		<BoxPos Pos="18" DropChance="20" DropClassID="15"/>
+	</BoxPosList>
+
+	<DropClass Id="1" ClassSignItemId="2" sigh="会员卡">
+		<DropGroup GroupId="1" NoDropChance="0" IsFilter="1">
+			<DropItem ItemId="100101" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="100201" Default="1" MinCount="2" MaxCount="2"/>
+		</DropGroup>
+	</DropClass>
+	
+	<DropClass Id="3" ClassSignItemId="1" sigh="换将卡1">
+		<DropGroup GroupId="1" NoDropChance="0" IsFilter="0">
+			<DropItem ItemId="100401" Chance="100" MinCount="1" MaxCount="1"/>
+		</DropGroup>
+	</DropClass>
+	
+	<DropClass Id="4" ClassSignItemId="1" sigh="点将卡1">
+		<DropGroup GroupId="1" NoDropChance="0" IsFilter="0">
+			<DropItem ItemId="100201" Chance="100" MinCount="1" MaxCount="1"/>
+		</DropGroup>
+	</DropClass>
+	
+	<DropClass Id="5" ClassSignItemId="1" sigh="手气卡1">
+		<DropGroup GroupId="1" NoDropChance="0" IsFilter="0">
+			<DropItem ItemId="100301" Chance="100" MinCount="1" MaxCount="1"/>
+		</DropGroup>
+	</DropClass>
+	
+	<DropClass Id="6" ClassSignItemId="1" sigh="身份卡1">
+		<DropGroup GroupId="1" NoDropChance="0" IsFilter="0">
+			<DropItem ItemId="180001" Chance="100" MinCount="1" MaxCount="1"/>
+		</DropGroup>
+	</DropClass>
+	
+	<DropClass Id="7" ClassSignItemId="1" sigh="神将卡·关羽">
+		<DropGroup GroupId="1" NoDropChance="0" IsFilter="0">
+			<DropItem ItemId="120101" Chance="100" MinCount="1" MaxCount="1"/>
+		</DropGroup>
+	</DropClass>
+	
+	<DropClass Id="8" ClassSignItemId="1" sigh="神将卡·吕蒙">
+		<DropGroup GroupId="1" NoDropChance="0" IsFilter="0">
+			<DropItem ItemId="120201" Chance="100" MinCount="1" MaxCount="1"/>
+		</DropGroup>
+	</DropClass>
+	
+	<DropClass Id="9" ClassSignItemId="1" sigh="神将卡·周瑜">
+		<DropGroup GroupId="1" NoDropChance="0" IsFilter="0">
+			<DropItem ItemId="120301" Chance="100" MinCount="1" MaxCount="1"/>
+		</DropGroup>
+	</DropClass>
+	
+	<DropClass Id="10" ClassSignItemId="1" sigh="神将卡·诸葛亮">
+		<DropGroup GroupId="1" NoDropChance="0" IsFilter="0">
+			<DropItem ItemId="120401" Chance="100" MinCount="1" MaxCount="1"/>
+		</DropGroup>
+	</DropClass>
+	
+	<DropClass Id="12" ClassSignItemId="1" sigh="神将卡·曹操">
+		<DropGroup GroupId="1" NoDropChance="0" IsFilter="0">
+			<DropItem ItemId="120501" Chance="100" MinCount="1" MaxCount="1"/>
+		</DropGroup>
+	</DropClass>
+	
+	<DropClass Id="13" ClassSignItemId="1" sigh="神将卡·吕布">
+		<DropGroup GroupId="1" NoDropChance="0" IsFilter="0">
+			<DropItem ItemId="120601" Chance="100" MinCount="1" MaxCount="1"/>
+		</DropGroup>
+	</DropClass>
+	
+	<DropClass Id="14" ClassSignItemId="100009" sigh="火包1天试用">
+		<DropGroup GroupId="1" NoDropChance="0" IsFilter="1">
+			<DropItem ItemId="903411" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="903511" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="903611" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="903711" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="903811" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="903911" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="904011" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="904111" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="100301" Default="1" MinCount="2" MaxCount="2"/>
+		</DropGroup>
+	</DropClass>
+	
+	<DropClass Id="15" ClassSignItemId="100010" sigh="林包1天试用">
+		<DropGroup GroupId="1" NoDropChance="0" IsFilter="1">
+			<DropItem ItemId="904211" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="904311" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="904411" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="904511" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="904611" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="904711" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="904811" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="904911" Chance="100" MinCount="1" MaxCount="1"/>
+			<DropItem ItemId="100301" Default="1" MinCount="2" MaxCount="2"/>
+		</DropGroup>
+	</DropClass>
+	
+	<DropClass Id="16" ClassSignItemId="1" Sign="铜钱1">
+		<DropGroup GroupId="1" NoDropChance="0" IsFilter="0">
+			<DropItem ItemId="100001" Chance="100" MinCount="500" MaxCount="500"/>
+		</DropGroup>
+	</DropClass>
+	
+	<DropClass Id="17" ClassSignItemId="1" Sign="铜钱2">
+		<DropGroup GroupId="1" NoDropChance="0" IsFilter="0">
+			<DropItem ItemId="100001" Chance="100" MinCount="1000" MaxCount="1000"/>
+		</DropGroup>
+	</DropClass>
+	
+	<DropClass Id="18" ClassSignItemId="1" Sign="多多益善1天">
+		<DropGroup GroupId="1" NoDropChance="0" IsFilter="0">
+			<DropItem ItemId="100601" Chance="100" MinCount="1" MaxCount="1"/>
+		</DropGroup>
+	</DropClass>
+</Lottery>

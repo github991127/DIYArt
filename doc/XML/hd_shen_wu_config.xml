@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<GameShenWuConfig>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			maxTime	-	最大时长
+			showTime	-	活动界面内展示时间
+			startTime	-	活动开始时间
+			endTime	-	活动结算时间
+上线后不要改
+			startrank	-	排行榜开始时间
+			endrank	-	排行榜结算时间
+			Score	-	三阶段分值
+			Levelsit	-	三种难度对应等阶（Boss；小怪）
+			getSkillHp	-	Boss血量低于X时获得新技能（废弃）
+三种难度用;间隔
+			bossRankCfg	-	BOSS等阶概率（废弃）
+			reviveCondition	-	复活所需道具数和次数配置
+			activityValueCondition	-	体力道具购买次数以及对应道具ID
+			maxGeneralStarUpgrade	-	武将等阶提升每日最大场次
+			generalStarUpgradeItemId	-	提升武将等阶的道具ID
+			spellid	-	气势技能ID
+			taskList	-	每日任务ID(废弃）
+			eliteTokenId	-	精英令道具ID(废弃）
+			HalfHpGetSkilldesc	-	BOSS半血描述
+			ShenJiangdesc	-	神将装备描述
+			ruleDesc	-	模式描述
+			-->
+		<Common maxTime="3600" showTime="20231214T000000;20231223T235959" startTime="20231214T100000" endTime="20231223T235959" startrank="20231214T100000" endrank="20231223T235959" Score="25000000;90000000;270000000" Levelsit="2,3,4;0,1,2" getSkillHp="6;8;15" bossRankCfg="0,10;1,10;2,40;3,30;4,10" reviveCondition="993,1;996,2;998,3;999,5" activityValueCondition="9905,943001;9910,943101;9915,943201;9999,943301" maxGeneralStarUpgrade="999" generalStarUpgradeItemId="7901301" spellid="1002;1006;1009;1012" taskList="23201" eliteTokenId="7901201" HalfHpGetSkilldesc="第一次半血时，获得的技能" ShenJiangdesc="每个神将登场时，卡牌移除与添加 获得装备" ruleDesc="三人一组挑战上古凶兽和妖兽。神将将会携带专属武器助阵。神将使用杀时可注入神力，永久削弱怪兽。" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			difficulty	-	BOSS出现配置(ID,出现概率;ID,出现概率
+			list	-	BOSS出现配置(ID,出现概率;ID,出现概率
+				-	#备注
+			-->
+		<boss difficulty="1" list="4301,10;4302,10;4303,10;4304,10;4305,10;4306,10;4307,10;4308,10" />
+		<boss difficulty="2" list="4309,10;4341,10;4311,10;4312,10;4313,10;4314,10;4315,10;4316,10" />
+		<boss difficulty="3" list="4317,10;4318,10;4319,10;4320,10;4321,10;4322,10;4323,10;4324,10" />
+		<boss difficulty="4" list="4325,10;4326,10;4327,10;4328,10;4329,10;4330,10;4331,10;4332,10" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			difficulty	-	BOSS出现配置(ID,出现概率;ID,出现概率
+			list	-	小怪出现配置(ID,出现概率;ID,出现概率)
+			-->
+		<minion difficulty="1" list="4041,10;4042,10" />
+		<minion difficulty="2" list="4041,10;4042,10" />
+		<minion difficulty="3" list="4041,10;4042,10" />
+		<minion difficulty="4" list="4041,10;4042,10" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	BOSS等阶
+			addHp	-	额外体力
+			addFirstCard	-	初始卡牌
+			winScore	-	获胜积分
+			desc	-	描述
+			exSkills	-	额外技能ID
+			-->
+		<MinionRankPriv rank="0" addHp="0" addFirstCard="0" winScore="25" />
+		<MinionRankPriv rank="1" addHp="1" addFirstCard="1" winScore="28" desc="登场时随机使用一张装备牌。" exSkills="1359" />
+		<MinionRankPriv rank="2" addHp="2" addFirstCard="1" winScore="31" desc="出牌阶段出杀次数+1。" exSkills="1359;1356" />
+		<MinionRankPriv rank="3" addHp="3" addFirstCard="2" winScore="35" desc="摸牌阶段摸牌数+1。" exSkills="1359;1356;1357" />
+		<MinionRankPriv rank="4" addHp="4" addFirstCard="2" winScore="40" exSkills="1359;1356;1357" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			list	-	公共武将配置(ID,出现概率;ID,出现概率)
+			deal_count	-
+			-->
+		<PublicGeneral list="201,10;202,10;203,10;204,10;205,10;206,10;207,10;208,10;220,10;221,10;222,10;223,10;224,10;225,10;226,25;227,10" deal_count="3" />
+		<HalfHpGetSkill>
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	BOSS武将ID
+			desc	-	BOSS名称
+			GetType	-	新增-技能获得方式
+			CanShu1	-	参数1
+			get_spell	-	BOSS特殊技能ID
+				-->
+			<General id="4301" desc="混沌" GetType="1" get_spell="1139" />
+			<General id="4302" desc="穷奇" GetType="1" get_spell="3198" />
+			<General id="4303" desc="梼杌" GetType="1" get_spell="1144" />
+			<General id="4304" desc="饕餮" GetType="1" get_spell="1147" />
+			<General id="4305" desc="相柳" GetType="1" get_spell="1324" />
+			<General id="4306" desc="朱厌" GetType="1" get_spell="1312" />
+			<General id="4307" desc="毕方" GetType="1" get_spell="1315" />
+			<General id="4308" desc="英招" GetType="1" get_spell="1318" />
+			<General id="4309" desc="混沌" GetType="1" get_spell="1139" />
+			<General id="4341" desc="穷奇" GetType="1" get_spell="3198" />
+			<General id="4311" desc="梼杌" GetType="1" get_spell="1144" />
+			<General id="4312" desc="饕餮" GetType="1" get_spell="1147" />
+			<General id="4313" desc="相柳" GetType="1" get_spell="1324" />
+			<General id="4314" desc="朱厌" GetType="1" get_spell="1312" />
+			<General id="4315" desc="毕方" GetType="1" get_spell="1315" />
+			<General id="4316" desc="英招" GetType="1" get_spell="1318" />
+			<General id="4317" desc="混沌" GetType="2" get_spell="3280" />
+			<General id="4318" desc="穷奇" GetType="2" get_spell="3282" />
+			<General id="4319" desc="梼杌" GetType="2" get_spell="3284" />
+			<General id="4320" desc="饕餮" GetType="2" get_spell="3286" />
+			<General id="4321" desc="相柳" GetType="2" get_spell="1324" />
+			<General id="4322" desc="朱厌" GetType="2" get_spell="3291" />
+			<General id="4323" desc="毕方" GetType="2" get_spell="3292" />
+			<General id="4324" desc="英招" GetType="2" get_spell="1318" />
+			<General id="4325" desc="混沌" GetType="2" get_spell="3280" />
+			<General id="4326" desc="穷奇" GetType="2" get_spell="3282" />
+			<General id="4327" desc="梼杌" GetType="2" get_spell="3284" />
+			<General id="4328" desc="饕餮" GetType="2" get_spell="3286" />
+			<General id="4329" desc="相柳" GetType="2" get_spell="1324" />
+			<General id="4330" desc="朱厌" GetType="2" get_spell="3291" />
+			<General id="4331" desc="毕方" GetType="2" get_spell="3292" />
+			<General id="4332" desc="英招" GetType="2" get_spell="1318" />
+		</HalfHpGetSkill>
+		<ShenJiang>
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	神将ID
+			desc	-	神将名称
+			remove_card	-	移除卡牌ID
+			add_card	-	添加到牌堆卡牌ID
+			equip_card	-	装备的卡牌ID
+				-->
+			<General id="201" desc="神关羽" remove_card="96" add_card="312" equip_card="312" />
+			<General id="202" desc="神吕蒙" add_card="313" equip_card="313" />
+			<General id="203" desc="神周瑜" remove_card="122" add_card="314" equip_card="314" />
+			<General id="204" desc="神诸葛亮" remove_card="67;93" add_card="315;316" equip_card="315" />
+			<General id="205" desc="神曹操" remove_card="83" add_card="317" equip_card="317" />
+			<General id="206" desc="神吕布" remove_card="12" add_card="318" equip_card="318" />
+			<General id="207" desc="神赵云" remove_card="84" add_card="320" equip_card="320" />
+			<General id="208" desc="神司马懿" add_card="319" equip_card="319" />
+			<General id="220" desc="神刘备" remove_card="80" add_card="4339" equip_card="4339" />
+			<General id="221" desc="神陆逊" add_card="4340" equip_card="4340" />
+			<General id="222" desc="神曹丕" add_card="10039" equip_card="10039" />
+			<General id="223" desc="神甄姬" add_card="10040" equip_card="10040" />
+			<General id="224" desc="神甘宁" remove_card="44" add_card="10041" equip_card="10041" />
+			<General id="225" desc="神张辽" remove_card="5" add_card="10042" equip_card="10042" />
+			<General id="226" desc="神孙权" remove_card="31" add_card="12133" equip_card="12133" />
+			<General id="227" desc="神张角" add_card="12148" equip_card="12148" />
+		</ShenJiang>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	等阶
+			addHp	-	添加体力上限数
+			addFirstCard	-	添加初始手牌数
+			desc	-	描述
+			exSkills	-	额外技能ID
+			-->
+		<GeneralRankPriv rank="0" />
+		<GeneralRankPriv rank="1" addHp="1" addFirstCard="1" />
+		<GeneralRankPriv rank="2" addHp="1" addFirstCard="1" desc="玩家出杀+1" exSkills="1356" />
+		<GeneralRankPriv rank="3" addHp="1" addFirstCard="2" desc="摸牌阶段摸牌数+1" exSkills="1356;1357" />
+		<GeneralRankPriv rank="4" addHp="2" addFirstCard="2" desc="获得技能重生" exSkills="1356;1357;1355" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Occurrenceperiod	-	时间段
+			zerovalue	-	初始免费神将数
+			free	-	免费武将
+			-->
+		<FreeGeneral Occurrenceperiod="20230928T000000;20231231T235959" zerovalue="14" free="201;202;203;204;205;206;207;208;220;221;224;225;226;227" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	BOSS等阶
+			addHp	-	额外体力
+			addFirstCard	-	初始卡牌
+			winScore	-	获胜积分（废弃)
+			desc	-	描述
+			exSkills	-	额外技能ID
+			-->
+		<BossRankPriv rank="0" addHp="0" addFirstCard="0" winScore="25" />
+		<BossRankPriv rank="1" addHp="0" addFirstCard="1" winScore="28" desc="登场时随机使用一张装备牌。" exSkills="1359" />
+		<BossRankPriv rank="2" addHp="0" addFirstCard="1" winScore="31" desc="出牌阶段出杀次数+1。" exSkills="1359;1356" />
+		<BossRankPriv rank="3" addHp="0" addFirstCard="2" winScore="35" desc="摸牌阶段摸牌数+1。" exSkills="1359;1356;1357" />
+		<BossRankPriv rank="4" addHp="0" addFirstCard="3" winScore="40" exSkills="1359;1356;1357" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			des	-	玩法说明文字
+			des_m	-	移动端玩法说明文字
+			des_m	-	U3D端玩法说明文字
+				-	
+				-	
+				-	
+				-
+			-->
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			stage	-	所处阶段
+			isEnd	-	是否最终阶段
+			desc	-	难度描述
+			unlocktips	-	解锁描述
+			unlocktips2	-	解锁描述-服务器
+			leveltips	-	通关描述
+			Bossimage	-	Boss大图
+			stagename	-	阶段名称
+			stagedesc	-	阶段名称
+			Reward	-	奖励
+			-->
+		<Completionrate stage="1" Reward="1001,20;1002,40;1003,60;1004,80;1005,100" />
+		<Completionrate stage="2" Reward="1006,20;1007,40;1008,60;1009,80;1010,100" />
+		<Completionrate stage="3" Reward="1011,20;1012,40;1013,60;1014,80;1015,100" />
+		<Completionrate stage="4" isEnd="1" Reward="1011,20;1012,40;1013,60;1014,80;1015,100" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Currenttime	-	时间段
+			Notyet	-	若比例小于
+			Grow	-	变大系数
+			Yet	-	若比例大于
+			Wane	-	变小系数
+			-->
+		<Coefficient Currenttime="20231214T100000;20231215T235959" Notyet="60" Grow="250" Yet="101" Wane="10" />
+		<Coefficient Currenttime="20231216T000000;20231218T235959" Notyet="180" Grow="300" Yet="201" Wane="10" />
+		<Coefficient Currenttime="20231219T000000;20231222T235959" Notyet="240" Grow="500" Yet="295" Wane="100" />
+		<Coefficient Currenttime="20231223T000000;20231231T235959" Notyet="300" Grow="3000" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			getid	-	奖励ID
+			rewardtype	-	类型
+0-Boss
+1-实际发放的奖励，需要读道具表
+2-气势技能，就是昨天写的2,2这样格式的技能
+3-神将图标，解锁第X个神将格（注意是神将格，比如周免神将从3个涨到4个，并不是特指某个神将）
+			showItem	-	展示对应道具
+			numItem	-	奖励数量
+			needItem	-	实际道具
+				-	#说明
+			isShow	-	是否仅展示
+			needattack	-	个人领取要求
+			difficulty	-	个人领取要求难度
+			neednum	-	所需进度
+			unlockdesc	-	未解锁时展示
+仅针对武将生效
+			-->
+		<RewardID getid="1001" rewardtype="1" needItem="435401,1" needattack="5" difficulty="1" neednum="20" />
+		<RewardID getid="1002" rewardtype="3" needItem="1" needattack="0" difficulty="1" neednum="40" />
+		<RewardID getid="1003" rewardtype="2" needItem="1,1" needattack="2" difficulty="1" neednum="60" />
+		<RewardID getid="1004" rewardtype="0" needItem="4306,4314,4322,4330" needattack="0" difficulty="1" neednum="80" />
+		<RewardID getid="1005" rewardtype="1" needItem="1142901,1" needattack="5" difficulty="1" neednum="100" />
+		<RewardID getid="1006" rewardtype="2" needItem="2,1" needattack="2" difficulty="2" neednum="20" />
+		<RewardID getid="1007" rewardtype="3" needItem="2" needattack="0" difficulty="2" neednum="40" />
+		<RewardID getid="1008" rewardtype="2" needItem="3,2" needattack="2" difficulty="2" neednum="60" />
+		<RewardID getid="1009" rewardtype="0" needItem="4305,4313,4321,4329" needattack="0" difficulty="2" neednum="80" />
+		<RewardID getid="1010" rewardtype="1" needItem="8100201,1" needattack="5" difficulty="2" neednum="100" />
+		<RewardID getid="1011" rewardtype="1" needItem="435401,1" needattack="10" difficulty="3" neednum="20" />
+		<RewardID getid="1012" rewardtype="3" needItem="3" needattack="0" difficulty="3" neednum="40" />
+		<RewardID getid="1013" rewardtype="2" needItem="4,1" needattack="2" difficulty="3" neednum="60" />
+		<RewardID getid="1014" rewardtype="0" needItem="4308,4316,4324,4332" needattack="0" difficulty="3" neednum="80" />
+		<RewardID getid="1015" rewardtype="1" needItem="8100201,1" needattack="10" difficulty="3" neednum="100" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			spellid	-	气势技能
+			spellicon	-	所用图标
+			spellname	-	技能名称
+			unlocknum	-	解锁阶段
+			unlockdate	-	解锁描述
+			spelldes	-	技能描述
+			-->
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			difficulty	-	难度等级
+			passreward	-	通关道具
+			passexp	-	通关经验
+这个地方跟table_second表只能配一边，配两边会重复获得
+这里的也可以被增幅
+			failreward	-	不通关道具
+			failexp	-	不通关EXP
+			escapereward	-	逃跑道具
+			escapeexp	-	逃跑EXP
+			-->
+		<Rewarddate difficulty="1" passreward="8195901,1" passexp="15" failreward="100011,10" failexp="12" escapereward="0" escapeexp="0" />
+		<Rewarddate difficulty="2" passreward="8196001,1" passexp="18" failreward="100011,10" failexp="15" escapereward="0" escapeexp="0" />
+		<Rewarddate difficulty="3" passreward="8196101,1" passexp="21" failreward="100011,10" failexp="18" escapereward="0" escapeexp="0" />
+		<Rewarddate difficulty="4" passreward="8196201,1" passexp="30" failreward="100011,10" failexp="25" escapereward="0" escapeexp="0" />
+	</GameShenWuConfig>
+</root>

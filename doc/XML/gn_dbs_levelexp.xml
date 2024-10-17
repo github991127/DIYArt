@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sgsalllevel>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			addition_money	-	？
+			addition_money_max_perday	-	？
+		-->
+	<exp_level addition_money="20" addition_money_max_perday="200">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			level	-	玩家等级
+			addexp	-	新版升一级到本级需要的经验值
+调整需要服务端进行数据转化
+			totalexp	-	新版达到本级需要的总经验值
+调整需要服务端进行数据转化
+			oldaddexp	-	旧版升一级到本级需要的经验值
+			oldtotalexp	-	旧版达到本级需要的总经验值
+			text	-	该等级升级描述
+			-->
+		<levelinfo level="1" addexp="5" totalexp="5" oldaddexp="5" oldtotalexp="5" />
+		<levelinfo level="2" addexp="5" totalexp="10" oldaddexp="5" oldtotalexp="10" />
+		<levelinfo level="3" addexp="10" totalexp="20" oldaddexp="10" oldtotalexp="20" />
+		<levelinfo level="4" addexp="10" totalexp="30" oldaddexp="10" oldtotalexp="30" />
+		<levelinfo level="5" addexp="10" totalexp="40" oldaddexp="10" oldtotalexp="40" />
+		<levelinfo level="6" addexp="15" totalexp="55" oldaddexp="15" oldtotalexp="55" />
+		<levelinfo level="7" addexp="15" totalexp="70" oldaddexp="15" oldtotalexp="70" />
+		<levelinfo level="8" addexp="20" totalexp="90" oldaddexp="20" oldtotalexp="90" />
+		<levelinfo level="9" addexp="20" totalexp="110" oldaddexp="20" oldtotalexp="110" />
+		<levelinfo level="10" addexp="20" totalexp="130" oldaddexp="20" oldtotalexp="130" />
+		<levelinfo level="11" addexp="25" totalexp="155" oldaddexp="25" oldtotalexp="155" />
+		<levelinfo level="12" addexp="25" totalexp="180" oldaddexp="25" oldtotalexp="180" />
+		<levelinfo level="13" addexp="25" totalexp="205" oldaddexp="30" oldtotalexp="210" />
+		<levelinfo level="14" addexp="25" totalexp="230" oldaddexp="30" oldtotalexp="240" />
+		<levelinfo level="15" addexp="25" totalexp="255" oldaddexp="30" oldtotalexp="270" />
+		<levelinfo level="16" addexp="30" totalexp="285" oldaddexp="35" oldtotalexp="305" />
+		<levelinfo level="17" addexp="30" totalexp="315" oldaddexp="35" oldtotalexp="340" />
+		<levelinfo level="18" addexp="30" totalexp="345" oldaddexp="40" oldtotalexp="380" />
+		<levelinfo level="19" addexp="30" totalexp="375" oldaddexp="40" oldtotalexp="420" />
+		<levelinfo level="20" addexp="30" totalexp="405" oldaddexp="40" oldtotalexp="460" />
+		<levelinfo level="21" addexp="35" totalexp="440" oldaddexp="55" oldtotalexp="515" />
+		<levelinfo level="22" addexp="35" totalexp="475" oldaddexp="55" oldtotalexp="570" />
+		<levelinfo level="23" addexp="35" totalexp="510" oldaddexp="60" oldtotalexp="630" />
+		<levelinfo level="24" addexp="35" totalexp="545" oldaddexp="60" oldtotalexp="690" />
+		<levelinfo level="25" addexp="35" totalexp="580" oldaddexp="60" oldtotalexp="750" />
+		<levelinfo level="26" addexp="40" totalexp="620" oldaddexp="65" oldtotalexp="815" />
+		<levelinfo level="27" addexp="40" totalexp="660" oldaddexp="65" oldtotalexp="880" />
+		<levelinfo level="28" addexp="40" totalexp="700" oldaddexp="70" oldtotalexp="950" />
+		<levelinfo level="29" addexp="40" totalexp="740" oldaddexp="70" oldtotalexp="1020" />
+		<levelinfo level="30" addexp="40" totalexp="780" oldaddexp="70" oldtotalexp="1090" />
+		<levelinfo level="31" addexp="45" totalexp="825" oldaddexp="120" oldtotalexp="1210" />
+		<levelinfo level="32" addexp="45" totalexp="870" oldaddexp="120" oldtotalexp="1330" />
+		<levelinfo level="33" addexp="45" totalexp="915" oldaddexp="120" oldtotalexp="1450" />
+		<levelinfo level="34" addexp="45" totalexp="960" oldaddexp="120" oldtotalexp="1570" />
+		<levelinfo level="35" addexp="45" totalexp="1005" oldaddexp="120" oldtotalexp="1690" />
+		<levelinfo level="36" addexp="50" totalexp="1055" oldaddexp="135" oldtotalexp="1825" />
+		<levelinfo level="37" addexp="50" totalexp="1105" oldaddexp="135" oldtotalexp="1960" />
+		<levelinfo level="38" addexp="50" totalexp="1155" oldaddexp="135" oldtotalexp="2095" />
+		<levelinfo level="39" addexp="50" totalexp="1205" oldaddexp="135" oldtotalexp="2230" />
+		<levelinfo level="40" addexp="50" totalexp="1255" oldaddexp="135" oldtotalexp="2365" />
+		<levelinfo level="41" addexp="60" totalexp="1315" oldaddexp="150" oldtotalexp="2515" />
+		<levelinfo level="42" addexp="60" totalexp="1375" oldaddexp="150" oldtotalexp="2665" />
+		<levelinfo level="43" addexp="60" totalexp="1435" oldaddexp="150" oldtotalexp="2815" />
+		<levelinfo level="44" addexp="60" totalexp="1495" oldaddexp="150" oldtotalexp="2965" />
+		<levelinfo level="45" addexp="60" totalexp="1555" oldaddexp="150" oldtotalexp="3115" />
+		<levelinfo level="46" addexp="70" totalexp="1625" oldaddexp="175" oldtotalexp="3290" />
+		<levelinfo level="47" addexp="70" totalexp="1695" oldaddexp="175" oldtotalexp="3465" />
+		<levelinfo level="48" addexp="70" totalexp="1765" oldaddexp="175" oldtotalexp="3640" />
+		<levelinfo level="49" addexp="70" totalexp="1835" oldaddexp="175" oldtotalexp="3815" />
+		<levelinfo level="50" addexp="70" totalexp="1905" oldaddexp="175" oldtotalexp="3990" />
+		<levelinfo level="51" addexp="80" totalexp="1985" oldaddexp="190" oldtotalexp="4180" />
+		<levelinfo level="52" addexp="80" totalexp="2065" oldaddexp="190" oldtotalexp="4370" />
+		<levelinfo level="53" addexp="80" totalexp="2145" oldaddexp="190" oldtotalexp="4560" />
+		<levelinfo level="54" addexp="80" totalexp="2225" oldaddexp="190" oldtotalexp="4750" />
+		<levelinfo level="55" addexp="80" totalexp="2305" oldaddexp="190" oldtotalexp="4940" />
+		<levelinfo level="56" addexp="90" totalexp="2395" oldaddexp="205" oldtotalexp="5145" />
+		<levelinfo level="57" addexp="90" totalexp="2485" oldaddexp="205" oldtotalexp="5350" />
+		<levelinfo level="58" addexp="90" totalexp="2575" oldaddexp="205" oldtotalexp="5555" />
+		<levelinfo level="59" addexp="90" totalexp="2665" oldaddexp="205" oldtotalexp="5760" />
+		<levelinfo level="60" addexp="90" totalexp="2755" oldaddexp="205" oldtotalexp="5965" />
+		<levelinfo level="61" addexp="110" totalexp="2865" oldaddexp="220" oldtotalexp="6185" />
+		<levelinfo level="62" addexp="110" totalexp="2975" oldaddexp="220" oldtotalexp="6405" />
+		<levelinfo level="63" addexp="110" totalexp="3085" oldaddexp="220" oldtotalexp="6625" />
+		<levelinfo level="64" addexp="110" totalexp="3195" oldaddexp="220" oldtotalexp="6845" />
+		<levelinfo level="65" addexp="110" totalexp="3305" oldaddexp="220" oldtotalexp="7065" />
+		<levelinfo level="66" addexp="130" totalexp="3435" oldaddexp="235" oldtotalexp="7300" />
+		<levelinfo level="67" addexp="130" totalexp="3565" oldaddexp="235" oldtotalexp="7535" />
+		<levelinfo level="68" addexp="130" totalexp="3695" oldaddexp="235" oldtotalexp="7770" />
+		<levelinfo level="69" addexp="130" totalexp="3825" oldaddexp="235" oldtotalexp="8005" />
+		<levelinfo level="70" addexp="130" totalexp="3955" oldaddexp="235" oldtotalexp="8240" />
+		<levelinfo level="71" addexp="150" totalexp="4105" oldaddexp="250" oldtotalexp="8490" />
+		<levelinfo level="72" addexp="150" totalexp="4255" oldaddexp="250" oldtotalexp="8740" />
+		<levelinfo level="73" addexp="150" totalexp="4405" oldaddexp="250" oldtotalexp="8990" />
+		<levelinfo level="74" addexp="150" totalexp="4555" oldaddexp="250" oldtotalexp="9240" />
+		<levelinfo level="75" addexp="150" totalexp="4705" oldaddexp="250" oldtotalexp="9490" />
+		<levelinfo level="76" addexp="170" totalexp="4875" oldaddexp="265" oldtotalexp="9755" />
+		<levelinfo level="77" addexp="170" totalexp="5045" oldaddexp="265" oldtotalexp="10020" />
+		<levelinfo level="78" addexp="170" totalexp="5215" oldaddexp="265" oldtotalexp="10285" />
+		<levelinfo level="79" addexp="170" totalexp="5385" oldaddexp="265" oldtotalexp="10550" />
+		<levelinfo level="80" addexp="170" totalexp="5555" oldaddexp="265" oldtotalexp="10815" />
+		<levelinfo level="81" addexp="380" totalexp="5935" oldaddexp="280" oldtotalexp="11095" />
+		<levelinfo level="82" addexp="380" totalexp="6315" oldaddexp="280" oldtotalexp="11375" />
+		<levelinfo level="83" addexp="380" totalexp="6695" oldaddexp="280" oldtotalexp="11655" />
+		<levelinfo level="84" addexp="380" totalexp="7075" oldaddexp="280" oldtotalexp="11935" />
+		<levelinfo level="85" addexp="380" totalexp="7455" oldaddexp="280" oldtotalexp="12215" />
+		<levelinfo level="86" addexp="590" totalexp="8045" oldaddexp="295" oldtotalexp="12510" />
+		<levelinfo level="87" addexp="590" totalexp="8635" oldaddexp="295" oldtotalexp="12805" />
+		<levelinfo level="88" addexp="590" totalexp="9225" oldaddexp="295" oldtotalexp="13100" />
+		<levelinfo level="89" addexp="590" totalexp="9815" oldaddexp="295" oldtotalexp="13395" />
+		<levelinfo level="90" addexp="590" totalexp="10405" oldaddexp="295" oldtotalexp="13690" />
+		<levelinfo level="91" addexp="800" totalexp="11205" oldaddexp="310" oldtotalexp="14000" />
+		<levelinfo level="92" addexp="800" totalexp="12005" oldaddexp="310" oldtotalexp="14310" />
+		<levelinfo level="93" addexp="800" totalexp="12805" oldaddexp="310" oldtotalexp="14620" />
+		<levelinfo level="94" addexp="800" totalexp="13605" oldaddexp="310" oldtotalexp="14930" />
+		<levelinfo level="95" addexp="800" totalexp="14405" oldaddexp="310" oldtotalexp="15240" />
+		<levelinfo level="96" addexp="1010" totalexp="15415" oldaddexp="1050" oldtotalexp="16290" />
+		<levelinfo level="97" addexp="1010" totalexp="16425" oldaddexp="1050" oldtotalexp="17340" />
+		<levelinfo level="98" addexp="1010" totalexp="17435" oldaddexp="1050" oldtotalexp="18390" />
+		<levelinfo level="99" addexp="1010" totalexp="18445" oldaddexp="1050" oldtotalexp="19440" />
+		<levelinfo level="100" addexp="1010" totalexp="19455" oldaddexp="1050" oldtotalexp="20490" />
+		<levelinfo level="101" addexp="1100" totalexp="20555" oldaddexp="1100" oldtotalexp="21590" />
+		<levelinfo level="102" addexp="1100" totalexp="21655" oldaddexp="1100" oldtotalexp="22690" />
+		<levelinfo level="103" addexp="1100" totalexp="22755" oldaddexp="1100" oldtotalexp="23790" />
+		<levelinfo level="104" addexp="1100" totalexp="23855" oldaddexp="1100" oldtotalexp="24890" />
+		<levelinfo level="105" addexp="1100" totalexp="24955" oldaddexp="1100" oldtotalexp="25990" />
+		<levelinfo level="106" addexp="1150" totalexp="26105" oldaddexp="1150" oldtotalexp="27140" />
+		<levelinfo level="107" addexp="1150" totalexp="27255" oldaddexp="1150" oldtotalexp="28290" />
+		<levelinfo level="108" addexp="1150" totalexp="28405" oldaddexp="1150" oldtotalexp="29440" />
+		<levelinfo level="109" addexp="1150" totalexp="29555" oldaddexp="1150" oldtotalexp="30590" />
+		<levelinfo level="110" addexp="1150" totalexp="30705" oldaddexp="1150" oldtotalexp="31740" />
+		<levelinfo level="111" addexp="1200" totalexp="31905" oldaddexp="1200" oldtotalexp="32940" />
+		<levelinfo level="112" addexp="1200" totalexp="33105" oldaddexp="1200" oldtotalexp="34140" />
+		<levelinfo level="113" addexp="1200" totalexp="34305" oldaddexp="1200" oldtotalexp="35340" />
+		<levelinfo level="114" addexp="1200" totalexp="35505" oldaddexp="1200" oldtotalexp="36540" />
+		<levelinfo level="115" addexp="1200" totalexp="36705" oldaddexp="1200" oldtotalexp="37740" />
+		<levelinfo level="116" addexp="1250" totalexp="37955" oldaddexp="1250" oldtotalexp="38990" />
+		<levelinfo level="117" addexp="1250" totalexp="39205" oldaddexp="1250" oldtotalexp="40240" />
+		<levelinfo level="118" addexp="1250" totalexp="40455" oldaddexp="1250" oldtotalexp="41490" />
+		<levelinfo level="119" addexp="1250" totalexp="41705" oldaddexp="1250" oldtotalexp="42740" />
+		<levelinfo level="120" addexp="1250" totalexp="42955" oldaddexp="1250" oldtotalexp="43990" />
+		<levelinfo level="121" addexp="1350" totalexp="44305" oldaddexp="1350" oldtotalexp="45340" />
+		<levelinfo level="122" addexp="1350" totalexp="45655" oldaddexp="1350" oldtotalexp="46690" />
+		<levelinfo level="123" addexp="1350" totalexp="47005" oldaddexp="1350" oldtotalexp="48040" />
+		<levelinfo level="124" addexp="1350" totalexp="48355" oldaddexp="1350" oldtotalexp="49390" />
+		<levelinfo level="125" addexp="1350" totalexp="49705" oldaddexp="1350" oldtotalexp="50740" />
+		<levelinfo level="126" addexp="1400" totalexp="51105" oldaddexp="1400" oldtotalexp="52140" />
+		<levelinfo level="127" addexp="1400" totalexp="52505" oldaddexp="1400" oldtotalexp="53540" />
+		<levelinfo level="128" addexp="1400" totalexp="53905" oldaddexp="1400" oldtotalexp="54940" />
+		<levelinfo level="129" addexp="1400" totalexp="55305" oldaddexp="1400" oldtotalexp="56340" />
+		<levelinfo level="130" addexp="1400" totalexp="56705" oldaddexp="1400" oldtotalexp="57740" />
+		<levelinfo level="131" addexp="1450" totalexp="58155" oldaddexp="1450" oldtotalexp="59190" />
+		<levelinfo level="132" addexp="1450" totalexp="59605" oldaddexp="1450" oldtotalexp="60640" />
+		<levelinfo level="133" addexp="1450" totalexp="61055" oldaddexp="1450" oldtotalexp="62090" />
+		<levelinfo level="134" addexp="1450" totalexp="62505" oldaddexp="1450" oldtotalexp="63540" />
+		<levelinfo level="135" addexp="1450" totalexp="63955" oldaddexp="1450" oldtotalexp="64990" />
+		<levelinfo level="136" addexp="1500" totalexp="65455" oldaddexp="1500" oldtotalexp="66490" />
+		<levelinfo level="137" addexp="1500" totalexp="66955" oldaddexp="1500" oldtotalexp="67990" />
+		<levelinfo level="138" addexp="1500" totalexp="68455" oldaddexp="1500" oldtotalexp="69490" />
+		<levelinfo level="139" addexp="1500" totalexp="69955" oldaddexp="1500" oldtotalexp="70990" />
+		<levelinfo level="140" addexp="1500" totalexp="71455" oldaddexp="1500" oldtotalexp="72490" />
+		<levelinfo level="141" addexp="1550" totalexp="73005" oldaddexp="1550" oldtotalexp="74040" />
+		<levelinfo level="142" addexp="1550" totalexp="74555" oldaddexp="1550" oldtotalexp="75590" />
+		<levelinfo level="143" addexp="1550" totalexp="76105" oldaddexp="1550" oldtotalexp="77140" />
+		<levelinfo level="144" addexp="1550" totalexp="77655" oldaddexp="1550" oldtotalexp="78690" />
+		<levelinfo level="145" addexp="1550" totalexp="79205" oldaddexp="1550" oldtotalexp="80240" />
+		<levelinfo level="146" addexp="1600" totalexp="80805" oldaddexp="1600" oldtotalexp="81840" />
+		<levelinfo level="147" addexp="1600" totalexp="82405" oldaddexp="1600" oldtotalexp="83440" />
+		<levelinfo level="148" addexp="1600" totalexp="84005" oldaddexp="1600" oldtotalexp="85040" />
+		<levelinfo level="149" addexp="1600" totalexp="85605" oldaddexp="1600" oldtotalexp="86640" />
+		<levelinfo level="150" addexp="1600" totalexp="87205" oldaddexp="1600" oldtotalexp="88240" />
+		<levelinfo level="151" addexp="4500" totalexp="91705" oldaddexp="4500" oldtotalexp="92740" />
+		<levelinfo level="152" addexp="4500" totalexp="96205" oldaddexp="4500" oldtotalexp="97240" />
+		<levelinfo level="153" addexp="4500" totalexp="100705" oldaddexp="4500" oldtotalexp="101740" />
+		<levelinfo level="154" addexp="4500" totalexp="105205" oldaddexp="4500" oldtotalexp="106240" />
+		<levelinfo level="155" addexp="4500" totalexp="109705" oldaddexp="4500" oldtotalexp="110740" />
+		<levelinfo level="156" addexp="4650" totalexp="114355" oldaddexp="4650" oldtotalexp="115390" />
+		<levelinfo level="157" addexp="4650" totalexp="119005" oldaddexp="4650" oldtotalexp="120040" />
+		<levelinfo level="158" addexp="4650" totalexp="123655" oldaddexp="4650" oldtotalexp="124690" />
+		<levelinfo level="159" addexp="4650" totalexp="128305" oldaddexp="4650" oldtotalexp="129340" />
+		<levelinfo level="160" addexp="4650" totalexp="132955" oldaddexp="4650" oldtotalexp="133990" />
+		<levelinfo level="161" addexp="4800" totalexp="137755" oldaddexp="4800" oldtotalexp="138790" />
+		<levelinfo level="162" addexp="4800" totalexp="142555" oldaddexp="4800" oldtotalexp="143590" />
+		<levelinfo level="163" addexp="4800" totalexp="147355" oldaddexp="4800" oldtotalexp="148390" />
+		<levelinfo level="164" addexp="4800" totalexp="152155" oldaddexp="4800" oldtotalexp="153190" />
+		<levelinfo level="165" addexp="4800" totalexp="156955" oldaddexp="4800" oldtotalexp="157990" />
+		<levelinfo level="166" addexp="4950" totalexp="161905" oldaddexp="4950" oldtotalexp="162940" />
+		<levelinfo level="167" addexp="4950" totalexp="166855" oldaddexp="4950" oldtotalexp="167890" />
+		<levelinfo level="168" addexp="4950" totalexp="171805" oldaddexp="4950" oldtotalexp="172840" />
+		<levelinfo level="169" addexp="4950" totalexp="176755" oldaddexp="4950" oldtotalexp="177790" />
+		<levelinfo level="170" addexp="4950" totalexp="181705" oldaddexp="4950" oldtotalexp="182740" />
+		<levelinfo level="171" addexp="5100" totalexp="186805" oldaddexp="5100" oldtotalexp="187840" />
+		<levelinfo level="172" addexp="5100" totalexp="191905" oldaddexp="5100" oldtotalexp="192940" />
+		<levelinfo level="173" addexp="5100" totalexp="197005" oldaddexp="5100" oldtotalexp="198040" />
+		<levelinfo level="174" addexp="5100" totalexp="202105" oldaddexp="5100" oldtotalexp="203140" />
+		<levelinfo level="175" addexp="5100" totalexp="207205" oldaddexp="5100" oldtotalexp="208240" />
+		<levelinfo level="176" addexp="5250" totalexp="212455" oldaddexp="5250" oldtotalexp="213490" />
+		<levelinfo level="177" addexp="5250" totalexp="217705" oldaddexp="5250" oldtotalexp="218740" />
+		<levelinfo level="178" addexp="5250" totalexp="222955" oldaddexp="5250" oldtotalexp="223990" />
+		<levelinfo level="179" addexp="5250" totalexp="228205" oldaddexp="5250" oldtotalexp="229240" />
+		<levelinfo level="180" addexp="5250" totalexp="233455" oldaddexp="5250" oldtotalexp="234490" />
+		<levelinfo level="181" addexp="5400" totalexp="238855" oldaddexp="5400" oldtotalexp="239890" />
+		<levelinfo level="182" addexp="5400" totalexp="244255" oldaddexp="5400" oldtotalexp="245290" />
+		<levelinfo level="183" addexp="5400" totalexp="249655" oldaddexp="5400" oldtotalexp="250690" />
+		<levelinfo level="184" addexp="5400" totalexp="255055" oldaddexp="5400" oldtotalexp="256090" />
+		<levelinfo level="185" addexp="5400" totalexp="260455" oldaddexp="5400" oldtotalexp="261490" />
+		<levelinfo level="186" addexp="9100" totalexp="269555" oldaddexp="9100" oldtotalexp="270590" />
+		<levelinfo level="187" addexp="9100" totalexp="278655" oldaddexp="9100" oldtotalexp="279690" />
+		<levelinfo level="188" addexp="9100" totalexp="287755" oldaddexp="9100" oldtotalexp="288790" />
+		<levelinfo level="189" addexp="9100" totalexp="296855" oldaddexp="9100" oldtotalexp="297890" />
+		<levelinfo level="190" addexp="9100" totalexp="305955" oldaddexp="9100" oldtotalexp="306990" />
+		<levelinfo level="191" addexp="11800" totalexp="317755" oldaddexp="11800" oldtotalexp="318790" />
+		<levelinfo level="192" addexp="11800" totalexp="329555" oldaddexp="11800" oldtotalexp="330590" />
+		<levelinfo level="193" addexp="11800" totalexp="341355" oldaddexp="11800" oldtotalexp="342390" />
+		<levelinfo level="194" addexp="11800" totalexp="353155" oldaddexp="11800" oldtotalexp="354190" />
+		<levelinfo level="195" addexp="11800" totalexp="364955" oldaddexp="11800" oldtotalexp="365990" />
+		<levelinfo level="196" addexp="16750" totalexp="381705" oldaddexp="16750" oldtotalexp="382740" />
+		<levelinfo level="197" addexp="16750" totalexp="398455" oldaddexp="16750" oldtotalexp="399490" />
+		<levelinfo level="198" addexp="16750" totalexp="415205" oldaddexp="16750" oldtotalexp="416240" />
+		<levelinfo level="199" addexp="16750" totalexp="431955" oldaddexp="16750" oldtotalexp="432990" />
+		<levelinfo level="200" addexp="16872" totalexp="448827" oldaddexp="16872" oldtotalexp="449862" />
+		<levelinfo level="201" addexp="5000" totalexp="450904000" oldaddexp="5000" oldtotalexp="450904000" />
+	</exp_level>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			permanentLevel	-	永久vip等级
+		-->
+	<VipLevel permanentLevel="9">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			level	-	vip等级
+			onlinedays	-	vip天数
+			name	-	H5-特权名字显示
+			item	-	H5-特权内容显示
+			item_u3d	-	U3D-特权内容显示
+			hei_num	-	额外增加黑名单数量
+			friend_num	-	H5-额外增加好友数量
+			crownicon	-	H5-皇冠图标
+			frame	-	H5-VIP边框
+			-->
+		<VipGrowing level="1" onlinedays="0" hei_num="30">
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			addSpeed	-	每天在线2小时增加的成长值
+			subSpeed	-	离线x天数之后开始扣除的成长值n
+			days	-	离线x天数之后开始扣除成长值
+			downStraight	-	是否扣到下一个等级1表示扣到下一个等级， 0表示不到下个等级
+				-->
+			<Growing addSpeed="1" subSpeed="2" days="3" downStraight="0" />
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			model	-	服务端游戏模式
+			desc	-	备注
+			cnt	-	增加的选将框的个数
+				-->
+			<AddSelChar model="1" desc="身份场" cnt="1" />
+			<AddSelChar model="7" desc="欢乐" cnt="1" />
+			<AddSelChar model="5" desc="国战" cnt="1" />
+			<AddSelChar model="11" desc="剑阁" cnt="1" />
+			<AddSelChar model="22" desc="千里单骑" cnt="1" />
+			<AddSelChar model="27" desc="奇门八阵" cnt="0" />
+			<AddSelChar model="10" desc="十殿阎罗" cnt="1" />
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			model	-	服务端游戏模式
+			desc	-	备注
+			cnt	-	增加的选将框的个数
+				-->
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			percent	-	皮肤分解获得的朱砂百分比
+				-->
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			chance	-	合成三国秀获得灵气的概率0<chance<1000
+			percent	-	百分比 0<percent<1000
+				-->
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			percent	-	游戏结束增加exp
+				-->
+			<Exp percent="20" />
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			percent	-	将印合成消耗功勋
+				-->
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			goods	-	将印合成消耗功勋
+				-->
+		</VipGrowing>
+		<VipGrowing level="2" onlinedays="14" hei_num="30">
+			<Growing addSpeed="1" subSpeed="2" days="3" downStraight="1" />
+			<AddSelChar model="1" desc="身份场" cnt="1" />
+			<AddSelChar model="7" desc="欢乐" cnt="1" />
+			<AddSelChar model="5" desc="国战" cnt="1" />
+			<AddSelChar model="11" desc="剑阁" cnt="1" />
+			<AddSelChar model="22" desc="千里单骑" cnt="1" />
+			<AddSelChar model="27" desc="奇门八阵" cnt="0" />
+			<AddSelChar model="10" desc="十殿阎罗" cnt="1" />
+			<Exp percent="22" />
+		</VipGrowing>
+		<VipGrowing level="3" onlinedays="37" hei_num="50">
+			<AddSelChar model="1" desc="身份场" cnt="2" />
+			<AddSelChar model="7" desc="欢乐" cnt="2" />
+			<AddSelChar model="5" desc="国战" cnt="1" />
+			<AddSelChar model="8" desc="2022年兽" cnt="1" />
+			<AddSelChar model="11" desc="剑阁" cnt="1" />
+			<AddSelChar model="22" desc="千里单骑" cnt="2" />
+			<AddSelChar model="27" desc="奇门八阵" cnt="1" />
+			<AddSelChar model="10" desc="十殿阎罗" cnt="2" />
+			<Exp percent="24" />
+		</VipGrowing>
+		<VipGrowing level="4" onlinedays="106" hei_num="50">
+			<AddSelChar model="1" desc="身份场" cnt="2" />
+			<AddSelChar model="7" desc="欢乐" cnt="2" />
+			<AddSelChar model="5" desc="国战" cnt="1" />
+			<AddSelChar model="8" desc="2022年兽" cnt="1" />
+			<AddSelChar model="11" desc="剑阁" cnt="1" />
+			<AddSelChar model="22" desc="千里单骑" cnt="2" />
+			<AddSelChar model="27" desc="奇门八阵" cnt="1" />
+			<AddSelChar model="10" desc="十殿阎罗" cnt="2" />
+			<Exp percent="26" />
+		</VipGrowing>
+		<VipGrowing level="5" onlinedays="226" hei_num="50">
+			<AddSelChar model="1" desc="身份场" cnt="3" />
+			<AddSelChar model="7" desc="欢乐" cnt="3" />
+			<AddSelChar model="5" desc="国战" cnt="1" />
+			<AddSelChar model="8" desc="2022年兽" cnt="2" />
+			<AddSelChar model="11" desc="剑阁" cnt="1" />
+			<AddSelChar model="22" desc="千里单骑" cnt="3" />
+			<AddSelChar model="27" desc="奇门八阵" cnt="1" />
+			<AddSelChar model="10" desc="十殿阎罗" cnt="2" />
+			<Exp percent="28" />
+		</VipGrowing>
+		<VipGrowing level="6" onlinedays="346" hei_num="50">
+			<AddSelChar model="1" desc="身份场" cnt="3" />
+			<AddSelChar model="7" desc="欢乐" cnt="3" />
+			<AddSelChar model="5" desc="国战" cnt="1" />
+			<AddSelChar model="8" desc="2022年兽" cnt="2" />
+			<AddSelChar model="11" desc="剑阁" cnt="1" />
+			<AddSelChar model="22" desc="千里单骑" cnt="3" />
+			<AddSelChar model="27" desc="奇门八阵" cnt="1" />
+			<AddSelChar model="10" desc="十殿阎罗" cnt="3" />
+			<Exp percent="30" />
+		</VipGrowing>
+		<VipGrowing level="7" onlinedays="466" hei_num="50">
+			<AddSelChar model="1" desc="身份场" cnt="3" />
+			<AddSelChar model="7" desc="欢乐" cnt="3" />
+			<AddSelChar model="5" desc="国战" cnt="2" />
+			<AddSelChar model="8" desc="2022年兽" cnt="2" />
+			<AddSelChar model="11" desc="剑阁" cnt="2" />
+			<AddSelChar model="22" desc="千里单骑" cnt="3" />
+			<AddSelChar model="27" desc="奇门八阵" cnt="1" />
+			<AddSelChar model="10" desc="十殿阎罗" cnt="3" />
+			<Exp percent="35" />
+		</VipGrowing>
+		<VipGrowing level="8" onlinedays="1500" hei_num="80">
+			<Growing addSpeed="2" subSpeed="2" days="3" downStraight="0" />
+			<AddSelChar model="1" desc="身份场" cnt="4" />
+			<AddSelChar model="7" desc="欢乐" cnt="4" />
+			<AddSelChar model="5" desc="国战" cnt="2" />
+			<AddSelChar model="8" desc="2022年兽" cnt="3" />
+			<AddSelChar model="11" desc="剑阁" cnt="2" />
+			<AddSelChar model="22" desc="千里单骑" cnt="4" />
+			<AddSelChar model="27" desc="奇门八阵" cnt="2" />
+			<AddSelChar model="10" desc="十殿阎罗" cnt="3" />
+			<LingQi chance="40" percent="200" />
+			<Exp percent="40" />
+		</VipGrowing>
+		<VipGrowing level="9" onlinedays="4000" hei_num="100">
+			<AddSelChar model="1" desc="身份场" cnt="4" />
+			<AddSelChar model="7" desc="欢乐" cnt="4" />
+			<AddSelChar model="5" desc="国战" cnt="2" />
+			<AddSelChar model="8" desc="2022年兽" cnt="3" />
+			<AddSelChar model="11" desc="剑阁" cnt="2" />
+			<AddSelChar model="22" desc="千里单骑" cnt="4" />
+			<AddSelChar model="27" desc="奇门八阵" cnt="2" />
+			<AddSelChar model="10" desc="十殿阎罗" cnt="3" />
+			<ZhuSha percent="120" />
+			<Exp percent="45" />
+		</VipGrowing>
+		<VipGrowing level="10" onlinedays="8000" hei_num="120">
+			<AddSelChar model="1" desc="身份场" cnt="4" />
+			<AddSelChar model="7" desc="欢乐" cnt="4" />
+			<AddSelChar model="5" desc="国战" cnt="3" />
+			<AddSelChar model="8" desc="2022年兽" cnt="3" />
+			<AddSelChar model="11" desc="剑阁" cnt="3" />
+			<AddSelChar model="22" desc="千里单骑" cnt="4" />
+			<AddSelChar model="27" desc="奇门八阵" cnt="2" />
+			<AddSelChar model="10" desc="十殿阎罗" cnt="3" />
+			<Exp percent="50" />
+			<GongXun percent="100" />
+			<UpgradeGoods goods="902009,1;370409,1" />
+		</VipGrowing>
+	</VipLevel>
+</sgsalllevel>

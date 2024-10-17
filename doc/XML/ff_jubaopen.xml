@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			ruleDesc	-	规则说明
+			ruleDesc	-	规则说明
+			tipsDesc	-	首充提示语
+			rewardItem	-	桃子给的奖励
+			maxGrade	-	最大桃树等级
+			desc	-	界面文本提示
+			bgm	-	背景音乐
+			getMusic	-	领取音效（从左到右分别为普通领取、暴击领取，用“;"分隔）
+			coordinate	-	桃子掉落坐标，这里配置N个，每次从中间随机Y个来掉落桃子，配置方式用0,0;0,0这样来计算
+			coordinate	-	桃子掉落坐标，这里配置N个，每次从中间随机Y个来掉落桃子，配置方式用0,0;0,0这样来计算
+			canKill	-	每日砍树上限
+		-->
+	<common rewardItem="100016" maxGrade="8" canKill="1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			grade	-	桃树等级
+			name	-	桃树名称
+			tree	-	桃树样式
+			prompt	-	聚宝文本提示
+			prompt	-	聚宝文本提示
+			entercase	-	触发事件
+			downreward	-	单次掉落桃子区间
+			needExp	-	桃树升级所需经验
+			getExp	-	单次砍树经验
+			needMoney	-	单次聚宝投入元宝
+			buyItem	-	购买道具
+			maxMultiple	-	单元宝最大堆叠倍率（废弃）
+			isCritical	-	暴击判定数量（大于等于视为暴击）
+			outPut1	-	展示堆产出每堆产出
+			weight1	-	奖励1权重
+			reward1	-	奖励1产出
+			weight2	-	奖励2权重
+			reward2	-	奖励2产出
+			weight3	-	奖励3权重
+			reward3	-	奖励3产出
+		-->
+	<award grade="1" entercase="1001;1002;1003;1004;1005;1006;1007;1008;1009" downreward="5,5" needExp="10" getExp="10" buyItem="12130101" outPut1="8,12" weight1="90" reward1="165,200" weight2="10" reward2="258,258" weight3="0" reward3="258,258" />
+	<award grade="2" entercase="1001;1002;1003;1004;1005;1006;1007;1008;1009" downreward="5,6" needExp="60" getExp="10" buyItem="12130201" outPut1="8,12" weight1="75" reward1="130,150" weight2="23" reward2="150,160" weight3="2" reward3="375,560" />
+	<award grade="3" entercase="1001;1002;1003;1004;1005;1006;1007;1008;1009" downreward="5,7" needExp="140" getExp="10" buyItem="12130301" outPut1="10,16" weight1="75" reward1="135,160" weight2="23" reward2="160,180" weight3="2" reward3="425,600" />
+	<award grade="4" entercase="1001;1002;1003;1004;1005;1006;1007;1008;1009" downreward="5,8" needExp="280" getExp="10" buyItem="12130401" outPut1="12,18" weight1="80" reward1="150,180" weight2="18" reward2="190,220" weight3="2" reward3="450,660" />
+	<award grade="5" entercase="1001;1002;1003;1004;1005;1006;1007;1008;1009" downreward="5,9" needExp="480" getExp="10" buyItem="12130501" outPut1="16,24" weight1="80" reward1="185,210" weight2="18" reward2="200,240" weight3="2" reward3="520,720" />
+	<award grade="6" entercase="1001;1002;1003;1004;1005;1006;1007;1008;1009" downreward="5,9" needExp="760" getExp="10" buyItem="12130601" outPut1="18,28" weight1="85" reward1="210,230" weight2="13" reward2="280,385" weight3="2" reward3="677,800" />
+	<award grade="7" entercase="1001;1002;1003;1004;1005;1006;1007;1008;1009" downreward="5,9" needExp="1070" getExp="10" buyItem="12130701" outPut1="20,36" weight1="85" reward1="265,310" weight2="13" reward2="340,420" weight3="2" reward3="743,880" />
+	<award grade="8" entercase="1001;1002;1003;1004;1005;1006;1007;1008;1009" downreward="5,9" needExp="999999" getExp="10" buyItem="12130801" outPut1="20,36" weight1="90" reward1="280,320" weight2="8" reward2="400,510" weight3="2" reward3="860,1000" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			eventId	-	事件ID
+			eventName	-	事件名称
+			weight	-	权重
+			eventIcon	-	事件角色图片
+				-	#什么角色
+			eventType	-	事件类型
+			duration	-	生效时间
+			getItem	-	额外获得物品,数量
+				-	#什么物品
+			desc	-	提示语
+			desc	-	提示语
+		-->
+	<case eventId="1001" weight="1" eventType="1" duration="20230227T000000;20300401T235959" getItem="21223901,1" />
+	<case eventId="1002" weight="1" eventType="1" duration="20230227T000000;20300401T235959" getItem="112601,1" />
+	<case eventId="1003" weight="10" eventType="1" duration="20230227T000000;20300401T235959" getItem="13500101,1" />
+	<case eventId="1004" weight="50" eventType="1" duration="20230227T000000;20300401T235959" getItem="8100201,1" />
+	<case eventId="1005" weight="100" eventType="1" duration="20230227T000000;20300401T235959" getItem="435401,1" />
+	<case eventId="1006" weight="9838" eventType="1" duration="20240722T000000;20300401T235959" />
+	<case eventId="1007" weight="6250" eventType="1" duration="20240711T000000;20240722T000000" getItem="100016,100" />
+	<case eventId="1008" weight="3500" eventType="1" duration="20240711T000000;20240722T000000" getItem="112301,1" />
+	<case eventId="1009" weight="88" eventType="1" duration="20240711T000000;20240722T000000" getItem="1142901,1" />
+</root>

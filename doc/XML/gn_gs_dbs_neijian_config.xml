@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--  编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) --> 
+<Root>
+  <ConstVariables>
+    <!-- 配置常量
+     s,a,b: 计算用常量.
+     XiaoJiScore: 异常判断中5.3消极得分
+     -->
+    <s>1550</s>
+    <a>200</a>
+    <b>37</b>
+    <XiaoJiScore>100</XiaoJiScore>
+  </ConstVariables>
+
+  <Score>
+    <!-- 内奸分配置
+    lv:索引
+    from:起始分
+    to:结束分
+    savelv:保存用S为1,A为2,B为3,C为4
+    addWenGong:文功加成 百分百值 如10%为"10"
+    addExp:经验加成 百分百值
+    -->
+    <Item lv="1" from="1500" to="450904" savelv="1" desc="S" addWenGong="50" addExp="100"/>
+    <Item lv="2" from="1300" to="1499" savelv="2" desc="A+" addWenGong="35" addExp="85"/>
+    <Item lv="3" from="1050" to="1299" savelv="2" desc="A" addWenGong="30" addExp="75"/>
+    <Item lv="5" from="900" to="1049" savelv="3" desc="B+" addWenGong="25" addExp="65"/>
+    <Item lv="6" from="700" to="899" savelv="3" desc="B" addWenGong="20" addExp="50"/>
+    <Item lv="8" from="500" to="699" savelv="4" desc="C+" addWenGong="15" addExp="35"/>
+    <Item lv="9" from="1" to="499" savelv="4" desc="C" addWenGong="10" addExp="20"/>
+  </Score>
+</Root>
+

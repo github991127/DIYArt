@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<GuildMedal> 勋章配置
+	<Medal> 勋章
+		id 勋章标识 已加好的不得更改删除
+		name 勋章名称
+		descOrder 降序排列值
+		autoAdd 是否满足条件后自动添加；1是 0否
+		desc 勋章描述
+	<Require> 需要条件
+		id 条件标识; 
+			1公会达到多少级				lv,
+			2本区第一个达到多少级			lv,
+			3公会成员获得一次天梯冠军		pos,
+			4公会成员获得一次王者之战冠军	pos,
+		value1 条件相关数值
+		desc 条件描述
+-->
+<GuildMedal>
+	<Medal id="1" name="勋章名字1" descOrder="100" autoAdd="0" desc="勋章描述1，公会达到2级获得">
+		<Require>
+			<Item id="1" value1="2" desc="到达2级" />
+		</Require>
+	</Medal>
+	<Medal id="2" name="勋章名字2" descOrder="99" autoAdd="0" desc="第一个达到3级">
+		<Require>
+			<Item id="2" value1="3" desc="第一个到达3级" />
+		</Require>
+	</Medal>
+	<Medal id="3" name="勋章名字3" descOrder="98" autoAdd="0" desc="达到5级">
+		<Require>
+			<Item id="1" value1="5" desc="达到5级" />
+		</Require>
+	</Medal>
+	<Medal id="4" name="勋章名字4" descOrder="97" autoAdd="0" desc="第一个5级">
+		<Require>
+			<Item id="2" value1="5" desc="第一个达到5级" />
+		</Require>
+	</Medal>
+	<Medal id="5" name="勋章名字5" descOrder="96" autoAdd="0" desc="勋章描述5">
+	</Medal>
+</GuildMedal>

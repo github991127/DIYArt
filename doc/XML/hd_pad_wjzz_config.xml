@@ -1,0 +1,982 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Root>
+	<ActivitySet>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			type	-	
+			name	-	名字
+			isOpen	-	是否开启
+			roundId	-	活动编号
+			isDelete	-	是否删除
+			startTime	-	活动开始时间
+			endTime	-	结束时间
+			isArea	-	？
+			-->
+		<Activity type="9" name="wjzz" isOpen="1" roundId="1" isDelete="0" startTime="20170926T100000" endTime="20171031T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="2" isDelete="0" startTime="20171101T100000" endTime="20171130T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="3" isDelete="0" startTime="20171201T100000" endTime="20171231T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="4" isDelete="0" startTime="20180101T100000" endTime="20180131T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="5" isDelete="0" startTime="20180201T100000" endTime="20180228T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="6" isDelete="0" startTime="20180301T100000" endTime="20180331T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="7" isDelete="0" startTime="20180401T100000" endTime="20180430T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="8" isDelete="0" startTime="20180501T100000" endTime="20180531T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="9" isDelete="0" startTime="20180601T100000" endTime="20180630T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="10" isDelete="0" startTime="20180701T100000" endTime="20180731T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="11" isDelete="0" startTime="20180801T100000" endTime="20180831T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="12" isDelete="0" startTime="20180901T100000" endTime="20180930T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="13" isDelete="0" startTime="20181001T100000" endTime="20181031T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="14" isDelete="0" startTime="20181101T100000" endTime="20181130T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="15" isDelete="0" startTime="20181201T100000" endTime="20181231T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="16" isDelete="0" startTime="20190101T100000" endTime="20190131T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="17" isDelete="0" startTime="20190201T100000" endTime="20190228T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="18" isDelete="0" startTime="20190301T100000" endTime="20190331T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="19" isDelete="0" startTime="20190401T100000" endTime="20190430T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="20" isDelete="0" startTime="20190501T100000" endTime="20190531T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="21" isDelete="0" startTime="20190601T100000" endTime="20190630T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="22" isDelete="0" startTime="20190701T100000" endTime="20190731T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="23" isDelete="0" startTime="20190801T100000" endTime="20190831T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="24" isDelete="0" startTime="20190901T100000" endTime="20190930T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="25" isDelete="0" startTime="20191001T100000" endTime="20191031T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="26" isDelete="0" startTime="20191101T100000" endTime="20191130T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="27" isDelete="0" startTime="20191201T100000" endTime="20191231T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="28" isDelete="0" startTime="20200101T100000" endTime="20200131T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="29" isDelete="0" startTime="20200201T100000" endTime="20200229T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="30" isDelete="0" startTime="20200301T100000" endTime="20200331T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="31" isDelete="0" startTime="20200401T100000" endTime="20200430T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="32" isDelete="0" startTime="20200501T100000" endTime="20200531T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="33" isDelete="0" startTime="20200601T100000" endTime="20200630T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="34" isDelete="0" startTime="20200701T100000" endTime="20200731T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="35" isDelete="0" startTime="20200801T100000" endTime="20200831T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="36" isDelete="0" startTime="20200901T100000" endTime="20200930T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="37" isDelete="0" startTime="20201001T100000" endTime="20201031T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="38" isDelete="0" startTime="20201101T100000" endTime="20201130T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="39" isDelete="0" startTime="20201201T100000" endTime="20201231T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="40" isDelete="0" startTime="20210101T100000" endTime="20210131T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="41" isDelete="0" startTime="20210201T100000" endTime="20210228T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="42" isDelete="0" startTime="20210301T100000" endTime="20210331T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="43" isDelete="0" startTime="20210401T100000" endTime="20210430T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="44" isDelete="0" startTime="20210501T100000" endTime="20210531T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="45" isDelete="0" startTime="20210601T100000" endTime="20210630T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="46" isDelete="0" startTime="20210701T100000" endTime="20210731T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="47" isDelete="0" startTime="20210801T100000" endTime="20210831T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="48" isDelete="0" startTime="20210901T100000" endTime="20210930T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="49" isDelete="0" startTime="20211001T100000" endTime="20211031T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="50" isDelete="0" startTime="20211101T100000" endTime="20211130T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="51" isDelete="0" startTime="20211201T100000" endTime="20211231T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="52" isDelete="0" startTime="20220101T100000" endTime="20220131T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="53" isDelete="0" startTime="20220201T100000" endTime="20220228T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="54" isDelete="0" startTime="20220301T100000" endTime="20220331T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="55" isDelete="0" startTime="20220401T100000" endTime="20220424T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="56" isDelete="0" startTime="20220501T100000" endTime="20220531T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="57" isDelete="0" startTime="20220601T100000" endTime="20220630T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="58" isDelete="0" startTime="20220701T100000" endTime="20220731T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="59" isDelete="0" startTime="20220801T100000" endTime="20220831T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="60" isDelete="0" startTime="20220901T100000" endTime="20220930T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="61" isDelete="0" startTime="20221001T100000" endTime="20221031T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="62" isDelete="0" startTime="20221101T100000" endTime="20221130T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="63" isDelete="0" startTime="20221201T100000" endTime="20221231T220000" isArea="0" />
+		<Activity type="9" name="wjzz" isOpen="1" roundId="64" isDelete="0" startTime="20230331T100000" endTime="20230410T220000" isArea="0" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			cycid	-	赛季编号
+			sysValue	-	？
+			resetTime	-	？
+			mkTime	-	赛季时间
+			winNum	-	最大胜场数
+			loseNum	-	最大负场数
+			-->
+		<Acwjzz2017 cycid="1" sysValue="1" resetTime="10" mkTime="2;20170926T100000;20171031T220000" winNum="12" loseNum="3">
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			wincnt	-	当前胜场数
+			items	-	胜场数的奖励
+				-->
+			<Prize wincnt="3" items="100011,50;1237201,1" />
+			<Prize wincnt="6" items="100011,50;1237201,1" />
+			<Prize wincnt="9" items="100011,50;1237301,1" />
+			<Prize wincnt="12" items="100011,50;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="2" sysValue="1" resetTime="10" mkTime="2;20171101T100000;20171130T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="3" sysValue="1" resetTime="10" mkTime="2;20171201T100000;20171231T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="4" sysValue="1" resetTime="10" mkTime="2;20180101T100000;20180131T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1247201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="5" sysValue="1" resetTime="10" mkTime="2;20180201T100000;20180228T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="6" sysValue="1" resetTime="10" mkTime="2;20180301T100000;20180331T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="7" sysValue="1" resetTime="10" mkTime="2;20180401T100000;20180430T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="8" sysValue="1" resetTime="10" mkTime="2;20180501T100000;20180531T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="9" sysValue="1" resetTime="10" mkTime="2;20180601T100000;20180630T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="10" sysValue="1" resetTime="10" mkTime="2;20180701T100000;20180731T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="11" sysValue="1" resetTime="10" mkTime="2;20180801T100000;20180831T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="12" sysValue="1" resetTime="10" mkTime="2;20180901T100000;20180930T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="13" sysValue="1" resetTime="10" mkTime="2;20181001T100000;20181031T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="14" sysValue="1" resetTime="10" mkTime="2;20181101T100000;20181130T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="15" sysValue="1" resetTime="10" mkTime="2;20181201T100000;20181231T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="16" sysValue="1" resetTime="10" mkTime="2;20190101T100000;20190131T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="17" sysValue="1" resetTime="10" mkTime="2;20190201T100000;20190228T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="18" sysValue="1" resetTime="10" mkTime="2;20190301T100000;20190331T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="19" sysValue="1" resetTime="10" mkTime="2;20190401T100000;20190430T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="20" sysValue="1" resetTime="10" mkTime="2;20190501T100000;20190531T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="21" sysValue="1" resetTime="10" mkTime="2;20190601T100000;20190630T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="22" sysValue="1" resetTime="10" mkTime="2;20190701T100000;20190731T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="23" sysValue="1" resetTime="10" mkTime="2;20190801T100000;20190831T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="24" sysValue="1" resetTime="10" mkTime="2;20190901T100000;20190930T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="25" sysValue="1" resetTime="10" mkTime="2;20191001T100000;20191031T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="26" sysValue="1" resetTime="10" mkTime="2;20191101T100000;20191130T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="27" sysValue="1" resetTime="10" mkTime="2;20191201T100000;20191231T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="28" sysValue="1" resetTime="10" mkTime="2;20200101T100000;20200131T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="29" sysValue="1" resetTime="10" mkTime="2;20200201T100000;20200229T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="30" sysValue="1" resetTime="10" mkTime="2;20200301T100000;20200331T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="31" sysValue="1" resetTime="10" mkTime="2;20200401T100000;20200430T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="32" sysValue="1" resetTime="10" mkTime="2;20200501T100000;20200531T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="33" sysValue="1" resetTime="10" mkTime="2;20200601T100000;20200630T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="34" sysValue="1" resetTime="10" mkTime="2;20200701T100000;20200731T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="35" sysValue="1" resetTime="10" mkTime="2;20200801T100000;20200831T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="36" sysValue="1" resetTime="10" mkTime="2;20200901T100000;20200930T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="37" sysValue="1" resetTime="10" mkTime="2;20201001T100000;20201031T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="38" sysValue="1" resetTime="10" mkTime="2;20201101T100000;20201130T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="39" sysValue="1" resetTime="10" mkTime="2;20201201T100000;20201231T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="40" sysValue="1" resetTime="10" mkTime="2;20210101T100000;20210131T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="41" sysValue="1" resetTime="10" mkTime="2;20210201T100000;20210228T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="42" sysValue="1" resetTime="10" mkTime="2;20210301T100000;20210331T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="43" sysValue="1" resetTime="10" mkTime="2;20210401T100000;20210430T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="44" sysValue="1" resetTime="10" mkTime="2;20210501T100000;20210531T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="45" sysValue="1" resetTime="10" mkTime="2;20210601T100000;20210630T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="46" sysValue="1" resetTime="10" mkTime="2;20210701T100000;20210731T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="47" sysValue="1" resetTime="10" mkTime="2;20210801T100000;20210831T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="48" sysValue="1" resetTime="10" mkTime="2;20210901T100000;20210930T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="49" sysValue="1" resetTime="10" mkTime="2;20211001T100000;20211031T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="50" sysValue="1" resetTime="10" mkTime="2;20211101T100000;20211130T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="51" sysValue="1" resetTime="10" mkTime="2;20211201T100000;20211231T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="52" sysValue="1" resetTime="10" mkTime="2;20220101T100000;20220131T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="53" sysValue="1" resetTime="10" mkTime="2;20220201T100000;20220228T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="54" sysValue="1" resetTime="10" mkTime="2;20220301T100000;20220331T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="55" sysValue="1" resetTime="10" mkTime="2;20220401T100000;20220424T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="56" sysValue="1" resetTime="10" mkTime="2;20220501T100000;20220531T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="57" sysValue="1" resetTime="10" mkTime="2;20220601T100000;20220630T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="58" sysValue="1" resetTime="10" mkTime="2;20220701T100000;20220731T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="59" sysValue="1" resetTime="10" mkTime="2;20220801T100000;20220831T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="60" sysValue="1" resetTime="10" mkTime="2;20220901T100000;20220930T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="61" sysValue="1" resetTime="10" mkTime="2;20221001T100000;20221031T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="62" sysValue="1" resetTime="10" mkTime="2;20221101T100000;20221130T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="63" sysValue="1" resetTime="10" mkTime="2;20221201T100000;20221231T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+		<Acwjzz2017 cycid="64" sysValue="1" resetTime="10" mkTime="2;20230331T100000;20230410T220000" winNum="12" loseNum="3">
+			<Prize wincnt="1" items="100011,80;100002,10" />
+			<Prize wincnt="2" items="100011,15;100002,10" />
+			<Prize wincnt="3" items="100011,15;100002,10;1237201,1" />
+			<Prize wincnt="4" items="100011,15;100002,10" />
+			<Prize wincnt="5" items="100011,15;100002,10" />
+			<Prize wincnt="6" items="100011,20;100002,10;1237201,1" />
+			<Prize wincnt="7" items="100011,20;100002,10" />
+			<Prize wincnt="8" items="100011,20;100002,10" />
+			<Prize wincnt="9" items="100011,20;100002,10;1237301,1" />
+			<Prize wincnt="10" items="100011,30;100002,10" />
+			<Prize wincnt="11" items="100011,30;100002,10" />
+			<Prize wincnt="12" items="100011,30;100002,10;1237401,1" />
+		</Acwjzz2017>
+	</ActivitySet>
+</Root>

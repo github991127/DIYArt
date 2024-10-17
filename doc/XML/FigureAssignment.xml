@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<FigureAssign>
+    <item id="1" emperor="1" minister="1" rebel="1" provocateur="1"/>
+    <item id="2" emperor="1" minister="1" rebel="2" provocateur="1"/>
+    <item id="3" emperor="1" minister="1" rebel="3" provocateur="1"/>
+    <item id="4" emperor="1" minister="1" rebel="2" provocateur="2"/>
+    <item id="5" emperor="1" minister="2" rebel="3" provocateur="1"/>
+    <item id="6" emperor="1" minister="2" rebel="4" provocateur="1"/>
+    <item id="7" emperor="1" minister="2" rebel="3" provocateur="2"/>
+</FigureAssign>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<Root>
+	<!--
+		配置描述
+		Verify						isOpen	>0 表示开关启用
+		VerifyGoodsBuy				itemList   限制购买的道具列表  goodsid,count;goodsid,count
+		VerifyGuildMarketRefresh	count	   公会商店刷新每日限制最大次数
+		VerifySanGuoXiuCompose		count		三国秀合成每日最大次数
+		都是在0点清零
+	-->
+	<Verify isOpen = "0"/>
+	<VerifyGoodsBuy  itemList="435401,30;435601,10;435501,5;1213201,50;1213301,50;1213401,50"/>
+	<VerifyGuildMarketRefresh  count="50"/>
+	<VerifySanGuoXiuCompose count="50"/>
+	<VerifyAccountLimit accountList="sgstest1117;sgstest1118;sgstest1119;sgstest1114;sgstest1115;sgstest1116;sgstest1120;sgstest1121;sgstest1122"/>
+</Root>

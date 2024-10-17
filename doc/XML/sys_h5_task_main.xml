@@ -1,0 +1,774 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			taskId	-	能完成才显示的任务id
+			maxShowTask	-	每个类型任务最多显示数量
+		-->
+	<Common taskId="26367" maxShowTask="10" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			taskId	-	任务id
+			addExp	-	增加进度
+			belongType	-	所属主题
+1=等级；2=武将；3=皮肤；4=山河图；5=排位赛；6=斗地主；7=公会；8=三国秀
+			isShow	-	是否显示
+1=显示
+0=不显示
+			jump	-	任务跳转
+			sort	-	优先级
+大的值优先，同主题类排序
+				-	1
+		-->
+	<TaskExp taskId="2300" addExp="0" />
+	<TaskExp taskId="12236" addExp="20" />
+	<TaskExp taskId="12237" addExp="20" />
+	<TaskExp taskId="12238" addExp="20" />
+	<TaskExp taskId="12239" addExp="20" />
+	<TaskExp taskId="2219" addExp="20" />
+	<TaskExp taskId="12241" addExp="20" />
+	<TaskExp taskId="12242" addExp="20" />
+	<TaskExp taskId="2243" addExp="20" />
+	<TaskExp taskId="2244" addExp="20" />
+	<TaskExp taskId="2220" addExp="20" />
+	<TaskExp taskId="2246" addExp="20" />
+	<TaskExp taskId="2247" addExp="20" />
+	<TaskExp taskId="2248" addExp="20" />
+	<TaskExp taskId="2249" addExp="20" />
+	<TaskExp taskId="2221" addExp="20" />
+	<TaskExp taskId="2251" addExp="20" />
+	<TaskExp taskId="2252" addExp="20" />
+	<TaskExp taskId="2253" addExp="20" />
+	<TaskExp taskId="2254" addExp="20" />
+	<TaskExp taskId="2222" addExp="20" />
+	<TaskExp taskId="2297" addExp="20" />
+	<TaskExp taskId="2262" addExp="20" />
+	<TaskExp taskId="2264" addExp="20" />
+	<TaskExp taskId="2224" addExp="20" />
+	<TaskExp taskId="2266" addExp="20" />
+	<TaskExp taskId="2267" addExp="20" />
+	<TaskExp taskId="2269" addExp="20" />
+	<TaskExp taskId="2226" addExp="20" />
+	<TaskExp taskId="2271" addExp="20" />
+	<TaskExp taskId="2227" addExp="20" />
+	<TaskExp taskId="2228" addExp="20" />
+	<TaskExp taskId="2229" addExp="25" />
+	<TaskExp taskId="2230" addExp="25" />
+	<TaskExp taskId="2231" addExp="30" />
+	<TaskExp taskId="2232" addExp="30" />
+	<TaskExp taskId="2233" addExp="30" />
+	<TaskExp taskId="2234" addExp="50" />
+	<TaskExp taskId="2235" addExp="50" />
+	<TaskExp taskId="2236" addExp="50" />
+	<TaskExp taskId="2237" addExp="50" />
+	<TaskExp taskId="2238" addExp="75" />
+	<TaskExp taskId="2239" addExp="80" />
+	<TaskExp taskId="2240" addExp="85" />
+	<TaskExp taskId="2241" addExp="120" />
+	<TaskExp taskId="2242" addExp="235" />
+	<TaskExp taskId="21779" addExp="20" />
+	<TaskExp taskId="2301" addExp="20" />
+	<TaskExp taskId="2339" addExp="50" />
+	<TaskExp taskId="2302" addExp="20" />
+	<TaskExp taskId="2340" addExp="50" />
+	<TaskExp taskId="2303" addExp="20" />
+	<TaskExp taskId="2341" addExp="50" />
+	<TaskExp taskId="2304" addExp="25" />
+	<TaskExp taskId="2342" addExp="50" />
+	<TaskExp taskId="2305" addExp="30" />
+	<TaskExp taskId="2343" addExp="50" />
+	<TaskExp taskId="2306" addExp="30" />
+	<TaskExp taskId="2307" addExp="30" />
+	<TaskExp taskId="2308" addExp="30" />
+	<TaskExp taskId="2309" addExp="55" />
+	<TaskExp taskId="2344" addExp="50" />
+	<TaskExp taskId="2313" addExp="55" />
+	<TaskExp taskId="40536" addExp="400" />
+	<TaskExp taskId="2310" addExp="55" />
+	<TaskExp taskId="2314" addExp="55" />
+	<TaskExp taskId="2311" addExp="55" />
+	<TaskExp taskId="2315" addExp="55" />
+	<TaskExp taskId="2345" addExp="50" />
+	<TaskExp taskId="2312" addExp="60" />
+	<TaskExp taskId="2316" addExp="60" />
+	<TaskExp taskId="16567" addExp="600" />
+	<TaskExp taskId="2346" addExp="50" />
+	<TaskExp taskId="2317" addExp="60" />
+	<TaskExp taskId="2318" addExp="60" />
+	<TaskExp taskId="2347" addExp="50" />
+	<TaskExp taskId="2319" addExp="60" />
+	<TaskExp taskId="2320" addExp="60" />
+	<TaskExp taskId="2321" addExp="60" />
+	<TaskExp taskId="2348" addExp="50" />
+	<TaskExp taskId="2322" addExp="60" />
+	<TaskExp taskId="2323" addExp="60" />
+	<TaskExp taskId="2349" addExp="50" />
+	<TaskExp taskId="2324" addExp="60" />
+	<TaskExp taskId="2325" addExp="60" />
+	<TaskExp taskId="2326" addExp="60" />
+	<TaskExp taskId="2350" addExp="50" />
+	<TaskExp taskId="2327" addExp="60" />
+	<TaskExp taskId="2328" addExp="60" />
+	<TaskExp taskId="2329" addExp="60" />
+	<TaskExp taskId="2330" addExp="60" />
+	<TaskExp taskId="2331" addExp="60" />
+	<TaskExp taskId="2332" addExp="60" />
+	<TaskExp taskId="2333" addExp="60" />
+	<TaskExp taskId="2334" addExp="60" />
+	<TaskExp taskId="2335" addExp="60" />
+	<TaskExp taskId="2336" addExp="60" />
+	<TaskExp taskId="2337" addExp="60" />
+	<TaskExp taskId="2338" addExp="60" />
+	<TaskExp taskId="2351" addExp="100" />
+	<TaskExp taskId="2352" addExp="50" />
+	<TaskExp taskId="2353" addExp="50" />
+	<TaskExp taskId="2354" addExp="50" />
+	<TaskExp taskId="2355" addExp="50" />
+	<TaskExp taskId="2356" addExp="50" />
+	<TaskExp taskId="2357" addExp="150" />
+	<TaskExp taskId="2358" addExp="200" />
+	<TaskExp taskId="2359" addExp="50" />
+	<TaskExp taskId="2360" addExp="300" />
+	<TaskExp taskId="2361" addExp="250" />
+	<TaskExp taskId="2401" addExp="25" />
+	<TaskExp taskId="2402" addExp="25" />
+	<TaskExp taskId="2403" addExp="30" />
+	<TaskExp taskId="2411" addExp="30" />
+	<TaskExp taskId="2404" addExp="30" />
+	<TaskExp taskId="2405" addExp="50" />
+	<TaskExp taskId="2406" addExp="50" />
+	<TaskExp taskId="2407" addExp="50" />
+	<TaskExp taskId="2408" addExp="55" />
+	<TaskExp taskId="2409" addExp="55" />
+	<TaskExp taskId="2410" addExp="55" />
+	<TaskExp taskId="2412" addExp="55" />
+	<TaskExp taskId="2413" addExp="55" />
+	<TaskExp taskId="2414" addExp="55" />
+	<TaskExp taskId="2415" addExp="60" />
+	<TaskExp taskId="2416" addExp="60" />
+	<TaskExp taskId="2417" addExp="60" />
+	<TaskExp taskId="2418" addExp="60" />
+	<TaskExp taskId="2419" addExp="60" />
+	<TaskExp taskId="2420" addExp="60" />
+	<TaskExp taskId="23244" addExp="1000" />
+	<TaskExp taskId="16571" addExp="800" />
+	<TaskExp taskId="16570" addExp="500" />
+	<TaskExp taskId="2421" addExp="60" />
+	<TaskExp taskId="2422" addExp="60" />
+	<TaskExp taskId="2423" addExp="60" />
+	<TaskExp taskId="2424" addExp="60" />
+	<TaskExp taskId="2425" addExp="60" />
+	<TaskExp taskId="2426" addExp="65" />
+	<TaskExp taskId="2427" addExp="65" />
+	<TaskExp taskId="2428" addExp="65" />
+	<TaskExp taskId="2429" addExp="65" />
+	<TaskExp taskId="2430" addExp="65" />
+	<TaskExp taskId="2431" addExp="65" />
+	<TaskExp taskId="2432" addExp="65" />
+	<TaskExp taskId="2433" addExp="65" />
+	<TaskExp taskId="2434" addExp="65" />
+	<TaskExp taskId="2435" addExp="65" />
+	<TaskExp taskId="2436" addExp="70" />
+	<TaskExp taskId="2437" addExp="30" />
+	<TaskExp taskId="2438" addExp="30" />
+	<TaskExp taskId="2439" addExp="30" />
+	<TaskExp taskId="2440" addExp="30" />
+	<TaskExp taskId="2441" addExp="30" />
+	<TaskExp taskId="2442" addExp="30" />
+	<TaskExp taskId="2443" addExp="30" />
+	<TaskExp taskId="2444" addExp="30" />
+	<TaskExp taskId="2445" addExp="30" />
+	<TaskExp taskId="2446" addExp="30" />
+	<TaskExp taskId="2447" addExp="30" />
+	<TaskExp taskId="2448" addExp="30" />
+	<TaskExp taskId="2449" addExp="30" />
+	<TaskExp taskId="2450" addExp="30" />
+	<TaskExp taskId="26001" addExp="10" />
+	<TaskExp taskId="26187" addExp="10" />
+	<TaskExp taskId="26098" addExp="10" />
+	<TaskExp taskId="26188" addExp="10" />
+	<TaskExp taskId="26100" addExp="10" />
+	<TaskExp taskId="26002" addExp="15" />
+	<TaskExp taskId="26003" addExp="10" />
+	<TaskExp taskId="26004" addExp="10" />
+	<TaskExp taskId="26005" addExp="10" />
+	<TaskExp taskId="26006" addExp="10" />
+	<TaskExp taskId="26007" addExp="10" />
+	<TaskExp taskId="26008" addExp="10" />
+	<TaskExp taskId="26009" addExp="10" />
+	<TaskExp taskId="26010" addExp="10" />
+	<TaskExp taskId="26011" addExp="10" />
+	<TaskExp taskId="26103" addExp="15" />
+	<TaskExp taskId="26012" addExp="10" />
+	<TaskExp taskId="26013" addExp="10" />
+	<TaskExp taskId="26014" addExp="10" />
+	<TaskExp taskId="26015" addExp="10" />
+	<TaskExp taskId="26016" addExp="10" />
+	<TaskExp taskId="26017" addExp="10" />
+	<TaskExp taskId="26113" addExp="10" />
+	<TaskExp taskId="26115" addExp="10" />
+	<TaskExp taskId="26018" addExp="15" />
+	<TaskExp taskId="26019" addExp="10" />
+	<TaskExp taskId="26020" addExp="10" />
+	<TaskExp taskId="26021" addExp="10" />
+	<TaskExp taskId="26022" addExp="10" />
+	<TaskExp taskId="26023" addExp="10" />
+	<TaskExp taskId="56024" addExp="10" />
+	<TaskExp taskId="26025" addExp="10" />
+	<TaskExp taskId="26026" addExp="10" />
+	<TaskExp taskId="26027" addExp="10" />
+	<TaskExp taskId="26118" addExp="15" />
+	<TaskExp taskId="26028" addExp="10" />
+	<TaskExp taskId="26029" addExp="10" />
+	<TaskExp taskId="26030" addExp="10" />
+	<TaskExp taskId="26031" addExp="10" />
+	<TaskExp taskId="26032" addExp="10" />
+	<TaskExp taskId="26033" addExp="10" />
+	<TaskExp taskId="26128" addExp="10" />
+	<TaskExp taskId="26130" addExp="10" />
+	<TaskExp taskId="26034" addExp="15" />
+	<TaskExp taskId="26035" addExp="10" />
+	<TaskExp taskId="26036" addExp="10" />
+	<TaskExp taskId="26037" addExp="10" />
+	<TaskExp taskId="26038" addExp="10" />
+	<TaskExp taskId="26039" addExp="10" />
+	<TaskExp taskId="26040" addExp="10" />
+	<TaskExp taskId="26041" addExp="10" />
+	<TaskExp taskId="26042" addExp="10" />
+	<TaskExp taskId="26043" addExp="10" />
+	<TaskExp taskId="26133" addExp="15" />
+	<TaskExp taskId="26044" addExp="10" />
+	<TaskExp taskId="26045" addExp="10" />
+	<TaskExp taskId="26046" addExp="10" />
+	<TaskExp taskId="26047" addExp="10" />
+	<TaskExp taskId="26048" addExp="10" />
+	<TaskExp taskId="16568" addExp="500" />
+	<TaskExp taskId="16569" addExp="1000" />
+	<TaskExp taskId="26049" addExp="10" />
+	<TaskExp taskId="26143" addExp="10" />
+	<TaskExp taskId="26145" addExp="10" />
+	<TaskExp taskId="26050" addExp="15" />
+	<TaskExp taskId="26051" addExp="10" />
+	<TaskExp taskId="26052" addExp="10" />
+	<TaskExp taskId="26053" addExp="10" />
+	<TaskExp taskId="26054" addExp="10" />
+	<TaskExp taskId="26055" addExp="10" />
+	<TaskExp taskId="26056" addExp="10" />
+	<TaskExp taskId="26057" addExp="10" />
+	<TaskExp taskId="26058" addExp="10" />
+	<TaskExp taskId="26059" addExp="10" />
+	<TaskExp taskId="26148" addExp="15" />
+	<TaskExp taskId="26060" addExp="10" />
+	<TaskExp taskId="26061" addExp="10" />
+	<TaskExp taskId="26062" addExp="10" />
+	<TaskExp taskId="26063" addExp="10" />
+	<TaskExp taskId="26064" addExp="10" />
+	<TaskExp taskId="26065" addExp="10" />
+	<TaskExp taskId="26158" addExp="10" />
+	<TaskExp taskId="26160" addExp="10" />
+	<TaskExp taskId="26066" addExp="15" />
+	<TaskExp taskId="26067" addExp="10" />
+	<TaskExp taskId="26068" addExp="10" />
+	<TaskExp taskId="26069" addExp="10" />
+	<TaskExp taskId="26070" addExp="10" />
+	<TaskExp taskId="26071" addExp="10" />
+	<TaskExp taskId="26072" addExp="10" />
+	<TaskExp taskId="26073" addExp="10" />
+	<TaskExp taskId="26074" addExp="10" />
+	<TaskExp taskId="26075" addExp="10" />
+	<TaskExp taskId="26163" addExp="15" />
+	<TaskExp taskId="26076" addExp="10" />
+	<TaskExp taskId="26077" addExp="10" />
+	<TaskExp taskId="26078" addExp="10" />
+	<TaskExp taskId="26079" addExp="10" />
+	<TaskExp taskId="26080" addExp="10" />
+	<TaskExp taskId="26081" addExp="10" />
+	<TaskExp taskId="26173" addExp="10" />
+	<TaskExp taskId="26175" addExp="10" />
+	<TaskExp taskId="26082" addExp="15" />
+	<TaskExp taskId="26083" addExp="10" />
+	<TaskExp taskId="26084" addExp="10" />
+	<TaskExp taskId="26085" addExp="10" />
+	<TaskExp taskId="26086" addExp="10" />
+	<TaskExp taskId="26087" addExp="10" />
+	<TaskExp taskId="26088" addExp="10" />
+	<TaskExp taskId="26089" addExp="10" />
+	<TaskExp taskId="26090" addExp="10" />
+	<TaskExp taskId="26091" addExp="10" />
+	<TaskExp taskId="26178" addExp="15" />
+	<TaskExp taskId="26092" addExp="10" />
+	<TaskExp taskId="26093" addExp="10" />
+	<TaskExp taskId="26094" addExp="10" />
+	<TaskExp taskId="26095" addExp="10" />
+	<TaskExp taskId="26096" addExp="10" />
+	<TaskExp taskId="26109" addExp="10" />
+	<TaskExp taskId="26110" addExp="10" />
+	<TaskExp taskId="26111" addExp="10" />
+	<TaskExp taskId="26124" addExp="10" />
+	<TaskExp taskId="26125" addExp="10" />
+	<TaskExp taskId="26126" addExp="10" />
+	<TaskExp taskId="26139" addExp="10" />
+	<TaskExp taskId="26140" addExp="10" />
+	<TaskExp taskId="26141" addExp="10" />
+	<TaskExp taskId="26154" addExp="10" />
+	<TaskExp taskId="26155" addExp="10" />
+	<TaskExp taskId="26156" addExp="10" />
+	<TaskExp taskId="26169" addExp="10" />
+	<TaskExp taskId="26170" addExp="10" />
+	<TaskExp taskId="26171" addExp="10" />
+	<TaskExp taskId="26184" addExp="10" />
+	<TaskExp taskId="26185" addExp="10" />
+	<TaskExp taskId="26186" addExp="10" />
+	<TaskExp taskId="26301" addExp="10" />
+	<TaskExp taskId="26368" addExp="10" />
+	<TaskExp taskId="26302" addExp="10" />
+	<TaskExp taskId="26422" addExp="10" />
+	<TaskExp taskId="26303" addExp="10" />
+	<TaskExp taskId="26423" addExp="10" />
+	<TaskExp taskId="26369" addExp="10" />
+	<TaskExp taskId="26304" addExp="10" />
+	<TaskExp taskId="26305" addExp="10" />
+	<TaskExp taskId="26306" addExp="10" />
+	<TaskExp taskId="26307" addExp="15" />
+	<TaskExp taskId="26308" addExp="15" />
+	<TaskExp taskId="26309" addExp="15" />
+	<TaskExp taskId="26370" addExp="15" />
+	<TaskExp taskId="26310" addExp="15" />
+	<TaskExp taskId="26311" addExp="20" />
+	<TaskExp taskId="26373" addExp="20" />
+	<TaskExp taskId="26374" addExp="20" />
+	<TaskExp taskId="26312" addExp="10" />
+	<TaskExp taskId="26377" addExp="10" />
+	<TaskExp taskId="26313" addExp="10" />
+	<TaskExp taskId="26314" addExp="10" />
+	<TaskExp taskId="26378" addExp="10" />
+	<TaskExp taskId="26315" addExp="10" />
+	<TaskExp taskId="26316" addExp="10" />
+	<TaskExp taskId="26317" addExp="10" />
+	<TaskExp taskId="26318" addExp="15" />
+	<TaskExp taskId="26319" addExp="15" />
+	<TaskExp taskId="26320" addExp="15" />
+	<TaskExp taskId="26379" addExp="15" />
+	<TaskExp taskId="26321" addExp="15" />
+	<TaskExp taskId="26322" addExp="20" />
+	<TaskExp taskId="26382" addExp="20" />
+	<TaskExp taskId="26383" addExp="20" />
+	<TaskExp taskId="26323" addExp="10" />
+	<TaskExp taskId="26386" addExp="10" />
+	<TaskExp taskId="26324" addExp="10" />
+	<TaskExp taskId="26325" addExp="10" />
+	<TaskExp taskId="26387" addExp="10" />
+	<TaskExp taskId="26326" addExp="10" />
+	<TaskExp taskId="26327" addExp="10" />
+	<TaskExp taskId="26328" addExp="10" />
+	<TaskExp taskId="26329" addExp="15" />
+	<TaskExp taskId="26330" addExp="15" />
+	<TaskExp taskId="26331" addExp="15" />
+	<TaskExp taskId="26388" addExp="15" />
+	<TaskExp taskId="26332" addExp="15" />
+	<TaskExp taskId="26333" addExp="20" />
+	<TaskExp taskId="26391" addExp="20" />
+	<TaskExp taskId="26392" addExp="20" />
+	<TaskExp taskId="26334" addExp="10" />
+	<TaskExp taskId="26395" addExp="10" />
+	<TaskExp taskId="26335" addExp="10" />
+	<TaskExp taskId="26336" addExp="10" />
+	<TaskExp taskId="26396" addExp="10" />
+	<TaskExp taskId="26337" addExp="10" />
+	<TaskExp taskId="26338" addExp="10" />
+	<TaskExp taskId="26339" addExp="10" />
+	<TaskExp taskId="26340" addExp="15" />
+	<TaskExp taskId="26341" addExp="15" />
+	<TaskExp taskId="26342" addExp="15" />
+	<TaskExp taskId="26397" addExp="15" />
+	<TaskExp taskId="26343" addExp="15" />
+	<TaskExp taskId="26344" addExp="20" />
+	<TaskExp taskId="26400" addExp="20" />
+	<TaskExp taskId="26401" addExp="20" />
+	<TaskExp taskId="26367" addExp="100" />
+	<TaskExp taskId="26345" addExp="10" />
+	<TaskExp taskId="26404" addExp="10" />
+	<TaskExp taskId="26346" addExp="10" />
+	<TaskExp taskId="26347" addExp="10" />
+	<TaskExp taskId="26405" addExp="10" />
+	<TaskExp taskId="26348" addExp="10" />
+	<TaskExp taskId="26349" addExp="10" />
+	<TaskExp taskId="26350" addExp="10" />
+	<TaskExp taskId="26351" addExp="15" />
+	<TaskExp taskId="26352" addExp="15" />
+	<TaskExp taskId="26353" addExp="15" />
+	<TaskExp taskId="26406" addExp="15" />
+	<TaskExp taskId="26354" addExp="15" />
+	<TaskExp taskId="26355" addExp="20" />
+	<TaskExp taskId="26409" addExp="20" />
+	<TaskExp taskId="26410" addExp="20" />
+	<TaskExp taskId="26356" addExp="10" />
+	<TaskExp taskId="26413" addExp="10" />
+	<TaskExp taskId="26357" addExp="10" />
+	<TaskExp taskId="26358" addExp="10" />
+	<TaskExp taskId="26414" addExp="10" />
+	<TaskExp taskId="26359" addExp="10" />
+	<TaskExp taskId="26360" addExp="10" />
+	<TaskExp taskId="26361" addExp="10" />
+	<TaskExp taskId="26362" addExp="15" />
+	<TaskExp taskId="26363" addExp="15" />
+	<TaskExp taskId="26364" addExp="15" />
+	<TaskExp taskId="26415" addExp="15" />
+	<TaskExp taskId="26365" addExp="15" />
+	<TaskExp taskId="26366" addExp="20" />
+	<TaskExp taskId="26418" addExp="20" />
+	<TaskExp taskId="26419" addExp="20" />
+	<TaskExp taskId="26371" addExp="20" />
+	<TaskExp taskId="26372" addExp="30" />
+	<TaskExp taskId="26375" addExp="20" />
+	<TaskExp taskId="26376" addExp="20" />
+	<TaskExp taskId="26380" addExp="20" />
+	<TaskExp taskId="26381" addExp="30" />
+	<TaskExp taskId="26384" addExp="20" />
+	<TaskExp taskId="26385" addExp="20" />
+	<TaskExp taskId="26389" addExp="20" />
+	<TaskExp taskId="26390" addExp="30" />
+	<TaskExp taskId="26393" addExp="20" />
+	<TaskExp taskId="26394" addExp="20" />
+	<TaskExp taskId="26398" addExp="20" />
+	<TaskExp taskId="26399" addExp="30" />
+	<TaskExp taskId="26402" addExp="20" />
+	<TaskExp taskId="26403" addExp="20" />
+	<TaskExp taskId="26407" addExp="20" />
+	<TaskExp taskId="26408" addExp="30" />
+	<TaskExp taskId="26411" addExp="20" />
+	<TaskExp taskId="26412" addExp="20" />
+	<TaskExp taskId="26416" addExp="20" />
+	<TaskExp taskId="26417" addExp="30" />
+	<TaskExp taskId="26420" addExp="20" />
+	<TaskExp taskId="26421" addExp="20" />
+	<TaskExp taskId="26567" addExp="10" />
+	<TaskExp taskId="26568" addExp="10" />
+	<TaskExp taskId="26627" addExp="10" />
+	<TaskExp taskId="26628" addExp="10" />
+	<TaskExp taskId="26501" addExp="10" />
+	<TaskExp taskId="26569" addExp="10" />
+	<TaskExp taskId="26502" addExp="10" />
+	<TaskExp taskId="26503" addExp="10" />
+	<TaskExp taskId="26504" addExp="10" />
+	<TaskExp taskId="26505" addExp="15" />
+	<TaskExp taskId="26506" addExp="15" />
+	<TaskExp taskId="26507" addExp="15" />
+	<TaskExp taskId="26508" addExp="15" />
+	<TaskExp taskId="26570" addExp="15" />
+	<TaskExp taskId="26571" addExp="20" />
+	<TaskExp taskId="26573" addExp="25" />
+	<TaskExp taskId="26575" addExp="20" />
+	<TaskExp taskId="26577" addExp="10" />
+	<TaskExp taskId="26578" addExp="10" />
+	<TaskExp taskId="26512" addExp="10" />
+	<TaskExp taskId="26579" addExp="10" />
+	<TaskExp taskId="26513" addExp="10" />
+	<TaskExp taskId="26514" addExp="10" />
+	<TaskExp taskId="26515" addExp="10" />
+	<TaskExp taskId="26516" addExp="15" />
+	<TaskExp taskId="26517" addExp="15" />
+	<TaskExp taskId="26518" addExp="15" />
+	<TaskExp taskId="26519" addExp="15" />
+	<TaskExp taskId="26580" addExp="15" />
+	<TaskExp taskId="26581" addExp="20" />
+	<TaskExp taskId="26583" addExp="25" />
+	<TaskExp taskId="26585" addExp="20" />
+	<TaskExp taskId="26587" addExp="10" />
+	<TaskExp taskId="26588" addExp="10" />
+	<TaskExp taskId="26523" addExp="10" />
+	<TaskExp taskId="26589" addExp="10" />
+	<TaskExp taskId="26524" addExp="10" />
+	<TaskExp taskId="26525" addExp="10" />
+	<TaskExp taskId="26526" addExp="10" />
+	<TaskExp taskId="26527" addExp="15" />
+	<TaskExp taskId="26528" addExp="15" />
+	<TaskExp taskId="26529" addExp="15" />
+	<TaskExp taskId="26530" addExp="15" />
+	<TaskExp taskId="26590" addExp="15" />
+	<TaskExp taskId="26591" addExp="20" />
+	<TaskExp taskId="26593" addExp="25" />
+	<TaskExp taskId="26595" addExp="20" />
+	<TaskExp taskId="26509" addExp="15" />
+	<TaskExp taskId="26510" addExp="20" />
+	<TaskExp taskId="26511" addExp="30" />
+	<TaskExp taskId="26597" addExp="10" />
+	<TaskExp taskId="26598" addExp="10" />
+	<TaskExp taskId="26534" addExp="10" />
+	<TaskExp taskId="26599" addExp="10" />
+	<TaskExp taskId="26535" addExp="10" />
+	<TaskExp taskId="26536" addExp="10" />
+	<TaskExp taskId="26537" addExp="10" />
+	<TaskExp taskId="26538" addExp="15" />
+	<TaskExp taskId="26539" addExp="15" />
+	<TaskExp taskId="26540" addExp="15" />
+	<TaskExp taskId="26541" addExp="15" />
+	<TaskExp taskId="26600" addExp="15" />
+	<TaskExp taskId="26601" addExp="20" />
+	<TaskExp taskId="26603" addExp="25" />
+	<TaskExp taskId="26605" addExp="20" />
+	<TaskExp taskId="26607" addExp="10" />
+	<TaskExp taskId="26608" addExp="10" />
+	<TaskExp taskId="26545" addExp="10" />
+	<TaskExp taskId="26609" addExp="10" />
+	<TaskExp taskId="26546" addExp="10" />
+	<TaskExp taskId="26547" addExp="10" />
+	<TaskExp taskId="26548" addExp="10" />
+	<TaskExp taskId="26549" addExp="15" />
+	<TaskExp taskId="26550" addExp="15" />
+	<TaskExp taskId="26551" addExp="15" />
+	<TaskExp taskId="26552" addExp="15" />
+	<TaskExp taskId="26610" addExp="15" />
+	<TaskExp taskId="26611" addExp="20" />
+	<TaskExp taskId="26613" addExp="25" />
+	<TaskExp taskId="26615" addExp="20" />
+	<TaskExp taskId="26520" addExp="15" />
+	<TaskExp taskId="26521" addExp="20" />
+	<TaskExp taskId="26522" addExp="30" />
+	<TaskExp taskId="26617" addExp="10" />
+	<TaskExp taskId="26618" addExp="10" />
+	<TaskExp taskId="26556" addExp="10" />
+	<TaskExp taskId="26619" addExp="10" />
+	<TaskExp taskId="26557" addExp="10" />
+	<TaskExp taskId="26558" addExp="10" />
+	<TaskExp taskId="26559" addExp="10" />
+	<TaskExp taskId="26560" addExp="15" />
+	<TaskExp taskId="26561" addExp="15" />
+	<TaskExp taskId="26562" addExp="15" />
+	<TaskExp taskId="26563" addExp="15" />
+	<TaskExp taskId="26620" addExp="15" />
+	<TaskExp taskId="26621" addExp="20" />
+	<TaskExp taskId="26622" addExp="20" />
+	<TaskExp taskId="26625" addExp="20" />
+	<TaskExp taskId="26531" addExp="15" />
+	<TaskExp taskId="26532" addExp="20" />
+	<TaskExp taskId="26533" addExp="30" />
+	<TaskExp taskId="26542" addExp="15" />
+	<TaskExp taskId="26543" addExp="20" />
+	<TaskExp taskId="26544" addExp="30" />
+	<TaskExp taskId="26553" addExp="15" />
+	<TaskExp taskId="26554" addExp="20" />
+	<TaskExp taskId="26555" addExp="30" />
+	<TaskExp taskId="26564" addExp="15" />
+	<TaskExp taskId="26565" addExp="20" />
+	<TaskExp taskId="26566" addExp="30" />
+	<TaskExp taskId="26576" addExp="20" />
+	<TaskExp taskId="26586" addExp="20" />
+	<TaskExp taskId="26596" addExp="20" />
+	<TaskExp taskId="26606" addExp="20" />
+	<TaskExp taskId="26616" addExp="20" />
+	<TaskExp taskId="26626" addExp="20" />
+	<TaskExp taskId="26572" addExp="20" />
+	<TaskExp taskId="26574" addExp="20" />
+	<TaskExp taskId="26582" addExp="20" />
+	<TaskExp taskId="26584" addExp="20" />
+	<TaskExp taskId="26592" addExp="20" />
+	<TaskExp taskId="26594" addExp="20" />
+	<TaskExp taskId="26602" addExp="20" />
+	<TaskExp taskId="26604" addExp="20" />
+	<TaskExp taskId="26612" addExp="20" />
+	<TaskExp taskId="26614" addExp="20" />
+	<TaskExp taskId="26623" addExp="20" />
+	<TaskExp taskId="26624" addExp="20" />
+	<TaskExp taskId="14836" addExp="25" />
+	<TaskExp taskId="14837" addExp="25" />
+	<TaskExp taskId="14839" addExp="25" />
+	<TaskExp taskId="26701" addExp="30" />
+	<TaskExp taskId="26702" addExp="30" />
+	<TaskExp taskId="14838" addExp="30" />
+	<TaskExp taskId="14842" addExp="30" />
+	<TaskExp taskId="26703" addExp="30" />
+	<TaskExp taskId="26704" addExp="50" />
+	<TaskExp taskId="14840" addExp="50" />
+	<TaskExp taskId="14841" addExp="50" />
+	<TaskExp taskId="26705" addExp="50" />
+	<TaskExp taskId="17202" addExp="60" />
+	<TaskExp taskId="14843" addExp="30" />
+	<TaskExp taskId="26706" addExp="50" />
+	<TaskExp taskId="26707" addExp="70" />
+	<TaskExp taskId="26708" addExp="70" />
+	<TaskExp taskId="26709" addExp="70" />
+	<TaskExp taskId="26710" addExp="80" />
+	<TaskExp taskId="26711" addExp="80" />
+	<TaskExp taskId="26712" addExp="80" />
+	<TaskExp taskId="26713" addExp="80" />
+	<TaskExp taskId="16573" addExp="15" />
+	<TaskExp taskId="16576" addExp="15" />
+	<TaskExp taskId="26801" addExp="20" />
+	<TaskExp taskId="16577" addExp="30" />
+	<TaskExp taskId="16578" addExp="30" />
+	<TaskExp taskId="16574" addExp="30" />
+	<TaskExp taskId="16575" addExp="30" />
+	<TaskExp taskId="17119" addExp="30" />
+	<TaskExp taskId="17120" addExp="40" />
+	<TaskExp taskId="17121" addExp="40" />
+	<TaskExp taskId="26802" addExp="40" />
+	<TaskExp taskId="20935" addExp="40" />
+	<TaskExp taskId="26803" addExp="40" />
+	<TaskExp taskId="20936" addExp="50" />
+	<TaskExp taskId="26804" addExp="50" />
+	<TaskExp taskId="20937" addExp="50" />
+	<TaskExp taskId="20938" addExp="80" />
+	<TaskExp taskId="26805" addExp="80" />
+	<TaskExp taskId="20939" addExp="100" />
+	<TaskExp taskId="16572" addExp="800" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			chapter	-	章节
+支持拓展
+			needExp	-	升级至当前等级需要总经验
+			reward	-	获得奖励
+道具id，道具数量
+			experienceReward	-	武将体验卡奖励
+			chapterName	-	章节名称
+				-	
+				-	
+				-	
+				-
+		-->
+	<LevelReward chapter="1" needExp="1000" reward="7913001,1" experienceReward="9054609,1" />
+	<LevelReward chapter="2" needExp="2000" reward="7914001,1" experienceReward="9056009,1" />
+	<LevelReward chapter="3" needExp="3000" reward="7915001,1" experienceReward="9056109,1" />
+	<LevelReward chapter="4" needExp="4000" reward="7916001,1" experienceReward="9056209,1" />
+	<LevelReward chapter="5" needExp="5000" reward="7917001,1" experienceReward="9056309,1" />
+	<LevelReward chapter="6" needExp="6000" reward="7918001,1" experienceReward="9056409,1" />
+	<LevelReward chapter="7" needExp="7200" reward="7919001,1" experienceReward="9056509,1" />
+	<LevelReward chapter="8" needExp="8400" reward="7920001,1" experienceReward="9056609,1" />
+	<LevelReward chapter="9" needExp="9700" reward="7921001,1" experienceReward="9056709,1" />
+	<LevelReward chapter="10" needExp="11100" reward="7923001,1" experienceReward="9056809,1" />
+	<LevelReward chapter="11" needExp="12500" reward="7922001,1" experienceReward="9056909,1" />
+	<LevelReward chapter="12" needExp="13900" reward="738609,1" />
+	<LevelReward chapter="13" needExp="15400" reward="644209,1" />
+	<LevelReward chapter="14" needExp="16900" reward="6068909,1" />
+	<LevelReward chapter="15" needExp="18000" reward="6095509,1" />
+	<LevelReward chapter="16" needExp="19000" reward="6090709,1" />
+	<LevelReward chapter="17" needExp="20000" reward="6068809,1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			type	-	类型：1=等级；2=武将；3=皮肤；4=山河图；5=排位赛；6=斗地主；7=公会；8=三国秀
+			unlockLevel	-	解锁等级
+			unlockMaxLevel	-	解锁显示最大等级
+			name	-	显示名称
+			desc	-	显示描述
+				-
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			taskid	-	任务ID
+				-
+		-->
+	<RoguelikeTask taskid="26097" />
+	<RoguelikeTask taskid="26099" />
+	<RoguelikeTask taskid="26101" />
+	<RoguelikeTask taskid="26102" />
+	<RoguelikeTask taskid="26104" />
+	<RoguelikeTask taskid="26105" />
+	<RoguelikeTask taskid="26112" />
+	<RoguelikeTask taskid="26114" />
+	<RoguelikeTask taskid="26116" />
+	<RoguelikeTask taskid="26117" />
+	<RoguelikeTask taskid="26119" />
+	<RoguelikeTask taskid="26120" />
+	<RoguelikeTask taskid="26127" />
+	<RoguelikeTask taskid="26129" />
+	<RoguelikeTask taskid="26131" />
+	<RoguelikeTask taskid="26132" />
+	<RoguelikeTask taskid="26134" />
+	<RoguelikeTask taskid="26135" />
+	<RoguelikeTask taskid="26142" />
+	<RoguelikeTask taskid="26144" />
+	<RoguelikeTask taskid="26146" />
+	<RoguelikeTask taskid="26147" />
+	<RoguelikeTask taskid="26149" />
+	<RoguelikeTask taskid="26150" />
+	<RoguelikeTask taskid="26157" />
+	<RoguelikeTask taskid="26159" />
+	<RoguelikeTask taskid="26161" />
+	<RoguelikeTask taskid="26162" />
+	<RoguelikeTask taskid="26164" />
+	<RoguelikeTask taskid="26165" />
+	<RoguelikeTask taskid="26172" />
+	<RoguelikeTask taskid="26174" />
+	<RoguelikeTask taskid="26176" />
+	<RoguelikeTask taskid="26177" />
+	<RoguelikeTask taskid="26179" />
+	<RoguelikeTask taskid="26180" />
+	<RoguelikeTask taskid="26106" />
+	<RoguelikeTask taskid="26107" />
+	<RoguelikeTask taskid="26108" />
+	<RoguelikeTask taskid="26121" />
+	<RoguelikeTask taskid="26122" />
+	<RoguelikeTask taskid="26123" />
+	<RoguelikeTask taskid="26136" />
+	<RoguelikeTask taskid="26137" />
+	<RoguelikeTask taskid="26138" />
+	<RoguelikeTask taskid="26151" />
+	<RoguelikeTask taskid="26152" />
+	<RoguelikeTask taskid="26153" />
+	<RoguelikeTask taskid="26166" />
+	<RoguelikeTask taskid="26167" />
+	<RoguelikeTask taskid="26168" />
+	<RoguelikeTask taskid="26181" />
+	<RoguelikeTask taskid="26182" />
+	<RoguelikeTask taskid="26183" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			generalId	-	武将id
+			type	-	强将类型
+1=一档，2=二档
+			sort	-	排序优先级
+大的在前
+			getWay	-	获取方式
+0=默认方式，1=武将试炼，2=成长之路，3=首充，4=主线章节，5=抽武将，6=任务，7=灵宝经皓，8=夺宝碎片，9=玉玺
+			parameter	-	参数
+成长之路=需要进度
+			isFree	-	是否免费
+1=免费，0=不免费
+			tab	-	所属页签
+			needLevel	-	展示等级
+≥该等级显示出来
+				-
+		-->
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			round	-	活动周期
+			everydayBuyNum	-	每日宴请次数
+			buyMaxNum	-	宴请次数上限
+			buyTime	-	宴请按钮出现时间
+			buyItemId	-	宴请购买亲密度道具id
+			dayQuesItemId	-	日常任务亲密度道具id
+			weekQuestItemId	-	周常任务亲密度道具id
+			dayQuestId	-	日常任务id
+			dayQuestDesc	-	日常任务简述
+			weekQuestId	-	周常任务id
+			weekQuestDesc	-	周常任务简述
+			tabOrder	-	酒馆页签顺序
+1=在前面，2=在后面
+			textShow	-	文本出现场景
+1=仅活动界面
+2=获得就提示
+			duration	-	活动时间
+			minlevel	-	开启等级
+			maxlevel	-	关闭等级
+			des	-	玩法说明文字
+			des_m	-	移动端玩法说明文字
+		-->
+	<PubConfig round="1" everydayBuyNum="1" buyMaxNum="30" buyTime="20240903T060000" buyItemId="951801" dayQuesItemId="951701" weekQuestItemId="952401" dayQuestId="160314" weekQuestId="160315" duration="20240711T100000,20250531T235959" minlevel="21" maxlevel="200" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			generalId	-	武将id
+0=神秘武将
+			needExp	-	需要进度
+			generalExpCard	-	武将体验卡
+			generalItem	-	武将道具
+			round	-	活动周期
+			sort	-	优先级，未招募时默认选择按优先级来
+				-
+		-->
+	<PubGeneral generalId="610" needExp="2500" generalExpCard="9061009" generalItem="9061001" round="1" />
+	<PubGeneral generalId="627" needExp="2000" generalExpCard="9062709" generalItem="9062701" round="1" />
+	<PubGeneral generalId="229" needExp="6000" generalExpCard="922909" generalItem="922901" round="1" />
+	<PubGeneral generalId="0" round="1" />
+	<PubGeneral generalId="0" round="1" />
+	<PubGeneral generalId="0" round="1" />
+</root>

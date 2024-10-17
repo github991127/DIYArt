@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MLTargetMap>
+    <mlaction id="0" target1="-1" target2="-1" />
+    <mlaction id="1" target1="0" target2="-1" />
+    <mlaction id="2" target1="1" target2="-1" />
+    <mlaction id="3" target1="2" target2="-1" />
+    <mlaction id="4" target1="3" target2="-1" />
+    <mlaction id="5" target1="0" target2="1" />
+    <mlaction id="6" target1="0" target2="2" />
+    <mlaction id="7" target1="0" target2="3" />
+    <mlaction id="8" target1="1" target2="0" />
+    <mlaction id="9" target1="1" target2="2" />
+    <mlaction id="10" target1="1" target2="3" />
+    <mlaction id="11" target1="2" target2="0" />
+    <mlaction id="12" target1="2" target2="1" />
+    <mlaction id="13" target1="2" target2="3" />
+    <mlaction id="14" target1="3" target2="0" />
+    <mlaction id="15" target1="3" target2="1" />
+    <mlaction id="16" target1="3" target2="2" />
+</MLTargetMap>

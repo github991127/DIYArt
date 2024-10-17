@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pauses>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			type	-	类型
+			id	-	类型id
+			parame	-	参数
+			time	-	等待时间（ms）
+			playtype	-	播放类型
+				-	
+				-
+		-->
+	<pause type="1" id="1" time="1" />
+	<pause type="1" id="2" parame="46" time="1" />
+	<pause type="1" id="2" parame="147" time="1" />
+	<pause type="2" id="6" parame="1" time="1200" />
+	<pause type="2" id="1" parame="2" time="1500" />
+	<pause type="2" id="1" parame="3" time="1500" />
+	<pause type="2" id="1" parame="4" time="1500" />
+	<pause type="2" id="1" parame="5" time="2000" />
+	<pause type="2" id="1" parame="6" time="2000" />
+	<pause type="2" id="1" parame="7" time="2000" />
+	<pause type="2" id="2" time="200" />
+	<pause type="2" id="5" time="200" />
+	<pause type="3" id="9" parame="1" time="1" />
+	<pause type="3" id="10" parame="1" time="1" />
+	<pause type="1" id="2" time="1500" />
+	<pause type="3" id="5" parame="2" time="1" />
+	<pause type="3" id="6" parame="1" time="500" />
+	<pause type="3" id="7" parame="5" time="1" />
+	<pause type="3" id="8" parame="2" time="1" />
+	<pause type="3" id="12" parame="1" time="500" />
+	<pause type="3" id="13" parame="1" time="500" />
+	<pause type="3" id="14" parame="2" time="400" />
+	<pause type="3" id="85" parame="1" time="500" />
+	<pause type="3" id="2020" parame="2" time="500" />
+	<pause type="3" id="2021" parame="2" time="400" />
+	<pause type="3" id="2022" parame="2" time="500" />
+	<pause type="3" id="30" parame="1" time="1" />
+	<pause type="3" id="30" parame="2" time="2500" />
+	<pause type="3" id="86" parame="1" time="1" />
+	<pause type="3" id="86" parame="2" time="1" />
+	<pause type="3" id="28" parame="1" time="1" />
+	<pause type="3" id="28" parame="2" time="1" />
+	<pause type="3" id="23" parame="1" time="1" />
+	<pause type="3" id="25" parame="1" time="1" />
+	<pause type="3" id="201" parame="1" time="1" />
+	<pause type="3" id="24" parame="1" time="1" />
+	<pause type="3" id="26" parame="1" time="1" />
+	<pause type="3" id="27" parame="1" time="1" />
+	<pause type="3" id="29" parame="1" time="1" />
+	<pause type="3" id="16" parame="1" time="1" />
+	<pause type="3" id="16" parame="2" time="400" />
+	<pause type="3" id="200" parame="1" time="1" />
+	<pause type="3" id="87" parame="1" time="1" />
+	<pause type="3" id="88" parame="1" time="1" />
+	<pause type="3" id="89" parame="1" time="1" />
+	<pause type="3" id="700" parame="1" time="1" />
+	<pause type="3" id="2050" parame="1" time="1" />
+	<pause type="3" id="2051" parame="1" time="1" />
+	<pause type="3" id="2054" parame="1" time="1" />
+	<pause type="3" id="17" parame="1" time="1" />
+	<pause type="3" id="21" parame="1" time="1" />
+	<pause type="3" id="19" parame="1" time="1" />
+	<pause type="3" id="22" parame="1" time="1" />
+	<pause type="3" id="18" parame="1" time="1" />
+	<pause type="3" id="20" parame="1" time="1" />
+	<pause type="3" id="90" parame="1" time="1" />
+	<pause type="3" id="84" parame="4" time="1500" />
+	<pause type="3" id="15" parame="4" time="1500" />
+	<pause type="3" id="11" parame="4" time="1500" />
+	<pause type="4" id="151" time="1500" />
+	<pause type="3" id="3519" parame="10" time="500" />
+	<pause type="3" id="3520" parame="11" time="500" />
+	<pause type="3" id="3521" parame="12" time="600" />
+	<pause type="3" id="3579" parame="13" time="1500" />
+</pauses>

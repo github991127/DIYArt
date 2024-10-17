@@ -1,0 +1,2003 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	参数id（期数，唯一递增，不可重复）
+			tab	-	所属页签（关联h5_bar)
+			sort	-	排序-数字越小排序越前
+			name	-	名字
+			itemid	-	开启消耗的道具id
+			itemPack	-	道具不足时购买礼包
+			purchasegoods	-	获取礼包id，用；分隔
+			background	-	背景图
+			duration	-	开关 时间（不配置则一直显示)
+		-->
+	<Common id="102" itemid="11486501" duration="20230429T000000,20230506T235959">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			Id	-	奖励id(同一期不可重复）
+			counts	-	获得奖励消耗的道具数量
+			rewardstype	-	奖励类型（1=全部获得，2=自选）
+			goodsid1	-	物品奖励：（道具id，数量），配置第二个物品为重复返还
+			goodsid2	-	物品奖励：（道具id，数量），配置第二个物品为重复返还
+			goodsid3	-	物品奖励：（道具id，数量），配置第二个物品为重复返还
+			goodsid4	-	物品奖励：（道具id，数量），配置第二个物品为重复返还
+			goodsid5	-	物品奖励：（道具id，数量），配置第二个物品为重复返还
+			itemshow1	-	第一个物品外发光（1=弱光，2=强光，不配=不发光），自选全部发光
+			-->
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11486501,2" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11486501,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11486501,6" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11486501,12" />
+		<rewards Id="5" counts="200" rewardstype="2" goodsid1="6142309,1;21223901,1" goodsid2="6125009,1;21223901,1" goodsid3="6135809,1;21223901,1" goodsid4="6076409,1;21223901,1" goodsid5="6087309,1;21223901,1" />
+	</Common>
+	<Common id="103" itemid="11486601" duration="20230429T000000,20230506T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11496901,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11496901,3" />
+		<rewards Id="3" counts="50" rewardstype="2" goodsid1="6089009,1;21262901,4" goodsid2="6091809,1;21262901,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11496901,8" />
+		<rewards Id="5" counts="100" rewardstype="1" goodsid1="6095709,1;21262901,6" />
+		<rewards Id="6" counts="160" rewardstype="1" goodsid1="11496901,20" />
+		<rewards Id="7" counts="200" rewardstype="2" goodsid1="6091109,1;21262901,10" goodsid2="6091209,1;21262901,10" />
+		<rewards Id="8" counts="280" rewardstype="1" goodsid1="913001,1;21262901,30" />
+	</Common>
+	<Common id="104" itemid="11486701" duration="20230429T000000,20230506T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11486701,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11486701,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11486701,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11486701,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11486701,12" />
+		<rewards Id="6" counts="160" rewardstype="2" goodsid1="6108609,1;21262901,16" goodsid2="6108509,1;21262901,16" />
+	</Common>
+	<Common id="105" itemid="11487801" duration="20230507T000000,20230512T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11487801,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11487801,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11487801,7" />
+		<rewards Id="4" counts="100" rewardstype="1" goodsid1="9048301,1;21267401,10" />
+	</Common>
+	<Common id="106" itemid="11487901" duration="20230507T000000,20230512T235959">
+		<rewards Id="1" counts="20" rewardstype="2" goodsid1="6116909,1;21252001,2" goodsid2="6124409,1;21252001,2" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11487901,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11487901,8" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="9047201,1;21252001,12" goodsid2="9047301,1;21252001,12" />
+	</Common>
+	<Common id="107" itemid="11488001" duration="20230507T000000,20230512T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11496301,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11496301,3" />
+		<rewards Id="3" counts="40" rewardstype="2" goodsid1=" 6117309,1;21252001,2" goodsid2="11496301,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11496301,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11496301,12" />
+		<rewards Id="6" counts="160" rewardstype="1" goodsid1="9046401,1;21252001,8" />
+	</Common>
+	<Common id="108" itemid="11488101" duration="20230507T000000,20230512T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="6123609,1;21252001,2" />
+		<rewards Id="2" counts="50" rewardstype="1" goodsid1="11488101,5" />
+		<rewards Id="3" counts="100" rewardstype="2" goodsid1="9047401,1;21252001,10" goodsid2="6090909,1;21252001,10" goodsid3="11488101,10" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="11488101,20" />
+		<rewards Id="5" counts="350" rewardstype="1" goodsid1="6080609,1;21252001,40" />
+	</Common>
+	<Common id="109" itemid="11488401" duration="20230513T000000,20230519T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11488401,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11488401,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11488401,7" />
+		<rewards Id="4" counts="110" rewardstype="1" goodsid1="11488401,11" />
+		<rewards Id="5" counts="150" rewardstype="1" goodsid1="9053501,1;21252701,10" />
+	</Common>
+	<Common id="110" itemid="11488501" duration="20230513T000000,20230519T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11488501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11488501,6" />
+		<rewards Id="3" counts="80" rewardstype="2" goodsid1="6100009,1;21252701,7" goodsid2="6105409,1;21252701,7" goodsid3="6089209,1;21252701,7" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="6091409,1;21252701,12" goodsid2="11488501,16" />
+		<rewards Id="5" counts="200" rewardstype="2" goodsid1="6116509,1;21252701,20" goodsid2="11488501,25" />
+		<rewards Id="6" counts="300" rewardstype="1" goodsid1="11488501,40" />
+		<rewards Id="7" counts="400" rewardstype="1" goodsid1="6057009,1;21252701,40" />
+	</Common>
+	<Common id="111" itemid="11488601" duration="20230513T000000,20230519T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11488601,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11488601,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="6100209,1;21252701,7" />
+		<rewards Id="4" counts="100" rewardstype="1" goodsid1="6123909,1;21252701,10" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11488601,12" />
+		<rewards Id="6" counts="150" rewardstype="2" goodsid1="6123809,1;21252701,16" goodsid2="6101109,1;21252701,16" />
+	</Common>
+	<Common id="112" itemid="11488701" duration="20230513T000000,20230519T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11488701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11488701,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11488701,7" />
+		<rewards Id="4" counts="110" rewardstype="1" goodsid1="11488701,11" />
+		<rewards Id="5" counts="160" rewardstype="2" goodsid1="6143009,1;21252701,16" goodsid2="6143109,1;21252701,16" />
+	</Common>
+	<Common id="113" itemid="11476101" duration="20240127T000000,20240301T235959">
+		<rewards Id="1" counts="20" rewardstype="2" goodsid1="9049817,1" goodsid2="11476101,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11476101,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11476101,7" />
+		<rewards Id="4" counts="100" rewardstype="1" goodsid1="11476101,10" />
+		<rewards Id="5" counts="160" rewardstype="2" goodsid1="9049801,1;1142901,32" goodsid2="6145609,1;1142901,24" />
+	</Common>
+	<Common id="114" itemid="11489801" duration="20230520T000000,20230526T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11489801,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="9051517,1" goodsid2="11489801,5" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11489801,10" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11489801,15" />
+		<rewards Id="5" counts="260" rewardstype="1" goodsid1="9051501,1;21254101,20" />
+	</Common>
+	<Common id="115" itemid="11489301" duration="20230520T000000,20230526T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11489301,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="935707,1" goodsid2="11489301,5" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11489301,10" />
+		<rewards Id="4" counts="160" rewardstype="1" goodsid1="11489301,15" />
+		<rewards Id="5" counts="300" rewardstype="1" goodsid1="935701,1;21254101,30;" />
+	</Common>
+	<Common id="116" itemid="11489401" duration="20230520T000000,20230526T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11489401,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11489401,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11489401,8" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="11489401,20" />
+		<rewards Id="5" counts="360" rewardstype="2" goodsid1="6067109,1;21254101,50" goodsid2="6067209,1;21254101,50" />
+	</Common>
+	<Common id="117" itemid="11489501" duration="20230520T000000,20230526T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11489501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11489501,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11489501,8" />
+		<rewards Id="4" counts="140" rewardstype="2" goodsid1="6105209,1;21254101,16" goodsid2="6105309,1;21254101,16" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11489501,24" />
+		<rewards Id="6" counts="360" rewardstype="2" goodsid1="6067309,1;21254101,80" goodsid2="6067409,1;21254101,80" />
+	</Common>
+	<Common id="118" itemid="11489601" duration="20230520T000000,20230526T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11500701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11500701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11500701,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6096609,1;21254101,12" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11500701,20" />
+		<rewards Id="6" counts="280" rewardstype="2" goodsid1="9041101,1;21254101,16" goodsid2="6101509,1;21254101,16" goodsid3="6076309,1;21254101,20" />
+		<rewards Id="7" counts="350" rewardstype="1" goodsid1="11500701,35" />
+		<rewards Id="8" counts="450" rewardstype="2" goodsid1="6076609,1;21254101,50" goodsid2="6076509,1;21254101,50" />
+	</Common>
+	<Common id="119" itemid="11489701" duration="20230520T000000,20230526T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11489701,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11489701,3" />
+		<rewards Id="3" counts="50" rewardstype="1" goodsid1="6085509,1;21254101,5" />
+		<rewards Id="4" counts="100" rewardstype="1" goodsid1="11489701,10" />
+		<rewards Id="5" counts="180" rewardstype="2" goodsid1="6088509,1;21254101,20" goodsid2="6088609,1;21254101,20" goodsid3="6098809,1;21254101,20" />
+	</Common>
+	<Common id="120" itemid="11490601" duration="20230527T000000,20230602T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11490601,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="9049911,7" goodsid2="11490601,4" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11490601,7" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11490601,12" />
+		<rewards Id="5" counts="250" rewardstype="1" goodsid1="6141809,1;21223901,1" />
+		<rewards Id="6" counts="400" rewardstype="1" goodsid1="11490601,40" />
+		<rewards Id="7" counts="600" rewardstype="1" goodsid1="9049901,1;21223901,3" />
+	</Common>
+	<Common id="121" itemid="11490701" duration="20230527T000000,20230602T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11490701,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="6124009,1;21255001,4" goodsid2="9043611,7" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11490701,7" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11490701,15" />
+		<rewards Id="5" counts="250" rewardstype="1" goodsid1="11490701,25" />
+		<rewards Id="6" counts="400" rewardstype="1" goodsid1="11490701,40" />
+		<rewards Id="7" counts="600" rewardstype="1" goodsid1="9043601,1;21223901,3" />
+	</Common>
+	<Common id="122" itemid="11490401" duration="20230527T000000,20230602T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11490401,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11490401,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="6100809,1;21255001,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11490401,8" />
+		<rewards Id="5" counts="150" rewardstype="1" goodsid1="6100709,1;21255001,16" />
+	</Common>
+	<Common id="123" itemid="11490501" duration="20230527T000000,20230602T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11490501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11490501,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11490501,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6109009,1;21255001,12" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6103609,1;21255001,15" goodsid2="6103509,1;21255001,15" />
+	</Common>
+	<Common id="124" itemid="11491101" duration="20230603T000000,20230609T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="6110709,1;21270401,2" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="9042701,1;21255201,4" />
+		<rewards Id="3" counts="100" rewardstype="2" goodsid1="9042901,1;21255201,10" goodsid2="6108309,1;21255201,10" />
+	</Common>
+	<Common id="125" itemid="11491201" duration="20230603T000000,20230609T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11491201,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11491201,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11491201,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11491201,8" />
+		<rewards Id="5" counts="120" rewardstype="2" goodsid1="6095609,1;21255201,12" goodsid2="6104509,1;21255201,14" />
+		<rewards Id="6" counts="240" rewardstype="1" goodsid1="6103009,1;21255201,16" />
+	</Common>
+	<Common id="126" itemid="11491301" duration="20230603T000000,20230609T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11491301,4" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11491301,6" />
+		<rewards Id="3" counts="60" rewardstype="1" goodsid1="9047701,1;21255201,6" />
+	</Common>
+	<Common id="127" itemid="11491401" duration="20230603T000000,20230609T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11491401,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="9049511,7" goodsid2="6136709,1;21255201,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11491401,7" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11491401,15" />
+		<rewards Id="5" counts="250" rewardstype="1" goodsid1="6143409,1;21223901,1" />
+		<rewards Id="6" counts="380" rewardstype="1" goodsid1="11491401,38" />
+		<rewards Id="7" counts="550" rewardstype="1" goodsid1="9049501,1;21223901,3" />
+	</Common>
+	<Common id="129" itemid="11491901" duration="20230610T000000,20230616T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11502501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11491901,4" />
+		<rewards Id="3" counts="80" rewardstype="2" goodsid1="11491901,8" goodsid2="6103309,1;21256401,7" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11491901,12" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6100909,1;21256401,20" goodsid2="6116509,1;21256401,20" />
+		<rewards Id="6" counts="200" rewardstype="1" goodsid1="913701,1;21256401,28" />
+	</Common>
+	<Common id="130" itemid="11492001" duration="20230610T000001,20230616T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11492001,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11492001,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11492001,10" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="9042201,1;21256401,12" goodsid2="9042101,1;21256401,12" />
+		<rewards Id="5" counts="160" rewardstype="1" goodsid1="11492001,25" />
+		<rewards Id="6" counts="280" rewardstype="1" goodsid1="9042001,1;21256401,16" />
+	</Common>
+	<Common id="131" itemid="11492101" duration="20230610T000001,20230616T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11492101,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11492101,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11492101,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6096409,1;21256401,12" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11492401,1;21223901,1" />
+	</Common>
+	<Common id="132" itemid="11476101" duration="20240302T000001,20240426T235959">
+		<rewards Id="1" counts="20" rewardstype="2" goodsid1="9049817,1" goodsid2="11476101,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11476101,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11476101,7" />
+		<rewards Id="4" counts="100" rewardstype="1" goodsid1="11476101,10" />
+		<rewards Id="5" counts="160" rewardstype="2" goodsid1="9049801,1;8100401,1" goodsid2="6145609,1;8100401,1" />
+	</Common>
+	<Common id="133" itemid="11492801" duration="20230617T000000,20230625T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11492801,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11492801,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11492801,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11492801,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="6116209,1;21270001,13" />
+	</Common>
+	<Common id="134" itemid="11492901" duration="20230617T000000,20230625T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11504701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11504701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11504701,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11504701,12" />
+		<rewards Id="5" counts="200" rewardstype="2" goodsid1="9041001,1;21270001,12" goodsid2="9040801,1;21270001,12" goodsid3="9041301,1;21270001,12" goodsid4="9041401,1;21270001,12" goodsid5="9041501,1;21270001,12" />
+	</Common>
+	<Common id="135" itemid="11492701" duration="20230617T000000,20230625T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11492701,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="6148009,1;21270001,4" goodsid2="9051711,7" goodsid3="11492701,4" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11492701,10" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="11492701,20" />
+		<rewards Id="5" counts="400" rewardstype="1" goodsid1="11492701,40" />
+		<rewards Id="6" counts="700" rewardstype="1" goodsid1="11492701,70" />
+		<rewards Id="7" counts="1200" rewardstype="1" goodsid1="9051701,1;21223901,8" />
+	</Common>
+	<Common id="136" itemid="11493501" duration="20230626T000000,20230630T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11493501,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="9050017,1" goodsid2="9043707,1" goodsid3="9048617,1" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11493501,8" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11493501,15" />
+		<rewards Id="5" counts="280" rewardstype="2" goodsid1="6143209,1;21223901,1" goodsid2="9043701,1;21223901,1" goodsid3="9048601,1;21223901,1" goodsid4="11493501,28" />
+		<rewards Id="6" counts="450" rewardstype="1" goodsid1="11493501,45" />
+		<rewards Id="7" counts="800" rewardstype="1" goodsid1="9050001,1;21223901,3" />
+	</Common>
+	<Common id="137" itemid="11493601" duration="20230626T000000,20230630T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11493601,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11493601,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11493601,8" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="9040701,1;21259001,10" goodsid2="9040401,1;21259001,10" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11493601,20" />
+		<rewards Id="6" counts="300" rewardstype="2" goodsid1="9040601,1;21259001,16" goodsid2="9040201,1;21259001,16" />
+	</Common>
+	<Common id="138" itemid="11493701" duration="20230626T000000,20230630T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11493701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11493701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11493701,8" />
+		<rewards Id="4" counts="150" rewardstype="2" goodsid1="6093609,1;21259001,20" goodsid2="6108909,1;21259001,16" />
+	</Common>
+	<Common id="139" itemid="11493801" duration="20230626T000000,20230630T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11493801,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11493801,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="6088709,1;21259001,8" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="6091409,1;21259001,12" goodsid2="6096709,1;21259001,12" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="6096809,1;21259001,20" />
+	</Common>
+	<Common id="140" itemid="11494501" duration="20230701T000001,20230707T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11504401,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="9050811,7" goodsid2="9048711,7" goodsid3="11504401,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11504401,7" />
+		<rewards Id="4" counts="140" rewardstype="1" goodsid1="6152309,1;21259201,14" />
+		<rewards Id="5" counts="240" rewardstype="2" goodsid1="9050801,1;21223901,1" goodsid2="9048701,1;21223901,1" />
+	</Common>
+	<Common id="141" itemid="11494201" duration="20230701T000000,20230707T235959">
+		<rewards Id="1" counts="30" rewardstype="1" goodsid1="11494201,4" />
+		<rewards Id="2" counts="60" rewardstype="2" goodsid1="6090009,1;21259201,6" goodsid2="6089909,1;21259201,6" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11494201,10" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11494201,15" />
+		<rewards Id="5" counts="200" rewardstype="2" goodsid1="6093409,1;21259201,20" goodsid2="6093509,1;21259201,20" />
+	</Common>
+	<Common id="142" itemid="11494301" duration="20230701T000000,20230707T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11494301,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11494301,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11494301,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11494301,12" />
+		<rewards Id="5" counts="160" rewardstype="2" goodsid1="9041801,1;21259201,16" goodsid2="9042401,1;21259201,16" />
+	</Common>
+	<Common id="143" itemid="11494401" duration="20230701T000000,20230707T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11494401,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11494401,4" />
+		<rewards Id="3" counts="80" rewardstype="2" goodsid1="934701,1;21259201,8" goodsid2="11494401,6" />
+		<rewards Id="4" counts="180" rewardstype="2" goodsid1="6102709,1;21259201,10" goodsid2="11494401,16" />
+		<rewards Id="5" counts="380" rewardstype="2" goodsid1=" 6080309,1;21259201,20" goodsid2="11494401,30" />
+		<rewards Id="6" counts="750" rewardstype="1" goodsid1="941601,1;21259201,160" />
+	</Common>
+	<Common id="144" itemid="11495301" duration="20230708T000001,20230715T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11495301,2" />
+		<rewards Id="2" counts="30" rewardstype="1" goodsid1="6123709,1;21261501,3" />
+		<rewards Id="3" counts="60" rewardstype="1" goodsid1="11495301,6" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11495301,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11495301,12" />
+		<rewards Id="6" counts="150" rewardstype="1" goodsid1="9046701,1;21261501,16" />
+	</Common>
+	<Common id="145" itemid="11495401" duration="20230708T000001,20230715T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11495401,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11495401,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11495401,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11495401,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11495401,12" />
+		<rewards Id="6" counts="200" rewardstype="2" goodsid1="944201,1;21261501,20" goodsid2="6085609,1;21261501,20" goodsid3="6085709,1;21261501,20" goodsid4="6085809,1;21261501,20" />
+	</Common>
+	<Common id="146" itemid="11495501" duration="20230708T000001,20230715T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11495501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11495501,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11495501,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11495501,12" />
+		<rewards Id="5" counts="150" rewardstype="1" goodsid1="6118109,1;21261501,12" />
+	</Common>
+	<Common id="147" itemid="11495601" duration="20230708T000001,20230715T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11495601,2" />
+		<rewards Id="2" counts="50" rewardstype="1" goodsid1="11495601,5" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11495601,10" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="6091309,1;21261501,16" />
+		<rewards Id="5" counts="400" rewardstype="1" goodsid1="11495601,40" />
+		<rewards Id="6" counts="550" rewardstype="1" goodsid1="11495601,55" />
+		<rewards Id="7" counts="750" rewardstype="2" goodsid1="6067009,1;21261501,80" goodsid2="6066909,1;21261501,80" />
+	</Common>
+	<Common id="148" itemid="11496301" duration="20230716T000001,20230721T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11496301,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1=" 6117309,1;21272001,2" goodsid2="11496301,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11496301,8" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11496301,15" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11496501,1" />
+	</Common>
+	<Common id="149" itemid="11496001" duration="20230716T000001,20230721T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11504601,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11504601,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11504601,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11504601,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11504601,12" />
+		<rewards Id="6" counts="150" rewardstype="2" goodsid1="6102209,1;21272001,16" goodsid2="6102309,1;21272001,16" />
+	</Common>
+	<Common id="150" itemid="11496101" duration="20230716T000001,20230721T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11496101,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11496101,10" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11496101,20" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="11496101,35" />
+		<rewards Id="5" counts="500" rewardstype="1" goodsid1="11496101,50" />
+		<rewards Id="6" counts="700" rewardstype="2" goodsid1="6068009,1;21272001,80" goodsid2="6067909,1;21272001,80" />
+	</Common>
+	<Common id="151" itemid="11496201" duration="20230716T000001,20230721T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11496201,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11496201,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11496201,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11496201,12" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6123109,1;21272001,16" goodsid2="6123209,1;21272001,16" />
+	</Common>
+	<Common id="152" itemid="11496601" duration="20230722T000001,20230728T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11496601,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11496601,4" />
+		<rewards Id="3" counts="90" rewardstype="1" goodsid1="6091009,1;21262901,10" />
+		<rewards Id="4" counts="160" rewardstype="1" goodsid1="11496601,16" />
+		<rewards Id="5" counts="240" rewardstype="2" goodsid1="6108909,1;21262901,16" goodsid2="6087209,1;21262901,16" />
+	</Common>
+	<Common id="153" itemid="11496701" duration="20230722T000001,20230728T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11496701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11496701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="914001,1;1150001,40" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="11496701,20" />
+		<rewards Id="5" counts="350" rewardstype="1" goodsid1="11496701,35" />
+		<rewards Id="6" counts="500" rewardstype="1" goodsid1="11496701,60" />
+		<rewards Id="7" counts="700" rewardstype="1" goodsid1="11496701,80" />
+		<rewards Id="8" counts="900" rewardstype="1" goodsid1="934501,1;21262901,150" />
+	</Common>
+	<Common id="154" itemid="11496801" duration="20230722T000001,20230728T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11496801,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11496801,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11496801,8" />
+		<rewards Id="4" counts="130" rewardstype="2" goodsid1="6123809,1;21262901,16" goodsid2="6123909,1;21262901,16" />
+		<rewards Id="5" counts="260" rewardstype="1" goodsid1="11497001,1" />
+	</Common>
+	<Common id="155" itemid="11496901" duration="20230722T000001,20230728T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11496901,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11496901,3" />
+		<rewards Id="3" counts="50" rewardstype="2" goodsid1="6089009,1;21262901,4" goodsid2="6091809,1;21262901,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11496901,8" />
+		<rewards Id="5" counts="100" rewardstype="1" goodsid1="6095709,1;21262901,6" />
+		<rewards Id="6" counts="160" rewardstype="1" goodsid1="11496901,20" />
+		<rewards Id="7" counts="200" rewardstype="2" goodsid1="6091109,1;21262901,10" goodsid2="6091209,1;21262901,10" />
+		<rewards Id="8" counts="280" rewardstype="1" goodsid1="913001,1;21262901,30" />
+	</Common>
+	<Common id="156" itemid="11497401" duration="20230729T000000,20230818T235959">
+		<rewards Id="1" counts="40" rewardstype="1" goodsid1="11497901,1" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11497901,1" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11498001,1" />
+		<rewards Id="4" counts="250" rewardstype="1" goodsid1="11497901,1" />
+		<rewards Id="5" counts="400" rewardstype="1" goodsid1="11498001,1" />
+		<rewards Id="6" counts="450" rewardstype="1" goodsid1="11497901,1" />
+		<rewards Id="7" counts="600" rewardstype="1" goodsid1="11498001,1" />
+		<rewards Id="8" counts="650" rewardstype="1" goodsid1="11497901,1" />
+		<rewards Id="9" counts="800" rewardstype="2" goodsid1="6147509,1" goodsid2="6148209,1" goodsid3="6141909,1" goodsid4="6134809,1" goodsid5="6136009,1" />
+	</Common>
+	<Common id="157" itemid="11497501" duration="20230729T000000,20230804T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11497501,5" />
+		<rewards Id="2" counts="100" rewardstype="2" goodsid1="9051517,1" goodsid2="11497501,10" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11497501,20" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="11497501,40" />
+		<rewards Id="5" counts="600" rewardstype="1" goodsid1="9051501,1;21263201,20" />
+	</Common>
+	<Common id="158" itemid="11497601" duration="20230729T000000,20230804T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11506901,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11506901,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11506901,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11506901,8" />
+		<rewards Id="5" counts="120" rewardstype="2" goodsid1="6095609,1;21263201,12" goodsid2="6104509,1;21263201,14" />
+		<rewards Id="6" counts="240" rewardstype="1" goodsid1="6103009,1;21263201,16" />
+	</Common>
+	<Common id="159" itemid="11497701" duration="20230729T000000,20230804T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11497701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11497701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11497701,10" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="9042201,1;21263201,12" goodsid2="9042101,1;21263201,12" />
+		<rewards Id="5" counts="160" rewardstype="1" goodsid1="11497701,25" />
+		<rewards Id="6" counts="280" rewardstype="1" goodsid1="9042001,1;21263201,16" />
+	</Common>
+	<Common id="160" itemid="11498501" duration="20230805T000000,20230811T235959">
+		<rewards Id="1" counts="20" rewardstype="2" goodsid1="935217,1" goodsid2="935617,1" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11498501,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11498501,7" />
+		<rewards Id="4" counts="100" rewardstype="1" goodsid1="11498501,10" />
+		<rewards Id="5" counts="130" rewardstype="2" goodsid1="935201,1;21264801,12" goodsid2="935601,1;21264801,15" goodsid3="6144809,1;21264801,12" />
+	</Common>
+	<Common id="161" itemid="11498601" duration="20230805T000000,20230811T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11498601,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11498601,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11498601,7" />
+		<rewards Id="4" counts="110" rewardstype="1" goodsid1="11498601,11" />
+		<rewards Id="5" counts="160" rewardstype="2" goodsid1="6143009,1;21264801,16" goodsid2="6143109,1;21264801,16" />
+	</Common>
+	<Common id="162" itemid="11498701" duration="20230805T000000,20230811T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1=",2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1=",3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1=",4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1=",8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="6116209,1;21264801,13" />
+	</Common>
+	<Common id="163" itemid="11498801" duration="20230805T000000,20230811T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11498801,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11498801,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11498801,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11498801,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11498801,12" />
+		<rewards Id="6" counts="160" rewardstype="2" goodsid1="6108609,1;21264801,16" goodsid2="6108509,1;21264801,16" />
+		<rewards Id="7" counts="220" rewardstype="1" goodsid1="11498801,22" />
+		<rewards Id="8" counts="320" rewardstype="1" goodsid1="11499001,1" />
+	</Common>
+	<Common id="164" itemid="11499701" duration="20230812T000000,20230818T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11499701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11499701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11499701,8" />
+		<rewards Id="4" counts="150" rewardstype="2" goodsid1="6093609,1;21265601,20" goodsid2="6108909,1;21265601,16" />
+	</Common>
+	<Common id="165" itemid="11499801" duration="20230812T000000,20230818T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11499801,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11499801,3" />
+		<rewards Id="3" counts="50" rewardstype="1" goodsid1="6085509,1;21265601,5" />
+		<rewards Id="4" counts="100" rewardstype="1" goodsid1="11499801,10" />
+		<rewards Id="5" counts="180" rewardstype="2" goodsid1="6088509,1;21265601,20" goodsid2="6088609,1;21265601,20" goodsid3="6098809,1;21265601,20" />
+	</Common>
+	<Common id="166" itemid="11499901" duration="20230812T000000,20230818T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11499901,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11499901,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11499901,8" />
+		<rewards Id="4" counts="140" rewardstype="2" goodsid1="6105209,1;21265601,16" goodsid2="6105309,1;21265601,16" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11499901,24" />
+		<rewards Id="6" counts="360" rewardstype="2" goodsid1="6067309,1;21265601,80" goodsid2="6067409,1;21265601,80" />
+	</Common>
+	<Common id="167" itemid="11500001" duration="20230812T000000,20230818T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11500001,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11500001,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11500001,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6109009,1;21265601,12" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6103609,1;21265601,15" goodsid2="6103509,1;21265601,15" />
+	</Common>
+	<Common id="168" itemid="11500401" duration="20230819T000000,20230826T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11500401,5" />
+		<rewards Id="2" counts="100" rewardstype="2" goodsid1="9051517,1" goodsid2="11500401,10" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11500401,20" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="11500401,40" />
+		<rewards Id="5" counts="600" rewardstype="1" goodsid1="9051501,1;21267101,20" />
+	</Common>
+	<Common id="169" itemid="11500501" duration="20230819T000000,20230826T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11515701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11515701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11515701,8" />
+		<rewards Id="4" counts="130" rewardstype="1" goodsid1="11515701,13" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11515701,20" />
+		<rewards Id="6" counts="280" rewardstype="1" goodsid1="11501201,1" />
+	</Common>
+	<Common id="170" itemid="11500601" duration="20230819T000000,20230826T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11500601,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="934407,1" goodsid2="11500601,4" />
+		<rewards Id="3" counts="100" rewardstype="2" goodsid1="9050701,1;21267101,10" goodsid2="11500601,10" />
+		<rewards Id="4" counts="180" rewardstype="2" goodsid1="6146209,1;21267101,16" goodsid2="6146309,1;21267101,16" />
+		<rewards Id="5" counts="300" rewardstype="1" goodsid1="11500601,30" />
+		<rewards Id="6" counts="450" rewardstype="1" goodsid1="934401,1;21267101,40" />
+	</Common>
+	<Common id="171" itemid="11500701" duration="20230819T000000,20230826T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11500701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11500701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11500701,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6096609,1;21267101,12" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11500701,20" />
+		<rewards Id="6" counts="280" rewardstype="2" goodsid1="9041101,1;21267101,16" goodsid2="6101509,1;21267101,16" goodsid3="6076309,1;21267101,20" />
+		<rewards Id="7" counts="350" rewardstype="1" goodsid1="11500701,35" />
+		<rewards Id="8" counts="450" rewardstype="2" goodsid1="6076609,1;21267101,50" goodsid2="6076509,1;21267101,50" />
+	</Common>
+	<Common id="172" itemid="11500801" duration="20230819T000000,20230826T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11500801,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11500801,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="6100809,1;21267101,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11500801,8" />
+		<rewards Id="5" counts="150" rewardstype="1" goodsid1="6100709,1;21267101,16" />
+	</Common>
+	<Common id="173" itemid="11500901" duration="20230819T000000,20230826T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11500901,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11500901,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11500901,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11500901,12" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6123109,1;21267101,16" goodsid2="6123209,1;21267101,16" />
+	</Common>
+	<Common id="174" itemid="11501001" duration="20230819T000000,20230826T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11501001,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11501001,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11501001,8" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="11501001,20" />
+		<rewards Id="5" counts="360" rewardstype="2" goodsid1="6067109,1;21267101,50" goodsid2="6067209,1;21267101,50" />
+	</Common>
+	<Common id="175" itemid="11501801" duration="20230827T000000,20230901T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11501801,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11501801,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11501801,8" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="6096109,1;21267401,12" goodsid2="6096209,1;21267401,12" />
+	</Common>
+	<Common id="176" itemid="11501901" duration="20230827T000000,20230901T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11501901,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11501901,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11501901,8" />
+		<rewards Id="4" counts="130" rewardstype="1" goodsid1="11501901,13" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11486201,1" />
+	</Common>
+	<Common id="177" itemid="11502001" duration="20230827T000000,20230901T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11502001,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11502001,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11502001,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6096409,1;21267401,12" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11492401,1" />
+	</Common>
+	<Common id="178" itemid="11502101" duration="20230827T000000,20230901T235959">
+		<rewards Id="1" counts="20" rewardstype="2" goodsid1="6116909,1;21267401,2" goodsid2="6124409,1;21267401,2" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11502101,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11502101,8" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="9047201,1;21267401,12" goodsid2="9047301,1;21267401,12" />
+	</Common>
+	<Common id="179" itemid="11502501" duration="20230902T000000,20230908T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11502501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11502501,4" />
+		<rewards Id="3" counts="80" rewardstype="2" goodsid1="11502501,8" goodsid2="6103309,1;21268301,7" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11502501,12" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6100909,1;21268301,20" goodsid2="6116509,1;21268301,20" />
+		<rewards Id="6" counts="240" rewardstype="1" goodsid1="11502901,1" />
+	</Common>
+	<Common id="180" itemid="11502601" duration="20230902T000000,20230908T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11502601,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="6155409,1;21268301,4" goodsid2="11502601,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11502601,7" />
+		<rewards Id="4" counts="110" rewardstype="1" goodsid1="11502601,11" />
+		<rewards Id="5" counts="150" rewardstype="1" goodsid1="9053501,1;21268301,10" />
+	</Common>
+	<Common id="181" itemid="11502701" duration="20230902T000000,20230908T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11502701,2" />
+		<rewards Id="2" counts="50" rewardstype="1" goodsid1="11502701,5" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11502701,10" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="6091309,1;21268301,16" />
+		<rewards Id="5" counts="400" rewardstype="1" goodsid1="11502701,40" />
+		<rewards Id="6" counts="550" rewardstype="1" goodsid1="11502701,55" />
+		<rewards Id="7" counts="750" rewardstype="2" goodsid1="6067009,1;21268301,80" goodsid2="6066909,1;21268301,80" />
+	</Common>
+	<Common id="182" itemid="11502801" duration="20230902T000000,20230908T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11502801,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11502801,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="6088709,1;21268301,8" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="6091409,1;21268301,12" goodsid2="6096709,1;21268301,12" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="6096809,1;21268301,20" />
+	</Common>
+	<Common id="183" itemid="11503601" duration="20230909T000000,20230916T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11505801,5" />
+		<rewards Id="2" counts="100" rewardstype="2" goodsid1="935707,1" goodsid2="9043707,1" goodsid3="9048617,1" />
+		<rewards Id="3" counts="300" rewardstype="1" goodsid1="11505801,30" />
+		<rewards Id="4" counts="500" rewardstype="1" goodsid1="11505801,50" />
+		<rewards Id="5" counts="720" rewardstype="2" goodsid1="935701,1;21272001,30" goodsid2="9043701,1;21272001,20" goodsid3="9048601,1;21272001,20" />
+	</Common>
+	<Common id="184" itemid="11503701" duration="20230909T000000,20230916T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11503701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11503701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11503701,8" />
+		<rewards Id="4" counts="130" rewardstype="2" goodsid1="6123809,1;21272001,16" goodsid2="6123909,1;21272001,16" />
+		<rewards Id="5" counts="260" rewardstype="1" goodsid1="11497001,1" />
+	</Common>
+	<Common id="185" itemid="11503801" duration="20230909T000000,20230916T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11503801,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11503801,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11503801,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11503801,12" />
+		<rewards Id="5" counts="160" rewardstype="2" goodsid1="9041801,1;21272001,16" goodsid2="9042401,1;21272001,16" />
+	</Common>
+	<Common id="186" itemid="11503901" duration="20230909T000000,20230916T235959">
+		<rewards Id="1" counts="30" rewardstype="1" goodsid1="11503901,4" />
+		<rewards Id="2" counts="60" rewardstype="2" goodsid1="6090009,1;21272001,6" goodsid2="6089909,1;21272001,6" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11503901,10" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11503901,15" />
+		<rewards Id="5" counts="200" rewardstype="2" goodsid1="6093409,1;21272001,20" goodsid2="6093509,1;21272001,20" />
+	</Common>
+	<Common id="187" itemid="11504401" duration="20230917T000000,20230922T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11504401,8" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11504401,10" />
+		<rewards Id="3" counts="180" rewardstype="1" goodsid1="11504401,18" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="6152309,1;21270001,14" />
+		<rewards Id="5" counts="600" rewardstype="2" goodsid1="9050801,1;21223901,1" goodsid2="9048701,1;21223901,1" />
+	</Common>
+	<Common id="188" itemid="11504501" duration="20230917T000000,20230922T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11521001,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11521001,10" />
+		<rewards Id="3" counts="180" rewardstype="1" goodsid1="11521001,18" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="9054001,1;21270001,10" />
+		<rewards Id="5" counts="600" rewardstype="1" goodsid1="6156009,1;21270001,16" />
+	</Common>
+	<Common id="189" itemid="11504601" duration="20230917T000000,20230922T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11504601,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11504601,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11504601,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11504601,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11504601,12" />
+		<rewards Id="6" counts="150" rewardstype="2" goodsid1="6102209,1;21270001,16" goodsid2="6102309,1;21270001,16" />
+	</Common>
+	<Common id="190" itemid="11504701" duration="20230917T000000,20230922T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11504701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11504701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11504701,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11504701,12" />
+		<rewards Id="5" counts="200" rewardstype="2" goodsid1="9041001,1;21270001,12" goodsid2="9040801,1;21270001,12" goodsid3="9041301,1;21270001,12" goodsid4="9041401,1;21270001,12" goodsid5="9041501,1;21270001,12" />
+	</Common>
+	<Common id="191" itemid="11505201" duration="20230923T000000,20230927T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11505201,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="6136709,1;21270401,4" />
+		<rewards Id="3" counts="180" rewardstype="1" goodsid1="11505201,18" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="11505201,35" />
+		<rewards Id="5" counts="600" rewardstype="1" goodsid1="6143409,1;21223901,1" />
+		<rewards Id="6" counts="900" rewardstype="1" goodsid1="11505201,90" />
+		<rewards Id="7" counts="1300" rewardstype="1" goodsid1="9049501,1;21223901,3" />
+	</Common>
+	<Common id="192" itemid="11505301" duration="20230923T000000,20230927T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11505301,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11505301,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11505301,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11505301,12" />
+		<rewards Id="5" counts="150" rewardstype="1" goodsid1="6118109,1;21270401,12" />
+	</Common>
+	<Common id="193" itemid="11505401" duration="20230923T000000,20230927T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11505401,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11505401,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11505401,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11505401,12" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6123109,1;21270401,16" goodsid2="6123209,1;21270401,16" />
+	</Common>
+	<Common id="194" itemid="11505501" duration="20230923T000000,20230927T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11505501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11505501,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11505501,8" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="9040701,1;21270401,10" goodsid2="9040401,1;21270401,10" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11505501,20" />
+		<rewards Id="6" counts="300" rewardstype="2" goodsid1="9040601,1;21270401,16" goodsid2="9040201,1;21270401,16" />
+	</Common>
+	<Common id="195" itemid="11505801" duration="20230928T000000,20231007T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11505801,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11505801,10" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11505801,20" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="11505801,40" />
+		<rewards Id="5" counts="600" rewardstype="1" goodsid1="9051501,1;21223901,3" />
+	</Common>
+	<Common id="196" itemid="11506001" duration="20230928T000000,20231007T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11506001,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11506001,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11506001,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11506001,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11506001,12" />
+		<rewards Id="6" counts="200" rewardstype="2" goodsid1="944201,1;21272001,20" goodsid2="6085609,1;21272001,20" goodsid3="6085709,1;21272001,20" goodsid4="6085809,1;21272001,20" />
+	</Common>
+	<Common id="197" itemid="11506101" duration="20230928T000000,20231007T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11506101,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1=" 6117309,1;21272001,2" goodsid2="11506101,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11506101,8" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11506101,15" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11496501,1" />
+	</Common>
+	<Common id="198" itemid="11506201" duration="20230928T000000,20231007T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11506201,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11506201,3" />
+		<rewards Id="3" counts="50" rewardstype="2" goodsid1="6089009,1;21272001,4" goodsid2="6091809,1;21272001,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11506201,8" />
+		<rewards Id="5" counts="100" rewardstype="1" goodsid1="6095709,1;21272001,6" />
+		<rewards Id="6" counts="160" rewardstype="1" goodsid1="11506201,20" />
+		<rewards Id="7" counts="200" rewardstype="2" goodsid1="6091109,1;21272001,10" goodsid2="6091209,1;21272001,10" />
+		<rewards Id="8" counts="280" rewardstype="1" goodsid1="913001,1;21272001,30" />
+	</Common>
+	<Common id="199" itemid="11506601" duration="20231008T000000,20231013T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11506601,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11506601,4" />
+		<rewards Id="3" counts="60" rewardstype="1" goodsid1="9047701,1;21272101,6" />
+		<rewards Id="4" counts="140" rewardstype="1" goodsid1="11506601,14" />
+		<rewards Id="5" counts="230" rewardstype="1" goodsid1="11507101,1" />
+	</Common>
+	<Common id="200" itemid="11506701" duration="20231008T000000,20231013T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11506701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11506701,4" />
+		<rewards Id="3" counts="90" rewardstype="1" goodsid1="6091009,1;21272101,10" />
+		<rewards Id="4" counts="160" rewardstype="1" goodsid1="11506701,16" />
+		<rewards Id="5" counts="240" rewardstype="2" goodsid1="6108909,1;21272101,16" goodsid2="6087209,1;21272101,16" />
+	</Common>
+	<Common id="201" itemid="11506801" duration="20231008T000000,20231013T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11506801,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11506801,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="914001,1;1150001,40" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="11506801,20" />
+		<rewards Id="5" counts="350" rewardstype="1" goodsid1="11506801,35" />
+		<rewards Id="6" counts="500" rewardstype="1" goodsid1="11506801,60" />
+		<rewards Id="7" counts="700" rewardstype="1" goodsid1="11506801,80" />
+		<rewards Id="8" counts="900" rewardstype="1" goodsid1="934501,1;21272101,150" />
+	</Common>
+	<Common id="202" itemid="11506901" duration="20231008T000000,20231013T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11506901,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11506901,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11506901,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11506901,8" />
+		<rewards Id="5" counts="120" rewardstype="2" goodsid1="6095609,1;21272101,12" goodsid2="6104509,1;21272101,14" />
+		<rewards Id="6" counts="240" rewardstype="1" goodsid1="6103009,1;21272101,16" />
+	</Common>
+	<Common id="203" itemid="11507601" duration="20231014T000000,20231020T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11507601,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11507601,10" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11507601,20" />
+		<rewards Id="4" counts="400" rewardstype="1" goodsid1="11487401,1" />
+		<rewards Id="5" counts="800" rewardstype="1" goodsid1="9043101,1;21223901,2" />
+	</Common>
+	<Common id="205" itemid="11507801" duration="20231014T000000,20231020T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11507801,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11507801,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11507801,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6109009,1;21272801,12" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6103609,1;21272801,15" goodsid2="6103509,1;21272801,15" />
+	</Common>
+	<Common id="206" itemid="11507901" duration="20231014T000000,20231020T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11507901,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11507901,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11507901,10" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="9042201,1;21272801,12" goodsid2="9042101,1;21272801,12" />
+		<rewards Id="5" counts="160" rewardstype="1" goodsid1="11507901,25" />
+		<rewards Id="6" counts="280" rewardstype="1" goodsid1="9042001,1;21272801,16" />
+	</Common>
+	<Common id="207" itemid="11508901" duration="20231021T000000,20231027T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11508901,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11508901,10" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11508901,20" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="11508901,40" />
+		<rewards Id="5" counts="650" rewardstype="1" goodsid1="9048101,1;21223901,3" />
+	</Common>
+	<Common id="208" itemid="11509001" duration="20231021T000000,20231027T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="6123609,1;" />
+		<rewards Id="2" counts="50" rewardstype="1" goodsid1="11509001,5" />
+		<rewards Id="3" counts="100" rewardstype="2" goodsid1="9047401,1;21272901,10" goodsid2="6090909,1;21272901,10" goodsid3="11509001,10" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="11509001,20" />
+		<rewards Id="5" counts="350" rewardstype="1" goodsid1="6080609,1;21272901,40" />
+	</Common>
+	<Common id="209" itemid="11509101" duration="20231021T000000,20231027T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11509101,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11509101,10" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11509101,20" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="11509101,35" />
+		<rewards Id="5" counts="500" rewardstype="1" goodsid1="11509101,50" />
+		<rewards Id="6" counts="700" rewardstype="2" goodsid1="6068009,1;21272901,80" goodsid2="6067909,1;21272901,80" />
+	</Common>
+	<Common id="210" itemid="11509201" duration="20231021T000000,20231027T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11509201,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11509201,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11509201,8" />
+		<rewards Id="4" counts="140" rewardstype="2" goodsid1="6105209,1;21272901,16" goodsid2="6105309,1;21272901,16" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11509201,24" />
+		<rewards Id="6" counts="360" rewardstype="2" goodsid1="6067309,1;21272901,80" goodsid2="6067409,1;21272901,80" />
+	</Common>
+	<Common id="211" itemid="11509801" duration="20231028T000000,20231103T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11509801,5" />
+		<rewards Id="2" counts="100" rewardstype="2" goodsid1="6148009,1;21274201,4" goodsid2="9051711,7" goodsid3="11509801,10" />
+		<rewards Id="3" counts="260" rewardstype="1" goodsid1="11509801,26" />
+		<rewards Id="4" counts="500" rewardstype="1" goodsid1="11509801,50" />
+		<rewards Id="5" counts="1000" rewardstype="1" goodsid1="11509801,100" />
+		<rewards Id="6" counts="1800" rewardstype="1" goodsid1="11509801,180" />
+		<rewards Id="7" counts="3000" rewardstype="1" goodsid1=" 9051701,1;21223901,8;" />
+	</Common>
+	<Common id="212" itemid="11509901" duration="20231028T000000,20231103T235959">
+		<rewards Id="1" counts="20" rewardstype="2" goodsid1="935217,1" goodsid2="935617,1" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11509901,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11509901,7" />
+		<rewards Id="4" counts="100" rewardstype="1" goodsid1="11509901,10" />
+		<rewards Id="5" counts="130" rewardstype="2" goodsid1="935201,1;21274201,12" goodsid2="935601,1;21274201,15" goodsid3="6144809,1;21274201,12" />
+	</Common>
+	<Common id="213" itemid="11510001" duration="20231028T000000,20231103T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11510001,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11510001,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11510001,7" />
+		<rewards Id="4" counts="110" rewardstype="1" goodsid1="11510001,11" />
+		<rewards Id="5" counts="160" rewardstype="2" goodsid1="6143009,1;21274201,16" goodsid2="6143109,1;21274201,16" />
+	</Common>
+	<Common id="214" itemid="11510101" duration="20231028T000000,20231103T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11510101,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11510101,3" />
+		<rewards Id="3" counts="50" rewardstype="1" goodsid1="6085509,1;21274201,5" />
+		<rewards Id="4" counts="100" rewardstype="1" goodsid1="11510101,10" />
+		<rewards Id="5" counts="180" rewardstype="2" goodsid1="6088509,1;21274201,20" goodsid2="6088609,1;21274201,20" goodsid3="6098809,1;21274201,20" />
+	</Common>
+	<Common id="215" itemid="11510501" duration="20231104T000000,20231110T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11510501,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11510501,10" />
+		<rewards Id="3" counts="240" rewardstype="2" goodsid1="9054201,1;21223901,1" goodsid2="11510501,24" />
+		<rewards Id="4" counts="400" rewardstype="1" goodsid1="11510501,40" />
+		<rewards Id="5" counts="650" rewardstype="1" goodsid1="11511001,1" />
+	</Common>
+	<Common id="216" itemid="11510601" duration="20231104T000000,20231110T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11510601,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11510601,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11510601,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11510601,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11510601,12" />
+		<rewards Id="6" counts="160" rewardstype="2" goodsid1="6108609,1;21282901,16" goodsid2="6108509,1;21282901,16" />
+		<rewards Id="7" counts="220" rewardstype="1" goodsid1="11510601,22" />
+		<rewards Id="8" counts="320" rewardstype="1" goodsid1="11499001,1" />
+	</Common>
+	<Common id="217" itemid="11510701" duration="20231104T000000,20231110T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11510701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11510701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11510701,8" />
+		<rewards Id="4" counts="150" rewardstype="2" goodsid1="6093609,1;21282901,20" goodsid2="6108909,1;21282901,16" />
+	</Common>
+	<Common id="218" itemid="11510801" duration="20231104T000000,20231110T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11510801,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11510801,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11510801,8" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="11510801,20" />
+		<rewards Id="5" counts="360" rewardstype="2" goodsid1="6067109,1;21282901,50" goodsid2="6067209,1;21282901,50" />
+	</Common>
+	<Common id="219" itemid="11511401" duration="20231111T000000,20231118T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11511401,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11511401,10" />
+		<rewards Id="3" counts="180" rewardstype="1" goodsid1="11511401,18" />
+		<rewards Id="4" counts="300" rewardstype="1" goodsid1="6158009,1;21275301,60" />
+	</Common>
+	<Common id="220" itemid="11511501" duration="20231111T000000,20231118T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11511501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11511501,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11511501,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6096409,1;21275301,60" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11492401,1" />
+	</Common>
+	<Common id="221" itemid="11511601" duration="20231111T000000,20231118T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11511601,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11511601,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11511601,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11511601,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="6116209,1;21275301,65" />
+	</Common>
+	<Common id="222" itemid="11511701" duration="20231111T000000,20231118T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11511701,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="934407,1" goodsid2="11511701,4" />
+		<rewards Id="3" counts="100" rewardstype="2" goodsid1="9050701,1;21275301,50" goodsid2="11511701,10" />
+		<rewards Id="4" counts="180" rewardstype="2" goodsid1="6146209,1;21275301,80" goodsid2="6146309,1;21275301,80" />
+		<rewards Id="5" counts="300" rewardstype="1" goodsid1="11511701,30" />
+		<rewards Id="6" counts="450" rewardstype="1" goodsid1="934401,1;21275301,200" />
+	</Common>
+	<Common id="223" itemid="11512301" duration="20231119T000000,20231124T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11512301,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11512301,10" />
+		<rewards Id="3" counts="260" rewardstype="1" goodsid1="11512301,20" />
+		<rewards Id="4" counts="450" rewardstype="1" goodsid1="11512301,20" />
+		<rewards Id="5" counts="700" rewardstype="1" goodsid1="11512301,30" />
+		<rewards Id="6" counts="1000" rewardstype="1" goodsid1="9057801,1;21223901,1" />
+	</Common>
+	<Common id="224" itemid="11512401" duration="20231119T000000,20231124T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11512401,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11512401,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11512401,8" />
+		<rewards Id="4" counts="130" rewardstype="1" goodsid1="11512401,13" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11486201,1" />
+	</Common>
+	<Common id="225" itemid="11512501" duration="20231119T000000,20231124T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11512501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11512501,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11512501,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11512501,12" />
+		<rewards Id="5" counts="200" rewardstype="2" goodsid1="9041001,1;21275901,60" goodsid2="9040801,1;21275901,60" goodsid3="9041301,1;21275901,60" goodsid4="9041401,1;21275901,60" goodsid5="9041501,1;21275901,60" />
+	</Common>
+	<Common id="226" itemid="11512601" duration="20231119T000000,20231124T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11512601,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11512601,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="6100809,1;21275901,20" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11512601,8" />
+		<rewards Id="5" counts="150" rewardstype="1" goodsid1="6100709,1;21275901,80" />
+	</Common>
+	<Common id="227" itemid="11513101" duration="20231125T000000,20231201T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11513101,3" />
+		<rewards Id="2" counts="100" rewardstype="2" goodsid1="6158509,1;21276001,20" goodsid2="11513101,10" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11513101,20" />
+		<rewards Id="4" counts="400" rewardstype="1" goodsid1="11513101,40" />
+		<rewards Id="5" counts="650" rewardstype="2" goodsid1="9043701,1;21223901,1" goodsid2="9048601,1;21223901,1" />
+	</Common>
+	<Common id="228" itemid="11513201" duration="20231125T000000,20231201T235959">
+		<rewards Id="1" counts="20" rewardstype="2" goodsid1="6116909,1;21276001,10" goodsid2="6124409,1;21276001,10" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11513201,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11513201,8" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="9047201,1;21276001,60" goodsid2="9047301,1;21276001,60" />
+	</Common>
+	<Common id="229" itemid="11513301" duration="20231125T000000,20231201T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11513301,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11513301,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11513301,8" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="9040701,1;21276001,50" goodsid2="9040401,1;21276001,50" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11513301,20" />
+		<rewards Id="6" counts="300" rewardstype="2" goodsid1="9040601,1;21276001,80" goodsid2="9040201,1;21276001,80" />
+	</Common>
+	<Common id="230" itemid="11513401" duration="20231125T000000,20231201T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11513401,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11513401,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11513401,8" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="6096109,1;21276001,60" goodsid2="6096209,1;21276001,60" />
+	</Common>
+	<Common id="231" itemid="11513901" duration="20231202T000000,20231208T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11513901,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11513901,10" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11513901,20" />
+		<rewards Id="4" counts="320" rewardstype="1" goodsid1="11513901,32" />
+		<rewards Id="5" counts="500" rewardstype="1" goodsid1="9055101,1;21223901,1;" />
+	</Common>
+	<Common id="232" itemid="11514001" duration="20231202T000000,20231208T235959">
+		<rewards Id="1" counts="30" rewardstype="1" goodsid1="11514001,4" />
+		<rewards Id="2" counts="60" rewardstype="2" goodsid1="6090009,1;21276401,30" goodsid2="6089909,1;21276401,30" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11514001,10" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11514001,15" />
+		<rewards Id="5" counts="200" rewardstype="2" goodsid1="6093409,1;21276401,100" goodsid2="6093509,1;21276401,100" />
+	</Common>
+	<Common id="233" itemid="11514101" duration="20231202T000000,20231208T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11514101,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11514101,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="6088709,1;21276401,40" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="6091409,1;21276401,60" goodsid2="6096709,1;21276401,60" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="6096809,1;21276401,100" />
+	</Common>
+	<Common id="234" itemid="11514201" duration="20231202T000000,20231208T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11514201,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11514201,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11514201,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6096609,1;21276401,60" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11514201,20" />
+		<rewards Id="6" counts="280" rewardstype="2" goodsid1="9041101,1;21276401,80" goodsid2="6101509,1;21276401,80" goodsid3="6076309,1;21276401,100" />
+		<rewards Id="7" counts="350" rewardstype="1" goodsid1="11514201,35" />
+		<rewards Id="8" counts="450" rewardstype="2" goodsid1="6076609,1;21276401,250" goodsid2="6076509,1;21276401,250" />
+	</Common>
+	<Common id="235" itemid="11515501" duration="20231209T000000,20231215T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11534101,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="9047601,1;21276901,20" goodsid2="11534101,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11534101,8" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11534101,15" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11516001,1" />
+	</Common>
+	<Common id="236" itemid="11515601" duration="20231209T000000,20231215T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11515601,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11515601,4" />
+		<rewards Id="3" counts="80" rewardstype="2" goodsid1="11515601,8" goodsid2="6103309,1;21276901,35" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11515601,12" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6100909,1;21276901,100" goodsid2="6116509,1;21276901,100" />
+		<rewards Id="6" counts="240" rewardstype="1" goodsid1="11502901,1" />
+	</Common>
+	<Common id="237" itemid="11515701" duration="20231209T000000,20231215T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11515701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11515701,4" />
+		<rewards Id="3" counts="80" rewardstype="2" goodsid1="9050401,1;21276901,50" goodsid2="11515701,8" />
+		<rewards Id="4" counts="130" rewardstype="1" goodsid1="11515701,13" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11515701,20" />
+		<rewards Id="6" counts="280" rewardstype="2" goodsid1="11501201,1" goodsid2="11501101,1" />
+	</Common>
+	<Common id="238" itemid="11515801" duration="20231209T000000,20231215T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11515801,2" />
+		<rewards Id="2" counts="50" rewardstype="1" goodsid1="11515801,5" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11515801,10" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="6091309,1;21276901,80" />
+		<rewards Id="5" counts="400" rewardstype="1" goodsid1="11515801,40" />
+		<rewards Id="6" counts="550" rewardstype="1" goodsid1="11515801,55" />
+		<rewards Id="7" counts="750" rewardstype="2" goodsid1="6067009,1;21276901,400" goodsid2="6066909,1;21276901,400" />
+	</Common>
+	<Common id="239" itemid="11516401" duration="20231216T000000,20231223T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11516401,5" />
+		<rewards Id="2" counts="100" rewardstype="2" goodsid1="9051517,1" goodsid2="11516401,10" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11516401,20" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="11516401,40" />
+		<rewards Id="5" counts="600" rewardstype="1" goodsid1="9051501,1;21277901,100" />
+	</Common>
+	<Common id="240" itemid="11516501" duration="20231216T000000,20231223T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11516501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11516501,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11516501,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11516501,12" />
+		<rewards Id="5" counts="150" rewardstype="1" goodsid1="6118109,1;21277901,60" />
+	</Common>
+	<Common id="241" itemid="11516601" duration="20231216T000000,20231223T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11516601,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11516601,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11516601,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11516601,12" />
+		<rewards Id="5" counts="160" rewardstype="2" goodsid1="9041801,1;21277901,80" goodsid2="9042401,1;21277901,80" />
+	</Common>
+	<Common id="242" itemid="11516701" duration="20231216T000000,20231223T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11516701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11516701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11516701,8" />
+		<rewards Id="4" counts="130" rewardstype="2" goodsid1="6123809,1;21277901,80" goodsid2="6123909,1;21277901,80" />
+		<rewards Id="5" counts="260" rewardstype="1" goodsid1="11497001,1" />
+	</Common>
+	<Common id="243" itemid="11517701" duration="20231224T000000,20231229T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11517701,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="6155409,1;21278701,20" goodsid2="11517701,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11517701,7" />
+		<rewards Id="4" counts="110" rewardstype="1" goodsid1="11517701,11" />
+		<rewards Id="5" counts="150" rewardstype="1" goodsid1="9053501,1;21278701,50" />
+	</Common>
+	<Common id="244" itemid="11517801" duration="20231224T000000,20231229T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11517801,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11517801,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11517801,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11517801,8" />
+		<rewards Id="5" counts="120" rewardstype="2" goodsid1="6095609,1;21278701,60" goodsid2="6104509,1;21278701,70" />
+		<rewards Id="6" counts="240" rewardstype="1" goodsid1="6103009,1;21278701,80" />
+	</Common>
+	<Common id="245" itemid="11517901" duration="20231224T000000,20231229T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11517901,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11517901,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11517901,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6096409,1;21278701,60" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11492401,1" />
+	</Common>
+	<Common id="246" itemid="11518001" duration="20231224T000000,20231229T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11518001,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11518001,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11518001,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11518001,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11518001,12" />
+		<rewards Id="6" counts="150" rewardstype="2" goodsid1="6102209,1;21278701,80" goodsid2="6102309,1;21278701,80" />
+	</Common>
+	<Common id="247" itemid="11518401" duration="20231230T000000,20240106T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11518401,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11518401,10" />
+		<rewards Id="3" counts="260" rewardstype="1" goodsid1="11518401,20" />
+		<rewards Id="4" counts="450" rewardstype="1" goodsid1="11518401,20" />
+		<rewards Id="5" counts="700" rewardstype="1" goodsid1="11518401,30" />
+		<rewards Id="6" counts="1000" rewardstype="1" goodsid1="9058701,1;21223901,1" />
+	</Common>
+	<Common id="248" itemid="11518501" duration="20231230T000000,20240106T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11518501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11518501,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11518501,7" />
+		<rewards Id="4" counts="100" rewardstype="1" goodsid1="9048301,1;21279201,50" />
+	</Common>
+	<Common id="249" itemid="11518601" duration="20231230T000000,20240106T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11518601,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11518601,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11518601,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11518601,12" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6123109,1;21279201,80" goodsid2="6123209,1;21279201,80" />
+	</Common>
+	<Common id="250" itemid="11518701" duration="20231230T000000,20240106T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11518701,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11518701,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11518701,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11518701,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11518701,12" />
+		<rewards Id="6" counts="200" rewardstype="2" goodsid1="944201,1;21279201,100" goodsid2="6085609,1;21279201,100" goodsid3="6085709,1;21279201,100" goodsid4="6085809,1;21279201,100" />
+	</Common>
+	<Common id="251" itemid="11519401" duration="20240107T000000,20240114T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11519401,5" />
+		<rewards Id="2" counts="100" rewardstype="2" goodsid1="9051517,1" goodsid2="11519401,10" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11519401,20" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="11519401,40" />
+		<rewards Id="5" counts="600" rewardstype="1" goodsid1="9051501,1;21279601,100" />
+	</Common>
+	<Common id="252" itemid="11519501" duration="20240107T000000,20240114T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11519501,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1=" 6117309,1;21279601,10" goodsid2="11519501,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11519501,8" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11519501,15" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11496501,1" />
+	</Common>
+	<Common id="253" itemid="11519601" duration="20240107T000000,20240114T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11519601,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11519601,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11519601,10" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="9042201,1;21279601,60" goodsid2="9042101,1;21279601,60" />
+		<rewards Id="5" counts="160" rewardstype="1" goodsid1="11519601,25" />
+		<rewards Id="6" counts="280" rewardstype="1" goodsid1="9042001,1;21279601,80" />
+	</Common>
+	<Common id="254" itemid="11519701" duration="20240107T000000,20240114T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11519701,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11519701,3" />
+		<rewards Id="3" counts="50" rewardstype="2" goodsid1="6089009,1;21279601,20" goodsid2="6091809,1;21279601,20" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11519701,8" />
+		<rewards Id="5" counts="100" rewardstype="1" goodsid1="6095709,1;21279601,30" />
+		<rewards Id="6" counts="160" rewardstype="1" goodsid1="11519701,20" />
+		<rewards Id="7" counts="200" rewardstype="2" goodsid1="6091109,1;21279601,50" goodsid2="6091209,1;21279601,50" />
+		<rewards Id="8" counts="280" rewardstype="1" goodsid1="913001,1;21279601,150" />
+	</Common>
+	<Common id="255" itemid="11520001" duration="20240107T000000,20240119T235959">
+		<rewards Id="1" counts="40" rewardstype="1" goodsid1="11520101,1" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11520101,1" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11520201,1" />
+		<rewards Id="4" counts="250" rewardstype="1" goodsid1="11520101,1" />
+		<rewards Id="5" counts="400" rewardstype="1" goodsid1="11520201,1" />
+		<rewards Id="6" counts="450" rewardstype="1" goodsid1="11520101,1" />
+		<rewards Id="7" counts="600" rewardstype="1" goodsid1="11520201,1" />
+		<rewards Id="8" counts="650" rewardstype="1" goodsid1="11520101,1" />
+		<rewards Id="9" counts="800" rewardstype="2" goodsid1="6136609,1" goodsid2="6141909,1" goodsid3="6135809,1" goodsid4="6125009,1" goodsid5="6145609,1" />
+	</Common>
+	<Common id="256" itemid="11521001" duration="20240115T000000,20240119T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11521001,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11521001,10" />
+		<rewards Id="3" counts="180" rewardstype="1" goodsid1="11521001,18" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="9054001,1;21279801,50" />
+		<rewards Id="5" counts="600" rewardstype="1" goodsid1="6156009,1;21279801,80" />
+	</Common>
+	<Common id="257" itemid="11521101" duration="20240115T000000,20240119T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11521101,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11521101,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="914001,1;1150001,40" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="11521101,20" />
+		<rewards Id="5" counts="350" rewardstype="1" goodsid1="11521101,35" />
+		<rewards Id="6" counts="500" rewardstype="1" goodsid1="11521101,60" />
+		<rewards Id="7" counts="700" rewardstype="1" goodsid1="11521101,80" />
+		<rewards Id="8" counts="900" rewardstype="1" goodsid1="934501,1;21279801,750" />
+	</Common>
+	<Common id="258" itemid="11521201" duration="20240115T000000,20240119T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11521201,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11521201,4" />
+		<rewards Id="3" counts="90" rewardstype="1" goodsid1="6091009,1;21279801,50" />
+		<rewards Id="4" counts="160" rewardstype="1" goodsid1="11521201,16" />
+		<rewards Id="5" counts="240" rewardstype="2" goodsid1="6108909,1;21279801,80" goodsid2="6087209,1;21279801,80" />
+	</Common>
+	<Common id="259" itemid="11521501" duration="20240120T000000,20240126T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11521501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11521501,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11521501,7" />
+		<rewards Id="4" counts="110" rewardstype="1" goodsid1="11521501,11" />
+		<rewards Id="5" counts="160" rewardstype="2" goodsid1="6143009,1;21280301,80" goodsid2="6143109,1;21280301,80" />
+	</Common>
+	<Common id="260" itemid="11521601" duration="20240120T000000,20240126T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11521601,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11521601,4" />
+		<rewards Id="3" counts="60" rewardstype="1" goodsid1="9047701,1;21280301,30" />
+		<rewards Id="4" counts="140" rewardstype="1" goodsid1="11521601,14" />
+		<rewards Id="5" counts="230" rewardstype="1" goodsid1="11507101,1" />
+	</Common>
+	<Common id="261" itemid="11521701" duration="20240120T000000,20240126T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11521701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11521701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11521701,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6109009,1;21280301,60" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6103609,1;21280301,75" goodsid2="6103509,1;21280301,75" />
+	</Common>
+	<Common id="262" itemid="11521801" duration="20240120T000000,20240126T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="6123609,1;21280301,10" />
+		<rewards Id="2" counts="50" rewardstype="1" goodsid1="11521801,5" />
+		<rewards Id="3" counts="100" rewardstype="2" goodsid1="9047401,1;21280301,50" goodsid2="6090909,1;21280301,50" goodsid3="11521801,10" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="11521801,20" />
+		<rewards Id="5" counts="350" rewardstype="1" goodsid1="6080609,1;21280301,200" />
+	</Common>
+	<Common id="264" itemid="11522501" duration="20240127T000000,20240202T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11522501,8" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11522501,10;" />
+		<rewards Id="3" counts="180" rewardstype="1" goodsid1="11522501,18" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="6152309,1;21280901,70" />
+		<rewards Id="5" counts="600" rewardstype="2" goodsid1="9050801,1;21223901,1" goodsid2="9048701,1;21223901,1" />
+	</Common>
+	<Common id="263" itemid="11522401" duration="20240127T000000,20240202T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11522401,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11522401,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11522401,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11522401,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="6116209,1;21280901,65" />
+	</Common>
+	<Common id="265" itemid="11522601" duration="20240127T000000,20240202T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11522601,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11522601,3" />
+		<rewards Id="3" counts="50" rewardstype="1" goodsid1="6085509,1;21280901,25" />
+		<rewards Id="4" counts="100" rewardstype="1" goodsid1="11522601,10" />
+		<rewards Id="5" counts="180" rewardstype="2" goodsid1="6088509,1;21280901,100" goodsid2="6088609,1;21280901,100" goodsid3="6098809,1;21280901,100" />
+	</Common>
+	<Common id="266" itemid="11522701" duration="20240127T000000,20240202T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11522701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11522701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11522701,8" />
+		<rewards Id="4" counts="150" rewardstype="2" goodsid1="6093609,1;21280901,100" goodsid2="6108909,1;21280901,80" />
+	</Common>
+	<Common id="267" itemid="11523101" duration="20240203T000000,20240208T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11523101,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="6136709,1;21281001,20" />
+		<rewards Id="3" counts="180" rewardstype="1" goodsid1="11523101,18" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="11523101,35" />
+		<rewards Id="5" counts="600" rewardstype="1" goodsid1="6143409,1;21223901,1" />
+		<rewards Id="6" counts="900" rewardstype="1" goodsid1="11523101,90" />
+		<rewards Id="7" counts="1300" rewardstype="1" goodsid1="9049501,1;21223901,3" />
+	</Common>
+	<Common id="268" itemid="11523201" duration="20240203T000000,20240208T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11523201,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11523201,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11523201,8" />
+		<rewards Id="4" counts="140" rewardstype="2" goodsid1="6105209,1;21281001,80" goodsid2="6105309,1;21281001,80" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11523201,24" />
+		<rewards Id="6" counts="360" rewardstype="2" goodsid1="6067309,1;21281001,400" goodsid2="6067409,1;21281001,400" />
+	</Common>
+	<Common id="269" itemid="11523301" duration="20240203T000000,20240208T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11523301,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11523301,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11523301,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11523301,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11523301,12" />
+		<rewards Id="6" counts="160" rewardstype="2" goodsid1="6108609,1;21281001,80" goodsid2="6108509,1;21281001,80" />
+		<rewards Id="7" counts="220" rewardstype="1" goodsid1="11523301,22" />
+		<rewards Id="8" counts="320" rewardstype="1" goodsid1="11499001,1" />
+	</Common>
+	<Common id="270" itemid="11524401" duration="20240209T000000,20240218T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11524401,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11524401,10" />
+		<rewards Id="3" counts="180" rewardstype="1" goodsid1="11524401,18" />
+		<rewards Id="4" counts="300" rewardstype="1" goodsid1="6158009,1;21281601,60" />
+	</Common>
+	<Common id="271" itemid="11524501" duration="20240209T000000,20240218T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11524501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11524501,4" />
+		<rewards Id="3" counts="80" rewardstype="2" goodsid1="9050401,1;21281601,50" goodsid2="11524501,8" />
+		<rewards Id="4" counts="130" rewardstype="1" goodsid1="11524501,13" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11524501,20" />
+		<rewards Id="6" counts="280" rewardstype="2" goodsid1="11501201,1" goodsid2="11501101,1" />
+	</Common>
+	<Common id="272" itemid="11524601" duration="20240209T000000,20240218T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11524601,2" />
+		<rewards Id="2" counts="50" rewardstype="1" goodsid1="11524601,5" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11524601,10" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="6091309,1;21281601,80" />
+		<rewards Id="5" counts="400" rewardstype="1" goodsid1="11524601,40" />
+		<rewards Id="6" counts="550" rewardstype="1" goodsid1="11524601,55" />
+		<rewards Id="7" counts="750" rewardstype="2" goodsid1="6067009,1;21281601,400" goodsid2="6066909,1;21281601,400" />
+	</Common>
+	<Common id="273" itemid="11524701" duration="20240209T000000,20240218T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11524701,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11524701,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="6100809,1;21281601,20" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11524701,8" />
+		<rewards Id="5" counts="150" rewardstype="1" goodsid1="6100709,1;21281601,80" />
+	</Common>
+	<Common id="274" itemid="11525601" duration="20240219T000000,20240223T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11525601,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11525601,10" />
+		<rewards Id="3" counts="240" rewardstype="2" goodsid1="9054201,1;21223901,1" goodsid2="11525601,24" />
+		<rewards Id="4" counts="400" rewardstype="1" goodsid1="11525601,40" />
+		<rewards Id="5" counts="650" rewardstype="1" goodsid1="11511001,1" />
+	</Common>
+	<Common id="275" itemid="11525701" duration="20240219T000000,20240223T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11525701,4" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11525701,6" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11525701,10" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6126209,1;21282901,60" />
+	</Common>
+	<Common id="276" itemid="11525801" duration="20240219T000000,20240223T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11525801,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11525801,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11525801,8" />
+		<rewards Id="4" counts="130" rewardstype="1" goodsid1="11525801,13" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11486201,1" />
+	</Common>
+	<Common id="277" itemid="11525901" duration="20240219T000000,20240223T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11525901,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11525901,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11525901,8" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="11525901,20" />
+		<rewards Id="5" counts="360" rewardstype="2" goodsid1="6067109,1;21282901,250" goodsid2="6067209,1;21282901,250" />
+	</Common>
+	<Common id="278" itemid="11526201" duration="20240224T000000,20240301T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11526201,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="934407,1" goodsid2="11526201,4" />
+		<rewards Id="3" counts="100" rewardstype="2" goodsid1="9050701,1;21283301,50" goodsid2="11526201,10" />
+		<rewards Id="4" counts="180" rewardstype="2" goodsid1="6146209,1;21283301,80" goodsid2="6146309,1;21283301,80" />
+		<rewards Id="5" counts="300" rewardstype="1" goodsid1="11526201,30" />
+		<rewards Id="6" counts="450" rewardstype="1" goodsid1="934401,1;21283301,200" />
+	</Common>
+	<Common id="279" itemid="11526301" duration="20240224T000000,20240301T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11526301,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11526301,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11526301,8" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="6096109,1;21283301,60" goodsid2="6096209,1;21283301,60" />
+	</Common>
+	<Common id="280" itemid="11526401" duration="20240224T000000,20240301T235959">
+		<rewards Id="1" counts="20" rewardstype="2" goodsid1="6116909,1;21283301,10" goodsid2="6124409,1;21283301,10" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11526401,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11526401,8" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="9047201,1;21283301,60" goodsid2="9047301,1;21283301,60" />
+	</Common>
+	<Common id="281" itemid="11526901" duration="20240302T000000,20240309T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11526901,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11526901,10" />
+		<rewards Id="3" counts="260" rewardstype="1" goodsid1="11526901,20" />
+		<rewards Id="4" counts="450" rewardstype="1" goodsid1="11526901,20" />
+		<rewards Id="5" counts="700" rewardstype="1" goodsid1="11526901,30" />
+		<rewards Id="6" counts="1000" rewardstype="1" goodsid1="9057801,1;21223901,1" />
+	</Common>
+	<Common id="282" itemid="11527001" duration="20240302T000000,20240309T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11527001,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11527001,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11527001,8" />
+		<rewards Id="4" counts="130" rewardstype="2" goodsid1="6123809,1;21284801,80" goodsid2="6123909,1;21284801,80" />
+		<rewards Id="5" counts="260" rewardstype="1" goodsid1="11497001,1" />
+	</Common>
+	<Common id="283" itemid="11527101" duration="20240302T000000,20240309T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11527101,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11527101,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11527101,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6096609,1;21284801,60" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11527101,20" />
+		<rewards Id="6" counts="280" rewardstype="2" goodsid1="9041101,1;21284801,80" goodsid2="6101509,1;21284801,80" goodsid3="6076309,1;21284801,100" />
+		<rewards Id="7" counts="350" rewardstype="1" goodsid1="11527101,35" />
+		<rewards Id="8" counts="450" rewardstype="2" goodsid1="6076609,1;21284801,250" goodsid2="6076509,1;21284801,250" />
+	</Common>
+	<Common id="284" itemid="11528401" duration="20240310T000000,20240315T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11528401,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11528401,10" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11528401,20" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="11528401,35" />
+		<rewards Id="5" counts="500" rewardstype="1" goodsid1="11528401,50" />
+		<rewards Id="6" counts="700" rewardstype="2" goodsid1="6068009,1;21285501,400" goodsid2="6067909,1;21285501,400" />
+	</Common>
+	<Common id="285" itemid="11528501" duration="20240310T000000,20240315T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11528501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11528501,4" />
+		<rewards Id="3" counts="80" rewardstype="2" goodsid1="11528501,8" goodsid2="6103309,1;21285501,35" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11528501,12" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6100909,1;21285501,100" goodsid2="6116509,1;21285501,100" />
+		<rewards Id="6" counts="240" rewardstype="1" goodsid1="11502901,1" />
+	</Common>
+	<Common id="286" itemid="11528601" duration="20240310T000000,20240315T235959">
+		<rewards Id="1" counts="30" rewardstype="1" goodsid1="11528601,4" />
+		<rewards Id="2" counts="60" rewardstype="2" goodsid1="6090009,1;21285501,30" goodsid2="6089909,1;21285501,30" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11528601,10" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11528601,15" />
+		<rewards Id="5" counts="200" rewardstype="2" goodsid1="6093409,1;21285501,100" goodsid2="6093509,1;21285501,100" />
+	</Common>
+	<Common id="287" itemid="11528801" duration="20240310T000000,20240315T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11528801,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11528801,10" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11528801,20" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="11528801,40" />
+		<rewards Id="5" counts="650" rewardstype="1" goodsid1="9048101,1;21223901,1" />
+	</Common>
+	<Common id="288" itemid="11529001" duration="20240316T000000,20240322T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11529001,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11529001,10" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11529001,20" />
+		<rewards Id="4" counts="320" rewardstype="1" goodsid1="11529001,32" />
+		<rewards Id="5" counts="500" rewardstype="1" goodsid1="9055101,1;21223901,1;" />
+	</Common>
+	<Common id="289" itemid="11529101" duration="20240316T000000,20240322T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11529101,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="9047601,1;21285601,20" goodsid2="11529101,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11529101,8" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11529101,15" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11516001,1" />
+	</Common>
+	<Common id="290" itemid="11529201" duration="20240316T000000,20240322T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11529201,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11529201,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11529201,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11529201,12" />
+		<rewards Id="5" counts="150" rewardstype="1" goodsid1="6118109,1;21285601,60" />
+	</Common>
+	<Common id="291" itemid="11529301" duration="20240316T000000,20240322T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11529301,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11529301,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11529301,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11529301,8" />
+		<rewards Id="5" counts="120" rewardstype="2" goodsid1="6095609,1;21285601,60" goodsid2="6104509,1;21285601,70" />
+		<rewards Id="6" counts="240" rewardstype="1" goodsid1="6103009,1;21285601,80" />
+	</Common>
+	<Common id="292" itemid="11529601" duration="20240323T000000,20240403T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11529601,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11529601,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11529601,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11529601,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11529601,12" />
+		<rewards Id="6" counts="200" rewardstype="2" goodsid1="944201,1;21286401,100" goodsid2="6085609,1;21286401,100" goodsid3="6085709,1;21286401,100" goodsid4="6085809,1;21286401,100" />
+	</Common>
+	<Common id="293" itemid="11529701" duration="20240323T000000,20240329T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11529701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11529701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11529701,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11529701,12" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6123109,1;21286401,80" goodsid2="6123209,1;21286401,80" />
+	</Common>
+	<Common id="294" itemid="11529801" duration="20240323T000000,20240329T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11529801,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11529801,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11529801,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11529801,12" />
+		<rewards Id="5" counts="160" rewardstype="2" goodsid1="9041801,1;21286401,80" goodsid2="9042401,1;21286401,80" />
+	</Common>
+	<Common id="295" itemid="11529901" duration="20240323T000000,20240329T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11529901,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11529901,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11529901,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11529901,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11529901,12" />
+		<rewards Id="6" counts="150" rewardstype="2" goodsid1="6102209,1;21286401,80" goodsid2="6102309,1;21286401,80" />
+	</Common>
+	<Common id="296" itemid="11530101" duration="20240330T000000,20240403T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11530101,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11530101,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11530101,8" />
+		<rewards Id="4" counts="140" rewardstype="2" goodsid1="6105209,1;21286601,80" goodsid2="6105309,1;21286601,80" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11530101,24" />
+		<rewards Id="6" counts="360" rewardstype="2" goodsid1="6067309,1;21286601,400" goodsid2="6067409,1;21286601,400" />
+	</Common>
+	<Common id="297" itemid="11530201" duration="20240330T000000,20240403T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="6123609,1;21286601,10" />
+		<rewards Id="2" counts="50" rewardstype="1" goodsid1="11530201,5" />
+		<rewards Id="3" counts="100" rewardstype="2" goodsid1="9047401,1;21286601,50" goodsid2="6090909,1;21286601,50" goodsid3="11530201,10" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="11530201,20" />
+		<rewards Id="5" counts="350" rewardstype="1" goodsid1="6080609,1;21286601,200" />
+	</Common>
+	<Common id="298" itemid="11530301" duration="20240330T000000,20240403T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11530301,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11530301,4" />
+		<rewards Id="3" counts="90" rewardstype="1" goodsid1="6091009,1;21286601,50" />
+		<rewards Id="4" counts="160" rewardstype="1" goodsid1="11530301,16" />
+		<rewards Id="5" counts="240" rewardstype="2" goodsid1="6108909,1;21286601,80" goodsid2="6087209,1;21286601,80" />
+	</Common>
+	<Common id="299" itemid="11530801" duration="20240404T000000,20240412T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11530801,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11530801,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11530801,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6096409,1;21287401,60" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11492401,1" />
+	</Common>
+	<Common id="300" itemid="11530901" duration="20240404T000000,20240412T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11530901,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11530901,3" />
+		<rewards Id="3" counts="50" rewardstype="2" goodsid1="6089009,1;21287401,20" goodsid2="6091809,1;21287401,20" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11530901,8" />
+		<rewards Id="5" counts="100" rewardstype="1" goodsid1="6095709,1;21287401,30" />
+		<rewards Id="6" counts="160" rewardstype="1" goodsid1="11530901,20" />
+		<rewards Id="7" counts="200" rewardstype="2" goodsid1="6091109,1;21287401,50" goodsid2="6091209,1;21287401,50" />
+		<rewards Id="8" counts="280" rewardstype="1" goodsid1="913001,1;21287401,150" />
+	</Common>
+	<Common id="301" itemid="11531001" duration="20240404T000000,20240412T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11531001,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11531001,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11531001,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6109009,1;21287401,60" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6103609,1;21287401,75" goodsid2="6103509,1;21287401,75" />
+	</Common>
+	<Common id="302" itemid="11531301" duration="20240413T000000,20240418T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11531301,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11531301,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="6088709,1;21287801,40" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="6091409,1;21287801,60" goodsid2="6096709,1;21287801,60" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="6096809,1;21287801,100" />
+	</Common>
+	<Common id="303" itemid="11531401" duration="20240413T000000,20240418T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11531401,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11531401,3" />
+		<rewards Id="3" counts="50" rewardstype="1" goodsid1="6085509,1;21287801,25" />
+		<rewards Id="4" counts="100" rewardstype="1" goodsid1="11531401,10" />
+		<rewards Id="5" counts="180" rewardstype="2" goodsid1="6088509,1;21287801,100" goodsid2="6088609,1;21287801,100" goodsid3="6098809,1;21287801,100" />
+	</Common>
+	<Common id="304" itemid="11531501" duration="20240413T000000,20240418T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11531501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11531501,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11531501,7" />
+		<rewards Id="4" counts="110" rewardstype="1" goodsid1="11531501,11" />
+		<rewards Id="5" counts="160" rewardstype="2" goodsid1="6143009,1;21287801,80" goodsid2="6143109,1;21287801,80" />
+	</Common>
+	<Common id="305" itemid="11531801" duration="20240419T000000,20240425T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11531801,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11531801,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="6100809,1;21288601,20" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11531801,8" />
+		<rewards Id="5" counts="150" rewardstype="1" goodsid1="6100709,1;21288601,80" />
+	</Common>
+	<Common id="306" itemid="11531901" duration="20240419T000000,20240425T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11531901,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11531901,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11531901,8" />
+		<rewards Id="4" counts="150" rewardstype="2" goodsid1="6093609,1;21288601,100" goodsid2="6108909,1;21288601,80" />
+	</Common>
+	<Common id="307" itemid="11532001" duration="20240419T000000,20240425T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11532001,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11532001,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11532001,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11532001,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11532001,12" />
+		<rewards Id="6" counts="160" rewardstype="2" goodsid1="6108609,1;21288601,80" goodsid2="6108509,1;21288601,80" />
+		<rewards Id="7" counts="220" rewardstype="1" goodsid1="11532001,22" />
+		<rewards Id="8" counts="320" rewardstype="1" goodsid1="11499001,1" />
+	</Common>
+	<Common id="308" itemid="11532301" duration="20240426T000000,20240429T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11532301,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11532301,10" />
+		<rewards Id="3" counts="180" rewardstype="1" goodsid1="11532301,18" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="9054001,1;21288901,50" />
+		<rewards Id="5" counts="600" rewardstype="1" goodsid1="6156009,1;21288901,80" />
+	</Common>
+	<Common id="309" itemid="11532401" duration="20240426T000000,20240429T235959">
+		<rewards Id="1" counts="20" rewardstype="2" goodsid1="6116909,1;21288901,10" goodsid2="6124409,1;21288901,10" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11532401,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11532401,8" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="9047201,1;21288901,60" goodsid2="9047301,1;21288901,60" />
+	</Common>
+	<Common id="310" itemid="11532501" duration="20240426T000000,20240429T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11532501,2" />
+		<rewards Id="2" counts="50" rewardstype="1" goodsid1="11532501,5" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11532501,10" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="6091309,1;21288901,80" />
+		<rewards Id="5" counts="400" rewardstype="1" goodsid1="11532501,40" />
+		<rewards Id="6" counts="550" rewardstype="1" goodsid1="11532501,55" />
+		<rewards Id="7" counts="750" rewardstype="2" goodsid1="6067009,1;21288901,400" goodsid2="6066909,1;21288901,400" />
+	</Common>
+	<Common id="311" itemid="11532701" duration="20240430T000000,20240509T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11532701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11532701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11532701,10" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="9042201,1;21289701,60" goodsid2="9042101,1;21289701,60" />
+		<rewards Id="5" counts="160" rewardstype="1" goodsid1="11532701,25" />
+		<rewards Id="6" counts="280" rewardstype="1" goodsid1="9042001,1;21289701,80" />
+	</Common>
+	<Common id="312" itemid="11532801" duration="20240430T000000,20240509T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11532801,4" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11532801,6" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11532801,10" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6126209,1;21289701,60" />
+	</Common>
+	<Common id="313" itemid="11532901" duration="20240430T000000,20240509T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11532901,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11532901,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11532901,8" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="11532901,20" />
+		<rewards Id="5" counts="360" rewardstype="2" goodsid1="6067109,1;21289701,250" goodsid2="6067209,1;21289701,250" />
+	</Common>
+	<Common id="314" itemid="11534101" duration="20240510T000000,20240516T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11534101,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="9047601,1;21290101,20" goodsid2="11534101,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11534101,8" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11534101,15" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11516001,1" />
+	</Common>
+	<Common id="315" itemid="11534201" duration="20240510T000000,20240516T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11534201,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11534201,4" />
+		<rewards Id="3" counts="80" rewardstype="2" goodsid1="11534201,8" goodsid2="6103309,1;21290101,35" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11534201,12" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6100909,1;21290101,100" goodsid2="6116509,1;21290101,100" />
+		<rewards Id="6" counts="240" rewardstype="1" goodsid1="11502901,1" />
+	</Common>
+	<Common id="316" itemid="11534301" duration="20240510T000000,20240516T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11534301,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11534301,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11534301,8" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="6096109,1;21290101,60" goodsid2="6096209,1;21290101,60" />
+	</Common>
+	<Common id="317" itemid="11534401" duration="20240517T000000,20240524T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11534401,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="934407,1" goodsid2="11534401,4" />
+		<rewards Id="3" counts="100" rewardstype="2" goodsid1="9050701,1;21290701,50" goodsid2="11534401,10" />
+		<rewards Id="4" counts="180" rewardstype="2" goodsid1="6146209,1;21290701,80" goodsid2="6146309,1;21290701,80" />
+		<rewards Id="5" counts="300" rewardstype="1" goodsid1="11534401,30" />
+		<rewards Id="6" counts="450" rewardstype="1" goodsid1="934401,1;21290701,200" />
+	</Common>
+	<Common id="318" itemid="11534501" duration="20240517T000000,20240524T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11534501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11534501,4" />
+		<rewards Id="3" counts="80" rewardstype="2" goodsid1="9050401,1;21290701,50" goodsid2="11534501,8" />
+		<rewards Id="4" counts="130" rewardstype="1" goodsid1="11534501,13" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11534501,20" />
+		<rewards Id="6" counts="280" rewardstype="2" goodsid1="11501201,1" goodsid2="11501101,1" />
+	</Common>
+	<Common id="319" itemid="11534601" duration="20240517T000000,20240524T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11534601,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11534601,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11534601,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6096609,1;21290701,60" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11534601,20" />
+		<rewards Id="6" counts="280" rewardstype="2" goodsid1="9041101,1;21290701,80" goodsid2="6101509,1;21290701,80" goodsid3="6076309,1;21290701,100" />
+		<rewards Id="7" counts="350" rewardstype="1" goodsid1="11534601,35" />
+		<rewards Id="8" counts="450" rewardstype="2" goodsid1="6076609,1;21290701,250" goodsid2="6076509,1;21290701,250" />
+	</Common>
+	<Common id="320" itemid="11535101" duration="20240525T000000,20240531T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11535101,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11535101,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11535101,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11535101,12" />
+		<rewards Id="5" counts="150" rewardstype="1" goodsid1="6118109,1;21291401,60" />
+	</Common>
+	<Common id="321" itemid="11535201" duration="20240525T000000,20240531T235959">
+		<rewards Id="1" counts="30" rewardstype="1" goodsid1="11535201,4" />
+		<rewards Id="2" counts="60" rewardstype="2" goodsid1="6090009,1;21291401,30" goodsid2="6089909,1;21291401,30" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11535201,10" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11535201,15" />
+		<rewards Id="5" counts="200" rewardstype="2" goodsid1="6093409,1;21291401,100" goodsid2="6093509,1;21291401,100" />
+	</Common>
+	<Common id="322" itemid="11535301" duration="20240525T000000,20240531T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11535301,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11535301,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11535301,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11535301,12" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6123109,1;21291401,80" goodsid2="6123209,1;21291401,80" />
+	</Common>
+	<Common id="323" itemid="11535701" duration="20240601T000000,20240607T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11535701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11535701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11535701,8" />
+		<rewards Id="4" counts="130" rewardstype="2" goodsid1="6123809,1;21291901,80" goodsid2="6123909,1;21291901,50" />
+		<rewards Id="5" counts="260" rewardstype="1" goodsid1="11497001,1" />
+	</Common>
+	<Common id="324" itemid="11535801" duration="20240601T000000,20240607T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11535801,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11535801,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11535801,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11535801,8" />
+		<rewards Id="5" counts="120" rewardstype="2" goodsid1="6095609,1;21291901,60" goodsid2="6104509,1;21291901,70" />
+		<rewards Id="6" counts="240" rewardstype="1" goodsid1="6103009,1;21291901,80" />
+	</Common>
+	<Common id="325" itemid="11535901" duration="20240601T000000,20240607T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11535901,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11535901,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11535901,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11535901,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11535901,12" />
+		<rewards Id="6" counts="150" rewardstype="2" goodsid1="6102209,1;21291901,80" goodsid2="6102309,1;21291901,80" />
+	</Common>
+	<Common id="326" itemid="11536801" duration="20240608T000000,20240615T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11536801,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11536801,10" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11536801,20" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="11536801,35" />
+		<rewards Id="5" counts="500" rewardstype="1" goodsid1="11536801,50" />
+		<rewards Id="6" counts="700" rewardstype="2" goodsid1="6068009,1;21292801,400" goodsid2="6067909,1;21292801,400" />
+	</Common>
+	<Common id="327" itemid="11536901" duration="20240608T000000,20240615T235959">
+		<rewards Id="1" counts="20" rewardstype="2" goodsid1="6116909,1;21292801,10" goodsid2="6124409,1;21292801,10" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11536901,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11536901,8" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="9047201,1;21292801,60" goodsid2="9047301,1;21292801,60" />
+	</Common>
+	<Common id="328" itemid="11537001" duration="20240608T000000,20240615T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11537001,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11537001,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11537001,8" />
+		<rewards Id="4" counts="140" rewardstype="2" goodsid1="6105209,1;21292801,80" goodsid2="6105309,1;21292801,80" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11537001,24" />
+		<rewards Id="6" counts="360" rewardstype="2" goodsid1="6067309,1;21292801,400" goodsid2="6067409,1;21292801,400" />
+	</Common>
+	<Common id="329" itemid="11537401" duration="20240616T000000,20240621T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11537401,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11537401,4" />
+		<rewards Id="3" counts="70" rewardstype="1" goodsid1="11537401,7" />
+		<rewards Id="4" counts="110" rewardstype="1" goodsid1="11537401,11" />
+		<rewards Id="5" counts="160" rewardstype="2" goodsid1="6143009,1;21293201,80" goodsid2="6143109,1;21293201,80" />
+	</Common>
+	<Common id="330" itemid="11537501" duration="20240616T000000,20240621T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11537501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11537501,4" />
+		<rewards Id="3" counts="90" rewardstype="1" goodsid1="6091009,1;21293201,50" />
+		<rewards Id="4" counts="160" rewardstype="1" goodsid1="11537501,16" />
+		<rewards Id="5" counts="240" rewardstype="2" goodsid1="6108909,1;21293201,80" goodsid2="6087209,1;21293201,80" />
+	</Common>
+	<Common id="331" itemid="11537601" duration="20240616T000000,20240621T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11537601,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11537601,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11537601,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11537601,12" />
+		<rewards Id="5" counts="160" rewardstype="2" goodsid1="9041801,1;21293201,80" goodsid2="9042401,1;21293201,80" />
+	</Common>
+	<Common id="332" itemid="11537801" duration="20240622T000000,20240628T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11537801,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11537801,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11537801,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6109009,1;21293701,60" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6103609,1;21293701,75" goodsid2="6103509,1;21293701,75" />
+	</Common>
+	<Common id="333" itemid="11537901" duration="20240622T000000,20240628T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11537901,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11537901,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11537901,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11537901,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11537901,12" />
+		<rewards Id="6" counts="200" rewardstype="2" goodsid1="944201,1;21293701,100" goodsid2="6085609,1;21293701,100" goodsid3="6085709,1;21293701,100" goodsid4="6085809,1;21293701,100" />
+	</Common>
+	<Common id="334" itemid="11538001" duration="20240622T000000,20240628T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11538001,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11538001,3" />
+		<rewards Id="3" counts="50" rewardstype="1" goodsid1="6085509,1;21293701,25" />
+		<rewards Id="4" counts="100" rewardstype="1" goodsid1="11538001,10" />
+		<rewards Id="5" counts="180" rewardstype="2" goodsid1="6088509,1;21293701,100" goodsid2="6088609,1;21293701,100" goodsid3="6098809,1;21293701,100" />
+	</Common>
+	<Common id="335" itemid="11538201" duration="20240618T093000,20240705T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11538201,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11538201,10" />
+		<rewards Id="3" counts="260" rewardstype="2" goodsid1="6091209,1" goodsid2="6150609,1" goodsid3="11538201,20" />
+		<rewards Id="4" counts="500" rewardstype="1" goodsid1="11538201,50" />
+		<rewards Id="5" counts="850" rewardstype="1" goodsid1="11538201,80" />
+		<rewards Id="6" counts="1300" rewardstype="2" goodsid1="11538301,1" goodsid2="11538401,1" goodsid3="11538501,1" />
+	</Common>
+	<Common id="336" itemid="11538701" duration="20240629T000000,20240705T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11538701,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11538701,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11538701,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6096409,1;21294201,60" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11492401,1" />
+	</Common>
+	<Common id="337" itemid="11538801" duration="20240629T000000,20240705T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11538801,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11538801,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="6100809,1;21294201,20" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11538801,8" />
+		<rewards Id="5" counts="150" rewardstype="1" goodsid1="6100709,1;21294201,80" />
+	</Common>
+	<Common id="338" itemid="11538901" duration="20240629T000000,20240705T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="6123609,1" />
+		<rewards Id="2" counts="50" rewardstype="1" goodsid1="11538901,5" />
+		<rewards Id="3" counts="100" rewardstype="2" goodsid1="9047401,1;21294201,50" goodsid2="6090909,1;21294201,50" goodsid3="11538901,10" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="11538901,20" />
+		<rewards Id="5" counts="350" rewardstype="1" goodsid1="6080609,1;21294201,200" />
+	</Common>
+	<Common id="339" itemid="11539401" duration="20240706T000000,20240712T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11539401,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11539401,4" />
+		<rewards Id="3" counts="80" rewardstype="2" goodsid1="11539401,8" goodsid2="6103309,1;21295101,35" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11539401,12" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6100909,1;21295101,100" goodsid2="6116509,1;21295101,100" />
+		<rewards Id="6" counts="240" rewardstype="1" goodsid1="11502901,1" />
+	</Common>
+	<Common id="340" itemid="11539501" duration="20240706T000000,20240712T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11539501,2" />
+		<rewards Id="2" counts="50" rewardstype="1" goodsid1="11539501,5" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11539501,10" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="6091309,1;21295101,80" />
+		<rewards Id="5" counts="400" rewardstype="1" goodsid1="11539501,40" />
+		<rewards Id="6" counts="550" rewardstype="1" goodsid1="11539501,55" />
+		<rewards Id="7" counts="750" rewardstype="2" goodsid1="6067009,1;21295101,400" goodsid2="6066909,1;21295101,400" />
+	</Common>
+	<Common id="341" itemid="11539601" duration="20240706T000000,20240712T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11539601,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11539601,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11539601,8" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="6096109,1;21295101,60" goodsid2="6096209,1;21295101,60" />
+	</Common>
+	<Common id="342" itemid="11539901" duration="20240713T000000,20240721T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11539901,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="9047601,1;21295501,20" goodsid2="11539901,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11539901,8" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11539901,15" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11516001,1" />
+	</Common>
+	<Common id="343" itemid="11540001" duration="20240713T000000,20240721T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11540001,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11540001,4" />
+		<rewards Id="3" counts="80" rewardstype="2" goodsid1="9050401,1;21295501,50" goodsid2="11540001,8" />
+		<rewards Id="4" counts="130" rewardstype="1" goodsid1="11540001,13" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11540001,20" />
+		<rewards Id="6" counts="280" rewardstype="2" goodsid1="11501201,1" goodsid2="11501101,1" goodsid3="11484801,1" />
+	</Common>
+	<Common id="344" itemid="11540101" duration="20240713T000000,20240721T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11540101,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11540101,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11540101,8" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="11540101,20" />
+		<rewards Id="5" counts="360" rewardstype="2" goodsid1="6067109,1;21295501,250" goodsid2="6067209,1;21295501,250" />
+	</Common>
+	<Common id="345" itemid="11540801" duration="20240722T000000,20240726T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11540801,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11540801,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11540801,10" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="9042201,1;21296201,60" goodsid2="9042101,1;21296201,60" />
+		<rewards Id="5" counts="160" rewardstype="1" goodsid1="11540801,25" />
+		<rewards Id="6" counts="280" rewardstype="1" goodsid1="9042001,1;21296201,80" />
+	</Common>
+	<Common id="346" itemid="11540901" duration="20240722T000000,20240726T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11540901,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11540901,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="6088709,1;21296201,40" />
+		<rewards Id="4" counts="120" rewardstype="2" goodsid1="6091409,1;21296201,60" goodsid2="6096709,1;21296201,60" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="6096809,1;21296201,100" />
+	</Common>
+	<Common id="347" itemid="11541001" duration="20240722T000000,20240726T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11541001,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11541001,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11541001,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11541001,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11541001,12" />
+		<rewards Id="6" counts="160" rewardstype="2" goodsid1="6108609,1;21296201,80" goodsid2="6108509,1;21296201,80" />
+		<rewards Id="7" counts="220" rewardstype="1" goodsid1="11541001,22" />
+		<rewards Id="8" counts="320" rewardstype="1" goodsid1="11499001,1" />
+	</Common>
+	<Common id="348" itemid="11541301" duration="20240727T000000,20240802T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11541301,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11541301,4" />
+		<rewards Id="3" counts="60" rewardstype="1" goodsid1="9047701,1;21296801,30" />
+		<rewards Id="4" counts="140" rewardstype="1" goodsid1="11541301,14" />
+		<rewards Id="5" counts="230" rewardstype="1" goodsid1="11507101,1" />
+	</Common>
+	<Common id="349" itemid="11541401" duration="20240727T000000,20240802T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11541401,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11541401,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11541401,8" />
+		<rewards Id="4" counts="130" rewardstype="2" goodsid1="6123809,1;21296801,80" goodsid2="6123909,1;21296801,50" />
+		<rewards Id="5" counts="260" rewardstype="1" goodsid1="11497001,1" />
+	</Common>
+	<Common id="350" itemid="11541501" duration="20240727T000000,20240802T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11541501,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11541501,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11541501,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11541501,8" />
+		<rewards Id="5" counts="120" rewardstype="2" goodsid1="6095609,1;21296801,60" goodsid2="6104509,1;21296801,70" />
+		<rewards Id="6" counts="240" rewardstype="1" goodsid1="6103009,1;21296801,80" />
+	</Common>
+	<Common id="351" itemid="11541801" duration="20240803T000000,20240809T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11541801,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11541801,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11541801,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6096409,1;21297201,60" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11492401,1" />
+	</Common>
+	<Common id="352" itemid="11541901" duration="20240803T000000,20240809T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11541901,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11541901,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11541901,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11541901,12" />
+		<rewards Id="5" counts="160" rewardstype="2" goodsid1="9041801,1;21297201,80" goodsid2="9042401,1;21297201,80" />
+	</Common>
+	<Common id="353" itemid="11542001" duration="20240803T000000,20240809T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11542001,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11542001,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11542001,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11542001,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11542001,12" />
+		<rewards Id="6" counts="200" rewardstype="2" goodsid1="944201,1;21297201,100" goodsid2="6085609,1;21297201,100" goodsid3="6085709,1;21297201,100" goodsid4="6085809,1;21297201,100" />
+	</Common>
+	<Common id="354" itemid="11542301" duration="20240810T000000,20240818T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="2265001,3" />
+		<rewards Id="2" counts="40" rewardstype="2" goodsid1="934407,1" goodsid2="2265001,4" />
+		<rewards Id="3" counts="100" rewardstype="2" goodsid1="9050701,1;21297701,50" goodsid2="2265001,10" />
+		<rewards Id="4" counts="180" rewardstype="2" goodsid1="6146209,1;21297701,80" goodsid2="6146309,1;21297701,80" />
+		<rewards Id="5" counts="300" rewardstype="1" goodsid1="2265001,30" />
+		<rewards Id="6" counts="450" rewardstype="1" goodsid1="934401,1;21297701,200" />
+	</Common>
+	<Common id="355" itemid="11542401" duration="20240810T000000,20240818T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11542401,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11542401,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11542401,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11542401,12" />
+		<rewards Id="5" counts="150" rewardstype="1" goodsid1="6118109,1;21297701,60" />
+	</Common>
+	<Common id="356" itemid="11542501" duration="20240810T000000,20240818T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11542501,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11542501,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11542501,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="6096609,1;21297701,60" />
+		<rewards Id="5" counts="200" rewardstype="1" goodsid1="11542501,20" />
+		<rewards Id="6" counts="280" rewardstype="2" goodsid1="9041101,1;21297701,80" goodsid2="6101509,1;21297701,80" goodsid3="6076309,1;21297701,100" />
+		<rewards Id="7" counts="350" rewardstype="1" goodsid1="11542501,35" />
+		<rewards Id="8" counts="450" rewardstype="2" goodsid1="6076609,1;21297701,250" goodsid2="6076509,1;21297701,250" />
+	</Common>
+	<Common id="357" itemid="11542601" duration="20240810T000000,20240818T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11542601,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11542601,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11542601,8" />
+		<rewards Id="4" counts="140" rewardstype="2" goodsid1="6105209,1;21297701,80" goodsid2="6105309,1;21297701,80" />
+		<rewards Id="5" counts="240" rewardstype="1" goodsid1="11542601,24" />
+		<rewards Id="6" counts="360" rewardstype="2" goodsid1="6067309,1;21297701,400" goodsid2="6067409,1;21297701,400" />
+	</Common>
+	<Common id="358" itemid="11543101" duration="20240819T000000,20240823T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11543101,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11543101,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11543101,8" />
+		<rewards Id="4" counts="120" rewardstype="1" goodsid1="11543101,12" />
+		<rewards Id="5" counts="150" rewardstype="2" goodsid1="6123109,1;21298501,80" goodsid2="6123209,1;21298501,80" />
+	</Common>
+	<Common id="359" itemid="11543201" duration="20240819T000000,20240823T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11543201,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11543201,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11543201,8" />
+		<rewards Id="4" counts="150" rewardstype="2" goodsid1="6093609,1;21298501,100" goodsid2="6108909,1;21298501,80" />
+	</Common>
+	<Common id="360" itemid="11543301" duration="20240819T000000,20240823T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11543301,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11543301,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="11543301,4" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11543301,8" />
+		<rewards Id="5" counts="120" rewardstype="1" goodsid1="11543301,12" />
+		<rewards Id="6" counts="150" rewardstype="2" goodsid1="6102209,1;21298501,80" goodsid2="6102309,1;21298501,80" />
+	</Common>
+	<Common id="361" itemid="11543601" duration="20240824T000000,20240830T235959">
+		<rewards Id="1" counts="50" rewardstype="1" goodsid1="11543601,5" />
+		<rewards Id="2" counts="100" rewardstype="1" goodsid1="11543601,10" />
+		<rewards Id="3" counts="200" rewardstype="1" goodsid1="11543601,20" />
+		<rewards Id="4" counts="350" rewardstype="1" goodsid1="11543601,35" />
+		<rewards Id="5" counts="500" rewardstype="1" goodsid1="11543601,50" />
+		<rewards Id="6" counts="700" rewardstype="2" goodsid1="6068009,1;21299101,400" goodsid2="6067909,1;21299101,400" />
+	</Common>
+	<Common id="362" itemid="11543701" duration="20240824T000000,20240830T235959">
+		<rewards Id="1" counts="30" rewardstype="1" goodsid1="11543701,4" />
+		<rewards Id="2" counts="60" rewardstype="2" goodsid1="6090009,1;21299101,30" goodsid2="6089909,1;21299101,30" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11543701,10" />
+		<rewards Id="4" counts="150" rewardstype="1" goodsid1="11543701,15" />
+		<rewards Id="5" counts="200" rewardstype="2" goodsid1="6093409,1;21299101,100" goodsid2="6093509,1;21299101,100" />
+	</Common>
+	<Common id="363" itemid="11543801" duration="20240824T000000,20240830T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11543801,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11543801,3" />
+		<rewards Id="3" counts="50" rewardstype="1" goodsid1="6085509,1;21299101,25" />
+		<rewards Id="4" counts="100" rewardstype="1" goodsid1="11543801,10" />
+		<rewards Id="5" counts="180" rewardstype="2" goodsid1="6088509,1;21299101,100" goodsid2="6088609,1;21299101,100" goodsid3="6098809,1;21299101,100" />
+	</Common>
+	<Common id="364" itemid="11544201" duration="20240831T000000,20240907T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11544201,3" />
+		<rewards Id="2" counts="40" rewardstype="1" goodsid1="11544201,4" />
+		<rewards Id="3" counts="80" rewardstype="1" goodsid1="11544201,8" />
+		<rewards Id="4" counts="130" rewardstype="2" goodsid1="6123809,1;21299201,80" goodsid2="6123909,1;21299201,50" />
+		<rewards Id="5" counts="260" rewardstype="1" goodsid1="11497001,1" />
+	</Common>
+	<Common id="365" itemid="11544301" duration="20240831T000000,20240907T235959">
+		<rewards Id="1" counts="20" rewardstype="1" goodsid1="11544301,2" />
+		<rewards Id="2" counts="50" rewardstype="1" goodsid1="11544301,5" />
+		<rewards Id="3" counts="100" rewardstype="1" goodsid1="11544301,10" />
+		<rewards Id="4" counts="200" rewardstype="1" goodsid1="6091309,1;21299201,80" />
+		<rewards Id="5" counts="400" rewardstype="1" goodsid1="11544301,40" />
+		<rewards Id="6" counts="550" rewardstype="1" goodsid1="11544301,55" />
+		<rewards Id="7" counts="750" rewardstype="2" goodsid1="6067009,1;21299201,400" goodsid2="6066909,1;21299201,400" />
+	</Common>
+	<Common id="366" itemid="11544401" duration="20240831T000000,20240907T235959">
+		<rewards Id="1" counts="10" rewardstype="1" goodsid1="11544401,2" />
+		<rewards Id="2" counts="20" rewardstype="1" goodsid1="11544401,3" />
+		<rewards Id="3" counts="40" rewardstype="1" goodsid1="6100809,1;21299201,20" />
+		<rewards Id="4" counts="80" rewardstype="1" goodsid1="11544401,8" />
+		<rewards Id="5" counts="150" rewardstype="1" goodsid1="6100709,1;21299201,80" />
+	</Common>
+</root>

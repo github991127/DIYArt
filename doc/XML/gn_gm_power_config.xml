@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+等级为1的gm默认拥有全部权限，不读取任何数据数据
+-->
+<Root>
+	<GM level="2">
+		<power key="kickuser" />
+		<power key="forbit" />
+		<power key="dismisstable" />
+		<power key="vipondays" />
+		<power key="ach" />
+		<power key="addexp" />
+		<power key="cleargamecount" />
+	</GM>
+	<GM level="3">
+		<power key="debug" />
+	</GM>
+	<GM level="4">
+		<power key="queryflness" />
+		<power key="addtoflness" />
+		<power key="addflness" />
+		<power key="marriage" />
+		<power key="marriage" />
+		<power key="modifysl" />
+		<power key="isonlineXX" />
+	</GM>
+	<GM level="5">
+		<power key="setttrankscore" />
+	</GM>
+	<GM level="9">
+		<power key="wcafinalforbiduser" />
+		<power key="dismiss_sbm" />		
+		<power key="modifytablename" />				
+	</GM>
+</Root>

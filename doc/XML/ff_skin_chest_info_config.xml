@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Common>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			NewSkinTime	-	新玩家固定抽卡开始时间
+防止老号走固定掉落
+			OldSkinDrawTimes	-	老号默认基础抽数
+防止老号走固定掉落
+			NewSkinDropId	-	重构新道具购买id
+			OneSkinItem	-	一抽消耗道具
+			FiveSkinItem	-	五抽消耗道具
+			OneSkinDrop	-	一抽掉落组
+后续改到等级页签
+			FiveSkinDrop	-	五抽掉落组
+后续改到等级页签
+			XiyouDrop	-	稀有保底掉落，五抽没有，没有则这换一个到这里组里面随机，仅稀有
+			GaoDrop	-	高品质保底掉落，没有则这换一个到这里组里面随机，仅史诗
+			GuDingDrop	-	前几次固定抽卡掉落组
+			EpicMaxNum	-	史诗保底次数
+			LegendMaxNum	-	传说保底次数，暂时不配
+			LegendUpRate	-	Up提升概率，百分比，暂时不配
+			ServerLegendUpRate	-	Up提升概率服务端，百分比，暂时不配
+			LegendDesc	-	传说保底文字，暂时不配
+			probability	-	外跳链接：皮肤抽卡概率公示
+			handFlipQuality	-	皮肤抽卡需要手动翻卡最低品质
+0=普通，1=稀有，2=史诗，3=传说，4=稀有
+			desc	-	规则说明
+			upDesc	-	up池规则说明
+		-->
+	<Common NewSkinTime="20240605T100000" OldSkinDrawTimes="100" NewSkinDropId="1911701" OneSkinItem="435401,1" FiveSkinItem="435501,1;435401,5" OneSkinDrop="55701;55702;55703;55704;55705;55706;55707;55708;55709;55710;55711;55712;55713;55714;55715;55716;55717;55718;55719;55720" FiveSkinDrop="55701;55702;55703;55704;55705;55706;55707;55708;55709;55710;55711;55712;55713;55714;55715;55716;55717;55718;55719;55720" XiyouDrop="55741;55742;55743;55744;55745;55746;55747;55748;55749;55750;55751;55752;55753;55754;55755;55756;55757;55758;55759;55760" GaoDrop="55761;55762;55763;55764;55765;55766;55767;55768;55769;55770;55771;55772;55773;55774;55775;55776;55777;55778;55779;55780" GuDingDrop="1,56001;2,56002;3,55701;4,55701;5,56003" EpicMaxNum="30" LegendMaxNum="300" LegendUpRate="300" ServerLegendUpRate="500" LegendDesc="本期UP皮肤" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	玩家的掉落等级
+			skinCount	-	需要的皮肤数量
+		-->
+	<RankCond rank="1" skinCount="0" />
+	<RankCond rank="2" skinCount="10" />
+	<RankCond rank="3" skinCount="20" />
+	<RankCond rank="4" skinCount="40" />
+	<RankCond rank="5" skinCount="60" />
+	<RankCond rank="6" skinCount="90" />
+	<RankCond rank="7" skinCount="120" />
+	<RankCond rank="8" skinCount="150" />
+	<RankCond rank="9" skinCount="180" />
+	<RankCond rank="10" skinCount="210" />
+	<RankCond rank="11" skinCount="240" />
+	<RankCond rank="12" skinCount="270" />
+	<RankCond rank="13" skinCount="300" />
+	<RankCond rank="14" skinCount="350" />
+	<RankCond rank="15" skinCount="400" />
+	<RankCond rank="16" skinCount="450" />
+	<RankCond rank="17" skinCount="500" />
+	<RankCond rank="18" skinCount="550" />
+	<RankCond rank="19" skinCount="600" />
+	<RankCond rank="20" skinCount="650" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	UP池期数
+			periodsTime	-	本期时间
+			upSkin	-	系统UP池皮肤ID
+物品ID-0 权重
+			UpRate	-	UP池概率提升
+		-->
+	<UpSkin id="1" periodsTime="20240501T000000,20240601T000000" />
+	<UpSkin id="2" periodsTime="20240601T000000,20240701T000000" />
+	<UpSkin id="3" periodsTime="20240701T000000,20240801T000000" />
+	<UpSkin id="4" periodsTime="20240801T000000,20240901T000000" />
+	<UpSkin id="5" periodsTime="20240901T000000,20241001T000000" />
+	<UpSkin id="6" periodsTime="20241001T000000,20241101T000000" />
+	<UpSkin id="7" periodsTime="20241101T000000,20241201T000000" />
+	<UpSkin id="8" periodsTime="20241201T000000,20990101T000000" />
+</Common>

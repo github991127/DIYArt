@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rankType	-	天梯类型，新欢乐=7
+		-->
+	<TTRankCfg rankType="7">
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			firstWinInterval	-	首胜奖励CD时间
+			firstWinRewards	-	首胜奖励内容
+			notResetLevel	-	不重置段位等级，小于
+			notResetRankLevel	-	不重置段位段位，小于
+			needCalcLevel	-	不受休闲竞技影响段位，小于
+			needCalcRankLevel	-	不受休闲竞技影响段位，小于
+			tuijianLevel	-	推荐按钮等级
+			tuijianHuodongLevel	-	推荐到活动场的按钮等级
+			tuijianHuodongRank	-	推荐到活动场的段位等级
+			HuodongShowSort	-	活动场显示优先级
+			xiaoxiongShow	-	枭雄显示
+			teamPowerArgH	-	组队战力个人战力较大者参数A
+			teamPowerArgL	-	组队战力个人战力较大者参数B
+			teamPowerArgBase	-	组队战力个人战力较大者参数C
+			ttLevA	-	组队等级个人等级较大者参数A
+			ttLevB	-	组队等级个人等级较大者参数B
+			ttLevC	-	组队等级个人等级较大者参数C
+			levA	-	组队段位个人段位较大者参数A
+			levB	-	组队段位个人段位较大者参数B
+			levC	-	组队段位个人段位较大者参数C
+			officialA	-	组队官阶个人官阶较大者参数A
+			officialB	-	组队官阶个人官阶较大者参数B
+			officialC	-	组队官阶个人官阶较大者参数C
+			loseScoreA	-	组队失败分个人失败分较大者参数A
+			loseScoreB	-	组队失败分个人失败分较大者参数B
+			loseScoreC	-	组队失败分个人失败分较大者参数C
+			keepSeconds	-	匹配最大等待时间
+			keepSecondsMin	-	匹配最小等待时间
+			params	-	晋级赛加成（增加比例）,遭遇强敌加成,首胜加成，士气加成百分比
+			breakScore	-	违规加扣信誉分系数
+			matchRecordLimit	-	匹配记录参数，次数，x时间x场x次不能一起
+			matchRecordTime	-	匹配记录参数，时间，x时间x场x次不能一起
+			matchRecordMax	-	匹配记录参数，场数，x时间x场x次不能一起
+			makeTimeout	-	超时对列 创建AI牌局数
+			makeTeams	-	队伍匹配每秒处理数
+			makeSingles	-	单人匹配每秒处理数
+			maxTime	-	最大牌局时间
+			tabTipsTime	-	匹配前快结束提示时间
+			newGeneralRatio	-	新获得武将增加次数权重
+			timeTrialGeneralRatio	-	时间试用武将增加次数权重
+			numTrialGeneralRatio	-	次数试用武将增加次数权重
+			protectMaxTime	-	保护匹配ai的超时时间（同样保护匹配ai的人过少）
+			noLevelRank	-	不限制匹配等级的段位星数
+			noOffRank	-	不限制匹配官阶的段位星数
+			lostGeneral	-	失败分分将组
+十分位
+			maxNewLevel	-	新手最大等级
+			newbieTime	-	各等级匹配超时时间
+			leisureTime	-	休闲时间匹配时间
+			weakAiWinRate	-	弱ai胜率，百分比
+			weakAiLoseNum	-	弱ai连败次数
+			weakAiLevel	-	弱ai等级
+			useMostGeneral	-	常用武将取值个数
+			sabGeneralRatio	-	常用武将S、A、B抽取权重
+			newRecomGeneralNum	-	新手已有推荐武将数量
+			sabRecomGeneralRatio	-	推荐武将S、A、B抽取权重
+			sGeneralMinNum	-	S级武将最少数量
+			aGeneralMinNum	-	A级武将最少数量
+			recommendGroupLevel	-	推荐组合最大等级
+			recommendGroupRank	-	推荐组合最大段位
+			loseRatio1	-	失败系数1
+万分制
+			loseRatio2	-	失败系数2
+整数
+			cancelSelTime	-	取消选将等待时间
+			minNeedUseMostGeneral	-	排位常用武将最小个数
+			PositionSpell	-	排位四号位带限定技
+			SpTipsNum	-	SP扩展文字提示次数
+			NoSRatio	-	排位无S发将概率，万分比
+			NoARatio	-	排位无A发将概率，万分比
+			RecomGeneralRange	-	推荐组合最高胜率x内才可能推荐，万分比
+			RecomGeneralMinNum	-	推荐组合需要最少使用次数
+			rankMode	-	排位高阶将池取队伍中哪个段位
+0=向上，1=向下，2=平均
+			sabGeneralRatioExtra	-	常规猜你喜欢的SAB取将权重
+			sabGeneralRatioBack	-	回归猜你喜欢SAB取将权重
+			youLikeMaxNum	-	猜你喜欢10局内最多出现x次
+			commonUseSelectNum	-	新猜你喜欢常用武将取将数量
+			mvpUseSelectNum	-	新猜你喜欢对局线取将数量
+			selectMinNum	-	新猜你喜欢最少需要武将数
+			firstWinResetTime	-	每日首胜/3胜重置时间
+			generalBalanceRate	-	触发发将平衡概率，百分比
+			generalBalanceNum	-	各档次武将需要触发发将平衡最少数量，分别是S+\S\A+\A\B+\B（0表示不触发）
+			useAiSelect	-	是否使用AI那边AI选将
+1=用ai
+0=自己这边ai选将
+			des	-	玩法说明文字
+			des_m	-	移动端玩法说明文字
+			shiqiDes	-	士气说明文字
+			shiqiDes_m	-	移动端士气说明文字
+			-->
+		<Common firstWinInterval="79200" firstWinRewards="951601,2" notResetLevel="30" notResetRankLevel="5" needCalcLevel="201" needCalcRankLevel="5" teamPowerArgH="7000" teamPowerArgL="3000" teamPowerArgBase="8000" ttLevA="7000" ttLevB="3000" ttLevC="8000" levA="7000" levB="3000" levC="8000" officialA="7000" officialB="3000" officialC="8000" loseScoreA="7000" loseScoreB="3000" loseScoreC="8000" keepSeconds="5" keepSecondsMin="1" params="30,50,100" breakScore="15000" matchRecordLimit="2" matchRecordTime="3600" matchRecordMax="30" makeTimeout="20" makeTeams="50" makeSingles="100" maxTime="1800" newGeneralRatio="0:1000,1:800,2:500,3:300" timeTrialGeneralRatio="0:600,1:500,2:200" numTrialGeneralRatio="0:80,1:60,2:40,3:20" protectMaxTime="30" noLevelRank="21,5" noOffRank="21,5" lostGeneral="0,101;20,102;30,103" maxNewLevel="30" newbieTime="30,15;60,20;120,30;180,45;200,60" leisureTime="30" weakAiWinRate="40" weakAiLoseNum="3" weakAiLevel="5" useMostGeneral="5" sabGeneralRatio="10:50:100" newRecomGeneralNum="4" sabRecomGeneralRatio="10:50:100" sGeneralMinNum="15" aGeneralMinNum="25" recommendGroupLevel="200" recommendGroupRank="21" loseRatio1="2500" loseRatio2="3" minNeedUseMostGeneral="5" PositionSpell="0;0;0;12022" NoSRatio="0" NoARatio="0" RecomGeneralRange="500" RecomGeneralMinNum="3" rankMode="0" sabGeneralRatioExtra="10:30:50" sabGeneralRatioBack="10:20:30" youLikeMaxNum="2" commonUseSelectNum="7" mvpUseSelectNum="7" selectMinNum="5" firstWinResetTime="080000" generalBalanceRate="50" generalBalanceNum="3,7,8,18,15,1" useAiSelect="0" />
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			BaseScore	-	基础士气分-胜利；失败；平局
+			RptScoreAdd	-	不挂机士气加成
+			winComboAdd	-	连胜士气加成
+			rankAdd	-	排名士气加成
+			lvAddS	-	段位差加成系数S
+			lvAddN	-	段位差加成系数n
+			-->
+		<Calculate BaseScore="5;3;4" RptScoreAdd="80,2;91,3;96,5" winComboAdd="2,3;3,6;4,9;5,12" rankAdd="1,5;2,4;3,3;4,2" lvAddS="10" lvAddN="1" />
+		<RankLevelCfg>
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			rank	-	段位
+			maxStar	-	最大星数
+			guardMorale	-	掉星保护士气
+			maxMorale	-	最大士气
+			rankName	-	段位名称
+			type	-	段位类型
+			typeNum	-	段位几
+			upgradeMorale	-	晋级赛标记
+			resetLevel	-	重置后的段位
+			noticeMark	-	通知类型（多个就相加）
+1通知工会
+2通知好友
+4系统广播
+			fallthrough	-	是否会掉段
+			record	-	是否计数（枭雄次数）
+			ttLevFriMin	-	队友匹配的段位下限
+			ttLevFriMax	-	队友匹配的段位上限
+			ttLevEmyMin	-	敌方匹配的段位下限
+			ttLevEmyMax	-	敌方匹配的段位上限
+			ttOffFri	-	友方匹配官阶差
+			ttOffEmy	-	敌方匹配官阶差
+			ttLevEmyWarn	-	遭遇强将的段位下限
+			basePower	-	战斗力分值
+			loseSelfCntAi	-	失败N场进保护队友是否AI
+			loseEmyCntAi	-	失败N场进保护对面是AI
+			loseScoreSelfCntAi	-	失败分N进保护队友是否AI
+十万分比
+			loseScoreEmyCntAi	-	失败分N进保护对面是AI
+十万分比
+			maxRank	-	最大段位，历史最大段位≥该段位则采用新的ai参数
+			newLoseScoreSelfCntAi	-	重置后失败分N进保护队友是否AI
+十万分比
+			newLoseScoreEmyCntAi	-	重置后失败分N进保护对面是AI
+十万分比
+			timeountAi	-	超时是否匹配ai
+			aiFri	-	己方ai强度
+			aiEmy	-	敌方ai强度：初始强度，强度下限，强度上限
+
+			loseSetAiCnt	-	敌方下降ai强度场数
+			winSetAiCnt	-	敌方上升ai强度场数
+			needJieNum	-	需要界武将数量
+			friendTips	-	好友提示文本
+			allTips	-	全服提示文本
+			guildTips	-	公会提示文本
+			allMaqueeTips	-	全服跑马灯（无富文本）
+				-->
+			<Item rank="1" maxStar="2" guardMorale="0" maxMorale="60" upgradeMorale="0" resetLevel="1" noticeMark="0" fallthrough="1" record="0" ttLevFriMin="1" ttLevFriMax="10" ttLevEmyMin="1" ttLevEmyMax="8" ttOffFri="5" ttOffEmy="5" ttLevEmyWarn="4" basePower="4000" loseSelfCntAi="999" loseEmyCntAi="0" loseScoreSelfCntAi="-99900000" loseScoreEmyCntAi="-99900000" maxRank="11" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="-99900000" timeountAi="1" aiFri="1" aiEmy="2,2,2" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="2" maxStar="2" guardMorale="0" maxMorale="60" upgradeMorale="0" resetLevel="1" noticeMark="0" fallthrough="1" record="0" ttLevFriMin="1" ttLevFriMax="10" ttLevEmyMin="1" ttLevEmyMax="8" ttOffFri="5" ttOffEmy="5" ttLevEmyWarn="5" basePower="4100" loseSelfCntAi="999" loseEmyCntAi="0" loseScoreSelfCntAi="-99900000" loseScoreEmyCntAi="-99900000" maxRank="12" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="-99900000" timeountAi="1" aiFri="1" aiEmy="2,2,2" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="3" maxStar="2" guardMorale="0" maxMorale="60" upgradeMorale="1" resetLevel="1" noticeMark="0" fallthrough="1" record="0" ttLevFriMin="1" ttLevFriMax="10" ttLevEmyMin="1" ttLevEmyMax="8" ttOffFri="5" ttOffEmy="5" ttLevEmyWarn="6" basePower="4200" loseSelfCntAi="999" loseEmyCntAi="0" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="-99900000" maxRank="13" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="0" timeountAi="1" aiFri="1" aiEmy="2,2,2" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="4" maxStar="3" guardMorale="40" maxMorale="120" upgradeMorale="0" resetLevel="1" noticeMark="0" fallthrough="1" record="0" ttLevFriMin="1" ttLevFriMax="10" ttLevEmyMin="1" ttLevEmyMax="13" ttOffFri="6" ttOffEmy="6" ttLevEmyWarn="7" basePower="4500" loseSelfCntAi="999" loseEmyCntAi="0" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="-99900000" maxRank="14" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="0" timeountAi="1" aiFri="1" aiEmy="2,2,2" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="5" maxStar="3" guardMorale="40" maxMorale="120" upgradeMorale="0" resetLevel="1" noticeMark="0" fallthrough="1" record="0" ttLevFriMin="1" ttLevFriMax="10" ttLevEmyMin="1" ttLevEmyMax="13" ttOffFri="6" ttOffEmy="6" ttLevEmyWarn="8" basePower="4600" loseSelfCntAi="999" loseEmyCntAi="0" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="0" maxRank="15" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="150000" timeountAi="1" aiFri="1" aiEmy="2,2,2" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="6" maxStar="3" guardMorale="40" maxMorale="120" upgradeMorale="1" resetLevel="1" noticeMark="0" fallthrough="1" record="0" ttLevFriMin="1" ttLevFriMax="10" ttLevEmyMin="1" ttLevEmyMax="13" ttOffFri="6" ttOffEmy="6" ttLevEmyWarn="9" basePower="4700" loseSelfCntAi="999" loseEmyCntAi="0" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="0" maxRank="16" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="150000" timeountAi="1" aiFri="1" aiEmy="2,2,2" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="7" maxStar="5" guardMorale="70" maxMorale="250" upgradeMorale="0" resetLevel="3" noticeMark="1" fallthrough="1" record="0" ttLevFriMin="4" ttLevFriMax="15" ttLevEmyMin="1" ttLevEmyMax="18" ttOffFri="7" ttOffEmy="7" ttLevEmyWarn="11" basePower="5000" loseSelfCntAi="999" loseEmyCntAi="1" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="150000" maxRank="17" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="200000" timeountAi="1" aiFri="1" aiEmy="1,1,3" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="8" maxStar="5" guardMorale="70" maxMorale="250" upgradeMorale="0" resetLevel="3" noticeMark="0" fallthrough="1" record="0" ttLevFriMin="4" ttLevFriMax="15" ttLevEmyMin="1" ttLevEmyMax="18" ttOffFri="7" ttOffEmy="7" ttLevEmyWarn="13" basePower="5100" loseSelfCntAi="999" loseEmyCntAi="1" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="150000" maxRank="18" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="200000" timeountAi="1" aiFri="1" aiEmy="1,1,3" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="9" maxStar="5" guardMorale="70" maxMorale="250" upgradeMorale="0" resetLevel="3" noticeMark="0" fallthrough="1" record="0" ttLevFriMin="4" ttLevFriMax="15" ttLevEmyMin="1" ttLevEmyMax="18" ttOffFri="7" ttOffEmy="7" ttLevEmyWarn="14" basePower="5200" loseSelfCntAi="999" loseEmyCntAi="2" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="250000" maxRank="19" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="250000" timeountAi="1" aiFri="1" aiEmy="1,1,3" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="10" maxStar="5" guardMorale="70" maxMorale="250" upgradeMorale="1" resetLevel="3" noticeMark="0" fallthrough="1" record="0" ttLevFriMin="4" ttLevFriMax="15" ttLevEmyMin="1" ttLevEmyMax="18" ttOffFri="7" ttOffEmy="7" ttLevEmyWarn="15" basePower="5300" loseSelfCntAi="999" loseEmyCntAi="2" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="250000" maxRank="20" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="250000" timeountAi="1" aiFri="1" aiEmy="1,1,3" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="11" maxStar="5" guardMorale="100" maxMorale="400" upgradeMorale="0" resetLevel="5" noticeMark="1" fallthrough="1" record="0" ttLevFriMin="7" ttLevFriMax="20" ttLevEmyMin="2" ttLevEmyMax="20" ttOffFri="8" ttOffEmy="8" ttLevEmyWarn="16" basePower="5500" loseSelfCntAi="999" loseEmyCntAi="2" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="280000" maxRank="21" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="280000" timeountAi="0" aiFri="1" aiEmy="1,1,3" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="12" maxStar="5" guardMorale="100" maxMorale="400" upgradeMorale="0" resetLevel="5" noticeMark="1" fallthrough="1" record="0" ttLevFriMin="7" ttLevFriMax="20" ttLevEmyMin="3" ttLevEmyMax="20" ttOffFri="8" ttOffEmy="8" ttLevEmyWarn="17" basePower="5600" loseSelfCntAi="999" loseEmyCntAi="2" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="280000" maxRank="21" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="280000" timeountAi="0" aiFri="1" aiEmy="1,1,3" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="13" maxStar="5" guardMorale="100" maxMorale="400" upgradeMorale="0" resetLevel="5" noticeMark="0" fallthrough="1" record="0" ttLevFriMin="7" ttLevFriMax="20" ttLevEmyMin="4" ttLevEmyMax="20" ttOffFri="8" ttOffEmy="8" ttLevEmyWarn="18" basePower="5700" loseSelfCntAi="999" loseEmyCntAi="2" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="350000" maxRank="21" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="350000" timeountAi="0" aiFri="1" aiEmy="1,1,3" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="14" maxStar="5" guardMorale="100" maxMorale="400" upgradeMorale="0" resetLevel="5" noticeMark="0" fallthrough="1" record="0" ttLevFriMin="7" ttLevFriMax="20" ttLevEmyMin="5" ttLevEmyMax="20" ttOffFri="8" ttOffEmy="8" ttLevEmyWarn="19" basePower="5800" loseSelfCntAi="999" loseEmyCntAi="2" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="350000" maxRank="21" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="350000" timeountAi="0" aiFri="1" aiEmy="1,1,3" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="15" maxStar="5" guardMorale="100" maxMorale="400" upgradeMorale="1" resetLevel="5" noticeMark="0" fallthrough="1" record="0" ttLevFriMin="7" ttLevFriMax="20" ttLevEmyMin="6" ttLevEmyMax="20" ttOffFri="8" ttOffEmy="8" ttLevEmyWarn="20" basePower="5900" loseSelfCntAi="999" loseEmyCntAi="2" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="370000" maxRank="21" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="370000" timeountAi="0" aiFri="1" aiEmy="1,1,3" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="16" maxStar="5" guardMorale="150" maxMorale="550" upgradeMorale="0" resetLevel="8" noticeMark="3" fallthrough="1" record="0" ttLevFriMin="11" ttLevFriMax="21" ttLevEmyMin="7" ttLevEmyMax="21" ttOffFri="9" ttOffEmy="9" ttLevEmyWarn="21" basePower="6000" loseSelfCntAi="999" loseEmyCntAi="2" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="370000" maxRank="21" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="370000" timeountAi="0" aiFri="1" aiEmy="1,1,3" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="17" maxStar="5" guardMorale="150" maxMorale="550" upgradeMorale="0" resetLevel="8" noticeMark="0" fallthrough="1" record="0" ttLevFriMin="11" ttLevFriMax="21" ttLevEmyMin="8" ttLevEmyMax="21" ttOffFri="9" ttOffEmy="9" ttLevEmyWarn="21" basePower="6100" loseSelfCntAi="999" loseEmyCntAi="2" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="400000" maxRank="21" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="400000" timeountAi="0" aiFri="1" aiEmy="1,1,3" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="18" maxStar="5" guardMorale="150" maxMorale="550" upgradeMorale="0" resetLevel="8" noticeMark="0" fallthrough="1" record="0" ttLevFriMin="11" ttLevFriMax="21" ttLevEmyMin="9" ttLevEmyMax="21" ttOffFri="9" ttOffEmy="9" ttLevEmyWarn="21" basePower="6200" loseSelfCntAi="999" loseEmyCntAi="2" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="400000" maxRank="21" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="400000" timeountAi="0" aiFri="1" aiEmy="1,1,3" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="19" maxStar="5" guardMorale="150" maxMorale="550" upgradeMorale="0" resetLevel="8" noticeMark="0" fallthrough="1" record="0" ttLevFriMin="11" ttLevFriMax="21" ttLevEmyMin="10" ttLevEmyMax="21" ttOffFri="9" ttOffEmy="9" ttLevEmyWarn="999" basePower="6300" loseSelfCntAi="999" loseEmyCntAi="2" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="420000" maxRank="21" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="420000" timeountAi="0" aiFri="1" aiEmy="1,1,3" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="20" maxStar="5" guardMorale="150" maxMorale="550" upgradeMorale="1" resetLevel="8" noticeMark="0" fallthrough="1" record="0" ttLevFriMin="11" ttLevFriMax="21" ttLevEmyMin="11" ttLevEmyMax="21" ttOffFri="9" ttOffEmy="9" ttLevEmyWarn="999" basePower="6400" loseSelfCntAi="999" loseEmyCntAi="2" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="420000" maxRank="21" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="420000" timeountAi="0" aiFri="1" aiEmy="1,1,3" loseSetAiCnt="999" winSetAiCnt="999" />
+			<Item rank="21" maxStar="999" guardMorale="9999" maxMorale="550" upgradeMorale="0" resetLevel="10" noticeMark="7" fallthrough="0" record="1" ttLevFriMin="16" ttLevFriMax="23" ttLevEmyMin="16" ttLevEmyMax="23" ttOffFri="9" ttOffEmy="9" ttLevEmyWarn="999" basePower="7000" loseSelfCntAi="999" loseEmyCntAi="2" loseScoreSelfCntAi="99900000" loseScoreEmyCntAi="99900000" maxRank="21" newLoseScoreSelfCntAi="99900000" newLoseScoreEmyCntAi="99900000" timeountAi="0" aiFri="1" aiEmy="1,1,3" loseSetAiCnt="999" winSetAiCnt="999" />
+		</RankLevelCfg>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			cycId	-	赛季id
+这个递增，服务端用
+			showCycID	-	显示赛季
+客户端显示用，每年循环
+			oldCycId	-	数据从哪个id中继承过来
+			beginTime	-	赛季开始
+			endTime	-	赛季结束
+			initRankLevel	-	初始段位
+			clearDataTime	-	什么时候数据删除
+			lvRewardQuest1	-	段位奖励，直接配置奖励内容
+			cycRewardQuest1	-	赛季奖励，直接配置奖励内容
+			lvRewardQuest	-	段位奖励，客户端读任务id
+最后不用;
+			cycRewardQuest	-	赛季奖励，客户端读任务id
+最后不用;
+			generalOpen	-	赛季将池
+			generalHighOpen	-	赛季高阶将池
+			generalHighOpenRank	-	赛季高阶将池开启段位
+			-->
+		<RankItem cycId="1" oldCycId="0" beginTime="20220208T100000" endTime="20220426T075959" initRankLevel="1" clearDataTime="20230330T100000" cycRewardQuest="2,51628;3,51629;4,51630;5,51631;6,51632;7,51633;8,51634;9,51635;10,51636;11,51637;12,51638;13,51639;14,51640;15,51641;16,51642;17,51643;18,51644;19,51645;20,51646;21,51647">
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			begin	-	开始时间
+			end	-	结束时间
+			ttrankbegin	-	开始时间
+			ttrankend	-	结束时间
+				-->
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="2" oldCycId="1" beginTime="20220426T080000" endTime="20220522T235959" initRankLevel="1" clearDataTime="20230430T100000" cycRewardQuest="2,52414;3,52415;4,52416;5,52417;6,52418;7,52419;8,52420;9,52421;10,52422;11,52423;12,52424;13,52425;14,52426;15,52427;16,52428;17,52429;18,52430;19,52431;20,52432;21,52433">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="3" oldCycId="2" beginTime="20220523T000000" endTime="20220630T235959" initRankLevel="1" clearDataTime="20230530T100000" cycRewardQuest="2,53069;3,53070;4,53071;5,53072;6,53073;7,53074;8,53075;9,53076;10,53077;11,53078;12,53079;13,53080;14,53081;15,53082;16,53083;17,53084;18,53085;19,53086;20,53087;21,53088">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="4" oldCycId="3" beginTime="20220701T000000" endTime="20220731T235959" initRankLevel="1" clearDataTime="20230630T100000" cycRewardQuest="2,62092;3,62093;4,62094;5,62095;6,62096;7,62098;8,62099;9,62100;10,62101;11,62102;12,62103;13,62104;14,62105;15,62106;16,62107;17,62108;18,62109;19,62110;20,62111;21,62112">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="5" oldCycId="4" beginTime="20220801T000000" endTime="20220831T235959" initRankLevel="1" clearDataTime="20230630T100000" cycRewardQuest="2,67389;3,67390;4,67391;5,67392;6,67393;7,67394;8,67395;9,67396;10,67397;11,67398;12,67399;13,67400;14,67401;15,67402;16,67403;17,67404;18,67405;19,67406;20,67407;21,67408">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="6" oldCycId="5" beginTime="20220901T000000" endTime="20220930T235959" initRankLevel="1" clearDataTime="20230731T100000" cycRewardQuest="2,67774;3,67775;4,67776;5,67777;6,67778;7,67779;8,67780;9,67781;10,67782;11,67783;12,67784;13,67785;14,67786;15,67787;16,67788;17,67789;18,67790;19,67791;20,67792;21,67793">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="7" oldCycId="6" beginTime="20221001T000000" endTime="20221031T235959" initRankLevel="1" clearDataTime="20230831T100000" cycRewardQuest="2,70005;3,70006;4,70007;5,70008;6,70009;7,70010;8,70011;9,70012;10,70013;11,70014;12,70015;13,70016;14,70017;15,70018;16,70019;17,70020;18,70021;19,70022;20,70023;21,70024">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="8" oldCycId="7" beginTime="20221101T000000" endTime="20221130T235959" initRankLevel="1" clearDataTime="20230930T100000" cycRewardQuest="2,70246;3,70247;4,70248;5,70249;6,70250;7,70251;8,70252;9,70253;10,70254;11,70255;12,70256;13,70257;14,70258;15,70259;16,70260;17,70261;18,70262;19,70263;20,70264;21,70265">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="9" oldCycId="8" beginTime="20221201T000000" endTime="20221231T235959" initRankLevel="1" clearDataTime="20231031T100000" cycRewardQuest="2,70529;3,70530;4,70531;5,70532;6,70533;7,70534;8,70535;9,70536;10,70537;11,70538;12,70539;13,70540;14,70541;15,70542;16,70543;17,70544;18,70545;19,70546;20,70547;21,70548">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="10" oldCycId="9" beginTime="20230101T000000" endTime="20230131T235959" initRankLevel="1" clearDataTime="20231130T100000" cycRewardQuest="2,80045;3,80046;4,80047;5,80048;6,80049;7,80050;8,80051;9,80052;10,80053;11,80054;12,80055;13,80056;14,80057;15,80058;16,80059;17,80060;18,80061;19,80062;20,80063;21,80064">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="11" oldCycId="10" beginTime="20230201T000000" endTime="20230228T235959" initRankLevel="1" clearDataTime="20231130T100000" cycRewardQuest="2,80338;3,80339;4,80340;5,80341;6,80342;7,80343;8,80344;9,80345;10,80346;11,80347;12,80348;13,80349;14,80350;15,80351;16,80352;17,80353;18,80354;19,80355;20,80356;21,80357">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="12" oldCycId="11" beginTime="20230301T000000" endTime="20230331T235959" initRankLevel="1" clearDataTime="20231130T100000" cycRewardQuest="2,80657;3,80658;4,80659;5,80660;6,80661;7,80662;8,80663;9,80664;10,80665;11,80666;12,80667;13,80668;14,80669;15,80670;16,80671;17,80672;18,80673;19,80674;20,80675;21,80676">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="13" oldCycId="12" beginTime="20230401T000000" endTime="20230430T235959" initRankLevel="1" clearDataTime="20231130T100000" lvRewardQuest1="2:100011,100|4:1240201,1;100011,500|7:1240301,1;435401,1;1142901,2;902408,1;3184201,1;5054602,1;4037902,1|11:1113601,1;1240401,1;435601,1;111801,300;1142901,3;902508,1|16:11439101,1;435501,1;111801,500|21:13500101,1;435501,1;902608,1;3225202,1" cycRewardQuest1="2:100011,100|3:100011,150|4:100011,200|5:100011,250|6:100011,300|7:100011,500|8:100011,700|9:100011,900|10:100011,1200|11:6148809,1;100011,2000|12:6148809,1;100011,2500|13:6148809,1;100011,3000|14:6148809,1;100011,3500|15:6148809,1;100011,4000|16:6148809,1;11479501,1;100011,5000|17:6148809,1;11479501,1;100011,5500|18:6148809,1;11479501,1;100011,6000|19:6148809,1;11479501,1;100011,6500|20:6148809,1;11479501,1;100011,7000|21:6148809,1;11479501,1;100011,8000">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="14" oldCycId="13" beginTime="20230501T000000" endTime="20230531T235959" initRankLevel="1" clearDataTime="20231130T100000" cycRewardQuest="2,81295;3,81296;4,81297;5,81298;6,81299;7,81300;8,81301;9,81302;10,81303;11,81304;12,81305;13,81306;14,81307;15,81308;16,81309;17,81310;18,81311;19,81312;20,81313;21,81314">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="15" oldCycId="14" beginTime="20230601T000000" endTime="20230630T235959" initRankLevel="1" clearDataTime="20231130T100000" cycRewardQuest="2,81542;3,81543;4,81544;5,81545;6,81546;7,81547;8,81548;9,81549;10,81550;11,81551;12,81552;13,81553;14,81554;15,81555;16,81556;17,81557;18,81558;19,81559;20,81560;21,81561">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="16" oldCycId="15" beginTime="20230701T000000" endTime="20230731T235959" initRankLevel="1" clearDataTime="20240531T100000" lvRewardQuest1="2:100011,100|4:1240201,1;100011,500|7:1240301,1;435401,1;1142901,2;902408,1;11456801,1|11:1113601,1;1240401,1;435601,1;111801,300;1142901,3;902508,1|16:11439101,1;435501,1;111801,500|21:13500101,1;435501,1;902608,1;3182501,31" cycRewardQuest1="2:100011,100|3:100011,150|4:100011,200|5:100011,250|6:100011,300|7:100011,500|8:100011,700|9:100011,900|10:100011,1200|11:6152509,1;100011,2000|12:6152509,1;100011,2500|13:6152509,1;100011,3000|14:6152509,1;100011,3500|15:6152509,1;100011,4000|16:6152509,1;11487501,1;100011,5000|17:6152509,1;11487501,1;100011,5500|18:6152509,1;11487501,1;100011,6000|19:6152509,1;11487501,1;100011,6500|20:6152509,1;11487501,1;100011,7000|21:6152509,1;11487501,1;100011,8000">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="17" oldCycId="16" beginTime="20230801T000000" endTime="20230831T235959" initRankLevel="1" clearDataTime="20240630T100000" lvRewardQuest1="2:100011,100|4:1240201,1;100011,500|7:1240301,1;435401,1;1142901,2;902408,1;11456801,1|11:1113601,1;1240401,1;435601,1;111801,300;1142901,3;902508,1|16:11439101,1;435501,1;111801,500|21:13500101,1;435501,1;902608,1;3182501,31" cycRewardQuest1="2:100011,100|3:100011,150|4:100011,200|5:100011,250|6:100011,300|7:100011,500|8:100011,700|9:100011,900|10:100011,1200|11:6152509,1;100011,2000|12:6152509,1;100011,2500|13:6152509,1;100011,3000|14:6152509,1;100011,3500|15:6152509,1;100011,4000|16:6152509,1;11498301,1;100011,5000|17:6152509,1;11498301,1;100011,5500|18:6152509,1;11498301,1;100011,6000|19:6152509,1;11498301,1;100011,6500|20:6152509,1;11498301,1;100011,7000|21:6152509,1;11498301,1;100011,8000">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="18" oldCycId="17" beginTime="20230901T000000" endTime="20230930T235959" initRankLevel="1" clearDataTime="20240730T100000" lvRewardQuest1="2:100011,100|4:1240201,1;100011,500|7:1240301,1;435401,1;1142901,2;902408,1;11456801,1|11:1113601,1;1240401,1;435601,1;111801,300;1142901,3;902508,1|16:11439101,1;435501,1;111801,500|21:13500101,1;435501,1;902608,1;3182501,31" cycRewardQuest1="2:100011,100|3:100011,150|4:100011,200|5:100011,250|6:100011,300|7:100011,500|8:100011,700|9:100011,900|10:100011,1200|11:6152509,1;100011,2000|12:6152509,1;100011,2500|13:6152509,1;100011,3000|14:6152509,1;100011,3500|15:6152509,1;100011,4000|16:6152509,1;11498301,1;100011,5000|17:6152509,1;11498301,1;100011,5500|18:6152509,1;11498301,1;100011,6000|19:6152509,1;11498301,1;100011,6500|20:6152509,1;11498301,1;100011,7000|21:6152509,1;11498301,1;100011,8000" generalOpen="1,3,5,6,7,8,16,17,18,20,21,23,24,29,34,35,39,51,54,406,408,410,411,414,415,153,158,161,164,177,185,323,326,328,339,392,393,26,299,300,301,302,303,306,307,308,310,311,314,315,316,319,440,441,442,443,445,446,448,450,451,452,458,462,463,480,484,485,526,550,563,207,226,227,103,107,108,112,357,361,510,543,113,131,365,374,378,379,427,431,437,438,466,498,514,516,517,527,532,534,539,540,541,544,545,552,553,554,558,560,570,7000,7001,7002,7004,7005,7018,7019,523,524,528,548,555,556,566,574,353,426,430,469,491,509,350">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="19" oldCycId="18" beginTime="20231001T000000" endTime="20231031T235959" initRankLevel="1" clearDataTime="20240830T100000" lvRewardQuest1="2:100011,100|4:1240201,1;100011,500|7:1240301,1;435401,1;1142901,2;902408,1;11456801,1|11:1113601,1;1240401,1;435601,1;111801,300;1142901,3;902508,1|16:11439101,1;435501,1;111801,500|21:13500101,1;435501,1;902608,1;3182501,31" cycRewardQuest1="2:100011,100|3:100011,150|4:100011,200|5:100011,250|6:100011,300|7:100011,500|8:100011,700|9:100011,900|10:100011,1200|11:6140409,1;100011,2000|12:6140409,1;100011,2500|13:6140409,1;100011,3000|14:6140409,1;100011,3500|15:6140409,1;100011,4000|16:6140409,1;11498301,1;100011,5000|17:6140409,1;11498301,1;100011,5500|18:6140409,1;11498301,1;100011,6000|19:6140409,1;11498301,1;100011,6500|20:6140409,1;11498301,1;100011,7000|21:6140409,1;11498301,1;100011,8000" generalOpen="1,3,5,6,7,8,16,17,18,20,21,23,24,29,34,35,39,51,54,406,408,410,411,414,415,153,158,161,164,177,185,323,326,328,339,392,393,26,299,300,301,302,303,306,307,308,310,311,314,315,316,319,440,441,442,443,445,446,448,450,451,452,458,462,463,480,484,485,526,550,563,207,226,227,103,107,108,112,357,361,510,543,113,131,365,374,378,379,427,431,437,438,466,498,514,516,517,527,532,534,539,540,541,544,545,552,553,554,558,560,570,7000,7001,7002,7004,7005,7018,7019,523,524,528,548,555,556,566,574,353,426,430,469,491,509,350">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="20" oldCycId="19" beginTime="20231101T000000" endTime="20231130T235959" initRankLevel="1" clearDataTime="20240830T100000" lvRewardQuest1="2:100011,200|3:100011,400|4:1240201,1|5:8100201,1|6:8100201,1|7:1240301,1|8:8100201,1|9:8100201,1|10:8100201,1|11:1240401,1|12:1113601,1|13:1142901,2|14:8100201,2|15:435401,2|16:11439101,1|17:8100201,1|18:1142901,3|19:8100201,1|20:435401,3|21:21272501,4" cycRewardQuest1="2:100011,100|3:100011,150|4:100011,200|5:100011,250|6:100011,300|7:100011,500|8:100011,700|9:100011,900|10:100011,1200|11:6140409,1;100011,2000|12:6140409,1;100011,2500|13:6140409,1;100011,3000|14:6140409,1;100011,3500|15:6140409,1;100011,4000|16:6140409,1;11510401,1;100011,5000|17:6140409,1;11510401,1;100011,5500|18:6140409,1;11510401,1;100011,6000|19:6140409,1;11510401,1;100011,6500|20:6140409,1;11510401,1;100011,7000|21:6140409,1;11510401,1;100011,8000" generalOpen="1,3,5,6,7,8,16,17,18,20,21,23,24,29,34,35,39,51,54,406,408,410,411,414,415,153,158,161,164,177,185,323,326,328,339,392,393,26,299,300,301,302,303,306,307,308,310,311,314,315,316,319,440,441,442,443,445,446,448,450,451,452,458,462,463,480,484,485,526,550,563,207,226,227,103,107,108,112,357,361,510,543,113,131,344,365,374,378,379,431,437,438,466,498,514,516,517,527,532,534,538,539,540,541,544,552,554,557,558,560,570,581,7000,7001,7002,7004,7005,7019,523,524,528,548,555,556,566,574,575,353,426,430,469,491,350,588,578">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="21" oldCycId="20" beginTime="20231201T000000" endTime="20231231T235959" initRankLevel="1" clearDataTime="20240930T100000" lvRewardQuest1="2:100011,200|3:100011,400|4:1240201,1|5:8100201,1|6:8100201,1|7:1240301,1|8:8100201,1|9:8100201,1|10:8100201,1|11:1240401,1|12:1113601,1|13:1142901,2|14:8100201,2|15:435401,2|16:11439101,1|17:8100201,1|18:1142901,3|19:8100201,1|20:435401,3|21:21272501,4" cycRewardQuest1="2:100011,100|3:100011,150|4:100011,200|5:100011,250|6:100011,300|7:100011,500|8:100011,700|9:100011,900|10:100011,1200|11:6140409,1;100011,2000|12:6140409,1;100011,2500|13:6140409,1;100011,3000|14:6140409,1;100011,3500|15:6140409,1;100011,4000|16:6140409,1;11515301,1;100011,5000|17:6140409,1;11515301,1;100011,5500|18:6140409,1;11515301,1;100011,6000|19:6140409,1;11515301,1;100011,6500|20:6140409,1;11515301,1;100011,7000|21:6140409,1;11515301,1;100011,8000" generalOpen="1,3,5,6,7,8,16,17,18,20,21,23,24,29,34,35,39,51,54,406,408,410,414,153,158,161,164,177,185,323,326,328,339,392,393,26,299,300,301,302,303,306,307,308,310,311,314,315,316,319,440,441,442,443,445,446,448,451,452,458,463,480,484,485,526,563,588,202,207,103,107,108,112,357,361,506,510,543,113,118,130,344,365,369,374,378,379,431,437,466,467,476,500,502,504,513,517,519,527,532,534,536,538,540,541,552,554,557,558,560,570,578,580,581,7000,7001,7002,7004,7005,523,528,555,556,566,573,574,575,425,426,430,469,491,518,350,568,586,600">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="22" oldCycId="21" beginTime="20240101T000000" endTime="20240131T235959" initRankLevel="1" clearDataTime="20240930T100000" lvRewardQuest1="2:100011,200|3:100011,400|4:1240201,1|5:8100201,1|6:8100201,1|7:1240301,1|8:8100201,1|9:8100201,1|10:8100201,1|11:1240401,1|12:1113601,1|13:1142901,2|14:8100201,2|15:435401,2|16:11439101,1|17:8100201,1|18:1142901,3|19:8100201,1|20:435401,3|21:21272501,4" cycRewardQuest1="2:100011,100|3:100011,150|4:100011,200|5:100011,250|6:100011,300|7:100011,500|8:100011,700|9:100011,900|10:100011,1200|11:6159709,1;100011,2000|12:6159709,1;100011,2500|13:6159709,1;100011,3000|14:6159709,1;100011,3500|15:6159709,1;100011,4000|16:6159709,1;11515301,1;100011,5000|17:6159709,1;11515301,1;100011,5500|18:6159709,1;11515301,1;100011,6000|19:6159709,1;11515301,1;100011,6500|20:6159709,1;11515301,1;100011,7000|21:6159709,1;11515301,1;100011,8000" generalOpen="1,3,5,6,7,8,16,17,18,20,21,23,24,25,29,34,35,39,51,54,410,414,158,161,164,177,185,323,326,328,332,339,392,393,26,299,300,301,302,303,306,307,308,310,311,314,315,316,319,440,441,442,445,446,448,451,452,458,463,480,484,485,526,563,587,588,599,600,586,202,207,103,107,108,112,361,506,510,543,113,118,130,344,365,369,374,378,379,431,466,467,476,488,500,502,504,507,513,517,519,521,532,534,536,538,541,551,554,558,560,578,580,581,598,7000,7001,7002,7004,7006,528,555,556,566,573,574,417,425,426,430,491,518,568,350,569">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="23" oldCycId="22" beginTime="20240201T000000" endTime="20240229T235959" initRankLevel="1" clearDataTime="20240930T100000" lvRewardQuest1="2:100011,200|3:100011,400|4:1240201,1|5:8100201,1|6:8100201,1|7:1240301,1|8:8100201,1|9:8100201,1|10:8100201,1|11:1240401,1|12:8100201,1|13:1142901,2|14:8100201,2|15:435401,2|16:11439101,1|17:8100201,1|18:1142901,3|19:8100201,1|20:435401,3|21:21272501,4" cycRewardQuest1="2:100011,100|3:100011,150|4:100011,200|5:100011,250|6:100011,300|7:100011,500|8:100011,700|9:100011,900|10:100011,1200|11:6159709,1;100011,2000|12:6159709,1;100011,2500|13:6159709,1;100011,3000|14:6159709,1;100011,3500|15:6159709,1;100011,4000|16:6159709,1;11515301,1;100011,5000|17:6159709,1;11515301,1;100011,5500|18:6159709,1;11515301,1;100011,6000|19:6159709,1;11515301,1;100011,6500|20:6159709,1;11515301,1;100011,7000|21:6159709,1;11515301,1;100011,8000" generalOpen="1,3,5,6,7,8,16,17,18,20,21,23,24,25,29,34,35,39,51,54,410,414,153,161,164,177,185,323,326,328,339,392,393,26,299,300,301,302,303,306,307,310,311,314,315,316,319,440,441,442,445,446,448,451,452,458,463,480,484,485,526,587,588,597,599,600,586,202,203,206,103,107,108,112,361,506,510,543,113,115,118,130,344,365,369,374,378,379,431,466,467,476,488,500,502,507,513,517,519,521,534,541,551,554,558,569,578,580,581,598,607,7000,7001,7002,7004,7006,7020,523,528,548,555,566,573,574,417,426,430,491,568,350,602,593,582">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="24" oldCycId="23" beginTime="20240301T000000" endTime="20240331T235959" initRankLevel="1" clearDataTime="20240930T100000" lvRewardQuest1="2:100011,200|3:100011,400|4:1240201,1|5:8100201,1|6:8100201,1|7:1240301,1|8:8100201,1|9:8100201,1|10:8100201,1|11:1240401,1|12:8100201,1|13:1142901,2|14:8100201,2|15:435401,2|16:11439101,1|17:8100201,1|18:1142901,3|19:8100201,1|20:435401,3|21:21272501,4" cycRewardQuest1="2:100011,100|3:100011,150|4:100011,200|5:100011,250|6:100011,300|7:100011,500|8:100011,700|9:100011,900|10:100011,1200|11:6161709,1;100011,2000|12:6161709,1;100011,2500|13:6161709,1;100011,3000|14:6161709,1;100011,3500|15:6161709,1;100011,4000|16:6161709,1;11527201,1;100011,5000|17:6161709,1;11527201,1;100011,5500|18:6161709,1;11527201,1;100011,6000|19:6161709,1;11527201,1;100011,6500|20:6161709,1;11527201,1;100011,7000|21:6161709,1;11527201,1;100011,8000" generalOpen="1,3,5,6,7,8,16,17,18,20,21,23,24,25,29,34,35,39,41,54,401,406,410,414,153,156,161,164,177,185,323,326,328,339,392,393,26,299,300,301,302,303,306,307,310,311,313,314,315,316,319,440,441,442,445,446,448,451,452,458,463,471,480,485,515,526,587,588,597,599,600,604,586,593,602,202,203,206,103,107,108,112,361,506,510,543,113,115,118,122,365,369,374,378,379,431,460,466,467,476,502,507,513,517,521,534,541,551,558,569,578,580,592,594,607,7000,7004,7010,7020,528,566,573,574,582,417,426,430,491,509,518,350,623,624">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="25" oldCycId="24" beginTime="20240401T000000" endTime="20240430T235959" initRankLevel="1" clearDataTime="20241031T100000" lvRewardQuest1="2:100011,200|3:100011,400|4:1240201,1|5:8100201,1|6:8100201,1|7:1240301,1|8:8100201,1|9:8100201,1|10:8100201,1|11:1240401,1|12:8100201,1|13:1142901,2|14:8100201,2|15:435401,2|16:11439101,1|17:8100201,1|18:1142901,3|19:8100201,1|20:435401,3|21:21272501,4" cycRewardQuest1="2:100011,100|3:100011,150|4:100011,200|5:100011,250|6:100011,300|7:100011,500|8:100011,700|9:100011,900|10:100011,1200|11:6161709,1;100011,2000|12:6161709,1;100011,2500|13:6161709,1;100011,3000|14:6161709,1;100011,3500|15:6161709,1;100011,4000|16:6161709,1;11527201,1;100011,5000|17:6161709,1;11527201,1;100011,5500|18:6161709,1;11527201,1;100011,6000|19:6161709,1;11527201,1;100011,6500|20:6161709,1;11527201,1;100011,7000|21:6161709,1;11527201,1;100011,8000" generalOpen="1,3,5,6,7,8,16,17,18,20,21,23,24,25,29,34,35,39,53,54,401,406,410,414,153,156,161,164,177,185,323,326,328,339,392,26,299,300,301,302,303,306,307,310,311,313,314,315,316,319,440,441,442,443,444,445,446,448,452,458,463,471,480,485,526,587,588,599,600,604,602,623,202,203,206,103,107,108,112,361,543,113,115,118,122,365,369,374,378,379,431,460,466,467,476,502,507,517,521,534,541,551,558,578,580,592,607,624,7000,7004,7010,7019,7020,566,573,574,425,426,491" generalHighOpen="456,515,597,586,593,227,506,510,497,501,519,544,569,594,524,528,417,430,509,518" generalHighOpenRank="11">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="26" oldCycId="25" beginTime="20240501T000000" endTime="20240531T235959" initRankLevel="1" clearDataTime="20241130T100000" lvRewardQuest1="2:100011,200|3:100011,400|4:1240201,1|5:8100201,1|6:8100201,1|7:1240301,1|8:8100201,1|9:8100201,1|10:8100201,1|11:1240401,1|12:8100201,1|13:1142901,2|14:8100201,2|15:435401,2|16:11439101,1|17:8100201,1|18:1142901,3|19:8100201,1|20:435401,3|21:21272501,4" cycRewardQuest1="2:100011,100|3:100011,150|4:100011,200|5:100011,250|6:100011,300|7:100011,500|8:100011,700|9:100011,900|10:100011,1200|11:6161709,1;100011,2000|12:6161709,1;100011,2500|13:6161709,1;100011,3000|14:6161709,1;100011,3500|15:6161709,1;100011,4000|16:6161709,1;11527201,1;100011,5000|17:6161709,1;11527201,1;100011,5500|18:6161709,1;11527201,1;100011,6000|19:6161709,1;11527201,1;100011,6500|20:6161709,1;11527201,1;100011,7000|21:6161709,1;11527201,1;100011,8000" generalOpen="1,3,5,6,7,8,16,17,18,20,21,23,24,29,34,35,39,53,54,362,401,406,410,414,153,156,161,164,177,185,323,326,328,339,389,392,26,299,300,301,302,303,306,307,310,311,313,314,315,316,319,440,441,442,443,444,445,446,452,458,463,471,480,526,587,597,599,600,586,593,602,623,202,203,206,103,107,108,112,361,506,510,543,113,118,365,369,374,378,379,431,460,467,476,497,502,507,517,519,521,534,541,551,558,569,578,590,592,596,607,611,624,7000,7004,7010,7019,7020,528,556,566,567,573,574,630,417,425,426,430" generalHighOpen="448,485,515,122,466,501,594,524,548,475,491,518" generalHighOpenRank="11">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="27" oldCycId="26" beginTime="20240601T000000" endTime="20240630T235959" initRankLevel="1" clearDataTime="20241231T100000" lvRewardQuest1="2:100011,200|3:100011,400|4:1240201,1|5:8100201,1|6:8100201,1|7:1240301,1|8:8100201,1|9:8100201,1|10:8100201,1|11:6161709,1|12:1240401,1|13:1142901,2|14:8100201,2|15:435401,2|16:11536401,1|17:11439101,1|18:1142901,3|19:8100201,3|20:435401,3|21:21272501,4" cycRewardQuest1="2:100011,500|3:100011,500|4:100011,1000|5:100011,1000|6:100011,1000|7:100011,2000|8:100011,2000|9:100011,2000|10:100011,2000|11:100011,4000|12:100011,4000|13:100011,4000|14:100011,4000|15:100011,4000|16:100011,7000|17:100011,7000|18:100011,7000|19:100011,7000|20:100011,7000|21:100011,10000" generalOpen="594,417,593,425,510,430,567,497,569,501,556,519,406,578,448,534,521,597,7019,528,630,543,491,592,551,426,339,443,517,313,586,590,410,502,444,446,485,573,587,301,458,507,607,299,202,300,480,476,442,506,471,379,602,365,431,566,467,156,326,558,328,307,526,185,624,316,463,314,574,319,18,7000,323,1,414,113,26,20,369,596,7020,541,600,118,302,378,623,35,108,24,445,401,53,311,177,374,452,153,392,54,7004,361,310,107,164,440,203,16,39,34,315,21,362,460,303,389,103,441,8,17,112,23,7,3,206,6,161,5,611,344,612,572,451,7002,418,335,631,562">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="28" oldCycId="27" beginTime="20240701T000000" endTime="20240731T235959" initRankLevel="1" clearDataTime="20250131T100000" lvRewardQuest1="2:100011,200|3:100011,400|4:1240201,1|5:8100201,1|6:8100201,1|7:1240301,1|8:8100201,1|9:8100201,1|10:8100201,1|11:6164209,1|12:1240401,1|13:1142901,2|14:8100201,2|15:435401,2|16:11536401,1|17:11439101,1|18:1142901,3|19:8100201,3|20:435401,3|21:21272501,4" cycRewardQuest1="2:100011,500|3:100011,500|4:100011,1000|5:100011,1000|6:100011,1000|7:100011,2000|8:100011,2000|9:100011,2000|10:100011,2000|11:100011,4000|12:100011,4000|13:100011,4000|14:100011,4000|15:100011,4000|16:100011,7000|17:100011,7000|18:100011,7000|19:100011,7000|20:100011,7000|21:100011,10000" generalOpen="202,301,307,406,26,299,458,7019,313,319,108,107,379,444,443,326,485,316,314,587,573,442,300,418,431,593,480,374,302,185,7002,328,586,463,323,451,344,572,630,600,361,567,445,440,446,452,507,20,118,153,528,410,54,310,597,362,1,18,441,497,556,526,35,103,365,203,569,369,506,502,303,378,164,594,16,315,7004,519,24,566,53,311,7020,161,392,39,7000,612,335,8,417,21,112,501,467,521,578,602,34,23,7,460,426,562,17,476,425,592,491,590,510,551,624,574,389,3,6,5,517,558,113,623,631,596,543,188,226,577,553,559,220,657,579,576,635,634">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="29" oldCycId="28" beginTime="20240801T000000" endTime="20240831T235959" initRankLevel="1" clearDataTime="20250131T100000" lvRewardQuest1="2:100011,200|3:100011,400|4:1240201,1|5:8100201,1|6:8100201,1|7:1240301,1|8:8100201,1|9:8100201,1|10:8100201,1|11:6164209,1|12:1240401,1|13:1142901,2|14:8100201,2|15:435401,2|16:11536401,1|17:11439101,1|18:1142901,3|19:8100201,3|20:435401,3|21:21272501,4" cycRewardQuest1="2:100011,500|3:100011,500|4:100011,1000|5:100011,1000|6:100011,1000|7:100011,2000|8:100011,2000|9:100011,2000|10:100011,2000|11:100011,4000|12:100011,4000|13:100011,4000|14:100011,4000|15:100011,4000|16:100011,7000|17:100011,7000|18:100011,7000|19:100011,7000|20:100011,7000|21:100011,10000" generalOpen="1,3,5,6,7,8,16,17,18,20,21,23,24,34,35,39,53,54,410,153,161,164,185,188,323,326,328,335,392,26,299,300,301,302,303,307,310,311,314,315,316,319,440,441,442,443,444,445,446,451,452,458,463,479,480,485,526,587,597,600,627,586,593,602,635,202,203,220,226,103,107,108,112,361,506,510,543,118,128,344,365,369,374,378,379,418,431,467,476,495,497,501,502,507,516,517,519,521,539,551,558,559,562,572,577,578,579,585,590,592,594,596,612,619,624,631,634,657,7000,7002,7004,7019,7020,528,566,567,574,630,425,426,491,576,632">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="30" oldCycId="29" beginTime="20240901T000000" endTime="20240930T235959" initRankLevel="1" clearDataTime="20250228T100000" lvRewardQuest1="2:100011,200|3:100011,400|4:1240201,1|5:8100201,1|6:8100201,1|7:1240301,1|8:8100201,1|9:8100201,1|10:8100201,1|11:6174709,1|12:1240401,1|13:1142901,2|14:8100201,2|15:435401,2|16:11487501,1|17:11439101,1|18:1142901,3|19:8100201,3|20:435401,3|21:21272501,4" cycRewardQuest1="2:100011,500|3:100011,500|4:100011,1000|5:100011,1000|6:100011,1000|7:100011,2000|8:100011,2000|9:100011,2000|10:100011,2000|11:100011,4000|12:100011,4000|13:100011,4000|14:100011,4000|15:100011,4000|16:100011,7000|17:100011,7000|18:100011,7000|19:100011,7000|20:100011,7000|21:100011,10000" generalOpen="495,593,635,567,516,425,510,497,632,501,630,519,578,418,576,597,528,521,586,587,491,7019,551,592,590,128,572,585,543,426,301,507,506,517,612,577,558,226,446,431,299,202,631,442,379,485,566,479,326,619,480,502,319,365,307,300,410,562,316,302,526,602,26,458,463,443,7000,108,624,188,1,467,20,314,185,7020,451,18,369,35,153,452,600,476,374,539,118,657,378,311,107,323,54,445,203,634,24,392,361,220,7004,53,164,7002,16,627,440,444,39,315,303,103,8,441,34,112,21,17,310,7,23,161,3,6,5,532,628,638,339,353,555,552,127,544">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<RankItem cycId="31" oldCycId="30" beginTime="20241001T000000" endTime="20241031T235959" initRankLevel="1" clearDataTime="20250331T100000" lvRewardQuest1="2:100011,200|3:100011,400|4:1240201,1|5:8100201,1|6:8100201,1|7:1240301,1|8:8100201,1|9:8100201,1|10:8100201,1|11:6174709,1|12:1240401,1|13:1142901,2|14:8100201,2|15:435401,2|16:11487501,1|17:11439101,1|18:1142901,3|19:8100201,3|20:435401,3|21:21272501,4" cycRewardQuest1="2:100011,500|3:100011,500|4:100011,1000|5:100011,1000|6:100011,1000|7:100011,2000|8:100011,2000|9:100011,2000|10:100011,2000|11:100011,4000|12:100011,4000|13:100011,4000|14:100011,4000|15:100011,4000|16:100011,7000|17:100011,7000|18:100011,7000|19:100011,7000|20:100011,7000|21:100011,10000" generalOpen="495,593,635,567,516,425,510,497,632,501,630,519,578,418,576,597,528,521,586,587,491,7019,551,592,590,128,572,585,543,426,301,507,506,517,612,577,558,226,446,431,299,202,631,442,379,485,566,479,326,619,480,502,319,365,307,300,410,562,316,302,526,602,26,458,463,443,7000,108,624,188,1,467,20,314,185,7020,451,18,369,35,153,452,600,476,374,539,118,657,378,311,107,323,54,445,203,634,24,392,361,220,7004,53,164,7002,16,627,440,444,39,315,303,103,8,441,34,112,21,17,310,7,23,161,3,6,5,532,628,638,339,353,555,552,127,544">
+			<NotNeedCalcTimeRange begin="010001" end="080000" />
+		</RankItem>
+		<EscapePunish>
+			<!--
+				exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			value	-	逃跑次数
+			time	-	禁赛时间
+				-->
+			<Count value="1" time="600" />
+			<Count value="2" time="600" />
+			<Count value="3" time="600" />
+		</EscapePunish>
+		<!--
+			exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+				-	匹配队列，最多8个
+			time	-	时间段
+1=排位时间
+2=休闲时间
+			seconds	-	队列时间
+每个时间独立都是从0开始计算
+			powerDiff	-	战力差值/万分比
+			levDiffFri	-	己方等级差
+			levDiffEmy	-	敌方等级差
+			rankDiffFri	-	己方段位差
+			rankDiffEmy	-	敌方段位差
+			offDiffFri	-	己方官阶差
+			offDiffEmy	-	敌方官阶差
+			ip	-	是否限IP
+			emyRepeatLimit	-	是否限同局玩家
+			checkMember	-	是否限相同人数
+			checkFriTTLev	-	己方是否检测段位范围
+			checkEmyTTLev	-	敌方是否检测段位范围
+			checkBlacklist	-	友方是否限制黑名单
+			reputation	-	当前信誉分需要大于等于X才可以匹配到
+			checkLimit	-	是否匹配限制玩家
+			-->
+		<MatchArgs time="1" seconds="3" powerDiff="1500" levDiffFri="15" levDiffEmy="30" rankDiffFri="3" rankDiffEmy="3" offDiffFri="5" offDiffEmy="5" ip="1" emyRepeatLimit="1" checkMember="1" checkFriTTLev="1" checkEmyTTLev="1" checkBlacklist="1" reputation="100" checkLimit="2" />
+		<MatchArgs time="1" seconds="6" powerDiff="2500" levDiffFri="20" levDiffEmy="40" rankDiffFri="5" rankDiffEmy="5" offDiffFri="5" offDiffEmy="5" ip="1" emyRepeatLimit="1" checkMember="1" checkFriTTLev="1" checkEmyTTLev="1" checkBlacklist="1" reputation="95" checkLimit="1" />
+		<MatchArgs time="1" seconds="10" powerDiff="3500" levDiffFri="25" levDiffEmy="50" rankDiffFri="8" rankDiffEmy="8" offDiffFri="10" offDiffEmy="10" ip="1" emyRepeatLimit="1" checkMember="1" checkFriTTLev="1" checkEmyTTLev="1" checkBlacklist="1" reputation="95" checkLimit="0" />
+		<MatchArgs time="1" seconds="20" powerDiff="5000" levDiffFri="30" levDiffEmy="60" rankDiffFri="10" rankDiffEmy="10" offDiffFri="15" offDiffEmy="15" ip="1" emyRepeatLimit="1" checkMember="0" checkFriTTLev="1" checkEmyTTLev="1" checkBlacklist="1" reputation="90" checkLimit="0" />
+		<MatchArgs time="1" seconds="40" powerDiff="6500" levDiffFri="35" levDiffEmy="70" rankDiffFri="999" rankDiffEmy="999" offDiffFri="999" offDiffEmy="999" ip="1" emyRepeatLimit="1" checkMember="0" checkFriTTLev="1" checkEmyTTLev="0" checkBlacklist="1" reputation="80" checkLimit="0" />
+		<MatchArgs time="1" seconds="60" powerDiff="9999" levDiffFri="40" levDiffEmy="80" rankDiffFri="999" rankDiffEmy="999" offDiffFri="999" offDiffEmy="999" ip="1" emyRepeatLimit="1" checkMember="0" checkFriTTLev="1" checkEmyTTLev="0" checkBlacklist="1" reputation="0" checkLimit="0" />
+		<MatchArgs time="1" seconds="180" powerDiff="9999" levDiffFri="40" levDiffEmy="80" rankDiffFri="999" rankDiffEmy="999" offDiffFri="999" offDiffEmy="999" ip="1" emyRepeatLimit="1" checkMember="0" checkFriTTLev="1" checkEmyTTLev="0" checkBlacklist="1" reputation="0" checkLimit="0" />
+		<MatchArgs time="2" seconds="3" powerDiff="2000" levDiffFri="15" levDiffEmy="30" rankDiffFri="5" rankDiffEmy="5" offDiffFri="30" offDiffEmy="30" ip="1" emyRepeatLimit="1" checkMember="1" checkFriTTLev="1" checkEmyTTLev="1" checkBlacklist="1" checkLimit="0" />
+		<MatchArgs time="2" seconds="6" powerDiff="3000" levDiffFri="25" levDiffEmy="50" rankDiffFri="10" rankDiffEmy="10" offDiffFri="45" offDiffEmy="45" ip="1" emyRepeatLimit="1" checkMember="1" checkFriTTLev="1" checkEmyTTLev="1" checkBlacklist="1" checkLimit="0" />
+		<MatchArgs time="2" seconds="10" powerDiff="4000" levDiffFri="35" levDiffEmy="70" rankDiffFri="999" rankDiffEmy="999" offDiffFri="999" offDiffEmy="999" ip="1" emyRepeatLimit="1" checkMember="0" checkFriTTLev="1" checkEmyTTLev="0" checkBlacklist="1" checkLimit="0" />
+		<MatchArgs time="2" seconds="30" powerDiff="9999" levDiffFri="40" levDiffEmy="80" rankDiffFri="999" rankDiffEmy="999" offDiffFri="999" offDiffEmy="999" ip="1" emyRepeatLimit="1" checkMember="0" checkFriTTLev="1" checkEmyTTLev="0" checkBlacklist="1" checkLimit="0" />
+		<MatchArgs time="2" seconds="180" powerDiff="9999" levDiffFri="40" levDiffEmy="80" rankDiffFri="999" rankDiffEmy="999" offDiffFri="999" offDiffEmy="999" ip="1" emyRepeatLimit="1" checkMember="0" checkFriTTLev="1" checkEmyTTLev="0" checkBlacklist="1" checkLimit="0" />
+	</TTRankCfg>
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			type	-	发将类型
+1=交集
+2=并集
+3=VIP增加格子
+			addNum	-	增加格子数
+			sGeneral	-	S
+			aGeneral	-	A
+			bGeneral	-	B
+		-->
+	<generalNum type="1" sGeneral="1" aGeneral="1" bGeneral="1" />
+	<generalNum type="2" sGeneral="1" aGeneral="2" bGeneral="2" />
+	<generalNum type="3" addNum="1" aGeneral="1" />
+	<generalNum type="3" addNum="2" aGeneral="1" bGeneral="1" />
+	<generalNum type="3" addNum="3" sGeneral="1" aGeneral="1" bGeneral="1" />
+	<generalNum type="3" addNum="4" sGeneral="1" aGeneral="2" bGeneral="1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			generalId	-	发将id
+			generalType	-	发将类型
+1=常规
+2=新手
+3=回归
+			rank	-	段位区间
+			lastGeneral	-	上局武将
+			useMostGeneral	-	常用武将
+			recomGeneral	-	推荐武将
+			tryUseGeneral	-	体验次数卡武将
+			newGeneral	-	新上线武将（占用VIP拓展格）
+			mixedGeneral1	-	交集S+保底：该等级以及以上等级的将之和，满足该数量时触发保底 
+			mixedGeneral2	-	交集S保底
+			mixedGeneral3	-	交集A+保底
+			mixedGeneral4	-	交集A保底
+			mixedGeneral5	-	交集B+保底
+			mixedGeneral6	-	交集B保底
+			unionGeneral1	-	并集S+保底
+			unionGeneral2	-	并集S保底
+			unionGeneral3	-	并集A+保底
+			unionGeneral4	-	并集A保底
+			unionGeneral5	-	并集B+保底
+			unionGeneral6	-	并集B保底
+		-->
+	<generalCommon generalId="101" generalType="1" rank="1,10" lastGeneral="0" useMostGeneral="0" recomGeneral="0" tryUseGeneral="0" newGeneral="1" mixedGeneral2="13,1" mixedGeneral3="15,1" mixedGeneral4="35,1" mixedGeneral5="20,1;30,2" mixedGeneral6="15,1;25,2" unionGeneral3="15,1" unionGeneral4="30,1" unionGeneral5="30,1" />
+	<generalCommon generalId="101" generalType="1" rank="11,20" lastGeneral="0" useMostGeneral="0" recomGeneral="0" tryUseGeneral="0" newGeneral="1" mixedGeneral2="13,1" mixedGeneral3="15,1" mixedGeneral4="35,1" mixedGeneral5="20,1;30,2" mixedGeneral6="15,1;25,2" unionGeneral3="15,1" unionGeneral4="30,1" unionGeneral5="30,1" />
+	<generalCommon generalId="101" generalType="1" rank="21,999" lastGeneral="0" useMostGeneral="0" recomGeneral="0" tryUseGeneral="0" newGeneral="1" mixedGeneral2="13,1" mixedGeneral3="15,1" mixedGeneral4="35,1" mixedGeneral5="20,1;30,2" mixedGeneral6="15,1;25,2" unionGeneral3="15,1" unionGeneral4="30,1" unionGeneral5="30,1" />
+	<generalCommon generalId="101" generalType="2" lastGeneral="1" useMostGeneral="0" recomGeneral="1" tryUseGeneral="0" newGeneral="0" mixedGeneral2="13,1" mixedGeneral3="15,1" mixedGeneral4="35,1" mixedGeneral5="20,1;30,2" mixedGeneral6="15,1;25,2" unionGeneral3="15,1" unionGeneral4="30,1" unionGeneral5="30,1" />
+	<generalCommon generalId="101" generalType="3" lastGeneral="0" useMostGeneral="0" recomGeneral="0" tryUseGeneral="0" newGeneral="2" mixedGeneral2="13,1" mixedGeneral3="15,1" mixedGeneral4="35,1" mixedGeneral5="20,1;30,2" mixedGeneral6="15,1;25,2" unionGeneral3="15,1" unionGeneral4="30,1" unionGeneral5="30,1" />
+	<generalCommon generalId="102" generalType="1" rank="1,10" lastGeneral="0" useMostGeneral="0" recomGeneral="0" tryUseGeneral="0" newGeneral="1" mixedGeneral2="13,1" mixedGeneral3="15,1" mixedGeneral4="35,1" mixedGeneral5="20,1;30,2" mixedGeneral6="15,1;25,2" unionGeneral3="15,1" unionGeneral4="30,1" unionGeneral5="30,1" />
+	<generalCommon generalId="102" generalType="1" rank="11,20" lastGeneral="0" useMostGeneral="0" recomGeneral="0" tryUseGeneral="0" newGeneral="1" mixedGeneral2="13,1" mixedGeneral3="15,1" mixedGeneral4="35,1" mixedGeneral5="20,1;30,2" mixedGeneral6="15,1;25,2" unionGeneral3="15,1" unionGeneral4="30,1" unionGeneral5="30,1" />
+	<generalCommon generalId="102" generalType="1" rank="21,999" lastGeneral="0" useMostGeneral="0" recomGeneral="0" tryUseGeneral="0" newGeneral="1" mixedGeneral2="13,1" mixedGeneral3="15,1" mixedGeneral4="35,1" mixedGeneral5="20,1;30,2" mixedGeneral6="15,1;25,2" unionGeneral3="15,1" unionGeneral4="30,1" unionGeneral5="30,1" />
+	<generalCommon generalId="102" generalType="2" lastGeneral="1" useMostGeneral="0" recomGeneral="1" tryUseGeneral="0" newGeneral="0" mixedGeneral2="13,1" mixedGeneral3="15,1" mixedGeneral4="35,1" mixedGeneral5="20,1;30,2" mixedGeneral6="15,1;25,2" unionGeneral3="15,1" unionGeneral4="30,1" unionGeneral5="30,1" />
+	<generalCommon generalId="102" generalType="3" lastGeneral="0" useMostGeneral="0" recomGeneral="0" tryUseGeneral="0" newGeneral="2" mixedGeneral2="13,1" mixedGeneral3="15,1" mixedGeneral4="35,1" mixedGeneral5="20,1;30,2" mixedGeneral6="15,1;25,2" unionGeneral3="15,1" unionGeneral4="30,1" unionGeneral5="30,1" />
+	<generalCommon generalId="103" generalType="1" rank="1,10" lastGeneral="0" useMostGeneral="0" recomGeneral="0" tryUseGeneral="0" newGeneral="1" mixedGeneral2="13,1" mixedGeneral3="15,1" mixedGeneral4="35,1" mixedGeneral5="20,1;30,2" mixedGeneral6="15,1;25,2" unionGeneral3="15,1" unionGeneral4="30,1" unionGeneral5="30,1" />
+	<generalCommon generalId="103" generalType="1" rank="11,20" lastGeneral="0" useMostGeneral="0" recomGeneral="0" tryUseGeneral="0" newGeneral="1" mixedGeneral2="13,1" mixedGeneral3="15,1" mixedGeneral4="35,1" mixedGeneral5="20,1;30,2" mixedGeneral6="15,1;25,2" unionGeneral3="15,1" unionGeneral4="30,1" unionGeneral5="30,1" />
+	<generalCommon generalId="103" generalType="1" rank="21,999" lastGeneral="0" useMostGeneral="0" recomGeneral="0" tryUseGeneral="0" newGeneral="1" mixedGeneral2="13,1" mixedGeneral3="15,1" mixedGeneral4="35,1" mixedGeneral5="20,1;30,2" mixedGeneral6="15,1;25,2" unionGeneral3="15,1" unionGeneral4="30,1" unionGeneral5="30,1" />
+	<generalCommon generalId="103" generalType="2" lastGeneral="1" useMostGeneral="0" recomGeneral="2" tryUseGeneral="0" newGeneral="0" mixedGeneral2="13,1" mixedGeneral3="15,1" mixedGeneral4="35,1" mixedGeneral5="20,1;30,2" mixedGeneral6="15,1;25,2" unionGeneral3="15,1" unionGeneral4="30,1" unionGeneral5="30,1" />
+	<generalCommon generalId="103" generalType="3" lastGeneral="0" useMostGeneral="0" recomGeneral="0" tryUseGeneral="0" newGeneral="2" mixedGeneral2="13,1" mixedGeneral3="15,1" mixedGeneral4="35,1" mixedGeneral5="20,1;30,2" mixedGeneral6="15,1;25,2" unionGeneral3="15,1" unionGeneral4="30,1" unionGeneral5="30,1" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			type	-	先后手
+0=先手
+1=后手
+			generalId1	-	武将id1
+			generalId2	-	武将id2
+			winRate	-	胜率
+万分比
+			minLevel	-	最低出现等级
+			maxLevel	-	最高出现等级
+			forcePull	-	是否强制推出
+1=强制推出
+			jinlanGeneral	-	金兰节武将
+				-	
+				-
+		-->
+	<recommendGroup type="0" generalId1="5" generalId2="1" winRate="1680" minLevel="0" maxLevel="200" forcePull="0" />
+	<!--
+		exportType	-	是否导出对应行，sq表示服务端不导出、cq表示客户端不导出
+			id	-	id
+			winNum	-	胜利次数
+			rewards	-	奖励
+		-->
+	<onethreeWin id="1" winNum="1" rewards="951601,2" />
+	<onethreeWin id="2" winNum="3" rewards="951601,2" />
+</root>
